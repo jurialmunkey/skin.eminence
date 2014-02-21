@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="107">
+	<defaultcontrol always="true">402</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+    <zorder>11</zorder>
+	<controls>
+	    <!--<control type="image">
+	        <include>Dimensions_Fullscreen</include>
+	        <texture>common/white.png</texture>
+	        <colordiffuse>LightGray</colordiffuse>
+	        <animation effect="fade" end="75" condition="true">Conditional</animation>
+	        <include>Animation.FadeIn</include>
+	        <include>Animation.FadeOut</include>
+	    </control>-->
+        <include>GlobalLeftHeader</include>
+        <control type="group">		
+            <include>Animation.SlideOpen.Left</include>
+            <control type="image">
+                <posy>18</posy>
+                <posx>198</posx>
+                <width>254</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posy>18</posy>
+                <posx>300</posx>
+                <width>1800</width>
+                <height>164</height>	
+                <texture>common/white.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>	
+            <control type="image" id="403" description="info">
+                <posy>10</posy>
+                <posx>250</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>special://skin/extras/icons/info.png</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            <control type="image" id="404" description="warning">
+                <posy>10</posy>
+                <posx>250</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>special://skin/extras/icons/info.png</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            <control type="image" id="405" description="error">
+                <posy>10</posy>
+                <posx>250</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>special://skin/extras/icons/info.png</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            <control type="label">
+				<description>Info</description>
+				<posx>250</posx>
+				<posy>115</posy>
+				<width>128</width>
+				<align>center</align>
+				<aligny>top</aligny>
+				<font>Font-ListInfo</font>
+				<textcolor>TopBarIcon</textcolor>
+				<label>31119</label>
+			</control>
+            <control type="label" id="401">
+				<description>Header</description>
+				<posx>400</posx>
+				<posy>0</posy>
+				<height>164</height>
+				<aligny>center</aligny>
+				<width>1450</width>
+				<align>left</align>
+				<textcolor>TopBarIcon</textcolor>
+			</control>
+			<control type="label" id="402">
+				<description>Message</description>
+				<posx>400</posx>
+				<posy>36</posy>
+				<width>1450</width>
+				<height>164</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font-ListInfo</font>
+				<textcolor>TopBarIcon</textcolor>
+			</control>
+            
+
+        </control>
+	</controls>
+
+</window>

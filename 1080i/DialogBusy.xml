@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="136">
+	<defaultcontrol always="true">-</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalOverlay</include>
+        <control type="image">
+            <posy>18</posy>
+            <posx>-64</posx>
+            <width>300</width>
+            <height>164</height>	
+            <texture align="left">home/half-tile.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+
+        <control type="image">
+            <posy>10</posy>
+            <posx>30</posx>
+            <width>128</width>
+            <height>128</height>
+            <texture>buttons/sync.png</texture>
+            <aspectratio align="center" aligny="center">keep</aspectratio>
+            <animation effect="rotate" start="0" end="360" center="auto" time="3500" loop="true" condition="true">conditional</animation>
+            <colordiffuse>TopBarIcon</colordiffuse>
+        </control>
+        
+        <control type="label">
+            <posx>0</posx>
+            <posy>115</posy>
+            <width>184</width>
+            <aligny>top</aligny>
+            <font>Font-Sublabel</font>
+            <align>center</align>
+            <textcolor>TopBarIcon</textcolor>
+            <label>20186</label>
+        </control>
+	</controls>
+
+</window>

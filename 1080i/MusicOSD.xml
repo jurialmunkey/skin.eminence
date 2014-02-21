@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="120">
+	<defaultcontrol always="true">15</defaultcontrol>
+    <zorder>5</zorder>
+	<controls>
+	    <control type="group">
+	        <animation type="WindowOpen">
+                <effect type="fade" start="0" end="100" time="200"/>
+                <effect type="slide" start="0,64" end="0" time="200"/>
+            </animation>
+            <animation type="Visible">
+                <effect type="fade" start="0" end="100" time="200"/>
+                <effect type="slide" start="0,64" end="0" time="200"/>
+            </animation>
+            <animation type="Hidden">
+                <effect type="fade" end="0" start="100" time="200"/>
+                <effect type="slide" end="0,64" start="0" time="200"/>
+            </animation>
+            <animation type="WindowClose">
+                <effect type="fade" end="0" start="100" time="200"/>
+                <effect type="slide" end="0,64" start="0" time="200"/>
+            </animation>
+            <control type="grouplist" id="100">
+            
+                <posx>32</posx>
+                <posy>1024</posy>
+                <height>48</height>
+                <itemgap>3</itemgap>
+                <orientation>horizontal</orientation>
+                <align>left</align>
+                <onleft>6</onleft>
+                <onright>12</onright>
+                <onup>-</onup>
+                <ondown>-</ondown>
+
+                <control type="button" id="1">
+                    <description>Audio Settings</description>
+                    <include>DefOSDControls</include>
+                    <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
+                    <onclick>XBMC.PlayerControl(Repeat)</onclick>
+                </control>
+
+                <control type="button" id="2">
+                    <include>DefOSDControls</include>
+                    <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
+                    <onclick>XBMC.PlayerControl(Random)</onclick>
+                </control>
+                
+                <control type="button" id="3">
+                    <description>Playlist </description>
+                    <include>DefOSDControls</include>
+                    <label>559</label>
+					<onclick>ActivateWindow(MusicPlaylist)</onclick>
+                </control>
+                
+            </control>
+    
+            <control type="grouplist" id="101">
+            
+                <posy>1024</posy>
+                <width>1920</width>
+                <height>48</height>
+                <itemgap>16</itemgap>
+                <orientation>horizontal</orientation>
+                <align>center</align>
+                <onleft>3</onleft>
+                <onright>4</onright>
+                <onup>-</onup>
+                <ondown>-</ondown>
+
+                <control type="button" id="12">
+                    <description>Skip Back</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>210</label>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight" flipx="true">osd/next.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray" flipx="true">osd/next.png</texturenofocus>
+                    <onclick>PlayerControl(Previous)</onclick>
+                </control>
+
+                <control type="button" id="13">
+                    <description>Rewind</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>31036</label>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight" flipx="true">osd/ff.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray" flipx="true">osd/ff.png</texturenofocus>
+                    <onclick>PlayerControl(Rewind)</onclick>
+                </control>
+
+                <control type="togglebutton" id="14">
+                    <description>Play/Pause</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>31037</label>
+                    <altlabel>208</altlabel>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight">osd/pause.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray">osd/pause.png</texturenofocus>
+                    <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                    <alttexturefocus colordiffuse="Highlight">osd/play.png</alttexturefocus>
+                    <alttexturenofocus colordiffuse="DarkGray">osd/play.png</alttexturenofocus>
+                    <onclick>PlayerControl(Play)</onclick>
+                </control>
+
+                <control type="button" id="15">
+                    <description>Stop</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>31038</label>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight">osd/stop.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray">osd/stop.png</texturenofocus>
+                    <onclick>PlayerControl(Stop)</onclick>
+                </control>
+
+                <control type="button" id="16">
+                    <description>Fast Forward</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>31039</label>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight">osd/ff.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray">osd/ff.png</texturenofocus>
+                    <onclick>PlayerControl(Forward)</onclick>
+                </control>
+
+                <control type="button" id="17">
+                    <description>Next</description>
+                    <width>48</width>
+                    <height>48</height>
+                    <label>209</label>
+                    <font>-</font>
+                    <texturefocus colordiffuse="Highlight">osd/next.png</texturefocus>
+                    <texturenofocus colordiffuse="DarkGray">osd/next.png</texturenofocus>
+                    <onclick>PlayerControl(Next)</onclick>
+                </control>
+            
+            </control>
+            <control type="grouplist" id="102">
+            
+                <posx>728r</posx>
+                <posy>1024</posy>
+                <height>48</height>
+                <width>696</width>
+                <itemgap>3</itemgap>
+                <orientation>horizontal</orientation>
+                <align>right</align>
+                <onleft>17</onleft>
+                <onright>1</onright>
+                <onup>-</onup>
+                <ondown>-</ondown>
+
+                <control type="button" id="4">
+                    <description>Visualisation Settings</description>
+                    <include>DefOSDControls</include>
+                    <label>31119</label>
+                    <onclick>Skin.ToggleSetting(Vis.ExtraInfo)</onclick>
+                </control>
+                
+                <control type="button" id="5">
+                    <description>Viz</description>
+                    <include>DefOSDControls</include>
+                    <label>5</label>
+                    <onclick>ActivateWindow(musicsettings)</onclick>
+                    <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+                </control>
+
+                
+
+                <control type="button" id="6">
+                    <description>DVD Menu</description>
+                    <include>DefOSDControls</include>
+                    <label>24013</label>
+                    <enable>false</enable>
+                </control>
+            </control>
+            
+		</control>
+	</controls>
+	
+
+</window>

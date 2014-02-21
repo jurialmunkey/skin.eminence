@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="9500Focus">
+        <defaultcontrol always="true">9500</defaultcontrol>
+    </include>
+    	
+    <include name="50Focus">
+        <defaultcontrol always="true">50</defaultcontrol>
+    </include>
+    
+	<include name="DefCategoryButton">
+	    <posx>100</posx>
+	    <width>450</width>
+        <height>129</height>
+        <align>left</align>
+        <font>Font-SettingsCategory</font>
+        <texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+        <focusedcolor>Selected</focusedcolor>
+	</include>
+	
+	<include name="DefWidgetButton">
+	    <width>419</width>
+        <height>153</height>
+        <texturefocus colordiffuse="Highlight">common/white.png</texturefocus>
+        <align>left</align>
+        <font>Font-SettingsCategory</font>
+	</include>
+	
+	<include name="DefSettingsHeader">
+	    <posx>48</posx>
+        <posy>250</posy>
+        <align>left</align>
+        <aligny>center</aligny>
+        <width>920</width>
+        <textcolor>DarkGray</textcolor>
+        <font>Font-SettingsCategory</font>
+    </include>
+
+    <include name="DefSettingsSeparator">    
+        <control type="image">
+            <posx>1500</posx>
+            <posy>320</posy>
+            <height>687</height>
+            <width>1</width>
+            <texture colordiffuse="DarkGray">common/white.png</texture>
+            <animation effect="fade" end="15" condition="true">Conditional</animation>
+        </control>
+    </include>
+    	
+	<include name="DefOnBack">
+	    <onback condition="[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]">9500</onback>
+	</include>
+	
+	<include name="DefMyNavViews">
+	    <control type="group">
+            <posy>70</posy>
+            <posx>233</posx>
+            <include>DialogVisibility</include>
+            <visible allowhiddenfocus="true">![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(movieinformation)">Conditional</animation>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(musicinformation)">Conditional</animation>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.FadeOut</include>
+            <include>View_50_List</include>
+            <include>View_51_Poster</include>
+            <include>View_52_Wall</include>
+            <include>View_53_Wide</include>
+            <include>View_54_Lovefilm</include>
+            <include>View_55_Banner</include>
+            <control type="label">
+                <posx>1475</posx>
+                <posy>174</posy>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <label>$VAR[NavSideLabel]</label>
+                <angle>270</angle>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                <visible>!Container(51).OnNext + !Container(51).OnPrevious</visible>
+                <visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55)</visible>
+            </control>            
+		</control>
+		<control type="group">
+	        <visible>ControlGroup(9000).HasFocus()</visible>
+	        <include>Animation.FadeIn</include>
+	        <include>Animation.FadeOut</include>
+            <include>GlobalVignette</include>
+	    </control>
+	</include>
+	
+	<include name="DefMyTopBarGroupList">
+	    <posx>250</posx>
+        <posy>29</posy>
+        <width>1670</width>
+        <height>164</height>
+        <itemgap>0</itemgap>
+        <orientation>horizontal</orientation>
+        <onleft>9000</onleft>
+        <onback>50</onback>
+        <onright>9000</onright>
+        <onup>50</onup>
+        <ondown>50</ondown>
+	</include>
+	
+	<include name="DefMyTopBar">
+	    <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
+        <include>Animation.SlideOpen.Left</include>
+        <control type="image">
+            <posy>18</posy>
+            <posx>198</posx>
+            <width>254</width>
+            <height>164</height>	
+            <texture align="left">home/half-tile.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+        <control type="image">
+            <posy>18</posy>
+            <posx>300</posx>
+            <width>1800</width>
+            <height>164</height>	
+            <texture>common/white.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+	</include>
+	
+	<include name="DefOSDControls">
+	    <width>230</width>
+        <height>48</height>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <textoffsetx>0</textoffsetx>
+        <focusedcolor>Highlight</focusedcolor>
+	</include>
+	
+	<include name="DefContextMenuButton">
+	    <width>417</width>
+        <height>142</height>
+        <texturefocus>-</texturefocus>
+        <textcolor>TopBarIcon</textcolor>
+        <focusedcolor>Highlight</focusedcolor>
+        <textoffsetx>0</textoffsetx>
+        <font>Font-Context</font>
+        <textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
+		<textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
+		<textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+		<textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
+		<texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
+		<textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
+		<texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
+	</include>
+	
+	<include name="DefInfoButton">
+	    <posx>16</posx>
+        <height>32</height>
+        <width>auto</width>
+	</include>
+	
+	
+	<!-- Global Search -->
+	<include name="DefGlobalSearchList">
+	    <onleft>198</onleft>
+	    <width>1434</width>
+        <height>354</height>
+        <orientation>horizontal</orientation>
+        <wraparound>true</wraparound>
+        <scrolltime tween="Quadratic" easing="out">300</scrolltime>
+        <itemlayout width="239" height="354">
+            <control type="image">
+                <height>336</height>
+                <width>221</width>
+                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <posx>11</posx>
+                <posy>11</posy>
+                <height>284</height>
+                <width>199</width>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <aspectratio aligny="top">scale</aspectratio>
+            </control>
+            <control type="label">
+                <posx>110</posx>
+                <posy>282</posy>
+                <width>185</width>
+                <align>center</align>
+                <font>Font-ListInfo</font>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+        </itemlayout>
+    </include>
+    
+    <include name="DefGlobalSearchListEnd">
+        <control type="image">
+            <posx>11</posx>
+            <posy>11</posy>
+            <height>284</height>
+            <width>199</width>
+            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <aspectratio aligny="top">scale</aspectratio>
+        </control>
+        <control type="label">
+            <posx>110</posx>
+            <posy>282</posy>
+            <width>185</width>
+            <align>center</align>
+            <textcolor>DarkerGray</textcolor>
+            <font>Font-ListInfo</font>
+            <label>$INFO[ListItem.Label]</label>
+        </control>
+	</include>
+	
+	<!-- OSD CONTROLS -->
+	<include name="VideoOSDRight">
+	    <control type="button" id="4">
+            <description>DVD Menu</description>
+            <width>230</width>
+            <height>48</height>
+            <label>31143</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <onclick>PlayerControl(ShowVideoMenu)</onclick>
+            <enable>VideoPlayer.HasMenu</enable>
+        </control>
+        
+        <control type="button" id="5">
+            <description>Subs</description>
+            <width>230</width>
+            <height>48</height>
+            <label>287</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <enable>false</enable>
+        </control>
+        
+        <control type="button" id="6">
+            <description>Bookmarks</description>
+            <width>230</width>
+            <height>48</height>
+            <label>298</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <onclick>ActivateWindow(125)</onclick>
+        </control>
+	</include>
+	<include name="LiveTVOSDRight">
+	    <control type="button" id="4">
+            <description>Channels</description>
+            <width>230</width>
+            <height>48</height>
+            <label>19019</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <onclick>ActivateWindow(mypvr)</onclick>
+            <onclick>SetFocus(32)</onclick>
+            <onclick>SetFocus(11)</onclick>
+        </control>
+        
+        <control type="button" id="5">
+            <description>EPG</description>
+            <width>230</width>
+            <height>48</height>
+            <label>19032</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <onclick>ActivateWindow(mypvr)</onclick>
+            <onclick>SetFocus(31)</onclick>
+            <onclick>SetFocus(10)</onclick>
+        </control>
+        
+        <control type="button" id="6">
+            <description>Subs</description>
+            <width>230</width>
+            <height>48</height>
+            <label>287</label>
+            <align>right</align>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <focusedcolor>Highlight</focusedcolor>
+            <onclick>Action(ShowSubtitles)</onclick>
+            <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled">Conditional</animation>
+        </control>
+	</include>
+	
+</includes>

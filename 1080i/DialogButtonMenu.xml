@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="buttonMenu" id="111">
+	<defaultcontrol always="true">3110</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+    <zorder>12</zorder>
+	<controls>
+	    <control type="image">
+	        <include>Dimensions_Fullscreen</include>
+	        <texture>common/white.png</texture>
+	        <colordiffuse>LightGray</colordiffuse>
+	        <animation effect="fade" end="75" condition="true">Conditional</animation>
+	        <include>Animation.FadeIn</include>
+	    </control>
+        <control type="group" description="Left Side Header">
+            <control type="image">
+                <posy>18</posy>
+                <posx>-64</posx>
+                <width>300</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+
+            <control type="image">
+                <posy>10</posy>
+                <posx>30</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>special://skin/extras/icons/power.png</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            
+            <control type="label">
+                <posx>0</posx>
+                <posy>115</posy>
+                <width>184</width>
+                <aligny>top</aligny>
+                <font>Font-Sublabel</font>
+                <align>center</align>
+                <textcolor>TopBarIcon</textcolor>
+                <label>33060</label>
+            </control>
+        </control>
+        <control type="group">		
+            <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
+            <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
+            <control type="image">
+                <posy>18</posy>
+                <posx>198</posx>
+                <width>254</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posy>18</posy>
+                <posx>300</posx>
+                <width>1800</width>
+                <height>164</height>	
+                <texture>common/white.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>			
+            
+            <control type="grouplist" id="3110">
+                <posx>250</posx>
+                <posy>29</posy>
+                <width>1670</width>
+                <height>164</height>
+                <itemgap>0</itemgap>
+                <onleft>-</onleft>
+                <onright>-</onright>
+                <onup>1</onup>
+                <ondown>1</ondown>
+                <orientation>horizontal</orientation>
+
+                <control type="button" id="3111">
+                    <description>Exit XBMC button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>13012</label>
+                    <onclick>Quit()</onclick>
+                    <visible>System.ShowExitButton</visible>
+                </control>
+
+                <control type="button" id="3112">
+                    <description>Master mode button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>31131</label>
+                    <altlabel>31132</altlabel>
+                    <onclick>xbmc.mastermode</onclick>
+                    <visible>System.HasLocks</visible>
+                </control>
+
+                <control type="button" id="3113">
+                    <description>LogOff Profile</description>
+                    <include>DefContextMenuButton</include>
+                    <label>$LOCALIZE[20126]</label>
+                    <onclick>dialog.close(all,true)</onclick>
+                    <onclick>System.LogOff</onclick>
+                    <visible>System.Loggedon + System.HasLoginScreen</visible>
+                </control>
+
+                <control type="button" id="3114">
+                    <description>Custom Shutdown Timer button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>$LOCALIZE[31133] [B]$INFO[System.Alarmpos][/B]</label>
+                    <onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+                    <visible>System.HasAlarm(shutdowntimer)</visible>
+                </control>
+
+                <control type="button" id="3115">
+                    <description>Custom Shutdown Timer button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>$LOCALIZE[31130]</label>
+                    <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+                    <visible>!System.HasAlarm(shutdowntimer)</visible>
+                </control>
+
+                <control type="button" id="3116">
+                    <description>Shutdown</description>
+                    <include>DefContextMenuButton</include>
+                    <label>13005</label>
+                    <onclick>ShutDown()</onclick>
+                </control>
+
+                <control type="button" id="3117">
+                    <description>Suspend xbmc</description>
+                    <include>DefContextMenuButton</include>
+                    <label>13011</label>
+                    <onclick>XBMC.Suspend()</onclick>
+                </control>
+
+                <control type="button" id="3118">
+                    <description>Reboot button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>13013</label>
+                    <onclick>XBMC.Reset()</onclick>
+                </control>
+
+                
+
+                <control type="button" id="3121">
+                    <description>Reload Skin</description>
+                    <include>DefContextMenuButton</include>
+                    <label>Reload Skin</label>
+                    <onclick>ReloadSkin()</onclick>
+                </control>
+
+            </control>
+        </control>
+	</controls>
+
+</window>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="129">
+	<defaultcontrol always="true">11</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+	    <control type="image">
+	        <include>Dimensions_Fullscreen</include>
+	        <texture>common/white.png</texture>
+	        <colordiffuse>LightGray</colordiffuse>
+	        <animation effect="fade" end="75" condition="true">Conditional</animation>
+	        <include>Animation.FadeIn</include>
+	        <include>Animation.FadeOut</include>
+	    </control>
+        <include>GlobalLeftHeader</include>
+        <control type="group">		
+            <include>Animation.SlideOpen.Left</include>
+            <control type="image">
+                <posy>18</posy>
+                <posx>198</posx>
+                <width>254</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posy>18</posy>
+                <posx>300</posx>
+                <width>1800</width>
+                <height>164</height>	
+                <texture>common/white.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>	
+            			
+            <control type="label" id="2">
+				<description>Settings</description>
+				<posx>270</posx>
+				<posy>32</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+			</control>
+			<control type="list" id="10">
+				<posx>320</posx>
+				<posy>100</posy>
+                <width>670</width>
+                <height>69</height>
+				<onright>11</onright>
+				<itemlayout height="69">
+                    <control type="label">
+						<width>670</width>
+						<info>ListItem.Label</info>
+						<selectedcolor>TopBarIcon</selectedcolor>
+						<textcolor>TopBarDisabled</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69">
+
+                    <control type="label">
+						<width>670</width>
+						<info>ListItem.Label</info>
+						<selectedcolor>TopBarIcon</selectedcolor>
+						<textcolor>TopBarDisabled</textcolor>
+						<visible>!Control.HasFocus(10)</visible>
+					</control>
+					<control type="label">
+						<width>670</width>
+						<info>ListItem.Label</info>
+						<selectedcolor>Highlight</selectedcolor>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(10)</visible>
+					</control>
+				</focusedlayout>
+
+			</control>
+			<control type="button" id="12">
+			    <posx>1000</posx>
+			    <posy>0</posy>
+                <width>900</width>
+                <height>142</height>
+                <align>center</align>
+                <texturefocus>-</texturefocus>
+                <textcolor>TopBarIcon</textcolor>
+                <focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <onright>9700</onright>
+                <ondown>9700</ondown>
+                <onleft>9700</onleft>
+                <onup>9700</onup>
+            </control>
+            <control type="grouplist" id="9700">
+                <posx>1000</posx>
+                <posy>64</posy>
+                <itemgap>-200</itemgap>
+                <orientation>horizontal</orientation>
+                <onleft>10</onleft>
+                <onup>12</onup>
+                <onright>9700</onright>
+                <control type="button" id="11">
+                    <width>334</width>
+                    <height>142</height>
+                    <label>1024</label>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+                </control>
+        
+                <control type="button" id="13">
+                    <width>334</width>
+                    <height>142</height>
+                    <label>15019</label>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+                </control>
+            
+                <control type="button" id="14">
+                    <width>334</width>
+                    <height>142</height>
+                    <label>117</label>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+                </control>
+                <control type="button" id="18">
+                    <width>334</width>
+                    <height>142</height>
+                    <label>186</label>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+                </control>
+                <control type="button" id="19">
+                    <width>334</width>
+                    <height>142</height>
+                    <label>222</label>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+                </control>
+            </control>
+
+        </control>
+	</controls>
+       
+</window>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+    <include name="GlobalOverlay">
+	</include>
+	
+	<include name="GlobalVignette">
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture colordiffuse="9F000000">common/white.png</texture>
+		</control>
+	</include>
+
+    <variable name="GlobalFanart-Movies">
+        <value condition="IntegerGreaterThan(System.Time(ss),48)">$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</value>
+        <value condition="IntegerGreaterThan(System.Time(ss),36)">$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</value>
+        <value condition="IntegerGreaterThan(System.Time(ss),24)">$INFO[Window(home).Property(RandomMovie.8.Art(fanart))]</value>
+        <value condition="IntegerGreaterThan(System.Time(ss),12)">$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</value>
+        <value>$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</value>
+    </variable>
+    
+    <variable name="GlobalFanart">
+        <value condition="Window.IsVisible(weather)">$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather/,]</value>
+        <value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
+        <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>
+        <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+        <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
+        <value condition="Window.IsVisible(home)">$VAR[GlobalFanart-Movies]</value>
+        <value>common/white.png</value>
+    </variable>
+    
+	<include name="GlobalBackground">
+		<control type="group">
+		    <control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture colordiffuse="ff000000">common/white.png</texture>
+			</control>
+			<control type="multiimage">
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>800</fadetime>
+				<timeperimage>5000</timeperimage>
+				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
+				<visible>!Player.HasVideo</visible>
+                <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+                <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+			</control>
+			<control type="videowindow">
+				<include>Dimensions_Fullscreen</include>
+			</control>
+			<include>GlobalVignette</include>
+		</control>
+		<control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="LightGray">common/white.png</texture>
+            <visible>!Window.IsActive(home)</visible>
+            <animation effect="fade" end="80" condition="true">Conditional</animation>
+        </control>		
+	</include>
+	
+</includes>

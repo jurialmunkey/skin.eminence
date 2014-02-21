@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	
+    <!----------------->
+    <!-- HEADER VARS -->
+    <!----------------->
+    <variable name="TopBarMainLabel">
+        <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">DarkGray</value>
+	    <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">MainLabel</value>
+	    <value>DarkGray</value>
+	</variable>
+	<variable name="TopBarSubLabel">
+	    <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">DarkGray-NF</value>
+	    <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">SubLabel</value>
+	    <value>DarkGray-NF</value>
+	</variable>
+    
+    <variable name="MainHeaderLabel">
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)">$LOCALIZE[283]</value>
+        <value condition="Player.HasAudio">$INFO[Player.Title]</value>
+        <value condition="Player.HasVideo + !VideoPlayer.Content(livetv)">$INFO[Player.Title]</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,  ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="Player.HasAudio">$INFO[Player.Artist]</value>
+        <value>$LOCALIZE[15100]</value>
+	</variable>
+
+	<variable name="MainHeaderSubLabel">
+	    <value condition="Window.IsVisible(script-globalsearch-main.xml)">$INFO[Control.GetLabel(110),[COLOR=Highlight],[/COLOR] $LOCALIZE[20342]    ]$INFO[Control.GetLabel(120),[COLOR=Highlight],[/COLOR] $LOCALIZE[20343]    ]$INFO[Control.GetLabel(130),[COLOR=Highlight],[/COLOR] $LOCALIZE[33054]    ]$INFO[Control.GetLabel(140),[COLOR=Highlight],[/COLOR] $LOCALIZE[20360]    ]$INFO[Control.GetLabel(150),[COLOR=Highlight],[/COLOR] $LOCALIZE[203489]    ]$INFO[Control.GetLabel(160),[COLOR=Highlight],[/COLOR] $LOCALIZE[133]    ]$INFO[Control.GetLabel(170),[COLOR=Highlight],[/COLOR] $LOCALIZE[132]    ]$INFO[Control.GetLabel(180),[COLOR=Highlight],[/COLOR] $LOCALIZE[134]    ]</value>
+	    <value condition="Player.HasAudio">[COLOR=Highlight]$INFO[MusicPlayer.Artist,,  ][/COLOR]$INFO[Player.Time,, / ]$INFO[Player.Duration]</value>
+	    <value condition="VideoPlayer.Content(musicvideos)">[COLOR=Highlight]$INFO[VideoPlayer.Artist,,  ][/COLOR]$INFO[Player.Time,, / ]$INFO[Player.Duration]</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(episodes)">[COLOR=Highlight]$INFO[VideoPlayer.TvShowTitle]$INFO[VideoPlayer.Season, ,]$INFO[VideoPlayer.Episode,x,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
+        <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
+        <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20343]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
+    </variable>
+    
+    <variable name="MainHeaderIcon">
+        <value condition="Player.HasAudio + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/songs.png</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(livetv) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/livetv.png</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(movies) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/film.png</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(episodes) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/tv.png</value>
+        <value condition="Player.HasVideo + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/eye.png</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">special://skin/extras/icons/film.png</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">special://skin/extras/icons/tv.png</value>
+        <value condition="Window.IsVisible(MyPVR.xml)">special://skin/extras/icons/livetv.png</value>
+        <value condition="Window.IsVisible(MyMusicNav.xml)">special://skin/extras/icons/songs.png</value>
+        <value condition="Window.IsVisible(MyPics.xml)">special://skin/extras/icons/pictures.png</value>
+        <value condition="Window.IsVisible(MyPrograms.xml)">special://skin/extras/icons/addons.png</value>
+        <value condition="Window.IsVisible(weather)">special://skin/extras/icons/sun.png</value>
+        <value condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">special://skin/extras/icons/settings.png</value>
+        <value>special://skin/extras/icons/home.png</value>
+        
+    </variable>
+    
+    <variable name="IconHeader">
+        <value condition="Player.HasAudio + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">$VAR[PlayerStatus]</value>
+        <value condition="Player.HasVideo + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">$VAR[PlayerStatus]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">$LOCALIZE[20343]</value>
+        <value condition="Window.IsVisible(MyPVR.xml)">$LOCALIZE[31104]</value>
+        <value condition="Window.IsVisible(MyMusicNav.xml)">$LOCALIZE[2]</value>
+        <value condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">$LOCALIZE[5]</value>
+        <value condition="Window.IsVisible(weather)">$LOCALIZE[8]</value>
+        <value condition="Window.IsVisible(MyPics.xml)">$LOCALIZE[1]</value>
+        <value condition="Window.IsVisible(MyPrograms.xml)">$LOCALIZE[0]</value>
+        <value>$LOCALIZE[10000]</value>
+	</variable>
+    
+    <include name="GlobalLeftHeader">
+        <control type="group" description="Left Side Header">
+            <control type="image">
+                <posy>18</posy>
+                <posx>-64</posx>
+                <width>300</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+
+            <control type="image">
+                <posy>10</posy>
+                <posx>30</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>$VAR[MainHeaderIcon]</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            
+            <control type="label">
+                <posx>0</posx>
+                <posy>115</posy>
+                <width>184</width>
+                <aligny>top</aligny>
+                <font>Font-Sublabel</font>
+                <align>center</align>
+                <textcolor>TopBarIcon</textcolor>
+                <label>$VAR[IconHeader]</label>
+            </control>
+        </control>
+    </include>
+    <include name="GlobalTopBar">
+        <control type="group" description="Left Side Header">
+            <animation type="Visible">
+                <effect type="fade" start="0" end="100" time="200"/>
+                <effect type="slide" start="0,-80" end="0" time="200"/>
+            </animation>
+            <animation type="Hidden">
+                <effect type="fade" end="0" start="100" time="200"/>
+                <effect type="slide" end="0,-80" start="0" time="200"/>
+            </animation>
+            <control type="image">
+                <posy>18</posy>
+                <posx>-64</posx>
+                <width>300</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+
+            <control type="image">
+                <posy>10</posy>
+                <posx>30</posx>
+                <width>128</width>
+                <height>128</height>	
+                <texture>$VAR[MainHeaderIcon]</texture>
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
+            
+            <control type="label">
+                <posx>0</posx>
+                <posy>115</posy>
+                <width>184</width>
+                <aligny>top</aligny>
+                <font>Font-Sublabel</font>
+                <align>center</align>
+                <textcolor>TopBarIcon</textcolor>
+                <label>$VAR[IconHeader]</label>
+            </control>
+        </control>
+        <control type="group" description="Main Header">
+            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
+            <visible>!ControlGroup(9000).HasFocus()</visible>
+            <include>Animation.HeaderDialog</include>
+            <control type="label">
+                <posx>245</posx>
+                <posy>25</posy>
+                <width>1200</width>
+                <height>100</height>
+                <font>Font-Header</font>
+                <label>$VAR[MainHeaderLabel]</label>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarMainLabel]</textcolor>
+            </control>
+            <control type="label">
+                <posx>245</posx>
+                <posy>115</posy>
+                <width>1200</width>
+                <font>Font-Sublabel</font>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$VAR[MainHeaderSubLabel]</label>
+            </control>
+            <control type="group">
+                <posx>400r</posx>
+                <visible>!Window.IsActive(DialogExtendedProgressBar.xml)</visible>
+                <include>Animation.HeaderDialog</include>
+                <control type="group">
+                    <control type="label">
+                        <posx>272</posx>
+                        <posy>27</posy>
+                        <width>100</width>
+                        <height>100</height>
+                        <font>Font-Weather</font>
+                        <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <label> [B]$VAR[WeatherLabel][/B]</label>
+                    </control>
+                    <control type="label">
+                        <posx>268</posx>
+                        <posy>115</posy>
+                        <width>128</width>
+                        <height>100</height>
+                        <aligny>top</aligny>
+                        <font>Font-Sublabel</font>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <align>center</align>
+                        <aligny>top</aligny>
+                        <label>$INFO[Weather.Temperature]</label>
+                    </control>
+                </control>
+                <control type="label">
+                    <posx>220</posx>
+                    <posy>25</posy>
+                    <width>300</width>
+                    <height>100</height>
+                    <font>Font-Header</font>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <label>$INFO[System.Time(hh:mm)]</label>
+                    <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                </control>
+                <control type="label">
+                    <posx>270</posx>
+                    <posy>71</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <aligny>top</aligny>
+                    <font>Font-Sublabel</font>
+                    <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                    <align>right</align>
+                    <label>$INFO[System.Time(xx)]</label>
+                </control>
+                <control type="label">
+                    <posx>270</posx>
+                    <posy>115</posy>
+                    <width>500</width>
+                    <height>100</height>
+                    <aligny>top</aligny>
+                    <font>Font-Sublabel</font>
+                    <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                    <align>right</align>
+                    <label>$INFO[System.Date(DDD)]$COMMA $INFO[System.Date(dd MMM yyyy)]</label>
+                </control>
+            </control>   
+        </control>
+        
+    </include>
+	
+	
+	
+    
+</includes>

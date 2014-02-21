@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+	<color name="White">FFFFFFFF</color>
+	
+	<!-- Highlight Colors -->
+	<color name="Blue">FF33b5e5</color>
+	<color name="Highlight">FF85b503</color>
+	<color name="Keyboard">FFe533b5</color>
+	
+	<!-- Main Colors -->
+	<color name="Selected">ff404040</color>
+	<color name="PosterBorder">3E000000</color>
+	<color name="LightGray">FFededed</color>
+	<color name="DarkerGray">ff1f1f1f</color>
+	<color name="DarkGray">ff474747</color>
+	<color name="DarkGray-NF">bf474747</color>
+	<color name="Disabled">3f474747</color>
+</colors>

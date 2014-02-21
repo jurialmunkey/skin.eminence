@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+	<include name="View_51_Poster">
+	
+        <control type="group">
+            <visible>Control.IsVisible(51)</visible>
+            <include>Animation.ViewChange</include>
+            <control type="list" id="51">
+                <posx>18</posx>
+                <posy>210</posy>
+                <width>1458</width>
+                <height>690</height>
+                <onleft>51</onleft>
+                <onright>51</onright>
+                <onup>9500</onup>
+                <include>DefOnBack</include>
+                <ondown>60</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="Posters">list</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <orientation>horizontal</orientation>
+                <focusposition>1</focusposition>
+                <movement>1</movement>
+
+                <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
+                    <!-- Normal -->
+                    <control type="group">
+                        <visible>[!Container.Content(artists) + !Container.Content(episodes)] | stringcompare(ListItem.Label,..)</visible>
+                        <control type="image">
+                            <height>690</height>
+                            <width>444</width>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>
+         
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <height>607</height>
+                            <width>422</width>
+                            <fadetime>200</fadetime>
+                            <texture background="true">$VAR[PosterImage]</texture>
+                            <aspectratio aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>22</posx>
+                            <posy>618</posy>
+                            <height>68</height>
+                            <width>408</width>
+                            <align>left</align>
+                            <font>Font-Button</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>422</posx>
+                            <posy>618</posy>
+                            <height>68</height>
+                            <width>408</width>
+                            <align>right</align>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+                    <!-- Episodes -->
+                    <control type="group">
+                        <visible>[Container.Content(artists) | Container.Content(episodes)] + !stringcompare(ListItem.Label,..)</visible>
+                        <control type="image">
+                            <height>690</height>
+                            <width>444</width>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>422</width>
+                            <height>237</height>
+                            <texture background="true">$VAR[FanartImage]</texture>
+                            <aspectratio aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="label">
+                            <posx>22</posx>
+                            <posy>254</posy>
+                            <height>68</height>
+                            <width>400</width>
+                            <textcolor>Selected</textcolor>
+                            <align>left</align>
+                            <font>Font-ListHeader</font>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>320</posy>
+                            <height>300</height>
+                            <width>400</width>
+                            <textcolor>Selected</textcolor>
+                            <align>justify</align>
+                            <font>Font-ListInfo</font>
+                            <label>$VAR[MusicPlot]</label>
+                            <autoscroll>false</autoscroll>
+                        </control>
+                        <control type="label">
+                            <posx>222</posx>
+                            <posy>618</posy>
+                            <height>68</height>
+                            <width>408</width>
+                            <textcolor>Selected</textcolor>
+                            <align>center</align>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[ExtraInfo]</label>
+                        </control>
+                    </control>
+
+                </itemlayout>
+                <itemlayout width="486" height="690" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                    <!-- Normal -->
+                    <control type="group">
+                        <control type="image">
+                            <height>690</height>
+                            <width>444</width>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>422</width>
+                            <height>422</height>
+                            <texture background="true">$VAR[PosterImage]</texture>
+                            <aspectratio aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>470</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-Button</font>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>570</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-ListInfo</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+
+                </itemlayout>
+
+                <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
+                    <!-- NORMAL -->
+                    <control type="group">
+                        <visible>[!Container.Content(episodes) + !Container.Content(artists)] | stringcompare(ListItem.Label,..)</visible>
+                        <control type="group">
+                            <visible>Control.HasFocus(51)</visible>
+                            <control type="image">
+                                <height>690</height>
+                                <width>444</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>11</posx>
+                                <posy>11</posy>
+                                <height>607</height>
+                                <width>422</width>
+                                <texture background="true">$VAR[PosterImage]</texture>
+                                <aspectratio aligny="top">scale</aspectratio>
+                            </control>
+                            <control type="label">
+                                <posx>22</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <align>left</align>
+                                <textcolor>Selected</textcolor>
+                                <font>Font-Button</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>422</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <align>right</align>
+                                <textcolor>Selected</textcolor>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.Label2]</label>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>!Control.HasFocus(51)</visible>
+                            <control type="image">
+                                <height>690</height>
+                                <width>444</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            
+                            </control>
+                            <control type="image">
+                                <posx>11</posx>
+                                <posy>11</posy>
+                                <height>607</height>
+                                <width>422</width>
+                                <texture background="true">$VAR[PosterImage]</texture>
+                                <aspectratio aligny="top">scale</aspectratio>
+                            </control>
+                            <control type="label">
+                                <posx>22</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <align>left</align>
+                                <font>Font-Button</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="label">
+                                <posx>422</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.Label2]</label>
+                            </control>
+                        </control>
+                    </control>
+                    
+                    <!-- Episodes -->
+                    <control type="group">
+                        <visible>[Container.Content(episodes) | Container.Content(artists)] + !stringcompare(ListItem.Label,..)</visible>
+                        <control type="group">
+                            <visible>Control.HasFocus(51)</visible>
+                            <control type="image">
+                                <height>690</height>
+                                <width>444</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>11</posx>
+                                <posy>11</posy>
+                                <width>422</width>
+                                <height>237</height>
+                                <texture background="true">$VAR[FanartImage]</texture>
+                                <aspectratio aligny="top">scale</aspectratio>
+                            </control>
+                            <control type="label">
+                                <posx>22</posx>
+                                <posy>254</posy>
+                                <height>68</height>
+                                <width>400</width>
+                                <textcolor>Selected</textcolor>
+                                <align>left</align>
+                                <font>Font-ListHeader</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>22</posx>
+                                <posy>320</posy>
+                                <height>300</height>
+                                <width>400</width>
+                                <textcolor>Selected</textcolor>
+                                <align>justify</align>
+                                <font>Font-ListInfo</font>
+                                <label>$VAR[MusicPlot]</label>
+                            </control>
+                            <control type="label">
+                                <posx>222</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <textcolor>Selected</textcolor>
+                                <align>center</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$VAR[ExtraInfo]</label>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>!Control.HasFocus(51)</visible>
+                            <control type="image">
+                                <height>690</height>
+                                <width>444</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            
+                            </control>
+                            <control type="image">
+                                <posx>11</posx>
+                                <posy>11</posy>
+                                <width>422</width>
+                                <height>237</height>
+                                <texture background="true">$VAR[FanartImage]</texture>
+                                <aspectratio aligny="top">scale</aspectratio>
+                            </control>
+                            <control type="label">
+                                <posx>22</posx>
+                                <posy>254</posy>
+                                <height>68</height>
+                                <width>400</width>
+                                <textcolor>Selected</textcolor>
+                                <align>left</align>
+                                <font>Font-ListHeader</font>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>22</posx>
+                                <posy>320</posy>
+                                <height>300</height>
+                                <width>400</width>
+                                <textcolor>Selected</textcolor>
+                                <align>justify</align>
+                                <font>Font-ListInfo</font>
+                                <label>$VAR[MusicPlot]</label>
+                            </control>
+                            <control type="label">
+                                <posx>222</posx>
+                                <posy>618</posy>
+                                <height>68</height>
+                                <width>408</width>
+                                <textcolor>Selected</textcolor>
+                                <align>center</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$VAR[ExtraInfo]</label>
+                            </control>
+                        </control>
+
+                    </control>
+                </focusedlayout>
+                
+                <focusedlayout width="486" height="690" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                    <!-- Focused -->
+                    <control type="group">
+                        <visible>Control.HasFocus(51)</visible>
+                        <control type="image">
+                            <height>690</height>
+                            <width>444</width>
+                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>422</width>
+                            <height>422</height>
+                            <texture background="true">$VAR[PosterImage]</texture>
+                            <aspectratio aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>470</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-Button</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>570</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-ListInfo</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+                    <!-- Unfocused -->
+                    <control type="group">
+                        <visible>!Control.HasFocus(51)</visible>
+                        <control type="image">
+                            <height>690</height>
+                            <width>444</width>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>422</width>
+                            <height>422</height>
+                            <texture background="true">$VAR[PosterImage]</texture>
+                            <aspectratio aligny="top">scale</aspectratio>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>470</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-Button</font>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>22</posx>
+                            <posy>570</posy>
+                            <height>95</height>
+                            <width>400</width>
+                            <align>center</align>
+                            <font>Font-ListInfo</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                    </control>
+
+                </focusedlayout>
+                
+
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>18</posx>
+                <posy>918</posy>
+                <width>1416</width>
+                <height>8</height>
+                <onup>51</onup>
+                <ondown>9000</ondown>
+                <orientation>horizontal</orientation>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+            </control>
+        </control>
+
+	</include>
+
+</includes>

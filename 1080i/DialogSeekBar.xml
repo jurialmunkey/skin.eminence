@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="115">
+	<defaultcontrol always="true">901</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)]</visible>
+    <zorder>2</zorder>
+	<controls>
+        <control type="group">
+		    <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
+		    <visible>!Window.IsActive(DialogFullScreenInfo.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo]</visible>
+            <include>GlobalVignette</include>
+        </control>
+        
+		<control type="group" description="MusicVis">
+		    <posx>251</posx>
+			<posy>280</posy>
+			<animation effect="slide" start="0" end="0,-32" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
+			<visible>Window.IsVisible(visualisation) + [Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)</visible>
+            <include>Animation.SlideOpen.LeftToRight</include>
+            <control type="image">
+                <width>1416</width>
+                <height>690</height>
+                <texture colordiffuse="LightGray" border="2">common/white.png</texture>
+                <animation effect="fade" end="75" condition="true">Conditional</animation>
+                <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
+                <bordersize>1</bordersize>
+            </control>
+
+
+            <control type="image">
+                <posx>22</posx>
+                <posy>22</posy>
+                <width>568</width>
+                <height>568</height>
+                <texture>$INFO[Player.Art(thumb)]</texture>
+                <aspectratio>scale</aspectratio>
+            </control>
+
+            <control type="label">
+                <posx>22</posx>
+                <posy>602</posy>
+                <width>568</width>
+                <align>center</align>
+                <font>Font-Button</font>
+                <label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year,  (,)]</label>
+            </control>
+
+            
+            <control type="label">
+                <posx>634</posx>
+                <posy>11</posy>
+                <width>749</width>
+                <align>left</align>
+                <font>Font-ListHeader</font>
+                <label>$INFO[MusicPlayer.Artist]</label>
+            </control>
+            
+            
+            <control type="textbox">
+                <posx>634</posx>
+                <posy>90</posy>
+                <width>749</width>
+                <height>500</height>
+                <align>justify</align>
+                <font>Font-ListInfo</font>
+                <label>$VAR[MusicOSDPlot]</label>
+            </control>
+            
+            <control type="label">
+                <posx>634</posx>
+                <posy>602</posy>
+                <width>749</width>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <label>[B]$LOCALIZE[209]...  [/B]$INFO[MusicPlayer.offset(1).Title]</label>
+            </control>
+        </control>
+        
+        
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="LightGray">common/white.png</texture>
+            <visible>Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)</visible>
+            <animation effect="fade" end="80" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
+        </control>		
+		<control type="group">
+		    <visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(musicosd) | Window.IsActive(videoosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+		    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
+		    <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+		    <posy>1080</posy>
+		    <animation effect="slide" start="0" end="0,-64" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
+		    <control type="image">
+                <width>1920</width>
+                <height>364</height>	
+                <texture colordiffuse="LightGray">common/white.png</texture>
+                <animation effect="fade" end="90" condition="true">Conditional</animation>
+            </control>
+        
+            <control type="progress" id="23">
+                <description>Progress Bar</description>
+                <posy>-16</posy>
+                <width>1920</width>
+                <height>16</height>
+                <info>Player.Progress</info>
+                <visible>true</visible>
+            </control>
+            
+            <control type="image">
+                <posx>422r</posx>
+                <posy>-193</posy>
+                <width>400</width>
+                <height>155</height>
+                <texture>$VAR[OSDImage]</texture>
+                <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                <visible>!Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+            </control>
+		</control>
+		
+		
+		
+		
+		
+		<control type="group">
+		    <visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+		    <animation type="Visible">
+	            <effect type="slide" start="0,-64" end="0" time="200"/>
+                <effect type="fade" start="0" end="100" time="200"/>
+            </animation>
+		    <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+            <include>GlobalTopBar</include>
+        </control>
+        
+        
+	</controls>
+
+</window>

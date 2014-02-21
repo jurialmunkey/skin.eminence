@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="0">
+	<defaultcontrol always="true">399</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<onload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
+	<controls>
+		<include>GlobalBackground</include>
+        <include>GlobalTopBar</include>
+        <include>Home-Menu</include>
+        <control type="button" id="399">
+            <visible allowhiddenfocus="true">false</visible>
+            <onfocus>$VAR[HomeFocus]</onfocus>
+        </control>
+        
+	</controls>
+
+</window>

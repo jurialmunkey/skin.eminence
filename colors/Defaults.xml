@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    
+    <!-- System Colors -->
+	<color name="Black">FF000000</color>
+	<color name="Pink">FFe533b5</color>
+	<color name="Green">FF85b503</color>
+	
+	<!-- Border Highlight -->
+	<color name="White">ffA9A9A9</color>
+		
+	<!-- Home Header And Panels -->
+	<color name="MainLabel">FFededed</color>
+	<color name="SubLabel">BFededed</color>
+	<color name="TopBar">ff474747</color>
+	<color name="TopBarIcon">ffededed</color>
+	<color name="TopBarDisabled">2fededed</color>
+	
+	<!-- Highlight Colors -->
+	<color name="Blue">FF85b503</color>
+	<color name="Highlight">FF33b5e5</color>
+	<color name="Keyboard">FFe533b5</color>
+	
+	<!-- Main Colors -->
+	<color name="Selected">fff0f0f0</color>
+	<color name="PosterBorder">3e888888</color>
+	<color name="LightGray">ff181818</color>
+	<color name="DarkerGray">ffffffff</color>
+	<color name="DarkGray">ffdddddd</color>
+	<color name="DarkGray-NF">bfdddddd</color>
+	<color name="Disabled">3fededed</color>
+</colors>

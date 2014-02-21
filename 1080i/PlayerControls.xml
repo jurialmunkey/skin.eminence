@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="dialog" id="400">
+	<defaultcontrol always="true">403</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+	    <control type="button" id="403">
+	        <visible allowhiddenfocus="true">false</visible>
+	        <onfocus>SetFocus(301)</onfocus>
+	    </control>
+	    <include>Home-Menu</include>
+	</controls>
+</window>

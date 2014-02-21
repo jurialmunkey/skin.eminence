@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="146">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<include>Animation.SlideOpen.Left</include>
+	<controls>
+
+		<control type="group">
+		    <posx>233</posx>
+		    <posy>70</posy>
+		    <include>DialogVisibility</include>
+		    <control type="group" description="Poster">
+                <posx>18</posx>
+                <posy>210</posy>
+                <control type="image">
+                    <width>467</width>
+                    <height>690</height>
+                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>445</width>
+                    <height>445</height>
+                    <fadetime>200</fadetime>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>11</posx>
+                    <posy>456</posy>
+                    <width>445</width>
+                    <height>223</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>Font-ListInfo</font>
+                    <label>$INFO[ListItem.Label,[B],[/B]]$INFO[ListItem.Label2,[CR][CR],]</label>
+                    <textcolor>Selected</textcolor>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+            </control>
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>210</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>20037</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>560</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.ID)]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>21863</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>573</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.FileNameAndPath]</label>
+                    <scroll>true</scroll>
+                </control>
+            </control>
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>210</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>467</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>126</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.Status)]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>630</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+		        <control type="label">
+                    <width>448</width>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <height>32</height>
+                    <font>Font-Button</font>
+                    <label>31101</label>
+                </control>
+                <control type="textbox">
+                    <width>917</width>
+                    <align>justify</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <height>160</height>
+                    <label fallback="416">$INFO[ListItem.Property(Addon.Description)]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+            </control>
+            <control type="list" id="9000">
+                <posx>509</posx>
+		        <posy>835</posy>
+                <width>920</width>
+                <height>48</height>
+                <itemgap>0</itemgap>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <itemlayout width="230" height="48">
+                    <control type="image">
+                        <width>48</width>
+                        <height>48</height>
+                        <texture colordiffuse="DarkGray-NF">$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>64</posx>
+                        <width>150</width>
+                        <height>48</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>DarkGray-NF</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="230" height="48">
+                    <control type="image">
+                        <width>48</width>
+                        <height>48</height>
+                        <texture colordiffuse="Highlight">$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>64</posx>
+                        <width>150</width>
+                        <height>48</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>$INFO[Control.GetLabel(6)]</label>
+                        <icon>osd/install.png</icon>
+                        <onclick>SendClick(146,6)</onclick>
+                    </item>
+                    <item id="2">
+                        <label>$INFO[Control.GetLabel(7)]</label>
+                        <icon>osd/enable.png</icon>
+                        <onclick>SendClick(146,7)</onclick>
+                    </item>
+                    
+                    <item id="3">
+                        <label>5</label>
+                        <icon>osd/settings.png</icon>
+                        <onclick>SendClick(146,9)</onclick>
+                    </item>
+                    
+                    <item id="4">
+                        <label>$INFO[Control.GetLabel(8)]</label>
+                        <icon>osd/refresh.png</icon>
+                        <onclick>SendClick(146,8)</onclick>
+                    </item>
+                    
+                    <item id="5">
+                        <label>31136</label>
+                        <icon>osd/changelog.png</icon>
+                        <onclick>SendClick(146,10)</onclick>
+                    </item>
+
+                </content>
+
+            </control>
+        </control>
+
+        <control type="button" id="6">
+            <description>Install/Uninstall Addon button</description>
+            <visible allowhiddenfocus="true">false</visible>
+            <label>24022</label>
+        </control>
+
+        <control type="button" id="7">
+            <description>Enable/Disable Addon button</description>
+            <visible allowhiddenfocus="true">false</visible>
+            <label>24021</label>	
+        </control>
+
+        <control type="button" id="9">
+            <description>Addon Settings</description>
+            <visible allowhiddenfocus="true">false</visible>
+            <label>24020</label>
+        </control>
+
+        <control type="button" id="8">
+            <description>Update Addon button</description>
+            <visible allowhiddenfocus="true">false</visible>
+            <label>24069</label>
+        </control>
+
+        <control type="button" id="10">
+            <description>Changelog button</description>
+            <visible allowhiddenfocus="true">false</visible>
+            <label>24036</label>
+        </control>
+	</controls>
+
+</window>

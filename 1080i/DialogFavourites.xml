@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="dialog" id="134">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+            <include>Animation.SlideOpen.Up</include>
+            <include>Animation.FadeOut</include>
+			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+
+            <control type="image">
+                <posy>210</posy>
+				<width>1920</width>
+				<height>494</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+
+			<control type="label" id="1">
+			    <posy>245</posy>
+				<description>Header Label</description>
+				<textcolor>TopBarIcon</textcolor>
+				<include>DefSettingsHeader</include>
+				<label>1036</label>
+			</control>
+
+			<control type="panel" id="450">
+				<posx>64</posx>
+                <posy>310</posy>
+                <width>1440</width>
+				<height>390</height>
+				<onup>450</onup>
+				<onleft>413</onleft>
+				<onright>413</onright>
+				<ondown>450</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout height="130" width="480">
+                    <control type="image">
+						<posx>11</posx>
+						<width>113</width>
+						<height>113</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="130" width="480">
+            
+					<control type="image">
+						<posx>11</posx>
+						<width>113</width>
+						<height>113</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(450)</visible>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(450)</visible>
+					</control>
+				</focusedlayout>
+
+			</control>
+			
+			<control type="image">
+				<posx>1522</posx>
+                <posy>310</posy>
+                <width>374</width>
+                <height>374</height>
+				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
+				<aspectratio align="right" aligny="top">keep</aspectratio>
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

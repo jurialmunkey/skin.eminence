@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+
+		<include>GlobalBackground</include>
+		
+        <control type="group">   
+            <include>DialogVisibility</include>
+            <include>Animation.SlideOpen.Left</include> 
+            <animation effect="fade" start="0" end="100" time="250">WindowOpen</animation>
+            <animation effect="fade" end="0" start="100" time="250">WindowClose</animation>  
+            <control type="label">
+                <include>DefSettingsHeader</include>
+                <label>$LOCALIZE[20077]</label>
+            </control>          
+            <control type="grouplist" id="3">
+                <description>Button Area</description>
+                <posx>1500</posx>
+                <posy>665</posy>
+                <width>450</width>
+                <height>351</height>
+                <onleft>5</onleft>
+                <onright>5</onright>
+                <onup>3</onup>
+                <ondown>3</ondown>
+                <orientation>vertical</orientation>
+                <scrolltime>0</scrolltime>
+                <control type="button" id="31">
+                    <label>128</label>
+                    <align>left</align>
+                    <font>Font-Context</font>
+                    <height>66</height>
+                </control>
+                <control type="button" id="32">
+                    <label>10000</label>
+                    <align>left</align>
+                    <font>Font-Context</font>
+                    <height>66</height>
+                </control>
+            </control>
+        </control>
+
+        <control type="group">   
+            <include>DialogVisibility</include>
+            <include>Animation.SlideOpen.Right</include> 
+            <animation effect="fade" start="0" end="100" time="250">WindowOpen</animation>
+            <animation effect="fade" end="0" start="100" time="250">WindowClose</animation> 
+            <include>DefSettingsSeparator</include>   
+            <control type="button" id="20">
+                <posx>1508</posx>
+                <posy>273</posy>
+                <align>left</align>
+                <font>Font-SettingsCategory</font>
+                <angle>270</angle>
+                <textcolor>Disabled</textcolor>
+                <label>$LOCALIZE[20077]</label>
+                <height>135</height>
+                <onup>5</onup>
+                <ondown>3</ondown>
+                <onright>3</onright>
+                <onleft>5</onleft>
+                <focusedcolor>Highlight</focusedcolor>
+                <texturefocus>-</texturefocus>
+            </control>   
+            <control type="grouplist" id="5">
+                <description>Control Area</description>
+                <posx>64</posx>
+                <posy>320</posy>
+                <width>1438</width>
+                <height>687</height>
+                <itemgap>3</itemgap>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <onup>5</onup>
+                <ondown>5</ondown>
+                <orientation>vertical</orientation>
+                <control type="radiobutton" id="101">
+                    <label>654</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
+                    <selected>!Skin.HasSetting(HideDebugInfo)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="radiobutton" id="102">
+                    <label>31137</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(skin.init)</onclick>
+                    <selected>!Skin.HasSetting(skin.init)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="button" id="103">
+                    <label>31138</label>
+                    <width>1438</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.SetPath(weather.fanart)</onclick>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="radiobutton" id="104">
+                    <label>31139</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
+                    <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="radiobutton" id="105">
+                    <label>$LOCALIZE[31140]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <disabledcolor>DarkGray-NF</disabledcolor>
+                    <onclick>Skin.ToggleSetting(OSDVisualisation.ShowFanart)</onclick>
+                    <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
+                    <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(105)">Conditional</animation>
+                </control>
+                <control type="button" id="106">
+                    <label>31141</label>
+                    <label2>$VAR[MovieWidgetLabel]</label2>
+                    <width>1438</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(movie.widget.recommended)</onclick>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="button" id="107">
+                    <label>31142</label>
+                    <label2>$VAR[TvShowWidgetLabel]</label2>
+                    <width>1438</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(tvshow.widget.recommended)</onclick>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                <control type="radiobutton" id="108">
+                    <label>13305</label>
+                    <width>31139</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(disable.rss)</onclick>
+                    <selected>!Skin.HasSetting(disable.rss)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                </control>
+                
+                
+                <!----------------->
+                <!-- Home Window -->
+                <!----------------->
+                <control type="radiobutton" id="201">
+                    <label>$INFO[Skin.String(home.301.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.301.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.301.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="202">
+                    <label>$INFO[Skin.String(home.302.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.302.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.302.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="203">
+                    <label>$INFO[Skin.String(home.303.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.303.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.303.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="204">
+                    <label>$INFO[Skin.String(home.304.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.304.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.304.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="205">
+                    <label>$INFO[Skin.String(home.305.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.305.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.305.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="206">
+                    <label>$INFO[Skin.String(home.306.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.306.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.306.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="207">
+                    <label>$INFO[Skin.String(home.307.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.307.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.307.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="208">
+                    <label>$INFO[Skin.String(home.308.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.308.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.308.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="209">
+                    <label>$INFO[Skin.String(home.309.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.309.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.309.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="210">
+                    <label>$INFO[Skin.String(home.310.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.310.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.310.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="211">
+                    <label>$INFO[Skin.String(home.311.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.311.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.311.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                <control type="radiobutton" id="212">
+                    <label>$INFO[Skin.String(home.312.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.312.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.312.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+                
+                <!------------------------------------------->
+                <!-- Control 313 is Settings so no options -->
+                <!------------------------------------------->
+                
+                <control type="radiobutton" id="214">
+                    <label>$INFO[Skin.String(home.314.label)]</label>
+                    <width>1438</width>
+                    <radioposx>1366</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.314.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                </control>
+            </control>
+        </control>
+
+		<include>GlobalTopBar</include>
+        
+        
+
+	</controls>
+</window>

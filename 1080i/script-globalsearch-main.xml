@@ -1,0 +1,518 @@
+<window type="dialog">
+    <defaultcontrol>198</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <backgroundcolor>0</backgroundcolor>
+    
+    <controls>
+
+        <control type="group">
+            
+            <control type="group" id="100">
+                <include>GlobalBackground</include>	
+                <control type="image">
+                    <include>Dimensions_Fullscreen</include>
+                    <texture>common/white.png</texture>
+                    <colordiffuse>LightGray</colordiffuse>
+                    <animation effect="fade" end="75" condition="true">Conditional</animation>
+                    <include>Animation.FadeIn</include>
+                </control>	
+                <control type="grouplist">
+                    <visible>IsEmpty(Control.GetLabel(190)) + !Window.IsVisible(AddonSettings)</visible>
+                    <animation effect="slide" start="0" end="-1920" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
+                    <posx>251</posx>
+                    <posy>280</posy>
+                    <height>708</height>
+                    <orientation>vertical</orientation>
+                    <itemgap>0</itemgap>
+                
+                    <control type="group" id="119" description="Movies">
+                        <height>354</height>
+                        <control type="label" id="110">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="111">
+                        
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                        
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                        
+                            <include>DefGlobalSearchList</include>
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(111)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(111)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[20342]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                
+                
+                
+                    <control type="group" id="129" description="TVShows">
+                        <height>354</height>
+                        <control type="label" id="120">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="121">
+                        
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                        
+                            <include>DefGlobalSearchList</include>
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(121)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(121)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[20343]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="139" description="Seasons">
+                        <height>354</height>
+                        <control type="label" id="130">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="131">
+                        
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+
+                        
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                        
+                            <include>DefGlobalSearchList</include>
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(131)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(131)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="149" description="Episodes">
+                        <height>354</height>
+                        <control type="label" id="140">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="141">
+                        
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                        
+                            <include>DefGlobalSearchList</include>
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(141)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(141)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[20360]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="159" description="Music Video">
+                        <height>354</height>
+                        <control type="label" id="150">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="151">
+                            <include>DefGlobalSearchList</include>
+                        
+                        
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                        
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(151)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(151)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[20389]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="169" description="Artist">
+                        <height>354</height>
+                        <control type="label" id="160">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="161">
+                            <include>DefGlobalSearchList</include>
+                        
+                        
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                        
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(161)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(161)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[133]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="179" description="Album">
+                        <height>354</height>
+                        <control type="label" id="170">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="171">
+                            <include>DefGlobalSearchList</include>
+                        
+                        
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">121</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                        
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(171)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(171)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[132]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>
+                
+                    <control type="group" id="189" description="Songs">
+                        <height>354</height>
+                        <control type="label" id="180">
+                            <label>-</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="list" id="181">
+                            <include>DefGlobalSearchList</include>
+                            <onup condition="Control.IsVisible(179)">171</onup>
+                            <onup condition="Control.IsVisible(169)">161</onup>
+                            <onup condition="Control.IsVisible(159)">151</onup>
+                            <onup condition="Control.IsVisible(149)">141</onup>
+                            <onup condition="Control.IsVisible(139)">131</onup>
+                            <onup condition="Control.IsVisible(129)">111</onup>
+                            <onup condition="Control.IsVisible(119)">111</onup>
+                            <onup condition="Control.IsVisible(189)">181</onup>
+                        
+                        
+                            <ondown condition="Control.IsVisible(119)">111</ondown>
+                            <ondown condition="Control.IsVisible(129)">121</ondown>
+                            <ondown condition="Control.IsVisible(139)">131</ondown>
+                            <ondown condition="Control.IsVisible(149)">141</ondown>
+                            <ondown condition="Control.IsVisible(159)">151</ondown>
+                            <ondown condition="Control.IsVisible(169)">161</ondown>
+                            <ondown condition="Control.IsVisible(179)">171</ondown>
+                            <ondown condition="Control.IsVisible(189)">181</ondown>
+                        
+                            <focusedlayout width="239" height="354">
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <visible>Control.HasFocus(181)</visible>
+                            </control>
+                            <control type="image">
+                                <height>336</height>
+                                <width>221</width>
+                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <visible>!Control.HasFocus(181)</visible>
+                            </control>
+                            <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                        </control>
+                        <control type="label">
+                            <width>354</width>
+                            <font>Font-ViewCategory</font>
+                            <label>$LOCALIZE[134]</label>
+                            <angle>90</angle>
+                            <animation effect="fade" end="25" condition="true">Conditional</animation>
+                            <animation effect="slide" end="-40,305" condition="true">Conditional</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                        </control>
+                    </control>        
+                </control>
+                <include>GlobalTopBar</include>
+                
+
+
+        </control>
+
+        <control type="button" id="198">
+            <posx>200</posx>
+            <posy>210</posy>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textcolor>Disabled</textcolor>
+            <focusedcolor>Highlight</focusedcolor>
+            <align>left</align>
+            <onright>100</onright>
+            <animation effect="slide" start="0" end="-1920" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
+        </control>
+        <control type="label" id="199">
+            <visible>false</visible>
+        </control>
+        <control type="grouplist">
+            <animation effect="slide" start="0" end="-1920" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
+            <posx>200</posx>
+            <posy>210</posy>
+            <orientation>horizontal</orientation>
+            <control type="label" id="190">
+                <width>auto</width>
+            </control>
+            <control type="label" id="191">
+                <width>auto</width>
+            </control>
+        </control>
+    </control>
+</controls>
+</window>

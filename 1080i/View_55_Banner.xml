@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+	<include name="View_55_Banner">
+	
+        <control type="group">
+            <visible>Control.IsVisible(55)</visible>    
+            <include>Animation.ViewChange</include>            
+                    
+            <control type="panel" id="55">
+                <posx>18</posx>
+                <posy>210</posy>
+                <width>1432</width>
+                <height>708</height>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>55</onup>
+                <ondown>55</ondown>
+                <pagecontrol>60</pagecontrol>
+                <include>DefOnBack</include>
+                <viewtype label="Banner">list</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <orientation>vertical</orientation>
+                <itemlayout width="716" height="236">
+                    <control type="group">
+                        <visible>!Container.Content(episodes)</visible>
+
+                        <control type="image">
+                            <width>700</width>
+                            <height>218</height>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>   
+                     
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>678</width>
+                            <height>125</height>
+                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
+                            <aspectratio aligny="top" align="center">keep</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>678</width>
+                            <height>125</height>
+                            <texture background="true">$VAR[FanartImage]</texture>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
+                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>142</posy>
+                            <align>left</align>
+                            <width>660</width>
+                            <height>41</height>
+                            <font>Font-Button</font>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>142</posy>
+                            <align>right</align>
+                            <width>660</width>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[MusicLabel2]</label>
+                            <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[ListItem.Genre]</label>
+                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>Container.Content(episodes)</visible>
+                        <control type="image">
+                            <width>700</width>
+                            <height>218</height>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>    
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>348</width>
+                            <height>196</height>
+                            <texture background="true">$VAR[FanartImage]</texture>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
+                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                        </control>
+                        <control type="textbox">
+                            <posx>375</posx>
+                            <posy>52</posy>
+                            <width>305</width>
+                            <height>115</height>
+                            <align>left</align>
+                            <font>Font-ListInfo</font>
+                            <label>$INFO[ListItem.Plot]</label>
+                            <autoscroll>false</autoscroll>
+                        </control>
+                        <control type="label">
+                            <posx>375</posx>
+                            <width>305</width>
+                            <align>left</align>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>160</posy>
+                            <align>right</align>
+                            <width>200</width>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+            
+                    
+
+                    </control>
+                    
+                </itemlayout>
+
+                <focusedlayout width="716" height="236">
+                    <control type="group">
+                        <visible>!Container.Content(episodes)</visible>
+                        <control type="image">
+                            <width>700</width>
+                            <height>218</height>
+                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                        </control>    
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>678</width>
+                            <height>125</height>
+                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
+                            <aspectratio aligny="top" align="center">keep</aspectratio>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>678</width>
+                            <height>125</height>
+                            <texture background="true">$VAR[FanartImage]</texture>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
+                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                        </control>
+                        
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>142</posy>
+                            <align>left</align>
+                            <width>660</width>
+                            <height>41</height>
+                            <font>Font-Button</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$VAR[MusicLabel]</label>
+                        </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>142</posy>
+                            <align>right</align>
+                            <width>660</width>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                        
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$VAR[MusicLabel2]</label>
+                            <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <textcolor>Selected</textcolor>
+                            <label>$INFO[ListItem.Genre]</label>
+                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                    </control>
+                    
+                    <!-- Episodes -->
+                    <control type="group">
+                        <visible>Container.Content(episodes)</visible>
+                        <control type="image">
+                            <width>700</width>
+                            <height>218</height>
+                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                        </control>    
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>348</width>
+                            <height>196</height>
+                            <texture background="true">$VAR[FanartImage]</texture>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
+                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                        </control>
+                        <control type="textbox">
+                            <posx>375</posx>
+                            <posy>52</posy>
+                            <width>305</width>
+                            <height>115</height>
+                            <align>left</align>
+                            <textcolor>Selected</textcolor>
+                            <font>Font-ListInfo</font>
+                            <label>$INFO[ListItem.Plot]</label>
+                        </control>
+                        <control type="label">
+                            <posx>375</posx>
+                            <width>305</width>
+                            <scroll>true</scroll>
+                            <align>left</align>
+                            <textcolor>Selected</textcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>160</posy>
+                            <align>right</align>
+                            <width>200</width>
+                            <textcolor>Selected</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+            
+                    
+
+                    </control>
+                </focusedlayout>
+                
+
+            </control>
+            
+            <control type="scrollbar" id="60">
+                <posx>-11</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <onleft>SetFocus(9500)</onleft>
+                <onright>50</onright>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+            </control>
+            
+        </control>
+
+	</include>
+
+</includes>

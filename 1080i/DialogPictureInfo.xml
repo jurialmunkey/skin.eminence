@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="139">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+		    <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeOut</include>
+			
+            <control type="image">
+                <posy>210</posy>
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+			<control type="label" id="20">
+			    <posx>475</posx>
+				<description>Header Label</description>
+				<textcolor>TopBarIcon</textcolor>
+				<include>DefSettingsHeader</include>
+				<label>13406</label>
+                
+			</control>
+
+
+			<control type="list" id="5">
+				<posx>525</posx>
+				<posy>320</posy>
+				<width>870</width>
+				<height>621</height>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>450</onup>
+				<ondown>450</ondown>
+
+				<itemlayout height="69">
+
+					<control type="label">
+						<posx>30</posx>
+						<width>405</width>
+						<info>ListItem.Label</info>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+					<control type="label">
+						<posx>840</posx>
+						<width>405</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69">
+					<control type="label">
+						<posx>30</posx>
+						<width>405</width>
+						<info>ListItem.Label</info>
+						<textcolor>Highlight</textcolor>
+					</control>
+
+					<control type="label">
+						<posx>840</posx>
+						<width>405</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<textcolor>Highlight</textcolor>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

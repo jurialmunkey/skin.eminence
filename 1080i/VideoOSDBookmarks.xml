@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="125">
+	<defaultcontrol always="true">2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<zorder>10</zorder>
+    <controls>
+        <control type="group">
+			<posy>210</posy>
+            <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeOut</include>
+			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+
+            <control type="image">
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+			<control type="label">
+				<description>Settings</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+				<label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31027] - $LOCALIZE[31028] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
+			</control>
+            <control type="panel" id="11">
+				<posx>265</posx>
+				<posy>160</posy>
+				<width>1401</width>
+				<height>550</height>
+				<onleft>2</onleft>
+				<onright>3</onright>
+				<ondown>2</ondown>
+				<onup>2</onup>
+				<scrolltime>200</scrolltime>
+				<viewtype label="536">icon</viewtype>
+				<pagecontrol>-</pagecontrol>
+				<orientation>horizontal</orientation>
+
+				<itemlayout height="225" width="467">
+
+					<control type="image">
+						<width>456</width>
+						<height>213</height>
+						<texture border="3" colordiffuse="PosterBorder">common/border-inner.png</texture>
+					</control>
+
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>434</width>
+						<height>191</height>
+						<info>ListItem.Icon</info>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+					<control type="label">
+						<posx>434</posx>
+						<posy>172</posy>
+						<width>412</width>
+						<height>23</height>
+						<align>right</align>
+						<info>ListItem.Label</info>
+						<textcolor>bfffffff</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="225" width="467">
+
+					<control type="image">
+						<width>456</width>
+						<height>213</height>
+						<texture border="3" colordiffuse="White">common/border-inner.png</texture>
+					</control>
+
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>434</width>
+						<height>191</height>
+						<info>ListItem.Icon</info>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+					<control type="label">
+						<posx>434</posx>
+						<posy>172</posy>
+						<width>412</width>
+						<height>23</height>
+						<align>right</align>
+						<info>ListItem.Label</info>
+						<textcolor>bfffffff</textcolor>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+			
+			<control type="grouplist">
+				<description>Control Area</description>
+				<posx>265</posx>
+				<posy>650</posy>
+				<width>1390</width>
+				<itemgap>3</itemgap>
+				<orientation>horizontal</orientation>
+				<align>center</align>
+				<onup>11</onup>
+				<ondown>11</ondown>
+				<control type="button" id="2">
+					<description>Create Bookmark button</description>
+					<label>294</label>
+					<texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+				</control>
+
+				<control type="button" id="3">
+					<description>Clear Bookmark button</description>
+					<label>296</label>
+					<texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+				</control>
+
+				<control type="button" id="4">
+					<description>Clear Bookmark button</description>
+					<label>20406</label>
+					<texturefocus>-</texturefocus>
+                    <texturenofocus>-</texturenofocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <disabledcolor>TopBarDisabled</disabledcolor>
+					<visible>videoplayer.content(episodes)</visible>
+				</control>
+			</control>
+
+
+		</control>
+    </controls>
+</window>

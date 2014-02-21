@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="3">
+	<defaultcontrol always="true">20</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalBackground</include>
+		<control type="group">
+		    <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeOut</include>
+			
+            <control type="image">
+                <posy>210</posy>
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+
+            <control type="group">
+                <description>Left panel</description>
+                <posx>75</posx>
+                <posy>210</posy>
+
+
+                <control type="label" id="101">
+                    <description>Header Label</description>
+                    <posx>22</posx>
+                    <posy>26</posy>
+                    <width>780</width>
+                    <textcolor>TopBarIcon</textcolor>
+                    <font>Font-SettingsCategory</font>                    
+                    <align>left</align>
+                    <label>-</label>
+                </control>
+
+                <control type="list" id="20">
+                    <description>Left File List</description>
+                    <posx>15</posx>
+                    <posy>96</posy>
+                    <width>780</width>
+                    <height>552</height>
+                    <onleft>21</onleft>
+                    <onright>21</onright>
+                    <onup>20</onup>
+                    <ondown>20</ondown>
+
+                    <itemlayout height="69" width="780">
+
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>720</width>
+                            <align>left</align>
+                            <info>ListItem.Label</info>
+                            <textcolor>TopBarIcon</textcolor>
+                        </control>
+
+                        <control type="label">
+                            <posx>750</posx>
+                            <width>150</width>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <textcolor>TopBarIcon</textcolor>
+                        </control>
+
+                    </itemlayout>
+
+                    <focusedlayout height="69" width="780">
+
+                        <control type="group">
+                            <visible>Control.HasFocus(20)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Highlight</textcolor>
+                            </control>
+
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Highlight</textcolor>
+                            </control>
+                        </control>
+                        
+                        <control type="group">
+                            <visible>!Control.HasFocus(20)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Blue</textcolor>
+                            </control>
+
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Blue</textcolor>
+                            </control>
+                        </control>
+
+                    </focusedlayout>
+
+                </control>
+
+                <control type="label" id="12">
+                    <description>Header Label</description>
+                    <posx>22</posx>
+                    <posy>680</posy>
+                    <width>480</width>
+                    <align>left</align>
+                    <label>-</label>
+                </control>
+
+            </control>
+
+            <control type="group">
+                <description>Right panel</description>
+                <posx>1035</posx>
+                <posy>210</posy>
+
+
+                <control type="label" id="102">
+                    <description>Header Label</description>
+                    
+                    <posx>22</posx>
+                    <posy>26</posy>
+                    <width>780</width>
+                    <textcolor>TopBarIcon</textcolor>
+                    <font>Font-SettingsCategory</font>                    
+                    <align>left</align>
+                    <label>-</label>
+                </control>
+
+                <control type="list" id="21">
+                    <description>Right File List</description>
+                    <posx>15</posx>
+                    <posy>96</posy>
+                    <width>780</width>
+                    <height>552</height>
+                    <onleft>20</onleft>
+                    <onright>20</onright>
+                    <onup>21</onup>
+                    <ondown>21</ondown>
+
+                    <itemlayout height="69" width="780">
+
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>720</width>
+                            <align>left</align>
+                            <info>ListItem.Label</info>
+                            <textcolor>TopBarIcon</textcolor>
+                        </control>
+
+                        <control type="label">
+                            <posx>750</posx>
+                            <width>150</width>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <textcolor>TopBarIcon</textcolor>
+                        </control>
+
+                    </itemlayout>
+
+                    <focusedlayout height="69" width="780">
+
+                        <control type="group">
+                            <visible>Control.HasFocus(21)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Highlight</textcolor>
+                            </control>
+
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Highlight</textcolor>
+                            </control>
+                        </control>
+                        
+                        <control type="group">
+                            <visible>!Control.HasFocus(21)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Blue</textcolor>
+                            </control>
+
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Blue</textcolor>
+                            </control>
+                        </control>
+
+                    </focusedlayout>
+
+
+                </control>
+
+                <control type="label" id="13">
+                    <description>Header Label</description>
+                    <posx>22</posx>
+                    <posy>680</posy>
+                    <width>480</width>
+                    <align>left</align>
+                    <label>-</label>
+                </control>
+
+            </control>
+		</control>
+		<include>GlobalTopBar</include>
+        
+
+	</controls>
+
+</window>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="130">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+		<control type="group">
+			<posy>210</posy>
+			<include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
+
+            <control type="image">
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+            <control type="label" id="1000">
+				<description>Header</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+			</control>
+            
+			<control type="label" id="1001">
+				<posx>295</posx>
+				<posy>120</posy>
+				<width>920</width>
+				<height>66</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>TopBarIcon</focusedcolor>
+			</control>
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<posx>265</posx>
+				<posy>189</posy>
+				<width>920</width>
+				<height>549</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+				<onleft>5</onleft>
+				<onright>28</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			
+			<control type="image" id="2">
+				<description>profile image</description>
+				<posx>1231</posx>
+				<posy>120</posy>
+				<width>165</width>
+				<height>165</height>
+
+				<aspectratio align="left" aligny="top">keep</aspectratio>
+			</control>
+
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<align>left</align>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+			</control>
+
+			<control type="radiobutton" id="8">
+				<description>Default RadioButton</description>
+				<align>left</align>
+				<radioposx>890</radioposx>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+				<textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
+                <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+			</control>
+
+			<control type="spincontrolex" id="9">
+				<description>Default spincontrolex</description>
+				<align>left</align>
+				<reverse>yes</reverse>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
+                <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
+                <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
+                <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
+			</control>
+			
+			<control type="button" id="28">
+				<description>Ok</description>
+				<posx>1231</posx>
+				<posy>296</posy>
+				<width>240</width>
+				<align>left</align>
+				<label>186</label>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>5</onup>
+				<ondown>29</ondown>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+			</control>
+
+			<control type="button" id="29">
+				<description>Cancel</description>
+				<posx>1231</posx>
+				<posy>365</posy>
+				<width>240</width>
+				<label>222</label>
+				<align>left</align>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>28</onup>
+				<ondown>5</ondown>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+			</control>
+
+		</control>
+	</controls>
+
+</window>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="dialog" id="3005">
+	<zorder>1</zorder>
+	<visible>!Window.IsVisible(startup) + !Skin.HasSetting(disable.rss) + !Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !ControlGroup(300).HasFocus()</visible>
+	<controls>
+	    <control type="image">
+	        <posx>16</posx>
+	        <posy>48r</posy>
+	        <width>32</width>
+	        <height>32</height>
+	        <texture colordiffuse="DarkGray-NF">buttons/rss.png</texture>
+	    </control>
+        <control type="rss">
+            <posx>48</posx>
+            <posy>1032</posy>
+            <width>1870</width>
+            <font>Font-RSS</font>
+            <textcolor>DarkGray-NF</textcolor>
+            <headlinecolor>DarkGray-NF</headlinecolor>
+            <titlecolor>DarkGray</titlecolor>
+        </control>
+
+	</controls>
+</window>

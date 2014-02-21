@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="2000">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+			<control type="label" id="1">
+				<description>header label</description>
+				<include>DefSettingsHeader</include>
+				<label>$LOCALIZE[13406]</label>
+			</control>
+
+			<control type="list" id="3">
+			    <include>Animation.SlideOpen.Right</include>            
+				<posx>64</posx>
+                <posy>320</posy>
+                <width>1438</width>
+                <height>690</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout height="69" width="1438">
+
+					<control type="label">
+						<posx>30</posx>
+						<width>1200</width>
+						<height>66</height>
+						<info>ListItem.Label</info>
+						<textcolor>DarkGray-NF</textcolor>
+						<selectedcolor>Blue</selectedcolor>
+					</control>
+					<control type="label">
+						<posx>1408</posx>
+						<width>600</width>
+						<height>66</height>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<font>Font-ListInfo</font>
+						<textcolor>DarkGray-NF</textcolor>
+						<selectedcolor>Blue</selectedcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="69" width="1438">
+                    <control type="group">
+                        <visible>Control.HasFocus(3)</visible>
+                        <control type="image">
+                            <width>1438</width>
+                            <height>66</height>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>1200</width>
+                            <height>66</height>
+                            <info>ListItem.Label</info>
+                            <textcolor>DarkGray</textcolor>
+                            <selectedcolor>Blue</selectedcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1408</posx>
+                            <width>600</width>
+                            <height>66</height>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <font>Font-ListInfo</font>
+                            <textcolor>DarkGray</textcolor>
+                            <selectedcolor>Blue</selectedcolor>
+                        </control>
+					</control>
+					<control type="group">
+                        <visible>!Control.HasFocus(3)</visible>
+                        <control type="label">
+                            <posx>30</posx>
+                            <width>1200</width>
+                            <height>66</height>
+                            <info>ListItem.Label</info>
+                            <textcolor>DarkGray</textcolor>
+                            <selectedcolor>Blue</selectedcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1408</posx>
+                            <width>600</width>
+                            <height>66</height>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <font>Font-ListInfo</font>
+                            <textcolor>DarkGray</textcolor>
+                            <selectedcolor>Blue</selectedcolor>
+                        </control>
+					</control>
+				</focusedlayout>
+
+			</control>
+
+			<control type="list" id="6">
+			    <include>Animation.SlideOpen.Right</include>            
+				<posx>64</posx>
+                <posy>320</posy>
+                <width>1438</width>
+                <height>690</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>6</onup>
+				<ondown>6</ondown>
+				<orientation>vertical</orientation>
+				<itemlayout height="138" width="1438">
+					<control type="image">
+						<posx>12</posx>
+						<posy>12</posy>
+						<width>111</width>
+						<height>111</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>150</posx>
+						<width>600</width>
+						<height>135</height>
+						<info>ListItem.Label</info>
+						<font>Font-Button</font>
+						<textcolor>DarkGray-NF</textcolor>
+					</control>
+					<control type="label">
+						<posx>1408</posx>
+						<width>600</width>
+						<height>135</height>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<font>Font-ListInfo</font>
+						<textcolor>DarkGray-NF</textcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="138" width="1438">
+                    <control type="group">
+                        <visible>Control.HasFocus(6)</visible>
+                        <control type="image">
+                            <width>1438</width>
+                            <height>135</height>
+                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>150</posx>
+                            <width>600</width>
+                            <height>135</height>
+                            <info>ListItem.Label</info>
+                            <font>Font-Button</font>
+                            <textcolor>DarkGray</textcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1408</posx>
+                            <width>600</width>
+                            <height>135</height>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <font>Font-ListInfo</font>
+                            <textcolor>DarkGray</textcolor>
+                        </control>
+					</control>
+					<control type="group">
+                        <visible>!Control.HasFocus(6)</visible>
+                        <control type="label">
+                            <posx>150</posx>
+                            <width>600</width>
+                            <height>135</height>
+                            <info>ListItem.Label</info>
+                            <font>Font-Button</font>
+                            <textcolor>DarkGray</textcolor>
+                        </control>
+                        <control type="label">
+                            <posx>1408</posx>
+                            <width>600</width>
+                            <height>135</height>
+                            <align>right</align>
+                            <info>ListItem.Label2</info>
+                            <font>Font-ListInfo</font>
+                            <textcolor>DarkGray</textcolor>
+                        </control>
+					</control>
+
+					<control type="image">
+						<posx>12</posx>
+						<posy>12</posy>
+						<width>111</width>
+						<height>111</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+			<control type="group">		
+			    <visible>Control.IsVisible(3) + !IsEmpty(Control.GetLabel(5))</visible>
+                <include>Animation.SlideOpen.Left</include>
+                <control type="image">
+                    <posy>18</posy>
+                    <posx>198</posx>
+                    <width>254</width>
+                    <height>164</height>	
+                    <texture align="left">home/half-tile.png</texture>
+                    <colordiffuse>TopBar</colordiffuse>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <posy>18</posy>
+                    <posx>300</posx>
+                    <width>1800</width>
+                    <height>164</height>	
+                    <texture>common/white.png</texture>
+                    <colordiffuse>TopBar</colordiffuse>
+                    <aspectratio>scale</aspectratio>
+                </control>		
+
+                <control type="button" id="5">
+                    <posx>250</posx>
+                    <posy>29</posy>
+                    <include>DefContextMenuButton</include>
+                    <onup>3</onup>
+                    <ondown>3</ondown>
+                    <onright>3</onright>
+                    <onleft>3</onleft>
+                </control>
+            </control>
+			<control type="group">
+			    <include>Animation.SlideOpen.Left</include>    
+			    <visible>Control.IsVisible(6)</visible>        
+                <include>DefSettingsSeparator</include>
+                <control type="label">
+                    <description>addon information</description>
+                    <posx>1522</posx>
+                    <posy>660</posy>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <height>320</height>
+                    <width>330</width>
+                    <wrapmultiline>true</wrapmultiline>
+                    <textcolor>Disabled</textcolor>
+                    <font>Font-ListInfo</font>
+                    <label>$INFO[Container(6).ListItem.Property(Addon.Description)]</label>
+                </control>
+                <control type="button" id="5">
+                    <posx>1854</posx>
+                    <posy>273</posy>
+                    <align>left</align>
+                    <font>Font-SettingsCategory</font>
+                    <angle>270</angle>
+                    <textcolor>Disabled</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <texturefocus>-</texturefocus>
+                    <height>135</height>
+                    <onup>3</onup>
+                    <ondown>3</ondown>
+                    <onright>3</onright>
+                    <onleft>3</onleft>
+                </control>
+                <control type="image">
+                    <description>Large Icon Image</description>
+                    <posx>1522</posx>
+                    <posy>320</posy>
+                    <width>330</width>
+                    <height>330</height>
+                    <texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
+                    <aspectratio align="center" aligny="top">keep</aspectratio>
+                </control>
+            </control>
+		</control>
+
+	</controls>
+
+</window>

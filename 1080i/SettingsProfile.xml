@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="34">
+	<defaultcontrol always="true">4</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+    <controls>
+        <include>GlobalBackground</include>
+		<control type="group">
+			<posy>210</posy>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+			<visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(ProfileSettings.xml) + !Window.IsVisible(LockSettings.xml)</visible>
+
+            <control type="image">
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+            <control type="label">
+				<description>Header</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<label>10034</label>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+			</control>
+            
+			<control type="radiobutton" id="4">
+				<description>Enable Login Screen</description>
+				<posx>265</posx>
+				<posy>120</posy>
+				<radioposx>850</radioposx>
+				<width>920</width>
+				<label>20096</label>
+				<align>left</align>
+				<onright>-</onright>
+				<onleft>-</onleft>
+				<onup>-</onup>
+				<ondown>5</ondown>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+				<textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
+                <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+			</control>
+			<control type="radiobutton" id="5">
+				<description>Auto login</description>
+				<posx>265</posx>
+				<posy>189</posy>
+				<radioposx>850</radioposx>
+				<width>920</width>
+				<label>$LOCALIZE[31120]$INFO[system.profileautologin,:  ,]</label>
+				<align>left</align>
+				<onright>-</onright>
+				<onleft>-</onleft>
+				<onup>4</onup>
+				<ondown>2</ondown>
+				<textcolor>TopBarIcon</textcolor>
+				<focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+				<textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
+                <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
+                <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
+                <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+			</control>
+
+			<control type="list" id="2">
+				<posx>265</posx>
+				<posy>258</posy>
+				<width>920</width>
+				<height>549</height>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onup>5</onup>
+				<ondown>-</ondown>
+
+				<itemlayout height="69">
+                    
+					<control type="label">
+						<posx>30</posx>
+						<width>810</width>
+						<info>ListItem.Label</info>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+					<control type="label">
+						<posx>890</posx>
+						<width>810</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69">
+					<control type="label">
+						<posx>30</posx>
+						<width>810</width>
+						<info>ListItem.Label</info>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(2)</visible>
+					</control>
+
+					<control type="label">
+						<posx>890</posx>
+						<width>810</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(2)</visible>
+					</control>
+					
+					<control type="label">
+						<posx>30</posx>
+						<width>810</width>
+						<info>ListItem.Label</info>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(2)</visible>
+					</control>
+
+					<control type="label">
+						<posx>890</posx>
+						<width>810</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(2)</visible>
+					</control>
+				</focusedlayout>
+
+			</control>
+
+		</control>
+        <include>GlobalTopBar</include>
+        
+        
+	</controls>
+	
+
+</window>

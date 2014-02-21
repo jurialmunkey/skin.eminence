@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+	<include name="View_52_Wall">
+	
+        <control type="group">
+            <visible>Control.IsVisible(52)</visible>
+            <include>Animation.ViewChange</include>            
+            <control type="panel" id="52">
+                <posx>18</posx>
+                <posy>210</posy>
+                <width>1434</width>
+                <height>708</height>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>52</onup>
+                <ondown>52</ondown>
+                <include>DefOnBack</include>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="Wall">list</viewtype>
+                <scrolltime tween="quadratic">350</scrolltime>
+                <orientation>vertical</orientation>
+                <focusposition>1</focusposition>
+
+                <itemlayout width="239" height="354" condition="!Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>110</posx>
+                        <posy>282</posy>
+                        <width>185</width>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+
+                </itemlayout>
+                <itemlayout width="239" height="354" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml)">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>199</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    
+                    
+                    <control type="textbox">
+                        <posx>11</posx>
+                        <posy>221</posy>
+                        <width>185</width>
+                        <height>100</height>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$VAR[MusicLabel]</label>
+                    </control>
+                    
+                </itemlayout>
+                <itemlayout width="478" height="354" condition="Container.Content(episodes)">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>460</width>
+                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>438</width>
+                        <texture background="true">$VAR[FanartImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>18</posx>
+                        <posy>282</posy>
+                        <width>330</width>
+                        <align>left</align>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>442</posx>
+                        <posy>282</posy>
+                        <width>130</width>
+                        <align>right</align>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+
+                </itemlayout>
+                
+                <focusedlayout width="239" height="354" condition="!Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>110</posx>
+                        <posy>282</posy>
+                        <width>185</width>
+                        <align>center</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+                <focusedlayout width="239" height="354" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml)">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>199</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    
+                    
+                    <control type="textbox">
+                        <posx>11</posx>
+                        <posy>221</posy>
+                        <width>185</width>
+                        <height>100</height>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$VAR[MusicLabel]</label>
+                        <wrapmultiline>true</wrapmultiline>
+                    </control>
+
+                </focusedlayout>
+                <focusedlayout width="478" height="354" condition="Container.Content(episodes)">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>460</width>
+                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>438</width>
+                        <texture background="true">$VAR[FanartImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>18</posx>
+                        <posy>282</posy>
+                        <width>330</width>
+                        <align>left</align>
+                        <textcolor>Selected</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>442</posx>
+                        <posy>282</posy>
+                        <width>130</width>
+                        <align>right</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+
+                </focusedlayout>
+
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>-11</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <onleft>SetFocus(9500)</onleft>
+                <onright>50</onright>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+            </control>
+        </control>
+
+	</include>
+
+</includes>

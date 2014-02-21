@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="126">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+    <zorder>10</zorder>
+	<controls>
+
+
+		<control type="group">
+		    <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+			
+            <control type="image">
+                <posy>210</posy>
+				<width>1920</width>
+				<height>764</height>
+				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
+            </control>
+            
+			<control type="label" id="311">
+				<description>Header Label</description>
+				<textcolor>TopBarIcon</textcolor>
+				<include>DefSettingsHeader</include>
+				<label>20333</label>
+                
+			</control>
+
+			<control type="image">
+				<posx>1522</posx>
+                <posy>320</posy>
+                <width>330</width>
+                <height>330</height>
+				<texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
+				<aspectratio align="center" aligny="top">keep</aspectratio>
+			</control>
+
+			<control type="label" id="412">
+				<description>Content Picker label</description>
+				<posx>75</posx>
+				<posy>310</posy>
+				<width>1438</width>
+				<align>left</align>
+                <textcolor>Blue</textcolor>
+			</control>
+
+			<control type="list" id="450">
+				<posx>64</posx>
+                <posy>380</posy>
+                <width>1438</width>
+				<height>540</height>
+				<onup>450</onup>
+				<onleft>413</onleft>
+				<onright>413</onright>
+				<ondown>450</ondown>
+				<itemlayout height="135">
+                    <control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>113</width>
+						<height>113</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="135">
+            
+					<control type="image">
+						<posx>11</posx>
+						<posy>11</posy>
+						<width>113</width>
+						<height>113</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(450)</visible>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>570</width>
+						<height>135</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Blue</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(450)</visible>
+					</control>
+				</focusedlayout>
+
+			</control>
+
+			
+			<control type="button" id="413">
+				<description>Ok</description>
+				<align>left</align>
+				<posx>1500</posx>
+                <posy>665</posy>
+				<label>186</label>
+				<onup>415</onup>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<ondown>414</ondown>
+				<texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textcolor>TopBarIcon</textcolor>
+                <focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+			</control>
+
+			<control type="button" id="414">
+				<description>Cancel</description>
+				<align>left</align>
+				<posx>1500</posx>
+                <posy>734</posy>
+                <label>222</label>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>413</onup>
+				<ondown>415</ondown>
+				<texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textcolor>TopBarIcon</textcolor>
+                <focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+			</control>
+
+			<control type="button" id="415">
+				<description>Create Folder</description>
+				<align>left</align>
+				<posx>1500</posx>
+                <posy>803</posy>
+                <label>119</label>
+				<onleft>450</onleft>
+				<onright>450</onright>
+				<onup>414</onup>
+				<ondown>413</ondown>
+				<texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <textcolor>TopBarIcon</textcolor>
+                <focusedcolor>Highlight</focusedcolor>
+                <disabledcolor>TopBarDisabled</disabledcolor>
+			</control>
+
+		</control>
+
+	</controls>
+
+</window>

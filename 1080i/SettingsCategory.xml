@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="12">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalBackground</include>
+		<control type="group">
+		    <animation effect="fade" start="0" end="100" time="250">WindowOpen</animation>
+		    <animation effect="fade" end="0" start="100" time="250">WindowClose</animation>
+            <control type="group">   
+                <include>DialogVisibility</include>
+                <include>Animation.SlideOpen.Left</include> 
+                <control type="grouplist" id="3">
+                    <description>Button Area</description>
+                    <posx>1500</posx>
+                    <posy>665</posy>
+                    <width>450</width>
+                    <height>351</height>
+                    <onleft>5</onleft>
+                    <onright>5</onright>
+                    <onup>20</onup>
+                    <ondown>3</ondown>
+                    <itemgap>3</itemgap>
+                    <orientation>vertical</orientation>
+                    <scrolltime>0</scrolltime>
+                </control>
+                <control type="label">
+                    <include>DefSettingsHeader</include>
+                    <label>$VAR[SettingsHeaderLabel] $LOCALIZE[5]</label>
+                </control>
+            </control>
+            
+            <control type="group">
+                <include>DialogVisibility</include>
+                <include>Animation.SlideOpen.Right</include>      
+                <include>DefSettingsSeparator</include>      
+        
+                <control type="button" id="20">
+                    <posx>1508</posx>
+                    <posy>273</posy>
+                    <align>left</align>
+                    <font>Font-SettingsCategory</font>
+                    <angle>270</angle>
+                    <textcolor>Disabled</textcolor>
+                    <onclick>SettingsLevelChange</onclick>
+                    <height>135</height>
+                    <onup>5</onup>
+                    <ondown>3</ondown>
+                    <onright>3</onright>
+                    <onleft>5</onleft>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <texturefocus>-</texturefocus>
+                </control>
+            
+                <control type="textbox" id="6">
+                    <posx>1572</posx>
+                    <posy>333</posy>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <height>320</height>
+                    <width>330</width>
+                    <textcolor>Disabled</textcolor>
+                    <font>Font-ListInfo</font>
+                </control>
+
+                <control type="grouplist" id="5">
+                    <description>Control Area</description>
+                    <posx>64</posx>
+                    <posy>320</posy>
+                    <width>1438</width>
+                    <height>687</height>
+                    <itemgap>3</itemgap>
+                    <onleft>3</onleft>
+                    <onright>3</onright>
+                    <onup>5</onup>
+                    <ondown>5</ondown>
+                    <orientation>vertical</orientation>
+                </control>
+            </control>
+        </control>
+
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<align>left</align>
+			<font>Font-ListInfo</font>
+		</control>
+
+		<control type="radiobutton" id="8">
+			<description>Default Radio Button</description>
+			<radioposx>1360</radioposx>
+			<align>left</align>
+			<font>Font-ListInfo</font>
+		</control>
+
+		<control type="spincontrolex" id="9">
+			<description>Default Spin Control</description>
+			<align>left</align>
+			<font>Font-ListInfo</font>
+		</control>
+
+		<control type="button" id="10">
+			<description>Default Category Button</description>
+			<align>left</align>
+			<focusedcolor>DarkGray</focusedcolor>
+			<height>66</height>
+			<width>450</width>
+			<font>Font-Context</font>
+		</control>
+		
+		<include>GlobalTopBar</include>
+        
+        
+
+	</controls>
+
+</window>

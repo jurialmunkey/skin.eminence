@@ -1,0 +1,185 @@
+# XBMC Media Center language file
+# Addon Name: eminence
+# Addon id: skin.eminence
+# Addon Provider: jurialmunkey
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Skins\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: XBMC Translation Team\n"
+"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31101"
+msgid "Information"
+msgstr ""
+
+msgctxt "#31102"
+msgid "Youtube"
+msgstr ""
+
+msgctxt "#31103"
+msgid "Vimeo"
+msgstr ""
+
+msgctxt "#31104"
+msgid "Live TV"
+msgstr ""
+
+msgctxt "#31105"
+msgid "TV Guide"
+msgstr ""
+
+msgctxt "#31106"
+msgid "Fullscreen"
+msgstr ""
+
+msgctxt "#31107"
+msgid "min"
+msgstr ""
+
+msgctxt "#31108"
+msgid "Quick Nav"
+msgstr ""
+
+msgctxt "#31109"
+msgid "Recently Added"
+msgstr ""
+
+msgctxt "#31110"
+msgid "In Progress"
+msgstr ""
+
+msgctxt "#31111"
+msgid "Type"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Spotlight"
+msgstr ""
+
+msgctxt "#31113"
+msgid "items"
+msgstr ""
+
+msgctxt "#31114"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Finishes at"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Close"
+msgstr ""
+
+msgctxt "#31118"
+msgid "Playing"
+msgstr ""
+
+msgctxt "#31119"
+msgid "Info"
+msgstr ""
+
+msgctxt "#31120"
+msgid "Auto-Login"
+msgstr ""
+
+msgctxt "#31121"
+msgid "Used Memory"
+msgstr ""
+
+msgctxt "#31122"
+msgid "No info available..."
+msgstr ""
+
+msgctxt "#31123"
+msgid "Channel"
+msgstr ""
+
+msgctxt "#31124"
+msgid "Airing"
+msgstr ""
+
+msgctxt "#31125"
+msgid "End Time"
+msgstr ""
+
+msgctxt "#31126"
+msgid "Channel Group"
+msgstr ""
+
+msgctxt "#31127"
+msgid "Recording"
+msgstr ""
+
+msgctxt "#31128"
+msgid "Scheduled"
+msgstr ""
+
+msgctxt "#31129"
+msgid "Not Scheduled"
+msgstr ""
+
+msgctxt "#31130"
+msgid "Shutdown Timer"
+msgstr ""
+
+msgctxt "#31131"
+msgid "Master Mode: On"
+msgstr ""
+
+msgctxt "#31132"
+msgid "Master Mode: Off"
+msgstr ""
+
+msgctxt "#31133"
+msgid "Cancel Timer"
+msgstr ""
+
+msgctxt "#31134"
+msgid "Mute"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Artwork"
+msgstr ""
+
+msgctxt "#31136"
+msgid "Changes"
+msgstr ""
+
+msgctxt "#31137"
+msgid "Re-initialise skin"
+msgstr ""
+
+msgctxt "#31138"
+msgid "Set weather fanart"
+msgstr ""
+
+msgctxt "#31139"
+msgid "Artist slideshow"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Show visualisation behind slideshow"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Movies widget"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Tvshows widget"
+msgstr ""
+
+msgctxt "#31143"
+msgid "DVD Menu"
+msgstr ""

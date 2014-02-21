@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window id="2003">
+	<defaultcontrol always="true">9850</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+    <include>Animation.SlideOpen.Left</include>
+	<controls>
+
+        
+		<control type="group">
+		    <posx>233</posx>
+		    <posy>70</posy>
+		    <animation effect="slide" start="0" end="-2000" time="200" condition="Control.HasFocus(50)">Conditional</animation>
+		    <include>DialogVisibility</include>
+		    <control type="group" description="Poster">
+                <posx>18</posx>
+                <posy>210</posy>
+                <control type="image">
+                    <width>467</width>
+                    <height>690</height>
+                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>445</width>
+                    <height>668</height>
+                    <fadetime>200</fadetime>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>615</posy>
+                    <width>445</width>
+                    <height>64</height>
+                    <texture colordiffuse="White">common/white.png</texture>
+                    <aspectratio>scale</aspectratio>
+                    <animation effect="fade" end="50" condition="true">Conditional</animation>
+                </control>
+                <control type="label">
+                    <posx>28</posx>
+                    <posy>615</posy>
+                    <width>350</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
+                    <textcolor>Selected</textcolor>
+                </control>
+                <control type="label">
+                    <posx>434</posx>
+                    <posy>615</posy>
+                    <width>100</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <font>Font-ListInfo</font>
+                    <label>$INFO[ListItem.Rating]</label>
+                    <textcolor>Selected</textcolor>
+                </control>
+                
+            </control>
+            
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>210</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>20339</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Director]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>20417</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Writer]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>515</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Genre]</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>32</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>573</label>
+                </control>
+                <control type="label">
+                    <width>600</width>
+                    <height>64</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.FileNameAndPath]</label>
+                    <scroll>true</scroll>
+                </control>
+            </control>
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>210</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>2050</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>20074</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.MPAA]</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>292</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$INFO[ListItem.AudioCodec,,  •  ]$VAR[AudioChannels]</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>32</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-Button</font>
+                    <label>291</label>
+                </control>
+                <control type="label">
+                    <posx>917</posx>
+                    <width>300</width>
+                    <height>64</height>
+                    <align>right</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <label fallback="416">$VAR[HDSD,, ]$INFO[ListItem.VideoResolution]$INFO[ListItem.VideoCodec,  •  ,]$INFO[ListItem.VideoAspect,  •  ,]</label>
+                </control>
+            </control>
+            <control type="grouplist">
+		        <posx>509</posx>
+		        <posy>630</posy>
+		        <usecontrolcoords>true</usecontrolcoords>
+		        <orientation>vertical</orientation>
+		        <control type="label">
+                    <width>448</width>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <height>32</height>
+                    <font>Font-Button</font>
+                    <label>207</label>
+                </control>
+                <control type="textbox">
+                    <width>917</width>
+                    <align>justify</align>
+                    <aligny>top</aligny>
+                    <font>Font-ListInfo</font>
+                    <height>160</height>
+                    <label fallback="416">$INFO[ListItem.Plot]</label>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+            </control>
+            <control type="list" id="9000">
+                <posx>509</posx>
+		        <posy>835</posy>
+                <width>920</width>
+                <height>48</height>
+                <itemgap>0</itemgap>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <orientation>horizontal</orientation>
+                <usecontrolcoords>true</usecontrolcoords>
+                <itemlayout width="230" height="48">
+                    <control type="image">
+                        <width>48</width>
+                        <height>48</height>
+                        <texture colordiffuse="DarkGray-NF">$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>64</posx>
+                        <width>150</width>
+                        <height>48</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>DarkGray-NF</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="230" height="48">
+                    <control type="image">
+                        <width>48</width>
+                        <height>48</height>
+                        <texture colordiffuse="Highlight">$INFO[ListItem.Icon]</texture>
+                    </control>
+                    <control type="label">
+                        <posx>64</posx>
+                        <width>150</width>
+                        <height>48</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <label>$INFO[ListItem.Label]</label>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>208</label>
+                        <icon>osd/playring.png</icon>
+                        <onclick>SendClick(2003,8)</onclick>
+                    </item>
+                    <item id="2">
+                        <label>344</label>
+                        <icon>osd/actors.png</icon>
+                        <onclick>SetFocus(50)</onclick>
+                    </item>
+                    <item id="3">
+                        <label>20410</label>
+                        <icon>osd/trailer.png</icon>
+                        <onclick>SendClick(2003,11)</onclick>
+                        <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    </item>
+                    
+                    <item id="4">
+                        <label>31135</label>
+                        <icon>osd/thumb.png</icon>
+                        <onclick>SendClick(2003,10)</onclick>
+                    </item>
+                    <item id="5">
+                        <label>184</label>
+                        <icon>osd/refresh.png</icon>
+                        <onclick>SendClick(2003,6)</onclick>
+                    </item>
+                </content>
+
+            </control>
+            
+            <control type="panel" id="50">
+                
+                <posx>2018</posx>
+                <posy>210</posy>
+                <width>1434</width>
+                <height>708</height>
+                <onback>9000</onback>
+                <onleft>9000</onleft>
+                <onright>50</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <viewtype label="Wall">list</viewtype>
+                <scrolltime>200</scrolltime>
+                <orientation>vertical</orientation>
+                <itemlayout width="239" height="354">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>110</posx>
+                        <posy>282</posy>
+                        <width>185</width>
+                        <align>center</align>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+
+                </itemlayout>
+                <focusedlayout width="239" height="354">
+
+                    <control type="image">
+                        <height>336</height>
+                        <width>221</width>
+                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    </control>
+         
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>284</height>
+                        <width>199</width>
+                        <texture background="true">$VAR[PosterImage]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>110</posx>
+                        <posy>282</posy>
+                        <width>185</width>
+                        <align>center</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+
+                </focusedlayout>
+                
+            </control>
+        </control>
+        
+        
+        <control type="button" id="5" description="Cast">
+            <visible allowhiddenfocus="true">false</visible>
+        </control>
+        
+        <control type="button" id="6" description="Refresh">
+            <visible allowhiddenfocus="true">false</visible>
+        </control>
+        
+        <control type="button" id="8" description="Play">
+            <visible allowhiddenfocus="true">false</visible>
+        </control>
+        
+        <control type="button" id="10" description="Thumb">
+            <visible allowhiddenfocus="true">false</visible>
+        </control>
+        
+        <control type="button" id="11" description="Trailer">
+            <visible allowhiddenfocus="true">false</visible>
+        </control>
+
+        <control type="button" id="9850">
+            <visible allowhiddenfocus="true">false</visible>
+            <onfocus>SendClick(2003,5)</onfocus>
+            <onfocus>SetFocus(9000)</onfocus>
+        </control>
+
+	</controls>
+
+</window>

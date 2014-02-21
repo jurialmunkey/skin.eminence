@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+
+	<include name="View_53_Wide">
+	
+        <control type="group">
+            <visible>Control.IsVisible(53)</visible>
+            <include>Animation.ViewChange</include>            
+            <control type="panel" id="53">
+                <posx>18</posx>
+                <posy>210</posy>
+                <width>1434</width>
+                <height>700</height>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>53</onup>
+                <ondown>53</ondown>
+                <include>DefOnBack</include>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="Wide">list</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <orientation>vertical</orientation>
+
+                <itemlayout width="476" height="140">
+
+                    <control type="image">
+                        <width>464</width>
+                        <height>129</height>
+                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
+                        <texture>$VAR[SquareImage]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>15</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>DarkGray</textcolor>
+                        <label>$VAR[MusicLabel]</label>
+                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>48</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>DarkGray</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+
+                </itemlayout>
+
+                <focusedlayout width="476" height="140">
+
+                    <control type="image">
+                        <width>464</width>
+                        <height>129</height>
+                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
+                        <texture>$VAR[SquareImage]</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>15</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <label>$VAR[MusicLabel]</label>
+                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>48</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+
+                </focusedlayout>
+
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>-11</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <onleft>SetFocus(9500)</onleft>
+                <onright>50</onright>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+            </control>
+        </control>
+
+	</include>
+
+</includes>

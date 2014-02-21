@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <variable name="HomeFocus">
+        <value condition="Skin.HasSetting(home.301.enabled)">SetFocus(301)</value>
+        <value condition="Skin.HasSetting(home.302.enabled)">SetFocus(302)</value>
+        <value condition="Skin.HasSetting(home.303.enabled)">SetFocus(303)</value>
+        <value condition="Skin.HasSetting(home.304.enabled)">SetFocus(304)</value>
+        <value condition="Skin.HasSetting(home.305.enabled)">SetFocus(305)</value>
+        <value condition="Skin.HasSetting(home.306.enabled)">SetFocus(306)</value>
+        <value condition="Skin.HasSetting(home.307.enabled)">SetFocus(307)</value>
+        <value condition="Skin.HasSetting(home.308.enabled)">SetFocus(308)</value>
+        <value condition="Skin.HasSetting(home.309.enabled)">SetFocus(309)</value>
+        <value condition="Skin.HasSetting(home.310.enabled)">SetFocus(310)</value>
+    </variable>
+    <include name="Home-Menu-Label">
+        <posy>300</posy>
+        <width>180</width>
+        <height>340</height>
+        <align>center</align>
+        <aligny>top</aligny>
+        <font>Font-HomeMenu</font>
+        <textcolor>ffffffff</textcolor>
+    </include>
+    <include name="Home-Menu-Button">
+        <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
+        <onback condition="!Window.IsActive(home)">50</onback>
+        <onup condition="!Window.IsActive(home)">50</onup>
+        <width>220</width>
+        <height>340</height>	
+        <aspectratio scalediffuse="false">center</aspectratio>
+        <texturefocus>home/half-tile.png</texturefocus>
+        <texturenofocus>home/half-tile.png</texturenofocus>
+    </include>
+    <include name="Home-Menu-Button-BG">
+        <control type="button">
+            <include>Home-Menu-Button</include>
+            <colordiffuse>ff000000</colordiffuse>
+        </control>
+    </include>
+    <include name="Home-Menu-Visibility">
+        <visible allowhiddenfocus="true">ControlGroup(300).HasFocus() | Window.IsVisible(home) | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)</visible>
+    </include>
+    <include name="Home-Menu">
+        <control type="group">
+            <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)]">Conditional</animation>
+            <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="Window.IsActive(home)">WindowClose</animation>
+            <control type="button" id="353">
+                <posx>0</posx>
+                <posy>376r</posy>   
+                <width>1920</width>
+                <height>400</height>
+                <texturefocus colordiffuse="LightGray">common/white.png</texturefocus>
+                <texturenofocus colordiffuse="LightGray">common/white.png</texturenofocus>
+                <onfocus>SetFocus(300)</onfocus>
+                <include>Home-Menu-Button</include>
+            </control>
+            <control type="grouplist" id="300">
+                <orientation>horizontal</orientation>
+                <posx>10</posx>
+                <width>1901</width>
+                <itemgap>-35</itemgap>
+                <posy>358r</posy>
+                <height>340</height>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.301.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="301">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.301.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.301.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
+                        <onright>302</onright>
+                        <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.301.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.301.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.302.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="25" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="25" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="302">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.302.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.302.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
+                        <onleft>301</onleft>
+                        <onright>303</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(302)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.302.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(302)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.302.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(302)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.303.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="50" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="50" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="303">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.303.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.303.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
+                        <onleft>302</onleft>
+                        <onright>304</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(303)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.303.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(303)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.303.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(303)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.304.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="75" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="75" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="304">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.304.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.304.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
+                        <onleft>303</onleft>
+                        <onright>305</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(304)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.304.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(304)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.304.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(304)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.305.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="100" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="100" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="305">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.305.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.305.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
+                        <onleft>304</onleft>
+                        <onright>306</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(305)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.305.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(305)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.305.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(305)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <visible>Skin.HasSetting(home.306.enabled)</visible>
+                    <include>Home-Menu-Visibility</include>
+                    <animation effect="slide" start="400,400" end="0" delay="125" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="125" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="306">
+                        <include>Home-Menu-Button</include>
+                        <onclick>$INFO[Skin.String(home.306.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
+                        <onleft>305</onleft>
+                        <onright>307</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(306)">Conditional</animation>
+                        <visible>Skin.HasSetting(home.306.enabled)</visible>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.306.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(306)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.306.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(306)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <visible>Skin.HasSetting(home.307.enabled)</visible>
+                    <include>Home-Menu-Visibility</include>
+                    <animation effect="slide" start="400,400" end="0" delay="150" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="150" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="307">
+                        <include>Home-Menu-Button</include>
+                        <onclick>$INFO[Skin.String(home.307.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
+                        <onleft>306</onleft>
+                        <onright>308</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(307)">Conditional</animation>
+                        <visible>Skin.HasSetting(home.307.enabled)</visible>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.307.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(307)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.307.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(307)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.308.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="175" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="175" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="308">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.308.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.308.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
+                        <onleft>307</onleft>
+                        <onright>309</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(308)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.308.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(308)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.308.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(308)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.309.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="200" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="200" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="309">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.309.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.309.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
+                        <onleft>308</onleft>
+                        <onright>310</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(309)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.309.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(309)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.309.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(309)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.310.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="225" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="225" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="310">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.310.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.310.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
+                        <onleft>309</onleft>
+                        <onright>311</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(310)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.310.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(310)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.310.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(310)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.311.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="250" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="250" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="311">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.311.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.311.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
+                        <onleft>310</onleft>
+                        <onright>312</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(311)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.311.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(311)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.311.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(311)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.312.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="275" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="275" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="312">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.312.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.312.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
+                        <onleft>311</onleft>
+                        <onright>313</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(312)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.312.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(312)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.312.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(312)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Button-BG</include>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.313.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="300" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="300" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <control type="button" id="313">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.313.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.313.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
+                        <onleft>312</onleft>
+                        <onright>314</onright>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(313)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.313.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(313)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.313.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(313)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
+                    <visible>Skin.HasSetting(home.314.enabled)</visible>
+                    <animation effect="slide" start="400,400" end="0" delay="325" time="100">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" delay="325" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="314">
+                        <include>Home-Menu-Button</include>
+                        <visible>Skin.HasSetting(home.314.enabled)</visible>
+                        <onclick>$INFO[Skin.String(home.314.path)]</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
+                        <onleft>313</onleft>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(314)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.314.icon)]</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(314)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>$INFO[Skin.String(home.314.label)]</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(314)">Conditional</animation>
+                    </control>
+                </control>
+            </control>
+        
+            <control type="button" id="351">
+                <posx>-158</posx>
+                <posy>358r</posy>   
+                <onfocus>SetFocus(301)</onfocus>
+                <texturefocus colordiffuse="LightGray">home/half-tile.png</texturefocus>
+                <texturenofocus colordiffuse="LightGray">home/half-tile.png</texturenofocus>
+                <include>Home-Menu-Button</include>
+                <include>Home-Menu-Visibility</include>
+                <animation effect="slide" start="400,400" end="0" delay="0" time="75">Visible</animation>
+                <animation effect="slide" start="400,400" end="0" delay="0" time="75" condition="Window.IsActive(home)">WindowOpen</animation>
+            </control>
+            <control type="button" id="352">
+                <posx>1856</posx>
+                <posy>358r</posy>   
+                <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
+                <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>
+                <onfocus condition="Skin.HasSetting(home.314.enabled)">SetFocus(314)</onfocus>
+                <texturefocus colordiffuse="LightGray">home/half-tile.png</texturefocus>
+                <texturenofocus colordiffuse="LightGray">home/half-tile.png</texturenofocus>
+                <include>Home-Menu-Button</include>
+                <include>Home-Menu-Visibility</include>
+                <animation effect="slide" start="400,400" end="0" delay="275" time="100">Visible</animation>
+                <animation effect="slide" start="400,400" end="0" delay="275" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
+            </control>
+        </control>
+    </include>
+</includes>
