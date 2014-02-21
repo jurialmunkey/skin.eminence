@@ -11,6 +11,12 @@
         <control type="button" id="399">
             <visible allowhiddenfocus="true">false</visible>
             <onfocus>$VAR[HomeFocus]</onfocus>
+            <onclick>$VAR[HomeFocus]</onclick>
+            <onback>$VAR[HomeFocus]</onback>
+            <onup>$VAR[HomeFocus]</onup>
+            <ondown>$VAR[HomeFocus]</ondown>
+            <onleft>$VAR[HomeFocus]</onleft>
+            <onright>$VAR[HomeFocus]</onright>
         </control>
         
 	</controls>

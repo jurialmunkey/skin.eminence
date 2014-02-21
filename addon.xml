@@ -9,6 +9,7 @@
 		<import addon="service.skin.widgets" version="0.0.25"/>
 		<import addon="script.globalsearch" version="1.1.1"/>
 		<import addon="script.artistslideshow" version="1.5.0"/>
+		<import addon="script.tvtunes" version="3.0.6"/>
 	</requires>
 	<extension
     point="xbmc.gui.skin"
