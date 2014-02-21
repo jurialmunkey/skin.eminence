@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9850</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
+    <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 
         
@@ -301,6 +302,12 @@
                         <label>184</label>
                         <icon>osd/refresh.png</icon>
                         <onclick>SendClick(2003,6)</onclick>
+                    </item>
+                    <item id="6">
+                        <icon>osd/install.png</icon>
+                        <label>31127</label>
+                        <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                        <visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
                     </item>
                 </content>
 

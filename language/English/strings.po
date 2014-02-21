@@ -183,3 +183,7 @@ msgstr ""
 msgctxt "#31143"
 msgid "DVD Menu"
 msgstr ""
+
+msgctxt "#31144"
+msgid "Enable TV Tunes"
+msgstr ""
