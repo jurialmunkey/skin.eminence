@@ -80,7 +80,7 @@
                 <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-                <visible>!Container(51).OnNext + !Container(51).OnPrevious</visible>
+                <visible>!Container(51).OnScrollNext + !Container(51).OnScrollPrevious</visible>
                 <visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55)</visible>
             </control>            
 		</control>

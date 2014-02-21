@@ -220,6 +220,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>11</onleft>
+                <onback>9000</onback>
                 <onright>9000</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
@@ -243,6 +244,7 @@
                 <height>700</height>
                 <onleft>12</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>12</onup>
                 <ondown>12</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -265,6 +267,7 @@
                 <height>700</height>
                 <onleft>13</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>13</onup>
                 <ondown>13</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -306,9 +309,10 @@
     </include>
     <include name="EPGTimelineView">
         <control type="epggrid" id="10">
-            <posx>18</posx>
+            <posx>-215</posx>
             <posy>70</posy>
-            <width>1420</width>
+            <onback>9000</onback>
+            <width>1921</width>
             <height>635</height>
             <pagecontrol>10</pagecontrol>
             <progresstexture border="5" colordiffuse="bf777777">windows/pvr/progressline.png</progresstexture>
@@ -319,19 +323,20 @@
             <onright>31</onright>
             <onup>10</onup>
             <ondown>10</ondown>
-            <rulerlayout height="140" width="111">
+            <rulerlayout height="140" width="300">
                 <control type="label" id="2">
                     <posx>10</posx>
-                    <posy>58</posy>
-                    <width>58</width>
+                    <posy>96</posy>
+                    <width>200</width>
                     <align>left</align>
+                    <aligny>top</aligny>
                     <font>Font-EPGRuler</font>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
             </rulerlayout>
-            <channellayout height="99" width="310">
+            <channellayout height="99" width="421">
                 <control type="image">
-                    <width>300</width>
+                    <width>411</width>
                     <height>95</height>
                     <texture border="2">common/border-inner.png</texture>
                     <colordiffuse>PosterBorder</colordiffuse>
@@ -346,14 +351,14 @@
                 </control>
                 <control type="label">
                     <posx>100</posx>
-                    <width>180</width>
+                    <width>291</width>
                     <height>94</height>
                     <label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName]</label>
                 </control>
             </channellayout>
-            <focusedchannellayout height="99" width="310">
+            <focusedchannellayout height="99" width="421">
                 <control type="image">
-                    <width>300</width>
+                    <width>411</width>
                     <height>95</height>
                     <texture border="2">common/border-inner.png</texture>
                 </control>   
@@ -367,15 +372,15 @@
                 </control>
                 <control type="label">
                     <posx>100</posx>
-                    <width>180</width>
+                    <width>291</width>
                     <height>94</height>
                     <textcolor>Selected</textcolor>
                     <label>$INFO[ListItem.ChannelNumber,,. ]$INFO[ListItem.ChannelName]</label>
                 </control>
             </focusedchannellayout>    
-            <itemlayout height="99" width="111">
+            <itemlayout height="99" width="300">
                 <control type="image" id="2">
-                    <width>105</width>
+                    <width>296</width>
                     <height>95</height>
                     <texture border="2">common/border-inner.png</texture>
                     <colordiffuse>PosterBorder</colordiffuse>
@@ -406,9 +411,9 @@
                     <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
                 </control>
             </itemlayout>
-            <focusedlayout height="99" width="111">
+            <focusedlayout height="99" width="300">
                 <control type="image" id="2">
-                    <width>105</width>
+                    <width>296</width>
                     <height>95</height>
                     <texture border="2">common/border-inner.png</texture>
                 </control>   
@@ -442,33 +447,26 @@
         </control>
         <control type="group">
             <visible>Control.IsVisible(10)</visible>
-            <posx>18</posx>
+            <posx>-215</posx>
             <posy>711</posy>
             <control type="image">
-                <posx>1423</posx>
-                <posy>-501</posy>
-                <height>491</height>
-                <width>1</width>
-                <texture colordiffuse="PosterBorder">common/white.png</texture>
-            </control>
-            <control type="image">
                 <height>189</height>
-                <width>1424</width>
+                <width>1924</width>
                 <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
             </control>
-            <control type="group">
-                <posx>11</posx>
-                <posy>11</posy>
-                <control type="image">
-                    <width>288</width>
-                    <height>162</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                </control>
+            
+             <control type="image">
+                <posx>22</posx>
+                <posy>22</posy>
+                <height>145</height>
+                <width>400</width>
+                <texture>$VAR[PVRIcon]</texture>
+                <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
+
             <control type="group">
-                <posx>314</posx>
-                <posy>0</posy>
+                <posx>433</posx>
+                <posy>3</posy>
                 <control type="label">
                     <width>1094</width>
                     <align>left</align>
@@ -486,9 +484,9 @@
                 </control>
                 <control type="textbox">
                     <posy>90</posy>
-                    <width>1094</width>
+                    <width>1420</width>
                     <height>80</height>
-                    <align>justify</align>
+                    <align>left</align>
                     <aligny>top</aligny>
                     <textcolor>DarkGray</textcolor>
                     <font>Font-ListInfo</font>
@@ -509,6 +507,7 @@
                 <height>700</height>
                 <onleft>14</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>14</onup>
                 <ondown>14</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -557,6 +556,7 @@
                 <height>700</height>
                 <onleft>17</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>17</onup>
                 <ondown>17</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -605,6 +605,7 @@
                 <height>700</height>
                 <onleft>15</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>15</onup>
                 <ondown>15</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -627,6 +628,7 @@
                 <height>700</height>
                 <onleft>16</onleft>
                 <onright>9000</onright>
+                <onback>9000</onback>
                 <onup>16</onup>
                 <ondown>16</ondown>
                 <pagecontrol>60</pagecontrol>

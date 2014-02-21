@@ -3,7 +3,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-    <include>Animation.SlideOpen.Left</include>
+    <include>Animation.SlideOpen.Right</include>
     <zorder>3</zorder>
 	<controls>
 
