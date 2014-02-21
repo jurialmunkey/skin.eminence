@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
 	id="skin.eminence"
-	version="1.0.0"
+	version="0.9.0"
 	name="Eminence"
 	provider-name="jurialmunkey">
 	<requires>
 		<import addon="xbmc.gui" version="5.0.0"/>
+		<import addon="service.skin.widgets" version="0.0.25"/>
+		<import addon="script.globalsearch" version="1.1.1"/>
+		<import addon="script.artistslideshow" version="1.5.0"/>
 	</requires>
 	<extension
     point="xbmc.gui.skin"
@@ -17,6 +20,6 @@
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary>Created by jurialmunkey</summary>
-		<description>Inspired by webos</description>
+		<description>Eminence is a skin that seeks simplicity, functionality, and elegance with a modern look</description>
 	</extension>
 </addon>
