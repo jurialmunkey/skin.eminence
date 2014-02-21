@@ -19,7 +19,7 @@
 	    </animation>
     </include>
     <include name="Animation.HeaderDialog">
-	    <animation type="Visible">
+	    <animation type="Visible" condition="!Window.Previous(home)">
 	        <effect type="fade" start="0" end="100" time="150"/>
 	        <effect type="slide" start="400" end="0" time="150"/>	        
 	    </animation>

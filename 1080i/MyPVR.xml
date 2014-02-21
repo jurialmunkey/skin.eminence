@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol>32</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
     
@@ -11,7 +10,7 @@
             <posx>233</posx>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <animation effect="slide" end="1920" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml)">Conditional</animation>
+            <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml)">Conditional</animation>
             <control type="group" id="50">
                 <include description="id31-10">EPGTimelineView</include>
                 <include description="id32-11">LiveTVChannelView</include>
@@ -127,7 +126,6 @@
                 <onright>9000</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
-                <onback>50</onback>
                 <scrolltime>200</scrolltime>
                 <control type="togglebutton" id="32" description="TV Channels">
                     <label>$LOCALIZE[19023]</label>
