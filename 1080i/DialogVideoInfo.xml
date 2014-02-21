@@ -25,23 +25,14 @@
                     <posx>11</posx>
                     <posy>11</posy>
                     <width>445</width>
-                    <height>668</height>
+                    <height>604</height>
                     <fadetime>200</fadetime>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>615</posy>
-                    <width>445</width>
-                    <height>64</height>
-                    <texture colordiffuse="White">common/white.png</texture>
-                    <aspectratio>scale</aspectratio>
-                    <animation effect="fade" end="50" condition="true">Conditional</animation>
-                </control>
                 <control type="label">
                     <posx>28</posx>
-                    <posy>615</posy>
+                    <posy>620</posy>
                     <width>350</width>
                     <height>64</height>
                     <align>left</align>
@@ -50,7 +41,7 @@
                 </control>
                 <control type="label">
                     <posx>434</posx>
-                    <posy>615</posy>
+                    <posy>620</posy>
                     <width>100</width>
                     <height>64</height>
                     <align>right</align>
