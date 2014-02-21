@@ -21,7 +21,7 @@
     </variable>
     
     <variable name="GlobalFanart">
-        <value condition="Window.IsVisible(weather)">$INFO[Window(Weather).Property(Current.FanartCode),special://skin/extras/weather/,]</value>
+        <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
         <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
