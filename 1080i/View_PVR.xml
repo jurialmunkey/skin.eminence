@@ -316,8 +316,8 @@
             <pagecontrol>10</pagecontrol>
             <progresstexture border="5" colordiffuse="bf777777">windows/pvr/progressline.png</progresstexture>
             <scrolltime>350</scrolltime>
-            <timeblocks>25</timeblocks>
-            <rulerunit>6</rulerunit>
+            <timeblocks>50</timeblocks>
+            <rulerunit>12</rulerunit>
             <onleft>31</onleft>
             <onright>31</onright>
             <onup>10</onup>
@@ -385,8 +385,9 @@
                     <colordiffuse>PosterBorder</colordiffuse>
                 </control>   
                 <control type="image">
-                    <width>95</width>
-                    <height>95</height>
+                    <posy>6</posy>
+                    <width>80</width>
+                    <height>80</height>
                     <texture>special://skin/extras/icons/timer.png</texture>
                     <colordiffuse>DarkGray</colordiffuse>
                     <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
@@ -394,15 +395,15 @@
                 <control type="label" id="1">
                     <posx>0</posx>
                     <height>94</height>
-                    <width>0</width>
-                    <textoffsetx>100</textoffsetx>
+                    <width>325</width>
+                    <textoffsetx>80</textoffsetx>
                     <font>Font-ListInfo</font>
                     <label>$INFO[ListItem.Label]</label>
                     <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                 </control>
                 <control type="label" id="1">
                     <posx>10</posx>
-                    <width>0</width>
+                    <width>230</width>
                     <height>94</height>
                     <textoffsetx>0</textoffsetx>
                     <font>Font-ListInfo</font>
@@ -417,17 +418,17 @@
                     <texture border="2">common/border-inner.png</texture>
                 </control>   
                 <control type="image">
-                    <width>95</width>
-                    <height>95</height>
+                    <posy>6</posy>
+                    <width>80</width>
+                    <height>80</height>
                     <texture>special://skin/extras/icons/timer.png</texture>
                     <colordiffuse>DarkGray</colordiffuse>
                     <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                 </control>   
                 <control type="label" id="1">
-                    <posx>0</posx>
                     <height>94</height>
-                    <width>0</width>
-                    <textoffsetx>100</textoffsetx>
+                    <width>325</width>
+                    <textoffsetx>80</textoffsetx>
                     <font>Font-ListInfo</font>
                     <textcolor>Selected</textcolor>
                     <label>$INFO[ListItem.Label]</label>
@@ -435,7 +436,7 @@
                 </control>
                 <control type="label" id="1">
                     <posx>10</posx>
-                    <width>90</width>
+                    <width>230</width>
                     <height>94</height>
                     <textcolor>Selected</textcolor>
                     <font>Font-ListInfo</font>
