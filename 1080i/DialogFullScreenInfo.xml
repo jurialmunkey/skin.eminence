@@ -333,7 +333,7 @@
                 <width>749</width>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
+                <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
             </control>
             
             <control type="grouplist">
