@@ -23,7 +23,7 @@
                 <effect type="slide" end="0,64" start="0" time="200"/>
             </animation>
             <control type="grouplist" id="100">
-            
+                <visible>Window.IsVisible(fullscreenvideo)</visible>
                 <posx>32</posx>
                 <posy>1024</posy>
                 <height>48</height>
@@ -79,7 +79,6 @@
                 <align>center</align>
                 <onleft>3</onleft>
                 <onright>4</onright>
-                <onup>-</onup>
                 <ondown>-</ondown>
 
                 <control type="button" id="12">
@@ -154,6 +153,7 @@
             
             </control>
             <control type="grouplist" id="102">
+                <visible>Window.IsVisible(fullscreenvideo)</visible>
             
                 <posx>728r</posx>
                 <posy>1024</posy>

@@ -23,8 +23,7 @@
     </include>
     <include name="Home-Menu-Button">
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
-        <onback condition="!Window.IsActive(home)">50</onback>
-        <onup condition="!Window.IsActive(home)">50</onup>
+        <ondown>ActivateWindow(videoosd)</ondown>
         <width>220</width>
         <height>340</height>	
         <aspectratio scalediffuse="false">center</aspectratio>
@@ -44,11 +43,12 @@
         <control type="group">
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)]">Conditional</animation>
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="Window.IsActive(home)">WindowClose</animation>
+            <animation effect="slide" end="0,-56" start="0" delay="0" time="150" condition="Window.IsActive(videoosd)">Conditional</animation>
             <control type="button" id="353">
                 <posx>0</posx>
                 <posy>376r</posy>   
                 <width>1920</width>
-                <height>400</height>
+                <height>500</height>
                 <texturefocus colordiffuse="LightGray">common/white.png</texturefocus>
                 <texturenofocus colordiffuse="LightGray">common/white.png</texturenofocus>
                 <onfocus>SetFocus(300)</onfocus>

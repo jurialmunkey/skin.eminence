@@ -11,6 +11,7 @@
 	<color name="Selected">ff404040</color>
 	<color name="PosterBorder">3E000000</color>
 	<color name="LightGray">FFededed</color>
+	<color name="DimFanart">BFededed</color>
 	<color name="DarkerGray">ff1f1f1f</color>
 	<color name="DarkGray">ff474747</color>
 	<color name="DarkGray-NF">bf474747</color>

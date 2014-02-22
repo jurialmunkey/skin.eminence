@@ -1,0 +1,5 @@
+[B]0.9.1[/B]
+Extended epg info to right side
+Simplified fullscreen pvr info
+Started work on subtitles
+ -- TODO: Ratings and Language flags

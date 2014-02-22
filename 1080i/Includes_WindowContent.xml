@@ -10,6 +10,7 @@
 			<include>Dimensions_Fullscreen</include>
 			<texture colordiffuse="9F000000">common/white.png</texture>
 		</control>
+		
 	</include>
 
     <variable name="GlobalFanart-Movies">
@@ -32,10 +33,6 @@
     
 	<include name="GlobalBackground">
 		<control type="group">
-		    <control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<texture colordiffuse="ff000000">common/white.png</texture>
-			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<fadetime>800</fadetime>
@@ -47,15 +44,16 @@
 			</control>
 			<control type="videowindow">
 				<include>Dimensions_Fullscreen</include>
+				<visible>Player.HasVideo</visible>
 			</control>
 			<include>GlobalVignette</include>
-		</control>
-		<control type="image">
-            <include>Dimensions_Fullscreen</include>
-            <texture colordiffuse="LightGray">common/white.png</texture>
-            <visible>!Window.IsActive(home)</visible>
-            <animation effect="fade" end="80" condition="true">Conditional</animation>
-        </control>		
+			<control type="image">
+                <include>Dimensions_Fullscreen</include>
+                <texture colordiffuse="LightGray">common/white.png</texture>
+                <visible>!Window.IsVisible(home)</visible>
+                <animation effect="fade" end="80" condition="true">Conditional</animation>
+            </control>	
+		</control>	
 	</include>
 	
 </includes>

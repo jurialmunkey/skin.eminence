@@ -25,6 +25,7 @@
 	<color name="Selected">fff0f0f0</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="LightGray">ff181818</color>
+	<color name="DimFanart">bf181818</color>
 	<color name="DarkerGray">ffffffff</color>
 	<color name="DarkGray">ffdddddd</color>
 	<color name="DarkGray-NF">bfdddddd</color>

@@ -240,7 +240,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
-            <enable>false</enable>
+            <onclick>ActivateWindow(SubtitleSearch)</onclick>
         </control>
         
         <control type="button" id="6">

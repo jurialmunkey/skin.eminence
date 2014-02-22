@@ -4,18 +4,6 @@
 	<defaultcontrol>-</defaultcontrol>
 	<controls>
 	        	
-        
-
-		<!--<control type="label" id="24">
-			<description>buffering label</description>
-			<posx>0</posx>
-			<posy>525</posy>
-			<width>1920</width>
-			<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-			<align>center</align>
-			<font>Large</font>
-		</control>-->
-
 	</controls>
 
 </window>

@@ -6,7 +6,7 @@
 	<controls>
 	    <control type="button" id="403">
 	        <visible allowhiddenfocus="true">false</visible>
-	        <onfocus>SetFocus(301)</onfocus>
+	        <onfocus>$VAR[HomeFocus]</onfocus>
 	    </control>
 	    <include>Home-Menu</include>
 	</controls>
