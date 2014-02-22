@@ -27,7 +27,7 @@
                 
                 <ondown>60</ondown>
                 <pagecontrol>60</pagecontrol>
-                <viewtype label="Lovefilm">list</viewtype>
+                <viewtype label="31155">list</viewtype>
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>horizontal</orientation>
                 <itemlayout width="1394" height="668">

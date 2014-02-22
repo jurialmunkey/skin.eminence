@@ -10,6 +10,15 @@
 		    <posx>233</posx>
 		    <posy>70</posy>
 		    <include>DialogVisibility</include>
+		    <control type="label" description="Info Label">
+                <posx>1475</posx>
+                <posy>174</posy>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <label>31119</label>
+                <angle>270</angle>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+            </control>
 		    <control type="group" description="Poster">
                 <posx>18</posx>
                 <posy>210</posy>

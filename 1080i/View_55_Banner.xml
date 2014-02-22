@@ -19,7 +19,7 @@
                 <ondown>55</ondown>
                 <pagecontrol>60</pagecontrol>
                 <include>DefOnBack</include>
-                <viewtype label="Banner">list</viewtype>
+                <viewtype label="31154">list</viewtype>
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>vertical</orientation>
                 <itemlayout width="716" height="236">

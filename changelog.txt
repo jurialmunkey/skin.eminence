@@ -1,3 +1,7 @@
+[B]0.9.3[/B]
+Localized viewtypes
+Added side text to info screen
+
 [B]0.9.2[/B]
 Added options to disable fanart and background video
 Option to have weather fanart as background

@@ -65,6 +65,7 @@
                     <width>221</width>
                     <include>Home-Menu-Visibility</include>
                     <visible>Skin.HasSetting(home.301.enabled)</visible>
+                    
                     <animation effect="slide" start="400,400" end="0" time="100">Visible</animation>
                     <animation effect="slide" start="400,400" end="0" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
                     <include>Home-Menu-Button-BG</include>
@@ -74,7 +75,8 @@
                         <onclick>$INFO[Skin.String(home.301.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
                         <onright>302</onright>
-                        <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
+                        
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>

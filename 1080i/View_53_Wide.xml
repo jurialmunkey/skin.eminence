@@ -18,7 +18,7 @@
                 <ondown>53</ondown>
                 <include>DefOnBack</include>
                 <pagecontrol>60</pagecontrol>
-                <viewtype label="Wide">list</viewtype>
+                <viewtype label="539">list</viewtype>
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>vertical</orientation>
 

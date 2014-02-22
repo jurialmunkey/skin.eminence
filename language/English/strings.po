@@ -215,3 +215,19 @@ msgstr ""
 msgctxt "#31151"
 msgid "Hide info"
 msgstr ""
+
+msgctxt "#31152"
+msgid "Posters"
+msgstr ""
+
+msgctxt "#31153"
+msgid "Wall"
+msgstr ""
+
+msgctxt "#31154"
+msgid "Banner"
+msgstr ""
+
+msgctxt "#31155"
+msgid "Lovefilm"
+msgstr ""
