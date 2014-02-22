@@ -187,3 +187,31 @@ msgstr ""
 msgctxt "#31144"
 msgid "Enable TV Tunes"
 msgstr ""
+
+msgctxt "#31145"
+msgid "Show now playing video in background"
+msgstr ""
+
+msgctxt "#31146"
+msgid "Show fanart in background"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Views"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Use weather fanart for home background"
+msgstr ""
+
+msgctxt "#31149"
+msgid "Set home background image path"
+msgstr ""
+
+msgctxt "#31150"
+msgid "Show info"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Hide info"
+msgstr ""

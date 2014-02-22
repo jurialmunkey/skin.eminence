@@ -29,7 +29,7 @@
                     <control type="button" id="28">
                         <description>OK Button</description>
                         <align>left</align>
-                        <focusedcolor>DarkGray</focusedcolor>
+                        <focusedcolor>PanelFG</focusedcolor>
                         <height>66</height>
                         <width>450</width>
                         <font>Font-Context</font>
@@ -38,7 +38,7 @@
                     <control type="button" id="29">
                         <description>Cancel</description>
                         <align>left</align>
-                        <focusedcolor>DarkGray</focusedcolor>
+                        <focusedcolor>PanelFG</focusedcolor>
                         <height>66</height>
                         <width>450</width>
                         <font>Font-Context</font>

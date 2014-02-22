@@ -43,7 +43,7 @@
 	<include name="WindowID">
 		<width>780</width>
 		<height>21</height>
-		<textcolor>Blue</textcolor>
+		<textcolor>Highlight-NF</textcolor>
 		<shadowcolor>Black</shadowcolor>
 		<align>left</align>
 	</include>
@@ -61,7 +61,7 @@
 		<posy>15</posy>
 		<width>780</width>
 		<height>21</height>
-		<textcolor>Blue</textcolor>
+		<textcolor>Highlight-NF</textcolor>
 		<shadowcolor>Black</shadowcolor>
 		<align>right</align>
 	</include>

@@ -80,7 +80,7 @@
 				<posy>310</posy>
 				<width>1438</width>
 				<align>left</align>
-                <textcolor>Blue</textcolor>
+                <textcolor>Highlight-NF</textcolor>
 			</control>
 			
 			<control type="list" id="120">

@@ -127,7 +127,7 @@
 				<aligny>center</aligny>
 				<textcolor>TopBarIcon</textcolor>
 				<focusedcolor>Highlight</focusedcolor>
-				<selectedcolor>Blue</selectedcolor>
+				<selectedcolor>Highlight-NF</selectedcolor>
 				<label>-</label>
 				<textoffsetx>30</textoffsetx>
 				<texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
@@ -186,7 +186,7 @@
 						<width>780</width>
 						<info>ListItem.Label</info>
 						<textcolor>TopBarIcon</textcolor>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<visible>!Control.HasFocus(10)</visible>
 					</control>
 				</focusedlayout>

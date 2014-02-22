@@ -27,7 +27,7 @@
                 <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
-                        <visible>[!Container.Content(artists) + !Container.Content(episodes)] | stringcompare(ListItem.Label,..)</visible>
+                        <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
@@ -64,7 +64,7 @@
                     </control>
                     <!-- Episodes -->
                     <control type="group">
-                        <visible>[Container.Content(artists) | Container.Content(episodes)] + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
@@ -155,7 +155,7 @@
                 <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
                     <!-- NORMAL -->
                     <control type="group">
-                        <visible>[!Container.Content(episodes) + !Container.Content(artists)] | stringcompare(ListItem.Label,..)</visible>
+                        <visible>[!Container.Content(episodes) + !Container.Content(artists) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>Control.HasFocus(51)</visible>
                             <control type="image">
@@ -231,7 +231,7 @@
                     
                     <!-- Episodes -->
                     <control type="group">
-                        <visible>[Container.Content(episodes) | Container.Content(artists)] + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>[Container.Content(episodes) | Container.Content(artists) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>Control.HasFocus(51)</visible>
                             <control type="image">

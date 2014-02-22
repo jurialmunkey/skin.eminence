@@ -23,7 +23,7 @@
 				<posx>15</posx>
 				<width>375</width>
 				<label>-</label>
-				<textcolor>Blue</textcolor>
+				<textcolor>Highlight-NF</textcolor>
 			</control>
 
 			<control type="label" id="12">

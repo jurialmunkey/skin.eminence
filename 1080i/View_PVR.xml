@@ -15,7 +15,7 @@
             <posy>0</posy>
             <width>720</width>
             <align>right</align>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <font>Font-SettingsCategory</font>
             <label>$VAR[WatchedLabel,,  ]$INFO[ListItem.ChannelName]</label>
         </control>
@@ -25,7 +25,7 @@
             <width>720</width>
             <align>right</align>
             <font>Font-ListInfo</font>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label">
@@ -34,7 +34,7 @@
             <width>720</width>
             <align>right</align>
             <font>Font-ListInfo-Small</font>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime,  @ ,]</label>
         </control>
     </include>
@@ -89,7 +89,7 @@
             <posy>15</posy>
             <width>70</width>
             <align>left</align>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <font>Font-SettingsCategory</font>
             <label>$INFO[ListItem.ChannelNumber]</label>
         </control>
@@ -104,14 +104,14 @@
             <midtexture>windows/pvr/progress-mid.png</midtexture>
             <righttexture>windows/pvr/progress-leftright.png</righttexture>
             <info>ListItem.Progress</info>
-            <colordiffuse>DarkGray</colordiffuse>
+            <colordiffuse>PanelFG</colordiffuse>
         </control>
         <control type="label">
             <posx>830</posx>
             <posy>15</posy>
             <width>650</width>
             <align>right</align>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <font>Font-SettingsCategory</font>
             <label>$INFO[ListItem.ChannelName]</label>
         </control>
@@ -121,7 +121,7 @@
             <width>650</width>
             <align>right</align>
             <font>Font-ListInfo</font>
-            <textcolor>DarkGray</textcolor>
+            <textcolor>PanelFG</textcolor>
             <label>$INFO[ListItem.Title]</label>
         </control>
     </include>
@@ -219,7 +219,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>11</onleft>
+                <onleft>9000</onleft>
                 
                 <onright>9000</onright>
                 <onup>11</onup>
@@ -242,7 +242,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>12</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>12</onup>
@@ -265,7 +265,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>13</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>13</onup>
@@ -389,7 +389,7 @@
                     <width>80</width>
                     <height>80</height>
                     <texture>special://skin/extras/icons/timer.png</texture>
-                    <colordiffuse>DarkGray</colordiffuse>
+                    <colordiffuse>PanelFG</colordiffuse>
                     <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                 </control>   
                 <control type="label" id="1">
@@ -422,7 +422,7 @@
                     <width>80</width>
                     <height>80</height>
                     <texture>special://skin/extras/icons/timer.png</texture>
-                    <colordiffuse>DarkGray</colordiffuse>
+                    <colordiffuse>PanelFG</colordiffuse>
                     <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
                 </control>   
                 <control type="label" id="1">
@@ -459,7 +459,7 @@
                 <posx>22</posx>
                 <posy>22</posy>
                 <height>145</height>
-                <width>400</width>
+                <width>390</width>
                 <texture>$VAR[PVRIcon]</texture>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
@@ -470,7 +470,7 @@
                 <control type="label">
                     <width>1215</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <font>Font-SettingsCategory</font>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
@@ -478,7 +478,7 @@
                     <posy>38</posy>
                     <width>1215</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
                     <label>$INFO[ListItem.ChannelName]   $INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
                 </control>
@@ -488,7 +488,7 @@
                     <height>80</height>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo</font>
                     <label>$INFO[ListItem.Plot]</label>
                 </control>
@@ -505,7 +505,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>14</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>14</onup>
@@ -554,7 +554,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>17</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>17</onup>
@@ -603,7 +603,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>15</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>15</onup>
@@ -626,7 +626,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>16</onleft>
+                <onleft>9000</onleft>
                 <onright>9000</onright>
                 
                 <onup>16</onup>

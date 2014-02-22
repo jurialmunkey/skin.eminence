@@ -41,7 +41,7 @@
 					<width>1080</width>
 					<info>ListItem.Label</info>
 					<font>Home</font>
-					<textcolor>Blue</textcolor>
+					<textcolor>Highlight-NF</textcolor>
 					<align>center</align>
 				</control>
 

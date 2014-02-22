@@ -10,9 +10,9 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
-		<selectedcolor>DarkGray-NF</selectedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
+		<selectedcolor>PanelFG-NF</selectedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 	</default>
 
@@ -24,9 +24,9 @@
 		<align>left</align>
 		<aligny>center</aligny>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
-		<selectedcolor>DarkGray</selectedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
+		<selectedcolor>PanelFG</selectedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<scrollout>false</scrollout>
 		<pauseatend>2000</pauseatend>
@@ -52,8 +52,8 @@
 		<font>Font-Button</font>
 		<label>-</label>
 		<textoffsetx>30</textoffsetx>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
@@ -68,13 +68,13 @@
 		<label>-</label>
 		<textoffsetx>30</textoffsetx>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="DarkGray-NF">-</texturenofocus>
+		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<alttexturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</alttexturefocus>
-		<alttexturenofocus colordiffuse="DarkGray-NF">-</alttexturenofocus>
+		<alttexturenofocus colordiffuse="PanelFG-NF">-</alttexturenofocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -89,17 +89,17 @@
 		<aligny>center</aligny>
 		<font>Font-Button</font>
 		<label>-</label>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="DarkGray-NF">-</texturenofocus>
+		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<radiowidth>48</radiowidth>
 		<radioheight>48</radioheight>
-		<textureradioonfocus colordiffuse="DarkerGray">buttons/radio-on.png</textureradioonfocus>
-		<textureradioonnofocus colordiffuse="DarkGray-NF">buttons/radio-on.png</textureradioonnofocus>
-		<textureradioofffocus colordiffuse="DarkerGray">buttons/radio-off.png</textureradioofffocus>
-		<textureradiooffnofocus colordiffuse="DarkGray-NF">buttons/radio-off.png</textureradiooffnofocus>
+		<textureradioonfocus colordiffuse="RadioFO">buttons/radio-on.png</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="PanelFG-NF">buttons/radio-on.png</textureradioonnofocus>
+		<textureradioofffocus colordiffuse="RadioFO">buttons/radio-off.png</textureradioofffocus>
+		<textureradiooffnofocus colordiffuse="PanelFG-NF">buttons/radio-off.png</textureradiooffnofocus>
 		<textoffsetx>30</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -112,15 +112,15 @@
 		<label>-</label>
 		<font>Font-Button</font>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="DarkGray-NF">-</texturenofocus>
+		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
-		<textureup colordiffuse="DarkGray-NF" flipy="true">buttons/spin-down.png</textureup>
-		<texturedown colordiffuse="DarkGray-NF">buttons/spin-down.png</texturedown>
-		<textureupfocus colordiffuse="DarkerGray" flipy="true">buttons/spin-down.png</textureupfocus>
-		<texturedownfocus colordiffuse="DarkerGray">buttons/spin-down.png</texturedownfocus>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
+		<texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
+		<textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
+		<texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<textoffsetx>30</textoffsetx>
 		<align>left</align>
@@ -137,14 +137,14 @@
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="DarkGray-NF">-</texturenofocus>
-		<textureup colordiffuse="DarkGray-NF" flipy="true">buttons/spin-down.png</textureup>
-		<texturedown colordiffuse="DarkGray-NF">buttons/spin-down.png</texturedown>
-		<textureupfocus colordiffuse="DarkerGray" flipy="true">buttons/spin-down.png</textureupfocus>
-		<texturedownfocus colordiffuse="DarkerGray">buttons/spin-down.png</texturedownfocus>
+		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+		<textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
+		<texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
+		<textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
+		<texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<textoffsetx>30</textoffsetx>
 		<align>left</align>
@@ -159,22 +159,22 @@
 		<height>66</height>
 		<width>450</width>
 		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="DarkGray-NF">-</texturenofocus>
+		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<sliderwidth>230</sliderwidth>
 		<sliderheight>23</sliderheight>
 		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
 		<textureslidernib border="2" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
 		<textureslidernibfocus border="2" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
-		<focusedcolor>DarkGray</focusedcolor>
+		<textcolor>PanelFG-NF</textcolor>
+		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>14</textoffsety>
 	</default>
 
 	<default type="progress">
-		<texturebg colordiffuse="DarkGray-NF">osd/progress-bg.png</texturebg>
+		<texturebg colordiffuse="PanelFG-NF">osd/progress-bg.png</texturebg>
 		<lefttexture>-</lefttexture>
 		<midtexture colordiffuse="Highlight">osd/progress-bg.png</midtexture>
 		<righttexture>osd/progress-end.png</righttexture>
@@ -196,7 +196,7 @@
 	<default type="scrollbar">
 		<width>8</width>
 		<texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
-		<texturesliderbar colordiffuse="DarkGray">common/white.png</texturesliderbar>
+		<texturesliderbar colordiffuse="PanelFG">common/white.png</texturesliderbar>
 		<texturesliderbarfocus colordiffuse="Highlight">common/white.png</texturesliderbarfocus>
 		<textureslidernib>-</textureslidernib>
 		<textureslidernibfocus>-</textureslidernibfocus>
@@ -207,7 +207,7 @@
 	<default type="textbox">
 		<label>-</label>
 		<font>Font-Button</font>
-		<textcolor>DarkGray-NF</textcolor>
+		<textcolor>PanelFG-NF</textcolor>
 		<shadowcolor>-</shadowcolor>
 		<pagecontrol>61</pagecontrol>
 		<autoscroll delay="6000" time="3000" repeat="10000"/>

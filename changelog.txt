@@ -1,3 +1,11 @@
+[B]0.9.2[/B]
+Added options to disable fanart and background video
+Option to have weather fanart as background
+Option to set own slideshow background
+Options to show info for poster and list view in tvshows/movies
+Updated color defs' names
+
+
 [B]0.9.1[/B]
 Extended epg info to right side
 Simplified fullscreen pvr info

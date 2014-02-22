@@ -9,16 +9,16 @@
 	        <posy>48r</posy>
 	        <width>32</width>
 	        <height>32</height>
-	        <texture colordiffuse="DarkGray-NF">buttons/rss.png</texture>
+	        <texture colordiffuse="PanelFG-NF">buttons/rss.png</texture>
 	    </control>
         <control type="rss">
             <posx>48</posx>
             <posy>1032</posy>
             <width>1870</width>
             <font>Font-RSS</font>
-            <textcolor>DarkGray-NF</textcolor>
-            <headlinecolor>DarkGray-NF</headlinecolor>
-            <titlecolor>DarkGray</titlecolor>
+            <textcolor>PanelFG-NF</textcolor>
+            <headlinecolor>PanelFG-NF</headlinecolor>
+            <titlecolor>PanelFG</titlecolor>
         </control>
 
 	</controls>

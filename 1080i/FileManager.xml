@@ -95,7 +95,7 @@
                                 <width>720</width>
                                 <align>left</align>
                                 <info>ListItem.Label</info>
-                                <textcolor>Blue</textcolor>
+                                <textcolor>Highlight-NF</textcolor>
                             </control>
 
                             <control type="label">
@@ -103,7 +103,7 @@
                                 <width>720</width>
                                 <align>right</align>
                                 <info>ListItem.Label2</info>
-                                <textcolor>Blue</textcolor>
+                                <textcolor>Highlight-NF</textcolor>
                             </control>
                         </control>
 
@@ -199,7 +199,7 @@
                                 <width>720</width>
                                 <align>left</align>
                                 <info>ListItem.Label</info>
-                                <textcolor>Blue</textcolor>
+                                <textcolor>Highlight-NF</textcolor>
                             </control>
 
                             <control type="label">
@@ -207,7 +207,7 @@
                                 <width>720</width>
                                 <align>right</align>
                                 <info>ListItem.Label2</info>
-                                <textcolor>Blue</textcolor>
+                                <textcolor>Highlight-NF</textcolor>
                             </control>
                         </control>
 

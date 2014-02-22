@@ -66,7 +66,7 @@
                 <itemlayout width="450" height="140">
                     <control type="image">
                         <width>450</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                     </control>
                     <control type="image">
@@ -86,7 +86,7 @@
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                        <colordiffuse>DarkGray</colordiffuse>
+                        <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>420</posx>
@@ -94,7 +94,7 @@
                         <width>270</width>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
@@ -104,7 +104,7 @@
                         <width>270</width>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -112,7 +112,7 @@
                 <focusedlayout width="450" height="140">
                     <control type="image">
                         <width>450</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="White" border="2">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                         <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -120,7 +120,7 @@
                     </control>
                     <control type="image">
                         <width>450</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>
                     </control>
@@ -141,7 +141,7 @@
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                        <colordiffuse>DarkGray</colordiffuse>
+                        <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>420</posx>
@@ -200,7 +200,7 @@
                     <control type="label">
                         <posx>20</posx>
                         <posy>555</posy>
-                        <width>915</width>
+                        <width>825</width>
                         <align>left</align>
                         <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
                     </control>
@@ -232,9 +232,10 @@
                     <control type="label">
                         <posx>20</posx>
                         <posy>555</posy>
-                        <width>915</width>
+                        <width>825</width>
                         <align>left</align>
                         <textcolor>Selected</textcolor>
+                        <scroll>true</scroll>
                         <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
                     </control>
                     <control type="label">
@@ -313,6 +314,48 @@
                     <include>DefContextMenuButton</include>
                 </control>
                 
+                <!-- EXTRA INFO OPTIONS -->
+                <control type="togglebutton" id="9003">
+                    <include>DefContextMenuButton</include>
+                    <onclick>Skin.ToggleSetting(posterview.tvinfo)</onclick>
+                    <visible>Container.Content(tvshows) + Control.IsVisible(51)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(posterview.tvinfo)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                <control type="togglebutton" id="9004">
+                    <include>DefContextMenuButton</include>
+                    <onclick>Skin.ToggleSetting(posterview.info)</onclick>
+                    <visible>Container.Content(movies) + Control.IsVisible(51)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(posterview.info)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                <control type="togglebutton" id="9005">
+                    <include>DefContextMenuButton</include>
+                    <onclick>Skin.ToggleSetting(listview.tvinfo)</onclick>
+                    <visible>Container.Content(tvshows) + Control.IsVisible(50)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(listview.tvinfo)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                <control type="togglebutton" id="9006">
+                    <include>DefContextMenuButton</include>
+                    <onclick>Skin.ToggleSetting(listview.info)</onclick>
+                    <visible>Container.Content(movies) + Control.IsVisible(50)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(listview.info)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                
                 <control type="button" id="21">
                     <description>Activate Filter</description>
                     <include>DefContextMenuButton</include>
@@ -320,6 +363,8 @@
                     <onclick>SendClick(videolibrary,19)</onclick>
                     <onclick>SetFocus(21)</onclick>
                 </control>
+                
+                
                 
                 <control type="button" id="9002">
                     <description>Search</description>

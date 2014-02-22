@@ -16,7 +16,7 @@
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
-                <texture colordiffuse="LightGray" border="2">common/white.png</texture>
+                <texture colordiffuse="PanelBG" border="2">common/white.png</texture>
                 <animation effect="fade" end="75" condition="true">Conditional</animation>
                 <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
@@ -132,7 +132,7 @@
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
-                <texture colordiffuse="LightGray" border="2">common/white.png</texture>
+                <texture colordiffuse="PanelBG" border="2">common/white.png</texture>
                 <animation effect="fade" end="75" condition="true">Conditional</animation>
                 <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>

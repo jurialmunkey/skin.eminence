@@ -32,7 +32,7 @@
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/eye.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/eye.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/eye.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="0">WindowOpen</animation>
@@ -50,7 +50,7 @@
                     <radioheight>128</radioheight>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/film.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/film.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/film.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="25">WindowOpen</animation>
@@ -68,7 +68,7 @@
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/songs.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/songs.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/songs.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="50">WindowOpen</animation>
@@ -86,7 +86,7 @@
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/addons.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/addons.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/addons.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="75">WindowOpen</animation>
@@ -104,7 +104,7 @@
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/pictures.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/pictures.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/pictures.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="100">WindowOpen</animation>
@@ -122,7 +122,7 @@
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/sun.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/sun.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/sun.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="125">WindowOpen</animation>
@@ -147,7 +147,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/network.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/network.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/network.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="150">WindowOpen</animation>
@@ -165,7 +165,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/configure.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/configure.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/configure.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="175">WindowOpen</animation>
@@ -183,7 +183,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/actor.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/actor.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/actor.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="200">WindowOpen</animation>
@@ -201,7 +201,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/sysinfo.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/sysinfo.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/sysinfo.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="225">WindowOpen</animation>
@@ -219,7 +219,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/livetv.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/livetv.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/livetv.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="250">WindowOpen</animation>
@@ -238,7 +238,7 @@
                     <font>Font-SettingsCategory</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/year.png</textureradioofffocus>
-                    <textureradiooffnofocus colordiffuse="DarkGray-NF">special://skin/extras/icons/year.png</textureradiooffnofocus>
+                    <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/year.png</textureradiooffnofocus>
                     <texturefocus border="2" colordiffuse="White">common/border-inner.png</texturefocus>
                     <texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
                     <animation effect="slide" start="1920,400" end="0" time="150" delay="275">WindowOpen</animation>

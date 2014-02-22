@@ -69,7 +69,7 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-BigWeather</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label>k</label>
@@ -80,7 +80,7 @@
                     <width>300</width>
                     <align>left</align>
                     <font>Font-WeatherTemp</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="label">
@@ -88,7 +88,7 @@
                     <posy>94</posy>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Condition),,$COMMA  ]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,]$INFO[System.TemperatureUnits]</label>
                 </control>
             </control>
@@ -100,7 +100,7 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]j[/B]</label>
@@ -109,7 +109,7 @@
                     <posx>130</posx>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Humidity)]</label>
                 </control>
                 <control type="label">
@@ -118,7 +118,7 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]n[/B]</label>
@@ -128,7 +128,7 @@
                     <posy>50</posy>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.WindSpeed)]$INFO[Window(Weather).Property(Current.WindDirection),$COMMA  ,]</label>
                 </control>
             </control>
@@ -141,7 +141,7 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]f[/B]</label>
@@ -150,7 +150,7 @@
                     <posx>130</posx>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Today.Sunrise)]</label>
                 </control>
                 <control type="label">
@@ -159,7 +159,7 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]g[/B]</label>
@@ -169,7 +169,7 @@
                     <posy>50</posy>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>DarkGray</textcolor>
+                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Today.Sunset)]</label>
                 </control>
                 
@@ -197,7 +197,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label> [B]$VAR[WeatherLabelHourly][/B]</label>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
                         <posx>704</posx>
@@ -207,7 +207,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>k</label>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
                         <posx>280</posx>
@@ -215,7 +215,7 @@
                         <height>105</height>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Property(outlook)]</label>
                     </control>
@@ -225,7 +225,7 @@
                         <height>105</height>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-WeatherTempHourly</font>
                         <label>$INFO[ListItem.Property(temp)]</label>
                     </control>
@@ -234,7 +234,7 @@
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -243,7 +243,7 @@
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>

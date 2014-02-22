@@ -31,8 +31,8 @@
 						<width>1200</width>
 						<height>66</height>
 						<info>ListItem.Label</info>
-						<textcolor>DarkGray-NF</textcolor>
-						<selectedcolor>Blue</selectedcolor>
+						<textcolor>PanelFG-NF</textcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 					</control>
 					<control type="label">
 						<posx>1408</posx>
@@ -41,8 +41,8 @@
 						<align>right</align>
 						<info>ListItem.Label2</info>
 						<font>Font-ListInfo</font>
-						<textcolor>DarkGray-NF</textcolor>
-						<selectedcolor>Blue</selectedcolor>
+						<textcolor>PanelFG-NF</textcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 					</control>
 				</itemlayout>
 				<focusedlayout height="69" width="1438">
@@ -58,8 +58,8 @@
                             <width>1200</width>
                             <height>66</height>
                             <info>ListItem.Label</info>
-                            <textcolor>DarkGray</textcolor>
-                            <selectedcolor>Blue</selectedcolor>
+                            <textcolor>PanelFG</textcolor>
+                            <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>1408</posx>
@@ -68,8 +68,8 @@
                             <align>right</align>
                             <info>ListItem.Label2</info>
                             <font>Font-ListInfo</font>
-                            <textcolor>DarkGray</textcolor>
-                            <selectedcolor>Blue</selectedcolor>
+                            <textcolor>PanelFG</textcolor>
+                            <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
 					</control>
 					<control type="group">
@@ -79,8 +79,8 @@
                             <width>1200</width>
                             <height>66</height>
                             <info>ListItem.Label</info>
-                            <textcolor>DarkGray</textcolor>
-                            <selectedcolor>Blue</selectedcolor>
+                            <textcolor>PanelFG</textcolor>
+                            <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>1408</posx>
@@ -89,8 +89,8 @@
                             <align>right</align>
                             <info>ListItem.Label2</info>
                             <font>Font-ListInfo</font>
-                            <textcolor>DarkGray</textcolor>
-                            <selectedcolor>Blue</selectedcolor>
+                            <textcolor>PanelFG</textcolor>
+                            <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
 					</control>
 				</focusedlayout>
@@ -122,7 +122,7 @@
 						<height>135</height>
 						<info>ListItem.Label</info>
 						<font>Font-Button</font>
-						<textcolor>DarkGray-NF</textcolor>
+						<textcolor>PanelFG-NF</textcolor>
 					</control>
 					<control type="label">
 						<posx>1408</posx>
@@ -131,7 +131,7 @@
 						<align>right</align>
 						<info>ListItem.Label2</info>
 						<font>Font-ListInfo</font>
-						<textcolor>DarkGray-NF</textcolor>
+						<textcolor>PanelFG-NF</textcolor>
 					</control>
 				</itemlayout>
 				<focusedlayout height="138" width="1438">
@@ -148,7 +148,7 @@
                             <height>135</height>
                             <info>ListItem.Label</info>
                             <font>Font-Button</font>
-                            <textcolor>DarkGray</textcolor>
+                            <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
                             <posx>1408</posx>
@@ -157,7 +157,7 @@
                             <align>right</align>
                             <info>ListItem.Label2</info>
                             <font>Font-ListInfo</font>
-                            <textcolor>DarkGray</textcolor>
+                            <textcolor>PanelFG</textcolor>
                         </control>
 					</control>
 					<control type="group">
@@ -168,7 +168,7 @@
                             <height>135</height>
                             <info>ListItem.Label</info>
                             <font>Font-Button</font>
-                            <textcolor>DarkGray</textcolor>
+                            <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
                             <posx>1408</posx>
@@ -177,7 +177,7 @@
                             <align>right</align>
                             <info>ListItem.Label2</info>
                             <font>Font-ListInfo</font>
-                            <textcolor>DarkGray</textcolor>
+                            <textcolor>PanelFG</textcolor>
                         </control>
 					</control>
 

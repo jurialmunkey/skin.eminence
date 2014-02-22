@@ -49,7 +49,7 @@
 						<height>135</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<textcolor>TopBarIcon</textcolor>
 					</control>
 
@@ -69,7 +69,7 @@
 						<height>135</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<textcolor>Highlight</textcolor>
 						<visible>Control.HasFocus(450)</visible>
 					</control>
@@ -79,7 +79,7 @@
 						<height>135</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<textcolor>TopBarIcon</textcolor>
 						<visible>!Control.HasFocus(450)</visible>
 					</control>

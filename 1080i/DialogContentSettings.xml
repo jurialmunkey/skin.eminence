@@ -92,7 +92,7 @@
 						<posx>60</posx>
 						<width>570</width>
 						<info>ListItem.Label</info>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<textcolor>TopBarIcon</textcolor>
 					</control>
 
@@ -112,7 +112,7 @@
 						<posx>60</posx>
 						<width>570</width>
 						<info>ListItem.Label</info>
-						<selectedcolor>Blue</selectedcolor>
+						<selectedcolor>Highlight-NF</selectedcolor>
 						<textcolor>TopBarIcon</textcolor>
 						<visible>!Control.HasFocus(4)</visible>
 					</control>

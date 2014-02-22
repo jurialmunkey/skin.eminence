@@ -49,8 +49,8 @@
                 <posy>376r</posy>   
                 <width>1920</width>
                 <height>500</height>
-                <texturefocus colordiffuse="LightGray">common/white.png</texturefocus>
-                <texturenofocus colordiffuse="LightGray">common/white.png</texturenofocus>
+                <texturefocus colordiffuse="PanelBG">common/white.png</texturefocus>
+                <texturenofocus colordiffuse="PanelBG">common/white.png</texturenofocus>
                 <onfocus>SetFocus(300)</onfocus>
                 <include>Home-Menu-Button</include>
             </control>
@@ -443,8 +443,8 @@
                 <posx>-158</posx>
                 <posy>358r</posy>   
                 <onfocus>SetFocus(301)</onfocus>
-                <texturefocus colordiffuse="LightGray">home/half-tile.png</texturefocus>
-                <texturenofocus colordiffuse="LightGray">home/half-tile.png</texturenofocus>
+                <texturefocus colordiffuse="PanelBG">home/half-tile.png</texturefocus>
+                <texturenofocus colordiffuse="PanelBG">home/half-tile.png</texturenofocus>
                 <include>Home-Menu-Button</include>
                 <include>Home-Menu-Visibility</include>
                 <animation effect="slide" start="400,400" end="0" delay="0" time="75">Visible</animation>
@@ -456,8 +456,8 @@
                 <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
                 <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>
                 <onfocus condition="Skin.HasSetting(home.314.enabled)">SetFocus(314)</onfocus>
-                <texturefocus colordiffuse="LightGray">home/half-tile.png</texturefocus>
-                <texturenofocus colordiffuse="LightGray">home/half-tile.png</texturenofocus>
+                <texturefocus colordiffuse="PanelBG">home/half-tile.png</texturefocus>
+                <texturenofocus colordiffuse="PanelBG">home/half-tile.png</texturenofocus>
                 <include>Home-Menu-Button</include>
                 <include>Home-Menu-Visibility</include>
                 <animation effect="slide" start="400,400" end="0" delay="275" time="100">Visible</animation>

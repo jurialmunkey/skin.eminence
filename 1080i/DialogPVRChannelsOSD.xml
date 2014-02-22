@@ -13,7 +13,7 @@
                 <posy>-1</posy>
                 <width>674</width>
                 <height>1082</height>
-                <texture colordiffuse="LightGray" border="2">common/white.png</texture>
+                <texture colordiffuse="PanelBG" border="2">common/white.png</texture>
                 <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
@@ -30,7 +30,7 @@
                 <posy>10</posy>
                 <width>400</width>
                 <align>left</align>
-                <textcolor>DarkGray</textcolor>
+                <textcolor>PanelFG</textcolor>
                 <font>Font-SettingsCategory</font>
                 <label>$INFO[VideoPlayer.ChannelGroup]</label>
             </control>
@@ -39,7 +39,7 @@
                 <posy>43</posy>
                 <width>400</width>
                 <align>left</align>
-                <textcolor>DarkGray</textcolor>
+                <textcolor>PanelFG</textcolor>
                 <font>Font-ListInfo</font>
                 <label>$INFO[Container(11).NumItems,,  $LOCALIZE[19019]]</label>
             </control>
@@ -72,8 +72,8 @@
                         <posy>5</posy>
                         <width>70</width>
                         <align>left</align>
-                        <textcolor>DarkGray-NF</textcolor>
-                        <selectedcolor>DarkGray-NF</selectedcolor>
+                        <textcolor>PanelFG-NF</textcolor>
+                        <selectedcolor>PanelFG-NF</selectedcolor>
                         <font>Font-SettingsCategory</font>
                         <label>$INFO[ListItem.ChannelNumber]</label>
                     </control>
@@ -88,15 +88,15 @@
                         <midtexture>windows/pvr/progress-mid.png</midtexture>
                         <righttexture>windows/pvr/progress-leftright.png</righttexture>
                         <info>ListItem.Progress</info>
-                        <colordiffuse>DarkGray-NF</colordiffuse>
+                        <colordiffuse>PanelFG-NF</colordiffuse>
                     </control>
                     <control type="label">
                         <posx>530</posx>
                         <posy>5</posy>
                         <width>280</width>
                         <align>right</align>
-                        <textcolor>DarkGray-NF</textcolor>
-                        <selectedcolor>DarkGray-NF</selectedcolor>
+                        <textcolor>PanelFG-NF</textcolor>
+                        <selectedcolor>PanelFG-NF</selectedcolor>
                         <font>Font-SettingsCategory</font>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
@@ -106,8 +106,8 @@
                         <width>380</width>
                         <align>right</align>
                         <font>Font-ListInfo</font>
-                        <textcolor>DarkGray-NF</textcolor>
-                        <selectedcolor>DarkGray-NF</selectedcolor>
+                        <textcolor>PanelFG-NF</textcolor>
+                        <selectedcolor>PanelFG-NF</selectedcolor>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                 </itemlayout>

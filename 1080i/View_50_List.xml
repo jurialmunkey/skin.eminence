@@ -30,7 +30,7 @@
                             <posy>9</posy>
                             <width>48</width>
                             <height>48</height>
-                            <texture colordiffuse="DarkGray-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+                            <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
                             <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
                         </control>
                         <control type="label">
@@ -88,7 +88,7 @@
                                     <posy>9</posy>
                                     <width>48</width>
                                     <height>48</height>
-                                    <texture colordiffuse="DarkGray">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+                                    <texture colordiffuse="PanelFG">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
                                     <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
                                 </control>
                                 <control type="label">
@@ -107,7 +107,7 @@
                                     <width>900</width>
                                     <font>Font-Button</font>
                                     <label>$VAR[MusicLabel]</label>
-                                    <textcolor>DarkGray</textcolor>
+                                    <textcolor>PanelFG</textcolor>
                                 </control>
                             </control>
                             <control type="label">
@@ -115,7 +115,7 @@
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[MusicLabel]</label>
-                                <textcolor>DarkGray</textcolor>
+                                <textcolor>PanelFG</textcolor>
                                 <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)]</visible>
                             </control>
                             <control type="label">
@@ -124,7 +124,7 @@
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
-                                <textcolor>DarkGray</textcolor>
+                                <textcolor>PanelFG</textcolor>
                             </control>
                         </control>
                         <control type="group">
@@ -136,7 +136,7 @@
                                     <posy>9</posy>
                                     <width>48</width>
                                     <height>48</height>
-                                    <texture colordiffuse="DarkGray-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+                                    <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
                                     <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
                                 </control>
                                 <control type="label">
@@ -179,7 +179,7 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>[!Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]] | stringcompare(ListItem.Label,..)</visible>
+                <visible>[!Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + ![[Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <width>444</width>
                     <height>690</height>
@@ -208,7 +208,7 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>Container.Content(episodes) + !stringcompare(ListItem.Label,..) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]</visible>
+                <visible>[Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]</visible>
                 <control type="image">
                     <height>690</height>
                     <width>444</width>
@@ -232,6 +232,18 @@
                     <align>left</align>
                     <font>Font-ListHeader</font>
                     <label>$INFO[ListItem.TvShowTitle]</label>
+                    <visible>Container.Content(episodes)</visible>
+                </control>
+                <control type="label">
+                    <posx>22</posx>
+                    <posy>254</posy>
+                    <height>68</height>
+                    <width>400</width>
+                    <textcolor>Selected</textcolor>
+                    <align>left</align>
+                    <font>Font-ListHeader</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <visible>!Container.Content(episodes)</visible>
                 </control>
                 <control type="textbox">
                     <posx>22</posx>

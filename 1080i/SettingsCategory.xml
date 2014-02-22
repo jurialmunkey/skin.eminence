@@ -104,7 +104,7 @@
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<align>left</align>
-			<focusedcolor>DarkGray</focusedcolor>
+			<focusedcolor>PanelFG</focusedcolor>
 			<height>66</height>
 			<width>450</width>
 			<font>Font-Context</font>

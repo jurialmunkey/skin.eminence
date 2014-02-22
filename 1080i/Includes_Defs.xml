@@ -32,7 +32,7 @@
         <align>left</align>
         <aligny>center</aligny>
         <width>920</width>
-        <textcolor>DarkGray</textcolor>
+        <textcolor>PanelFG</textcolor>
         <font>Font-SettingsCategory</font>
     </include>
 
@@ -42,7 +42,7 @@
             <posy>320</posy>
             <height>687</height>
             <width>1</width>
-            <texture colordiffuse="DarkGray">common/white.png</texture>
+            <texture colordiffuse="PanelFG">common/white.png</texture>
             <animation effect="fade" end="15" condition="true">Conditional</animation>
         </control>
     </include>
@@ -210,7 +210,7 @@
             <posy>282</posy>
             <width>185</width>
             <align>center</align>
-            <textcolor>DarkerGray</textcolor>
+            <textcolor>RadioFO</textcolor>
             <font>Font-ListInfo</font>
             <label>$INFO[ListItem.Label]</label>
         </control>

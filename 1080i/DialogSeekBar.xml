@@ -21,7 +21,7 @@
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
-                <texture colordiffuse="LightGray" border="2">common/white.png</texture>
+                <texture colordiffuse="PanelBG" border="2">common/white.png</texture>
                 <animation effect="fade" end="75" condition="true">Conditional</animation>
                 <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
@@ -81,7 +81,7 @@
         
         <control type="image">
             <include>Dimensions_Fullscreen</include>
-            <texture colordiffuse="LightGray">common/white.png</texture>
+            <texture colordiffuse="PanelBG">common/white.png</texture>
             <visible>Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)</visible>
             <animation effect="fade" end="80" condition="true">Conditional</animation>
             <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
@@ -95,7 +95,7 @@
 		    <control type="image">
                 <width>1920</width>
                 <height>364</height>	
-                <texture colordiffuse="LightGray">common/white.png</texture>
+                <texture colordiffuse="PanelBG">common/white.png</texture>
                 <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
         

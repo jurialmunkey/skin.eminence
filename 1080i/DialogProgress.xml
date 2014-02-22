@@ -8,7 +8,7 @@
 	    <control type="image">
 	        <include>Dimensions_Fullscreen</include>
 	        <texture>common/white.png</texture>
-	        <colordiffuse>LightGray</colordiffuse>
+	        <colordiffuse>PanelBG</colordiffuse>
 	        <animation effect="fade" end="75" condition="true">Conditional</animation>
 	        <include>Animation.FadeIn</include>
 	    </control>

@@ -191,7 +191,7 @@
                     <control type="image">
                         <width>48</width>
                         <height>48</height>
-                        <texture colordiffuse="DarkGray-NF">$INFO[ListItem.Icon]</texture>
+                        <texture colordiffuse="PanelFG-NF">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="label">
                         <posx>64</posx>
@@ -200,7 +200,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>$INFO[ListItem.Label]</label>
-                        <textcolor>DarkGray-NF</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                     </control>
                 </itemlayout>
                 <focusedlayout width="230" height="48">

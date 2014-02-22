@@ -113,7 +113,7 @@
 				<width>420</width>
 				<height>45</height>
 				<font>Medium</font>
-				<textcolor>Blue</textcolor>
+				<textcolor>Highlight-NF</textcolor>
 				<align>center</align>
 				<label>31018</label>
 			</control>
@@ -138,7 +138,7 @@
 					<posy>390</posy>
 					<width>420</width>
 					<height>330</height>
-					<label>$INFO[Container(50).ListItem.Title,[COLOR=Blue]$LOCALIZE[556]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Artist,[COLOR=Blue]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=Blue]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=Blue]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.TrackNumber,[COLOR=Blue]$LOCALIZE[554]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=Blue]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+					<label>$INFO[Container(50).ListItem.Title,[COLOR=Highlight-NF]$LOCALIZE[556]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Artist,[COLOR=Highlight-NF]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Album,[COLOR=Highlight-NF]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Duration,[COLOR=Highlight-NF]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.TrackNumber,[COLOR=Highlight-NF]$LOCALIZE[554]:[/COLOR] ,[CR]]$INFO[Container(50).ListItem.Genre,[COLOR=Highlight-NF]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
 				</control>
 
 			</control>
@@ -162,7 +162,7 @@
 					<posy>390</posy>
 					<width>420</width>
 					<height>330</height>
-					<label>$INFO[Container(100).ListItem.Title,[COLOR=Blue]$LOCALIZE[556]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Artist,[COLOR=Blue]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=Blue]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=Blue]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.TrackNumber,[COLOR=Blue]$LOCALIZE[554]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=Blue]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
+					<label>$INFO[Container(100).ListItem.Title,[COLOR=Highlight-NF]$LOCALIZE[556]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Artist,[COLOR=Highlight-NF]$LOCALIZE[557]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Album,[COLOR=Highlight-NF]$LOCALIZE[558]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Duration,[COLOR=Highlight-NF]$LOCALIZE[555]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.TrackNumber,[COLOR=Highlight-NF]$LOCALIZE[554]:[/COLOR] ,[CR]]$INFO[Container(100).ListItem.Genre,[COLOR=Highlight-NF]$LOCALIZE[515]:[/COLOR] ,[CR]]</label>
 				</control>
 
 			</control>

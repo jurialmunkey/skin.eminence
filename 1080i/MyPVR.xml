@@ -8,7 +8,7 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
-            <animation type="WindowOpen">
+           <!-- <animation type="WindowOpen">
 			    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
 			    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
 			    <effect type="zoom" start="90" end="100" center="1027,438" tween="cubic" easing="out" time="400" />
@@ -17,7 +17,8 @@
 			    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
 			    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
 			    <effect type="zoom" start="90" end="100" center="1027,438" tween="cubic" easing="out" time="400" />
-			</animation>
+			</animation>-->
+			<include>Animation.SlideOpen.LeftToRight</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" end="1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
@@ -74,7 +75,7 @@
                         <posy>10</posy>
                         <width>423</width>
                         <align>left</align>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-SettingsCategory</font>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
@@ -83,7 +84,7 @@
                         <posx>423</posx>
                         <width>423</width>
                         <align>right</align>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
                     </control>
@@ -91,7 +92,7 @@
                         <posy>45</posy>
                         <width>275</width>
                         <align>left</align>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
@@ -101,7 +102,7 @@
                         <height>230</height>
                         <align>left</align>
                         <aligny>top</aligny>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Plot]</label>
                     </control>
@@ -109,7 +110,7 @@
                         <posy>348</posy>
                         <width>423</width>
                         <align>left</align>
-                        <textcolor>DarkGray</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.NextTitle,[B]$LOCALIZE[209]...[/B] ,]</label>
                     </control>
