@@ -4,8 +4,10 @@
 	<defaultcontrol always="false">14</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
+    
 	<controls>
 	    <control type="group">
+	        <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
 	        <animation type="WindowOpen">
 	            <effect type="slide" start="0,64" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" delay="150" time="200"/>

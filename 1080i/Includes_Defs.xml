@@ -265,9 +265,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
-            <onclick>ActivateWindow(mypvr)</onclick>
-            <onclick>SetFocus(32)</onclick>
-            <onclick>SetFocus(11)</onclick>
+            <onclick>ActivateWindowAndFocus(mypvr,32,0,11,0)</onclick>
         </control>
         
         <control type="button" id="5">

@@ -16,6 +16,7 @@
                 <texture colordiffuse="LightGray" border="2">common/white.png</texture>
                 <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
+                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
             </control>
             <control type="image">
                 <posx>530</posx>
