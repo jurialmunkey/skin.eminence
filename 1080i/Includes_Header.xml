@@ -118,25 +118,38 @@
                 <aspectratio>scale</aspectratio>
             </control>
 
-            <control type="image">
-                <posy>10</posy>
-                <posx>30</posx>
-                <width>128</width>
-                <height>128</height>	
-                <texture>$VAR[MainHeaderIcon]</texture>
-                <aspectratio>keep</aspectratio>
-                <colordiffuse>TopBarIcon</colordiffuse>
+            <control type="group">
+                <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + !Window.IsVisible(fullscreenvideo)]</visible>
+                <control type="image">
+                    <posy>10</posy>
+                    <posx>30</posx>
+                    <width>128</width>
+                    <height>128</height>	
+                    <texture>$VAR[MainHeaderIcon]</texture>
+                    <aspectratio>keep</aspectratio>
+                    <colordiffuse>TopBarIcon</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>115</posy>
+                    <width>184</width>
+                    <aligny>top</aligny>
+                    <font>Font-Sublabel</font>
+                    <align>center</align>
+                    <textcolor>TopBarIcon</textcolor>
+                    <label>$VAR[IconHeader]</label>
+                </control>
             </control>
-            
-            <control type="label">
-                <posx>0</posx>
-                <posy>115</posy>
-                <width>184</width>
-                <aligny>top</aligny>
-                <font>Font-Sublabel</font>
-                <align>center</align>
-                <textcolor>TopBarIcon</textcolor>
-                <label>$VAR[IconHeader]</label>
+            <control type="group">
+                <visible>VideoPlayer.Content(livetv) + [Window.IsVisible(fullscreenvideo)]</visible>
+                <control type="image">
+                    <posy>40</posy>
+                    <posx>40</posx>
+                    <width>120</width>
+                    <height>120</height>	
+                    <texture>$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio>keep</aspectratio>
+                </control>
             </control>
         </control>
         <control type="group" description="Main Header">

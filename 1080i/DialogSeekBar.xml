@@ -115,7 +115,7 @@
                 <height>155</height>
                 <texture>$VAR[OSDImage]</texture>
                 <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                <visible>!Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+                <visible>!Window.IsVisible(DialogFullScreenInfo.xml) + !VideoPlayer.Content(livetv)</visible>
             </control>
 		</control>
 		
