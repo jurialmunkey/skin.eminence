@@ -59,7 +59,7 @@
                             <width>408</width>
                             <align>right</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                         </control>
                     </control>
                     <!-- Episodes -->
@@ -108,7 +108,7 @@
                             <textcolor>Selected</textcolor>
                             <align>center</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$VAR[ExtraInfo]</label>
+                            <label>$VAR[ExtraInfo]$VAR[WatchedLabel,   ,]</label>
                         </control>
                     </control>
 
@@ -189,7 +189,7 @@
                                 <align>right</align>
                                 <textcolor>Selected</textcolor>
                                 <font>Font-ListInfo-Small</font>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                             </control>
                         </control>
                         <control type="group">
@@ -224,7 +224,7 @@
                                 <width>408</width>
                                 <align>right</align>
                                 <font>Font-ListInfo-Small</font>
-                                <label>$INFO[ListItem.Label2]</label>
+                                <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                             </control>
                         </control>
                     </control>
@@ -275,7 +275,7 @@
                                 <textcolor>Selected</textcolor>
                                 <align>center</align>
                                 <font>Font-ListInfo-Small</font>
-                                <label>$VAR[ExtraInfo]</label>
+                                <label>$VAR[ExtraInfo]$VAR[WatchedLabel,   ,]</label>
                             </control>
                         </control>
                         <control type="group">
@@ -322,7 +322,7 @@
                                 <textcolor>Selected</textcolor>
                                 <align>center</align>
                                 <font>Font-ListInfo-Small</font>
-                                <label>$VAR[ExtraInfo]</label>
+                                <label>$VAR[ExtraInfo]$VAR[WatchedLabel,   ,]</label>
                             </control>
                         </control>
 

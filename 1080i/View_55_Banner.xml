@@ -139,7 +139,7 @@
                             <align>right</align>
                             <width>200</width>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                         </control>
             
                     
@@ -275,7 +275,7 @@
                             <width>200</width>
                             <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                         </control>
             
                     
