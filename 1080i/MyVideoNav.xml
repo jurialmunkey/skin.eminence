@@ -364,6 +364,17 @@
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
+                <control type="togglebutton" id="9007">
+                    <include>DefContextMenuButton</include>
+                    <onclick>Skin.ToggleSetting(wallview.info)</onclick>
+                    <onclick>ReloadSkin()</onclick>
+                    <visible>Control.IsVisible(52)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(wallview.info)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
                 
                 <control type="button" id="21">
                     <description>Activate Filter</description>

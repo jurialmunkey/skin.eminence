@@ -24,7 +24,7 @@
                 <focusposition>1</focusposition>
                 <movement>1</movement>
 
-                <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
+                <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] | Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
                         <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
@@ -113,7 +113,7 @@
                     </control>
 
                 </itemlayout>
-                <itemlayout width="486" height="690" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                <itemlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + Container.Content(addons)]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
                         <control type="image">
@@ -152,7 +152,7 @@
 
                 </itemlayout>
 
-                <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | Window.IsVisible(MyVideoNav.xml) | Container.Content(artists)">
+                <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] | Container.Content(artists)">
                     <!-- NORMAL -->
                     <control type="group">
                         <visible>[!Container.Content(episodes) + !Container.Content(artists) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
@@ -329,7 +329,7 @@
                     </control>
                 </focusedlayout>
                 
-                <focusedlayout width="486" height="690" condition="!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                <focusedlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + Container.Content(addons)]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
                     <!-- Focused -->
                     <control type="group">
                         <visible>Control.HasFocus(51)</visible>

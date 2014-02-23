@@ -2,6 +2,8 @@
 Localized viewtypes
 Added side text to info screen
 Fixed missing Sort Direction and Hide Watched
+Fixed video addons square icons
+Added optional info to wall view
 
 [B]0.9.2[/B]
 Added options to disable fanart and background video
