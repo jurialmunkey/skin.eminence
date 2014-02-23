@@ -24,7 +24,7 @@
 
                 <itemlayout width="972" height="69">
                     <control type="group">
-                        <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
+                        <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)</visible>
                         <control type="image">
                             <posx>8</posx>
                             <posy>9</posy>
@@ -56,7 +56,7 @@
                         <width>900</width>
                         <font>Font-Button</font>
                         <label>$VAR[MusicLabel]</label>
-                        <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
+                        <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs)</visible>
                     </control>
                     <control type="label">
                         <posx>936</posx>
@@ -82,7 +82,7 @@
                                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             </control>
                             <control type="group">
-                                <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
+                                <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)</visible>
                                 <control type="image">
                                     <posx>8</posx>
                                     <posy>9</posy>
@@ -116,7 +116,7 @@
                                 <font>Font-Button</font>
                                 <label>$VAR[MusicLabel]</label>
                                 <textcolor>PanelFG</textcolor>
-                                <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
+                                <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)]</visible>
                             </control>
                             <control type="label">
                                 <posx>936</posx>
@@ -130,7 +130,7 @@
                         <control type="group">
                             <visible>!Control.HasFocus(50)</visible>
                             <control type="group">
-                                <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
+                                <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)</visible>
                                 <control type="image">
                                     <posx>8</posx>
                                     <posy>9</posy>
@@ -162,7 +162,7 @@
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[MusicLabel]</label>
-                                <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
+                                <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs)]</visible>
                             </control>
                             <control type="label">
                                 <posx>936</posx>
