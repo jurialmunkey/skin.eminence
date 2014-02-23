@@ -7,7 +7,8 @@
 		<description>List View (id=50)</description>
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
-            <include>Animation.ViewChange</include>            
+            <include>Animation.ViewChange</include>     
+            <include>DefSideLabel</include>       
             <control type="list" id="50">
                 <posx>5</posx>
                 <posy>210</posy>

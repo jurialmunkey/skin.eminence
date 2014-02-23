@@ -288,7 +288,8 @@
 	
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
-            <include>Animation.ViewChange</include>            
+            <include>Animation.ViewChange</include> 
+            <include>DefSideLabel</include>           
             <include condition="!Skin.HasSetting(wallview.info)">View_52_Wall_NoInfo</include>
             <include condition="Skin.HasSetting(wallview.info)">View_52_Wall_Info</include>
             <control type="scrollbar" id="60">

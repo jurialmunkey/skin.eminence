@@ -7,6 +7,7 @@
         <control type="group">
             <visible>Control.IsVisible(54)</visible>
             <include>Animation.ViewChange</include>
+            <include>DefSideLabel</include>
             <control type="image">
                 <posx>18</posx>
                 <posy>210</posy>

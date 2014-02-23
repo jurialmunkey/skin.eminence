@@ -6,7 +6,8 @@
 	
         <control type="group">
             <visible>Control.IsVisible(55)</visible>    
-            <include>Animation.ViewChange</include>            
+            <include>Animation.ViewChange</include>   
+            <include>DefSideLabel</include>         
                     
             <control type="panel" id="55">
                 <posx>18</posx>
