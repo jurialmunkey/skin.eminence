@@ -40,8 +40,7 @@
 				<pagecontrol>60</pagecontrol>
 				<onleft>5</onleft>
 				<onright>5</onright>
-				<onup>5</onup>
-				<ondown>28</ondown>
+				<onup>28</onup>
 			</control>
 
 			<control type="button" id="7">
@@ -93,46 +92,55 @@
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>
 			</control>
-			
-			<control type="group">
-			    <posx>510</posx>
-                <posy>90</posy>
+
+		</control>
+		<control type="group">		
+            <include>Animation.SlideOpen.Left</include>
+            <control type="image">
+                <posy>18</posy>
+                <posx>198</posx>
+                <width>254</width>
+                <height>164</height>	
+                <texture align="left">home/half-tile.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posy>18</posy>
+                <posx>300</posx>
+                <width>1800</width>
+                <height>164</height>	
+                <texture>common/white.png</texture>
+                <colordiffuse>TopBar</colordiffuse>
+                <aspectratio>scale</aspectratio>
+            </control>		
+            <control type="grouplist">
+                <posx>250</posx>
+                <posy>29</posy>
+                <width>1670</width>
+                <height>164</height>
+                <itemgap>0</itemgap>
+                <orientation>horizontal</orientation>
                 <control type="button" id="28">
-                    <description>Ok</description>
-                    <posx>135</posx>
-                    <posy>588</posy>
-                    <width>240</width>
                     <label>186</label>
                     <onleft>5</onleft>
                     <onright>29</onright>
                     <onup>5</onup>
                     <ondown>5</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
+                    <include>DefContextMenuButton</include>
                 </control>
 
                 <control type="button" id="29">
                     <description>Cancel</description>
-                    <posx>525</posx>
-                    <posy>588</posy>
-                    <width>240</width>
                     <label>222</label>
                     <onleft>28</onleft>
                     <onright>5</onright>
                     <onup>5</onup>
                     <ondown>5</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
+                    <include>DefContextMenuButton</include>
                 </control>
-			</control>
-
-		</control>
+            </control>
+        </control>
 
 	</controls>
 

@@ -15,18 +15,10 @@
             <control type="image">
                 <posx>11</posx>
                 <posy>11</posy>
-                <height>284</height>
+                <height>314</height>
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
-            </control>
-            <control type="label">
-                <posx>110</posx>
-                <posy>282</posy>
-                <width>185</width>
-                <align>center</align>
-                <font>Font-ListInfo-Small</font>
-                <label>$INFO[ListItem.Label]</label>
             </control>
 
         </itemlayout>
@@ -103,20 +95,12 @@
             <control type="image">
                 <posx>11</posx>
                 <posy>11</posy>
-                <height>284</height>
+                <height>314</height>
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
             </control>
-            <control type="label">
-                <posx>110</posx>
-                <posy>282</posy>
-                <width>185</width>
-                <align>center</align>
-                <textcolor>Selected</textcolor>
-                <font>Font-ListInfo-Small</font>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
+
         </focusedlayout>
         <focusedlayout width="239" height="354" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
 
@@ -259,8 +243,8 @@
                 <align>left</align>
                 <font>Font-ListHeader</font>
                 <label>$INFO[ListItem.Label]</label>
-                <visible>!Container.Content(episodes)</visible>
                 <scroll>true</scroll>
+                <visible>!Container.Content(episodes)</visible>
             </control>
             <control type="textbox">
                 <posx>22</posx>

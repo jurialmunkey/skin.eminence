@@ -23,14 +23,12 @@
             </control>
 
             <control type="image">
-                <posy>10</posy>
-                <posx>30</posx>
-                <width>128</width>
-                <height>128</height>	
-                <texture>buttons/sync.png</texture>
+                <posy>42</posy>
+                <posx>62</posx>
+                <width>64</width>
+                <height>64</height>	
+                <texture>buttons/busy.gif</texture>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                <colordiffuse>TopBarIcon</colordiffuse>
-                <animation effect="rotate" start="0" end="-360" time="2500" condition="true" loop="true" center="auto">Conditional</animation>
             </control>
             
             <control type="button" id="10">
