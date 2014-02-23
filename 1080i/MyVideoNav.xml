@@ -176,7 +176,7 @@
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[MovieWidgetLabel]</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <visible>substring(Container.FolderPath,movies/)</visible>
+                <visible>substring(Container.FolderPath,movies)</visible>
             </control>
             <control type="label">
                 <posx>18</posx>
@@ -185,7 +185,7 @@
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[TvShowWidgetLabel]</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <visible>substring(Container.FolderPath,tvshows/) | substring(Container.FolderPath,episodes/)</visible>
+                <visible>substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)</visible>
             </control>
             <control type="group">
                 <posx>18</posx>
@@ -285,10 +285,10 @@
                         </control>
                     </focusedlayout>
                     <content>
-                        <include condition="substring(Container.FolderPath,movies/) + !Skin.HasSetting(movie.widget.recommended)">RandomMoviesWidget</include>
-                        <include condition="substring(Container.FolderPath,movies/) + Skin.HasSetting(movie.widget.recommended)">RecommendedMoviesWidget</include>
-                        <include condition="[substring(Container.FolderPath,tvshows/) | substring(Container.FolderPath,episodes/)] + !Skin.HasSetting(tvshow.widget.recommended)">RandomEpisodesWidget</include>
-                        <include condition="[substring(Container.FolderPath,tvshows/) | substring(Container.FolderPath,episodes/)] + Skin.HasSetting(tvshow.widget.recommended)">RecommendedEpisodesWidget</include>
+                        <include condition="substring(Container.FolderPath,movies) + !Skin.HasSetting(movie.widget.recommended)">RandomMoviesWidget</include>
+                        <include condition="substring(Container.FolderPath,movies) + Skin.HasSetting(movie.widget.recommended)">RecommendedMoviesWidget</include>
+                        <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + !Skin.HasSetting(tvshow.widget.recommended)">RandomEpisodesWidget</include>
+                        <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + Skin.HasSetting(tvshow.widget.recommended)">RecommendedEpisodesWidget</include>
                     </content>
                 </control>
             </control>

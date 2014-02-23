@@ -146,13 +146,13 @@
 	</variable>
 	
 	<variable name="9103Label">
-	    <value condition="substring(Container.FolderPath,movies/)">$LOCALIZE[20348]</value>
-	    <value condition="substring(Container.FolderPath,tvshows/) | substring(Container.FolderPath,episodes/)">$LOCALIZE[20388]</value>
+	    <value condition="substring(Container.FolderPath,movies)">$LOCALIZE[20348]</value>
+	    <value condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">$LOCALIZE[20388]</value>
 	</variable>
 	
 	<variable name="9105Label">
-	    <value condition="substring(Container.FolderPath,movies/)">$LOCALIZE[20434]</value>
-	    <value condition="substring(Container.FolderPath,tvshows/) | substring(Container.FolderPath,episodes/)">$LOCALIZE[652]</value>
+	    <value condition="substring(Container.FolderPath,movies)">$LOCALIZE[20434]</value>
+	    <value condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">$LOCALIZE[652]</value>
 	</variable>
 
     <variable name="SettingsHeaderLabel">
