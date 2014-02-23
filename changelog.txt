@@ -5,6 +5,7 @@ Fixed missing Sort Direction and Hide Watched
 Fixed video addons square icons
 Added optional info to wall view
 Fixed global search not focusing on hub instead of season view
+Fixed addon settings not showing from content settings
 
 [B]0.9.2[/B]
 Added options to disable fanart and background video
