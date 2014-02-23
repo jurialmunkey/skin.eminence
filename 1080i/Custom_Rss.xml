@@ -2,7 +2,7 @@
 <!-- Foundation -->
 <window type="dialog" id="3005">
 	<zorder>1</zorder>
-	<visible>!Window.IsVisible(startup) + !Skin.HasSetting(disable.rss) + !Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !ControlGroup(300).HasFocus()</visible>
+	<visible>IsEmpty(Window(home).Property(quicknav) + !Window.IsVisible(startup) + !Skin.HasSetting(disable.rss) + !Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !ControlGroup(300).HasFocus()</visible>
 	<controls>
 	    <control type="image">
 	        <posx>16</posx>

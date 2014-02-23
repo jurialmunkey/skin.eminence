@@ -19,6 +19,8 @@
             <onright>$VAR[HomeFocus]</onright>
         </control>
         
+        
+        
 	</controls>
 
 </window>

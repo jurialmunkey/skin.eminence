@@ -8,19 +8,10 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
-           <!-- <animation type="WindowOpen">
-			    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
-			    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
-			    <effect type="zoom" start="90" end="100" center="1027,438" tween="cubic" easing="out" time="400" />
-			</animation>
-			<animation type="Visible">
-			    <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="650" />
-			    <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
-			    <effect type="zoom" start="90" end="100" center="1027,438" tween="cubic" easing="out" time="400" />
-			</animation>-->
-			<include>Animation.SlideOpen.LeftToRight</include>
+
+			<include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
-            <animation effect="slide" end="1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
+            <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
             <control type="group" id="50">
                 <include description="id31-10">EPGTimelineView</include>
