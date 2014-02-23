@@ -314,6 +314,15 @@
                     <include>DefContextMenuButton</include>
                 </control>
                 
+                <control type="togglebutton" id="4">
+                    <include>DefContextMenuButton</include>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                    <label>584</label>
+					<altlabel>585</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                
                 <!-- EXTRA INFO OPTIONS -->
                 <control type="togglebutton" id="9003">
                     <include>DefContextMenuButton</include>
@@ -364,8 +373,6 @@
                     <onclick>SetFocus(21)</onclick>
                 </control>
                 
-                
-                
                 <control type="button" id="9002">
                     <description>Search</description>
                     <include>DefContextMenuButton</include>
@@ -379,6 +386,12 @@
                     <include>DefContextMenuButton</include>
                     <label>31108</label>
                     <onclick>ActivateWindow(playercontrols)</onclick>
+                </control>
+                
+                <control type="radiobutton" id="14">
+                    <description>Hide Watched</description>
+                    <include>DefContextMenuButton</include>
+                    <label>20367</label>
                 </control>
 
                 <control type="radiobutton" id="11">

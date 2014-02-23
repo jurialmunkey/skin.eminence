@@ -34,12 +34,14 @@
                     <description>Sort</description>
                     <include>DefContextMenuButton</include>
                 </control>
-
+                
                 <control type="togglebutton" id="4">
-                    <description>Ascending</description>
                     <include>DefContextMenuButton</include>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
                     <label>584</label>
-                    <altlabel>585</altlabel>
+					<altlabel>585</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
 
                 <control type="button" id="21">
