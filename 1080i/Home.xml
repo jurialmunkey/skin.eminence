@@ -3,6 +3,7 @@
 <window id="0">
 	<defaultcontrol always="true">399</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<onload>ClearProperty(globalsearch,home)</onload>
 	<onload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
 	<controls>
 		<include>GlobalBackground</include>

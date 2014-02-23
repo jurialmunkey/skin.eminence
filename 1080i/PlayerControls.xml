@@ -3,6 +3,7 @@
 <window type="dialog" id="400">
 	<defaultcontrol always="true">403</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<onload>ClearProperty(globalsearch,home)</onload>
 	<controls>
 	    <control type="button" id="403">
 	        <visible allowhiddenfocus="true">false</visible>

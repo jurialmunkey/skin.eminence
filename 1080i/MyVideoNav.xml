@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="6">
-    <include condition="[Window.Previous(Home) | Window.IsVisible(playercontrols)] + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]">9500Focus</include>
-    <include condition="![Window.Previous(Home) | Window.IsVisible(playercontrols)] | ![substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]">50Focus</include>
+    <include condition="[Window.Previous(Home) | Window.Previous(playercontrols)] + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)] + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
+    <include condition="![Window.Previous(Home) | Window.Previous(playercontrols)] | ![substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)] | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
 	<allowoverlay>yes</allowoverlay>
 	<views>50,51,52,53,54,55</views>
 	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:04,silent,loop)</onload>    
