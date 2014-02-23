@@ -141,7 +141,7 @@
 	<variable name="WatchedLabel">
 	    <value condition="ListItem.IsPlaying">▶</value>
 	    <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">✓</value>
-	    <value>•</value>
+	    <value condition="Control.IsVisible(50)">•</value>
 	    
 	</variable>
 	

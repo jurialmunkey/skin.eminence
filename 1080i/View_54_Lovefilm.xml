@@ -61,10 +61,11 @@
                     <posy>615</posy>
                     <width>1394</width>
                     <height>64</height>
-                    <texture colordiffuse="White">common/white.png</texture>
+                    <texture colordiffuse="PanelBG">common/white.png</texture>
                     <aspectratio>scale</aspectratio>
                     <animation effect="fade" end="50" condition="true">Conditional</animation>
                 </control>
+                
             
                 <control type="label">
                     <posx>31</posx>
@@ -86,7 +87,7 @@
                     <aligny>center</aligny>
                     <textcolor>Selected</textcolor>
                     <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Label2]</label>
+                    <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                 </control>
             </control>
             <control type="scrollbar" id="60">

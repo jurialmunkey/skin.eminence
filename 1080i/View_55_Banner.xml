@@ -90,6 +90,16 @@
                             <label>$INFO[ListItem.Genre]</label>
                             <visible>Window.IsVisible(MyVideoNav.xml)</visible>
                         </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>right</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[WatchedLabel]</label>
+                        </control>
                     </control>
                     <control type="group">
                         <visible>Container.Content(episodes)</visible>
@@ -209,6 +219,17 @@
                             <textcolor>Selected</textcolor>
                             <label>$INFO[ListItem.Genre]</label>
                             <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>680</posx>
+                            <posy>177</posy>
+                            <width>660</width>
+                            <align>right</align>
+                            <aligny>top</aligny>
+                            <height>41</height>
+                            <textcolor>Selected</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[WatchedLabel]</label>
                         </control>
                     </control>
                     
