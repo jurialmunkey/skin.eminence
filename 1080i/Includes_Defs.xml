@@ -165,6 +165,37 @@
         <focusedcolor>Highlight</focusedcolor>
 	</include>
 	
+	<include name="DefContextMenuBackground">
+	    <control type="image">
+            <posy>18</posy>
+            <posx>198</posx>
+            <width>254</width>
+            <height>164</height>	
+            <texture align="left">home/half-tile.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+        <control type="image">
+            <posy>18</posy>
+            <posx>300</posx>
+            <width>1800</width>
+            <height>164</height>	
+            <texture>common/white.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+            <aspectratio>scale</aspectratio>
+        </control>
+	</include>
+	
+	<include name="DefContextMenuGroupList">
+	    <posx>250</posx>
+        <posy>29</posy>
+        <width>1670</width>
+        <height>164</height>
+        <itemgap>0</itemgap>
+        <ondown>3</ondown>
+        <orientation>horizontal</orientation>
+	</include>
+	
 	<include name="DefContextMenuButton">
 	    <width>417</width>
         <height>142</height>
@@ -259,15 +290,15 @@
         </control>
         
         <control type="button" id="5">
-            <description>Subs</description>
+            <description>Info</description>
             <width>230</width>
             <height>48</height>
-            <label>287</label>
-            <align>right</align>
+            <label>31119</label>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
-            <onclick>ActivateWindow(SubtitleSearch)</onclick>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
         
         <control type="button" id="6">
@@ -308,18 +339,17 @@
             <onclick>SetFocus(31)</onclick>
             <onclick>SetFocus(10)</onclick>
         </control>
-        
+
         <control type="button" id="6">
-            <description>Subs</description>
+            <description>Info</description>
             <width>230</width>
             <height>48</height>
-            <label>287</label>
-            <align>right</align>
+            <label>31119</label>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
-            <onclick>Action(ShowSubtitles)</onclick>
-            <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled">Conditional</animation>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
 	</include>
 	

@@ -3,7 +3,6 @@
 	<defaultcontrol>61</defaultcontrol>
 	<controls>
 
-		<include>GlobalOverlay</include>
         <control type="group">
 			<posy>210</posy>
             <animation effect="slide" start="0,700" end="0" time="150">WindowOpen</animation>

@@ -14,7 +14,6 @@
             <posy>210</posy>
 			
             <control type="image">
-                
 				<width>1920</width>
 				<height>764</height>
 				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
@@ -31,9 +30,7 @@
 				<include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
 				<label>20333</label>
-                
 			</control>
-
 
 			<control type="spincontrolex" id="3">
 				<description>Directory Content</description>
@@ -159,53 +156,15 @@
                 <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
 			</control>
 			
-			<control type="button" id="6">
-				<description>Settings</description>
-				<align>left</align>
-				<posx>1500</posx>
-                <posy>665</posy>
-				<label>5</label>
-				<onup>5</onup>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<ondown>28</ondown>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-			</control>
+			
             
 
 		</control>
 		<control type="group">		
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
+            <include>DefContextMenuBackground</include>
             <control type="grouplist">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <ondown>3</ondown>
-                <orientation>horizontal</orientation>
+                <include>DefContextMenuGroupList</include>
                 <control type="button" id="28">
                     <description>Ok</description>
                     <label>186</label>
@@ -215,6 +174,12 @@
                 <control type="button" id="29">
                     <description>Cancel</description>
                     <label>222</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="6">
+                    <description>Settings</description>
+                    <label>5</label>
                     <include>DefContextMenuButton</include>
                 </control>
             </control>

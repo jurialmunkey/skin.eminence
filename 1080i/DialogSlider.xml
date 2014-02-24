@@ -3,7 +3,7 @@
 <window id="145">
 	<defaultcontrol always="true">11</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
+    <zorder>10</zorder>
 	<controls>
 
 		<control type="group">
@@ -11,11 +11,9 @@
 			<posy>0</posy>
 
 			<control type="image">
-				<posx>-30</posx>
-				<posy>-30</posy>
-				<width>690</width>
-				<height>162</height>
-				<texture border="22">other_textures/ContentPanel.png</texture>
+				<width>630</width>
+				<height>102</height>
+				<texture colordiffuse="PanelBG">common/white.png</texture>
 			</control>
 
 			<control type="label" id="10">

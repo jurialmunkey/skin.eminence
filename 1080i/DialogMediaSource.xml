@@ -12,7 +12,6 @@
             <include>Animation.FadeOut</include>
 			
             <control type="image">
-                
 				<width>1920</width>
 				<height>764</height>
 				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
@@ -91,31 +90,9 @@
 		</control>
 		<control type="group">		
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>	
+            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9700">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
+                <include>DefContextMenuGroupList</include>
                 <control type="button" id="11">
                     <width>334</width>
                     <include>DefContextMenuButton</include>

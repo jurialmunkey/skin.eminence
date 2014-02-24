@@ -6,17 +6,8 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
-        <control type="image">
-            <posy>18</posy>
-            <posx>-64</posx>
-            <width>300</width>
-            <height>164</height>	
-            <texture align="left">home/half-tile.png</texture>
-            <colordiffuse>TopBar</colordiffuse>
-            <aspectratio>scale</aspectratio>
-        </control>
-
+        <include>HeaderLeftTile</include>
+        
         <control type="image">
             <posy>42</posy>
             <posx>62</posx>

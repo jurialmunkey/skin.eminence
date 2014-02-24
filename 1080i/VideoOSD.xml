@@ -5,6 +5,8 @@
 	<allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
     
+    <onunload>ClearProperty(fullscreeninfo,seekbar)</onunload>
+    
 	<controls>
 	    <control type="group">
 	        <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
@@ -38,14 +40,17 @@
                 <ondown>-</ondown>
 
                 <control type="button" id="1">
-                    <description>Playlist</description>
+                    <description>Subs</description>
                     <width>230</width>
                     <height>48</height>
-                    <label>559</label>
+                    <label>287</label>
+                    <align>right</align>
                     <texturefocus>-</texturefocus>
                     <texturenofocus>-</texturenofocus>
                     <focusedcolor>Highlight</focusedcolor>
-                    <onclick>ActivateWindow(videoplaylist)</onclick>
+                    <onclick condition="!VideoPlayer.Content(livetv)">ActivateWindow(SubtitleSearch)</onclick>
+                    <onclick condition="VideoPlayer.Content(livetv)">Action(ShowSubtitles)</onclick>
+                    <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled + VideoPlayer.Content(livetv)">Conditional</animation>
                 </control>
 
                 <control type="button" id="2">

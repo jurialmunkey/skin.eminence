@@ -10,33 +10,13 @@
 	</coordinates>
 
 	<controls>
+	    <include>GlobalOverlay</include>
+	    <include>GlobalLeftHeader</include>
         <control type="group">		
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
+            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="996">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
+                <include>DefContextMenuGroupList</include>
                 <control type="button" id="1000">
                     <description>Buttons</description>
                     <include>DefContextMenuButton</include>

@@ -4,23 +4,9 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-	    <control type="image">
-	        <include>Dimensions_Fullscreen</include>
-	        <texture>common/white.png</texture>
-	        <colordiffuse>PanelBG</colordiffuse>
-	        <animation effect="fade" end="75" condition="true">Conditional</animation>
-	        <include>Animation.FadeIn</include>
-	    </control>
+	    <include>GlobalOverlay</include>
         <control type="group" description="Left Side Header">
-            <control type="image">
-                <posy>18</posy>
-                <posx>-64</posx>
-                <width>300</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
+            <include>HeaderLeftTile</include>
 
             <control type="image">
                 <posy>42</posy>
@@ -47,25 +33,7 @@
         <control type="group">		
             <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>	
+            <include>DefContextMenuBackground</include>
 
             <control type="label" id="1">
                 <posx>284</posx>

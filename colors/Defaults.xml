@@ -12,7 +12,7 @@
 	<!-- Home Header And Panels -->
 	<color name="MainLabel">FFededed</color>
 	<color name="SubLabel">BFededed</color>
-	<color name="TopBar">ff474747</color>
+	<color name="TopBar">ff333333</color>
 	<color name="TopBarIcon">ffededed</color>
 	<color name="TopBarDisabled">2fededed</color>
 	
@@ -25,7 +25,7 @@
 	<color name="Selected">fff0f0f0</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="PanelBG">ff181818</color>
-	<color name="DimFanart">E9080808</color>
+	<color name="DimFanart">E2080808</color>
 	<color name="RadioFO">ffffffff</color>
 	<color name="PanelFG">ffdddddd</color>
 	<color name="PanelFG-NF">bfdddddd</color>

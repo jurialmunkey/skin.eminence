@@ -3,12 +3,19 @@
 <includes>
 
     <include name="GlobalOverlay">
+        <control type="image">
+	        <include>Dimensions_Fullscreen</include>
+	        <texture>common/white.png</texture>
+	        <colordiffuse>PanelBG</colordiffuse>
+	        <animation effect="fade" end="75" condition="true">Conditional</animation>
+	        <include>Animation.FadeIn</include>
+	    </control>
 	</include>
 	
 	<include name="GlobalVignette">
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture colordiffuse="9F000000">common/white.png</texture>
+			<texture colordiffuse="7F000000">common/white.png</texture>
 		</control>
 		
 	</include>

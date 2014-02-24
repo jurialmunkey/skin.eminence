@@ -4,36 +4,10 @@
 	<defaultcontrol always="true">402</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <zorder>11</zorder>
-	<controls>
-	    <!--<control type="image">
-	        <include>Dimensions_Fullscreen</include>
-	        <texture>common/white.png</texture>
-	        <colordiffuse>PanelBG</colordiffuse>
-	        <animation effect="fade" end="75" condition="true">Conditional</animation>
-	        <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
-	    </control>-->
         <include>GlobalLeftHeader</include>
         <control type="group">		
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>	
+            <include>DefContextMenuBackground</include>
             <control type="image" id="403" description="info">
                 <posy>10</posy>
                 <posx>250</posx>

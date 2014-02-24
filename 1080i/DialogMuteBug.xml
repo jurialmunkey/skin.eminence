@@ -5,40 +5,6 @@
 	<allowoverlay>yes</allowoverlay>
     <zorder>20</zorder>
 	<controls>
-	    <control type="group" description="Left Side Header">
-            <control type="image">
-                <posy>18</posy>
-                <posx>-64</posx>
-                <width>300</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-
-            <control type="image">
-                <posy>10</posy>
-                <posx>30</posx>
-                <width>128</width>
-                <height>128</height>	
-                <texture>special://skin/extras/icons/mute.png</texture>
-                <aspectratio>keep</aspectratio>
-                <colordiffuse>TopBarIcon</colordiffuse>
-            </control>
-            
-            
-            <control type="label">
-                <posx>0</posx>
-                <posy>115</posy>
-                <width>184</width>
-                <aligny>top</aligny>
-                <font>Font-Sublabel</font>
-                <align>center</align>
-                <textcolor>TopBarIcon</textcolor>
-                <label>$LOCALIZE[31134]</label>
-            </control>
-
-        </control>
-       
+	    <include>GlobalLeftHeader</include>
 	</controls>
 </window>

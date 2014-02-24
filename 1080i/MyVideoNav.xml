@@ -5,7 +5,7 @@
     <include condition="![Window.Previous(Home) | Window.Previous(playercontrols)] | ![substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)] | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
 	<allowoverlay>yes</allowoverlay>
 	<views>50,51,52,53,54,55</views>
-	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:04,silent,loop)</onload>    
+	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onload>    
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
         
@@ -282,7 +282,7 @@
                 <control type="wraplist" id="9501">
                     <posx>11</posx>
                     <posy>11</posy>
-                    <onright>AlarmClock(Move9501,Control.Move(9501,1),00:04,silent,loop)</onright>
+                    <onright>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onright>
                     <onright>9500</onright>
                     <width>933</width>
                     <height>537</height>
