@@ -71,7 +71,7 @@
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>
 				<onleft>3</onleft>
-				<onup>3</onup>
+				<onup>21</onup>
 				<ondown>3</ondown>
 			</control>
 			
@@ -83,10 +83,7 @@
 				<align>right</align>
 				<label>$INFO[Control.GetLabel(20),,  $LOCALIZE[5]]</label>
 				<onclick>SettingsLevelChange</onclick>
-				<ondown>3</ondown>
-				<onright>5</onright>
-				<onleft>SetProperty(movement,1,settings)</onleft>
-				<onleft>$VAR[DefSettingsOnLeft]</onleft>
+				<ondown>5</ondown>
 				
 				<texturefocus>-</texturefocus>
 				<focusedcolor>Highlight</focusedcolor>
@@ -126,7 +123,7 @@
 				<onright>5</onright>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
-				<onup>21</onup>
+				<onup>3</onup>
 				<ondown>3</ondown>
 			</control>
 			
