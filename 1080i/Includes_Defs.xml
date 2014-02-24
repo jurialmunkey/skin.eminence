@@ -51,6 +51,30 @@
 	    <onback condition="[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]">9500</onback>
 	</include>
 	
+	<variable name="DefSettingsOnRight">
+	    <value condition="Window.IsVisible(AppearanceSettings)">ReplaceWindow(VideosSettings)</value>
+	    <value condition="Window.IsVisible(VideosSettings)">ReplaceWindow(MusicSettings)</value>
+	    <value condition="Window.IsVisible(MusicSettings)">ReplaceWindow(PicturesSettings)</value>
+	    <value condition="Window.IsVisible(PicturesSettings)">ReplaceWindow(WeatherSettings)</value>
+	    <value condition="Window.IsVisible(WeatherSettings)">ReplaceWindow(NetworkSettings)</value>
+	    <value condition="Window.IsVisible(NetworkSettings)">ReplaceWindow(SystemSettings)</value>
+	    <value condition="Window.IsVisible(SystemSettings)">ReplaceWindow(PvrSettings)</value>
+	    <value condition="Window.IsVisible(PvrSettings)">ReplaceWindow(SkinSettings)</value>
+	    <value condition="Window.IsVisible(SkinSettings)">ReplaceWindow(AppearanceSettings)</value>
+	</variable>
+	
+	<variable name="DefSettingsOnLeft">
+	    <value condition="Window.IsVisible(AppearanceSettings)">ReplaceWindow(SkinSettings)</value>
+	    <value condition="Window.IsVisible(VideosSettings)">ReplaceWindow(AppearanceSettings)</value>
+	    <value condition="Window.IsVisible(MusicSettings)">ReplaceWindow(VideosSettings)</value>
+	    <value condition="Window.IsVisible(PicturesSettings)">ReplaceWindow(MusicSettings)</value>
+	    <value condition="Window.IsVisible(WeatherSettings)">ReplaceWindow(PicturesSettings)</value>
+	    <value condition="Window.IsVisible(NetworkSettings)">ReplaceWindow(WeatherSettings)</value>
+	    <value condition="Window.IsVisible(SystemSettings)">ReplaceWindow(NetworkSettings)</value>
+	    <value condition="Window.IsVisible(PvrSettings)">ReplaceWindow(SystemSettings)</value>
+	    <value condition="Window.IsVisible(SkinSettings)">ReplaceWindow(PvrSettings)</value>
+	</variable>
+	
 	<include name="DefSideLabel">
 	    <control type="label">
             <posx>1475</posx>

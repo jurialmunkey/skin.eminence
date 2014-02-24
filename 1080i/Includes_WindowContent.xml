@@ -61,4 +61,15 @@
 		</control>	
 	</include>
 	
+	<include name="GlobalNoBackground">
+	    <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture>common/white.png</texture>
+        </control>	
+	    <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="DimFanart">common/white.png</texture>
+        </control>	
+	</include>
+	
 </includes>

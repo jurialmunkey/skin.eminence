@@ -15,7 +15,7 @@
                 <height>690</height>
                 <onleft>9500</onleft>
                 <onright>51</onright>
-                <onup>9500</onup>
+                <onup>9000</onup>
                 <include>DefOnBack</include>
                 <ondown>60</ondown>
                 <pagecontrol>60</pagecontrol>

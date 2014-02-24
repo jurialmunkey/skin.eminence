@@ -56,8 +56,16 @@
 	    <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
 	    <animation effect="slide" end="1920" start="0" delay="0" time="200">Hidden</animation>
 	</include>
-	
-	
+	<include name="Animation.SlideOpen.Settings">
+	    <animation effect="slide" start="1920" end="0" delay="0" time="200" condition="IsEmpty(Window(settings).Property(movement))">WindowOpen</animation>
+	    <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="IsEmpty(Window(settings).Property(movement))">WindowClose</animation>
+	    <animation effect="slide" start="1920" end="0" delay="0" time="200" condition="IsEmpty(Window(settings).Property(movement))">Visible</animation>
+	    <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="IsEmpty(Window(settings).Property(movement))">Hidden</animation>
+	    <animation effect="slide" start="-1920" end="0" delay="0" time="200" condition="!IsEmpty(Window(settings).Property(movement))">WindowOpen</animation>
+	    <animation effect="slide" end="1920" start="0" delay="0" time="200" condition="!IsEmpty(Window(settings).Property(movement))">WindowClose</animation>
+	    <animation effect="slide" start="-1920" end="0" delay="0" time="200" condition="!IsEmpty(Window(settings).Property(movement))">Visible</animation>
+	    <animation effect="slide" end="1920" start="0" delay="0" time="200" condition="!IsEmpty(Window(settings).Property(movement))">Hidden</animation>
+	</include>
 	<include name="Animation.SlideOpen.Right">
 	    <animation effect="slide" start="-1920" end="0" delay="0" time="200">WindowOpen</animation>
 	    <animation effect="slide" end="-1920" start="0" delay="0" time="200">WindowClose</animation>

@@ -5,25 +5,36 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-
+        
 		<control type="group">
-			<control type="label" id="1">
-				<description>header label</description>
-				<include>DefSettingsHeader</include>
-				<label>$LOCALIZE[13406]</label>
-			</control>
+			<posy>210</posy>
+			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            
+            <include>Animation.FadeOut</include>
 
+			<control type="label" id="1">
+				<description>Settings</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+				<label>13406</label>
+				<include>Animation.SlideOpen.Right</include>    
+			</control>
 			<control type="list" id="3">
 			    <include>Animation.SlideOpen.Right</include>            
-				<posx>64</posx>
-                <posy>320</posy>
-                <width>1438</width>
-                <height>690</height>
+				<posx>265</posx>
+				<posy>120</posy>
+				<width>990</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<orientation>vertical</orientation>
 				<itemlayout height="69" width="1438">
 
 					<control type="label">
@@ -98,16 +109,17 @@
 			</control>
 
 			<control type="list" id="6">
-			    <include>Animation.SlideOpen.Right</include>            
-				<posx>64</posx>
-                <posy>320</posy>
-                <width>1438</width>
-                <height>690</height>
+			    <posx>265</posx>
+				<posy>120</posy>
+				<width>990</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>6</onup>
 				<ondown>6</ondown>
-				<orientation>vertical</orientation>
+				<include>Animation.SlideOpen.Right</include>    
 				<itemlayout height="138" width="1438">
 					<control type="image">
 						<posx>12</posx>
@@ -214,36 +226,37 @@
                     <aspectratio>scale</aspectratio>
                 </control>		
 
-                <control type="button" id="5">
-                    <posx>250</posx>
-                    <posy>29</posy>
-                    <include>DefContextMenuButton</include>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
-                    <onright>3</onright>
-                    <onleft>3</onleft>
-                </control>
+               
             </control>
 			<control type="group">
 			    <include>Animation.SlideOpen.Left</include>    
 			    <visible>Control.IsVisible(6)</visible>        
-                <include>DefSettingsSeparator</include>
                 <control type="label">
                     <description>addon information</description>
-                    <posx>1522</posx>
-                    <posy>660</posy>
+                    <posx>1284</posx>
+                    <posy>460</posy>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <height>320</height>
+                    <height>180</height>
                     <width>330</width>
                     <wrapmultiline>true</wrapmultiline>
                     <textcolor>Disabled</textcolor>
                     <font>Font-ListInfo</font>
                     <label>$INFO[Container(6).ListItem.Property(Addon.Description)]</label>
                 </control>
+                
+                <control type="image">
+                    <description>Large Icon Image</description>
+                    <posx>1273</posx>
+                    <posy>120</posy>
+                    <width>330</width>
+                    <height>330</height>
+                    <texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
+                    <aspectratio align="center" aligny="top">keep</aspectratio>
+                </control>
                 <control type="button" id="5">
-                    <posx>1854</posx>
-                    <posy>273</posy>
+                    <posx>1614</posx>
+                    <posy>53</posy>
                     <align>left</align>
                     <font>Font-SettingsCategory</font>
                     <angle>270</angle>
@@ -256,16 +269,8 @@
                     <onright>3</onright>
                     <onleft>3</onleft>
                 </control>
-                <control type="image">
-                    <description>Large Icon Image</description>
-                    <posx>1522</posx>
-                    <posy>320</posy>
-                    <width>330</width>
-                    <height>330</height>
-                    <texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
-                    <aspectratio align="center" aligny="top">keep</aspectratio>
-                </control>
             </control>
+            
 		</control>
 
 	</controls>

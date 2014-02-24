@@ -16,14 +16,14 @@
                 <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
             </control>                    
                     
-            <control type="wraplist" id="54">
+            <control type="list" id="54">
                 <posx>29</posx>
                 <posy>221</posy>
                 <width>1394</width>
                 <height>668</height>
                 <onleft>9500</onleft>
                 <onright>54</onright>
-                <onup>9500</onup>
+                <onup>9000</onup>
                 <include>DefOnBack</include>
                 
                 <ondown>60</ondown>

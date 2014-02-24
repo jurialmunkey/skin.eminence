@@ -6,111 +6,147 @@
 
 	<controls>
 
-		<include>GlobalBackground</include>
-		<control type="group">
-		    <animation effect="fade" start="0" end="100" time="250">WindowOpen</animation>
-		    <animation effect="fade" end="0" start="100" time="250">WindowClose</animation>
-            <control type="group">   
-                <include>DialogVisibility</include>
-                <include>Animation.SlideOpen.Left</include> 
-                <control type="grouplist" id="3">
-                    <description>Button Area</description>
-                    <posx>1500</posx>
-                    <posy>665</posy>
-                    <width>450</width>
-                    <height>351</height>
-                    <onleft>5</onleft>
-                    <onright>5</onright>
-                    <onup>20</onup>
-                    <ondown>3</ondown>
-                    <itemgap>3</itemgap>
-                    <orientation>vertical</orientation>
-                    <scrolltime>0</scrolltime>
-                </control>
-                <control type="label">
-                    <include>DefSettingsHeader</include>
-                    <label>$VAR[SettingsHeaderLabel] $LOCALIZE[5]</label>
-                </control>
-            </control>
-            
-            <control type="group">
-                <include>DialogVisibility</include>
-                <include>Animation.SlideOpen.Right</include>      
-                <include>DefSettingsSeparator</include>      
-        
-                <control type="button" id="20">
-                    <posx>1508</posx>
-                    <posy>273</posy>
-                    <align>left</align>
-                    <font>Font-SettingsCategory</font>
-                    <angle>270</angle>
-                    <textcolor>Disabled</textcolor>
-                    <onclick>SettingsLevelChange</onclick>
-                    <height>135</height>
-                    <onup>5</onup>
-                    <ondown>3</ondown>
-                    <onright>3</onright>
-                    <onleft>5</onleft>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <texturefocus>-</texturefocus>
-                </control>
-            
-                <control type="textbox" id="6">
-                    <posx>1572</posx>
-                    <posy>333</posy>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <height>320</height>
-                    <width>330</width>
-                    <textcolor>Disabled</textcolor>
-                    <font>Font-ListInfo</font>
-                </control>
-
-                <control type="grouplist" id="5">
-                    <description>Control Area</description>
-                    <posx>64</posx>
-                    <posy>320</posy>
-                    <width>1438</width>
-                    <height>687</height>
-                    <itemgap>3</itemgap>
-                    <onleft>3</onleft>
-                    <onright>3</onright>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
-                    <orientation>vertical</orientation>
-                </control>
-            </control>
+		<include>GlobalNoBackground</include>
+		<control type="button">
+            <posy>600</posy>
+            <posx>1770</posx>
+            <width>48</width>
+            <height>48</height>
+            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
         </control>
+		<control type="group">
+			<posy>210</posy>
+			<include>DialogVisibility</include>
+			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            
+            
+            <include>Animation.FadeOut</include>
 
-		<control type="button" id="7">
-			<description>Default Button</description>
-			<align>left</align>
-			<font>Font-ListInfo</font>
-		</control>
+			<control type="label" id="2">
+				<description>Settings</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+				<textcolor>TopBarIcon</textcolor>
+				<include>Animation.FadeIn</include>
+			    <include>Animation.FadeOut</include>
+			</control>
 
-		<control type="radiobutton" id="8">
-			<description>Default Radio Button</description>
-			<radioposx>1360</radioposx>
-			<align>left</align>
-			<font>Font-ListInfo</font>
-		</control>
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<posx>265</posx>
+				<posy>120</posy>
+				<width>990</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+				<onback>ActivateWindow(settings)</onback>
+				<onleft>SetProperty(movement,1,settings)</onleft>
+				<onleft>$VAR[DefSettingsOnLeft]</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<include>Animation.SlideOpen.Right</include>
+			</control>
+			
+			<control type="button" id="21">
+			    <posx>1273</posx>
+				<posy>51</posy>
+				<width>450</width>
+				<height>66</height>
+				<align>left</align>
+				<label>$INFO[Control.GetLabel(20),,  $LOCALIZE[5]]</label>
+				<onclick>SettingsLevelChange</onclick>
+				<ondown>3</ondown>
+				<onleft>5</onleft>
+				<onright>ClearProperty(movement,settings)</onright>
+				<onright>$VAR[DefSettingsOnRight]</onright>
+				<texturefocus>-</texturefocus>
+				<focusedcolor>Highlight</focusedcolor>
+				<include>Animation.SlideOpen.Left</include>
+			</control>
+			
+			<control type="button" id="20">
+			    <posx>1273</posx>
+				<posy>120</posy>
+				<width>450</width>
+				<height>66</height>
+				<align>left</align>
+				<visible allowhiddenfocus="true">false</visible>
+			</control>
+			
+			<control type="textbox" id="6">
+			    <include>Animation.FadeIn</include>
+			    <include>Animation.FadeOut</include>
+			    <posx>295</posx>
+				<posy>700</posy>
+				<width>990</width>
+				<height>100</height>
+				<align>left</align>
+				<font>Font-ListInfo</font>
+				<textcolor>Disabled</textcolor>
+			</control>
+			
+			<control type="grouplist" id="3">
+			    <include>Animation.SlideOpen.Left</include>
+				<description>Control Area</description>
+				<posx>1273</posx>
+				<posy>120</posy>
+				<width>450</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<onback>ActivateWindow(settings)</onback>
+				<onleft>5</onleft>
+				<onright>ClearProperty(movement,settings)</onright>
+				<onright>$VAR[DefSettingsOnRight]</onright>
+				<onup>21</onup>
+				<ondown>3</ondown>
+			</control>
+			
 
-		<control type="spincontrolex" id="9">
-			<description>Default Spin Control</description>
-			<align>left</align>
-			<font>Font-ListInfo</font>
+			
+
 		</control>
+		
+		<include>GlobalTopBar</include>
+
+		
 
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<align>left</align>
-			<focusedcolor>PanelFG</focusedcolor>
-			<height>66</height>
-			<width>450</width>
-			<font>Font-Context</font>
 		</control>
 		
-		<include>GlobalTopBar</include>
+		<control type="button" id="7">
+            <description>Default Button</description>
+            <align>left</align>
+        </control>
+
+        <control type="radiobutton" id="8">
+            <description>Default RadioButton</description>
+            <align>left</align>
+            <radioposx>914</radioposx>
+        </control>
+
+        <control type="spincontrolex" id="9">
+            <description>Default spincontrolex</description>
+            <align>left</align>
+            <reverse>yes</reverse>
+        </control>
+		
+		
         
         
 

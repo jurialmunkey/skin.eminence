@@ -1,3 +1,9 @@
+[B]0.9.4[/B]
+Tidy up and unify settings
+Movement between settings category on left/right
+Fixes for content setting plus cleanup
+Animated gif loading indicator
+
 [B]0.9.3[/B]
 Localized viewtypes
 Added side text to info screen

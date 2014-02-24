@@ -32,7 +32,7 @@
 			<control type="button" id="12">
 				<description>Content Picker label</description>
 				<posx>295</posx>
-				<posy>110</posy>
+				<posy>120</posy>
 				<width>1438</width>
 				<align>right</align>
 				<onup>9700</onup>
@@ -45,7 +45,7 @@
 			<control type="label">
 				<description>Content Picker label</description>
 				<posx>325</posx>
-				<posy>110</posy>
+				<posy>120</posy>
 				<width>1438</width>
 				<align>left</align>
                 <textcolor>Disabled</textcolor>
@@ -55,7 +55,7 @@
 
 			<control type="list" id="10">
 				<posx>295</posx>
-                <posy>189</posy>
+                <posy>199</posy>
                 <width>1200</width>
 				<height>483</height>
 				<itemlayout height="69" width="600">
