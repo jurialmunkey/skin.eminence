@@ -172,7 +172,7 @@
         <textcolor>TopBarIcon</textcolor>
         <focusedcolor>Highlight</focusedcolor>
         <textoffsetx>0</textoffsetx>
-        <font>Font-Context</font>
+        <font>Font-Button</font>
         <textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
 		<textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
 		<textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>

@@ -41,7 +41,7 @@
                     <onright>9101</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/eye.png</textureradioofffocus>
@@ -57,7 +57,7 @@
                     <width>702</width>
                     <height>105</height>
                     <onright>9102</onright>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -77,7 +77,7 @@
                     <onright>9103</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/songs.png</textureradioofffocus>
@@ -95,7 +95,7 @@
                     <onright>9104</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/addons.png</textureradioofffocus>
@@ -113,7 +113,7 @@
                     <onright>9105</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/pictures.png</textureradioofffocus>
@@ -131,7 +131,7 @@
                     <onright>9106</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <selected>false</selected>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/sun.png</textureradioofffocus>
@@ -157,7 +157,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/network.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/network.png</textureradiooffnofocus>
@@ -175,7 +175,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/configure.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/configure.png</textureradiooffnofocus>
@@ -193,7 +193,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/actor.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/actor.png</textureradiooffnofocus>
@@ -211,7 +211,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/sysinfo.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/sysinfo.png</textureradiooffnofocus>
@@ -229,7 +229,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/livetv.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/livetv.png</textureradiooffnofocus>
@@ -248,7 +248,7 @@
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-Button</font>
                     <align>left</align>
                     <textureradioofffocus colordiffuse="Selected">special://skin/extras/icons/year.png</textureradioofffocus>
                     <textureradiooffnofocus colordiffuse="PanelFG-NF">special://skin/extras/icons/year.png</textureradiooffnofocus>
