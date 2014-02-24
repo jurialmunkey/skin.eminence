@@ -6,7 +6,7 @@
 
 	<controls>
 
-		<include>GlobalNoBackground</include>
+		<include>GlobalBackground</include>
 		
 		<control type="group">
 		    <posx>233</posx>

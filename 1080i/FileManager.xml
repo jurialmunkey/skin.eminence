@@ -27,7 +27,7 @@
 
                 <control type="label" id="101">
                     <description>Header Label</description>
-                    <posx>22</posx>
+                    <posx>175</posx>
                     <posy>26</posy>
                     <width>780</width>
                     <textcolor>TopBarIcon</textcolor>
@@ -38,7 +38,7 @@
 
                 <control type="list" id="20">
                     <description>Left File List</description>
-                    <posx>15</posx>
+                    <posx>190</posx>
                     <posy>96</posy>
                     <width>780</width>
                     <height>552</height>
@@ -113,7 +113,7 @@
 
                 <control type="label" id="12">
                     <description>Header Label</description>
-                    <posx>22</posx>
+                    <posx>175</posx>
                     <posy>680</posy>
                     <width>480</width>
                     <align>left</align>
@@ -131,7 +131,7 @@
                 <control type="label" id="102">
                     <description>Header Label</description>
                     
-                    <posx>22</posx>
+                    <posx>35</posx>
                     <posy>26</posy>
                     <width>780</width>
                     <textcolor>TopBarIcon</textcolor>
@@ -142,7 +142,7 @@
 
                 <control type="list" id="21">
                     <description>Right File List</description>
-                    <posx>15</posx>
+                    <posx>50</posx>
                     <posy>96</posy>
                     <width>780</width>
                     <height>552</height>
@@ -218,7 +218,7 @@
 
                 <control type="label" id="13">
                     <description>Header Label</description>
-                    <posx>22</posx>
+                    <posx>35</posx>
                     <posy>680</posy>
                     <width>480</width>
                     <align>left</align>

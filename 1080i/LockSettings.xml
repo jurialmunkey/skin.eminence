@@ -11,12 +11,6 @@
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-
-            <control type="image">
-				<width>1920</width>
-				<height>764</height>
-				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
-            </control>
             
 			<control type="label">
 				<description>Settings</description>
@@ -26,121 +20,66 @@
 				<align>left</align>
 				<label>20043</label>
 				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
 			</control>
 
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
 				<posx>265</posx>
 				<posy>120</posy>
-				<width>1390</width>
+				<width>920</width>
 				<height>549</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>28</onup>
+				<onright>28</onright>
+				<onup>5</onup>
 			</control>
 
 			<control type="button" id="7">
 				<description>Default Button</description>
 				<align>left</align>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
 				<align>left</align>
-				<radioposx>1314</radioposx>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-				<textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
-                <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
-                <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+				<radioposx>840</radioposx>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>Default spincontrolex</description>
 				<align>left</align>
 				<reverse>yes</reverse>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-                <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
 			</control>
 
 			<control type="sliderex" id="10">
 				<description>Default Slider</description>
 				<align>left</align>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
 			</control>
-
-		</control>
-		<control type="group">		
-            <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
             <control type="grouplist">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
+                <posx>1273</posx>
+				<posy>120</posy>
+				<width>450</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
                 <control type="button" id="28">
                     <label>186</label>
+                    <align>left</align>
                     <onleft>5</onleft>
-                    <onright>29</onright>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
-                    <include>DefContextMenuButton</include>
+                    <ondown>29</ondown>
                 </control>
 
                 <control type="button" id="29">
                     <description>Cancel</description>
+                    <align>left</align>
                     <label>222</label>
-                    <onleft>28</onleft>
-                    <onright>5</onright>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
-                    <include>DefContextMenuButton</include>
+                    <onleft>5</onleft>
+                    <onup>28</onup>
                 </control>
             </control>
-        </control>
+		</control>
+		
 
 	</controls>
 

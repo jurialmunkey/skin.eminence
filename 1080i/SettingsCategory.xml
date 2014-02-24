@@ -6,7 +6,7 @@
 
 	<controls>
 
-		<include>GlobalNoBackground</include>
+		<include>GlobalBackground</include>
 		<control type="button">
             <posy>600</posy>
             <posx>1770</posx>
@@ -90,8 +90,8 @@
 			    <include>Animation.FadeOut</include>
 			    <posx>295</posx>
 				<posy>700</posy>
-				<width>990</width>
-				<height>100</height>
+				<width>1360</width>
+				<height>80</height>
 				<align>left</align>
 				<font>Font-ListInfo</font>
 				<textcolor>Disabled</textcolor>
@@ -102,7 +102,7 @@
 				<description>Control Area</description>
 				<posx>1273</posx>
 				<posy>120</posy>
-				<width>450</width>
+				<width>397</width>
 				<height>552</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
