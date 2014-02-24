@@ -6,11 +6,24 @@
 
 	<controls>
 
-		<include>GlobalBackground</include>
+		<include>GlobalNoBackground</include>
 		
 		<control type="group">
 		    <posx>233</posx>
 		    <posy>70</posy> 
+		    <control type="label">
+            <posx>1475</posx>
+            <posy>174</posy>
+            <width>690</width>
+            <font>Font-ViewCategory</font>
+            <label>Settings</label>
+            <angle>270</angle>
+            <animation effect="fade" end="25" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+        </control>
 		    <include>Animation.FadeIn</include>
             <control type="grouplist" id="9900">
                 <posx>18</posx>

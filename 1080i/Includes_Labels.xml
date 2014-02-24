@@ -150,6 +150,11 @@
 	    <value condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">$LOCALIZE[20388]</value>
 	</variable>
 	
+	<variable name="9104Label">
+	    <value condition="substring(Container.FolderPath,movies)">$LOCALIZE[31156]</value>
+	    <value condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">$LOCALIZE[31157]</value>
+	</variable>
+	
 	<variable name="9105Label">
 	    <value condition="substring(Container.FolderPath,movies)">$LOCALIZE[20434]</value>
 	    <value condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">$LOCALIZE[652]</value>

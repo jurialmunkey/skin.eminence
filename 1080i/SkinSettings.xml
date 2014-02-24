@@ -4,10 +4,25 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 
-		<include>GlobalBackground</include>
+		<include>GlobalNoBackground</include>
 		<control type="button">
             <posy>600</posy>
-            <posx>1770</posx>
+            <posx>110</posx>
+            <width>48</width>
+            <height>48</height>
+            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
+        </control>
+        <control type="button">
+            <posy>600</posy>
+            <posx>158r</posx>
             <width>48</width>
             <height>48</height>
             <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
@@ -23,7 +38,8 @@
 		<control type="group">
 			<posy>210</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-            
+            <include>Animation.SlideOpen.Settings</include>
+
             <include>Animation.FadeOut</include>
 
 			<control type="label">
@@ -40,18 +56,18 @@
 			</control>          
             <control type="grouplist" id="3">
                 <description>Control Area</description>
-                <include>Animation.SlideOpen.Left</include>
-				<posx>1273</posx>
+				<posx>265</posx>
 				<posy>120</posy>
-				<width>450</width>
+				<width>359</width>
 				<height>552</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
 				<onback>ActivateWindow(settings)</onback>
-				<onleft>5</onleft>
-				<onright>ClearProperty(movement,settings)</onright>
-				<onright>$VAR[DefSettingsOnRight]</onright>
+				<onleft>SetProperty(movement,1,settings)</onleft>
+				<onleft>$VAR[DefSettingsOnLeft]</onleft>
+				<onright>5</onright>
+				
 				<onup>3</onup>
 				<ondown>3</ondown>
                 <control type="button" id="31" description="General">
@@ -74,8 +90,7 @@
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
-                <include>Animation.SlideOpen.Right</include>
-				<posx>265</posx>
+				<posx>650</posx>
 				<posy>120</posy>
 				<width>990</width>
 				<height>552</height>
@@ -83,9 +98,9 @@
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
 				<onback>ActivateWindow(settings)</onback>
-				<onleft>SetProperty(movement,1,settings)</onleft>
-				<onleft>$VAR[DefSettingsOnLeft]</onleft>
-				<onright>3</onright>
+				<onleft>3</onleft>
+				<onright>ClearProperty(movement,settings)</onright>
+				<onright>$VAR[DefSettingsOnRight]</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
                 <control type="radiobutton" id="101">
@@ -93,7 +108,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
                     <selected>!Skin.HasSetting(HideDebugInfo)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
@@ -103,7 +118,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(skin.init)</onclick>
                     <selected>!Skin.HasSetting(skin.init)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
@@ -113,7 +128,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(disable.rss)</onclick>
                     <selected>!Skin.HasSetting(disable.rss)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
@@ -122,7 +137,7 @@
                     <label>31138</label>
                     <width>990</width>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                 </control>
@@ -131,7 +146,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.useweatherfanart)</onclick>
                     <selected>Skin.HasSetting(home.useweatherfanart)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
@@ -140,7 +155,7 @@
                     <label>31149</label>
                     <width>990</width>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(home.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                     <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
@@ -156,7 +171,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.301.enabled)</onclick>
                     <selected>Skin.HasSetting(home.301.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -166,7 +181,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.302.enabled)</onclick>
                     <selected>Skin.HasSetting(home.302.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -176,7 +191,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.303.enabled)</onclick>
                     <selected>Skin.HasSetting(home.303.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -186,7 +201,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.304.enabled)</onclick>
                     <selected>Skin.HasSetting(home.304.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -196,7 +211,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.305.enabled)</onclick>
                     <selected>Skin.HasSetting(home.305.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -206,7 +221,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.306.enabled)</onclick>
                     <selected>Skin.HasSetting(home.306.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -216,6 +231,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.307.enabled)</onclick>
                     <selected>Skin.HasSetting(home.307.enabled)</selected>
@@ -226,7 +242,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.308.enabled)</onclick>
                     <selected>Skin.HasSetting(home.308.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
@@ -236,6 +252,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.309.enabled)</onclick>
                     <selected>Skin.HasSetting(home.309.enabled)</selected>
@@ -246,6 +263,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.310.enabled)</onclick>
                     <selected>Skin.HasSetting(home.310.enabled)</selected>
@@ -256,6 +274,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.311.enabled)</onclick>
                     <selected>Skin.HasSetting(home.311.enabled)</selected>
@@ -266,6 +285,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.312.enabled)</onclick>
                     <selected>Skin.HasSetting(home.312.enabled)</selected>
@@ -276,6 +296,8 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
                     
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
                     <selected>Skin.HasSetting(home.314.enabled)</selected>
@@ -291,6 +313,7 @@
                     <label2>$VAR[MovieWidgetLabel]</label2>
                     <width>990</width>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(movie.widget.recommended)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -300,6 +323,7 @@
                     <label2>$VAR[TvShowWidgetLabel]</label2>
                     <width>990</width>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(tvshow.widget.recommended)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -309,6 +333,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
                     <selected>Skin.HasSetting(ActivateTvTunes)</selected>
@@ -319,6 +344,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
                     <selected>!Skin.HasSetting(disable.fanart)</selected>
@@ -329,6 +355,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
                     <selected>!Skin.HasSetting(disable.bgvideo)</selected>
@@ -343,6 +370,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
+                    <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
@@ -353,7 +381,7 @@
                     <width>990</width>
                     <radioposx>914</radioposx>
                     <align>left</align>
-                    
+                    <font>Font-ListInfo</font>
                     <disabledcolor>PanelFG-NF</disabledcolor>
                     <onclick>Skin.ToggleSetting(OSDVisualisation.ShowFanart)</onclick>
                     <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>

@@ -231,3 +231,12 @@ msgstr ""
 msgctxt "#31155"
 msgid "Lovefilm"
 msgstr ""
+
+msgctxt "#31156"
+msgid "All Movies"
+msgstr ""
+
+msgctxt "#31157"
+msgid "All TV Shows"
+msgstr ""
+

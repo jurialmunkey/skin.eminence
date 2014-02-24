@@ -554,7 +554,7 @@
 	</include>
 	<include name="QuickNavWidget">
 	    <item id="61">
-	        <label>556</label>
+	        <label>$VAR[9104Label]</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
             <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
             <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowTitles,return)</onclick>
