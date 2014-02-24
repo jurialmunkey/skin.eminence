@@ -6,7 +6,7 @@
 
 	<controls>
 
-		<include>GlobalNoBackground</include>
+		<include>GlobalBackground</include>
 		<control type="button">
             <posy>600</posy>
             <posx>110</posx>
