@@ -175,8 +175,9 @@
                 <aligny>top</aligny>
                 <label>$INFO[System.Time(hh:mm)]</label>
                 <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                <animation effect="slide" start="0" end="50" condition="IsEmpty(Control.GetLabel(9999))">Conditional</animation>
             </control>
-            <control type="label">
+            <control type="label" id="9999">
                 <posx>270</posx>
                 <posy>71</posy>
                 <width>100</width>

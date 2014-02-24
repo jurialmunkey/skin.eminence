@@ -3,6 +3,10 @@ Tidy up and unify settings
 Movement between settings category on left/right
 Fixes for content setting plus cleanup
 Animated gif loading indicator
+Clean-up
+A few color tweaks
+Fixed Clock alignment for 24 hr time
+
 
 [B]0.9.3[/B]
 Localized viewtypes
