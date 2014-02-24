@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="115">
-	<defaultcontrol always="true">901</defaultcontrol>
+	<defaultcontrol always="true">9901</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)]</visible>
     <zorder>2</zorder>
 	<controls>
+	
         <control type="group">
 		    <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
 		    <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsActive(DialogFullScreenInfo.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo]</visible>
