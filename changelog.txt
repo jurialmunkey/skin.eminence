@@ -6,7 +6,7 @@ Animated gif loading indicator
 Clean-up
 A few color tweaks
 Fixed Clock alignment for 24 hr time
-
+Added ability to slide left to music vis
 
 [B]0.9.3[/B]
 Localized viewtypes
