@@ -67,10 +67,21 @@
                     <onclick>ActivateWindow(playercontrols)</onclick>
                 </control>
 
-                <control type="radiobutton" id="16">
+                <control type="togglebutton" id="16">
                     <description>PartyMode</description>
                     <include>DefContextMenuButton</include>
                     <label>589</label>
+                    <altlabel>✓  $LOCALIZE[589]</altlabel>
+                    <usealttexture>MusicPartyMode.Enabled</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                
+                <control type="button" id="9001">
+                    <description>Fullscreen</description>
+                    <include>DefContextMenuButton</include>
+                    <label>31158</label>
+                    <onclick>Action(fullscreen)</onclick>
                 </control>
 
             </control>

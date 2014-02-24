@@ -240,3 +240,7 @@ msgctxt "#31157"
 msgid "All TV Shows"
 msgstr ""
 
+msgctxt "#31158"
+msgid "Fullscreen"
+msgstr ""
+

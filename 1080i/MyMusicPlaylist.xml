@@ -65,6 +65,13 @@
                     <label>208</label>
                 </control>
 
+                <control type="button" id="9001">
+                    <description>Fullscreen</description>
+                    <include>DefContextMenuButton</include>
+                    <label>31158</label>
+                    <onclick>Action(fullscreen)</onclick>
+                </control>
+
             </control>
 
 		</control>
