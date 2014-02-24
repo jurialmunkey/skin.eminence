@@ -175,8 +175,8 @@
 
 	<default type="progress">
 		<texturebg colordiffuse="PanelFG-NF">osd/progress-bg.png</texturebg>
-		<lefttexture>-</lefttexture>
-		<midtexture colordiffuse="Highlight">osd/progress-bg.png</midtexture>
+		<lefttexture colordiffuse="Highlight">osd/progress-end.png</lefttexture>
+		<midtexture colordiffuse="Highlight">osd/progress-end.png</midtexture>
 		<righttexture>osd/progress-end.png</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
