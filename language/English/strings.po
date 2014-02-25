@@ -244,3 +244,7 @@ msgctxt "#31158"
 msgid "Fullscreen"
 msgstr ""
 
+msgctxt "#31159"
+msgid "Recently Played"
+msgstr ""
+

@@ -566,7 +566,7 @@
 	        <onclick>SetProperty(FromWidget,1)</onclick>
             <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
             <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
-            <icon>special://skin/extras/icons/recent.png</icon>
+            <icon>special://skin/extras/icons/timer.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="64">
@@ -618,6 +618,91 @@
             <label>653</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
             <onclick condition="Window.IsVisible(MyVideoNav.xml)">UpdateLibrary(video)</onclick>
+            <icon>special://skin/extras/icons/update.png</icon>
+	        <property name="Color">1</property>
+        </item>
+	</include>
+	<include name="MusicQuickNavWidget">
+	    <item id="80">
+	        <label>133</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Artists,return)</onclick>
+            <icon>special://skin/extras/icons/artist.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="81">
+	        <label>132</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Albums,return)</onclick>
+            <icon>special://skin/extras/icons/songs.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="82">
+	        <label>135</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Genres,return)</onclick>
+            <icon>special://skin/extras/icons/audiogenre.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="83">
+	        <label>137</label>
+            <onclick>RunScript(script.globalsearch,albums=true&artists=true&songs=true)</onclick>
+            <icon>special://skin/extras/icons/search.png</icon>
+            <property name="Color">1</property>
+	    </item>
+	    <item id="84">
+	        <label>31159</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
+            <icon>special://skin/extras/icons/recent.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="85">
+	        <label>31109</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>
+            <icon>special://skin/extras/icons/recentlyadded.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="86">
+	        <label>10505</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Top100Albums,return)</onclick>
+            <icon>special://skin/extras/icons/top100.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="87">
+	        <label>136</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Playlists,return)</onclick>
+            <icon>special://skin/extras/icons/playlist.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="88">
+	        <label>20389</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,videodb://musicvideos/titles/,return)</onclick>
+            <icon>special://skin/extras/icons/musicvideo.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="89">
+	        <label>1038</label>
+	        <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,addons://sources/audio/,return)</onclick>
+            <icon>special://skin/extras/icons/addons.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="90">
+            <label>1214</label>
+            <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(Music,Files,return)</onclick>
+            <icon>special://skin/extras/icons/files.png</icon>
+	        <property name="Color">1</property>
+        </item>
+        <item id="91">
+            <label>653</label>
+            <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>UpdateLibrary(music)</onclick>
             <icon>special://skin/extras/icons/update.png</icon>
 	        <property name="Color">1</property>
         </item>

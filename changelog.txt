@@ -1,3 +1,6 @@
+[B]0.9.6[/B]
+Fixed System Info
+
 [B]0.9.5[/B]
 Added Big List view
 Added addon summaries to Label3

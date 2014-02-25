@@ -127,6 +127,17 @@
                     <textoffsetx>11</textoffsetx>
 					<label>13281</label>
 				</control>
+				<control type="button" id="99">
+					<description>PVR Service</description>
+					<width>334</width>
+                    <height>142</height>
+                    <texturefocus>-</texturefocus>
+                    <textcolor>TopBarIcon</textcolor>
+                    <focusedcolor>Highlight</focusedcolor>
+                    <scroll>true</scroll>
+                    <textoffsetx>11</textoffsetx>
+					<label>19191</label>
+				</control>
 			</control>
         </control>
 
@@ -158,8 +169,8 @@
 				<posx>295</posx>
 				<posy>120</posy>
 				<width>1390</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
+				<height>618</height>
+				<itemgap>-20</itemgap>
 				<orientation>vertical</orientation>
 
 				<control type="label" id="52">
@@ -172,12 +183,26 @@
 					<width>1330</width>
 					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 				</control>
+				
+				<control type="label">
+					<description>Spacer</description>
+					<font>-</font>
+					<height>40</height>
+					<width>1330</width>
+				</control>
 
 				<control type="progress" id="22">
 					<description>CPU BAR</description>
 					<width>1330</width>
-					<height>66</height>
+					<height>20</height>
 					<info>System.CPUUsage</info>
+				</control>
+				
+				<control type="label">
+					<description>Spacer</description>
+					<font>-</font>
+					<height>40</height>
+					<width>1330</width>
 				</control>
 
 				<control type="label" id="23">
@@ -185,11 +210,18 @@
 					<width>1330</width>
 					<label>$LOCALIZE[31121]: $INFO[system.memory(used.percent)]</label>
 				</control>
+				
+				<control type="label">
+					<description>Spacer</description>
+					<font>-</font>
+					<height>40</height>
+					<width>1330</width>
+				</control>
 
 				<control type="progress" id="24">
 					<description>Memory BAR</description>
 					<width>1330</width>
-					<height>66</height>
+					<height>20</height>
 					<info>system.memory(used)</info>
 				</control>
 
