@@ -16,7 +16,7 @@
                 <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
             </control>                    
                     
-            <control type="list" id="54">
+            <control type="wraplist" id="54">
                 <posx>29</posx>
                 <posy>221</posy>
                 <width>1394</width>
