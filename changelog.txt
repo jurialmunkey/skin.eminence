@@ -2,6 +2,7 @@
 Added Big List view
 Added addon summaries to Label3
 Full poster in info with label on side.
+Addon Settings made consistent with other settings
 
 [B]0.9.4[/B]
 Tidy up and unify settings

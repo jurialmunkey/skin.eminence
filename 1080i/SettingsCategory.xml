@@ -103,8 +103,8 @@
 			    <include>Animation.FadeOut</include>
 			    <posx>295</posx>
 				<posy>700</posy>
-				<width>990</width>
-				<height>100</height>
+				<width>1416</width>
+				<height>80</height>
 				<align>left</align>
 				<font>Font-ListInfo</font>
 				<textcolor>Disabled</textcolor>

@@ -3,160 +3,109 @@
 <window id="10140">
 	<defaultcontrol always="true">2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
+    <include>Animation.SlideOpen.Settings</include>
 	<controls>
         <control type="group">
-            <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogSelect.xml) | Window.IsVisible(FileBrowser.xml)">Conditional</animation>
-            <control type="group">		
-                <include>Animation.SlideOpen.Left</include>
-                <control type="image">
-                    <posy>18</posy>
-                    <posx>198</posx>
-                    <width>254</width>
-                    <height>164</height>	
-                    <texture align="left">home/half-tile.png</texture>
-                    <colordiffuse>TopBar</colordiffuse>
-                    <aspectratio>scale</aspectratio>
+			<posy>210</posy>
+			<include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
+
+            <control type="label" id="20">
+				<description>Header</description>
+				<posx>250</posx>
+				<posy>48</posy>
+				<width>870</width>
+				<align>left</align>
+				<font>Font-DialogHeader</font>
+			</control>
+            
+			<control type="grouplist" id="2">
+				<description>Control Area</description>
+				<posx>650</posx>
+				<posy>120</posy>
+				<width>1020</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+				<onleft>2</onleft>
+				<onright>28</onright>
+				<onup>2</onup>
+			</control>
+
+			
+			<control type="button" id="3">
+                <description>Default Button</description>
+                <align>left</align>
+            </control>
+
+            <control type="radiobutton" id="4">
+                <description>Default Radio Button</description>
+                <radioposx>942</radioposx>
+                <align>left</align>
+            </control>
+
+            <control type="spincontrolex" id="5">
+                <description>Default Spin Control</description>
+                <align>left</align>
+            </control>
+
+            <control type="button" id="13">
+                <description>Default Category Button</description>
+                <align>left</align>
+                <focusedcolor>PanelFG</focusedcolor>
+                <height>66</height>
+                <width>450</width>
+            </control>
+
+            <control type="label" id="7">
+                <label>-</label>
+                <textcolor>Highlight-NF</textcolor>
+            </control>
+
+            <control type="image" id="6">
+                <description>Default Seperator</description>
+                <height>-3</height>
+                <texture>-</texture>
+            </control>
+
+            <control type="sliderex" id="8">
+                <description>Default Slider</description>
+            </control>
+			
+			<control type="grouplist" id="9">
+                <posx>265</posx>
+				<posy>120</posy>
+				<width>359</width>
+				<height>552</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+                <control type="button" id="10">
+                    <label>186</label>
+                    <align>left</align>
+                    <onleft>5</onleft>
+                    <ondown>29</ondown>
                 </control>
-                <control type="image">
-                    <posy>18</posy>
-                    <posx>300</posx>
-                    <width>1800</width>
-                    <height>164</height>	
-                    <texture>common/white.png</texture>
-                    <colordiffuse>TopBar</colordiffuse>
-                    <aspectratio>scale</aspectratio>
-                </control>		
-                <control type="grouplist" id="9001">
-                    <posx>250</posx>
-                    <posy>29</posy>
-                    <width>1670</width>
-                    <height>164</height>
-                    <itemgap>0</itemgap>
-                    <orientation>horizontal</orientation>
-                    <control type="button" id="10">
-                        <description>OK Button</description>
-                        <include>DefContextMenuButton</include>
-                        <label>186</label>
-                        <onleft>12</onleft>
-                        <onright>11</onright>
-                        <onup>2</onup>
-                        <ondown>2</ondown>
-                    </control>
 
-                    <control type="button" id="11">
-                        <description>Cancel Button</description>
-                        <include>DefContextMenuButton</include>
-                        <label>222</label>
-                        <onleft>10</onleft>
-                        <onright>12</onright>
-                        <onup>2</onup>
-                        <ondown>2</ondown>
-                    </control>
-
-                    <control type="button" id="12">
-                        <description>Defaults Button</description>
-                        <include>DefContextMenuButton</include>
-                        <label>409</label>
-                        <onleft>11</onleft>
-                        <onright>10</onright>
-                        <onup>2</onup>
-                        <ondown>2</ondown>
-                    </control>
+                <control type="button" id="11">
+                    <description>Cancel</description>
+                    <align>left</align>
+                    <label>222</label>
+                    <onleft>5</onleft>
+                    <onup>28</onup>
+                </control>
+                
+                <control type="button" id="12">
+                    <description>Defaults Button</description>
+                    <align>left</align>
+                    <label>409</label>
                 </control>
             </control>
-            <control type="group">
             
-                <include>Animation.FadeOut</include>
-
-                <control type="grouplist" id="2">
-                    <include>Animation.SlideOpen.Right</include>      
-                    <description>control area</description>
-                    <posx>64</posx>
-                    <posy>320</posy>
-                    <width>1438</width>
-                    <height>687</height>
-                    <itemgap>3</itemgap>
-                    <onup>9001</onup>
-                    <ondown>2</ondown>
-                    <onleft>9</onleft>
-                    <onright>9</onright>
-                </control>
             
-                <control type="button" id="3">
-                    <description>Default Button</description>
-                    <align>left</align>
-                </control>
-
-                <control type="radiobutton" id="4">
-                    <description>Default Radio Button</description>
-                    <radioposx>1360</radioposx>
-                    <align>left</align>
-                </control>
-
-                <control type="spincontrolex" id="5">
-                    <description>Default Spin Control</description>
-                    <align>left</align>
-                </control>
-
-                <control type="button" id="13">
-                    <description>Default Category Button</description>
-                    <align>left</align>
-                    <focusedcolor>PanelFG</focusedcolor>
-                    <height>66</height>
-                    <width>450</width>
-                </control>
-
-                <control type="label" id="7">
-                    <label>-</label>
-                    <textcolor>Highlight-NF</textcolor>
-                </control>
-
-                <control type="image" id="6">
-                    <description>Default Seperator</description>
-                    <height>-3</height>
-                    <texture>-</texture>
-                </control>
-
-                <control type="sliderex" id="8">
-                    <description>Default Slider</description>
-                    <width>969</width>
-                </control>
-
-                <control type="group">
-                    <include>Animation.SlideOpen.Left</include>      
-                    <include>DefSettingsSeparator</include>      
-                    <control type="label" id="20">
-                        <description>Header Label</description>
-                        <textcolor>TopBarIcon</textcolor>
-                        <include>DefSettingsHeader</include>
-                    </control>
-            
-                    <control type="grouplist" id="9">
-                        <description>button area</description>
-                        <posx>1500</posx>
-                        <posy>718</posy>
-                        <width>450</width>
-                        <height>351</height>
-                        <itemgap>3</itemgap>
-                        <onleft>2</onleft>
-                        <onright>2</onright>
-                        <onup>9</onup>
-                        <ondown>9</ondown>
-                    </control>
-                    <control type="image">
-                        <posx>1522</posx>
-                        <posy>320</posy>
-                        <width>376</width>
-                        <height>376</height>
-                        <texture fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
-                        <aspectratio align="center" aligny="center">scale</aspectratio>
-                    </control>
-                </control>
 
 
-            </control>
-        </control>
+		</control>
 	</controls>
 
 </window>
