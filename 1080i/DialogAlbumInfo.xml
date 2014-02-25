@@ -11,13 +11,26 @@
 		    <posy>70</posy>
 		    <include>DialogVisibility</include>
 		    <control type="label" description="Info Label">
-                <posx>1475</posx>
-                <posy>174</posy>
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
                 <width>690</width>
                 <font>Font-ViewCategory</font>
-                <label>31119</label>
-                <angle>270</angle>
+                <label>$INFO[ListItem.Artist]</label>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <visible>!Container.Content(albums)</visible>
+            </control>
+            <control type="label" description="Info Label">
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <label>$INFO[ListItem.Album]</label>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <visible>Container.Content(albums)</visible>
             </control>
 		    <control type="group" description="Poster">
                 <posx>18</posx>
