@@ -54,7 +54,6 @@
 				<width>870</width>
 				<align>left</align>
 				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
 				<include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
 			</control>

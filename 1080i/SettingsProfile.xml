@@ -20,7 +20,6 @@
 				<align>left</align>
 				<label>10034</label>
 				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
 			</control>
             
 			<control type="radiobutton" id="4">

@@ -49,7 +49,6 @@
 				<width>870</width>
 				<align>left</align>
 				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
 				<label>$LOCALIZE[20077]</label>
 				<include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
