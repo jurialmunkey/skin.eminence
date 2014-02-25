@@ -4,7 +4,7 @@
 	<defaultcontrol always="true">402</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <zorder>11</zorder>
-        <include>GlobalLeftHeader</include>
+    <controls>
         <control type="group">		
             <include>Animation.SlideOpen.Left</include>
             <include>DefContextMenuBackground</include>

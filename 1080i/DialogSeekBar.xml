@@ -86,14 +86,14 @@
         </control>
         
         <control type="group" description="Fullscreeninfo">
-            <include>Animation.SlideOpen.LeftToRight</include>
-            <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo) + Window.IsActive(videoosd)</visible>
+            <include>Animation.FadeIn.Up</include>
+            <include>Animation.FadeOut</include>
+            <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + Window.IsActive(videoosd)</visible>
             <control type="group" description="Live TV">
                 <posx>251</posx>
                 <posy>280</posy>
                 <visible>VideoPlayer.Content(livetv)</visible>
                 <animation effect="slide" start="0" end="0,-32" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-                <include>Animation.SlideOpen.LeftToRight</include>
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
@@ -209,7 +209,6 @@
                 <posy>280</posy>
                 <visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
                 <animation effect="slide" start="0" end="0,-32" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-                <include>Animation.SlideOpen.LeftToRight</include>
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>

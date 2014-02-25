@@ -94,6 +94,7 @@
                     <height>48</height>
                     <label>210</label>
                     <font>-</font>
+                    
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/next.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG" flipx="true">osd/next.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
@@ -117,6 +118,7 @@
                     <label>31037</label>
                     <altlabel>208</altlabel>
                     <font>-</font>
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/pause.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG">osd/pause.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>

@@ -220,8 +220,10 @@
         <width>auto</width>
 	</include>
 	
-	
+	<!------------------->
 	<!-- Global Search -->
+	<!------------------->
+	
 	<include name="DefGlobalSearchList">
 	    <onleft>198</onleft>
 	    <width>1434</width>
@@ -274,7 +276,18 @@
         </control>
 	</include>
 	
-	<!-- OSD CONTROLS -->
+	
+	<!------------------------>
+	<!-- OSD / Seekbar DEFS -->
+	<!------------------------>
+	
+	<include name="DefOSDUpDown">
+	    <onup condition="IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">SetProperty(fullscreeninfo,1,seekbar)</onup>
+        <onup condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</onup>
+        <ondown condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</ondown>
+        <ondown condition="[IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen] | !VideoPlayer.IsFullscreen">Close</ondown>
+	</include>
+	
 	<include name="VideoOSDRight">
 	    <control type="button" id="4">
             <description>DVD Menu</description>
@@ -313,6 +326,7 @@
             <onclick>ActivateWindow(125)</onclick>
         </control>
 	</include>
+	
 	<include name="LiveTVOSDRight">
 	    <control type="button" id="4">
             <description>Channels</description>
@@ -339,7 +353,7 @@
             <onclick>SetFocus(31)</onclick>
             <onclick>SetFocus(10)</onclick>
         </control>
-
+        
         <control type="button" id="6">
             <description>Info</description>
             <width>230</width>
