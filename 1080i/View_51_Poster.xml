@@ -98,7 +98,7 @@
                             <textcolor>Selected</textcolor>
                             <align>justify</align>
                             <font>Font-ListInfo</font>
-                            <label>$VAR[MusicPlot]</label>
+                            <label>$VAR[PlotBox]</label>
                             <autoscroll>false</autoscroll>
                         </control>
                         <control type="label">
@@ -138,7 +138,7 @@
                             <width>400</width>
                             <align>center</align>
                             <font>Font-Button</font>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>
@@ -266,7 +266,7 @@
                                 <textcolor>Selected</textcolor>
                                 <align>justify</align>
                                 <font>Font-ListInfo</font>
-                                <label>$VAR[MusicPlot]</label>
+                                <label>$VAR[PlotBox]</label>
                             </control>
                             <control type="label">
                                 <posx>222</posx>
@@ -313,7 +313,7 @@
                                 <textcolor>Selected</textcolor>
                                 <align>justify</align>
                                 <font>Font-ListInfo</font>
-                                <label>$VAR[MusicPlot]</label>
+                                <label>$VAR[PlotBox]</label>
                             </control>
                             <control type="label">
                                 <posx>222</posx>
@@ -355,7 +355,7 @@
                             <align>center</align>
                             <font>Font-Button</font>
                             <textcolor>Selected</textcolor>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>
@@ -391,7 +391,7 @@
                             <width>400</width>
                             <align>center</align>
                             <font>Font-Button</font>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>

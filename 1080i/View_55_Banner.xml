@@ -57,7 +57,7 @@
                             <width>660</width>
                             <height>41</height>
                             <font>Font-Button</font>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                         <control type="label">
                             <posx>680</posx>
@@ -67,7 +67,6 @@
                             <height>41</height>
                             <font>Font-ListInfo-Small</font>
                             <label>$INFO[ListItem.Label2]</label>
-                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
                         </control>
                         <control type="label">
                             <posx>20</posx>
@@ -77,19 +76,7 @@
                             <aligny>top</aligny>
                             <height>41</height>
                             <font>Font-ListInfo-Small</font>
-                            <label>$VAR[MusicLabel2]</label>
-                            <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
-                        </control>
-                        <control type="label">
-                            <posx>20</posx>
-                            <posy>177</posy>
-                            <width>660</width>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <height>41</height>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Genre]</label>
-                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                            <label>$VAR[VARLabel3]</label>
                         </control>
                         <control type="label">
                             <posx>680</posx>
@@ -142,6 +129,7 @@
                             <font>Font-ListInfo-Small</font>
                             <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
                         </control>
+                        
             
                     
 
@@ -183,7 +171,7 @@
                             <height>41</height>
                             <font>Font-Button</font>
                             <textcolor>Selected</textcolor>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                         <control type="label">
                             <posx>680</posx>
@@ -194,20 +182,6 @@
                             <font>Font-ListInfo-Small</font>
                             <textcolor>Selected</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
-                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
-                        </control>
-                        
-                        <control type="label">
-                            <posx>20</posx>
-                            <posy>177</posy>
-                            <width>660</width>
-                            <align>left</align>
-                            <aligny>top</aligny>
-                            <height>41</height>
-                            <font>Font-ListInfo-Small</font>
-                            <textcolor>Selected</textcolor>
-                            <label>$VAR[MusicLabel2]</label>
-                            <visible>!Window.IsVisible(MyVideoNav.xml)</visible>
                         </control>
                         <control type="label">
                             <posx>20</posx>
@@ -218,8 +192,7 @@
                             <height>41</height>
                             <font>Font-ListInfo-Small</font>
                             <textcolor>Selected</textcolor>
-                            <label>$INFO[ListItem.Genre]</label>
-                            <visible>Window.IsVisible(MyVideoNav.xml)</visible>
+                            <label>$VAR[VARLabel3]</label>
                         </control>
                         <control type="label">
                             <posx>680</posx>
@@ -228,8 +201,8 @@
                             <align>right</align>
                             <aligny>top</aligny>
                             <height>41</height>
-                            <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Small</font>
+                            <textcolor>Selected</textcolor>
                             <label>$VAR[WatchedLabel]</label>
                         </control>
                     </control>

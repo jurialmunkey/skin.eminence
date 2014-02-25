@@ -2,31 +2,31 @@
 <!-- Foundation -->
 <includes>
 
-	<include name="View_53_Wide">
+	<include name="View_56_BigList">
 	
         <control type="group">
-            <visible>Control.IsVisible(53)</visible>
+            <visible>Control.IsVisible(56)</visible>
             <include>Animation.ViewChange</include>     
             <include>DefSideLabel</include>       
-            <control type="panel" id="53">
+            <control type="panel" id="56">
                 <posx>18</posx>
                 <posy>210</posy>
                 <width>1434</width>
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>9000</onright>
-                <onup>53</onup>
-                <ondown>53</ondown>
+                <onup>56</onup>
+                <ondown>56</ondown>
                 <include>DefOnBack</include>
                 <pagecontrol>60</pagecontrol>
-                <viewtype label="539">list</viewtype>
+                <viewtype label="537">list</viewtype>
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>vertical</orientation>
 
-                <itemlayout width="476" height="140">
+                <itemlayout width="1416" height="140">
 
                     <control type="image">
-                        <width>464</width>
+                        <width>1416</width>
                         <height>129</height>
                         <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                     </control>
@@ -39,32 +39,41 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>144</posx>
                         <posy>15</posy>
-                        <width>300</width>
-                        <align>right</align>
+                        <width>1200</width>
+                        <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG</textcolor>
                         <label>$VAR[VARLabel]</label>
-                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>144</posx>
                         <posy>48</posy>
-                        <width>300</width>
+                        <width>1200</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1372</posx>
+                        <height>129</height>
+                        <width>1200</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                     </control>
 
                 </itemlayout>
 
-                <focusedlayout width="476" height="140">
+                <focusedlayout width="1416" height="140">
 
                     <control type="image">
-                        <width>464</width>
+                        <width>1416</width>
                         <height>129</height>
                         <texture colordiffuse="White" border="2">common/border-inner.png</texture>
                     </control>
@@ -77,34 +86,44 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>144</posx>
                         <posy>15</posy>
-                        <width>300</width>
-                        <align>right</align>
+                        <width>1200</width>
+                        <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
                         <label>$VAR[VARLabel]</label>
-                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>144</posx>
                         <posy>48</posy>
-                        <width>300</width>
+                        <width>1200</width>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
+                    </control>
+                    <control type="label">
+                        <posx>1372</posx>
+                        <height>129</height>
+                        <width>1200</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                     </control>
 
                 </focusedlayout>
 
             </control>
             <control type="scrollbar" id="60">
-                <posx>-11</posx>
+                <posx>-18</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft>SetFocus(9500)</onleft>
+                <onleft condition="Window.IsVisible(MyVideoNav.xml)">SetFocus(9500)</onleft>
+                <onleft condition="Container.Content(songs) + Player.HasAudio">Action(fullscreen)</onleft>
                 <onright>50</onright>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>

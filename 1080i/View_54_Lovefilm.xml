@@ -76,7 +76,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <textcolor>Selected</textcolor>
-                    <label>$VAR[MusicLabel]</label>
+                    <label>$VAR[VARLabel]</label>
                 </control>
             
                 <control type="label">

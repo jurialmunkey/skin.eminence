@@ -47,7 +47,7 @@
                 <height>100</height>
                 <align>left</align>
                 <font>Font-ListInfo-Small</font>
-                <label>$VAR[MusicLabel]</label>
+                <label>$VAR[VARLabel]</label>
             </control>
             
         </itemlayout>
@@ -127,7 +127,7 @@
                 <height>100</height>
                 <align>left</align>
                 <font>Font-ListInfo-Small</font>
-                <label>$VAR[MusicLabel]</label>
+                <label>$VAR[VARLabel]</label>
                 <wrapmultiline>true</wrapmultiline>
             </control>
 
@@ -254,7 +254,7 @@
                 <textcolor>Selected</textcolor>
                 <align>justify</align>
                 <font>Font-ListInfo</font>
-                <label>$VAR[MusicPlot]</label>
+                <label>$VAR[PlotBox]</label>
             </control>
             <control type="label">
                 <posx>22</posx>

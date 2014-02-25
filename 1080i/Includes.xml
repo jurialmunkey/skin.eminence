@@ -20,6 +20,7 @@
 	<include file="View_53_Wide.xml" />
 	<include file="View_54_Lovefilm.xml" />
 	<include file="View_55_Banner.xml" />
+	<include file="View_56_BigList.xml" />
 	<include file="View_PVR.xml" />
 
 	<include name="HiddenButton">

@@ -89,7 +89,6 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <visible>!Container(51).OnScrollNext + !Container(51).OnScrollPrevious</visible>
-            <visible>Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(54) | Control.IsVisible(55) | Window.IsVisible(favourites)</visible>
         </control>
 	</include>
 	
@@ -110,6 +109,7 @@
             <include>View_53_Wide</include>
             <include>View_54_Lovefilm</include>
             <include>View_55_Banner</include>            
+            <include>View_56_BigList</include>            
 		</control>
 		<control type="group">
 	        <visible>ControlGroup(9000).HasFocus()</visible>

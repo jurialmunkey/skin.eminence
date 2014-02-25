@@ -49,14 +49,14 @@
                             <posx>64</posx>
                             <width>900</width>
                             <font>Font-Button</font>
-                            <label>$VAR[MusicLabel]</label>
+                            <label>$VAR[VARLabel]</label>
                         </control>
                     </control>
                     <control type="label">
                         <posx>30</posx>
                         <width>900</width>
                         <font>Font-Button</font>
-                        <label>$VAR[MusicLabel]</label>
+                        <label>$VAR[VARLabel]</label>
                         <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
                     </control>
                     <control type="label">
@@ -107,7 +107,7 @@
                                     <posx>64</posx>
                                     <width>900</width>
                                     <font>Font-Button</font>
-                                    <label>$VAR[MusicLabel]</label>
+                                    <label>$VAR[VARLabel]</label>
                                     <textcolor>PanelFG</textcolor>
                                 </control>
                             </control>
@@ -115,7 +115,7 @@
                                 <posx>30</posx>
                                 <width>900</width>
                                 <font>Font-Button</font>
-                                <label>$VAR[MusicLabel]</label>
+                                <label>$VAR[VARLabel]</label>
                                 <textcolor>PanelFG</textcolor>
                                 <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
                             </control>
@@ -155,14 +155,14 @@
                                     <posx>64</posx>
                                     <width>900</width>
                                     <font>Font-Button</font>
-                                    <label>$VAR[MusicLabel]</label>
+                                    <label>$VAR[VARLabel]</label>
                                 </control>
                             </control>
                             <control type="label">
                                 <posx>30</posx>
                                 <width>900</width>
                                 <font>Font-Button</font>
-                                <label>$VAR[MusicLabel]</label>
+                                <label>$VAR[VARLabel]</label>
                                 <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
                             </control>
                             <control type="label">
@@ -292,7 +292,7 @@
                     <width>400</width>
                     <align>justify</align>
                     <font>Font-ListInfo</font>
-                    <label fallback="31122">$VAR[MusicPlot]</label>
+                    <label fallback="31122">$VAR[PlotBox]</label>
                 </control>
             </control>
             <control type="scrollbar" id="60">
