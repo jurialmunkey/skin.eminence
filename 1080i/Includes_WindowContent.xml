@@ -31,7 +31,7 @@
     </variable>
     
     <variable name="GlobalFanart">
-        <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">common/white.png</value>
+        <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">-</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
         <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>
@@ -63,7 +63,6 @@
 				<animation effect="fade" start="100" end="10" condition="!Window.IsVisible(home)">Conditional</animation>
 			</control>
 			<control type="group">		
-			    <include>Animation.FadeIn</include>	
 			    <visible>Window.IsVisible(home)</visible>
                 <include>GlobalVignette</include>
             </control>
