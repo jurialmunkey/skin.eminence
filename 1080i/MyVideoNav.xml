@@ -50,7 +50,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
             <visible>![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
@@ -313,7 +313,6 @@
                     </content>
                 </control>
             </control>
-
         </control>
 		
         <include>GlobalTopBar</include>

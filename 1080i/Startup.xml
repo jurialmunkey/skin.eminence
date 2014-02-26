@@ -27,7 +27,7 @@
             <onfocus>Skin.SetBool(home.303.enabled)</onfocus>
             <onfocus>Skin.SetString(home.303.bgcolor,ff553575)</onfocus>
             <onfocus>Skin.SetString(home.303.icon,special://skin/extras/icons/songs.png)</onfocus>
-            <onfocus>Skin.SetString(home.303.path,ActivateWindow(Music))</onfocus>
+            <onfocus>Skin.SetString(home.303.path,ActivateWindow(Music,Albums,return))</onfocus>
             <onfocus>Skin.SetString(home.303.label,$LOCALIZE[2])</onfocus>
             
             <!-- 304 Item -->
