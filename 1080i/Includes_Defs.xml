@@ -282,6 +282,7 @@
 	<!------------------------>
 	
 	<include name="DefOSDUpDown">
+	    <onup condition="!VideoPlayer.IsFullscreen">Close</onup>
 	    <onup condition="IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">SetProperty(fullscreeninfo,1,seekbar)</onup>
         <onup condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</onup>
         <ondown condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</ondown>
@@ -298,6 +299,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick>PlayerControl(ShowVideoMenu)</onclick>
             <enable>VideoPlayer.HasMenu</enable>
         </control>
@@ -310,6 +312,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
             <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
@@ -323,6 +326,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick>ActivateWindow(125)</onclick>
         </control>
 	</include>
@@ -337,6 +341,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick>ActivateWindowAndFocus(mypvr,32,0,11,0)</onclick>
         </control>
         
@@ -349,6 +354,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick>ActivateWindow(mypvr)</onclick>
             <onclick>SetFocus(31)</onclick>
             <onclick>SetFocus(10)</onclick>
@@ -362,6 +368,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <focusedcolor>Highlight</focusedcolor>
+            <include>DefOSDUpDown</include>
             <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
             <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>

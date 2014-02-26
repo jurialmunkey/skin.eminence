@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
     <variable name="HomeFocus">
+        <value condition="!IsEmpty(Window(home).Property(homefocus))">SetFocus($INFO[Window(home).Property(homefocus)])</value>
         <value condition="Skin.HasSetting(home.301.enabled)">SetFocus(301)</value>
         <value condition="Skin.HasSetting(home.302.enabled)">SetFocus(302)</value>
         <value condition="Skin.HasSetting(home.303.enabled)">SetFocus(303)</value>
@@ -12,6 +13,7 @@
         <value condition="Skin.HasSetting(home.309.enabled)">SetFocus(309)</value>
         <value condition="Skin.HasSetting(home.310.enabled)">SetFocus(310)</value>
     </variable>
+    
     <include name="Home-Menu-Label">
         <posy>300</posy>
         <width>180</width>
@@ -21,6 +23,7 @@
         <font>Font-HomeMenu</font>
         <textcolor>ffffffff</textcolor>
     </include>
+    
     <include name="Home-Menu-Button">
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
         <ondown>ActivateWindow(videoosd)</ondown>
@@ -30,15 +33,18 @@
         <texturefocus>home/half-tile.png</texturefocus>
         <texturenofocus>home/half-tile.png</texturenofocus>
     </include>
+    
     <include name="Home-Menu-Button-BG">
         <control type="button">
             <include>Home-Menu-Button</include>
             <colordiffuse>ff000000</colordiffuse>
         </control>
     </include>
+    
     <include name="Home-Menu-Visibility">
         <visible allowhiddenfocus="true">ControlGroup(300).HasFocus() | Window.IsVisible(home) | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)</visible>
     </include>
+    
     <include name="Home-Menu">
         <control type="group">
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)]">Conditional</animation>
@@ -72,10 +78,10 @@
                     <control type="button" id="301">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.301.enabled)</visible>
+                        <onclick>SetProperty(homefocus,301,home)</onclick>
                         <onclick>$INFO[Skin.String(home.301.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
                         <onright>302</onright>
-                        
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
                     </control>
                     <control type="image">
@@ -99,6 +105,7 @@
                     <control type="button" id="302">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.302.enabled)</visible>
+                        <onclick>SetProperty(homefocus,302,home)</onclick>
                         <onclick>$INFO[Skin.String(home.302.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
                         <onleft>301</onleft>
@@ -126,6 +133,7 @@
                     <control type="button" id="303">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.303.enabled)</visible>
+                        <onclick>SetProperty(homefocus,303,home)</onclick>
                         <onclick>$INFO[Skin.String(home.303.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
                         <onleft>302</onleft>
@@ -153,6 +161,7 @@
                     <control type="button" id="304">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.304.enabled)</visible>
+                        <onclick>SetProperty(homefocus,304,home)</onclick>
                         <onclick>$INFO[Skin.String(home.304.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
                         <onleft>303</onleft>
@@ -180,6 +189,7 @@
                     <control type="button" id="305">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.305.enabled)</visible>
+                        <onclick>SetProperty(homefocus,305,home)</onclick>
                         <onclick>$INFO[Skin.String(home.305.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
                         <onleft>304</onleft>
@@ -206,6 +216,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="306">
                         <include>Home-Menu-Button</include>
+                        <onclick>SetProperty(homefocus,306,home)</onclick>
                         <onclick>$INFO[Skin.String(home.306.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <onleft>305</onleft>
@@ -233,6 +244,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="307">
                         <include>Home-Menu-Button</include>
+                        <onclick>SetProperty(homefocus,307,home)</onclick>
                         <onclick>$INFO[Skin.String(home.307.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <onleft>306</onleft>
@@ -261,6 +273,7 @@
                     <control type="button" id="308">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.308.enabled)</visible>
+                        <onclick>SetProperty(homefocus,308,home)</onclick>
                         <onclick>$INFO[Skin.String(home.308.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
                         <onleft>307</onleft>
@@ -288,6 +301,7 @@
                     <control type="button" id="309">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.309.enabled)</visible>
+                        <onclick>SetProperty(homefocus,309,home)</onclick>
                         <onclick>$INFO[Skin.String(home.309.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
                         <onleft>308</onleft>
@@ -315,6 +329,7 @@
                     <control type="button" id="310">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.310.enabled)</visible>
+                        <onclick>SetProperty(homefocus,310,home)</onclick>
                         <onclick>$INFO[Skin.String(home.310.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
                         <onleft>309</onleft>
@@ -342,6 +357,7 @@
                     <control type="button" id="311">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.311.enabled)</visible>
+                        <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.311.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
                         <onleft>310</onleft>
@@ -369,6 +385,7 @@
                     <control type="button" id="312">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.312.enabled)</visible>
+                        <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.312.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <onleft>311</onleft>
@@ -396,6 +413,7 @@
                     <control type="button" id="313">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.313.enabled)</visible>
+                        <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.313.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
                         <onleft>312</onleft>
@@ -423,6 +441,7 @@
                     <control type="button" id="314">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.314.enabled)</visible>
+                        <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.314.path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
                         <onleft>313</onleft>

@@ -51,6 +51,7 @@
                     <onclick condition="!VideoPlayer.Content(livetv)">ActivateWindow(SubtitleSearch)</onclick>
                     <onclick condition="VideoPlayer.Content(livetv)">Action(ShowSubtitles)</onclick>
                     <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled + VideoPlayer.Content(livetv)">Conditional</animation>
+                    <include>DefOSDUpDown</include>
                 </control>
 
                 <control type="button" id="2">
@@ -62,6 +63,7 @@
                     <texturenofocus>-</texturenofocus>
                     <focusedcolor>Highlight</focusedcolor>
                     <onclick>ActivateWindow(124)</onclick>
+                    <include>DefOSDUpDown</include>
                 </control>
 
                 <control type="button" id="3">
@@ -73,6 +75,7 @@
                     <texturenofocus>-</texturenofocus>
                     <focusedcolor>Highlight</focusedcolor>
                     <onclick>ActivateWindow(123)</onclick>
+                    <include>DefOSDUpDown</include>
                 </control>
             </control>
     
@@ -94,7 +97,7 @@
                     <height>48</height>
                     <label>210</label>
                     <font>-</font>
-                    
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/next.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG" flipx="true">osd/next.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
@@ -106,6 +109,7 @@
                     <height>48</height>
                     <label>31036</label>
                     <font>-</font>
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/ff.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG" flipx="true">osd/ff.png</texturenofocus>
                     <onclick>PlayerControl(Rewind)</onclick>
@@ -133,6 +137,7 @@
                     <height>48</height>
                     <label>31038</label>
                     <font>-</font>
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/stop.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG">osd/stop.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
@@ -144,6 +149,7 @@
                     <height>48</height>
                     <label>31039</label>
                     <font>-</font>
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/ff.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG">osd/ff.png</texturenofocus>
                     <onclick>PlayerControl(Forward)</onclick>
@@ -155,6 +161,7 @@
                     <height>48</height>
                     <label>209</label>
                     <font>-</font>
+                    <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/next.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG">osd/next.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
