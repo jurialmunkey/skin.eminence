@@ -21,40 +21,7 @@
                 <effect type="fade" end="0" start="100" time="200"/>
                 <effect type="slide" end="0,64" start="0" time="200"/>
             </animation>
-            <control type="grouplist" id="100">
-            
-                <posx>32</posx>
-                <posy>1024</posy>
-                <height>48</height>
-                <itemgap>3</itemgap>
-                <orientation>horizontal</orientation>
-                <align>left</align>
-                <onleft>6</onleft>
-                <onright>12</onright>
-                <onup>-</onup>
-                <ondown>-</ondown>
-
-                <control type="button" id="1">
-                    <description>Audio Settings</description>
-                    <include>DefOSDControls</include>
-                    <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
-                    <onclick>XBMC.PlayerControl(Repeat)</onclick>
-                </control>
-
-                <control type="button" id="2">
-                    <include>DefOSDControls</include>
-                    <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
-                    <onclick>XBMC.PlayerControl(Random)</onclick>
-                </control>
-                
-                <control type="button" id="3">
-                    <description>Playlist </description>
-                    <include>DefOSDControls</include>
-                    <label>559</label>
-					<onclick>ActivateWindow(MusicPlaylist)</onclick>
-                </control>
-                
-            </control>
+            <include>MusicOSDLeft</include>
     
             <control type="grouplist" id="101">
             
@@ -140,44 +107,7 @@
                 </control>
             
             </control>
-            <control type="grouplist" id="102">
-            
-                <posx>728r</posx>
-                <posy>1024</posy>
-                <height>48</height>
-                <width>696</width>
-                <itemgap>3</itemgap>
-                <orientation>horizontal</orientation>
-                <align>right</align>
-                <onleft>17</onleft>
-                <onright>1</onright>
-                <onup>-</onup>
-                <ondown>-</ondown>
-
-                <control type="button" id="4">
-                    <description>Info</description>
-                    <include>DefOSDControls</include>
-                    <label>31119</label>
-                    <onclick>Skin.ToggleSetting(Vis.ExtraInfo)</onclick>
-                </control>
-                
-                <control type="button" id="5">
-                    <description>Viz</description>
-                    <include>DefOSDControls</include>
-                    <label>5</label>
-                    <onclick>ActivateWindow(musicsettings)</onclick>
-                    <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-                </control>
-
-                
-
-                <control type="button" id="6">
-                    <description>Lyrics</description>
-                    <include>DefOSDControls</include>
-                    <label>24013</label>
-                    <onclick>RunScript(script.cu.lrclyrics)</onclick>
-                </control>
-            </control>
+            <include>MusicOSDRight</include>
             
 		</control>
 	</controls>

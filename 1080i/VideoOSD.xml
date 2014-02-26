@@ -26,59 +26,10 @@
                 <effect type="fade" end="0" start="100" time="200"/>
                 <effect type="slide" end="0,64" start="0" time="200"/>
             </animation>
-            <control type="grouplist" id="100">
-                <visible>Window.IsVisible(fullscreenvideo)</visible>
-                <posx>32</posx>
-                <posy>1024</posy>
-                <height>48</height>
-                <itemgap>3</itemgap>
-                <orientation>horizontal</orientation>
-                <align>left</align>
-                <onleft>6</onleft>
-                <onright>12</onright>
-                <onup>-</onup>
-                <ondown>-</ondown>
-
-                <control type="button" id="1">
-                    <description>Subs</description>
-                    <width>230</width>
-                    <height>48</height>
-                    <label>287</label>
-                    <align>right</align>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <onclick condition="!VideoPlayer.Content(livetv)">ActivateWindow(SubtitleSearch)</onclick>
-                    <onclick condition="VideoPlayer.Content(livetv)">Action(ShowSubtitles)</onclick>
-                    <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled + VideoPlayer.Content(livetv)">Conditional</animation>
-                    <include>DefOSDUpDown</include>
-                </control>
-
-                <control type="button" id="2">
-                    <description>Audio Settings</description>
-                    <width>230</width>
-                    <height>48</height>
-                    <label>292</label>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <onclick>ActivateWindow(124)</onclick>
-                    <include>DefOSDUpDown</include>
-                </control>
-
-                <control type="button" id="3">
-                    <description>Video Settings</description>
-                    <width>230</width>
-                    <height>48</height>
-                    <label>291</label>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <onclick>ActivateWindow(123)</onclick>
-                    <include>DefOSDUpDown</include>
-                </control>
-            </control>
-    
+            
+            <include condition="!VideoPlayer.Content(MusicVideos)">VideoOSDLeft</include>
+            <include condition="VideoPlayer.Content(MusicVideos)">MusicOSDLeft</include>
+                
             <control type="grouplist" id="101">
             
                 <posy>1024</posy>
@@ -184,7 +135,8 @@
                 <ondown>-</ondown>
 
                 <include condition="VideoPlayer.Content(LiveTV)">LiveTVOSDRight</include>
-                <include condition="!VideoPlayer.Content(LiveTV)">VideoOSDRight</include>
+                <include condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(MusicVideos)">VideoOSDRight</include>
+                <include condition="!VideoPlayer.Content(LiveTV) + VideoPlayer.Content(MusicVideos)">VideoMusicOSDRight</include>
             </control>
             
 		</control>

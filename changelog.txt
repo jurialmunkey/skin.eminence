@@ -3,6 +3,7 @@ Fixed System Info
 Fixes fo kai toast and dialog seekbar
 Video OSD Movement up and down for info and close
 New Movie info (others to follow)
+OSD Controls specific for music videos
 
 [B]0.9.5[/B]
 Added Big List view
