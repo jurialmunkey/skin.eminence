@@ -452,13 +452,15 @@
             </control>
             
             <control type="image">
-                <posx>422r</posx>
-                <posy>-193</posy>
-                <width>400</width>
-                <height>155</height>
+                <posx>500r</posx>
+                <posy>-297</posy>
+                <width>500</width>
+                <height>281</height>
                 <texture>$VAR[OSDImage]</texture>
                 <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                <visible>!Window.IsVisible(DialogFullScreenInfo.xml) + !VideoPlayer.Content(livetv)</visible>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <visible>!VideoPlayer.Content(livetv) + ![!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + Window.IsActive(videoosd)]</visible>
             </control>
 		</control>
 		

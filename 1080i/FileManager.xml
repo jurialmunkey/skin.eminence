@@ -54,6 +54,7 @@
                             <width>720</width>
                             <align>left</align>
                             <info>ListItem.Label</info>
+                            <font>Font-ListInfo</font>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
 
@@ -61,9 +62,11 @@
                             <posx>750</posx>
                             <width>150</width>
                             <align>right</align>
+                            <font>Font-ListInfo</font>
                             <info>ListItem.Label2</info>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
+                        
 
                     </itemlayout>
 
@@ -75,6 +78,7 @@
                                 <posx>30</posx>
                                 <width>720</width>
                                 <align>left</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label</info>
                                 <textcolor>Highlight</textcolor>
                             </control>
@@ -83,6 +87,7 @@
                                 <posx>750</posx>
                                 <width>720</width>
                                 <align>right</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label2</info>
                                 <textcolor>Highlight</textcolor>
                             </control>
@@ -94,6 +99,7 @@
                                 <posx>30</posx>
                                 <width>720</width>
                                 <align>left</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label</info>
                                 <textcolor>Highlight-NF</textcolor>
                             </control>
@@ -102,6 +108,7 @@
                                 <posx>750</posx>
                                 <width>720</width>
                                 <align>right</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label2</info>
                                 <textcolor>Highlight-NF</textcolor>
                             </control>
@@ -158,6 +165,7 @@
                             <width>720</width>
                             <align>left</align>
                             <info>ListItem.Label</info>
+                            <font>Font-ListInfo</font>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
 
@@ -165,9 +173,11 @@
                             <posx>750</posx>
                             <width>150</width>
                             <align>right</align>
+                            <font>Font-ListInfo</font>
                             <info>ListItem.Label2</info>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
+                        
 
                     </itemlayout>
 
@@ -180,6 +190,7 @@
                                 <width>720</width>
                                 <align>left</align>
                                 <info>ListItem.Label</info>
+                                <font>Font-ListInfo</font>
                                 <textcolor>Highlight</textcolor>
                             </control>
 
@@ -188,6 +199,7 @@
                                 <width>720</width>
                                 <align>right</align>
                                 <info>ListItem.Label2</info>
+                                <font>Font-ListInfo</font>
                                 <textcolor>Highlight</textcolor>
                             </control>
                         </control>
@@ -198,6 +210,7 @@
                                 <posx>30</posx>
                                 <width>720</width>
                                 <align>left</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label</info>
                                 <textcolor>Highlight-NF</textcolor>
                             </control>
@@ -206,6 +219,7 @@
                                 <posx>750</posx>
                                 <width>720</width>
                                 <align>right</align>
+                                <font>Font-ListInfo</font>
                                 <info>ListItem.Label2</info>
                                 <textcolor>Highlight-NF</textcolor>
                             </control>

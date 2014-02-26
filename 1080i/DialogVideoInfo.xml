@@ -266,7 +266,7 @@
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
-                    <height>160</height>
+                    <height>230</height>
                     <label fallback="416">$INFO[ListItem.Plot]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -403,6 +403,7 @@
             <visible allowhiddenfocus="true">false</visible>
             <onclick>SendClick(2003,8)</onclick>
             <onright>SetFocus(50)</onright>
+            <onleft>Back</onleft>
             <onup>SetFocus(9500)</onup>
             <ondown>SetFocus(9500)</ondown>
         </control>
