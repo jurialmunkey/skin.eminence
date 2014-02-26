@@ -43,6 +43,8 @@
                             <fadetime>200</fadetime>
                             <texture background="true">$VAR[PosterImage]</texture>
                             <aspectratio aligny="top">scale</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="label">
                             <posx>22</posx>
@@ -79,6 +81,8 @@
                             <height>237</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="top">scale</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="label">
                             <posx>22</posx>
@@ -130,6 +134,8 @@
                             <height>422</height>
                             <texture background="true">$VAR[PosterImage]</texture>
                             <aspectratio aligny="top">scale</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>
@@ -171,6 +177,8 @@
                                 <width>422</width>
                                 <texture background="true">$VAR[PosterImage]</texture>
                                 <aspectratio aligny="top">scale</aspectratio>
+                                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                                <bordersize>1</bordersize>
                             </control>
                             <control type="label">
                                 <posx>22</posx>
@@ -247,6 +255,8 @@
                                 <height>237</height>
                                 <texture background="true">$VAR[FanartImage]</texture>
                                 <aspectratio aligny="top">scale</aspectratio>
+                                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                                <bordersize>1</bordersize>
                             </control>
                             <control type="label">
                                 <posx>22</posx>
@@ -294,6 +304,8 @@
                                 <height>237</height>
                                 <texture background="true">$VAR[FanartImage]</texture>
                                 <aspectratio aligny="top">scale</aspectratio>
+                                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                                <bordersize>1</bordersize>
                             </control>
                             <control type="label">
                                 <posx>22</posx>
@@ -346,6 +358,8 @@
                             <height>422</height>
                             <texture background="true">$VAR[PosterImage]</texture>
                             <aspectratio aligny="top">scale</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>
@@ -383,6 +397,8 @@
                             <height>422</height>
                             <texture background="true">$VAR[PosterImage]</texture>
                             <aspectratio aligny="top">scale</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>22</posx>

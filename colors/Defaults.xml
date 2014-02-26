@@ -25,6 +25,7 @@
 	<color name="Background">ff252525</color>
 	<color name="Selected">fff0f0f0</color>
 	<color name="PosterBorder">3e888888</color>
+	<color name="BorderColor">3e181818</color>
 	<color name="PanelBG">ff181818</color>
 	<color name="DimFanart">E2080808</color>
 	<color name="RadioFO">ffffffff</color>

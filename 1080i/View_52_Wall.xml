@@ -19,6 +19,8 @@
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
 
         </itemlayout>
@@ -37,6 +39,8 @@
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             
             
@@ -66,6 +70,8 @@
                 <width>438</width>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             <control type="label">
                 <posx>18</posx>
@@ -99,6 +105,8 @@
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
 
         </focusedlayout>
@@ -117,6 +125,8 @@
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             
             
@@ -147,6 +157,8 @@
                 <width>438</width>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             <control type="label">
                 <posx>18</posx>
@@ -222,6 +234,8 @@
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             <control type="label">
                 <posx>22</posx>

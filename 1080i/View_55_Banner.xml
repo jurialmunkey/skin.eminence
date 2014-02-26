@@ -40,6 +40,9 @@
                             <height>125</height>
                             <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                             <aspectratio aligny="top" align="center">keep</aspectratio>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
+                            <visible>!IsEmpty(ListItem.Art(banner))</visible>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -49,6 +52,8 @@
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
                             <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="label">
                             <posx>20</posx>
@@ -103,7 +108,8 @@
                             <height>196</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>375</posx>
@@ -152,6 +158,9 @@
                             <height>125</height>
                             <texture background="true">$INFO[ListItem.Art(banner)]</texture>
                             <aspectratio aligny="top" align="center">keep</aspectratio>
+                            <visible>!IsEmpty(ListItem.Art(banner))</visible>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -161,6 +170,8 @@
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
                             <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         
                         <control type="label">
@@ -222,7 +233,8 @@
                             <height>196</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>375</posx>

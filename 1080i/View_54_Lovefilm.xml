@@ -49,10 +49,21 @@
                         <height>668</height>
                         <texture background="true">$VAR[FanartImage]</texture>
                         <aspectratio aligny="center">scale</aspectratio>
+                        
                     </control>
 
                 </focusedlayout>
 
+            </control>
+            <control type="image">
+                <posx>29</posx>
+                <posy>221</posy>
+                <width>1394</width>
+                <height>668</height>
+                <texture background="true">$VAR[FanartImage]</texture>
+                <aspectratio aligny="center">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             <control type="group">
                 <posx>18</posx>

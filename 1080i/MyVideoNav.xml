@@ -312,6 +312,13 @@
                         <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + Skin.HasSetting(tvshow.widget.recommended)">RecommendedEpisodesWidget</include>
                     </content>
                 </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>933</width>
+                    <height>537</height>
+                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
+                </control>
             </control>
         </control>
 		

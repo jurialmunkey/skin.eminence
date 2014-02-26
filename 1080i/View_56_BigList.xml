@@ -37,6 +37,8 @@
                         <height>107</height>
                         <texture>$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
                     </control>
                     <control type="label">
                         <posx>144</posx>
@@ -84,6 +86,8 @@
                         <height>107</height>
                         <texture>$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
                     </control>
                     <control type="label">
                         <posx>144</posx>
