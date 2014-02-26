@@ -556,16 +556,16 @@
 	    <item id="61">
 	        <label>$VAR[9104Label]</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieTitles)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowTitles)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieTitles,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowTitles,return)</onclick>
             <icon>special://skin/extras/icons/title.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="62">
 	        <label>31109</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,RecentlyAddedMovies)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,RecentlyAddedEpisodes)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
             <icon>special://skin/extras/icons/timer.png</icon>
 	        <property name="Color">1</property>
 	    </item>
@@ -578,39 +578,39 @@
 	    <item id="65">
             <label>135</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieGenres)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowGenres)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieGenres,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowGenres,return)</onclick>
             <icon>special://skin/extras/icons/genre.png</icon>
 	        <property name="Color">1</property>
         </item>
         <item id="66">
             <label>$VAR[9103Label]</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieDirectors)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowStudios)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieDirectors,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowStudios,return)</onclick>
             <icon>special://skin/extras/icons/director.png</icon>
 	        <property name="Color">1</property>
         </item>
         <item id="67">
             <label>344</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieActors)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowActors)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieActors,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowActors,return)</onclick>
             <icon>special://skin/extras/icons/actor.png</icon>
 	        <property name="Color">1</property>
         </item>
         <item id="68">
             <label>$VAR[9105Label]</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieSets)</onclick>
-            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowYears)</onclick>
+            <onclick condition="substring(Container.FolderPath,movies)">ActivateWindow(Videos,MovieSets,return)</onclick>
+            <onclick condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">ActivateWindow(Videos,TvShowYears,return)</onclick>
             <icon>special://skin/extras/icons/year.png</icon>
 	        <property name="Color">1</property>
         </item>
         <item id="69">
             <label>1214</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="Window.IsVisible(MyVideoNav.xml)">ActivateWindow(Videos,Files)</onclick>
+            <onclick condition="Window.IsVisible(MyVideoNav.xml)">ActivateWindow(Videos,Files,return)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
 	        <property name="Color">1</property>
         </item>
@@ -626,21 +626,21 @@
 	    <item id="80">
 	        <label>133</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Artists)</onclick>
+            <onclick>ActivateWindow(Music,Artists,return)</onclick>
             <icon>special://skin/extras/icons/artist.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="81">
 	        <label>132</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Albums)</onclick>
+            <onclick>ActivateWindow(Music,Albums,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="92">
             <label>134</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Songs)</onclick>
+            <onclick>ActivateWindow(Music,Songs,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
 	        <property name="Color">1</property>
         </item>
@@ -648,7 +648,7 @@
 	    <item id="86">
 	        <label>10505</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Top100Albums)</onclick>
+            <onclick>ActivateWindow(Music,Top100Albums,return)</onclick>
             <icon>special://skin/extras/icons/top100.png</icon>
 	        <property name="Color">1</property>
 	    </item>
@@ -656,21 +656,21 @@
 	    <item id="84">
 	        <label>31159</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,RecentlyPlayedAlbums)</onclick>
+            <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recent.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="85">
 	        <label>31109</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,RecentlyAddedAlbums)</onclick>
+            <onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recentlyadded.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="82">
 	        <label>135</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Genres)</onclick>
+            <onclick>ActivateWindow(Music,Genres,return)</onclick>
             <icon>special://skin/extras/icons/audiogenre.png</icon>
 	        <property name="Color">1</property>
 	    </item>
@@ -678,7 +678,7 @@
 	    <item id="94">
             <label>652</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Years)</onclick>
+            <onclick>ActivateWindow(Music,Years,return)</onclick>
             <icon>special://skin/extras/icons/years.png</icon>
 	        <property name="Color">1</property>
         </item>
@@ -693,7 +693,7 @@
 	    <item id="93">
             <label>1050</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Singles)</onclick>
+            <onclick>ActivateWindow(Music,Singles,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
 	        <property name="Color">1</property>
         </item>
@@ -702,14 +702,14 @@
 	    <item id="88">
 	        <label>20389</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,videodb://musicvideos/titles/)</onclick>
+            <onclick>ActivateWindow(Music,videodb://musicvideos/titles/,return)</onclick>
             <icon>special://skin/extras/icons/musicvideo.png</icon>
 	        <property name="Color">1</property>
 	    </item>
 	    <item id="89">
 	        <label>1038</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,addons://sources/audio/)</onclick>
+            <onclick>ActivateWindow(Music,addons://sources/audio/,return)</onclick>
             <icon>special://skin/extras/icons/addons.png</icon>
 	        <property name="Color">1</property>  
 	    </item>
@@ -717,7 +717,7 @@
 	    <item id="87">
 	        <label>136</label>
 	        <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick>ActivateWindow(Music,Playlists)</onclick>
+            <onclick>ActivateWindow(Music,Playlists,return)</onclick>
             <icon>special://skin/extras/icons/playlist.png</icon>
 	        <property name="Color">1</property>
 	    </item>

@@ -104,8 +104,7 @@
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="Container.Content(songs) + Player.HasMedia">Action(fullscreen)</onleft>
-                <onleft condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyMusicNav.xml)] + !Container.Content(songs)">SetFocus(9500)</onleft>
+                <onleft condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
                 <onright>50</onright>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
