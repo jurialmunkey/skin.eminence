@@ -9,7 +9,7 @@
 
         <control type="button">
             <posy>600</posy>
-            <posx>1795</posx>
+            <posx>1770</posx>
             <width>48</width>
             <height>48</height>
             <onclick>SetFocus(50)</onclick>
@@ -30,7 +30,7 @@
             <posx>102</posx>
             <width>48</width>
             <height>48</height>
-            <onclick>SetFocus(9000)</onclick>
+            <onclick>SetFocus(9500)</onclick>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
             <aspectratio>keep</aspectratio>
@@ -53,7 +53,7 @@
                 <posx>1514</posx>
                 <posy>210</posy>
                 <aligny>top</aligny>
-                <width>680</width>
+                <width>690</width>
                 <font>Font-ViewCategory</font>
                 <label>$INFO[ListItem.Label]</label>
                 <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
@@ -72,109 +72,35 @@
                 <posx>18</posx>
                 <posy>210</posy>
                 <control type="image">
-                    <width>435</width>
+                    <width>467</width>
                     <height>690</height>
                     <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                 </control>
                 <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
-                    <width>413</width>
-                    <height>620</height>
+                    <width>445</width>
+                    <height>668</height>
                     <fadetime>200</fadetime>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
-                <control type="list" id="9000">
-                    <posx>22</posx>
-                    <posy>631</posy>
-                    <width>413</width>
-                    <height>48</height>
-                    <itemgap>0</itemgap>
-                    <onleft>9000</onleft>
-                    <onright>SetFocus(50)</onright>
-                    <orientation>vertical</orientation>
-                    <usecontrolcoords>true</usecontrolcoords>
-                    <scrolltime>0</scrolltime>
-                    <itemlayout height="59">
-                    </itemlayout>
-                    <focusedlayout height="59">
-                        <control type="image">
-                            <posx>364</posx>
-                            <width>32</width>
-                            <height>59</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>keep</aspectratio>
-                        </control>
-                        <control type="label">
-                            <width>150</width>
-                            <height>59</height>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <font>Font-ListInfo</font>
-                            <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
-                        </control>
-                    </focusedlayout>
-                    <content>
-                        <item id="1">
-                            <label>208</label>
-                            <icon>osd/playring.png</icon>
-                            <onclick>SendClick(2003,8)</onclick>
-                        </item>
-                        <!--<item id="2">
-                            <label>344</label>
-                            <icon>osd/actors.png</icon>
-                            <onclick>SetFocus(50)</onclick>
-                        </item>-->
-                        <item id="3">
-                            <label>20410</label>
-                            <icon>osd/trailer.png</icon>
-                            <onclick>SendClick(2003,11)</onclick>
-                            <visible>!IsEmpty(ListItem.Trailer)</visible>
-                        </item>
-                        <item id="4">
-                            <label>31135</label>
-                            <icon>osd/thumb.png</icon>
-                            <onclick>SendClick(2003,10)</onclick>
-                        </item>
-                        <item id="5">
-                            <label>184</label>
-                            <icon>osd/refresh.png</icon>
-                            <onclick>SendClick(2003,6)</onclick>
-                        </item>
-                        <item id="6">
-                            <icon>osd/install.png</icon>
-                            <label>31127</label>
-                            <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
-                            <visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
-                        </item>
-                    </content>
+                <control type="label" description="Navigation Label">
+                    <posx>11</posx>
+                    <posy>695</posy>
+                    <width>445</width>
+                    <aligny>top</aligny>
+                    <align>center</align>
+                    <font>Font-EPGRuler</font>
+                    <label>31160</label>
+                    <animation effect="fade" end="33" condition="true">Conditional</animation>
+                </control>
 
-                </control>
-                <control type="list" id="9000">
-                    <orientation>vertical</orientation>
-                    <itemlayout height="59">
-                    </itemlayout>
-                    <focusedlayout height="59">
-                    </focusedlayout>
-                </control>
-                <control type="label" description="Actors Label">
-                <posx>11</posx>
-                <posy>695</posy>
-                <width>413</width>
-                <aligny>top</aligny>
-                <align>center</align>
-                <font>Font-EPGRuler</font>
-                <label>31160</label>
-                <animation effect="fade" end="33" condition="true">Conditional</animation>
+                
             </control>
-            </control>
-            
-            
-            
             
             <control type="grouplist">
-		        <posx>477</posx>
+		        <posx>509</posx>
 		        <posy>210</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
@@ -323,7 +249,7 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>477</posx>
+		        <posx>509</posx>
 		        <posy>630</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
@@ -336,11 +262,11 @@
                     <label>207</label>
                 </control>
                 <control type="textbox">
-                    <width>949</width>
+                    <width>917</width>
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
-                    <height>230</height>
+                    <height>160</height>
                     <label fallback="416">$INFO[ListItem.Plot]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
@@ -418,24 +344,52 @@
             </control>
         </control>
         
+        <control type="group">
+            <include>GlobalOverlay</include>
+            <include>GlobalLeftHeader</include>
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+        </control>
+        <control type="group">		
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.SlideOpen.Left</include>
+            <include>DefContextMenuBackground</include>
+            <control type="grouplist" id="9500">
+                <ondown>SetFocus(9000)</ondown>
+                <onback>SetFocus(9000)</onback>
+                <include>DefContextMenuGroupList</include>
+
+                <control type="button" id="8" description="Play">
+                    <label>208</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="11" description="Trailer">
+                    <label>20410</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+    
+                <control type="button" id="10" description="Thumb">
+                    <label>31135</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="6" description="Refresh">
+                    <label>184</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="9001" description="Refresh">
+                    <label>31127</label>
+                    <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                    <visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
+                    <include>DefContextMenuButton</include>
+                </control>
+            </control>
+    </control>
         
         <control type="button" id="5" description="Cast">
-            <visible allowhiddenfocus="true">false</visible>
-        </control>
-        
-        <control type="button" id="6" description="Refresh">
-            <visible allowhiddenfocus="true">false</visible>
-        </control>
-        
-        <control type="button" id="8" description="Play">
-            <visible allowhiddenfocus="true">false</visible>
-        </control>
-        
-        <control type="button" id="10" description="Thumb">
-            <visible allowhiddenfocus="true">false</visible>
-        </control>
-        
-        <control type="button" id="11" description="Trailer">
             <visible allowhiddenfocus="true">false</visible>
         </control>
 
@@ -443,6 +397,14 @@
             <visible allowhiddenfocus="true">false</visible>
             <onfocus>SendClick(2003,5)</onfocus>
             <onfocus>SetFocus(9000)</onfocus>
+        </control>
+        
+        <control type="button" id="9000">
+            <visible allowhiddenfocus="true">false</visible>
+            <onclick>SendClick(2003,8)</onclick>
+            <onright>SetFocus(50)</onright>
+            <onup>SetFocus(9500)</onup>
+            <ondown>SetFocus(9500)</ondown>
         </control>
 
 	</controls>
