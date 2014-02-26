@@ -145,7 +145,7 @@
                         <visible>Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
-                        <width>450</width>
+                        <width>464</width>
                         <height>130</height>
                         <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>

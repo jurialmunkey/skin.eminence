@@ -7,24 +7,6 @@
     <include name="50Focus">
         <defaultcontrol always="true">50</defaultcontrol>
     </include>
-    
-	<include name="DefCategoryButton">
-	    <posx>100</posx>
-	    <width>450</width>
-        <height>129</height>
-        <align>left</align>
-        <font>Font-SettingsCategory</font>
-        <texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
-        <focusedcolor>Selected</focusedcolor>
-	</include>
-	
-	<include name="DefWidgetButton">
-	    <width>419</width>
-        <height>153</height>
-        <texturefocus colordiffuse="Highlight">common/white.png</texturefocus>
-        <align>left</align>
-        <font>Font-SettingsCategory</font>
-	</include>
 	
 	<include name="DefSettingsHeader">
 	    <posx>48</posx>

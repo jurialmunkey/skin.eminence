@@ -4,8 +4,9 @@
     <controls>
         <control type="group">
             <posx>400r</posx>
+            <visible>!Window.IsVisible(fullscreenvideo)</visible>
+            <visible>!Window.IsVisible(visualisation)</visible>
             <control type="group">
-                <visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
                 <include>Animation.HeaderDialog</include>
                 <control type="image">
                     <posx>282</posx>

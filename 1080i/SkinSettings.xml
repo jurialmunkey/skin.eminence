@@ -38,8 +38,8 @@
 		<control type="group">
 			<posy>210</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-            <include>Animation.SlideOpen.Settings</include>
 
+            <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
 
 			<control type="label">
@@ -50,11 +50,10 @@
 				<align>left</align>
 				<font>Font-DialogHeader</font>
 				<label>$LOCALIZE[20077]</label>
-				<include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
 			</control>          
             <control type="grouplist" id="3">
                 <description>Control Area</description>
+                <include>Animation.SlideOpen.Right</include>
 				<posx>265</posx>
 				<posy>120</posy>
 				<width>359</width>
@@ -62,7 +61,6 @@
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
-				<onback>ActivateWindow(settings)</onback>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
 				<onright>5</onright>
@@ -89,6 +87,7 @@
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
+                <include>Animation.SlideOpen.Left</include>
 				<posx>650</posx>
 				<posy>120</posy>
 				<width>990</width>
@@ -96,7 +95,6 @@
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
-				<onback>ActivateWindow(settings)</onback>
 				<onleft>3</onleft>
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>

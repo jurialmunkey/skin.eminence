@@ -67,7 +67,7 @@
                         <width>423</width>
                         <align>left</align>
                         <textcolor>PanelFG</textcolor>
-                        <font>Font-SettingsCategory</font>
+                        <font>Font-PVRTitle</font>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="label">

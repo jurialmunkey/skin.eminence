@@ -23,6 +23,7 @@
                 <description>Left panel</description>
                 <posx>75</posx>
                 <posy>210</posy>
+                <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(20)">Conditional</animation>
 
 
                 <control type="label" id="101">
@@ -31,7 +32,7 @@
                     <posy>26</posy>
                     <width>780</width>
                     <textcolor>TopBarIcon</textcolor>
-                    <font>Font-SettingsCategory</font>                    
+                    <font>Font-DialogHeader</font>                    
                     <align>left</align>
                     <label>-</label>
                 </control>
@@ -49,12 +50,14 @@
 
                     <itemlayout height="69" width="780">
 
+                        
                         <control type="label">
                             <posx>30</posx>
                             <width>720</width>
                             <align>left</align>
                             <info>ListItem.Label</info>
                             <font>Font-ListInfo</font>
+                            <selectedcolor>Highlight</selectedcolor>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
 
@@ -65,6 +68,7 @@
                             <font>Font-ListInfo</font>
                             <info>ListItem.Label2</info>
                             <textcolor>TopBarIcon</textcolor>
+                            <selectedcolor>Highlight</selectedcolor>
                         </control>
                         
 
@@ -73,27 +77,6 @@
                     <focusedlayout height="69" width="780">
 
                         <control type="group">
-                            <visible>Control.HasFocus(20)</visible>
-                            <control type="label">
-                                <posx>30</posx>
-                                <width>720</width>
-                                <align>left</align>
-                                <font>Font-ListInfo</font>
-                                <info>ListItem.Label</info>
-                                <textcolor>Highlight</textcolor>
-                            </control>
-
-                            <control type="label">
-                                <posx>750</posx>
-                                <width>720</width>
-                                <align>right</align>
-                                <font>Font-ListInfo</font>
-                                <info>ListItem.Label2</info>
-                                <textcolor>Highlight</textcolor>
-                            </control>
-                        </control>
-                        
-                        <control type="group">
                             <visible>!Control.HasFocus(20)</visible>
                             <control type="label">
                                 <posx>30</posx>
@@ -101,7 +84,8 @@
                                 <align>left</align>
                                 <font>Font-ListInfo</font>
                                 <info>ListItem.Label</info>
-                                <textcolor>Highlight-NF</textcolor>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
                             </control>
 
                             <control type="label">
@@ -110,7 +94,28 @@
                                 <align>right</align>
                                 <font>Font-ListInfo</font>
                                 <info>ListItem.Label2</info>
-                                <textcolor>Highlight-NF</textcolor>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>Control.HasFocus(20)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
+                            </control>
+
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
                             </control>
                         </control>
 
@@ -130,6 +135,7 @@
             </control>
 
             <control type="group">
+                <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(21)">Conditional</animation>
                 <description>Right panel</description>
                 <posx>1035</posx>
                 <posy>210</posy>
@@ -142,7 +148,7 @@
                     <posy>26</posy>
                     <width>780</width>
                     <textcolor>TopBarIcon</textcolor>
-                    <font>Font-SettingsCategory</font>                    
+                    <font>Font-DialogHeader</font>                    
                     <align>left</align>
                     <label>-</label>
                 </control>
@@ -160,12 +166,14 @@
 
                     <itemlayout height="69" width="780">
 
+                        
                         <control type="label">
                             <posx>30</posx>
                             <width>720</width>
                             <align>left</align>
                             <info>ListItem.Label</info>
                             <font>Font-ListInfo</font>
+                            <selectedcolor>Highlight</selectedcolor>
                             <textcolor>TopBarIcon</textcolor>
                         </control>
 
@@ -176,6 +184,7 @@
                             <font>Font-ListInfo</font>
                             <info>ListItem.Label2</info>
                             <textcolor>TopBarIcon</textcolor>
+                            <selectedcolor>Highlight</selectedcolor>
                         </control>
                         
 
@@ -184,27 +193,6 @@
                     <focusedlayout height="69" width="780">
 
                         <control type="group">
-                            <visible>Control.HasFocus(21)</visible>
-                            <control type="label">
-                                <posx>30</posx>
-                                <width>720</width>
-                                <align>left</align>
-                                <info>ListItem.Label</info>
-                                <font>Font-ListInfo</font>
-                                <textcolor>Highlight</textcolor>
-                            </control>
-
-                            <control type="label">
-                                <posx>750</posx>
-                                <width>720</width>
-                                <align>right</align>
-                                <info>ListItem.Label2</info>
-                                <font>Font-ListInfo</font>
-                                <textcolor>Highlight</textcolor>
-                            </control>
-                        </control>
-                        
-                        <control type="group">
                             <visible>!Control.HasFocus(21)</visible>
                             <control type="label">
                                 <posx>30</posx>
@@ -212,7 +200,8 @@
                                 <align>left</align>
                                 <font>Font-ListInfo</font>
                                 <info>ListItem.Label</info>
-                                <textcolor>Highlight-NF</textcolor>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
                             </control>
 
                             <control type="label">
@@ -221,10 +210,30 @@
                                 <align>right</align>
                                 <font>Font-ListInfo</font>
                                 <info>ListItem.Label2</info>
-                                <textcolor>Highlight-NF</textcolor>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
                             </control>
                         </control>
+                        <control type="group">
+                            <visible>Control.HasFocus(21)</visible>
+                            <control type="label">
+                                <posx>30</posx>
+                                <width>720</width>
+                                <align>left</align>
+                                <info>ListItem.Label</info>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
+                            </control>
 
+                            <control type="label">
+                                <posx>750</posx>
+                                <width>720</width>
+                                <align>right</align>
+                                <info>ListItem.Label2</info>
+                                <textcolor>Highlight</textcolor>
+                                <selectedcolor>Highlight</selectedcolor>
+                            </control>
+                        </control>
                     </focusedlayout>
 
 

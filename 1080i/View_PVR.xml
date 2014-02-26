@@ -16,7 +16,7 @@
             <width>720</width>
             <align>right</align>
             <textcolor>PanelFG</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$VAR[WatchedLabel,,  ]$INFO[ListItem.ChannelName]</label>
         </control>
         <control type="label">
@@ -53,7 +53,7 @@
             <width>720</width>
             <align>right</align>
             <textcolor>Selected</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$VAR[WatchedLabel,,  ]$INFO[ListItem.ChannelName]</label>
         </control>
         <control type="label">
@@ -90,7 +90,7 @@
             <width>70</width>
             <align>left</align>
             <textcolor>PanelFG</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelNumber]</label>
         </control>
         <control type="progress">
@@ -112,7 +112,7 @@
             <width>650</width>
             <align>right</align>
             <textcolor>PanelFG</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelName]</label>
         </control>
         <control type="label">
@@ -140,7 +140,7 @@
             <width>70</width>
             <align>left</align>
             <textcolor>Selected</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelNumber]</label>
         </control>
         <control type="progress">
@@ -162,7 +162,7 @@
             <width>650</width>
             <align>right</align>
             <textcolor>Selected</textcolor>
-            <font>Font-SettingsCategory</font>
+            <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelName]</label>
         </control>
         <control type="label">
@@ -471,7 +471,7 @@
                     <width>1215</width>
                     <align>left</align>
                     <textcolor>PanelFG</textcolor>
-                    <font>Font-SettingsCategory</font>
+                    <font>Font-PVRTitle</font>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">

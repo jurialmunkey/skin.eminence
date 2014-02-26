@@ -39,12 +39,12 @@
         </control>
 		<control type="group">
 			<posy>210</posy>
-            <include>Animation.SlideOpen.Settings</include>
+            
 
 			<include>DialogVisibility</include>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
             
-            
+            <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
 
 			<control type="label" id="2">
@@ -56,6 +56,7 @@
 				<font>Font-DialogHeader</font>
 				<include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
+			    <include>Animation.SlideOpen.Right</include>
 			</control>
 
 			<control type="grouplist" id="5">
@@ -72,6 +73,7 @@
 				<onleft>3</onleft>
 				<onup>21</onup>
 				<ondown>3</ondown>
+				<include>Animation.SlideOpen.Left</include>
 			</control>
 			
 			<control type="button" id="21">
@@ -86,6 +88,7 @@
 				
 				<texturefocus>-</texturefocus>
 				<focusedcolor>Highlight</focusedcolor>
+				<include>Animation.SlideOpen.Left</include>
 			</control>
 			
 			<control type="button" id="20">
@@ -124,6 +127,7 @@
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
 				<onup>3</onup>
 				<ondown>3</ondown>
+				<include>Animation.SlideOpen.Right</include>
 			</control>
 			
 
