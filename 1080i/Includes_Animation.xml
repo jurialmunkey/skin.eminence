@@ -56,7 +56,7 @@
     </include>
 
     <include name="DialogVisibility">
-	    <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogSelect.xml) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogAddonSettings.xml) | Window.IsVisible(DialogPVRTimerSettings.xml)">Conditional</animation>
+	    <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(DialogSelect.xml) | Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogAddonSettings.xml) | Window.IsVisible(DialogPVRTimerSettings.xml) | Window.IsVisible(SmartPlaylistEditor.xml)">Conditional</animation>
 	</include>
 
 	<include name="Animation.SlideOpen.Left">

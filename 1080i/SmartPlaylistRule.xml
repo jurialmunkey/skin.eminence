@@ -10,19 +10,12 @@
 
 	<controls>
         <control type="group">
-            <include>DialogVisibility</include>
+            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 		    <posx>360</posx>
 			<posy>210</posy>
-            <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 
-            <control type="image">
-                <posx>-360</posx>
-				<width>1920</width>
-				<height>764</height>
-				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
-            </control>
 
 			<control type="label">
 				<description>header label</description>
@@ -49,16 +42,10 @@
 
 				<align>center</align>
 
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
                 <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
                 <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
                 <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
                 <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-
 				<label>21422</label>
 
 			</control>
@@ -88,16 +75,10 @@
 					<onup>9000</onup>
 
 					<ondown>17</ondown>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
                     <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
                     <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
                     <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
                     <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-
 				</control>
 
 
@@ -113,11 +94,6 @@
 					<width>450</width>
 
 					<label>$INFO[Control.GetLabel(15)]</label>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-
 				</control>
 
 
@@ -141,16 +117,10 @@
 					<onup>9000</onup>
 
 					<ondown>17</ondown>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
                     <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
                     <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
                     <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
                     <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-
 				</control>
 
 
@@ -166,9 +136,6 @@
 					<width>300</width>
 
 					<label>$INFO[Control.GetLabel(16)]</label>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-
 				</control>
 
 
@@ -196,12 +163,6 @@
 				<onright>20</onright>
 
 				<ondown>9000</ondown>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-
 			</control>
 
 
@@ -225,12 +186,6 @@
 				<onright>17</onright>
 
 				<ondown>9000</ondown>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-
 			</control>
 
 
@@ -258,11 +213,6 @@
 					<onright>19</onright>
 
 					<ondown>9001</ondown>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
 
 				</control>
 
@@ -288,12 +238,6 @@
 
 					<ondown>9001</ondown>
 					
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-
 				</control>
 
 

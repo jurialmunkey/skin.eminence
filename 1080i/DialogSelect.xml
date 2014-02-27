@@ -5,32 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
-        
-        <control type="group">		
-			    <visible>Control.IsVisible(3) + !IsEmpty(Control.GetLabel(5))</visible>
-                <include>Animation.SlideOpen.Left</include>
-                <control type="image">
-                    <posy>18</posy>
-                    <posx>198</posx>
-                    <width>254</width>
-                    <height>164</height>	
-                    <texture align="left">home/half-tile.png</texture>
-                    <colordiffuse>TopBar</colordiffuse>
-                    <aspectratio>scale</aspectratio>
-                </control>
-                <control type="image">
-                    <posy>18</posy>
-                    <posx>300</posx>
-                    <width>1800</width>
-                    <height>164</height>	
-                    <texture>common/white.png</texture>
-                    <colordiffuse>TopBar</colordiffuse>
-                    <aspectratio>scale</aspectratio>
-                </control>		
 
-               
-            </control>
-            
 		<control type="group">
 			<posy>210</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
@@ -48,6 +23,23 @@
 				<label>13406</label>
 				<include>Animation.SlideOpen.Right</include>    
 			</control>
+			<control type="image">
+                <posx>1255</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="AF000000">common/white.png</texture>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
+            <control type="image">
+                <posx>1256</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="0fffffff">common/white.png</texture>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
 			<control type="list" id="3">
 			    <include>Animation.SlideOpen.Right</include>            
 				<posx>265</posx>
@@ -256,21 +248,23 @@
                     <texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
                     <aspectratio align="center" aligny="top">keep</aspectratio>
                 </control>
-                <control type="button" id="5">
-                    <posx>1614</posx>
-                    <posy>53</posy>
-                    <align>left</align>
-                    <font>Font-SettingsCategory</font>
-                    <angle>270</angle>
-                    <textcolor>Disabled</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <texturefocus>-</texturefocus>
-                    <height>135</height>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
-                    <onright>3</onright>
-                    <onleft>3</onleft>
-                </control>
+                
+            </control>
+            <control type="button" id="5">
+                <posx>1614</posx>
+                <posy>53</posy>
+                <align>left</align>
+                <font>Font-SettingsCategory</font>
+                <angle>270</angle>
+                <textcolor>Disabled</textcolor>
+                <focusedcolor>Highlight</focusedcolor>
+                <texturefocus>-</texturefocus>
+                <height>135</height>
+                <onup>3</onup>
+                <ondown>3</ondown>
+                <onright>3</onright>
+                <onleft>3</onleft>
+                <include>Animation.SlideOpen.Left</include>
             </control>
             
 		</control>

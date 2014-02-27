@@ -57,7 +57,7 @@
             <posy>120</posy>
             <height>549</height>
             <width>1</width>
-            <texture colordiffuse="df000000">common/white.png</texture>
+            <texture colordiffuse="AF000000">common/white.png</texture>
             <animation effect="fade" end="50" condition="true">Conditional</animation>
             <include>Animation.SlideOpen.Left</include>
         </control>

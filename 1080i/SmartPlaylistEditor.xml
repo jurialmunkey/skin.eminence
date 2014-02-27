@@ -10,335 +10,188 @@
 
 	<controls>
 	
-	    <control type="group">		
-	        <include>DialogVisibility</include>
-	        <include>Animation.FadeOut</include>
-            <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
-            <control type="grouplist" id="9001">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <ondown>22</ondown>
-                <orientation>horizontal</orientation>
+	    <control type="group">
+			<posy>210</posy>
+            <visible>!Window.IsVisible(SmartPlaylistRule.xml)</visible>
+                        
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+
+			<control type="label" id="2">
+				<description>Settings</description>
+				<include>DefSettingsHeader</include>
+				<label>21432</label>
+			</control>
+			
+            <include>DefSettingsSeparator</include>
+            
+            
+            <control type="grouplist" id="3">
+				<description>Control Area</description>
+				<onright>5</onright>
+				<usecontrolcoords>true</usecontrolcoords>
+				<include>DefSettingsLeftGroup</include>
+                                
                 <control type="button" id="20">
                     <description>Buttons</description>
+                    <width>384</width>
                     <label>186</label>
-                    <include>DefContextMenuButton</include>
+                    <align>left</align>
                 </control>
                 <control type="button" id="21">
                     <description>Buttons</description>
-                    <include>DefContextMenuButton</include>
+                    <width>384</width>
                     <label>222</label>
+                    <align>left</align>
                 </control>
-            </control>
-        </control>
-
-
-
-		<control type="group">
-		    <posx>390</posx>
-			<posy>110</posy>
-			<include>DialogVisibility</include>
-            <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
-            <include>Animation.FadeOut</include>
-			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-
-            <control type="image">
-                <posy>100</posy>
-                <posx>-390</posx>
-				<width>1920</width>
-				<height>764</height>
-				<texture border="2" colordiffuse="TopBar">common/white.png</texture>
-            </control>
-
-			<visible>!Window.IsVisible(smartplaylistrule)</visible>
-
-			<control type="spincontrolex" id="22">
-				<description>Set Playlist type</description>
-				<posx>15</posx>
-				<posy>105</posy>
-				<width>1110</width>
-				<label>467</label>
-				<onright>22</onright>
-				<onleft>22</onleft>
-				<onup>9001</onup>
-				<ondown>12</ondown>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-                <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-			</control>
-
-
-
-			<control type="label">
-				<description>Name Label</description>
-				<posx>45</posx>
-				<posy>174</posy>
-				<width>1110</width>
-				<label>21433</label>
-				<textcolor>TopBarIcon</textcolor>
-				<visible>!Control.HasFocus(12)</visible>
-			</control>
-            <control type="label">
-				<description>Name Label</description>
-				<posx>45</posx>
-				<posy>174</posy>
-				<width>1110</width>
-				<label>21433</label>
-				<textcolor>Highlight</textcolor>
-				<visible>Control.HasFocus(12)</visible>
-			</control>
-
-
-			<control type="edit" id="12">
-				<description>Name Button</description>
-				<posx>15</posx>
-				<posy>243</posy>
-				<width>1110</width>
-				<height>66</height>
-				<font>Font-ListInfo</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<textcolor>TopBarIcon</textcolor>
-				<focusedcolor>Highlight</focusedcolor>
-				<selectedcolor>Highlight-NF</selectedcolor>
-				<label>-</label>
-				<textoffsetx>30</textoffsetx>
-				<texturenofocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturenofocus>
-				<texturefocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturefocus>
-				<pulseonselect>false</pulseonselect>
-				<onup>22</onup>
-				<onleft>12</onleft>
-				<onright>12</onright>
-				<ondown>10</ondown>
-			</control>
-
-
-
-			<control type="label">
-				<description>rules label</description>
-				<posx>45</posx>
-				<posy>312</posy>
-				<width>1110</width>
-				<align>left</align>
-				<label>21434</label>
-				<textcolor>TopBarIcon</textcolor>
-			</control>
-
-			<control type="list" id="10">
-				<description>Rules List Control</description>
-				<posx>15</posx>
-				<posy>381</posy>
-				<width>840</width>
-				<height>207</height>
-				<onup>12</onup>
-				<onleft>9000</onleft>
-				<onright>9000</onright>
-				<ondown>16</ondown>
-				<itemlayout width="840" height="69">
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>780</width>
-						<info>ListItem.Label</info>
-						<textcolor>TopBarIcon</textcolor>
-					</control>
-				</itemlayout>
-				<focusedlayout width="840" height="69">
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>780</width>
-						<info>ListItem.Label</info>
-						<textcolor>Highlight</textcolor>
-						
-						<visible>Control.HasFocus(10)</visible>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<posy>0</posy>
-						<width>780</width>
-						<info>ListItem.Label</info>
-						<textcolor>TopBarIcon</textcolor>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<visible>!Control.HasFocus(10)</visible>
-					</control>
-				</focusedlayout>
-			</control>
-
-
-
-			<control type="group" id="9000">
-				<control type="button" id="13">
+                
+                <control type="button" id="13">
+                    <posy>69</posy>
 					<description>Add Rule Button</description>
-					<posx>870</posx>
-					<posy>381</posy>
-					<width>255</width>
+					<width>384</width>
 					<label>15019</label>
-					<onup>17</onup>
-					<onleft>10</onleft>
-					<onright>10</onright>
-					<ondown>14</ondown>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-
+					<align>right</align>
 				</control>
-
-
-
+				
 				<control type="button" id="14">
 					<description>Remove Rule Button</description>
-					<posx>870</posx>
-					<posy>450</posy>
-					<width>255</width>
+					<width>384</width>
 					<label>1210</label>
-					<onup>13</onup>
-					<onleft>10</onleft>
-					<onright>10</onright>
-					<ondown>15</ondown>
-					<texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
+					<align>right</align>
 				</control>
-
-
 
 				<control type="button" id="15">
 					<description>Edit Rule Button</description>
-					<posx>870</posx>
-					<posy>519</posy>
-					<width>255</width>
+					<width>384</width>
 					<label>21435</label>
-					<onup>14</onup>
-					<onleft>10</onleft>
-					<onright>10</onright>
-					<ondown>16</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
+					<align>right</align>
 				</control>
-
-
-
+				
+				
 			</control>
-            <control type="group">
+			
+			
+			
+			
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<usecontrolcoords>true</usecontrolcoords>
+				<height>690</height>
+				<width>1420</width>
+				<onleft>3</onleft>
+				<include>DefSettingsRightGroup</include>
+
+				<control type="spincontrolex" id="22">
+                    <description>Set Playlist type</description>
+                    <label>467</label>
+                    <align>left</align>
+                    <reverse>yes</reverse>
+                    <ondown>10</ondown>
+                    <width>1020</width>
+                </control>
+                <control type="group" id="9997">
+                    <height>204</height>
+                    <onup>22</onup>
+                    <ondown>10</ondown>
+                    <control type="label">
+                        <posx>30</posx>
+                        <description>Name Label</description>
+                        <label>21433</label>
+                        <width>1020</width>
+                    </control>
+                    <control type="button" id="12">
+                        <align>right</align>
+                        <description>Name Button</description>
+                        <width>1020</width>
+                        <height>66</height>
+                        <font>Font-ListInfo</font>
+                        <onup>22</onup>
+                        <ondown>10</ondown>
+                    </control>
+                    <control type="label">
+                        <posy>138</posy>
+                        <posx>30</posx>
+                        <description>rules label</description>
+                        <width>1020</width>
+                        <align>left</align>
+                        <label>21434</label>
+                        <textcolor>TopBarIcon</textcolor>
+                    </control>
+                </control>
+                
+                
+
+                <control type="list" id="10">
+                    <description>Rules List Control</description>
+                    <width>1020</width>
+                    <height>138</height>
+                    <onup>12</onup>
+                    <onleft>13</onleft>
+                    <ondown>16</ondown>
+                    <itemlayout width="840" height="69">
+                        <control type="label">
+                            <posx>30</posx>
+                            <posy>0</posy>
+                            <width>780</width>
+                            <info>ListItem.Label</info>
+                            <textcolor>TopBarIcon</textcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout width="840" height="69">
+                        <control type="image">
+                            <height>66</height>
+                            <width>1020</width>
+                            <texture border="2" colordiffuse="PosterBorder">common/border-inner.png</texture>
+                            <visible>Control.HasFocus(10)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>30</posx>
+                            <posy>0</posy>
+                            <width>780</width>
+                            <info>ListItem.Label</info>
+                            <visible>Control.HasFocus(10)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>30</posx>
+                            <posy>0</posy>
+                            <width>780</width>
+                            <info>ListItem.Label</info>
+                            <textcolor>TopBarIcon</textcolor>
+                            <selectedcolor>Highlight</selectedcolor>
+                            <visible>!Control.HasFocus(10)</visible>
+                        </control>
+                    </focusedlayout>
+                </control>
                 <control type="spincontrolex" id="16">
-                    <posx>15</posx>
-                    <posy>657</posy>
-                    <width>1110</width>
                     <label>21424</label>
-                    <onright>16</onright>
-                    <onleft>16</onleft>
-                    <onup>10</onup>
                     <ondown>17</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
+                    <width>1020</width>
                 </control>
 
                 <control type="spincontrolex" id="17">
-                    <posx>15</posx>
-                    <posy>726</posy>
-                    <width>1110</width>
                     <label>21427</label>
-                    <onright>17</onright>
-                    <onleft>17</onleft>
-                    <onup>16</onup>
                     <ondown>18</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
+                    <width>1020</width>
                 </control>
 
                 <control type="spincontrolex" id="18">
-                    <posx>15</posx>
-                    <posy>795</posy>
                     <width>840</width>
                     <label>21429</label>
-                    <onright>19</onright>
-                    <onleft>19</onleft>
-                    <onup>17</onup>
-                    <ondown>9001</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
+                    
                 </control>
 
                 <control type="togglebutton" id="19">
-                    <posx>870</posx>
-                    <posy>795</posy>
+                    <posx>855</posx>
+                    <posy>-69</posy>
                     <width>255</width>
                     <label>21431</label>
                     <altlabel>21430</altlabel>
-                    <onright>18</onright>
-                    <onleft>18</onleft>
-                    <onup>17</onup>
-                    <ondown>9001</ondown>
-                    <texturefocus>-</texturefocus>
-                    <texturenofocus>-</texturenofocus>
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
-                    <disabledcolor>TopBarDisabled</disabledcolor>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                    <textcolor>TopBarIcon</textcolor>
-                    <focusedcolor>Highlight</focusedcolor>
                 </control>
-            </control>
-
+                
+                
+			</control>
 		</control>
 
 	</controls>

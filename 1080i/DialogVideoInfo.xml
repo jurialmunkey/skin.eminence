@@ -85,6 +85,15 @@
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>445</width>
+                    <height>668</height>
+                    <texture>common/playring.png</texture>
+                    <aspectratio>center</aspectratio>
+                    <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
+                </control>
                 <include>DefInformationNavLabel</include>
 
                 
