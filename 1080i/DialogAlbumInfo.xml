@@ -257,11 +257,6 @@
                     <label>208</label>
                     <include>DefContextMenuButton</include>
                 </control>
-                
-                <control type="button" id="11" description="Trailer">
-                    <label>20410</label>
-                    <include>DefContextMenuButton</include>
-                </control>
     
                 <control type="button" id="10" description="Thumb">
                     <label>31135</label>
