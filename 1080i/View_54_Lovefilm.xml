@@ -60,10 +60,7 @@
                 <posy>221</posy>
                 <width>1394</width>
                 <height>668</height>
-                <texture background="true">$VAR[FanartImage]</texture>
-                <aspectratio aligny="center">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
             </control>
             <control type="group">
                 <posx>18</posx>
