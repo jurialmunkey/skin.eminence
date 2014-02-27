@@ -277,7 +277,7 @@
                 
                 <posx>2018</posx>
                 <posy>210</posy>
-                <width>1434</width>
+                <width>1534</width>
                 <height>708</height>
                 <onback>9000</onback>
                 <onleft>9000</onleft>
@@ -287,56 +287,77 @@
                 <viewtype label="Wall">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
-                <itemlayout width="239" height="354">
+                <itemlayout width="287" height="354">
 
                     <control type="image">
                         <height>336</height>
-                        <width>221</width>
+                        <width>269</width>
                         <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
                     </control>
          
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>
-                        <height>284</height>
-                        <width>199</width>
+                        <height>314</height>
+                        <width>247</width>
                         <texture background="true">$VAR[PosterImage]</texture>
                         <aspectratio aligny="top">scale</aspectratio>
                     </control>
-                    <control type="label">
-                        <posx>110</posx>
-                        <posy>282</posy>
-                        <width>185</width>
-                        <align>center</align>
-                        <font>Font-ListInfo</font>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>252</posy>
+                        <height>73</height>
+                        <width>247</width>
+                        <texture colordiffuse="PanelBG">common/white.png</texture>
+                        <aspectratio>scale</aspectratio>
+                        <animation effect="fade" end="90" condition="true">Conditional</animation>
+                    </control>
+                    <control type="textbox">
+                        <posx>22</posx>
+                        <posy>252</posy>
+                        <width>225</width>
+                        <height>73</height>
+                        <align>left</align>
+                        <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label]</label>
+                        <autoscroll>false</autoscroll>
                     </control>
 
                 </itemlayout>
-                <focusedlayout width="239" height="354">
+                <focusedlayout width="287" height="354">
 
                     <control type="image">
                         <height>336</height>
-                        <width>221</width>
+                        <width>269</width>
                         <texture colordiffuse="White" border="2">common/border-inner.png</texture>
                     </control>
          
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>
-                        <height>284</height>
-                        <width>199</width>
+                        <height>314</height>
+                        <width>247</width>
                         <texture background="true">$VAR[PosterImage]</texture>
                         <aspectratio aligny="top">scale</aspectratio>
                     </control>
-                    <control type="label">
-                        <posx>110</posx>
-                        <posy>282</posy>
-                        <width>185</width>
-                        <align>center</align>
-                        <textcolor>Selected</textcolor>
-                        <font>Font-ListInfo</font>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>252</posy>
+                        <height>73</height>
+                        <width>247</width>
+                        <texture colordiffuse="PanelBG">common/white.png</texture>
+                        <aspectratio>scale</aspectratio>
+                        <animation effect="fade" end="90" condition="true">Conditional</animation>
+                    </control>
+                    <control type="textbox">
+                        <posx>22</posx>
+                        <posy>252</posy>
+                        <width>225</width>
+                        <height>73</height>
+                        <align>left</align>
+                        <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label]</label>
+                        <autoscroll>false</autoscroll>
                     </control>
 
                 </focusedlayout>
