@@ -67,7 +67,6 @@
 				<height>552</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
-				<onback>ActivateWindow(settings)</onback>
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>
 				<onleft>3</onleft>
@@ -121,7 +120,6 @@
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
-				<onback>ActivateWindow(settings)</onback>
 				<onright>5</onright>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
