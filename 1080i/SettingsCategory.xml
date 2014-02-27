@@ -49,66 +49,31 @@
 
 			<control type="label" id="2">
 				<description>Settings</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<font>Font-DialogHeader</font>
-				<include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
-			    <include>Animation.SlideOpen.Right</include>
+				<include>DefSettingsHeader</include>
 			</control>
 			
-            <control type="image">
-                <posx>650</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="df000000">common/white.png</texture>
-                <animation effect="fade" end="50" condition="true">Conditional</animation>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
-            <control type="image">
-                <posx>651</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="0fffffff">common/white.png</texture>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
+            <include>DefSettingsSeparator</include>
             
             
             <control type="grouplist" id="3">
 				<description>Control Area</description>
-				<posx>265</posx>
-				<posy>120</posy>
-				<width>384</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
+				<include>DefSettingsLeftGroup</include>
 				<onright>5</onright>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<include>Animation.SlideOpen.Right</include>
 			</control>
 
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
-				<posx>650</posx>
-				<posy>120</posy>
-				<width>1020</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
+				<include>DefSettingsRightGroup</include>
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>
 				<onleft>3</onleft>
 				<onup>21</onup>
 				<ondown>3</ondown>
-				<include>Animation.SlideOpen.Left</include>
+				
 			</control>
 			
 			<control type="button" id="21">

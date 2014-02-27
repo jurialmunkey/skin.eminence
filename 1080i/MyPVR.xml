@@ -8,7 +8,7 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
-
+            <include>DialogVisibility</include>
 			<include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
@@ -149,10 +149,10 @@
                     <label>$LOCALIZE[19040]</label>
                     <include>DefContextMenuButton</include>
                 </control>
-                <control type="button" id="36" description="Search">
+                <!--<control type="button" id="36" description="Search">
                     <label>$LOCALIZE[137]</label>
                     <include>DefContextMenuButton</include>
-                </control>
+                </control>-->
             </control>
         </control>
         

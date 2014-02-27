@@ -85,16 +85,7 @@
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
-                <control type="label" description="Navigation Label">
-                    <posx>11</posx>
-                    <posy>695</posy>
-                    <width>445</width>
-                    <aligny>top</aligny>
-                    <align>center</align>
-                    <font>Font-EPGRuler</font>
-                    <label>31160</label>
-                    <animation effect="fade" end="33" condition="true">Conditional</animation>
-                </control>
+                <include>DefInformationNavLabel</include>
 
                 
             </control>
@@ -408,7 +399,7 @@
                     <include>DefContextMenuButton</include>
                 </control>
             </control>
-    </control>
+        </control>
         
         <control type="button" id="5" description="Cast">
             <visible allowhiddenfocus="true">false</visible>

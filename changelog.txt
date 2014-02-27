@@ -1,5 +1,6 @@
 [B]0.9.7[/B]
 Fix DialogExtendedProgressBar.xml showing in fullscreen video
+Update Music / PVR / Addons information screens
 Fix Skin Settings not returning
 
 [B]0.9.6[/B]

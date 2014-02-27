@@ -53,14 +53,7 @@
 			</control>          
             <control type="grouplist" id="3">
                 <description>Control Area</description>
-                <include>Animation.SlideOpen.Right</include>
-				<posx>265</posx>
-				<posy>120</posy>
-				<width>384</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
+                <include>DefSettingsLeftGroup<include>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
 				<onright>5</onright>
@@ -85,34 +78,11 @@
                 </control>
             </control>
             
-            <control type="image">
-                <posx>650</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="df000000">common/white.png</texture>
-                <animation effect="fade" end="50" condition="true">Conditional</animation>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
-            <control type="image">
-                <posx>651</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="0fffffff">common/white.png</texture>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
+            <include>DefSettingsSeparator</include>
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
-                <include>Animation.SlideOpen.Left</include>
-				<posx>650</posx>
-				<posy>120</posy>
-				<width>990</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
+                <include>DefSettingsRightGroup<include>
 				<onleft>3</onleft>
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>

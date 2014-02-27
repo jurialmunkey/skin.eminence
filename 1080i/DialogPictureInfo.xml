@@ -48,6 +48,7 @@
 						<posx>30</posx>
 						<width>405</width>
 						<info>ListItem.Label</info>
+						<font>Font-ListInfo</font>
 						<textcolor>TopBarIcon</textcolor>
 					</control>
 
@@ -56,6 +57,7 @@
 						<width>1000</width>
 						<align>right</align>
 						<info>ListItem.Label2</info>
+						<font>Font-ListInfo</font>
 						<textcolor>TopBarIcon</textcolor>
 					</control>
 
@@ -66,6 +68,7 @@
 						<posx>30</posx>
 						<width>405</width>
 						<info>ListItem.Label</info>
+						<font>Font-ListInfo</font>
 						<textcolor>Highlight</textcolor>
 					</control>
 
@@ -74,6 +77,7 @@
 						<width>1000</width>
 						<align>right</align>
 						<info>ListItem.Label2</info>
+						<font>Font-ListInfo</font>
 						<textcolor>Highlight</textcolor>
 					</control>
 
