@@ -61,6 +61,16 @@
                     <textcolor>Selected</textcolor>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
+                <control type="label" description="Navigation Label">
+                    <posx>11</posx>
+                    <posy>695</posy>
+                    <width>445</width>
+                    <aligny>top</aligny>
+                    <align>center</align>
+                    <font>Font-EPGRuler</font>
+                    <label>31160</label>
+                    <animation effect="fade" end="33" condition="true">Conditional</animation>
+                </control>
             </control>
             <control type="grouplist">
 		        <posx>509</posx>
@@ -234,70 +244,46 @@
                     <wrapmultiline>true</wrapmultiline>
                 </control>
             </control>
-            <control type="list" id="9000">
-                <posx>509</posx>
-		        <posy>835</posy>
-                <width>920</width>
-                <height>48</height>
-                <itemgap>0</itemgap>
-                <onleft>9000</onleft>
-                <onright>9000</onright>
-                <orientation>horizontal</orientation>
-                <usecontrolcoords>true</usecontrolcoords>
-                <itemlayout width="230" height="48">
-                    <control type="image">
-                        <width>48</width>
-                        <height>48</height>
-                        <texture colordiffuse="PanelFG-NF">$INFO[ListItem.Icon]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>64</posx>
-                        <width>150</width>
-                        <height>48</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>PanelFG-NF</textcolor>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="230" height="48">
-                    <control type="image">
-                        <width>48</width>
-                        <height>48</height>
-                        <texture colordiffuse="Highlight">$INFO[ListItem.Icon]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>64</posx>
-                        <width>150</width>
-                        <height>48</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>Highlight</textcolor>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item id="4">
-                        <label>31135</label>
-                        <icon>osd/thumb.png</icon>
-                        <onclick>SendClick(2001,10)</onclick>
-                    </item>
-                    <item id="5">
-                        <label>184</label>
-                        <icon>osd/refresh.png</icon>
-                        <onclick>SendClick(2001,6)</onclick>
-                    </item>
-                </content>
+        </control>
 
+
+        <control type="group">		
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.SlideOpen.Left</include>
+            <include>DefContextMenuBackground</include>
+            <control type="grouplist" id="9500">
+                <ondown>SetFocus(9000)</ondown>
+                <onback>SetFocus(9000)</onback>
+                <include>DefContextMenuGroupList</include>
+
+                <control type="button" id="8" description="Play">
+                    <label>208</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="11" description="Trailer">
+                    <label>20410</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+    
+                <control type="button" id="10" description="Thumb">
+                    <label>31135</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="6" description="Refresh">
+                    <label>184</label>
+                    <include>DefContextMenuButton</include>
+                </control>
             </control>
         </control>
-
-        <control type="button" id ="6">
+        <control type="button" id="9000">
             <visible allowhiddenfocus="true">false</visible>
-        </control>
-
-        <control type="button" id="10">
-            <visible allowhiddenfocus="true">false</visible>
+            <onclick>SetFocus(9500)</onclick>
+            <onright>SetFocus(9500)</onright>
+            <onleft>Back</onleft>
+            <onup>SetFocus(9500)</onup>
+            <ondown>SetFocus(9500)</ondown>
         </control>
 	</controls>
 

@@ -56,8 +56,8 @@
                 <include>Animation.SlideOpen.Right</include>
 				<posx>265</posx>
 				<posy>120</posy>
-				<width>359</width>
-				<height>552</height>
+				<width>384</width>
+				<height>549</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>
@@ -84,6 +84,24 @@
                     <align>left</align>
                 </control>
             </control>
+            
+            <control type="image">
+                <posx>650</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="df000000">common/white.png</texture>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
+            <control type="image">
+                <posx>651</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="0fffffff">common/white.png</texture>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
@@ -91,7 +109,7 @@
 				<posx>650</posx>
 				<posy>120</posy>
 				<width>990</width>
-				<height>552</height>
+				<height>549</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<pagecontrol>60</pagecontrol>

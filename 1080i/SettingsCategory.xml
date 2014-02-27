@@ -58,13 +58,49 @@
 			    <include>Animation.FadeOut</include>
 			    <include>Animation.SlideOpen.Right</include>
 			</control>
+			
+            <control type="image">
+                <posx>650</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="df000000">common/white.png</texture>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
+            <control type="image">
+                <posx>651</posx>
+                <posy>120</posy>
+                <height>549</height>
+                <width>1</width>
+                <texture colordiffuse="0fffffff">common/white.png</texture>
+                <include>Animation.SlideOpen.Left</include>
+            </control>
+            
+            
+            <control type="grouplist" id="3">
+				<description>Control Area</description>
+				<posx>265</posx>
+				<posy>120</posy>
+				<width>384</width>
+				<height>549</height>
+				<itemgap>3</itemgap>
+				<orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<onright>5</onright>
+				<onleft>SetProperty(movement,1,settings)</onleft>
+				<onleft>$VAR[DefSettingsOnLeft]</onleft>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<include>Animation.SlideOpen.Right</include>
+			</control>
 
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
 				<posx>650</posx>
 				<posy>120</posy>
 				<width>1020</width>
-				<height>552</height>
+				<height>549</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<onright>ClearProperty(movement,settings)</onright>
@@ -111,22 +147,7 @@
 				<textcolor>Disabled</textcolor>
 			</control>
 			
-			<control type="grouplist" id="3">
-				<description>Control Area</description>
-				<posx>265</posx>
-				<posy>120</posy>
-				<width>359</width>
-				<height>552</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
-				<onright>5</onright>
-				<onleft>SetProperty(movement,1,settings)</onleft>
-				<onleft>$VAR[DefSettingsOnLeft]</onleft>
-				<onup>3</onup>
-				<ondown>3</ondown>
-				<include>Animation.SlideOpen.Right</include>
-			</control>
+			
 			
 
 			
