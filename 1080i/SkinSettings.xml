@@ -53,7 +53,7 @@
 			</control>          
             <control type="grouplist" id="3">
                 <description>Control Area</description>
-                <include>DefSettingsLeftGroup<include>
+                <include>DefSettingsLeftGroup</include>
 				<onleft>SetProperty(movement,1,settings)</onleft>
 				<onleft>$VAR[DefSettingsOnLeft]</onleft>
 				<onright>5</onright>
@@ -82,7 +82,7 @@
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
-                <include>DefSettingsRightGroup<include>
+                <include>DefSettingsRightGroup</include>
 				<onleft>3</onleft>
 				<onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>

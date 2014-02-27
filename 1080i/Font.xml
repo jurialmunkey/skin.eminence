@@ -20,12 +20,12 @@
 		</font>
 		<font>
 			<name>Font-PVRTitle</name>
-			<filename>SourceSansPro-Black.ttf</filename>
+			<filename>SourceSansPro-Bold.ttf</filename>
 			<size>34</size>
 		</font>
 		<font>
 			<name>Font-DialogHeader</name>
-			<filename>SourceSansPro-Black.ttf</filename>
+			<filename>SourceSansPro-Bold.ttf</filename>
 			<size>42</size>
 		</font>
 		<font>
@@ -43,11 +43,6 @@
 			<name>Font-Sublabel</name>
 			<filename>SourceSansPro-Bold.ttf</filename>
 			<size>32</size>
-		</font>
-		<font>
-			<name>Font-PVRChannelNumber</name>
-			<filename>SourceSansPro-Black.ttf</filename>
-			<size>64</size>
 		</font>
 		<font>
 			<name>Font-ViewCategory</name>

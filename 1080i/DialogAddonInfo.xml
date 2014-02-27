@@ -50,6 +50,7 @@
                     <textcolor>Selected</textcolor>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
+                <include>DefInformationNavLabel</include>
             </control>
             <control type="grouplist">
 		        <posx>509</posx>
@@ -182,116 +183,67 @@
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
-                    <height>160</height>
+                    <height>230</height>
                     <label fallback="416">$INFO[ListItem.Property(Addon.Description)]</label>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
             </control>
-            <control type="list" id="9000">
-                <posx>509</posx>
-		        <posy>835</posy>
-                <width>920</width>
-                <height>48</height>
-                <itemgap>0</itemgap>
-                <onleft>9000</onleft>
-                <onright>9000</onright>
-                <orientation>horizontal</orientation>
-                <usecontrolcoords>true</usecontrolcoords>
-                <itemlayout width="230" height="48">
-                    <control type="image">
-                        <width>48</width>
-                        <height>48</height>
-                        <texture colordiffuse="PanelFG-NF">$INFO[ListItem.Icon]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>64</posx>
-                        <width>150</width>
-                        <height>48</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>PanelFG-NF</textcolor>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="230" height="48">
-                    <control type="image">
-                        <width>48</width>
-                        <height>48</height>
-                        <texture colordiffuse="Highlight">$INFO[ListItem.Icon]</texture>
-                    </control>
-                    <control type="label">
-                        <posx>64</posx>
-                        <width>150</width>
-                        <height>48</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>Highlight</textcolor>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <item id="1">
-                        <label>$INFO[Control.GetLabel(6)]</label>
-                        <icon>osd/install.png</icon>
-                        <onclick>SendClick(146,6)</onclick>
-                    </item>
-                    <item id="2">
-                        <label>$INFO[Control.GetLabel(7)]</label>
-                        <icon>osd/enable.png</icon>
-                        <onclick>SendClick(146,7)</onclick>
-                    </item>
-                    
-                    <item id="3">
-                        <label>5</label>
-                        <icon>osd/settings.png</icon>
-                        <onclick>SendClick(146,9)</onclick>
-                    </item>
-                    
-                    <item id="4">
-                        <label>$INFO[Control.GetLabel(8)]</label>
-                        <icon>osd/refresh.png</icon>
-                        <onclick>SendClick(146,8)</onclick>
-                    </item>
-                    
-                    <item id="5">
-                        <label>31136</label>
-                        <icon>osd/changelog.png</icon>
-                        <onclick>SendClick(146,10)</onclick>
-                    </item>
+        </control>
+        
+        <control type="group">
+            <include>GlobalOverlay</include>
+            <include>GlobalLeftHeader</include>
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+        </control>
+        <control type="group">		
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.SlideOpen.Left</include>
+            <include>DefContextMenuBackground</include>
+            <control type="grouplist" id="9500">
+                <ondown>SetFocus(9000)</ondown>
+                <onback>9000</onback>
+                <include>DefContextMenuGroupList</include>
 
-                </content>
+                <control type="button" id="6">
+                    <description>Install/Uninstall Addon button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>24022</label>
+                </control>
 
+                <control type="button" id="7">
+                    <description>Enable/Disable Addon button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>24021</label>	
+                </control>
+
+                <control type="button" id="9">
+                    <description>Addon Settings</description>
+                    <include>DefContextMenuButton</include>
+                    <label>24020</label>
+                </control>
+
+                <control type="button" id="8">
+                    <description>Update Addon button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>24069</label>
+                </control>
+
+                <control type="button" id="10">
+                    <description>Changelog button</description>
+                    <include>DefContextMenuButton</include>
+                    <label>24036</label>
+                </control>
             </control>
         </control>
-
-        <control type="button" id="6">
-            <description>Install/Uninstall Addon button</description>
+        <control type="button" id="9000">
             <visible allowhiddenfocus="true">false</visible>
-            <label>24022</label>
-        </control>
-
-        <control type="button" id="7">
-            <description>Enable/Disable Addon button</description>
-            <visible allowhiddenfocus="true">false</visible>
-            <label>24021</label>	
-        </control>
-
-        <control type="button" id="9">
-            <description>Addon Settings</description>
-            <visible allowhiddenfocus="true">false</visible>
-            <label>24020</label>
-        </control>
-
-        <control type="button" id="8">
-            <description>Update Addon button</description>
-            <visible allowhiddenfocus="true">false</visible>
-            <label>24069</label>
-        </control>
-
-        <control type="button" id="10">
-            <description>Changelog button</description>
-            <visible allowhiddenfocus="true">false</visible>
-            <label>24036</label>
+            <onclick>SetFocus(9500)</onclick>
+            <onright>SetFocus(9500)</onright>
+            <onleft>Back</onleft>
+            <onup>SetFocus(9500)</onup>
+            <ondown>SetFocus(9500)</ondown>
         </control>
 	</controls>
 

@@ -369,7 +369,7 @@
             <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
-                <onback>SetFocus(9000)</onback>
+                <onback>9000</onback>
                 <include>DefContextMenuGroupList</include>
 
                 <control type="button" id="8" description="Play">

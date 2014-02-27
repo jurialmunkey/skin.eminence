@@ -61,16 +61,7 @@
                     <textcolor>Selected</textcolor>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
-                <control type="label" description="Navigation Label">
-                    <posx>11</posx>
-                    <posy>695</posy>
-                    <width>445</width>
-                    <aligny>top</aligny>
-                    <align>center</align>
-                    <font>Font-EPGRuler</font>
-                    <label>31160</label>
-                    <animation effect="fade" end="33" condition="true">Conditional</animation>
-                </control>
+                <include>DefInformationNavLabel</include>
             </control>
             <control type="grouplist">
 		        <posx>509</posx>
@@ -246,14 +237,20 @@
             </control>
         </control>
 
-
+        <control type="group">
+            <include>GlobalOverlay</include>
+            <include>GlobalLeftHeader</include>
+            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+        </control>
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
-                <onback>SetFocus(9000)</onback>
+                <onback>9000</onback>
                 <include>DefContextMenuGroupList</include>
 
                 <control type="button" id="8" description="Play">
