@@ -79,9 +79,36 @@
         </control>
 	</include>
 	
+	<include name="HeaderSortLetter">
+	    <control type="group">
+	        <visible>Container.Scrolling</visible>
+            <animation type="Visible">
+                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
+                <effect type="slide" start="0,-10" end="0,0" time="350" tween="sine" easing="out" />
+            </animation>
+            <animation type="Hidden">
+                <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" delay="2000" />
+                <effect type="slide" start="0,0" end="0,-10" time="300" tween="sine" easing="out" delay="2000" />
+            </animation>
+      
+            <control type="label">
+                <posy>25</posy>
+                <posx>30</posx>
+                <width>128</width>
+                <height>100</height>
+                <aligny>top</aligny>
+                <align>center</align>
+                <font>Font-Header</font>
+                <label>$INFO[ListItem.SortLetter]</label>
+                <textcolor>TopBarIcon</textcolor>
+            </control>
+        </control>
+	</include>
+	
 	<include name="HeaderLeftInfo">
 	    <control type="group">
             <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [!Window.IsVisible(fullscreenvideo) | Window.IsVisible(mutebug)]]</visible>
+            
             <control type="image">
                 <posy>10</posy>
                 <posx>30</posx>
@@ -90,7 +117,18 @@
                 <texture>$VAR[MainHeaderIcon]</texture>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>TopBarIcon</colordiffuse>
+                <visible>!Container.Scrolling</visible>
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" delay="2000" />
+                    <effect type="slide" start="0,-10" end="0,0" time="350" tween="sine" easing="out" delay="2000" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
+                    <effect type="slide" start="0,0" end="0,-10" time="300" tween="sine" easing="out"/>
+                </animation>
+                
             </control>
+            <include>HeaderSortLetter</include>
             <control type="label">
                 <posx>0</posx>
                 <posy>115</posy>

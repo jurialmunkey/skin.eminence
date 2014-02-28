@@ -4,6 +4,7 @@ Videowindow in epg timeline
 DialogSelect Updates
 MediaFilter Adv
 Updated DialogSubtitles.xml
+Sort Letter
 
 [B]0.9.7[/B]
 Fix DialogExtendedProgressBar.xml showing in fullscreen video
