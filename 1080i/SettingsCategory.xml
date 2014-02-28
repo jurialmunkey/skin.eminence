@@ -152,7 +152,7 @@
             <posy>330</posy>
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>3</onleft>
+            <onleft>5</onleft>
             <onright>5</onright>
             <include>Animation.SlideOpen.Left</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
