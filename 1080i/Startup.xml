@@ -109,6 +109,7 @@
             
             <!-- Init Complete -->
             <onfocus>Skin.SetBool(skin.init)</onfocus>
+            <onfocus>Skin.SetBool(disable.bgvideo)</onfocus>
             <onfocus>Skin.SetBool(HideDebugInfo)</onfocus>
             <onfocus>ReplaceWindow(home)</onfocus>
             
