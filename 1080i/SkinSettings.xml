@@ -6,7 +6,7 @@
 
 		<include>GlobalBackground</include>
 		<control type="button">
-            <posy>600</posy>
+            <posy>540</posy>
             <posx>110</posx>
             <width>48</width>
             <height>48</height>
@@ -22,7 +22,7 @@
         </control>
         <control type="group">
 		    <posx>253</posx>
-		    <posy>120</posy>
+		    <posy>70</posy>
 		    <include>DialogVisibility</include>
 		    <include>Animation.SlideOpen.Left</include>
 		    <control type="label" id="2" description="Info Label">
@@ -38,7 +38,7 @@
         </control>
 
 		<control type="group">
-			<posy>210</posy>
+			<posy>160</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 
             <include>Animation.FadeIn</include>
@@ -409,11 +409,11 @@
         </control>
         
         <control type="scrollbar" id="60">
-		    <posx>1670</posx>
-            <posy>330</posy>
+		    <posx>650</posx>
+            <posy>280</posy>
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>5</onleft>
+            <onleft>e</onleft>
             <onright>5</onright>
             <include>Animation.SlideOpen.Left</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>

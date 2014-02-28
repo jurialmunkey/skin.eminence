@@ -6,19 +6,18 @@
 
 	<controls>
 	    <control type="scrollbar" id="60">
-		    <posx>1295</posx>
-            <posy>330</posy>
-            <height>549</height>
+		    <posx>265</posx>
+            <posy>280</posy>
+            <height>690</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>6</onleft>
             <onright>6</onright>
             <include>Animation.SlideOpen.Left</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
-            <animation effect="slide" start="0" end="386" condition="Control.IsVisible(3)">Conditional</animation>
         </control>
         <control type="group">
             <posx>253</posx>
-            <posy>120</posy>
+            <posy>70</posy>
             <include>Animation.SlideOpen.Left</include>
             <control type="label" id="1" description="Info Label">
                 <posx>1514</posx>
@@ -32,7 +31,7 @@
         </control>
 
 		<control type="group">
-			<posy>210</posy>
+			<posy>160</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
             
             <include>Animation.FadeOut</include>
@@ -42,11 +41,11 @@
 				<posx>265</posx>
 				<posy>120</posy>
 				<width>1416</width>
-				<height>552</height>
+				<height>690</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
-				<onleft>5</onleft>
-				<onright>60</onright>
+				<onleft>60</onleft>
+				<onright>5</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -128,7 +127,7 @@
 			    <posx>265</posx>
 				<posy>120</posy>
 				<width>1030</width>
-				<height>552</height>
+				<height>690</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>5</onleft>
@@ -232,7 +231,7 @@
                     <posy>460</posy>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <height>180</height>
+                    <height>318</height>
                     <width>330</width>
                     <wrapmultiline>true</wrapmultiline>
                     <textcolor>Disabled</textcolor>
@@ -253,18 +252,18 @@
             </control>
             <control type="button" id="5">
                 <posx>210</posx>
-                <posy>15</posy>
-                <align>left</align>
-                <font>Font-SettingsCategory</font>
-                <textcolor>Disabled</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <texturefocus>-</texturefocus>
-                <height>135</height>
-                <onup>3</onup>
-                <ondown>3</ondown>
-                <onright>3</onright>
-                <onleft>3</onleft>
-                <include>Animation.SlideOpen.Left</include>
+				<posy>51</posy>
+				<width>1020</width>
+				<height>66</height>
+				<align>left</align>
+				<onclick>SettingsLevelChange</onclick>
+				<ondown>3</ondown>
+				<onright>3</onright>
+				<onleft>3</onleft>
+				
+				<texturefocus>-</texturefocus>
+				<focusedcolor>Highlight</focusedcolor>
+				<include>Animation.SlideOpen.Left</include>
             </control>
             
 		</control>
