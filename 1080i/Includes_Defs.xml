@@ -61,6 +61,7 @@
             <width>8</width>
             <texture colordiffuse="PosterBorder">common/white.png</texture>
             <include>Animation.SlideOpen.Left</include>
+            <animation effect="fade" start="100" end="65" condition="true">Conditional</animation>
         </control>
     </include>
     	

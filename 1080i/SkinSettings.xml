@@ -20,6 +20,22 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
         </control>
+        <control type="group">
+		    <posx>253</posx>
+		    <posy>120</posy>
+		    <include>DialogVisibility</include>
+		    <include>Animation.SlideOpen.Left</include>
+		    <control type="label" id="2" description="Info Label">
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <label>$LOCALIZE[20077]</label>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+            </control>
+        </control>
 
 		<control type="group">
 			<posy>210</posy>
@@ -27,16 +43,7 @@
 
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-
-			<control type="label">
-				<description>Settings</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<font>Font-DialogHeader</font>
-				<label>$LOCALIZE[20077]</label>
-			</control>          
+ 
             <control type="grouplist" id="3">
                 <description>Control Area</description>
                 <include>DefSettingsLeftGroup</include>
@@ -401,14 +408,14 @@
         </control>
         
         <control type="scrollbar" id="60">
-		    <posx>650</posx>
+		    <posx>1670</posx>
             <posy>330</posy>
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>3</onleft>
             <onright>5</onright>
             <include>Animation.SlideOpen.Left</include>
-            <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
+            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>
 
 		<include>GlobalTopBar</include>
