@@ -12,8 +12,8 @@
             <posx>110</posx>
             <width>48</width>
             <height>48</height>
-            <texturenofocus>common/right-arrow.png</texturenofocus>
-            <texturefocus>common/right-arrow.png</texturefocus>
+            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
             <aspectratio>keep</aspectratio>
             <animation effect="fade" end="75" condition="true">Conditional</animation>
             <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
