@@ -10,7 +10,6 @@
 	<!-- Main Colors -->
 	<color name="Background">ffDEDEDE</color>
 	<color name="Selected">ff404040</color>
-	<color name="PosterBorder">3E000000</color>
 	<color name="PanelBG">FFededed</color>
 	<color name="DimFanart">E9dddddd</color>
 	<color name="RadioFO">ff1f1f1f</color>

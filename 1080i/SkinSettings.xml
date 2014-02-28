@@ -20,21 +20,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
         </control>
-        <control type="button">
-            <posy>600</posy>
-            <posx>158r</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-        </control>
+
 		<control type="group">
 			<posy>210</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
@@ -60,21 +46,33 @@
 				
 				<onup>3</onup>
 				<ondown>3</ondown>
-                <control type="button" id="31" description="General">
+                <control type="togglebutton" id="31" description="General">
                     <label>128</label>
                     <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="button" id="32" description="Home">
+                <control type="togglebutton" id="32" description="Home">
                     <label>10000</label>
                     <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="button" id="33" description="Views">
+                <control type="togglebutton" id="33" description="Views">
                     <label>31147</label>
                     <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="button" id="34" description="OSD">
+                <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
                     <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
                 </control>
             </control>
             
@@ -84,66 +82,71 @@
                 <description>Control Area</description>
                 <include>DefSettingsRightGroup</include>
 				<onleft>3</onleft>
-				<onright>ClearProperty(movement,settings)</onright>
-				<onright>$VAR[DefSettingsOnRight]</onright>
+				<onright>60</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
                 <control type="radiobutton" id="101">
                     <label>654</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
                     <selected>!Skin.HasSetting(HideDebugInfo)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="102">
                     <label>31137</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(skin.init)</onclick>
                     <selected>!Skin.HasSetting(skin.init)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="103">
                     <label>13305</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(disable.rss)</onclick>
                     <selected>!Skin.HasSetting(disable.rss)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="button" id="104">
                     <label>31138</label>
-                    <width>990</width>
+                    <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="105">
                     <label>31148</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.useweatherfanart)</onclick>
                     <selected>Skin.HasSetting(home.useweatherfanart)</selected>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="button" id="106">
                     <label>31149</label>
-                    <width>990</width>
+                    <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(home.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                     <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
                 
@@ -153,133 +156,144 @@
                 <!----------------->
                 <control type="radiobutton" id="201">
                     <label>$INFO[Skin.String(home.301.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.301.enabled)</onclick>
                     <selected>Skin.HasSetting(home.301.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="202">
                     <label>$INFO[Skin.String(home.302.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.302.enabled)</onclick>
                     <selected>Skin.HasSetting(home.302.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="203">
                     <label>$INFO[Skin.String(home.303.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.303.enabled)</onclick>
                     <selected>Skin.HasSetting(home.303.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="204">
                     <label>$INFO[Skin.String(home.304.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.304.enabled)</onclick>
                     <selected>Skin.HasSetting(home.304.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="205">
                     <label>$INFO[Skin.String(home.305.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.305.enabled)</onclick>
                     <selected>Skin.HasSetting(home.305.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="206">
                     <label>$INFO[Skin.String(home.306.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.306.enabled)</onclick>
                     <selected>Skin.HasSetting(home.306.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="207">
                     <label>$INFO[Skin.String(home.307.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                     <onclick>Skin.ToggleSetting(home.307.enabled)</onclick>
                     <selected>Skin.HasSetting(home.307.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                 </control>
                 <control type="radiobutton" id="208">
                     <label>$INFO[Skin.String(home.308.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.308.enabled)</onclick>
                     <selected>Skin.HasSetting(home.308.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="209">
                     <label>$INFO[Skin.String(home.309.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.309.enabled)</onclick>
                     <selected>Skin.HasSetting(home.309.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="210">
                     <label>$INFO[Skin.String(home.310.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.310.enabled)</onclick>
                     <selected>Skin.HasSetting(home.310.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="211">
                     <label>$INFO[Skin.String(home.311.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.311.enabled)</onclick>
                     <selected>Skin.HasSetting(home.311.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="212">
                     <label>$INFO[Skin.String(home.312.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(home.312.enabled)</onclick>
                     <selected>Skin.HasSetting(home.312.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="214">
                     <label>$INFO[Skin.String(home.314.label)]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -287,6 +301,7 @@
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
                     <selected>Skin.HasSetting(home.314.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
                 
@@ -296,55 +311,60 @@
                 <control type="button" id="301">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
-                    <width>990</width>
+                    <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(movie.widget.recommended)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="button" id="302">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
-                    <width>990</width>
+                    <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(tvshow.widget.recommended)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="303">
                     <label>31144</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
                     <selected>Skin.HasSetting(ActivateTvTunes)</selected>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="304">
                     <label>31146</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
                     <selected>!Skin.HasSetting(disable.fanart)</selected>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="305">
                     <label>31145</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
                     <selected>!Skin.HasSetting(disable.bgvideo)</selected>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
                 <!--------->
@@ -352,19 +372,20 @@
                 <!--------->
                 <control type="radiobutton" id="401">
                     <label>31139</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="401">
                     <label>$LOCALIZE[31140]</label>
-                    <width>990</width>
-                    <radioposx>914</radioposx>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <disabledcolor>PanelFG-NF</disabledcolor>
@@ -373,9 +394,21 @@
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
                     <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(105)">Conditional</animation>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
             </control>
+        </control>
+        
+        <control type="scrollbar" id="60">
+		    <posx>650</posx>
+            <posy>330</posy>
+            <height>549</height>
+            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
+            <onleft>3</onleft>
+            <onright>5</onright>
+            <include>Animation.SlideOpen.Left</include>
+            <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>
 
 		<include>GlobalTopBar</include>

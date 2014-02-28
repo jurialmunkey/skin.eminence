@@ -196,7 +196,7 @@
 	<default type="scrollbar">
 		<width>8</width>
 		<texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
-		<texturesliderbar colordiffuse="PanelFG">common/white.png</texturesliderbar>
+		<texturesliderbar colordiffuse="PanelFG-NF">common/white.png</texturesliderbar>
 		<texturesliderbarfocus colordiffuse="Highlight">common/white.png</texturesliderbarfocus>
 		<textureslidernib>-</textureslidernib>
 		<textureslidernibfocus>-</textureslidernibfocus>

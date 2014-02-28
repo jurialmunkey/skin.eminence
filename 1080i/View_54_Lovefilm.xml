@@ -64,6 +64,7 @@
                     <height>668</height>
                     <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
                 </control>
+
                 <control type="group">
                     <control type="image">
                         <posx>11</posx>

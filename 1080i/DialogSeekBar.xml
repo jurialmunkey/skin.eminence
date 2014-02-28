@@ -449,6 +449,8 @@
                 <height>16</height>
                 <info>Player.Progress</info>
                 <visible>true</visible>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+                
             </control>
             
             <control type="image">

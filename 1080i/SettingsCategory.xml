@@ -22,21 +22,6 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
         </control>
-        <control type="button">
-            <posy>600</posy>
-            <posx>158r</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-        </control>
 		<control type="group">
 			<posy>210</posy>
             
@@ -68,11 +53,10 @@
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
 				<include>DefSettingsRightGroup</include>
-				<onright>ClearProperty(movement,settings)</onright>
-				<onright>$VAR[DefSettingsOnRight]</onright>
+				<onright>60</onright>
 				<onleft>3</onleft>
 				<onup>21</onup>
-				<ondown>3</ondown>
+				<ondown>-</ondown>
 				
 			</control>
 			
@@ -126,13 +110,14 @@
 		<control type="button" id="10">
 			<description>Default Category Button</description>
 			<align>left</align>
-			
+			<textcolor>Disabled</textcolor>			
 		</control>
 		
 		<control type="button" id="7">
             <description>Default Button</description>
             <align>left</align>
             <font>Font-ListInfo</font>
+            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>
 
         <control type="radiobutton" id="8">
@@ -140,6 +125,7 @@
             <align>left</align>
             <radioposx>942</radioposx>
             <font>Font-ListInfo</font>
+            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>
 
         <control type="spincontrolex" id="9">
@@ -147,9 +133,19 @@
             <align>left</align>
             <reverse>yes</reverse>
             <font>Font-ListInfo</font>
+            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>
 		
-		
+		<control type="scrollbar" id="60">
+		    <posx>650</posx>
+            <posy>330</posy>
+            <height>549</height>
+            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
+            <onleft>3</onleft>
+            <onright>5</onright>
+            <include>Animation.SlideOpen.Left</include>
+            <animation effect="fade" start="100" end="0" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
+        </control>
         
         
 

@@ -18,6 +18,7 @@
 			<size>34</size>
 			<style>uppercase</style>
 		</font>
+
 		<font>
 			<name>Font-PVRTitle</name>
 			<filename>SourceSansPro-Bold.ttf</filename>
@@ -95,6 +96,11 @@
 			<name>Font-Weather</name>
 			<filename>Weather.ttf</filename>
 			<size>64</size>
+		</font>
+		<font>
+			<name>Font-MediumWeather</name>
+			<filename>Weather.ttf</filename>
+			<size>110</size>
 		</font>
 		<font>
 			<name>Font-BigWeather</name>

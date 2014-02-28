@@ -47,26 +47,19 @@
         <width>1020</width>
         <height>549</height>
         <itemgap>3</itemgap>
+        <pagecontrol>60</pagecontrol>
         <orientation>vertical</orientation>
         <include>Animation.SlideOpen.Left</include>
     </include>
     
     <include name="DefSettingsSeparator">
+
         <control type="image">
             <posx>650</posx>
             <posy>120</posy>
             <height>549</height>
-            <width>1</width>
-            <texture colordiffuse="AF000000">common/white.png</texture>
-            <animation effect="fade" end="50" condition="true">Conditional</animation>
-            <include>Animation.SlideOpen.Left</include>
-        </control>
-        <control type="image">
-            <posx>651</posx>
-            <posy>120</posy>
-            <height>549</height>
-            <width>1</width>
-            <texture colordiffuse="0fffffff">common/white.png</texture>
+            <width>8</width>
+            <texture colordiffuse="PosterBorder">common/white.png</texture>
             <include>Animation.SlideOpen.Left</include>
         </control>
     </include>

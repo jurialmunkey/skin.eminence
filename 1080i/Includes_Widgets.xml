@@ -610,14 +610,14 @@
         <item id="69">
             <label>1214</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="Window.IsVisible(MyVideoNav.xml)">ActivateWindow(Videos,Files,return)</onclick>
+            <onclick>ActivateWindow(Videos,Files,return)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
 	        <property name="Color">1</property>
         </item>
         <item id="70">
             <label>653</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
-            <onclick condition="Window.IsVisible(MyVideoNav.xml)">UpdateLibrary(video)</onclick>
+            <onclick>UpdateLibrary(video)</onclick>
             <icon>special://skin/extras/icons/update.png</icon>
 	        <property name="Color">1</property>
         </item>

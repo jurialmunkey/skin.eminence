@@ -23,7 +23,7 @@
                 <description>Left panel</description>
                 <posx>75</posx>
                 <posy>210</posy>
-                <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(20)">Conditional</animation>
+                <animation effect="fade" start="100" end="66" time="100" condition="!Control.HasFocus(20)">Conditional</animation>
 
 
                 <control type="label" id="101">
@@ -135,7 +135,7 @@
             </control>
 
             <control type="group">
-                <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(21)">Conditional</animation>
+                <animation effect="fade" start="100" end="66" time="100" condition="!Control.HasFocus(21)">Conditional</animation>
                 <description>Right panel</description>
                 <posx>1035</posx>
                 <posy>210</posy>
