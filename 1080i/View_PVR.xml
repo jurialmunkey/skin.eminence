@@ -468,6 +468,24 @@
                 <texture>$VAR[PVRIcon]</texture>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
+            
+            <control type="group">
+                <visible>Player.HasVideo</visible>
+            <control type="image">
+                <posx>11</posx>
+                <posy>11</posy>
+                <height>167</height>
+                <width>400</width>
+                <aspectratio>scale</aspectratio>
+                <texture colordiffuse="Black">common/white.png</texture>
+            </control>
+            <control type="videowindow">
+                <posx>11</posx>
+                <posy>11</posy>
+                <height>167</height>
+                <width>400</width>
+            </control>
+            </control>
 
             <control type="group">
                 <posx>433</posx>
