@@ -156,7 +156,7 @@
             <onright>5</onright>
             <include>Animation.SlideOpen.Left</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
-
+            <include>DialogVisibility</include>
         </control>
         
         

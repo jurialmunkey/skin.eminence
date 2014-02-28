@@ -155,6 +155,18 @@
                     <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="107">
+                    <label>31145</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
+                    <selected>!Skin.HasSetting(disable.bgvideo)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 
                 
@@ -361,18 +373,7 @@
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="305">
-                    <label>31145</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    
-                    <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
-                    <selected>!Skin.HasSetting(disable.bgvideo)</selected>
-                    <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 
                 <!--------->
                 <!-- OSD -->

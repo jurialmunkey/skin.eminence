@@ -5,53 +5,51 @@
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
+	    <control type="scrollbar" id="60">
+		    <posx>1295</posx>
+            <posy>330</posy>
+            <height>549</height>
+            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
+            <onleft>6</onleft>
+            <onright>6</onright>
+            <include>Animation.SlideOpen.Left</include>
+            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
+            <animation effect="slide" start="0" end="386" condition="Control.IsVisible(3)">Conditional</animation>
+        </control>
+        <control type="group">
+            <posx>253</posx>
+            <posy>120</posy>
+            <include>Animation.SlideOpen.Left</include>
+            <control type="label" id="1" description="Info Label">
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+            </control>
+        </control>
 
 		<control type="group">
 			<posy>210</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
             
             <include>Animation.FadeOut</include>
-
-			<control type="label" id="1">
-				<description>Settings</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
-				<label>13406</label>
-				<include>Animation.SlideOpen.Right</include>    
-			</control>
-			<control type="image">
-                <posx>1255</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="AF000000">common/white.png</texture>
-                <animation effect="fade" end="50" condition="true">Conditional</animation>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
-            <control type="image">
-                <posx>1256</posx>
-                <posy>120</posy>
-                <height>549</height>
-                <width>1</width>
-                <texture colordiffuse="0fffffff">common/white.png</texture>
-                <include>Animation.SlideOpen.Left</include>
-            </control>
+        
 			<control type="list" id="3">
 			    <include>Animation.SlideOpen.Right</include>            
 				<posx>265</posx>
 				<posy>120</posy>
-				<width>990</width>
+				<width>1416</width>
 				<height>552</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>5</onleft>
-				<onright>5</onright>
+				<onright>60</onright>
 				<onup>3</onup>
 				<ondown>3</ondown>
+				<pagecontrol>60</pagecontrol>
 				<itemlayout height="69" width="1438">
 
 					<control type="label">
@@ -63,7 +61,7 @@
 						<selectedcolor>Highlight-NF</selectedcolor>
 					</control>
 					<control type="label">
-						<posx>1408</posx>
+						<posx>990</posx>
 						<width>600</width>
 						<height>66</height>
 						<align>right</align>
@@ -79,7 +77,7 @@
                         <control type="image">
                             <width>1438</width>
                             <height>66</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture border="12">common/border-inner-highlight.png</texture>
                         </control>
                         <control type="label">
                             <posx>30</posx>
@@ -90,7 +88,7 @@
                             <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>1408</posx>
+                            <posx>990</posx>
                             <width>600</width>
                             <height>66</height>
                             <align>right</align>
@@ -111,7 +109,7 @@
                             <selectedcolor>Highlight-NF</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>1408</posx>
+                            <posx>990</posx>
                             <width>600</width>
                             <height>66</height>
                             <align>right</align>
@@ -125,28 +123,30 @@
 
 			</control>
 
+            
 			<control type="list" id="6">
 			    <posx>265</posx>
 				<posy>120</posy>
-				<width>990</width>
+				<width>1030</width>
 				<height>552</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>5</onleft>
-				<onright>5</onright>
+				<onright>60</onright>
 				<onup>6</onup>
 				<ondown>6</ondown>
+				<pagecontrol>60</pagecontrol>
 				<include>Animation.SlideOpen.Right</include>    
-				<itemlayout height="138" width="1438">
+				<itemlayout height="138" width="1030">
 					<control type="image">
-						<posx>12</posx>
+						<posx>24</posx>
 						<posy>12</posy>
 						<width>111</width>
 						<height>111</height>
 						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
 					</control>
 					<control type="label">
-						<posx>150</posx>
+						<posx>160</posx>
 						<width>600</width>
 						<height>135</height>
 						<info>ListItem.Label</info>
@@ -154,7 +154,7 @@
 						<textcolor>PanelFG-NF</textcolor>
 					</control>
 					<control type="label">
-						<posx>1408</posx>
+						<posx>990</posx>
 						<width>600</width>
 						<height>135</height>
 						<align>right</align>
@@ -167,12 +167,12 @@
                     <control type="group">
                         <visible>Control.HasFocus(6)</visible>
                         <control type="image">
-                            <width>1438</width>
+                            <width>1030</width>
                             <height>135</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture border="12">common/border-inner-highlight.png</texture>
                         </control>
                         <control type="label">
-                            <posx>150</posx>
+                            <posx>160</posx>
                             <width>600</width>
                             <height>135</height>
                             <info>ListItem.Label</info>
@@ -180,7 +180,7 @@
                             <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
-                            <posx>1408</posx>
+                            <posx>990</posx>
                             <width>600</width>
                             <height>135</height>
                             <align>right</align>
@@ -192,7 +192,7 @@
 					<control type="group">
                         <visible>!Control.HasFocus(6)</visible>
                         <control type="label">
-                            <posx>150</posx>
+                            <posx>160</posx>
                             <width>600</width>
                             <height>135</height>
                             <info>ListItem.Label</info>
@@ -200,7 +200,7 @@
                             <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
-                            <posx>1408</posx>
+                            <posx>990</posx>
                             <width>600</width>
                             <height>135</height>
                             <align>right</align>
@@ -211,7 +211,7 @@
 					</control>
 
 					<control type="image">
-						<posx>12</posx>
+						<posx>24</posx>
 						<posy>12</posy>
 						<width>111</width>
 						<height>111</height>
@@ -225,6 +225,7 @@
 			<control type="group">
 			    <include>Animation.SlideOpen.Left</include>    
 			    <visible>Control.IsVisible(6)</visible>        
+			    <posx>70</posx>
                 <control type="label">
                     <description>addon information</description>
                     <posx>1284</posx>
@@ -251,11 +252,10 @@
                 
             </control>
             <control type="button" id="5">
-                <posx>1614</posx>
-                <posy>53</posy>
+                <posx>210</posx>
+                <posy>15</posy>
                 <align>left</align>
                 <font>Font-SettingsCategory</font>
-                <angle>270</angle>
                 <textcolor>Disabled</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <texturefocus>-</texturefocus>

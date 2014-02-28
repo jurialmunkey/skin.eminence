@@ -1,6 +1,7 @@
 [B]0.9.8[/B]
 Updates to settings categories appearance.
 Videowindow in epg timeline
+DialogSelect Updates
 
 [B]0.9.7[/B]
 Fix DialogExtendedProgressBar.xml showing in fullscreen video
