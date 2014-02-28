@@ -117,6 +117,8 @@
                     <texturenofocus colordiffuse="PanelFG">osd/next.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
+                
+                <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)">VideoOSDFullscreen</include>
             
             </control>
             <control type="grouplist" id="102">

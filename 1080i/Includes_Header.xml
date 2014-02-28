@@ -107,7 +107,7 @@
 	
 	<include name="HeaderLeftInfo">
 	    <control type="group">
-            <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [!Window.IsVisible(fullscreenvideo) | Window.IsVisible(mutebug)]]</visible>
+            <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [!Window.IsVisible(fullscreenvideo) | Window.IsVisible(mutebug) | Skin.HasSetting(disable.pvricon)]]</visible>
             
             <control type="image">
                 <posy>10</posy>
@@ -141,7 +141,7 @@
             </control>
         </control>
         <control type="group">
-            <visible>VideoPlayer.Content(livetv) + Window.IsVisible(fullscreenvideo) + !Window.IsVisible(mutebug)</visible>
+            <visible>VideoPlayer.Content(livetv) + Window.IsVisible(fullscreenvideo) + !Window.IsVisible(mutebug) + !Skin.HasSetting(disable.pvricon)</visible>
             <control type="image">
                 <posy>40</posy>
                 <posx>40</posx>

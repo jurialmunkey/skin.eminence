@@ -308,6 +308,19 @@
         <ondown condition="[IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen] | !VideoPlayer.IsFullscreen">Close</ondown>
 	</include>
 	
+	<include name="VideoOSDFullscreen">
+	    <control type="button" id="4">
+	        <width>48</width>
+            <height>48</height>
+            <font>-</font>
+            <include>DefOSDUpDown</include>
+            <texturefocus colordiffuse="Highlight">osd/fullscreen.png</texturefocus>
+            <texturenofocus colordiffuse="PanelFG">osd/fullscreen.png</texturenofocus>
+            <onclick>Action(fullscreen)</onclick>
+            <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
+        </control>
+    </include>
+	
 	<include name="VideoOSDRight">
 	    <control type="button" id="4">
             <description>DVD Menu</description>

@@ -390,7 +390,7 @@
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="401">
+                <control type="radiobutton" id="402">
                     <label>$LOCALIZE[31140]</label>
                     <width>1020</width>
                     <radioposx>944</radioposx>
@@ -402,6 +402,18 @@
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
                     <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(105)">Conditional</animation>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="403">
+                    <label>31161</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(disable.pvricon)</onclick>
+                    <selected>!Skin.HasSetting(disable.pvricon)</selected>
+                    <visible>ControlGroup(3).HasFocus(34)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
