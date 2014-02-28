@@ -34,7 +34,7 @@
     <include name="DefSettingsLeftGroup">
         <posx>265</posx>
         <posy>120</posy>
-        <width>384</width>
+        <width>393</width>
         <height>549</height>
         <itemgap>3</itemgap>
         <orientation>vertical</orientation>

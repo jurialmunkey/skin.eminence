@@ -1,6 +1,6 @@
 ﻿<window type="dialog">
     <zorder>5</zorder>
-
+    <defaultcontrol always="true">120</defaultcontrol>
 	<controls>
 		<control type="group">
 		    <include>Animation.FadeIn</include>
@@ -16,72 +16,22 @@
 			<control type="label" id="100">
 				<description>Header Label</description>
 				<textcolor>TopBarIcon</textcolor>
-				<include>DefSettingsHeader</include>
-				<!--<label>20333</label>-->
-			</control>
-
-			<control type="image" id="110">
-				<posx>1522</posx>
-                <posy>250</posy>
-                <width>330</width>
-                <height>330</height>
-				<aspectratio align="center" aligny="top">keep</aspectratio>
+				<posx>75</posx>
+				<posy>250</posy>
+				<width>1438</width>
+				<align>left</align>
 			</control>
 			
-			<control type="list" id="150">
-                <description>Button Area</description>
-                <posx>1500</posx>
-                <posy>665</posy>
-                <width>450</width>
-                <height>351</height>
-                <onleft>120</onleft>
-                <onright>120</onright>
-                <onup>120</onup>
-                <ondown>120</ondown>
-                <orientation>vertical</orientation>
-                <scrolltime>0</scrolltime>
-                <itemlayout height="69">
-					<control type="label">
-						<posx>30</posx>
-						<width>1200</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>TopBarIcon</textcolor>
-					</control>
-
-				</itemlayout>
-
-				<focusedlayout height="69">
-                    <control type="label">
-						<posx>30</posx>
-						<width>1200</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>Highlight</textcolor>
-						<visible>Control.HasFocus(150)</visible>
-					</control>
-					<control type="label">
-						<posx>30</posx>
-						<width>1200</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
-						<textcolor>TopBarIcon</textcolor>
-						<visible>!Control.HasFocus(150)</visible>
-					</control>
-				</focusedlayout>
-            </control>
-				
 			<control type="label" id="140">
 				<description>Content Picker label</description>
 				<posx>75</posx>
 				<posy>310</posy>
 				<width>1438</width>
 				<align>left</align>
-                <textcolor>Highlight-NF</textcolor>
+                <textcolor>Disabled</textcolor>
 			</control>
+
+			
 			
 			<control type="list" id="120">
 				<posx>64</posx>
@@ -128,10 +78,79 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label,,  •  ]$INFO[ListItem.Label2]</label>
 						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(120)</visible>
+					</control>
+					<control type="label">
+						<posx>145</posx>
+						<width>1200</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label,,  •  ]$INFO[ListItem.Label2]</label>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(120)</visible>
 					</control>
 				</focusedlayout>
 
 			</control>
+			
+			<control type="image" id="110">
+				<posx>1522</posx>
+                <posy>250</posy>
+                <width>330</width>
+                <height>330</height>
+				<aspectratio align="center" aligny="top">keep</aspectratio>
+			</control>
+			
+			<control type="list" id="150">
+                <description>Button Area</description>
+                <posx>1500</posx>
+                <posy>665</posy>
+                <width>450</width>
+                <height>351</height>
+                <onleft>120</onleft>
+                <onright>120</onright>
+                <onup>120</onup>
+                <ondown>120</ondown>
+                <orientation>vertical</orientation>
+                <scrolltime>0</scrolltime>
+                <itemlayout height="69">
+					<control type="label">
+						<posx>30</posx>
+						<width>1200</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>Disabled</textcolor>
+						<selectedcolor>TopBarIcon</selectedcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69">
+                    <control type="label">
+						<posx>30</posx>
+						<width>1200</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>Highlight</textcolor>
+						<selectedcolor>Highlight</selectedcolor>
+						<visible>Control.HasFocus(150)</visible>
+					</control>
+					<control type="label">
+						<posx>30</posx>
+						<width>1200</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>Disabled</textcolor>
+						<selectedcolor>TopBarIcon</selectedcolor>
+						<visible>!Control.HasFocus(150)</visible>
+					</control>
+				</focusedlayout>
+            </control>
+				
+			
 			
 		</control>
 	</controls>
