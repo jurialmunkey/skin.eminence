@@ -316,6 +316,7 @@
             <include>DefOSDUpDown</include>
             <texturefocus colordiffuse="Highlight">osd/fullscreen.png</texturefocus>
             <texturenofocus colordiffuse="PanelFG">osd/fullscreen.png</texturenofocus>
+            <onclick>Dialog.Close(PlayerControls.xml,true)</onclick>
             <onclick>Action(fullscreen)</onclick>
             <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
         </control>

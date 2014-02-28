@@ -126,7 +126,7 @@
                 <posx>-18</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
+                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
                 <onright>50</onright>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>

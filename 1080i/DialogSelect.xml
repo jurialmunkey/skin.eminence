@@ -40,7 +40,7 @@
 			    <include>Animation.SlideOpen.Right</include>            
 				<posx>265</posx>
 				<posy>120</posy>
-				<width>1416</width>
+				<width>1400</width>
 				<height>690</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>

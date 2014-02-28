@@ -236,7 +236,9 @@
                 <aspectratio aligny="top">scale</aspectratio>
                 <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                 <bordersize>1</bordersize>
+                <visible>!stringcompare(ListItem.Label,..)</visible>
             </control>
+            
             <control type="label">
                 <posx>22</posx>
                 <posy>254</posy>
@@ -280,6 +282,18 @@
                 <font>Font-ListInfo</font>
                 <label>$VAR[ExtraInfo]</label>
             </control>
+            <control type="image">
+                <posx>11</posx>
+                <posy>11</posy>
+                <width>434</width>
+                <height>668</height>
+                <fadetime>350</fadetime>
+                <texture background="true">$VAR[FanartImage]</texture>
+                <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
+                <visible>stringcompare(ListItem.Label,..)</visible>
+            </control>
         </control>
     </include>
 	<include name="View_52_Wall">
@@ -294,7 +308,7 @@
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft>SetFocus(9500)</onleft>
+                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
                 <onright>50</onright>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
