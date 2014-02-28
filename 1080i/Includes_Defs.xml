@@ -44,7 +44,7 @@
     <include name="DefSettingsRightGroup">
         <posx>650</posx>
         <posy>120</posy>
-        <width>1020</width>
+        <width>1028</width>
         <height>549</height>
         <itemgap>3</itemgap>
         <pagecontrol>60</pagecontrol>

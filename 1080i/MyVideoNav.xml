@@ -408,8 +408,22 @@
                     <include>DefContextMenuButton</include>
                     <label>$LOCALIZE[587]$INFO[Window.Property(filter),: ,]</label>
                     <onclick>SendClick(videolibrary,19)</onclick>
-                    <onclick>SetFocus(21)</onclick>
+                    <onclick>SetFocus(50)</onclick>
+                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                 </control>
+
+				<control type="togglebutton" id="98">
+					<visible>Container.CanFilterAdvanced</visible>
+					<description>Filter</description>
+					<include>DefContextMenuButton</include>
+					<label>587</label>
+					<onclick>SetFocus(50)</onclick>
+					<onclick>Filter</onclick>
+					<altlabel>✓  $LOCALIZE[587]</altlabel>
+                    <usealttexture>Container.Filtered</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+				</control>
                 
                 <control type="button" id="9002">
                     <description>Search</description>
@@ -419,7 +433,7 @@
                     <label>137</label>
                 </control>
                 
-                <control type="button" id="98">
+                <control type="button" id="99">
                     <description>Open Home Jumplist</description>
                     <include>DefContextMenuButton</include>
                     <label>31108</label>

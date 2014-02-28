@@ -87,7 +87,7 @@
                 <control type="label">
                     <posx>130</posx>
                     <posy>94</posy>
-                    <width>500</width>
+                    <width>600</width>
                     <align>left</align>
                     <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Condition),,$COMMA  ]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,]$INFO[System.TemperatureUnits]</label>
