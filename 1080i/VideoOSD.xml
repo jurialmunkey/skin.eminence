@@ -64,6 +64,8 @@
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/ff.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG" flipx="true">osd/ff.png</texturenofocus>
                     <onclick>PlayerControl(Rewind)</onclick>
+                    <enable>Player.SeekEnabled</enable>
+                    <animation effect="fade" start="100" end="33" time="100" condition="!Player.SeekEnabled">Conditional</animation>
                 </control>
 
                 <control type="togglebutton" id="14">
@@ -80,6 +82,8 @@
                     <alttexturefocus colordiffuse="Highlight">osd/play.png</alttexturefocus>
                     <alttexturenofocus colordiffuse="PanelFG">osd/play.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
+                    <enable>Player.PauseEnabled</enable>
+                    <animation effect="fade" start="100" end="33" time="100" condition="!Player.PauseEnabled">Conditional</animation>
                 </control>
 
                 <control type="button" id="15">
@@ -104,6 +108,8 @@
                     <texturefocus colordiffuse="Highlight">osd/ff.png</texturefocus>
                     <texturenofocus colordiffuse="PanelFG">osd/ff.png</texturenofocus>
                     <onclick>PlayerControl(Forward)</onclick>
+                    <enable>Player.SeekEnabled</enable>
+                    <animation effect="fade" start="100" end="33" time="100" condition="!Player.SeekEnabled">Conditional</animation>
                 </control>
 
                 <control type="button" id="17">

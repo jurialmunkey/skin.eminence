@@ -3,7 +3,7 @@
 <window id="12">
 	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
+    <background>0</background>
 	<controls>
 
 		<include>GlobalBackground</include>
@@ -154,8 +154,9 @@
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>3</onleft>
-            <onright>5</onright>
-            <include>Animation.SlideOpen.Left</include>
+            <onright>ClearProperty(movement,settings)</onright>
+				<onright>$VAR[DefSettingsOnRight]</onright>
+            <include>Animation.SlideOpen.Settings</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
             <include>DialogVisibility</include>
         </control>

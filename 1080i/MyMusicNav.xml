@@ -4,6 +4,7 @@
 	<include condition="[Window.Previous(Home) | Window.Previous(playercontrols)] + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
     <include condition="![Window.Previous(Home) | Window.Previous(playercontrols)] | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
 	<allowoverlay>yes</allowoverlay>
+	<background>0</background>
 	<views>50,51,52,53,54,55,56</views>
 
 	<controls>
@@ -281,6 +282,7 @@
                     <include>DefContextMenuButton</include>
                     <label>31158</label>
                     <onclick>Action(fullscreen)</onclick>
+                    <visible>Player.HasMedia</visible>
                 </control>
 
             </control>

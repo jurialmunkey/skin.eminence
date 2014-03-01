@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">56</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<views>56,50</views>
+	<background>0</background>
 
 	<controls>
 
@@ -91,6 +92,7 @@
                     <include>DefContextMenuButton</include>
                     <label>31158</label>
                     <onclick>Action(fullscreen)</onclick>
+                    <visible>Player.HasMedia</visible>
                 </control>
 
             </control>

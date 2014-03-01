@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <allowoverlay>no</allowoverlay>
+    <background>0</background>
     <controls>
     
         <include>GlobalBackground</include>
-
+        <control type="label">
+            <posx>262</posx>
+            <posy>220</posy>
+            <width>690</width>
+            <font>Font-EPGRuler</font>
+            <label>$INFO[Control.GetLabel(30)]</label>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
+        </control>
+        <control type="label">
+            <posx>262</posx>
+            <posy>220</posy>
+            <width>690</width>
+            <font>Font-EPGRuler</font>
+            <label>$INFO[Control.GetLabel(29)]</label>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
+            <visible>IsEmpty(Control.GetLabel(30))</visible>
+        </control>
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
@@ -37,6 +58,7 @@
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <visible>!Control.IsVisible(10)</visible>
             </control>
+            
             <control type="group">
                 <visible>!Control.IsVisible(10)</visible>
                 <posx>974</posx>
@@ -129,7 +151,7 @@
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <scrolltime>200</scrolltime>
-                <control type="togglebutton" id="32" description="TV Channels">
+                <control type="button" id="32" description="TV Channels">
                     <label>$LOCALIZE[19023]</label>
                     <include>DefContextMenuButton</include>
                 </control>
@@ -155,6 +177,14 @@
                 </control>-->
             </control>
         </control>
+        <control type="label" id="29">
+			<description>Empty so we can pass the values up one level</description>
+			<visible>False</visible>
+		</control>
+		<control type="label" id="30">
+			<description>Empty so we can pass the values up one level</description>
+			<visible>False</visible>
+		</control>
         
     </controls>
 </window>

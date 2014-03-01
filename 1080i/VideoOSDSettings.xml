@@ -51,6 +51,7 @@
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>
+                <font>Font-ListInfo</font>
 			</control>
 
 			<control type="radiobutton" id="8">
@@ -66,6 +67,7 @@
                 <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
                 <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
                 <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+                <font>Font-ListInfo</font>
 			</control>
 
 			<control type="spincontrolex" id="9">
@@ -81,6 +83,7 @@
                 <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
+                <font>Font-ListInfo</font>
 			</control>
 
 			<control type="sliderex" id="10">
@@ -91,6 +94,7 @@
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>
+                <font>Font-ListInfo</font>
 			</control>
 
 		</control>

@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<background>0</background>
 	<controls>
 
 		<include>GlobalBackground</include>
@@ -20,6 +21,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
         </control>
+   
         <control type="group">
 		    <posx>253</posx>
 		    <posy>70</posy>
@@ -438,8 +440,9 @@
             <posy>280</posy>
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>e</onleft>
-            <onright>5</onright>
+            <onleft>3</onleft>
+            <onright>ClearProperty(movement,settings)</onright>
+				<onright>$VAR[DefSettingsOnRight]</onright>
             <include>Animation.SlideOpen.Left</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>

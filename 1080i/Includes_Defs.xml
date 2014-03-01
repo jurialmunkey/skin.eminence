@@ -248,6 +248,8 @@
         <focusedcolor>Highlight</focusedcolor>
         <textoffsetx>0</textoffsetx>
         <font>Font-Button</font>
+        <onfocus>SetProperty(9000Focus,1,home)</onfocus>
+        <onunfocus>ClearProperty(9000Focus,home)</onunfocus>
         <textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
 		<textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
 		<textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>

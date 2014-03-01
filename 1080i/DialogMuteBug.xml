@@ -3,7 +3,7 @@
 <window id="113">
 	<defaultcontrol always="true">901</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-    <zorder>20</zorder>
+    <zorder>10</zorder>
 	<controls>
 	    <include>GlobalLeftHeader</include>
 	</controls>

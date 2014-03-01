@@ -3,6 +3,7 @@
 <window id="34">
 	<defaultcontrol always="true">4</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<background>0</background>
     <controls>
         <include>GlobalBackground</include>
 		<control type="group">

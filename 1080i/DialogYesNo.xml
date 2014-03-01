@@ -2,7 +2,7 @@
 <window id="100">
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<zorder>10</zorder>
+	<zorder>4</zorder>
     <controls>
 	    <control type="image">
 	        <include>Dimensions_Fullscreen</include>

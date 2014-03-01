@@ -3,7 +3,7 @@
 <window id="7">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
+    <background>0</background>
 	<controls>
 
 		<include>GlobalBackground</include>
@@ -176,12 +176,14 @@
 				<control type="label" id="52">
 					<description>XBMC XBE BUILD Version</description>
 					<width>1330</width>
+					<font>Font-ListInfo</font>
 				</control>
 
 				<control type="label" id="21">
 					<description>CPU Text</description>
 					<width>1330</width>
 					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+					<font>Font-ListInfo</font>
 				</control>
 				
 				<control type="label">
@@ -196,6 +198,7 @@
 					<width>1330</width>
 					<height>20</height>
 					<info>System.CPUUsage</info>
+					
 				</control>
 				
 				<control type="label">
@@ -209,6 +212,7 @@
 					<description>Memory Text</description>
 					<width>1330</width>
 					<label>$LOCALIZE[31121]: $INFO[system.memory(used.percent)]</label>
+					<font>Font-ListInfo</font>
 				</control>
 				
 				<control type="label">
@@ -223,62 +227,74 @@
 					<width>1330</width>
 					<height>20</height>
 					<info>system.memory(used)</info>
+					<font>Font-ListInfo</font>
 				</control>
 
 				<control type="label" id="25">
 					<description>Spacer</description>
 					<font>-</font>
 					<width>1330</width>
+					
 				</control>
 
 				<control type="label" id="2">
 					<description>Label 2</description>
+					<font>Font-ListInfo</font>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="3">
+                    <font>Font-ListInfo</font>
 					<description>Label 3</description>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="4">
 					<description>Label 4</description>
+					<font>Font-ListInfo</font>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="5">
 					<description>Label 5</description>
+					<font>Font-ListInfo</font>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="6">
 					<description>Label 6</description>
+					<font>Font-ListInfo</font>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="7">
 					<description>Label 7</description>
+					<font>Font-ListInfo</font>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="8">
 					<description>Label 8</description>
 					<width>1330</width>
+					<font>Font-ListInfo</font>
 				</control>
 
 				<control type="label" id="9">
 					<description>Label 9</description>
 					<width>1330</width>
+					<font>Font-ListInfo</font>
 				</control>
 
 				<control type="label" id="10">
 					<description>Label 10</description>
 					<width>1330</width>
+					<font>Font-ListInfo</font>
 				</control>
 
 				<control type="label" id="11">
 					<description>Label 11</description>
 					<width>1330</width>
+					<font>Font-ListInfo</font>
 				</control>
 
 			</control>
