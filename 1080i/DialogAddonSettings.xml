@@ -38,10 +38,10 @@
 			<control type="grouplist" id="2">
 				<description>Control Area</description>
 				<height>690</height>
-				<pagecontrol>61</pagecontrol>
+				<pagecontrol>10</pagecontrol>
 				<include>DefSettingsRightGroup</include>
 				<onleft>9</onleft>
-				<onright>61</onright>
+				<onright>10</onright>
 				<onup>10</onup>
 			</control>
 
@@ -108,8 +108,9 @@
             <height>690</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>9</onleft>
-            <onright>10</onright>
+            <onright>2</onright>
             <include>Animation.SlideOpen.Left</include>
+            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(61)">Conditional</animation>
         </control>
         
 		<control type="group">	
