@@ -1,3 +1,13 @@
+[B]0.9.10[/B]
+Left from songs moves to playlist
+Playlist limited to Big List and List
+Playlist default at 56 Big List
+Added playlist header icon and other header icons such as file manager
+
+[B]0.9.9[/B]
+Change border to 5 px to accomodate rounded texture themes
+Put wide view texture to background loader
+
 [B]0.9.8[/B]
 Updates to settings categories appearance.
 Videowindow in epg timeline

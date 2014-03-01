@@ -50,7 +50,7 @@
 						<posy>0</posy>
 						<width>630</width>
 						<height>66</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
+						<texture border="5">other_textures/ButtonNF.png</texture>
 					</control>
 
 					<control type="label">
@@ -252,7 +252,7 @@
 						<posy>0</posy>
 						<width>630</width>
 						<height>66</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
+						<texture border="5">other_textures/ButtonNF.png</texture>
 					</control>
 
 					<control type="label">

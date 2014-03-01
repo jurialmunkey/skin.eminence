@@ -200,7 +200,7 @@
 	<variable name="NavSideLabel">
 	    <value condition="Window.IsVisible(favourites)">$LOCALIZE[1036]</value>
 	    <value condition="substring(Container.FolderPath,addons://,left) | Window.IsVisible(MyPrograms.xml)">$LOCALIZE[24001]</value>
-	    <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[136]</value>
+	    <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
 	    <value condition="stringcompare(Container.FolderPath,library://video/inprogressshows.xml/)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[31109]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[31109]</value>

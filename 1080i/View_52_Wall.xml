@@ -8,7 +8,7 @@
             <control type="image">
                 <height>336</height>
                 <width>221</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
  
             
@@ -24,43 +24,32 @@
             </control>
 
         </itemlayout>
-        <itemlayout width="239" height="354" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
+        <itemlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
 
             <control type="image">
-                <height>336</height>
+                <height>218</height>
                 <width>221</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
  
             <control type="image">
                 <posx>11</posx>
                 <posy>11</posy>
-                <height>199</height>
+                <height>196</height>
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
                 <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                 <bordersize>1</bordersize>
             </control>
-            
-            
-            <control type="textbox">
-                <posx>11</posx>
-                <posy>221</posy>
-                <width>185</width>
-                <height>100</height>
-                <align>left</align>
-                <font>Font-ListInfo-Small</font>
-                <label>$VAR[VARLabel]</label>
-            </control>
-            
+        
         </itemlayout>
         <itemlayout width="478" height="354" condition="Container.Content(episodes)">
 
             <control type="image">
                 <height>336</height>
                 <width>460</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
  
             <control type="image">
@@ -95,7 +84,7 @@
             <control type="image">
                 <height>336</height>
                 <width>221</width>
-                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
             </control>
  
             <control type="image">
@@ -110,18 +99,18 @@
             </control>
 
         </focusedlayout>
-        <focusedlayout width="239" height="354" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
+        <focusedlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
 
             <control type="image">
-                <height>336</height>
+                <height>218</height>
                 <width>221</width>
-                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
             </control>
  
             <control type="image">
                 <posx>11</posx>
                 <posy>11</posy>
-                <height>199</height>
+                <height>196</height>
                 <width>199</width>
                 <texture background="true">$VAR[PosterImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
@@ -129,25 +118,13 @@
                 <bordersize>1</bordersize>
             </control>
             
-            
-            <control type="textbox">
-                <posx>11</posx>
-                <posy>221</posy>
-                <width>185</width>
-                <height>100</height>
-                <align>left</align>
-                <font>Font-ListInfo-Small</font>
-                <label>$VAR[VARLabel]</label>
-                <wrapmultiline>true</wrapmultiline>
-            </control>
-
         </focusedlayout>
         <focusedlayout width="478" height="354" condition="Container.Content(episodes)">
 
             <control type="image">
                 <height>336</height>
                 <width>460</width>
-                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
             </control>
  
             <control type="image">
@@ -187,7 +164,8 @@
             <width>1434</width>
             <height>708</height>
             <onleft>60</onleft>
-            <onright>9000</onright>
+                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
             <onup>52</onup>
             <ondown>52</ondown>
             <include>DefOnBack</include>
@@ -206,7 +184,8 @@
             <width>956</width>
             <height>708</height>
             <onleft>60</onleft>
-            <onright>9000</onright>
+                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
             <onup>52</onup>
             <ondown>52</ondown>
             <include>DefOnBack</include>
@@ -220,10 +199,11 @@
         <control type="group">
             <posx>974</posx>
             <posy>210</posy>
+            <visible>![[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
             <control type="image">
                 <height>690</height>
                 <width>460</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
 
             <control type="image">
@@ -295,6 +275,73 @@
                 <visible>stringcompare(ListItem.Label,..)</visible>
             </control>
         </control>
+        <control type="group">
+            <posx>974</posx>
+            <posy>210</posy>
+            <visible>[[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
+            <control type="image">
+                <height>690</height>
+                <width>460</width>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+            </control>
+
+            <control type="image">
+                <posx>11</posx>
+                <posy>11</posy>
+                <width>434</width>
+                <height>434</height>
+                <fadetime>350</fadetime>
+                <texture background="true">$VAR[FanartImage]</texture>
+                <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
+                <visible>!stringcompare(ListItem.Label,..)</visible>
+            </control>
+        
+            <control type="label">
+                <posx>22</posx>
+                <posy>450</posy>
+                <height>68</height>
+                <width>412</width>
+                <textcolor>Selected</textcolor>
+                <align>left</align>
+                <font>Font-ListHeader</font>
+                <label>$INFO[ListItem.Label]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="textbox">
+                <posx>22</posx>
+                <posy>510</posy>
+                <height>120</height>
+                <width>412</width>
+                <textcolor>Selected</textcolor>
+                <align>justify</align>
+                <font>Font-ListInfo</font>
+                <label>$VAR[PlotBox]</label>
+            </control>
+            <control type="label">
+                <posx>22</posx>
+                <posy>618</posy>
+                <height>68</height>
+                <width>412</width>
+                <textcolor>Selected</textcolor>
+                <align>center</align>
+                <font>Font-ListInfo</font>
+                <label>$VAR[ExtraInfo]</label>
+            </control>
+            <control type="image">
+                <posx>11</posx>
+                <posy>11</posy>
+                <width>434</width>
+                <height>668</height>
+                <fadetime>350</fadetime>
+                <texture background="true">$VAR[FanartImage]</texture>
+                <aspectratio aligny="top">scale</aspectratio>
+                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                <bordersize>1</bordersize>
+                <visible>stringcompare(ListItem.Label,..)</visible>
+            </control>
+        </control>
     </include>
 	<include name="View_52_Wall">
 	
@@ -302,14 +349,15 @@
             <visible>Control.IsVisible(52)</visible>
             <include>Animation.ViewChange</include> 
             <include>DefSideLabel</include>           
-            <include condition="!Skin.HasSetting(wallview.info)">View_52_Wall_NoInfo</include>
-            <include condition="Skin.HasSetting(wallview.info)">View_52_Wall_Info</include>
+            <include condition="!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>
+            <include condition="Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
+            <include condition="!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>
+            <include condition="Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
             <control type="scrollbar" id="60">
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
-                <onright>50</onright>
+                <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
         </control>

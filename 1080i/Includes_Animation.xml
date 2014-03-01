@@ -36,13 +36,16 @@
     <include name="Animation.HeaderDialog">
 	    <animation type="Visible" condition="!Window.Previous(home)">
 	        <effect type="fade" start="0" end="100" time="150"/>
+	        <effect type="zoom" start="80" end="100" time="150" center="960,100"/>
 	        <effect type="slide" start="400" end="0" time="150"/>	        
 	    </animation>
 	    <animation type="Hidden">
 	        <effect type="fade" end="0" start="100" time="150"/>
+	        <effect type="zoom" start="100" end="80" time="150" center="960,100"/>
 	        <effect type="slide" end="400" start="0" time="150"/>	        
 	    </animation>
     </include>
+    
     
     <include name="Animation.HeaderDialog.Open">
 	    <animation type="WindowOpen">

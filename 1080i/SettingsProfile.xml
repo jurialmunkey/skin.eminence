@@ -81,7 +81,7 @@
 				    <control type="image">
 				        <height>66</height>
 				        <width>920</width>
-				        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+				        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
 				        <visible>Control.HasFocus(2)</visible>
 				    </control>
 					<control type="label">

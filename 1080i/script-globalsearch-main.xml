@@ -57,13 +57,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(111)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(111)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -118,13 +118,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(121)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(121)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -176,13 +176,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(131)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(131)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -222,13 +222,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(141)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(141)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -281,13 +281,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(151)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(151)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -340,13 +340,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(161)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(161)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -399,13 +399,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(171)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(171)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>
@@ -456,13 +456,13 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                                 <visible>Control.HasFocus(181)</visible>
                             </control>
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <visible>!Control.HasFocus(181)</visible>
                             </control>
                             <include>DefGlobalSearchListEnd</include>

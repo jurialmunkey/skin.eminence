@@ -3,10 +3,10 @@
 
     <include name="PVRrecordinglayout">
         <control type="image">
-            <posx>11</posx>
-            <posy>11</posy>  
-            <width>107</width>
-            <height>107</height>
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
             <texture>$VAR[PVRIcon]</texture>
             <aspectratio>keep</aspectratio>
         </control>
@@ -42,10 +42,10 @@
     </include>
     <include name="PVRrecordinglayoutfocus">
         <control type="image">
-            <posx>11</posx>
-            <posy>11</posy>  
-            <width>107</width>
-            <height>107</height>
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
             <texture>$VAR[PVRIcon]</texture>
             <aspectratio>keep</aspectratio>
         </control>
@@ -82,10 +82,10 @@
     </include>
     <include name="PVRlistlayout">
         <control type="image">
-            <posx>11</posx>
-            <posy>11</posy>  
-            <width>107</width>
-            <height>107</height>
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
             <texture>$VAR[PVRIcon]</texture>
             <aspectratio>keep</aspectratio>
         </control>
@@ -132,10 +132,10 @@
     </include>
     <include name="PVRlistlayoutfocus">
         <control type="image">
-            <posx>11</posx>
-            <posy>11</posy>  
-            <width>107</width>
-            <height>107</height>
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
             <texture>$VAR[PVRIcon]</texture>
             <aspectratio>keep</aspectratio>
         </control>
@@ -185,7 +185,7 @@
             <control type="image">
                 <width>945</width>
                 <height>129</height>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>        
             <include>PVRlistlayout</include>
         </itemlayout>
@@ -197,7 +197,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>129</height>
-                    <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                 
                 </control>
                 <include>PVRlistlayoutfocus</include>
@@ -207,7 +207,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>129</height>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <include>PVRlistlayout</include>
             </control>
@@ -283,7 +283,7 @@
                     <control type="image">
                         <width>945</width>
                         <height>129</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
                 </itemlayout>
@@ -294,7 +294,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
                     </control>
@@ -303,7 +303,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
                     </control>
@@ -342,7 +342,7 @@
                 <control type="image">
                     <width>410</width>
                     <height>95</height>
-                    <texture border="2">common/border-inner.png</texture>
+                    <texture border="5">common/border-inner.png</texture>
                     <colordiffuse>PosterBorder</colordiffuse>
                 </control>   
                 <control type="image">
@@ -364,7 +364,7 @@
                 <control type="image">
                     <width>410</width>
                     <height>95</height>
-                    <texture border="2">common/border-inner.png</texture>
+                    <texture border="5">common/border-inner.png</texture>
                 </control>   
                 <control type="image">
                     <posx>11</posx>
@@ -386,7 +386,7 @@
                 <control type="image" id="2">
                     <width>246</width>
                     <height>95</height>
-                    <texture border="2">common/border-inner.png</texture>
+                    <texture border="5">common/border-inner.png</texture>
                     <colordiffuse>PosterBorder</colordiffuse>
                 </control>   
                 <control type="image">
@@ -420,7 +420,7 @@
                 <control type="image" id="2">
                     <width>246</width>
                     <height>95</height>
-                    <texture border="2">common/border-inner.png</texture>
+                    <texture border="5">common/border-inner.png</texture>
                 </control>   
                 <control type="image">
                     <posy>6</posy>
@@ -457,7 +457,7 @@
             <control type="image">
                 <height>189</height>
                 <width>1670</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
             
              <control type="image">
@@ -541,7 +541,7 @@
                     <control type="image">
                         <width>945</width>
                         <height>129</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
                 </itemlayout>
@@ -552,7 +552,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
                     </control>
@@ -561,7 +561,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
                     </control>
@@ -590,7 +590,7 @@
                     <control type="image">
                         <width>945</width>
                         <height>129</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
                 </itemlayout>
@@ -601,7 +601,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
                     </control>
@@ -610,7 +610,7 @@
                         <control type="image">
                             <width>945</width>
                             <height>129</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
                     </control>

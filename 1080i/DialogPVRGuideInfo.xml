@@ -28,7 +28,7 @@
                 <control type="image">
                     <width>467</width>
                     <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="image">
                     <posx>11</posx>

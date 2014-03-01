@@ -26,13 +26,13 @@
             <control type="image">
                 <width>420</width>
                 <height>564</height>
-                <texture border="2" colordiffuse="Keyboard-BG">common/white.png</texture>
+                <texture border="5" colordiffuse="Keyboard-BG">common/white.png</texture>
             </control>
         
             <control type="image">
                 <width>420</width>
                 <height>564</height>
-                <texture border="2" colordiffuse="9f000000">common/border-inner.png</texture>
+                <texture border="5" colordiffuse="9f000000">common/border-inner.png</texture>
             </control>
 
             <control type="label" id="1">
@@ -73,8 +73,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12311</label>
@@ -92,8 +92,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12312</label>
@@ -111,8 +111,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12313</label>
@@ -130,8 +130,8 @@
                     <width>90</width>
                     <height>186</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <textwidth>180</textwidth>
@@ -151,8 +151,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12314</label>
@@ -170,8 +170,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12315</label>
@@ -189,8 +189,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12316</label>
@@ -208,8 +208,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12317</label>
@@ -227,8 +227,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12318</label>
@@ -246,8 +246,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12319</label>
@@ -265,8 +265,8 @@
                     <width>90</width>
                     <height>186</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <textwidth>180</textwidth>
@@ -288,8 +288,8 @@
                     <label>&lt;</label>
                     <focusedcolor>black</focusedcolor>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <onleft>21</onleft>
@@ -305,8 +305,8 @@
                     <width>96</width>
                     <height>90</height>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <label>12310</label>
@@ -326,8 +326,8 @@
                     <label>&gt;</label>
                     <focusedcolor>black</focusedcolor>
                     <align>center</align>
-                    <texturenofocus border="2" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
-                    <texturefocus border="2" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                    <texturenofocus border="5" colordiffuse="9f000000">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
                     <onleft>10</onleft>

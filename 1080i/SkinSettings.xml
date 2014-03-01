@@ -58,28 +58,28 @@
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="32" description="Home">
                     <label>10000</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="33" description="Views">
                     <label>31147</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="2">common/border-inner.png</alttexturenofocus>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
             </control>
             

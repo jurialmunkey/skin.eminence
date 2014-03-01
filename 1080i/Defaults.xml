@@ -55,7 +55,7 @@
 		<textcolor>PanelFG-NF</textcolor>
 		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -71,9 +71,9 @@
 		<textcolor>PanelFG-NF</textcolor>
 		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<alttexturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</alttexturefocus>
+		<alttexturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</alttexturefocus>
 		<alttexturenofocus colordiffuse="PanelFG-NF">-</alttexturenofocus>
 		<align>center</align>
 		<aligny>center</aligny>
@@ -92,7 +92,7 @@
 		<textcolor>PanelFG-NF</textcolor>
 		<focusedcolor>PanelFG</focusedcolor>
 		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<radiowidth>48</radiowidth>
 		<radioheight>48</radioheight>
@@ -111,7 +111,7 @@
 		<height>66</height>
 		<label>-</label>
 		<font>Font-Button</font>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
@@ -136,7 +136,7 @@
 		<width>23</width>
 		<spinwidth>48</spinwidth>
 		<spinheight>48</spinheight>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
 		<texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
@@ -158,13 +158,13 @@
 		<posy>0</posy>
 		<height>66</height>
 		<width>450</width>
-		<texturefocus colordiffuse="PosterBorder" border="2">common/border-inner.png</texturefocus>
+		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
 		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
 		<sliderwidth>230</sliderwidth>
 		<sliderheight>23</sliderheight>
 		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="2" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
 		<font>Font-Button</font>
 		<textcolor>PanelFG-NF</textcolor>
 		<focusedcolor>PanelFG</focusedcolor>
@@ -189,8 +189,8 @@
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="2" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
+		<textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
 	</default>
 
 	<default type="scrollbar">

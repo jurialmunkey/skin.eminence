@@ -44,7 +44,7 @@
                 <control type="image">
                     <width>467</width>
                     <height>689</height>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="group">
                     <posx>11</posx>
@@ -52,7 +52,7 @@
                     <control type="image">
                         <width>445</width>
                         <height>258</height>
-                        <texture colordiffuse="Black" border="2">common/white.png</texture>
+                        <texture colordiffuse="Black" border="5">common/white.png</texture>
                     </control>
                     <control type="videowindow">
                         <width>445</width>

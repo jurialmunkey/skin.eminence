@@ -32,7 +32,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
          
                         <control type="image">
@@ -71,7 +71,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             
                         </control>
                         <control type="image">
@@ -124,7 +124,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             
                         </control>
                         <control type="image">
@@ -168,7 +168,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                             </control>
                             <control type="image">
                                 <posx>11</posx>
@@ -206,7 +206,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             
                             </control>
                             <control type="image">
@@ -246,7 +246,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                             </control>
                             <control type="image">
                                 <posx>11</posx>
@@ -294,7 +294,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             
                             </control>
                             <control type="image">
@@ -349,7 +349,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -388,7 +388,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="image">
                             <posx>11</posx>

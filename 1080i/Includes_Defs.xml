@@ -93,6 +93,13 @@
 	    <value condition="Window.IsVisible(SkinSettings)">ReplaceWindow(PvrSettings)</value>
 	</variable>
 	
+	<include name="DefScrollBarMove">
+	    <onleft condition="Container.Content(songs) + Window.IsVisible(MyMusicNav.xml)">ActivateWindow(MusicPlaylist)</onleft>
+        <onleft condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">9000</onleft>
+        <onleft condition="!Container.Content(songs) + [[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
+        <onright>50</onright>
+	</include>
+	
 	<include name="DefSideLabel">
 	    <control type="label">
             <posx>1475</posx>
@@ -127,6 +134,28 @@
             <include>View_53_Wide</include>
             <include>View_54_Lovefilm</include>
             <include>View_55_Banner</include>            
+            <include>View_56_BigList</include>            
+		</control>
+		<control type="group">
+	        <visible>ControlGroup(9000).HasFocus()</visible>
+	        <include>Animation.FadeIn</include>
+	        <include>Animation.FadeOut</include>
+            <include>GlobalVignette</include>
+	    </control>
+	</include>
+	
+	<include name="DefMyNavViews.Right">
+	    <control type="group">
+            <posy>70</posy>
+            <posx>233</posx>
+            <include>DialogVisibility</include>
+            <visible allowhiddenfocus="true">![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502) | ControlGroup(300).HasFocus()]</visible>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(movieinformation)">Conditional</animation>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(musicinformation)">Conditional</animation>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <include>Animation.SlideOpen.Right</include>
+            <include>Animation.FadeOut</include>
+            <include>View_50_List</include>
             <include>View_56_BigList</include>            
 		</control>
 		<control type="group">
@@ -254,7 +283,7 @@
             <control type="image">
                 <height>336</height>
                 <width>221</width>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
             <control type="image">
                 <posx>11</posx>

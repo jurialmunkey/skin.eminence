@@ -15,7 +15,8 @@
                 <width>972</width>
                 <height>690</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
+                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <include>DefOnBack</include>
@@ -78,7 +79,7 @@
                             <control type="image">
                                 <height>69</height>
                                 <width>969</width>
-                                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                                 <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             </control>
@@ -184,7 +185,7 @@
                 <control type="image">
                     <width>444</width>
                     <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="image">
                     <posx>11</posx>
@@ -215,7 +216,7 @@
                 <control type="image">
                     <height>690</height>
                     <width>444</width>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     
                 </control>
                 <control type="image">
@@ -278,7 +279,7 @@
                 <control type="image">
                     <width>444</width>
                     <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="image">
                     <posx>11</posx>
@@ -291,22 +292,34 @@
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
                 </control>
+
+                <control type="label">
+                    <posx>22</posx>
+                    <posy>450</posy>
+                    <height>68</height>
+                    <width>400</width>
+                    <textcolor>Selected</textcolor>
+                    <align>left</align>
+                    <font>Font-ListHeader</font>
+                    <label>$VAR[VARLabel]</label>
+                    <scroll>true</scroll>
+                </control>
                 <control type="textbox">
                     <posx>22</posx>
-                    <posy>440</posy>
-                    <height>230</height>
+                    <posy>516</posy>
+                    <height>160</height>
                     <width>400</width>
+                    <textcolor>Selected</textcolor>
                     <align>justify</align>
                     <font>Font-ListInfo</font>
-                    <label fallback="31122">$VAR[PlotBox]</label>
+                    <label>$VAR[PlotBox]</label>
                 </control>
             </control>
             <control type="scrollbar" id="60">
                 <posx>-18</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
-                <onright>50</onright>
+                <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
         </control>

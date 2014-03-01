@@ -49,7 +49,7 @@
                 <posy>210</posy>
                 <width>690</width>
                 <height>690</height>
-                <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>   
             <control type="multiimage">
                 <posx>29</posx>
@@ -188,7 +188,7 @@
                     <control type="image">
                         <width>714</width>
                         <height>105</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
@@ -253,7 +253,7 @@
                     <control type="image">
                         <width>714</width>
                         <height>105</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
@@ -428,7 +428,7 @@
                         <control type="image">
                             <width>274</width>
                             <height>339</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="label">
                             <posx>137</posx>
@@ -471,7 +471,7 @@
                         <control type="image">
                             <width>274</width>
                             <height>339</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="label">
                             <posx>137</posx>

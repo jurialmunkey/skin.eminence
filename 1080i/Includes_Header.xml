@@ -35,6 +35,7 @@
     <variable name="MainHeaderIcon">
         <value condition="Window.IsVisible(DialogMuteBug.xml)">special://skin/extras/icons/mute.png</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">special://skin/extras/icons/power.png</value>
+        <value condition="Window.IsVisible(DialogFavourites.xml)">special://skin/extras/icons/favourites.png</value>
         <value condition="Player.HasAudio + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/songs.png</value>
         <value condition="Player.HasVideo + VideoPlayer.Content(livetv) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/livetv.png</value>
         <value condition="Player.HasVideo + VideoPlayer.Content(movies) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/film.png</value>
@@ -42,28 +43,35 @@
         <value condition="Player.HasVideo + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">special://skin/extras/icons/eye.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">special://skin/extras/icons/film.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">special://skin/extras/icons/tv.png</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml)">special://skin/extras/icons/video-addons.png</value>
         <value condition="Window.IsVisible(MyPVR.xml)">special://skin/extras/icons/livetv.png</value>
         <value condition="Window.IsVisible(MyMusicNav.xml)">special://skin/extras/icons/songs.png</value>
         <value condition="Window.IsVisible(MyPics.xml)">special://skin/extras/icons/pictures.png</value>
         <value condition="Window.IsVisible(MyPrograms.xml)">special://skin/extras/icons/addons.png</value>
         <value condition="Window.IsVisible(weather)">special://skin/extras/icons/sun.png</value>
         <value condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">special://skin/extras/icons/settings.png</value>
+        <value condition="Window.IsVisible(MyMusicPlaylist.xml)">special://skin/extras/icons/playlist.png</value>
+        <value condition="Window.IsVisible(FileManager.xml)">special://skin/extras/icons/database.png</value>
         <value>special://skin/extras/icons/home.png</value>
     </variable>
     
     <variable name="IconHeader">
         <value condition="Window.IsVisible(DialogMuteBug.xml)">$LOCALIZE[31134]</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">$LOCALIZE[33060]</value>
+        <value condition="Window.IsVisible(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="Player.HasAudio + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">$VAR[PlayerStatus]</value>
         <value condition="Player.HasVideo + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(home)]">$VAR[PlayerStatus]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">$LOCALIZE[20343]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml)">$LOCALIZE[3]</value>
         <value condition="Window.IsVisible(MyPVR.xml)">$LOCALIZE[31104]</value>
         <value condition="Window.IsVisible(MyMusicNav.xml)">$LOCALIZE[2]</value>
         <value condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsVisible(weather)">$LOCALIZE[8]</value>
         <value condition="Window.IsVisible(MyPics.xml)">$LOCALIZE[1]</value>
         <value condition="Window.IsVisible(MyPrograms.xml)">$LOCALIZE[0]</value>
+        <value condition="Window.IsVisible(MyMusicPlaylist.xml)">$LOCALIZE[559]</value>
+        <value condition="Window.IsVisible(FileManager.xml)">$LOCALIZE[744]</value>
         <value>$LOCALIZE[10000]</value>
 	</variable>
 	
@@ -257,7 +265,13 @@
         <include>GlobalLeftHeader</include>
         <control type="group" description="Main Header">
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
+            <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
+            <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
+            <visible>!Window.IsActive(DialogOK.xml)</visible>
+            <visible>!Window.IsActive(DialogProgress.xml)</visible>
+            <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!ControlGroup(9000).HasFocus()</visible>
+            <visible>!ControlGroup(9500).HasFocus()</visible>
             <include>Animation.HeaderDialog</include>
             <include>HeaderMainInfo</include>
             <include>HeaderRightInfo</include>

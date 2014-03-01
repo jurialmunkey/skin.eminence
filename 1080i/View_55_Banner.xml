@@ -15,7 +15,8 @@
                 <width>1432</width>
                 <height>708</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
+                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
                 <onup>55</onup>
                 <ondown>55</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -30,7 +31,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                      
                         <control type="image">
@@ -99,7 +100,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>    
                         <control type="image">
                             <posx>11</posx>
@@ -149,7 +150,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>    
                         <control type="image">
                             <posx>11</posx>
@@ -224,7 +225,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>    
                         <control type="image">
                             <posx>11</posx>
@@ -276,8 +277,7 @@
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
-                <onright>50</onright>
+                <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
             

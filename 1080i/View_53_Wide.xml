@@ -14,7 +14,8 @@
                 <width>1434</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
+                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
                 <onup>53</onup>
                 <ondown>53</ondown>
                 <include>DefOnBack</include>
@@ -28,14 +29,14 @@
                     <control type="image">
                         <width>464</width>
                         <height>129</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>  
                         <width>107</width>
                         <height>107</height>
-                        <texture>$VAR[SquareImage]</texture>
+                        <texture background="true">$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
@@ -68,14 +69,14 @@
                     <control type="image">
                         <width>464</width>
                         <height>129</height>
-                        <texture colordiffuse="White" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>  
                         <width>107</width>
                         <height>107</height>
-                        <texture>$VAR[SquareImage]</texture>
+                        <texture background="true">$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
@@ -108,8 +109,7 @@
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>690</height>
-                <onleft condition="[[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>
-                <onright>50</onright>
+                <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
             </control>
         </control>

@@ -13,8 +13,8 @@
                 <posy>-1</posy>
                 <width>674</width>
                 <height>1082</height>
-                <texture colordiffuse="PanelBG" border="2">common/white.png</texture>
-                <bordertexture colordiffuse="PosterBorder" border="2">common/border-inner.png</bordertexture>
+                <texture colordiffuse="PanelBG" border="5">common/white.png</texture>
+                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
             </control>
@@ -115,7 +115,7 @@
                     <control type="image">
                         <width>645</width>
                         <height>109</height>
-                        <texture colordiffuse="PosterBorder" border="2">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <width>645</width>
