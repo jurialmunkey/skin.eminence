@@ -5,49 +5,68 @@
 	<allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Settings</include>
 	<controls>
+	
+	    <control type="group">
+		    <posx>253</posx>
+		    <posy>70</posy>
+		    <include>Animation.SlideOpen.Left</include>
+		    <control type="label" id="20" description="Info Label">
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
+                <width>690</width>
+                <font>Font-ViewCategory</font>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+            </control>
+        </control>
+        
         <control type="group">
-			<posy>210</posy>
+			<posy>160</posy>
 			<include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
 
-            <control type="label" id="20">
-				<description>Header</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<font>Font-DialogHeader</font>
+
+            <control type="grouplist" id="9">
+			    <height>690</height>
+                <include>DefSettingsLeftGroup</include>
+				<onright>2</onright>
+				<onleft>10</onleft>
+				<onup>10</onup>
 			</control>
-            
+			
 			<control type="grouplist" id="2">
 				<description>Control Area</description>
-				<posx>650</posx>
-				<posy>120</posy>
-				<width>1020</width>
-				<height>552</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<onleft>2</onleft>
-				<onright>28</onright>
-				<onup>2</onup>
+				<height>690</height>
+				<pagecontrol>61</pagecontrol>
+				<include>DefSettingsRightGroup</include>
+				<onleft>9</onleft>
+				<onright>61</onright>
+				<onup>10</onup>
 			</control>
 
 			
 			<control type="button" id="3">
                 <description>Default Button</description>
                 <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
 
             <control type="radiobutton" id="4">
                 <description>Default Radio Button</description>
                 <radioposx>942</radioposx>
                 <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
 
             <control type="spincontrolex" id="5">
                 <description>Default Spin Control</description>
                 <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
 
             <control type="button" id="13">
@@ -55,7 +74,8 @@
                 <align>left</align>
                 <focusedcolor>PanelFG</focusedcolor>
                 <height>66</height>
-                <width>450</width>
+                <width>393</width>		
+                
             </control>
 
             <control type="label" id="7">
@@ -71,41 +91,53 @@
 
             <control type="sliderex" id="8">
                 <description>Default Slider</description>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
 			
-			<control type="grouplist" id="9">
-                <posx>265</posx>
-				<posy>120</posy>
-				<width>359</width>
-				<height>552</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-                <control type="button" id="10">
-                    <label>186</label>
-                    <align>left</align>
-                    <onleft>5</onleft>
-                    <ondown>29</ondown>
-                </control>
-
-                <control type="button" id="11">
-                    <description>Cancel</description>
-                    <align>left</align>
-                    <label>222</label>
-                    <onleft>5</onleft>
-                    <onup>28</onup>
-                </control>
-                
-                <control type="button" id="12">
-                    <description>Defaults Button</description>
-                    <align>left</align>
-                    <label>409</label>
-                </control>
-            </control>
+			
+			
             
             
 
 
 		</control>
+		
+		<control type="scrollbar" id="61">
+		    <posx>650</posx>
+            <posy>280</posy>
+            <height>690</height>
+            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
+            <onleft>9</onleft>
+            <onright>10</onright>
+            <include>Animation.SlideOpen.Left</include>
+        </control>
+        
+		<control type="group">	
+			
+            <include>Animation.SlideOpen.Left</include>
+            <include>DefContextMenuBackground</include>
+            <control type="grouplist">
+                <ondown>2</ondown>	
+                <include>DefContextMenuGroupList</include>
+                <control type="button" id="10">
+                    <label>186</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+
+                <control type="button" id="11">
+                    <description>Cancel</description>
+                    <label>222</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+                
+                <control type="button" id="12">
+                    <description>Defaults Button</description>
+                    <label>409</label>
+                    <include>DefContextMenuButton</include>
+                </control>
+            </control>
+        </control>
 	</controls>
 
 </window>
