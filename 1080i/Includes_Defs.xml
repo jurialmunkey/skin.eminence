@@ -203,15 +203,11 @@
         </control>
 	</include>
 	
-	<include name="DefOSDControls">
-	    <width>230</width>
-        <height>48</height>
-        <texturefocus>-</texturefocus>
-        <texturenofocus>-</texturenofocus>
-        <textoffsetx>0</textoffsetx>
-        <font>Font-ListInfo-Small</font>
-        <focusedcolor>Highlight</focusedcolor>
-	</include>
+	
+	
+	<!------------------>
+	<!-- Context Menu -->
+	<!------------------>
 	
 	<include name="DefContextMenuBackground">
 	    <control type="image">
@@ -260,12 +256,6 @@
 		<texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
 		<textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
 		<texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-	</include>
-	
-	<include name="DefInfoButton">
-	    <posx>16</posx>
-        <height>32</height>
-        <width>auto</width>
 	</include>
 	
 	<!------------------->
@@ -325,9 +315,19 @@
 	</include>
 	
 	
-	<!------------------------>
-	<!-- OSD / Seekbar DEFS -->
-	<!------------------------>
+	<!------------------->
+	<!-- OSD / Seekbar -->
+	<!------------------->
+	
+	<include name="DefOSDControls">
+	    <width>230</width>
+        <height>48</height>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <textoffsetx>0</textoffsetx>
+        <font>Font-ListInfo-Small</font>
+        <focusedcolor>Highlight</focusedcolor>
+	</include>
 	
 	<include name="DefOSDUpDown">
 	    <onup condition="!VideoPlayer.IsFullscreen">Close</onup>
@@ -345,6 +345,8 @@
             <include>DefOSDUpDown</include>
             <texturefocus colordiffuse="Highlight">osd/fullscreen.png</texturefocus>
             <texturenofocus colordiffuse="PanelFG">osd/fullscreen.png</texturenofocus>
+            <onclick>Dialog.Close(VideoOSD.xml,true)</onclick>
+            <onclick>Dialog.Close(MusicOSD.xml,true)</onclick>
             <onclick>Dialog.Close(PlayerControls.xml,true)</onclick>
             <onclick>Action(fullscreen)</onclick>
             <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>

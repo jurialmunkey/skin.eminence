@@ -256,3 +256,7 @@ msgctxt "#31161"
 msgid "Show PVR channel icon in header"
 msgstr ""
 
+msgctxt "#31162"
+msgid "Show extended details when pressing info"
+msgstr ""
+

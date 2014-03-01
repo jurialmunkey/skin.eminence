@@ -88,7 +88,7 @@
         <control type="group" description="Fullscreeninfo">
             <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
-            <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + Window.IsActive(videoosd)</visible>
+            <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
             <control type="group" description="Live TV">
                 <posx>251</posx>
                 <posy>280</posy>
