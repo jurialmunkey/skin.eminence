@@ -23,6 +23,7 @@
 						<width>749</width>
 						<selectedcolor>Highlight</selectedcolor>
 						<info>ListItem.Label</info>
+						<textcolor>TopBarIcon</textcolor>
 						<font>Font-ListInfo</font>
 					</control>
 				</itemlayout>
@@ -53,6 +54,7 @@
 						<width>749</width>
 						<selectedcolor>Highlight</selectedcolor>
 						<info>ListItem.Label</info>
+						<textcolor>TopBarIcon</textcolor>
 						<font>Font-ListInfo</font>
 					</control>
 				</itemlayout>

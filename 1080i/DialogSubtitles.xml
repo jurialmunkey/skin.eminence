@@ -3,28 +3,33 @@
     <defaultcontrol always="true">120</defaultcontrol>
 	<controls>
 		<control type="group">
-		    <include>Animation.FadeIn</include>
+		    <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
 			
             <control type="image">
                 <posy>210</posy>
-				<width>1920</width>
+				<posx>-10</posx>
+				<width>1940</width>
 				<height>764</height>
-				<texture border="5" colordiffuse="TopBar">common/white.png</texture>
+				<texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
+                <animation effect="fade" end="75" condition="true">Conditional</animation>
+                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             
 			<control type="label" id="100">
 				<description>Header Label</description>
 				<textcolor>TopBarIcon</textcolor>
-				<posx>75</posx>
+				<posx>265</posx>
 				<posy>250</posy>
 				<width>1438</width>
 				<align>left</align>
+				<font>Font-DialogHeader</font>
 			</control>
 			
 			<control type="label" id="140">
 				<description>Content Picker label</description>
-				<posx>75</posx>
+				<posx>295</posx>
 				<posy>310</posy>
 				<width>1438</width>
 				<align>left</align>
@@ -34,7 +39,7 @@
 			
 			
 			<control type="list" id="120">
-				<posx>64</posx>
+				<posx>295</posx>
                 <posy>380</posy>
                 <width>1438</width>
 				<height>540</height>
@@ -51,8 +56,8 @@
 						<texture fallback="DefaultAddonNone.png">subs/$INFO[ListItem.Thumb].png</texture>
 					</control>
 					<control type="label">
-						<posx>145</posx>
-						<width>1200</width>
+						<posx>77</posx>
+						<width>1100</width>
 						<height>66</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label,,  •  ]$INFO[ListItem.Label2]</label>
@@ -72,8 +77,8 @@
 						<!--<texture>LeftRating/rating$INFO[ListItem.ActualIcon].png</texture>-->
 					</control>
 					<control type="label">
-						<posx>145</posx>
-						<width>1200</width>
+						<posx>77</posx>
+						<width>1100</width>
 						<height>66</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label,,  •  ]$INFO[ListItem.Label2]</label>
@@ -81,8 +86,8 @@
 						<visible>Control.HasFocus(120)</visible>
 					</control>
 					<control type="label">
-						<posx>145</posx>
-						<width>1200</width>
+						<posx>77</posx>
+						<width>1100</width>
 						<height>66</height>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label,,  •  ]$INFO[ListItem.Label2]</label>

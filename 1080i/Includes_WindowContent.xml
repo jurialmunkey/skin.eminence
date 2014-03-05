@@ -49,6 +49,8 @@
 		    </control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
+				<include>Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
 				<fadetime>800</fadetime>
 				<timeperimage>12000</timeperimage>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
@@ -59,25 +61,35 @@
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
+				<include>Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
 				<fadetime>800</fadetime>
 				<timeperimage>12000</timeperimage>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
-				<visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
                 <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
                 <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
-                <animation effect="fade" start="100" end="25" time="0" condition="true">Conditional</animation>
-                <colordiffuse>ff333333</colordiffuse>
+                <colordiffuse>ff444444</colordiffuse>
+                <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
                 <visible>!Window.IsVisible(home)</visible>
 			</control>
 			<control type="videowindow">
 				<include>Dimensions_Fullscreen</include>
 				<visible>Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]</visible>
-				<animation effect="fade" start="100" end="4" condition="!Window.IsVisible(home)">Conditional</animation>
+				<include condition="!Window.Previous(VideoFullScreen.xml)">Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
 			</control>
-
+			<control type="image">
+		        <include>Dimensions_Fullscreen</include>
+		        <texture colordiffuse="Background">common/white.png</texture>
+                <animation effect="fade" start="100" end="75" condition="![Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]]">Conditional</animation>
+                <animation effect="fade" start="100" end="92" condition="[Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]]">Conditional</animation>
+                <visible>!Window.IsVisible(home)</visible>
+		    </control>
 			<control type="group">		
 			    <visible>Window.IsVisible(home)</visible>
                 <include>GlobalVignette</include>
+                <include>Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
             </control>
 		</control>	
 	</include>

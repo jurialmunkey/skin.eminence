@@ -107,7 +107,9 @@
                     <ondown>9000</ondown>
                     <onup>51</onup>
                     <orientation>horizontal</orientation>
-                    <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                    <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
+
                 </control>
             </control>
         </control>

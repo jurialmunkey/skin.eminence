@@ -43,6 +43,8 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
             <animation effect="slide" condition="Control.HasFocus(9200)" start="0" end="-1920" time="200">Conditional</animation>
             <control type="image">
                 <posx>18</posx>
@@ -174,6 +176,21 @@
                     <label>$INFO[Window(Weather).Property(Today.Sunset)]</label>
                 </control>
                 
+            </control>
+            
+            <control type="image">
+                <posy>920</posy>
+                <posx>1069</posx>
+                <width>16</width>
+                <height>16</height>
+                <aspectratio>keep</aspectratio>
+                <texture>common/16-arrow-down.png</texture>
+                <animation effect="fade" start="100" end="35" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                <include>DialogVisibility</include>
             </control>
             
             <control type="list" id="9100">

@@ -11,9 +11,13 @@
 			<posy>0</posy>
 
 			<control type="image">
-				<width>630</width>
-				<height>102</height>
-				<texture colordiffuse="PanelBG">common/white.png</texture>
+			    <posx>-8</posx>
+				<width>646</width>
+				<height>110</height>
+				<texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
+                <animation effect="fade" end="75" condition="true">Conditional</animation>
+                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
+                <bordersize>1</bordersize>
 			</control>
 
 			<control type="label" id="10">

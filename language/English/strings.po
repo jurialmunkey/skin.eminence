@@ -260,3 +260,27 @@ msgctxt "#31162"
 msgid "Show extended details when pressing info"
 msgstr ""
 
+msgctxt "#31163"
+msgid "Custom"
+msgstr ""
+
+msgctxt "#31164"
+msgid "Customise"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Edit icon"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Items"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Pages"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Home Items"
+msgstr ""
+

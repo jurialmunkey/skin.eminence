@@ -189,7 +189,7 @@
             <width>254</width>
             <height>164</height>	
             <texture align="left">home/half-tile.png</texture>
-            <colordiffuse>TopBar</colordiffuse>
+            <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             <aspectratio>scale</aspectratio>
         </control>
         <control type="image">
@@ -198,7 +198,7 @@
             <width>1800</width>
             <height>164</height>	
             <texture>common/white.png</texture>
-            <colordiffuse>TopBar</colordiffuse>
+            <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             <aspectratio>scale</aspectratio>
         </control>
 	</include>
@@ -216,7 +216,7 @@
             <width>254</width>
             <height>164</height>	
             <texture align="left">home/half-tile.png</texture>
-            <colordiffuse>TopBar</colordiffuse>
+            <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             <aspectratio>scale</aspectratio>
         </control>
         <control type="image">
@@ -225,7 +225,7 @@
             <width>1800</width>
             <height>164</height>	
             <texture>common/white.png</texture>
-            <colordiffuse>TopBar</colordiffuse>
+            <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             <aspectratio>scale</aspectratio>
         </control>
 	</include>
@@ -244,18 +244,18 @@
 	    <width>417</width>
         <height>142</height>
         <texturefocus>-</texturefocus>
-        <textcolor>TopBarIcon</textcolor>
+        <textcolor>$VAR[HeaderColorFG]</textcolor>
         <focusedcolor>Highlight</focusedcolor>
         <textoffsetx>0</textoffsetx>
         <font>Font-Button</font>
         <onfocus>SetProperty(9000Focus,1,home)</onfocus>
         <onunfocus>ClearProperty(9000Focus,home)</onunfocus>
         <textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
-		<textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
+		<textureradioonnofocus colordiffuse="$VAR[HeaderColorFG]">buttons/radio-on.png</textureradioonnofocus>
 		<textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
-		<textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
-		<textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-		<texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
+		<textureradiooffnofocus colordiffuse="$VAR[HeaderColorFG]">buttons/radio-off.png</textureradiooffnofocus>
+		<textureup colordiffuse="$VAR[HeaderColorFG]" flipy="true">buttons/spin-down.png</textureup>
+		<texturedown colordiffuse="$VAR[HeaderColorFG]">buttons/spin-down.png</texturedown>
 		<textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
 		<texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
 	</include>

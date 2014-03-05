@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">450</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <zorder>10</zorder>
+    <onunload>ClearProperty(showimages,home)</onunload>
 	<controls>
 
 
@@ -52,6 +53,13 @@
 						<width>66</width>
 						<height>66</height>
 						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+						<visible>IsEmpty(Window(home).Property(showimages))</visible>
+					</control>
+					<control type="image">
+						<width>66</width>
+						<height>66</height>
+						<texture>$INFO[Listitem.FileNameAndPath]</texture>
+						<visible>!IsEmpty(Window(home).Property(showimages))</visible>
 					</control>
 					<control type="label">
 						<posx>88</posx>
@@ -71,6 +79,13 @@
 						<width>66</width>
 						<height>66</height>
 						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+						<visible>IsEmpty(Window(home).Property(showimages))</visible>
+					</control>
+					<control type="image">
+						<width>66</width>
+						<height>66</height>
+						<texture>$INFO[Listitem.FileNameAndPath]</texture>
+						<visible>!IsEmpty(Window(home).Property(showimages))</visible>
 					</control>
 					<control type="label">
 						<posx>88</posx>
@@ -95,6 +110,64 @@
 				</focusedlayout>
 
 			</control>
+			
+			<control type="panel" id="451">
+				<posx>295</posx>
+                <posy>189</posy>
+                <width>1200</width>
+				<height>483</height>
+				<onup>413</onup>
+				<onleft>413</onleft>
+				<onright>413</onright>
+				<ondown>451</ondown>
+				<itemlayout height="69" width="600">
+                    <control type="image">
+						<width>66</width>
+						<height>66</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Thumb]</texture>
+					</control>
+					<control type="label">
+						<posx>88</posx>
+						<width>500</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Highlight-NF</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="69" width="600">
+            
+					<control type="image">
+						<width>66</width>
+						<height>66</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Thumb]</texture>
+					</control>
+					<control type="label">
+						<posx>88</posx>
+						<width>500</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Highlight-NF</selectedcolor>
+						<textcolor>Highlight</textcolor>
+						<visible>Control.HasFocus(451)</visible>
+					</control>
+					<control type="label">
+						<posx>88</posx>
+						<width>500</width>
+						<height>66</height>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
+						<selectedcolor>Highlight-NF</selectedcolor>
+						<textcolor>TopBarIcon</textcolor>
+						<visible>!Control.HasFocus(451)</visible>
+					</control>
+				</focusedlayout>
+
+			</control>
 
 			<control type="image">
 				<posx>1550</posx>
@@ -103,6 +176,17 @@
                 <height>320</height>
 				<texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio align="right" aligny="top">keep</aspectratio>
+				<visible>IsEmpty(Window(home).Property(showimages))</visible>
+			</control>
+			
+			<control type="image">
+				<posx>1550</posx>
+                <posy>189</posy>
+                <width>320</width>
+                <height>320</height>
+				<texture>$INFO[ListItem.FileNameAndPath]</texture>
+				<aspectratio align="right" aligny="top">keep</aspectratio>
+				<visible>!IsEmpty(Window(home).Property(showimages))</visible>
 			</control>
 
 			

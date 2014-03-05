@@ -6,6 +6,14 @@
 	<color name="Pink">FFe533b5</color>
 	<color name="Green">FF85b503</color>
 	
+	<!-- Home Tile Colors -->
+	<color name="HomeGreen1">ff357555</color>
+	<color name="HomeGreen2">ff557535</color>
+	<color name="HomeBlue1">ff355575</color>
+	<color name="HomePurple1">ff553575</color>
+	<color name="HomePink1">ff753555</color>
+	
+	
 	<!-- Border Highlight -->
 	<color name="White">ffA9A9A9</color>
 		
@@ -13,6 +21,7 @@
 	<color name="MainLabel">FFededed</color>
 	<color name="SubLabel">BFededed</color>
 	<color name="TopBar">ff333333</color>
+	<color name="TopBarDark">ff181818</color>
 	<color name="TopBarIcon">ffededed</color>
 	<color name="TopBarDisabled">2fededed</color>
 	

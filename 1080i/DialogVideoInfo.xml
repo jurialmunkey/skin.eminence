@@ -272,6 +272,36 @@
                 </control>
             </control>
             
+            <control type="image">
+                <posy>920</posy>
+                <posx>2730</posx>
+                <width>16</width>
+                <height>16</height>
+                <aspectratio>keep</aspectratio>
+                <texture>common/16-arrow-down.png</texture>
+                <animation effect="fade" start="100" end="35" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                <include>DialogVisibility</include>
+                <visible>Container(50).HasNext</visible>
+            </control>
+            <control type="image">
+                <posy>180</posy>
+                <posx>2730</posx>
+                <width>16</width>
+                <height>16</height>
+                <aspectratio>keep</aspectratio>
+                <texture flipy="true">common/16-arrow-down.png</texture>
+                <animation effect="fade" start="100" end="35" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                <include>DialogVisibility</include>
+                <visible>Container(50).HasPrevious</visible>
+            </control>
             
             <control type="panel" id="50">
                 

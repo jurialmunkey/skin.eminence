@@ -12,7 +12,7 @@
                 <width>300</width>
                 <height>164</height>	
                 <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
+                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
                 <aspectratio>scale</aspectratio>
             </control>
 
@@ -22,7 +22,6 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>dialog/volume-back.png</texture>
-                <colordiffuse>$VAR[TopBarMainLabel]</colordiffuse>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
             <control type="image">

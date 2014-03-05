@@ -9,15 +9,10 @@
 	
         <control type="group">
 		    <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
-		    <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsActive(DialogFullScreenInfo.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo]</visible>
+		    <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)]</visible>
             <include>GlobalVignette</include>
         </control>
-        
-        <control type="group">
-		    <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
-		    <visible>!Window.IsVisible(DialogSlider.xml) + [Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)]</visible>
-            <include>GlobalOverlay</include>
-        </control>
+
                 
 		<control type="group" description="MusicVis">
 		    <posx>251</posx>
@@ -28,7 +23,7 @@
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
-                <texture colordiffuse="PanelBG" border="5">common/white.png</texture>
+                <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
                 <animation effect="fade" end="75" condition="true">Conditional</animation>
                 <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
                 <bordersize>1</bordersize>
@@ -51,6 +46,7 @@
                 <align>center</align>
                 <font>Font-Button</font>
                 <label>$INFO[MusicPlayer.Album]$INFO[MusicPlayer.Year,  (,)]</label>
+                <textcolor>TopBarIcon</textcolor>
             </control>
 
             
@@ -61,6 +57,7 @@
                 <align>left</align>
                 <font>Font-ListHeader</font>
                 <label>$INFO[MusicPlayer.Artist]</label>
+                <textcolor>TopBarIcon</textcolor>
             </control>
             
             
@@ -73,6 +70,7 @@
                 <font>Font-ListInfo</font>
                 <label>$VAR[MusicOSDPlot]</label>
                 <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
+                <textcolor>TopBarIcon</textcolor>
             </control>
             
             <control type="label">
@@ -82,6 +80,7 @@
                 <align>left</align>
                 <font>Font-ListInfo</font>
                 <label>[B]$LOCALIZE[209]...  [/B]$INFO[MusicPlayer.offset(1).Title]</label>
+                <textcolor>TopBarIcon</textcolor>
             </control>
         </control>
         
@@ -97,7 +96,7 @@
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="PanelBG" border="5">common/white.png</texture>
+                    <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
                     <animation effect="fade" end="75" condition="true">Conditional</animation>
                     <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
                     <bordersize>1</bordersize>
@@ -111,6 +110,7 @@
                     <fadetime>200</fadetime>
                     <texture background="true">$INFO[Player.Art(thumb)]</texture>
                     <aspectratio aligny="top" align="center">keep</aspectratio>
+                    <textcolor>TopBarIcon</textcolor>
                 </control>
             
                 <control type="grouplist">
@@ -125,6 +125,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>515</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -133,6 +134,7 @@
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[VideoPlayer.Genre]</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -141,6 +143,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>573</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -150,6 +153,7 @@
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[Player.FileNameAndPath]</label>
                         <scroll>true</scroll>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>899</width>
@@ -158,6 +162,7 @@
                         <height>32</height>
                         <font>Font-Button</font>
                         <label>207</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="textbox">
                         <width>899</width>
@@ -167,6 +172,7 @@
                         <height>310</height>
                         <label fallback="416">$INFO[VideoPlayer.Plot]</label>
                         <wrapmultiline>true</wrapmultiline>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                 </control>
             
@@ -183,6 +189,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>$LOCALIZE[31127] $LOCALIZE[126]</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <posx>917</posx>
@@ -191,6 +198,7 @@
                         <align>right</align>
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label fallback="416">$VAR[PVROSDStatus]</label>
                     </control>
                 </control>
@@ -202,6 +210,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <label>[B]$LOCALIZE[209]...  [/B]$INFO[VideoPlayer.NextTitle]$INFO[VideoPlayer.NextStartTime,  ,]</label>
+                    <textcolor>TopBarIcon</textcolor>
                 </control>
             </control>
             <control type="group" description="Movies and Episodes">
@@ -212,10 +221,11 @@
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="PanelBG" border="5">common/white.png</texture>
+                    <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
                     <animation effect="fade" end="75" condition="true">Conditional</animation>
                     <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
                     <bordersize>1</bordersize>
+                    
                 </control>
 
                 <control type="image">
@@ -263,6 +273,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>20339</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -271,6 +282,7 @@
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[VideoPlayer.Director]</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -279,6 +291,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>20417</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -287,6 +300,7 @@
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[VideoPlayer.Writer]</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -295,6 +309,7 @@
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>515</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -303,6 +318,7 @@
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[VideoPlayer.Genre]</label>
+                        <textcolor>TopBarIcon</textcolor>
                     </control>
                     <control type="label">
                         <width>600</width>
@@ -310,6 +326,7 @@
                         <align>left</align>
                         <aligny>top</aligny>
                         <font>Font-Button</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label>573</label>
                     </control>
                     <control type="label">
@@ -319,6 +336,7 @@
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[Player.FileNameAndPath]</label>
+                        <textcolor>TopBarIcon</textcolor>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -327,6 +345,7 @@
                         <aligny>top</aligny>
                         <height>32</height>
                         <font>Font-Button</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label>207</label>
                     </control>
                     <control type="textbox">
@@ -336,6 +355,7 @@
                         <font>Font-ListInfo</font>
                         <height>120</height>
                         <label fallback="416">$INFO[VideoPlayer.Plot]</label>
+                        <textcolor>TopBarIcon</textcolor>
                         <wrapmultiline>true</wrapmultiline>
                     </control>
                 </control>
@@ -344,6 +364,7 @@
                     <posy>602</posy>
                     <width>749</width>
                     <align>left</align>
+                    <textcolor>TopBarIcon</textcolor>
                     <font>Font-ListInfo</font>
                     <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
                 </control>
@@ -360,6 +381,7 @@
                         <align>right</align>
                         <aligny>top</aligny>
                         <font>Font-Button</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label>2050</label>
                     </control>
                     <control type="label">
@@ -369,6 +391,7 @@
                         <align>right</align>
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label fallback="416">$INFO[VideoPlayer.Duration,, $LOCALIZE[12391]]</label>
                     </control>
                     <control type="label">
@@ -376,6 +399,7 @@
                         <width>300</width>
                         <height>32</height>
                         <align>right</align>
+                        <textcolor>TopBarIcon</textcolor>
                         <aligny>top</aligny>
                         <font>Font-Button</font>
                         <label>20074</label>
@@ -387,6 +411,7 @@
                         <align>right</align>
                         <aligny>top</aligny>
                         <font>Font-ListInfo</font>
+                        <textcolor>TopBarIcon</textcolor>
                         <label fallback="416">$INFO[VideoPlayer.MPAA]</label>
                     </control>
                     <control type="label">
@@ -395,6 +420,7 @@
                         <height>32</height>
                         <align>right</align>
                         <aligny>top</aligny>
+                        <textcolor>TopBarIcon</textcolor>
                         <font>Font-Button</font>
                         <label>292</label>
                     </control>
@@ -404,6 +430,7 @@
                         <height>64</height>
                         <align>right</align>
                         <aligny>top</aligny>
+                        <textcolor>TopBarIcon</textcolor>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD]</label>
                     </control>
@@ -413,6 +440,7 @@
                         <height>32</height>
                         <align>right</align>
                         <aligny>top</aligny>
+                        <textcolor>TopBarIcon</textcolor>
                         <font>Font-Button</font>
                         <label>291</label>
                     </control>
@@ -422,6 +450,7 @@
                         <height>64</height>
                         <align>right</align>
                         <aligny>top</aligny>
+                        <textcolor>TopBarIcon</textcolor>
                         <font>Font-ListInfo</font>
                         <label fallback="416">$VAR[HDSD,, ]$INFO[VideoPlayer.VideoResolution]$INFO[VideoPlayer.VideoCodec,  •  ,]$INFO[VideoPlayer.VideoAspect,  •  ,]</label>
                     </control>
@@ -462,7 +491,7 @@
                 <aspectratio align="right" aligny="bottom">keep</aspectratio>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
-                <visible>!VideoPlayer.Content(livetv) + ![!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + Window.IsActive(videoosd)]</visible>
+                <visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(VideoOSDBookmarks.xml) + !Window.IsVisible(VideoOSDSettings.xml) + !VideoPlayer.Content(livetv) + IsEmpty(Window(seekbar).Property(fullscreeninfo))</visible>
             </control>
 		</control>
 		
@@ -473,7 +502,7 @@
 		<control type="group">
 		    <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
 		    <animation type="Visible">
-	            <effect type="slide" start="0,-64" end="0" time="200"/>
+	            <effect type="slide" start="0,-24" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" time="200"/>
             </animation>
 		    <animation effect="fade" start="100" end="0" time="200">Hidden</animation>

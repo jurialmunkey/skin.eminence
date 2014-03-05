@@ -202,6 +202,7 @@
 		<textureslidernibfocus>-</textureslidernibfocus>
 		<showonepage>true</showonepage>
 		<orientation>vertical</orientation>
+		
 	</default>
 
 	<default type="textbox">

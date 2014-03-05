@@ -3,6 +3,7 @@
 <window id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<zorder>3</zorder>
 
 	<controls>
 	    <control type="scrollbar" id="60">

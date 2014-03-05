@@ -7,14 +7,18 @@
     <controls>
         <control type="group">
 			<posy>210</posy>
-            <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 
             <control type="image">
-				<width>1920</width>
+				<posx>-10</posx>
+				<width>1940</width>
 				<height>764</height>
-				<texture border="5" colordiffuse="TopBar">common/white.png</texture>
+				<texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
+                <animation effect="fade" end="75" condition="true">Conditional</animation>
+                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
+                <bordersize>1</bordersize>
             </control>
             
 			<control type="label">
@@ -25,7 +29,7 @@
 				<align>left</align>
 				<font>Font-DialogHeader</font>
 				<textcolor>TopBarIcon</textcolor>
-				<label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - ($INFO[Container(11).NumItems]) $LOCALIZE[31027] - $LOCALIZE[31028] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
+				<label>$LOCALIZE[298] - ($INFO[Container(11).NumItems]) $LOCALIZE[31027] - $LOCALIZE[31028] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
 			</control>
             <control type="panel" id="11">
 				<posx>265</posx>
@@ -115,6 +119,7 @@
 					<description>Create Bookmark button</description>
 					<label>294</label>
 					<texturefocus>-</texturefocus>
+					<font>Font-ListInfo</font>
                     <texturenofocus>-</texturenofocus>
                     <textcolor>TopBarIcon</textcolor>
                     <focusedcolor>Highlight</focusedcolor>
@@ -126,6 +131,7 @@
 					<label>296</label>
 					<texturefocus>-</texturefocus>
                     <texturenofocus>-</texturenofocus>
+                    <font>Font-ListInfo</font>
                     <textcolor>TopBarIcon</textcolor>
                     <focusedcolor>Highlight</focusedcolor>
                     <disabledcolor>TopBarDisabled</disabledcolor>
@@ -136,6 +142,7 @@
 					<label>20406</label>
 					<texturefocus>-</texturefocus>
                     <texturenofocus>-</texturenofocus>
+                    <font>Font-ListInfo</font>
                     <textcolor>TopBarIcon</textcolor>
                     <focusedcolor>Highlight</focusedcolor>
                     <disabledcolor>TopBarDisabled</disabledcolor>
