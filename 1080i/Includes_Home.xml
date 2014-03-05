@@ -24,6 +24,10 @@
         <textcolor>ffffffff</textcolor>
     </include>
     
+    <include name="Home-Menu-Scale">
+        <aspectratio scalediffuse="false">scale</aspectratio>
+    </include>
+    
     <include name="Home-Menu-Button">
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
@@ -88,6 +92,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.301.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.301.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
@@ -116,6 +121,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(302)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.302.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.302.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(302)">Conditional</animation>
@@ -144,6 +150,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(303)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.303.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.303.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(303)">Conditional</animation>
@@ -172,6 +179,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(304)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.304.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.304.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(304)">Conditional</animation>
@@ -200,6 +208,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(305)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.305.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.305.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(305)">Conditional</animation>
@@ -228,6 +237,7 @@
                         <visible>Skin.HasSetting(home.306.enabled)</visible>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.306.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.306.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(306)">Conditional</animation>
@@ -256,6 +266,7 @@
                         <visible>Skin.HasSetting(home.307.enabled)</visible>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.307.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.307.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(307)">Conditional</animation>
@@ -284,6 +295,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(308)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.308.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.308.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(308)">Conditional</animation>
@@ -312,6 +324,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(309)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.309.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.309.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(309)">Conditional</animation>
@@ -340,6 +353,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(310)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.310.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.310.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(310)">Conditional</animation>
@@ -368,6 +382,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(311)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.311.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.311.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(311)">Conditional</animation>
@@ -396,6 +411,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(312)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.312.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.312.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(312)">Conditional</animation>
@@ -424,6 +440,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(313)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.320.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.320.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(313)">Conditional</animation>
@@ -452,6 +469,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(314)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.321.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.321.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(314)">Conditional</animation>
@@ -480,6 +498,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(315)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.322.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.322.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(315)">Conditional</animation>
@@ -508,6 +527,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(316)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.323.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.323.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(316)">Conditional</animation>
@@ -536,6 +556,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(317)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.324.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.324.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(317)">Conditional</animation>
@@ -564,6 +585,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(318)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.325.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.325.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(318)">Conditional</animation>
@@ -592,6 +614,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(319)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.326.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.326.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(319)">Conditional</animation>
@@ -620,6 +643,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(320)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.327.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.327.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(320)">Conditional</animation>
@@ -648,6 +672,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(321)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.328.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.328.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(321)">Conditional</animation>
@@ -676,6 +701,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(322)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.329.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.329.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(322)">Conditional</animation>
@@ -708,6 +734,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(323)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.313.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.313.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(323)">Conditional</animation>
@@ -736,6 +763,7 @@
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(324)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <include condition="!substring(Skin.String(home.314.icon),special://skin/extras/icons/)">Home-Menu-Scale</include>
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/half-tile.png" aligny="center" align="center">$INFO[Skin.String(home.314.Icon)]</texture>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(324)">Conditional</animation>
