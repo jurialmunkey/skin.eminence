@@ -4,155 +4,168 @@
 
     <include name="View_52_Wall_Content">
         <itemlayout width="239" height="354" condition="!Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
-
-            <control type="image">
-                <height>336</height>
-                <width>221</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>336</height>
+                    <width>221</width>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>
  
             
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>314</height>
-                <width>199</width>
-                <texture background="true">$VAR[PosterImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>314</height>
+                    <width>199</width>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
             </control>
 
         </itemlayout>
         <itemlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
-
-            <control type="image">
-                <height>218</height>
-                <width>221</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>218</height>
+                    <width>221</width>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>
  
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>196</height>
-                <width>199</width>
-                <texture background="true">$VAR[PosterImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>196</height>
+                    <width>199</width>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
             </control>
         
         </itemlayout>
         <itemlayout width="478" height="354" condition="Container.Content(episodes)">
-
-            <control type="image">
-                <height>336</height>
-                <width>460</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>336</height>
+                    <width>460</width>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>
  
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>284</height>
-                <width>438</width>
-                <texture background="true">$VAR[FanartImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
-            </control>
-            <control type="label">
-                <posx>18</posx>
-                <posy>282</posy>
-                <width>330</width>
-                <align>left</align>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <posx>442</posx>
-                <posy>282</posy>
-                <width>130</width>
-                <align>right</align>
-                <font>Font-ListInfo-Small</font>
-                <label>$INFO[ListItem.Label2]</label>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>284</height>
+                    <width>438</width>
+                    <texture background="true">$VAR[FanartImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
+                <control type="label">
+                    <posx>18</posx>
+                    <posy>282</posy>
+                    <width>330</width>
+                    <align>left</align>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>442</posx>
+                    <posy>282</posy>
+                    <width>130</width>
+                    <align>right</align>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
             </control>
 
         </itemlayout>
         
         <focusedlayout width="239" height="354" condition="!Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
-            <control type="image">
-                <height>336</height>
-                <width>221</width>
-                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>336</height>
+                    <width>221</width>
+                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                </control>
  
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>314</height>
-                <width>199</width>
-                <texture background="true">$VAR[PosterImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>314</height>
+                    <width>199</width>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
             </control>
 
         </focusedlayout>
         <focusedlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
-
-            <control type="image">
-                <height>218</height>
-                <width>221</width>
-                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>218</height>
+                    <width>221</width>
+                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                </control>
  
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>196</height>
-                <width>199</width>
-                <texture background="true">$VAR[PosterImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>196</height>
+                    <width>199</width>
+                    <texture background="true">$VAR[PosterImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
             </control>
             
         </focusedlayout>
         <focusedlayout width="478" height="354" condition="Container.Content(episodes)">
-
-            <control type="image">
-                <height>336</height>
-                <width>460</width>
-                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-            </control>
+            <control type="group">
+                <posy>9</posy>
+                <control type="image">
+                    <height>336</height>
+                    <width>460</width>
+                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                </control>
  
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>284</height>
-                <width>438</width>
-                <texture background="true">$VAR[FanartImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
-            </control>
-            <control type="label">
-                <posx>18</posx>
-                <posy>282</posy>
-                <width>330</width>
-                <align>left</align>
-                <textcolor>Selected</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <posx>442</posx>
-                <posy>282</posy>
-                <width>130</width>
-                <align>right</align>
-                <textcolor>Selected</textcolor>
-                <font>Font-ListInfo-Small</font>
-                <label>$INFO[ListItem.Label2]</label>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <height>284</height>
+                    <width>438</width>
+                    <texture background="true">$VAR[FanartImage]</texture>
+                    <aspectratio aligny="top">scale</aspectratio>
+                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                    <bordersize>1</bordersize>
+                </control>
+                <control type="label">
+                    <posx>18</posx>
+                    <posy>282</posy>
+                    <width>330</width>
+                    <align>left</align>
+                    <textcolor>Selected</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>442</posx>
+                    <posy>282</posy>
+                    <width>130</width>
+                    <align>right</align>
+                    <textcolor>Selected</textcolor>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
             </control>
 
         </focusedlayout>
@@ -160,7 +173,7 @@
     <include name="View_52_Wall_NoInfo">
         <control type="panel" id="52">
             <posx>18</posx>
-            <posy>210</posy>
+            <posy>201</posy>
             <width>1434</width>
             <height>708</height>
             <onleft>60</onleft>
@@ -180,7 +193,7 @@
     <include name="View_52_Wall_Info">
         <control type="panel" id="52">
             <posx>18</posx>
-            <posy>210</posy>
+            <posy>201</posy>
             <width>956</width>
             <height>708</height>
             <onleft>60</onleft>

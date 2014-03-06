@@ -45,8 +45,8 @@
                 <width>1200</width>
 				<height>483</height>
 				<onup>413</onup>
-				<onleft>413</onleft>
-				<onright>413</onright>
+				<onleft>450</onleft>
+				<onright>450</onright>
 				<ondown>450</ondown>
 				<itemlayout height="69" width="600">
                     <control type="image">
@@ -117,8 +117,8 @@
                 <width>1200</width>
 				<height>483</height>
 				<onup>413</onup>
-				<onleft>413</onleft>
-				<onright>413</onright>
+				<onleft>451</onleft>
+				<onright>451</onright>
 				<ondown>451</ondown>
 				<itemlayout height="69" width="600">
                     <control type="image">

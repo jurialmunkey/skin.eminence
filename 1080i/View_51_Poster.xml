@@ -9,7 +9,7 @@
             <include>Animation.ViewChange</include>
             <include>DefSideLabel</include>
             <control type="list" id="51">
-                <posx>18</posx>
+                <posx>-3</posx>
                 <posy>210</posy>
                 <width>1458</width>
                 <height>690</height>
@@ -28,6 +28,7 @@
                 <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] | Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="image">
                             <height>690</height>
@@ -67,6 +68,7 @@
                     </control>
                     <!-- Episodes -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <control type="image">
                             <height>690</height>
@@ -121,6 +123,7 @@
                 <itemlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + Container.Content(addons)]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
+                        <posx>21</posx>
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
@@ -162,6 +165,7 @@
                 <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] | Container.Content(artists)">
                     <!-- NORMAL -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>[!Container.Content(episodes) + !Container.Content(artists) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>Control.HasFocus(51)</visible>
@@ -242,6 +246,7 @@
                     
                     <!-- Episodes -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>[Container.Content(episodes) | Container.Content(artists) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>Control.HasFocus(51)</visible>
@@ -347,6 +352,7 @@
                 <focusedlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + Container.Content(addons)]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
                     <!-- Focused -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>Control.HasFocus(51)</visible>
                         <control type="image">
                             <height>690</height>
@@ -386,6 +392,7 @@
                     </control>
                     <!-- Unfocused -->
                     <control type="group">
+                        <posx>21</posx>
                         <visible>!Control.HasFocus(51)</visible>
                         <control type="image">
                             <height>690</height>

@@ -6,17 +6,10 @@
 	<allowoverlay>true</allowoverlay>
 	<controls>
         <control type="group">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1920</width>
-                <height>1080</height>
-                <texture colordiffuse="Background">common/white.png</texture>
-            </control>
 			
 			<control type="group">
 			    <posx>233</posx>
-			    <posy>70</posy>
+			    <posy>40</posy>
 			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 			    <include>DefSideLabel</include>
@@ -78,28 +71,8 @@
                             <height>107</height>
                             <texture>common/white.png</texture>
                             <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomeBlue2</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomeBlue2)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>common/white.png</texture>
-                            <aspectratio>scale</aspectratio>
                             <colordiffuse>HomePink1</colordiffuse>
                             <visible>stringcompare(ListItem.Label2,HomePink1)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>common/white.png</texture>
-                            <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomePink2</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomePink2)</visible>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -118,8 +91,38 @@
                             <height>107</height>
                             <texture>common/white.png</texture>
                             <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomeGrey1</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomeGrey1)</visible>
+                            <colordiffuse>HomeCustom1</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom1)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom2</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom2)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom3</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom3)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom4</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom4)</visible>
                         </control>
                         <control type="label">
                             <posx>437</posx>
@@ -176,28 +179,8 @@
                             <height>107</height>
                             <texture>common/white.png</texture>
                             <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomeBlue2</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomeBlue2)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>common/white.png</texture>
-                            <aspectratio>scale</aspectratio>
                             <colordiffuse>HomePink1</colordiffuse>
                             <visible>stringcompare(ListItem.Label2,HomePink1)</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>common/white.png</texture>
-                            <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomePink2</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomePink2)</visible>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -216,8 +199,38 @@
                             <height>107</height>
                             <texture>common/white.png</texture>
                             <aspectratio>scale</aspectratio>
-                            <colordiffuse>HomeGrey1</colordiffuse>
-                            <visible>stringcompare(ListItem.Label2,HomeGrey1)</visible>
+                            <colordiffuse>HomeCustom1</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom1)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom2</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom2)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom3</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom3)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>  
+                            <width>107</width>
+                            <height>107</height>
+                            <texture>common/white.png</texture>
+                            <aspectratio>scale</aspectratio>
+                            <colordiffuse>HomeCustom4</colordiffuse>
+                            <visible>stringcompare(ListItem.Label2,HomeCustom4)</visible>
                         </control>
                         <control type="label">
                             <posx>437</posx>
@@ -266,11 +279,31 @@
          
                         
                         <item id="8">
-                            <label>Custom</label>
-                            <onclick>Skin.SetString($INFO[Window(3062).Property(item),,.bgcolor])</onclick>
+                            <label>HomeCustom1</label>
+                            <label2>HomeCustom1</label2>
+                            <onclick>Skin.SetString($INFO[Window(3062).Property(item),,.bgcolor],HomeCustom1)</onclick>
                             <onclick>Close</onclick>
                         </item>
                         
+                        <item id="9">
+                            <label>HomeCustom2</label>
+                            <label2>HomeCustom2</label2>
+                            <onclick>Skin.SetString($INFO[Window(3062).Property(item),,.bgcolor],HomeCustom2)</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="10">
+                            <label>HomeCustom3</label>
+                            <label2>HomeCustom3</label2>
+                            <onclick>Skin.SetString($INFO[Window(3062).Property(item),,.bgcolor],HomeCustom3)</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="11">
+                            <label>31163</label>
+                            <onclick>Skin.SetString($INFO[Window(3062).Property(item),,.bgcolor])</onclick>
+                            <onclick>Close</onclick>
+                        </item>
                         
 
 					</content>
@@ -281,7 +314,6 @@
 
 		</control>
 		
-		<include>GlobalTopBar</include>
 	    
 	</controls>
 </window>

@@ -1,3 +1,6 @@
+[B]0.9.14[/B]
+Customisation of home menu options
+
 [B]0.9.13[/B]
 Ability to customise home menu items from skin settings
 Visible scrollbars

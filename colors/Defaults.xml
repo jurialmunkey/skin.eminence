@@ -12,7 +12,11 @@
 	<color name="HomeBlue1">ff355575</color>
 	<color name="HomePurple1">ff553575</color>
 	<color name="HomePink1">ff753555</color>
-	
+
+    <color name="HomeCustom1">ff555555</color>
+    <color name="HomeCustom2">ff555555</color>
+    <color name="HomeCustom3">ff555555</color>	
+    <color name="HomeCustom4">ff555555</color>	
 	
 	<!-- Border Highlight -->
 	<color name="White">ffA9A9A9</color>

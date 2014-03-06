@@ -20,12 +20,16 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
+            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
         </control>
    
         <control type="group">
 		    <posx>253</posx>
 		    <posy>70</posy>
 		    <include>DialogVisibility</include>
+		    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 		    <include>Animation.SlideOpen.Left</include>
 		    <control type="label" id="2" description="Info Label">
                 <posx>1514</posx>
@@ -41,6 +45,8 @@
 
 		<control type="group">
 			<posy>160</posy>
+			<visible>!Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 
             <include>Animation.FadeIn</include>
@@ -177,234 +183,13 @@
                 <!-- Home Window -->
                 <!----------------->
                 <control type="button" id="201">
-                    <label>01. $INFO[Skin.String(home.301.label)]</label>
+                    <label>31164</label>
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.301,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
+                    <onclick>ActivateWindow(3063)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="202">
-                    <label>02. $INFO[Skin.String(home.302.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.302,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="203">
-                    <label>03. $INFO[Skin.String(home.303.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.303,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="204">
-                    <label>04. $INFO[Skin.String(home.304.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.304,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="205">
-                    <label>05. $INFO[Skin.String(home.305.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.305,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="206">
-                    <label>06. $INFO[Skin.String(home.306.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.306,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="207">
-                    <label>07. $INFO[Skin.String(home.307.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.307,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="208">
-                    <label>08. $INFO[Skin.String(home.308.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.308,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="209">
-                    <label>09. $INFO[Skin.String(home.309.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.309,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="210">
-                    <label>10. $INFO[Skin.String(home.310.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.310,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="211">
-                    <label>11. $INFO[Skin.String(home.311.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.311,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="212">
-                    <label>12. $INFO[Skin.String(home.312.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.312,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="220">
-                    <label>13. $INFO[Skin.String(home.320.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.320,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.312.enabled) | Skin.HasSetting(home.320.enabled)</visible>
-                </control>
-                <control type="button" id="221">
-                    <label>14. $INFO[Skin.String(home.321.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.321,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.321.enabled) | Skin.HasSetting(home.320.enabled)</visible>
-                </control>
-                <control type="button" id="222">
-                    <label>15. $INFO[Skin.String(home.322.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.322,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.322.enabled) | Skin.HasSetting(home.321.enabled)</visible>
-                </control>
-                <control type="button" id="223">
-                    <label>16. $INFO[Skin.String(home.323.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.323,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.322.enabled) | Skin.HasSetting(home.323.enabled)</visible>
-                </control>
-                <control type="button" id="224">
-                    <label>17. $INFO[Skin.String(home.324.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.324,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.323.enabled) | Skin.HasSetting(home.324.enabled)</visible>
-                </control>
-                <control type="button" id="225">
-                    <label>18. $INFO[Skin.String(home.325.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.325,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.324.enabled) | Skin.HasSetting(home.325.enabled)</visible>
-                </control>
-                <control type="button" id="226">
-                    <label>19. $INFO[Skin.String(home.326.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.326,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.325.enabled) | Skin.HasSetting(home.326.enabled)</visible>
-                </control>
-                <control type="button" id="227">
-                    <label>20. $INFO[Skin.String(home.327.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.327,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.326.enabled) | Skin.HasSetting(home.327.enabled)</visible>
-                </control>
-                <control type="button" id="228">
-                    <label>21. $INFO[Skin.String(home.328.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.328,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.327.enabled) | Skin.HasSetting(home.328.enabled)</visible>
-                </control>
-                <control type="button" id="229">
-                    <label>22. $INFO[Skin.String(home.329.label)]</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.329,3061)</onclick>
-                    <onclick>ActivateWindow(3061)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <visible>Skin.HasSetting(home.328.enabled) | Skin.HasSetting(home.329.enabled)</visible>
                 </control>
                 
                 <!----------->
@@ -525,6 +310,8 @@
             <onright>ClearProperty(movement,settings)</onright>
 				<onright>$VAR[DefSettingsOnRight]</onright>
             <include>Animation.SlideOpen.Left</include>
+            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>
 
