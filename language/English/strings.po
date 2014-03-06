@@ -288,3 +288,7 @@ msgctxt "#31169"
 msgid "Add item"
 msgstr ""
 
+msgctxt "#31170"
+msgid "Now playing"
+msgstr ""
+

@@ -223,6 +223,7 @@
     </variable>
     
     <variable name="PVRSideLabel">
+        <value condition="Control.HasFocus(37)">$LOCALIZE[31170]</value>
 	    <value condition="Control.IsVisible(10)">$LOCALIZE[19222]</value>
 	    <value condition="Control.IsVisible(11)">$LOCALIZE[19019]</value>
 	    <value condition="Control.IsVisible(12)">$LOCALIZE[19021]</value>

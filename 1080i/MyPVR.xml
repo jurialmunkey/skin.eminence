@@ -12,8 +12,11 @@
             <font>Font-EPGRuler</font>
             <label>$INFO[Control.GetLabel(30)]</label>
             <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
+            <include>DialogVisibility</include>
+            <visible>!Control.HasFocus(37)</visible>
         </control>
         <control type="label">
             <posx>262</posx>
@@ -25,6 +28,8 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
             <visible>IsEmpty(Control.GetLabel(30))</visible>
+            <visible>!Control.HasFocus(37)</visible>
+            <include>DialogVisibility</include>
         </control>
         <control type="group">
             <posy>70</posy>
@@ -35,6 +40,7 @@
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
             <control type="group" id="50">
+                <visible>!Control.HasFocus(37)</visible>
                 <include description="id31-10">EPGTimelineView</include>
                 <include description="id32-11">LiveTVChannelView</include>
                 <include description="id33-12">LiveRadioChannelView</include>
@@ -58,9 +64,41 @@
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <visible>!Control.IsVisible(10)</visible>
             </control>
+            <control type="group">
+                <posx>18</posx>
+                <posy>210</posy>
+                <visible>Control.HasFocus(37)</visible>
+                <control type="image">
+                    
+                    <width>1416</width>
+                    <height>690</height>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control> 
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture colordiffuse="Black">common/white.png</texture>
+                </control>
+                <control type="videowindow">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
+                </control>
+            </control>
             
             <control type="group">
                 <visible>!Control.IsVisible(10)</visible>
+                <visible>!Control.HasFocus(37)</visible>
                 <posx>974</posx>
                 <posy>210</posy>
                 <control type="image">
@@ -175,6 +213,12 @@
                     <label>$LOCALIZE[137]</label>
                     <include>DefContextMenuButton</include>
                 </control>-->
+                <control type="button" id="37" description="Fullscreen">
+                    <label>$LOCALIZE[31158]</label>
+                    <include>DefContextMenuButton</include>
+                    <onclick>Action(fullscreen)</onclick>
+                    <visible>Player.HasMedia</visible>
+                </control>
             </control>
         </control>
         <control type="label" id="29">

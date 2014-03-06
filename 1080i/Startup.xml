@@ -6,9 +6,7 @@
         <control type="button" id="9314">
             
             <visible allowhiddenfocus="true">false</visible>
-            
-            <onfocus>Skin.ResetSettings</onfocus> 
-            
+                        
             <!-- 301 Item -->
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
             <onfocus>Skin.SetString(home.301.bgcolor,ff357555)</onfocus>
