@@ -292,3 +292,10 @@ msgctxt "#31170"
 msgid "Now playing"
 msgstr ""
 
+msgctxt "#31171"
+msgid "the items on your home menu"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Edit"
+msgstr ""

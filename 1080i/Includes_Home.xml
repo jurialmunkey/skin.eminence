@@ -25,6 +25,7 @@
     </include>
     
     <include name="Home-Menu-Button">
+        <onclick>SetProperty(focushub,1,home)</onclick>
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
         <width>220</width>

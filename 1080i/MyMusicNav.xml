@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="502">
-	<include condition="[Window.Previous(Home) | Window.Previous(playercontrols)] + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
-    <include condition="![Window.Previous(Home) | Window.Previous(playercontrols)] | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
+	<include condition="!IsEmpty(Window(home).Property(focushub)) + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
+    <include condition="IsEmpty(Window(home).Property(focushub)) | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
 	<allowoverlay>yes</allowoverlay>
 	<background>0</background>
 	<views>50,51,52,53,54,55,56</views>
+	<onload>ClearProperty(focushub,home)</onload>
 
 	<controls>
 
