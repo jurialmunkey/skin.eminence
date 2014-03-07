@@ -304,3 +304,7 @@ msgctxt "#31173"
 msgid "on"
 msgstr ""
 
+msgctxt "#31174"
+msgid "Cinema Experience"
+msgstr ""
+

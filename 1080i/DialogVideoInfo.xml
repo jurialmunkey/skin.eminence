@@ -421,6 +421,14 @@
                     <label>20410</label>
                     <include>DefContextMenuButton</include>
                 </control>
+                
+                <control type="button" id="9002" description="Cinema Experience">
+                     <include>DefContextMenuButton</include>
+                     <label>31174</label>
+                     <onclick>Dialog.Close(MovieInformation)</onclick>
+                     <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
+                     <visible>system.hasaddon(script.cinema.experience) + Container.Content(movies)</visible>
+                 </control>
     
                 <control type="button" id="10" description="Thumb">
                     <label>31135</label>
@@ -432,7 +440,7 @@
                     <include>DefContextMenuButton</include>
                 </control>
                 
-                <control type="button" id="9001" description="Refresh">
+                <control type="button" id="9001" description="Get TvTunes">
                     <label>31127</label>
                     <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
                     <visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
