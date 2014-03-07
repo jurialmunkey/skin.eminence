@@ -72,6 +72,34 @@
                 <control type="group">
                     <width>221</width>
                     <include>Home-Menu-Visibility</include>
+                    <visible>System.HasMediadvd</visible>
+                    <animation effect="slide" start="400,400" end="0" time="75">Visible</animation>
+                    <animation effect="slide" start="400,400" end="0" time="75" condition="Window.IsActive(home)">WindowOpen</animation>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="299">
+                        <include>Home-Menu-Button</include>
+                        <onclick>SetProperty(homefocus,299,home)</onclick>
+                        <colordiffuse>ff777777</colordiffuse>
+                        <onleft>324</onleft>
+                        <onright>301</onright>
+                        <onclick>PlayDVD</onclick>
+                        <visible>System.HasMediadvd</visible>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(299)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/half-tile.png" aligny="center" align="center">special://skin/extras/icons/play.png</texture>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(299)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label>341</label>
+                        <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(299)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <width>221</width>
+                    <include>Home-Menu-Visibility</include>
                     <visible>Skin.HasSetting(home.301.enabled)</visible>
                     
                     <animation effect="slide" start="400,400" end="0" time="100">Visible</animation>
@@ -83,7 +111,7 @@
                         <onclick>SetProperty(homefocus,301,home)</onclick>
                         <onclick>$INFO[Skin.String(home.301.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
-                        <onleft>324</onleft>
+                        <onleft>299</onleft>
                         <onright>302</onright>
                         
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(301)">Conditional</animation>
@@ -733,7 +761,7 @@
                         <onclick>$INFO[Skin.String(home.314.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
                         <onleft>323</onleft>
-                        <onright>301</onright>
+                        <onright>299</onright>
                         <animation effect="fade" start="100" end="35" time="100" condition="!Control.HasFocus(324)">Conditional</animation>
                     </control>
                     <control type="image">
