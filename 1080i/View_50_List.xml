@@ -181,7 +181,7 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>[!Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + ![[Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
+                <visible>[!substring(Container.FolderPath,plugin://,left) + !Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + ![[Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <width>444</width>
                     <height>690</height>
@@ -212,7 +212,7 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>[Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]</visible>
+                <visible>[Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + !substring(Container.FolderPath,plugin://,left)</visible>
                 <control type="image">
                     <height>690</height>
                     <width>444</width>
@@ -275,7 +275,7 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>!Window.IsVisible(MyVideoPlaylist.xml) + [!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + Container.Content(addons)]] + !stringcompare(ListItem.Label,..)</visible>
+                <visible>!Window.IsVisible(MyVideoPlaylist.xml) + [!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + [Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] ]] + !stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <width>444</width>
                     <height>690</height>

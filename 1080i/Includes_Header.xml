@@ -20,9 +20,11 @@
         <value condition="Player.HasVideo + !VideoPlayer.Content(livetv)">$INFO[Player.Title]</value>
         <value condition="Player.HasVideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,  ]$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.HasAudio + IsEmpty(Window(10025).Property(TvTunesIsAlive))">$INFO[Player.Artist]</value>
+        
+        <value condition="substring(Container.FolderPath,plugin://,left)">$LOCALIZE[24000]</value>
+        <value condition="Window.IsVisible(MyPVR.xml)">$INFO[Pvr.BackendName]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[15100]</value>
-        <value>$INFO[System.ProfileName]</value>
 	</variable>
 	
 	

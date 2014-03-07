@@ -3,7 +3,7 @@
 <includes>
 
     <include name="View_52_Wall_Content">
-        <itemlayout width="239" height="354" condition="!Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
+        <itemlayout width="239" height="354" condition="!substring(Container.FolderPath,plugin://,left) + !Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -26,7 +26,7 @@
             </control>
 
         </itemlayout>
-        <itemlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
+        <itemlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] + !Window.IsVisible(MyVideoPlaylist.xml)">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -48,7 +48,7 @@
             </control>
         
         </itemlayout>
-        <itemlayout width="478" height="354" condition="Container.Content(episodes)">
+        <itemlayout width="478" height="354" condition="Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -86,7 +86,7 @@
 
         </itemlayout>
         
-        <focusedlayout width="239" height="354" condition="!Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
+        <focusedlayout width="239" height="354" condition="!substring(Container.FolderPath,plugin://,left) + !Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)]">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -108,7 +108,7 @@
             </control>
 
         </focusedlayout>
-        <focusedlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)">
+        <focusedlayout width="239" height="236" condition="[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] + !Window.IsVisible(MyVideoPlaylist.xml)">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -130,7 +130,7 @@
             </control>
             
         </focusedlayout>
-        <focusedlayout width="478" height="354" condition="Container.Content(episodes)">
+        <focusedlayout width="478" height="354" condition="Container.Content(episodes) + !substring(Container.FolderPath,plugin://,left)">
             <control type="group">
                 <posy>9</posy>
                 <control type="image">
@@ -212,7 +212,7 @@
         <control type="group">
             <posx>974</posx>
             <posy>210</posy>
-            <visible>![[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
+            <visible>![[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
             <control type="image">
                 <height>690</height>
                 <width>460</width>
@@ -291,7 +291,7 @@
         <control type="group">
             <posx>974</posx>
             <posy>210</posy>
-            <visible>[[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
+            <visible>[[!Window.IsVisible(MyVideoNav.xml) | Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] + !Window.IsVisible(MyVideoPlaylist.xml)]</visible>
             <control type="image">
                 <height>690</height>
                 <width>460</width>
