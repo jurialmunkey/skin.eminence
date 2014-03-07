@@ -30,6 +30,8 @@
 				<height>549</height>
 				<align>justify</align>
 				<textcolor>TopBarIcon</textcolor>
+				<selectedcolor>Highlight</selectedcolor>
+				<focusedcolor>Highlight</focusedcolor>
 				<animation effect="fade" end="66" condition="true">Conditional</animation>
 			</control>
 

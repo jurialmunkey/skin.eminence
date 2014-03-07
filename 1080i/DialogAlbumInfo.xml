@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
+    <onunload>ClearProperty(9000Focus,home)</onunload>
 	<controls>
 
 		<control type="group">

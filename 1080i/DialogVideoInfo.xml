@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9850</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
+    <onunload>ClearProperty(9000Focus,home)</onunload>
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 

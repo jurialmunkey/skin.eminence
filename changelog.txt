@@ -1,3 +1,6 @@
+[B]0.9.15[/B]
+Fix side label use rotate rather than angle
+
 [B]0.9.14[/B]
 Customisation of home menu options
 Fixed video plugin views to be square
