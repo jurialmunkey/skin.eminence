@@ -59,6 +59,59 @@
         </control>
         
         <include>DefMyNavViews</include>
+        
+        <control type="group">
+            <posx>233</posx>
+            <posy>70</posy>
+            <include>DialogVisibility</include>
+            <include>Animation.SlideOpen.Left</include>
+            <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
+            <control type="label">
+                <posx>1514</posx>
+                <posy>210</posy>
+                <aligny>top</aligny>
+                <width>690</width>
+                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
+                <font>Font-ViewCategory</font>
+                <label>31170</label>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+                <visible>!Container(51).OnScrollNext + !Container(51).OnScrollPrevious</visible>
+            </control>
+            <control type="group">
+                <posx>18</posx>
+                <posy>210</posy>
+                <control type="image">
+                    
+                    <width>1416</width>
+                    <height>690</height>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control> 
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture colordiffuse="Black">common/white.png</texture>
+                </control>
+                <control type="videowindow">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
+                </control>
+            </control>
+        </control>
 		
 		<control type="group">
             <posx>233</posx>
@@ -66,6 +119,7 @@
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
             <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
+            
             <control type="label">
                 <posx>984</posx>
                 <posy>150</posy>
@@ -74,6 +128,7 @@
                 <label>15100</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
             </control>
+            
             <control type="list" id="9500">
                 <posx>984</posx>
                 <posy>210</posy>

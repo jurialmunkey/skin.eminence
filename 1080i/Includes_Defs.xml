@@ -127,6 +127,7 @@
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(movieinformation)">Conditional</animation>
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(musicinformation)">Conditional</animation>
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(addoninformation)">Conditional</animation>
+            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Control.HasFocus(9001)">Conditional</animation>
             <include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
             <include>View_50_List</include>
