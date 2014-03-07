@@ -1,5 +1,7 @@
 [B]0.9.14[/B]
 Customisation of home menu options
+Fixed video plugin views to be square
+Added Livetv and Addon conditions for header
 
 [B]0.9.13[/B]
 Ability to customise home menu items from skin settings
