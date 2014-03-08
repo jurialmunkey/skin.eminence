@@ -308,3 +308,10 @@ msgctxt "#31174"
 msgid "Cinema Experience"
 msgstr ""
 
+msgctxt "#31175"
+msgid "Television"
+msgstr ""
+
+msgctxt "#31176"
+msgid "Media Center"
+msgstr ""

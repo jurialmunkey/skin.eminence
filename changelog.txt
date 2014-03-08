@@ -2,6 +2,9 @@
 Left sided pvr labels
 Add cinema experience button
 Scrollbars in pvr
+Change pvr header label
+Change recordings labels to label rather than title
+Change main label to "media center"
 
 [B]0.9.15[/B]
 Fix side label use rotate rather than angle

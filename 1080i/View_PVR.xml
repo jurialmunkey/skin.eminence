@@ -17,7 +17,7 @@
             <align>left</align>
             <textcolor>PanelFG</textcolor>
             <font>Font-PVRTitle</font>
-            <label>$INFO[ListItem.Title]</label>
+            <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label">
             <posx>140</posx>
@@ -360,7 +360,7 @@
             <posx>18</posx>
             <posy>711</posy>
             <control type="image">
-                <height>189</height>
+                <height>188</height>
                 <width>1670</width>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
