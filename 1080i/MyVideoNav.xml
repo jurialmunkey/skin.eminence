@@ -407,6 +407,15 @@
 					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 
+                <control type="togglebutton" id="14">
+                    <include>DefContextMenuButton</include>
+                    <label>20367</label>
+                    <altlabel>✓  $LOCALIZE[20367]</altlabel>
+                    <usealttexture>System.Setting(hidewatched)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                
                 <!-- EXTRA INFO OPTIONS -->
                 <control type="togglebutton" id="9003">
                     <include>DefContextMenuButton</include>
@@ -497,15 +506,6 @@
                     <onclick>ActivateWindow(playercontrols)</onclick>
                 </control>
 
-                
-                <control type="togglebutton" id="14">
-                    <include>DefContextMenuButton</include>
-                    <label>20367</label>
-                    <altlabel>✓  $LOCALIZE[20367]</altlabel>
-                    <usealttexture>System.Setting(hidewatched)</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
-                </control>
 
                 <control type="radiobutton" id="11">
                     <description>Unlock Shares</description>
