@@ -315,3 +315,7 @@ msgstr ""
 msgctxt "#31176"
 msgid "Media Center"
 msgstr ""
+
+msgctxt "#31177"
+msgid "Show weather with clock"
+msgstr ""

@@ -219,6 +219,7 @@
             <posx>400r</posx>
             <visible>!Window.IsActive(DialogExtendedProgressBar.xml)</visible>
             <include>Animation.HeaderDialog</include>
+            <animation effect="slide" start="0" end="92" condition="Skin.HasSetting(disable.weatherheader)">Conditional</animation>
             <control type="label">
                 <posx>272</posx>
                 <posy>27</posy>
@@ -229,6 +230,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <label> [B]$VAR[WeatherLabel][/B]</label>
+                <visible>!Skin.HasSetting(disable.weatherheader)</visible>
             </control>
             <control type="label">
                 <posx>268</posx>
@@ -241,6 +243,7 @@
                 <align>center</align>
                 <aligny>top</aligny>
                 <label>$INFO[Weather.Temperature]</label>
+                <visible>!Skin.HasSetting(disable.weatherheader)</visible>
             </control>
             <control type="label">
                 <posx>220</posx>
