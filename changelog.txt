@@ -1,6 +1,7 @@
 [B]0.9.16[/B]
 Left sided pvr labels
 Add cinema experience button
+Scrollbars in pvr
 
 [B]0.9.15[/B]
 Fix side label use rotate rather than angle

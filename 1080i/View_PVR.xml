@@ -129,7 +129,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 
                 <onright>9000</onright>
                 <onup>11</onup>
@@ -152,7 +152,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>12</onup>
@@ -175,7 +175,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>13</onup>
@@ -433,7 +433,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>14</onup>
@@ -482,7 +482,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>17</onup>
@@ -531,7 +531,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>15</onup>
@@ -554,7 +554,7 @@
                 <posy>210</posy>
                 <width>945</width>
                 <height>700</height>
-                <onleft>9000</onleft>
+                <onleft>60</onleft>
                 <onright>9000</onright>
                 
                 <onup>16</onup>

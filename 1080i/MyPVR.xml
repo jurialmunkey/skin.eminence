@@ -34,6 +34,16 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
+            <control type="scrollbar" id="60">
+                <visible>!Control.IsVisible(10)</visible>
+                <posx>-11</posx>
+                <posy>210</posy>
+                <height>689</height>
+                <onleft>9000</onleft>
+                <onright>50</onright>
+                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
+            </control>
             <include>DialogVisibility</include>
 			<include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
