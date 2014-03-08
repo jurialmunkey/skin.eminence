@@ -122,7 +122,7 @@
             
             <control type="label">
                 <posx>984</posx>
-                <posy>150</posy>
+                <posy>145</posy>
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>15100</label>
@@ -249,7 +249,7 @@
             </control>
             <control type="label">
                 <posx>18</posx>
-                <posy>150</posy>
+                <posy>145</posy>
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[MovieWidgetLabel]</label>
@@ -258,7 +258,7 @@
             </control>
             <control type="label">
                 <posx>18</posx>
-                <posy>150</posy>
+                <posy>145</posy>
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[TvShowWidgetLabel]</label>

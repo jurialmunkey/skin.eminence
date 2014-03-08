@@ -20,16 +20,12 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
         </control>
    
         <control type="group">
 		    <posx>253</posx>
 		    <posy>70</posy>
 		    <include>DialogVisibility</include>
-		    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 		    <include>Animation.SlideOpen.Left</include>
 		    <control type="label" id="2" description="Info Label">
                 <posx>1514</posx>
@@ -45,10 +41,8 @@
 
 		<control type="group">
 			<posy>160</posy>
-			<visible>!Window.IsVisible(DialogSelect.xml)</visible>
-            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-
+            <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
  
@@ -319,11 +313,10 @@
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>3</onleft>
+            <include>DialogVisibility</include>
             <onright>ClearProperty(movement,settings)</onright>
-				<onright>$VAR[DefSettingsOnRight]</onright>
+            <onright>$VAR[DefSettingsOnRight]</onright>
             <include>Animation.SlideOpen.Left</include>
-            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>
 

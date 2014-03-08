@@ -15,7 +15,7 @@
             <width>445</width>
             <aligny>top</aligny>
             <align>center</align>
-            <font>Font-EPGRuler</font>
+            <font>Font-DialogInfoNav</font>
             <label>31160</label>
             <animation effect="fade" end="33" condition="true">Conditional</animation>
         </control>

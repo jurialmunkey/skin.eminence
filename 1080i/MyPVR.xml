@@ -9,7 +9,8 @@
             <posx>262</posx>
             <posy>220</posy>
             <width>690</width>
-            <font>Font-EPGRuler</font>
+            <font>Font-WidgetCategory</font>
+            <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
             <label>$INFO[Control.GetLabel(30)]</label>
             <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
             
@@ -22,7 +23,8 @@
             <posx>262</posx>
             <posy>220</posy>
             <width>690</width>
-            <font>Font-EPGRuler</font>
+            <font>Font-WidgetCategory</font>
+            <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
             <label>$INFO[Control.GetLabel(29)]</label>
             <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
@@ -36,6 +38,7 @@
             <posx>233</posx>
             <control type="scrollbar" id="60">
                 <visible>!Control.IsVisible(10)</visible>
+                <visible>!Control.HasFocus(37)</visible>
                 <posx>-11</posx>
                 <posy>210</posy>
                 <height>689</height>

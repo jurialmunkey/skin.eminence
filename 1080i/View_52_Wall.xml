@@ -366,6 +366,27 @@
             <include condition="Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
             <include condition="!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>
             <include condition="Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
+            <control type="group">
+                <width>1452</width>
+                <posy>145</posy>
+                <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]]</visible>
+                <control type="label">
+                    <left>22</left>
+                    <width>1300</width>
+                    <align>left</align>
+                    <font>Font-WidgetCategory</font>
+                    <label>$INFO[ListItem.Label]</label>
+                    <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
+                </control>
+                <control type="label">
+                    <right>22</right>
+                    <width>300</width>
+                    <align>right</align>
+                    <font>Font-WidgetCategory</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
+                </control>
+            </control>
             <control type="scrollbar" id="60">
                 <posx>-11</posx>
                 <posy>210</posy>

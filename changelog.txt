@@ -1,6 +1,8 @@
 [B]0.9.17[/B]
 Added option to disable weather in clock
 Scrollbar to hourly weather
+Label for wall view with no info
+PVR EPG full width + small channels
 
 [B]0.9.16[/B]
 Left sided pvr labels

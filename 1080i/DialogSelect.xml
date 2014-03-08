@@ -13,7 +13,7 @@
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
             <onleft>6</onleft>
             <onright>6</onright>
-            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.SlideOpen.Right</include>
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>
         <control type="group">
@@ -257,7 +257,6 @@
 				<width>1020</width>
 				<height>66</height>
 				<align>left</align>
-				<onclick>SettingsLevelChange</onclick>
 				<ondown>3</ondown>
 				<onright>3</onright>
 				<onleft>3</onleft>
