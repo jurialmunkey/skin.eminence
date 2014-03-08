@@ -50,7 +50,7 @@
             <include>DialogVisibility</include>
 			<include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
-            <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
+            <animation effect="slide" end="-1950" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
             <control type="group" id="50">
                 <visible>!Control.HasFocus(37)</visible>
