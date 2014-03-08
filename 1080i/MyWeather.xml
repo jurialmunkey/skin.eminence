@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2600">
-	<defaultcontrol always="true">9100</defaultcontrol>
+	<defaultcontrol always="true">60</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<background>0</background>
     
@@ -43,6 +43,14 @@
         <control type="group">
             <posy>70</posy>
             <posx>233</posx>
+            <control type="scrollbar" id="60">
+                <posx>1449</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <onleft>9000</onleft>
+                <onright>9200</onright>
+                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+            </control>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" condition="Control.HasFocus(9200)" start="0" end="-1920" time="200">Conditional</animation>
@@ -178,7 +186,7 @@
                 
             </control>
             
-            <control type="image">
+           <!-- <control type="image">
                 <posy>920</posy>
                 <posx>1069</posx>
                 <width>16</width>
@@ -191,7 +199,7 @@
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <include>DialogVisibility</include>
-            </control>
+            </control>-->
             
             <control type="list" id="9100">
                 <posx>720</posx>
@@ -199,7 +207,8 @@
                 <width>714</width>
                 <height>702</height>
                 <onleft>9000</onleft>
-                <onright>9200</onright>
+                <onright>60</onright>
+                <pagecontrol>60</pagecontrol>
                 <orientation>vertical</orientation>
                 <itemlayout width="714" height="117">
                     <control type="image">
@@ -280,7 +289,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label> [B]$VAR[WeatherLabelHourly][/B]</label>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
                         <posx>704</posx>
@@ -290,7 +299,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <label>k</label>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
                         <posx>280</posx>
@@ -298,7 +307,7 @@
                         <height>105</height>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Property(outlook)]</label>
                     </control>
@@ -308,7 +317,7 @@
                         <height>105</height>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-WeatherTempHourly</font>
                         <label>$INFO[ListItem.Property(temp)]</label>
                     </control>
@@ -317,7 +326,7 @@
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
@@ -326,7 +335,7 @@
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG-NF</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
@@ -431,7 +440,7 @@
             </control>
             <control type="button" id="9200">
                 <visible allowhiddenfocus="true">false</visible>
-                <onleft>9100</onleft>
+                <onleft>60</onleft>
             </control>
             <control type="panel">
                 <posx>1938</posx>
@@ -618,6 +627,7 @@
         <control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
+                <ondown>60</ondown>
                 <include>DefMyTopBarGroupList</include>
 
                 <control type="button" id="2">
