@@ -223,8 +223,8 @@
 	    <width>475</width>
 	    <height>130</height>
 	    <align>left</align>
-	    <texturefocus border="2" colordiffuse="PosterBorder">common/border-inner.png</texturefocus>
-	    <alttexturefocus border="2" colordiffuse="PosterBorder">common/border-inner.png</alttexturefocus>
+	    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+	    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
 	</include>
 	
 	<include name="DefMyTopBar">
