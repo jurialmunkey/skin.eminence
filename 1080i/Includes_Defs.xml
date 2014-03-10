@@ -206,7 +206,7 @@
 	</include>
 	
 	<include name="DefMyNavBarGroupList">
-	    <posx>1445</posx>
+	    <posx>1452</posx>
         <posy>280</posy>
         <width>480</width>
         <height>690</height>
