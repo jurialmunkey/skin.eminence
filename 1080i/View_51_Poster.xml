@@ -8,7 +8,7 @@
             <visible>Control.IsVisible(51)</visible>
             <include>Animation.ViewChange</include>
             <include>DefSideLabel</include>
-            <control type="list" id="51">
+            <control type="fixedlist" id="51">
                 <posx>-3</posx>
                 <posy>210</posy>
                 <width>1458</width>
