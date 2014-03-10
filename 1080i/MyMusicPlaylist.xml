@@ -39,7 +39,7 @@
         
         
         <control type="group">   
-            <include>DefMyTopBar</include>  
+            <include>DefMyNavBar</include>  
             <control type="grouplist" id="9000">
                 <include>DefMyNavBarGroupList</include>
 

@@ -221,13 +221,13 @@
 	
 	<include name="DefNavMenuButton">
 	    <width>475</width>
-	    <height>130</height>
+	    <height>90</height>
 	    <align>left</align>
 	    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
 	    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
 	</include>
 	
-	<include name="DefMyTopBar">
+	<include name="DefMyNavBar">
 	    <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
         <include>Animation.SlideOpen.Left</include>
 	</include>
