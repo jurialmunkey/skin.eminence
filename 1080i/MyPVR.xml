@@ -173,16 +173,18 @@
                     <include>DefNavMenuButton</include>
                 </control>
                 
+                <control type="button" id="36" description="Search">
+                    <label>$LOCALIZE[137]</label>
+                    <include>DefNavMenuButton</include>
+                </control>
+                
                 <control type="button" id="37" description="Fullscreen">
                     <label>$LOCALIZE[31158]</label>
                     <include>DefNavMenuButton</include>
                     <onclick>Action(fullscreen)</onclick>
                     <visible>Player.HasMedia</visible>
                 </control>
-                <control type="button" id="36" description="Search">
-                    <label>$LOCALIZE[137]</label>
-                    <include>DefNavMenuButton</include>
-                </control>
+                
             </control>
         </control>
         <control type="button" id="31" description="TV Guide">
