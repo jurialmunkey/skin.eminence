@@ -1,5 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="PVRInfoPanel">
+        <control type="group">
+            <posx>974</posx>
+            <posy>210</posy>
+            <control type="image">
+                <width>460</width>
+                <height>690</height>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="group">
+                <posx>11</posx>
+                <posy>11</posy>
+                <control type="image">
+                    <width>438</width>
+                    <height>258</height>
+                    <texture colordiffuse="Black" border="5">common/white.png</texture>
+                </control>
+                <control type="videowindow">
+                    <width>438</width>
+                    <height>258</height>
+                </control>
+            </control>
+            <control type="group">
+                <posx>22</posx>
+                <posy>271</posy>
+                <control type="label">
+                    <posy>10</posy>
+                    <width>423</width>
+                    <align>left</align>
+                    <textcolor>PanelFG</textcolor>
+                    <font>Font-PVRTitle</font>
+                    <label>$INFO[ListItem.Title]</label>
+                </control>
+                <control type="label">
+                    <posy>45</posy>
+                    <posx>423</posx>
+                    <width>423</width>
+                    <align>right</align>
+                    <textcolor>PanelFG</textcolor>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
+                </control>
+                <control type="label">
+                    <posy>45</posy>
+                    <width>275</width>
+                    <align>left</align>
+                    <textcolor>PanelFG</textcolor>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$INFO[ListItem.ChannelName]</label>
+                </control>
+                <control type="textbox">
+                    <posy>112</posy>
+                    <width>423</width>
+                    <height>230</height>
+                    <align>left</align>
+                    <aligny>top</aligny>
+                    <textcolor>PanelFG</textcolor>
+                    <font>Font-ListInfo</font>
+                    <label>$INFO[ListItem.Plot]</label>
+                </control>
+                <control type="label">
+                    <posy>348</posy>
+                    <width>423</width>
+                    <align>left</align>
+                    <textcolor>PanelFG</textcolor>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$INFO[ListItem.NextTitle,[B]$LOCALIZE[209]...[/B] ,]</label>
+                </control>
+            </control>
+        </control>
+    </include>
 
     <include name="PVRrecordinglayout">
         <control type="image">
@@ -89,7 +160,7 @@
         <itemlayout width="945" height="140">
             <control type="image">
                 <width>945</width>
-                <height>129</height>
+                <height>130</height>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>        
             <include>PVRlistlayout</include>
@@ -101,7 +172,7 @@
                 <visible>!ControlGroup(9000).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
-                    <height>129</height>
+                    <height>130</height>
                     <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                 
                 </control>
@@ -111,7 +182,7 @@
                 <visible>ControlGroup(9000).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
-                    <height>129</height>
+                    <height>130</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <include>PVRlistlayout</include>
@@ -123,7 +194,8 @@
 
     <include name="LiveTVChannelView">
         <control type="group" description="TV Channels group">
-            <visible>Control.IsVisible(11)</visible>      
+            <visible>Control.IsVisible(11)</visible>  
+            
             <control type="list" id="11" description="CHANNELS">     
                 <posx>18</posx>
                 <posy>210</posy>
@@ -141,12 +213,14 @@
                 <include>PVRitemlayout</include>                    
                 <include>PVRfocusedlayout</include>
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
   
     <include name="LiveRadioChannelView">
         <control type="group" description="Radio group">
             <visible>Control.IsVisible(12)</visible>
+            
             <control type="list" id="12" description="RADIO">     
                 <posx>18</posx>
                 <posy>210</posy>
@@ -164,12 +238,14 @@
                 <include>PVRitemlayout</include>                    
                 <include>PVRfocusedlayout</include>
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
     
     <include name="LiveTVRecordingsView">
         <control type="group" description="Radio group">
             <visible>Control.IsVisible(13)</visible>
+            
             <control type="list" id="13" description="RADIO">     
                 <posx>18</posx>
                 <posy>210</posy>
@@ -187,7 +263,7 @@
                 <itemlayout width="945" height="140">
                     <control type="image">
                         <width>945</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
@@ -198,7 +274,7 @@
                         <visible>!ControlGroup(9000).HasFocus()</visible>                
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
@@ -207,7 +283,7 @@
                         <visible>ControlGroup(9000).HasFocus()</visible>
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
@@ -215,228 +291,227 @@
                 </focusedlayout>
                 
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
     <include name="EPGTimelineView">
-        <control type="epggrid" id="10">
-            <posx>-215</posx>
-            <posy>70</posy>
-            <width>1920</width>
-            <height>637</height>
-            <pagecontrol>10</pagecontrol>
-            <progresstexture border="5" colordiffuse="bf777777">windows/pvr/progressline.png</progresstexture>
-            <scrolltime>350</scrolltime>
-            <timeblocks>50</timeblocks>
-            <rulerunit>12</rulerunit>
-            <onleft>31</onleft>
-            <onright>31</onright>
-            <onup>10</onup>
-            <ondown>10</ondown>
-            <rulerlayout height="140" width="250">
-                <control type="label" id="2">
-                    <posx>10</posx>
-                    <posy>96</posy>
-                    <width>200</width>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <font>Font-WidgetCategory</font>
-                    <label>$INFO[ListItem.Label]</label>
-                    <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
-                </control>
-            </rulerlayout>
-            <channellayout height="71" width="420">
-                <control type="image">
-                    <width>412</width>
-                    <height>67</height>
-                    <texture border="5">common/border-inner.png</texture>
-                    <colordiffuse>PosterBorder</colordiffuse>
-                </control>   
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>8</posy>
-                    <width>72</width>
-                    <height>51</height>
-                    <texture>$VAR[PVRIcon]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="label">
-                    <posx>100</posx>
-                    <width>291</width>
-                    <height>67</height>
-                    <label>$INFO[ListItem.ChannelName]</label>
-                </control>
-                <control type="label">
-                    <posx>391</posx>
-                    <width>180</width>
-                    <align>right</align>
-                    <height>67</height>
-                    <label>$INFO[ListItem.ChannelNumber]</label>
-                </control>
-            </channellayout>
-            <focusedchannellayout height="71" width="420">
-                <control type="image">
-                    <width>412</width>
-                    <height>67</height>
-                    <texture border="5">common/border-inner.png</texture>
-                </control>   
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>8</posy>
-                    <width>72</width>
-                    <height>51</height>
-                    <texture>$VAR[PVRIcon]</texture>
-                    <aspectratio>keep</aspectratio>
-                </control>
-
-                <control type="label">
-                    <posx>100</posx>
-                    <width>291</width>
-                    <height>67</height>
-                    <label>$INFO[ListItem.ChannelName]</label>
-                    <textcolor>Selected</textcolor>
-                </control>
-                <control type="label">
-                    <posx>391</posx>
-                    <width>180</width>
-                    <align>right</align>
-                    <height>67</height>
-                    <label>$INFO[ListItem.ChannelNumber]</label>
-                    <textcolor>Selected</textcolor>
-                </control>
-            </focusedchannellayout>    
-            <itemlayout height="71" width="250">
-                <control type="image" id="2">
-                    <width>246</width>
-                    <height>67</height>
-                    <texture border="5">common/border-inner.png</texture>
-                    <colordiffuse>PosterBorder</colordiffuse>
-                </control>   
-                <control type="image">
-                    <posy>6</posy>
-                    <width>52</width>
-                    <height>52</height>
-                    <texture>special://skin/extras/icons/timer.png</texture>
-                    <colordiffuse>PanelFG</colordiffuse>
-                    <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
-                </control>   
-                <control type="label" id="1">
-                    <posx>0</posx>
-                    <height>66</height>
-                    <width>325</width>
-                    <textoffsetx>80</textoffsetx>
-                    <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Label]</label>
-                    <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
-                </control>
-                <control type="label" id="1">
-                    <posx>10</posx>
-                    <width>230</width>
-                    <height>66</height>
-                    <textoffsetx>0</textoffsetx>
-                    <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Label]</label>
-                    <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-                </control>
-            </itemlayout>
-            <focusedlayout height="71" width="250">
-                <control type="image" id="2">
-                    <width>246</width>
-                    <height>67</height>
-                    <texture border="5">common/border-inner.png</texture>
-                </control>   
-                <control type="image">
-                    <posy>6</posy>
-                    <width>52</width>
-                    <height>52</height>
-                    <texture>special://skin/extras/icons/timer.png</texture>
-                    <colordiffuse>Selected</colordiffuse>
-                    <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
-                </control>   
-                <control type="label" id="1">
-                    <posx>0</posx>
-                    <height>66</height>
-                    <width>325</width>
-                    <textoffsetx>80</textoffsetx>
-                    <font>Font-ListInfo</font>
-                    <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                    <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
-                </control>
-                <control type="label" id="1">
-                    <posx>10</posx>
-                    <width>230</width>
-                    <height>66</height>
-                    <textcolor>Selected</textcolor>
-                    <textoffsetx>0</textoffsetx>
-                    <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Label]</label>
-                    <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
-                </control>
-            </focusedlayout>
-        </control>
         <control type="group">
             <visible>Control.IsVisible(10)</visible>
-            <posx>-215</posx>
-            <posy>711</posy>
+            <animation effect="slide" start="-1920" reversible="false" end="0" delay="0" time="200" condition="Control.IsVisible(10)">Conditional</animation>
+            <animation effect="slide" end="-1920" reversible="false" start="0" delay="0" time="200" condition="!Control.IsVisible(10)">Conditional</animation>
+            <control type="epggrid" id="10">
+                <posx>-215</posx>
+                <posy>70</posy>
+                <width>1884</width>
+                <height>637</height>
+                <pagecontrol>10</pagecontrol>
+                <progresstexture border="5" colordiffuse="bf777777">windows/pvr/progressline.png</progresstexture>
+                <scrolltime>350</scrolltime>
+                <timeblocks>35</timeblocks>
+                <rulerunit>6</rulerunit>
+                <onback condition="!Window.Previous(VideoFullScreen.xml)">9131</onback>
+                <onleft>31</onleft>
+                <onright>31</onright>
+                <onup>10</onup>
+                <ondown>10</ondown>
+                <rulerlayout height="140" width="250">
+                    <control type="label" id="2">
+                        <posx>10</posx>
+                        <posy>92</posy>
+                        <width>200</width>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <font>Font-WidgetCategory</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
+                    </control>
+                </rulerlayout>
+                <channellayout height="71" width="554">
+                    <control type="image">
+                        <width>544</width>
+                        <height>67</height>
+                        <texture border="5">common/border-inner.png</texture>
+                        <colordiffuse>PosterBorder</colordiffuse>
+                    </control>   
+                    <control type="image">
+                        <right>22</right>
+                        <posy>8</posy>
+                        <width>72</width>
+                        <height>51</height>
+                        <texture>$VAR[PVRIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>90</posx>
+                        <width>340</width>
+                        <height>67</height>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                    </control>
+                    <control type="label">
+                        <posx>45</posx>
+                        <width>90</width>
+                        <align>center</align>
+                        <height>67</height>
+                        <label>$INFO[ListItem.ChannelNumber]</label>
+                    </control>
+                </channellayout>
+                <focusedchannellayout height="71" width="554">
+                    <control type="image">
+                        <width>544</width>
+                        <height>67</height>
+                        <texture border="5">common/border-inner.png</texture>
+                    </control>   
+                    <control type="image">
+                        <right>22</right>
+                        <posy>8</posy>
+                        <width>72</width>
+                        <height>51</height>
+                        <texture>$VAR[PVRIcon]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                    <control type="label">
+                        <posx>90</posx>
+                        <width>340</width>
+                        <height>67</height>
+                        <label>$INFO[ListItem.ChannelName]</label>
+                    </control>
+                    <control type="label">
+                        <posx>45</posx>
+                        <width>90</width>
+                        <align>center</align>
+                        <height>67</height>
+                        <label>$INFO[ListItem.ChannelNumber]</label>
+                    </control>
+                </focusedchannellayout>    
+                <itemlayout height="71" width="250">
+                    <control type="image" id="2">
+                        <width>246</width>
+                        <height>67</height>
+                        <texture border="5">common/border-inner.png</texture>
+                        <colordiffuse>PosterBorder</colordiffuse>
+                    </control>   
+                    <control type="image">
+                        <posy>6</posy>
+                        <width>52</width>
+                        <height>52</height>
+                        <texture>special://skin/extras/icons/timer.png</texture>
+                        <colordiffuse>PanelFG</colordiffuse>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                    </control>   
+                    <control type="label" id="1">
+                        <posx>0</posx>
+                        <height>66</height>
+                        <width>325</width>
+                        <textoffsetx>80</textoffsetx>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>15</posx>
+                        <width>216</width>
+                        <height>66</height>
+                        <textoffsetx>0</textoffsetx>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="71" width="250">
+                    <control type="image" id="2">
+                        <width>246</width>
+                        <height>67</height>
+                        <texture border="5">common/border-inner.png</texture>
+                    </control>   
+                    <control type="image">
+                        <posy>6</posy>
+                        <width>52</width>
+                        <height>52</height>
+                        <texture>special://skin/extras/icons/timer.png</texture>
+                        <colordiffuse>Selected</colordiffuse>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                    </control>   
+                    <control type="label" id="1">
+                        <posx>0</posx>
+                        <height>66</height>
+                        <width>325</width>
+                        <textoffsetx>80</textoffsetx>
+                        <font>Font-ListInfo</font>
+                        <textcolor>Selected</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                    </control>
+                    <control type="label" id="1">
+                        <posx>15</posx>
+                        <width>216</width>
+                        <height>66</height>
+                        <textcolor>Selected</textcolor>
+                        <textoffsetx>0</textoffsetx>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label]</label>
+                        <visible>!ListItem.HasTimer + !ListItem.IsRecording</visible>
+                    </control>
+                </focusedlayout>
+            </control>
             <control type="image">
-                <height>188</height>
-                <width>1903</width>
+                <posx>-215</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <width>1884</width>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+             
             </control>
-            
-             <control type="image">
-                <right>11</right>
-                <posy>22</posy>
-                <height>145</height>
-                <width>211</width>
-                <texture>$VAR[PVRIcon]</texture>
-                <aspectratio align="center" aligny="center">keep</aspectratio>
-            </control>
-            
             <control type="group">
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>167</height>
-                    <width>400</width>
-                    <aspectratio>scale</aspectratio>
-                    <texture colordiffuse="Black">common/white.png</texture>
-                </control>
-                <control type="videowindow">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>167</height>
-                    <width>400</width>
-                </control>
-            </control>
+                <posx>-215</posx>
+                <posy>711</posy>
 
-            <control type="group">
-                <posx>433</posx>
-                <posy>3</posy>
-                <control type="label">
-                    <width>1215</width>
-                    <align>left</align>
-                    <textcolor>PanelFG</textcolor>
-                    <font>Font-PVRTitle</font>
-                    <label>$INFO[ListItem.Title]</label>
+            
+                <!-- <control type="image">
+                    <right>460</right>
+                    <posy>22</posy>
+                    <height>145</height>
+                    <width>211</width>
+                    <texture>$VAR[PVRIcon]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>  -->           
+                <control type="image">
+                    <right>30</right>
+                    <posy>17</posy>
+                    <height>152</height>
+                    <width>306</width>
+                    <texture>$VAR[PVRIcon]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
                 </control>
-                <control type="label">
-                    <posy>38</posy>
-                    <width>1215</width>
-                    <align>left</align>
-                    <textcolor>PanelFG</textcolor>
-                    <font>Font-ListInfo-Small</font>
-                    <label>$INFO[ListItem.ChannelName]   $INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
-                </control>
-                <control type="textbox">
-                    <posy>90</posy>
-                    <width>1215</width>
-                    <height>80</height>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <textcolor>PanelFG</textcolor>
-                    <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Plot]</label>
+
+
+                <control type="group">
+                    <posx>30</posx>
+                    <posy>2</posy>
+                    <control type="label">
+                        <width>1196</width>
+                        <align>left</align>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-PVRTitle</font>
+                        <label>$INFO[ListItem.Title]</label>
+                    </control>
+                    <control type="label">
+                        <posy>38</posy>
+                        <width>1196</width>
+                        <align>left</align>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.ChannelName]   $INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
+                    </control>
+                    <control type="textbox">
+                        <posy>90</posy>
+                        <width>1510</width>
+                        <height>80</height>
+                        <align>justify</align>
+                        <aligny>top</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Plot]</label>
+                    </control>
                 </control>
             </control>
         </control>
@@ -445,6 +520,7 @@
     <include name="LiveTVTimersView">
         <control type="group" description="TV Channels group">
             <visible>Control.IsVisible(14)</visible>
+            
             
             <control type="list" id="14" description="TIMERS">     
                 <posx>18</posx>
@@ -463,7 +539,7 @@
                 <itemlayout width="945" height="140">
                     <control type="image">
                         <width>945</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
@@ -474,7 +550,7 @@
                         <visible>!ControlGroup(9000).HasFocus()</visible>                
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
@@ -483,18 +559,20 @@
                         <visible>ControlGroup(9000).HasFocus()</visible>
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
                     </control>
                 </focusedlayout>
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
     <include name="LiveTVSearchView">
         <control type="group" description="TV Channels group">
             <visible>Control.IsVisible(17)</visible>
+            
             <control type="list" id="17">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -512,7 +590,7 @@
                 <itemlayout width="945" height="140">
                     <control type="image">
                         <width>945</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>    
                     <include>PVRrecordinglayout</include>
@@ -523,7 +601,7 @@
                         <visible>!ControlGroup(9000).HasFocus()</visible>                
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
                         <include>PVRrecordinglayoutfocus</include>
@@ -532,18 +610,20 @@
                         <visible>ControlGroup(9000).HasFocus()</visible>
                         <control type="image">
                             <width>945</width>
-                            <height>129</height>
+                            <height>130</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>   
                         <include>PVRrecordinglayout</include>
                     </control>
                 </focusedlayout>
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
     <include name="LiveTVGuideChannelView">
         <control type="group" description="TV Channels group">
             <visible>Control.IsVisible(15)</visible>
+            
             <control type="list" id="15">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -561,12 +641,15 @@
                 <include>PVRitemlayout</include>                    
                 <include>PVRfocusedlayout</include>
             </control>
+            <include>PVRInfoPanel</include>
+            
         </control>
     </include>
   <!-- EPG NOW NEXT -->
     <include name="LiveTVGuideNowNextView">
         <control type="group" description="TV Channels group">
             <visible>Control.IsVisible(16)</visible>
+            
             <control type="list" id="16">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -584,6 +667,7 @@
                 <include>PVRitemlayout</include>                    
                 <include>PVRfocusedlayout</include>
             </control>
+            <include>PVRInfoPanel</include>
         </control>
     </include>
 </includes>

@@ -206,20 +206,20 @@
         <control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
-                <include>DefMyTopBarGroupList</include>
+                <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="2">
                     <description>View</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="3">
                     <description>Sort</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="togglebutton" id="4">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                     <label>584</label>
@@ -228,7 +228,7 @@
                 </control>
                 
                 <control type="togglebutton" id="9007">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(wallviewmusic.info)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <visible>Control.IsVisible(52)</visible>
@@ -242,12 +242,12 @@
                 <control type="button" id="5">
                     <label>1214</label>
                     <description>Files</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="21">
                     <description>Activate Filter</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>$LOCALIZE[587]$INFO[Window.Property(filter),: ,]</label>
                     <onclick>SendClick(videolibrary,19)</onclick>
                     <onclick>SetFocus(21)</onclick>
@@ -255,7 +255,7 @@
                 
                 <control type="button" id="9002">
                     <description>Search</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>SetFocus(50)</onclick>
                     <onclick>RunScript(script.globalsearch)</onclick>
                     <label>137</label>
@@ -263,14 +263,14 @@
                 
                 <control type="button" id="98">
                     <description>Open Home Jumplist</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31108</label>
                     <onclick>ActivateWindow(playercontrols)</onclick>
                 </control>
 
                 <control type="togglebutton" id="16">
                     <description>PartyMode</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>589</label>
                     <altlabel>✓  $LOCALIZE[589]</altlabel>
                     <usealttexture>MusicPartyMode.Enabled</usealttexture>
@@ -280,7 +280,7 @@
                 
                 <control type="button" id="9001">
                     <description>Fullscreen</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31158</label>
                     <onclick>Action(fullscreen)</onclick>
                     <visible>Player.HasMedia</visible>

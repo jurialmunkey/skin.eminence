@@ -10,28 +10,19 @@
 		<control type="group">
 		    <posx>233</posx>
 		    <posy>70</posy>
+		    <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
 		    <include>DialogVisibility</include>
 		    <control type="label" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
+                <include>DefSideLabelCoords</include>
                 <label>$INFO[ListItem.Artist]</label>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <visible>!Container.Content(albums)</visible>
+                <visible>!ControlGroup(9500).HasFocus()</visible>
             </control>
             <control type="label" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
+                <include>DefSideLabelCoords</include>
                 <label>$INFO[ListItem.Album]</label>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <visible>Container.Content(albums)</visible>
+                <visible>!ControlGroup(9500).HasFocus()</visible>
             </control>
 		    <control type="group" description="Poster">
                 <posx>18</posx>
@@ -238,35 +229,27 @@
             </control>
         </control>
 
-        <control type="group">
-            <include>GlobalOverlay</include>
-            <include>GlobalLeftHeader</include>
-            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-        </control>
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>
-                <include>DefContextMenuGroupList</include>
+                <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="8" description="Play">
                     <label>208</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
     
                 <control type="button" id="10" description="Thumb">
                     <label>31135</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="button" id="6" description="Refresh">
                     <label>184</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
             </control>
         </control>

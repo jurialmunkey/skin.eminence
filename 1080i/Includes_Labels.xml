@@ -235,6 +235,12 @@
 	    <value condition="Control.IsVisible(17)">$LOCALIZE[137]</value>	    
 	</variable>
 	
+	<variable name="PVRTopLabel">
+	    <value condition="Control.HasFocus(37)">$LOCALIZE[31170]</value>
+	    <value condition="IsEmpty(Control.GetLabel(30))">$INFO[Control.GetLabel(29)]</value>
+	    <value>$INFO[Control.GetLabel(30)]</value>
+	</variable>
+	
 	<variable name="MovieWidgetLabel">
 	    <value condition="Skin.HasSetting(movie.widget.recommended)">$LOCALIZE[31110]</value>
 	    <value>$LOCALIZE[31112]</value>
@@ -243,6 +249,11 @@
 	<variable name="TvShowWidgetLabel">
 	    <value condition="Skin.HasSetting(tvshow.widget.recommended)">$LOCALIZE[31110]</value>
 	    <value>$LOCALIZE[31112]</value>
+	</variable>
+	
+	<variable name="WidgetPlot">
+	    <value condition="!IsEmpty(Container(9501).ListItem.Plot)">$INFO[Container(9501).ListItem.Plot]</value>
+	    <value>$INFO[Container(9501).ListItem.Property(Plot)]</value>
 	</variable>
 	
 	<variable name="MusicOSDPlot">

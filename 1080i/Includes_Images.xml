@@ -30,4 +30,9 @@
 	    <value>$VAR[PosterImage]</value>
 	</variable>
 	
+	<variable name="WidgetFanart">
+	    <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+	    <value>$INFO[ListItem.Icon]</value>
+	</variable>
+	
 </includes>

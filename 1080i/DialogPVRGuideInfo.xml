@@ -12,16 +12,8 @@
 		    <posx>233</posx>
 		    <posy>70</posy>
 		    <include>DialogVisibility</include>
-		    <control type="label" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
-                <label>$INFO[ListItem.Label]</label>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-            </control>
+		    <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+		    <include>DefDialogInfoSideLabel</include>
 		    <control type="group" description="Poster">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -207,35 +199,28 @@
             
         </control>
         
-        <control type="group">
-            <include>GlobalOverlay</include>
-            <include>GlobalLeftHeader</include>
-            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-        </control>
+    
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>
-                <include>DefContextMenuGroupList</include>
+                <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="5">
                     <description>Switch to Channel</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>19165</label>
                 </control>
                 <control type="button" id="6">
                     <description>Record</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>-</label>
                 </control>
                 <control type="button" id="7">
                     <description>OK</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>186</label>
                 </control>
             </control>

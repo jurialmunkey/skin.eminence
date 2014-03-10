@@ -298,13 +298,11 @@
     <include name="GlobalTopBar">
         <include>GlobalLeftHeader</include>
         <control type="group" description="Main Header">
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
             <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogProgress.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
-            <visible>!ControlGroup(9000).HasFocus()</visible>
             <visible>!ControlGroup(9500).HasFocus()</visible>
             <include>Animation.HeaderDialog</include>
             <include>HeaderMainInfo</include>

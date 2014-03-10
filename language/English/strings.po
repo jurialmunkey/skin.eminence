@@ -249,7 +249,7 @@ msgid "Recently Played"
 msgstr ""
 
 msgctxt "#31160"
-msgid "Press up for options..."
+msgid "Press down for options..."
 msgstr ""
 
 msgctxt "#31161"

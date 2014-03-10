@@ -39,13 +39,13 @@
     </include>
     
     <include name="Animation.HeaderDialog">
-	    <animation type="Visible" condition="!Window.Previous(home)">
+	    <animation type="Visible">
+	        <effect type="slide" start="100" end="0" time="150"/>
 	        <effect type="fade" start="0" end="100" time="150"/>
-	        <effect type="slide" start="400" end="0" time="150"/>	        
 	    </animation>
 	    <animation type="Hidden">
+	        <effect type="slide" start="0" end="100" time="150"/>
 	        <effect type="fade" end="0" start="100" time="150"/>
-	        <effect type="slide" end="400" start="0" time="150"/>	        
 	    </animation>
     </include>
     
@@ -53,11 +53,9 @@
     <include name="Animation.HeaderDialog.Open">
 	    <animation type="WindowOpen">
 	        <effect type="fade" start="0" end="100" time="100"/>
-	        <effect type="slide" start="400" end="0" time="150"/>	        
 	    </animation>
 	    <animation type="WindowClose">
 	        <effect type="fade" end="0" start="100" time="150"/>
-	        <effect type="slide" end="400" start="0" time="150"/>	        
 	    </animation>
     </include>
 

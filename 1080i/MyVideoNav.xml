@@ -35,6 +35,7 @@
             <include>DialogVisibility</include>
             <visible>[Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
+            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
         
         <control type="button">
@@ -56,31 +57,18 @@
             <visible>![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
+            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
         
         <include>DefMyNavViews</include>
         
         <control type="group">
-            <posx>233</posx>
+            <posx>0</posx>
             <posy>70</posy>
             <include>DialogVisibility</include>
-            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
             <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
-            <control type="label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <font>Font-ViewCategory</font>
-                <label>31170</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-                <visible>!Container(51).OnScrollNext + !Container(51).OnScrollPrevious</visible>
-            </control>
             <control type="group">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -386,20 +374,20 @@
         <control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
-                <include>DefMyTopBarGroupList</include>
+                <include>DefMyNavBarGroupList</include>
                 
                 <control type="button" id="2">
                     <description>View</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="3">
                     <description>Sort</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="togglebutton" id="4">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                     <label>584</label>
@@ -408,7 +396,7 @@
                 </control>
                 
                 <control type="togglebutton" id="14">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>20367</label>
                     <altlabel>✓  $LOCALIZE[20367]</altlabel>
                     <usealttexture>System.Setting(hidewatched)</usealttexture>
@@ -418,7 +406,7 @@
                 
                 <!-- EXTRA INFO OPTIONS -->
                 <control type="togglebutton" id="9003">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(posterview.tvinfo)</onclick>
                     <visible>Container.Content(tvshows) + Control.IsVisible(51)</visible>
                     <label>31150</label>
@@ -428,7 +416,7 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="9004">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(posterview.info)</onclick>
                     <visible>Container.Content(movies) + Control.IsVisible(51)</visible>
                     <label>31150</label>
@@ -438,7 +426,7 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="9005">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(listview.tvinfo)</onclick>
                     <visible>Container.Content(tvshows) + Control.IsVisible(50)</visible>
                     <label>31150</label>
@@ -448,7 +436,7 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="9006">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(listview.info)</onclick>
                     <visible>Container.Content(movies) + Control.IsVisible(50)</visible>
                     <label>31150</label>
@@ -458,7 +446,7 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="9007">
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(wallview.info)</onclick>
                     <onclick>ReloadSkin()</onclick>
                     <visible>Control.IsVisible(52)</visible>
@@ -471,7 +459,7 @@
                 
                 <control type="button" id="21">
                     <description>Activate Filter</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>$LOCALIZE[587]$INFO[Window.Property(filter),: ,]</label>
                     <onclick>SendClick(videolibrary,19)</onclick>
                     <onclick>SetFocus(50)</onclick>
@@ -481,7 +469,7 @@
 				<control type="togglebutton" id="98">
 					<visible>Container.CanFilterAdvanced</visible>
 					<description>Filter</description>
-					<include>DefContextMenuButton</include>
+					<include>DefNavMenuButton</include>
 					<label>587</label>
 					<onclick>SetFocus(50)</onclick>
 					<onclick>Filter</onclick>
@@ -493,7 +481,7 @@
                 
                 <control type="button" id="9002">
                     <description>Search</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <onclick>SetFocus(50)</onclick>
                     <onclick>RunScript(script.globalsearch)</onclick>
                     <label>137</label>
@@ -501,7 +489,7 @@
                 
                 <control type="button" id="99">
                     <description>Open Home Jumplist</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31108</label>
                     <onclick>ActivateWindow(playercontrols)</onclick>
                 </control>
@@ -511,7 +499,7 @@
                     <description>Unlock Shares</description>
                     <onclick>xbmc.mastermode</onclick>
                     <visible>system.haslocks</visible>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>20336</label>
                     <altlabel>✓  $LOCALIZE[20336]</altlabel>
                     <usealttexture>system.ismaster</usealttexture>
@@ -521,7 +509,7 @@
                 
                 <control type="button" id="9001">
                     <description>Fullscreen</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31158</label>
                     <onclick>Action(fullscreen)</onclick>
                     <visible>Player.HasMedia</visible>

@@ -18,20 +18,20 @@
 		<control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
-                <include>DefMyTopBarGroupList</include>
+                <include>DefMyNavBarGroupList</include>
                 <control type="button" id="2">
                     <description>View</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="3">
                     <description>Sort</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="togglebutton" id="4">
                     <description>Ascending</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
                 </control>

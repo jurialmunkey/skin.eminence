@@ -11,17 +11,9 @@
 		<control type="group">
 		    <posx>233</posx>
 		    <posy>70</posy>
+		    <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
 		    <include>DialogVisibility</include>
-		    <control type="label" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
-                <label>$INFO[ListItem.Label]</label>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-            </control>
+		    <include>DefDialogInfoSideLabel</include>
 		    <control type="group" description="Poster">
                 <posx>18</posx>
                 <posy>210</posy>
@@ -191,21 +183,16 @@
             </control>
         </control>
         
-        <control type="group">
-            <include>GlobalOverlay</include>
-            <include>GlobalLeftHeader</include>
-            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-        </control>
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus() + !Window.IsVisible(DialogAddonSettings.xml)</visible>
             <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
-                <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>
-                <include>DefContextMenuGroupList</include>
+                <ondown>9500</ondown>
+                <onup>9500</onup>
+                <onright>9000</onright>
+                <onleft>9000</onleft>
+                <include>DefMyNavBarGroupList</include>
                 
                 <control type="button" id="9521">
                     <label>518</label>
@@ -213,36 +200,36 @@
                     <onclick>Action(Close)</onclick>
                     <onclick condition="Substring(ListItem.Property(Addon.ID),script.,left)">Runscript($INFO[ListItem.Property(Addon.ID)])</onclick>
                     <onclick condition="Substring(ListItem.Property(Addon.ID),plugin.,left)">RunAddon($INFO[ListItem.Property(Addon.ID)])</onclick>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="6">
                     <description>Install/Uninstall Addon button</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>24022</label>
                 </control>
 
                 <control type="button" id="7">
                     <description>Enable/Disable Addon button</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>24021</label>	
                 </control>
 
                 <control type="button" id="9">
                     <description>Addon Settings</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>24020</label>
                 </control>
 
                 <control type="button" id="8">
                     <description>Update Addon button</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>24069</label>
                 </control>
 
                 <control type="button" id="10">
                     <description>Changelog button</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>24036</label>
                 </control>
             </control>

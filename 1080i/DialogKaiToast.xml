@@ -10,7 +10,6 @@
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <visible>IsEmpty(Window(home).Property(9000Focus))</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DefContextMenuBackground</include>
             <control type="image" id="403" description="info">

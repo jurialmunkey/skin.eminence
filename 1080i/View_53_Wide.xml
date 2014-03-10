@@ -28,7 +28,7 @@
 
                     <control type="image">
                         <width>464</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
@@ -68,7 +68,7 @@
 
                     <control type="image">
                         <width>464</width>
-                        <height>129</height>
+                        <height>130</height>
                         <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">

@@ -8,10 +8,8 @@
 	    <control type="group">
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
             <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
-            <visible>IsEmpty(Window(home).Property(9000Focus))</visible>
             <control type="group" description="Left Side Header">
                 <include>HeaderLeftTile</include>
 

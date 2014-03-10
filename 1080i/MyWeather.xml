@@ -49,7 +49,8 @@
                 <height>690</height>
                 <onleft>9000</onleft>
                 <onright>9200</onright>
-                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                <texturesliderbarfocus colordiffuse="PanelFG-NF">common/white.png</texturesliderbarfocus>
+                <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
             </control>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
@@ -625,28 +626,42 @@
         
         
         <control type="group">   
-            <include>DefMyTopBar</include>  
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <animation effect="slide" start="0" end="-1920" time="200" condition="!Control.HasFocus(60) + !ControlGroup(9000).HasFocus()">Conditional</animation>
             <control type="grouplist" id="9000">
+                <posx>263</posx>
+                <posy>170</posy>
                 <ondown>60</ondown>
-                <include>DefMyTopBarGroupList</include>
-
+                <orientation>horizontal</orientation>
+                            
                 <control type="button" id="2">
                     <description>Refresh</description>
                     <label>184</label>
+                    <width>200</width>
+                    <align>left</align>
                     <include>DefContextMenuButton</include>
+                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(2)">Conditional</animation>
                 </control>
 
                 <control type="button" id="4">
                     <description>Settings</description>
                     <label>5</label>
+                    <width>890</width>
+                    <align>left</align>
                     <onclick>ActivateWindow(weathersettings)</onclick>
                     <include>DefContextMenuButton</include>
+                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(4)">Conditional</animation>
                 </control>
 
                 <control type="spincontrolex" id="3">
+                    <width>300</width>
+                    <align>left</align>
                     <description>Location Select</description>
                     <include>DefContextMenuButton</include>
+                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(3)">Conditional</animation>
                 </control>
+                
             </control>
         </control>
 	</controls>

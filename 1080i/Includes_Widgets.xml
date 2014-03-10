@@ -608,13 +608,20 @@
 	        <property name="Color">1</property>
         </item>
         <item id="69">
+            <label>136</label>
+            <onclick>SetProperty(FromWidget,1)</onclick>
+            <onclick>ActivateWindow(videos,special://videoplaylists/,return)</onclick>
+            <icon>special://skin/extras/icons/playlist.png</icon>
+	        <property name="Color">1</property>
+        </item>
+        <item id="70">
             <label>1214</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
             <onclick>ActivateWindow(Videos,Files,return)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
 	        <property name="Color">1</property>
         </item>
-        <item id="70">
+        <item id="71">
             <label>653</label>
             <onclick>SetProperty(FromWidget,1)</onclick>
             <onclick>UpdateLibrary(video)</onclick>

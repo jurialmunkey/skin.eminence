@@ -18,47 +18,47 @@
 		<control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
-                <include>DefMyTopBarGroupList</include>
+                <include>DefMyNavBarGroupList</include>
                 <control type="button" id="2">
                     <description>View</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="3">
                     <description>Sort</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="togglebutton" id="4">
                     <description>Ascending</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
                 </control>
 
                 <control type="button" id="6">
                     <description>Slideshow</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>108</label>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
 
                 <control type="button" id="7">
                     <description>Recursive Slideshow</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>108</label>
                     <visible>ListItem.IsFolder</visible>
                 </control>
 
                 <control type="radiobutton" id="9">
                     <description>Randomise</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>13319</label>
                 </control>
 
                 <control type="button" id="98">
                     <description>Open Player Controls</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31015</label>
                     <onclick>ActivateWindow(playercontrols)</onclick>
                     <visible>Player.HasMedia</visible>

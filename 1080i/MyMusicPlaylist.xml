@@ -41,27 +41,27 @@
         <control type="group">   
             <include>DefMyTopBar</include>  
             <control type="grouplist" id="9000">
-                <include>DefMyTopBarGroupList</include>
+                <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="2">
                     <description>View</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 <!--<control type="button" id="3">
                     <description>Sort</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="togglebutton" id="4">
                     <description>Ascending</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
                 </control>-->
 
                 <control type="togglebutton" id="20">
                     <description>PartyMode</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>191</label>
                     <altlabel>✓  $LOCALIZE[191]</altlabel>
                     <usealttexture>Playlist.IsRandom</usealttexture>
@@ -71,25 +71,25 @@
 
                 <control type="button" id="21">
                     <description>Save</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>190</label>
                 </control>
 
                 <control type="button" id="22">
                     <description>Clear</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>192</label>
                 </control>
 
                 <control type="button" id="23">
                     <description>Play</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>208</label>
                 </control>
 
                 <control type="button" id="9001">
                     <description>Fullscreen</description>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                     <label>31158</label>
                     <onclick>Action(fullscreen)</onclick>
                     <visible>Player.HasMedia</visible>

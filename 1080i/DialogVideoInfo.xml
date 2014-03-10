@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
     <onunload>ClearProperty(9000Focus,home)</onunload>
+    
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 
@@ -24,6 +25,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
             <visible>!Control.HasFocus(50)</visible>
+            <visible>!ControlGroup(9500).HasFocus()</visible>
         </control>
         
         <control type="button">
@@ -42,24 +44,18 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
             <visible>Control.HasFocus(50)</visible>
+            <visible>!ControlGroup(9500).HasFocus()</visible>
+
         </control>
         
 		<control type="group">
+		    <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
 		    <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
 		    <posx>233</posx>
 		    <posy>70</posy>
 		    <animation effect="slide" start="0" end="-2000" time="200" condition="Control.HasFocus(50)">Conditional</animation>
 		    <include>DialogVisibility</include>
-		    <control type="label" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
-                <label>$INFO[ListItem.Label]</label>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-            </control>
+		    <include>DefDialogInfoSideLabel</include>
             <control type="label" description="Actors Label">
                 <posx>3475</posx>
                 <posy>174</posy>
@@ -286,7 +282,7 @@
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <include>DialogVisibility</include>
-                <visible>Container(50).HasNext</visible>
+                <visible>IntegerGreaterThan(Container(50).NumPages,1)</visible>
             </control>
             <control type="image">
                 <posy>180</posy>
@@ -301,7 +297,7 @@
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
                 <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <include>DialogVisibility</include>
-                <visible>Container(50).HasPrevious</visible>
+                <visible>IntegerGreaterThan(Container(50).NumPages,1)</visible>
             </control>
             
             <control type="panel" id="50">
@@ -396,34 +392,29 @@
             </control>
         </control>
         
-        <control type="group">
-            <include>GlobalOverlay</include>
-            <include>GlobalLeftHeader</include>
-            <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-        </control>
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9500">
-                <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>
-                <include>DefContextMenuGroupList</include>
+                <ondown>9500</ondown>
+                <onup>9500</onup>
+                <onright>50</onright>
+                <onleft>9000</onleft>
+                <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="8" description="Play">
                     <label>208</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="button" id="11" description="Trailer">
                     <label>20410</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="button" id="9002" description="Cinema Experience">
-                     <include>DefContextMenuButton</include>
+                     <include>DefNavMenuButton</include>
                      <label>31174</label>
                      <onclick>Dialog.Close(MovieInformation)</onclick>
                      <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
@@ -432,19 +423,19 @@
     
                 <control type="button" id="10" description="Thumb">
                     <label>31135</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="button" id="6" description="Refresh">
                     <label>184</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 
                 <control type="button" id="9001" description="Get TvTunes">
                     <label>31127</label>
                     <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
                     <visible>Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes) + [Container.Content(TVShows) | Container.Content(movies)] + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton"))</visible>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
             </control>
         </control>
@@ -462,7 +453,7 @@
         <control type="button" id="9000">
             <visible allowhiddenfocus="true">false</visible>
             <onclick>SendClick(2003,8)</onclick>
-            <onright>SetFocus(50)</onright>
+            <onright>50</onright>
             <onleft>Back</onleft>
             <onup>SetFocus(9500)</onup>
             <ondown>SetFocus(9500)</ondown>
