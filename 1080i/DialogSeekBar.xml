@@ -23,10 +23,8 @@
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
-                <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
-                <animation effect="fade" end="75" condition="true">Conditional</animation>
-                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
-                <bordersize>1</bordersize>
+                <texture colordiffuse="PanelBG">common/white.png</texture>
+                <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
 
 
@@ -96,21 +94,18 @@
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
-                    <animation effect="fade" end="75" condition="true">Conditional</animation>
-                    <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <texture colordiffuse="PanelBG">common/white.png</texture>
+                    <animation effect="fade" end="90" condition="true">Conditional</animation>
                 </control>
 
                 <control type="image">
-                    <posx>22</posx>
-                    <posy>22</posy>
-                    <width>430</width>
-                    <height>646</height>
+                    <posx>32</posx>
+                    <posy>32</posy>
+                    <width>410</width>
+                    <height>410</height>
                     <fadetime>200</fadetime>
                     <texture background="true">$INFO[Player.Art(thumb)]</texture>
-                    <aspectratio aligny="top" align="center">keep</aspectratio>
-                    <textcolor>TopBarIcon</textcolor>
+                    <aspectratio aligny="center" align="center">keep</aspectratio>
                 </control>
             
                 <control type="grouplist">
@@ -221,10 +216,8 @@
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
-                    <animation effect="fade" end="75" condition="true">Conditional</animation>
-                    <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <texture colordiffuse="PanelBG">common/white.png</texture>
+                    <animation effect="fade" end="90" condition="true">Conditional</animation>
                     
                 </control>
 

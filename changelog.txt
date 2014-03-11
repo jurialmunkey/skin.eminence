@@ -1,3 +1,6 @@
+[B]0.9.19[/B]
+EPG Colours
+
 [B]0.9.18[/B]
 Moved Context / Nav Menus to Right Side
 Moved EPG to Left from Scroll Bar in PVR

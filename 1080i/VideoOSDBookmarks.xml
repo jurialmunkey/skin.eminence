@@ -15,10 +15,8 @@
 				<posx>-10</posx>
 				<width>1940</width>
 				<height>764</height>
-				<texture colordiffuse="TopBarDark" border="5">common/white.png</texture>
-                <animation effect="fade" end="75" condition="true">Conditional</animation>
-                <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
-                <bordersize>1</bordersize>
+				<texture colordiffuse="PanelBG">common/white.png</texture>
+                <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
             
 			<control type="label">
