@@ -11,22 +11,20 @@
             <visible>!Window.IsVisible(FileBrowser.xml)</visible>
             <control type="image">
                 <width>1920</width>
-                <height>804</height>
+                <height>1080</height>
                 <texture colordiffuse="Background">common/white.png</texture>
             </control>
             <control type="image">
-                <posy>276r</posy>
+                <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-BG-Y</include>
+                <include condition="Skin.HasSetting(home.talltiles)">Tall-Home-BG-Y</include>
                 <width>1920</width>
                 <height>376</height>
                 <texture colordiffuse="PanelBG">common/white.png</texture>
             </control>
             <control type="grouplist" id="9300">
                 <orientation>horizontal</orientation>
-                <posx>10</posx>
-                <width>1901</width>
-                <itemgap>-7</itemgap>
-                <posy>358r</posy>
-                <height>340</height>
+                <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-Grouplist</include>
+                <include condition="Skin.HasSetting(home.talltiles)">Tall-Home-Grouplist</include>
                 
                 <control type="group">
                     <include>Home-Button-Group-Width</include>

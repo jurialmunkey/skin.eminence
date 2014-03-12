@@ -173,11 +173,11 @@ msgid "Show visualisation behind slideshow"
 msgstr ""
 
 msgctxt "#31141"
-msgid "Movies widget"
+msgid "Movies Widget"
 msgstr ""
 
 msgctxt "#31142"
-msgid "Tvshows widget"
+msgid "Tv Shows Widget"
 msgstr ""
 
 msgctxt "#31143"
@@ -193,7 +193,7 @@ msgid "Show now playing video in background"
 msgstr ""
 
 msgctxt "#31146"
-msgid "Show fanart in background"
+msgid "Show fanart"
 msgstr ""
 
 msgctxt "#31147"
@@ -281,7 +281,7 @@ msgid "Pages"
 msgstr ""
 
 msgctxt "#31168"
-msgid "Home Items"
+msgid "Home"
 msgstr ""
 
 msgctxt "#31169"
@@ -318,4 +318,16 @@ msgstr ""
 
 msgctxt "#31177"
 msgid "Show weather with clock"
+msgstr ""
+
+msgctxt "#31178"
+msgid "Use taller tiles"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Movies Hub"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Tv Shows Hub"
 msgstr ""

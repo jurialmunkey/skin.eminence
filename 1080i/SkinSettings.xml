@@ -62,6 +62,7 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="32" description="Home">
                     <label>31168</label>
@@ -69,13 +70,23 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
-                <control type="togglebutton" id="33" description="Views">
-                    <label>31147</label>
+                <control type="togglebutton" id="33" description="Movies Hub">
+                    <label>31179</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                </control>
+                <control type="togglebutton" id="35" description="TV Hub">
+                    <label>31180</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
@@ -83,6 +94,7 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
             </control>
             
@@ -137,27 +149,7 @@
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="105">
-                    <label>31148</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.useweatherfanart)</onclick>
-                    <selected>Skin.HasSetting(home.useweatherfanart)</selected>
-                    <visible>ControlGroup(3).HasFocus(31)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="button" id="106">
-                    <label>31149</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.SetPath(home.fanart)</onclick>
-                    <visible>ControlGroup(3).HasFocus(31)</visible>
-                    <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 <control type="radiobutton" id="107">
                     <label>31145</label>
                     <width>1020</width>
@@ -183,6 +175,31 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="109">
+                    <label>31144</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
+                    <selected>Skin.HasSetting(ActivateTvTunes)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="110">
+                    <label>31146</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
+                    <selected>!Skin.HasSetting(disable.fanart)</selected>
+                    <visible>ControlGroup(3).HasFocus(31)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
                 
                 
                 <!----------------->
@@ -197,10 +214,43 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="202">
+                    <label>31178</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
+                    <selected>Skin.HasSetting(home.talltiles)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="203">
+                    <label>31148</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.useweatherfanart)</onclick>
+                    <selected>Skin.HasSetting(home.useweatherfanart)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="button" id="204">
+                    <label>31149</label>
+                    <width>1020</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.SetPath(home.fanart)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
-                <!----------->
-                <!-- VIEWS -->
-                <!----------->
+                <!---------------->
+                <!-- Movies Hub -->
+                <!---------------->
                 <control type="button" id="301">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
@@ -221,11 +271,16 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
-                    <visible>ControlGroup(3).HasFocus(33) + stringcompare(Skin.String(movie.widget),playlist)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <enable>stringcompare(Skin.String(movie.widget),playlist)</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="button" id="303">
+                <!---------------->
+                <!-- TVshow Hub -->
+                <!---------------->
+                
+                <control type="button" id="501">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
                     <width>1020</width>
@@ -235,45 +290,23 @@
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
                     
-                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="button" id="304">
+                <control type="button" id="502">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
-                    <visible>ControlGroup(3).HasFocus(33) + stringcompare(Skin.String(tvshow.widget),playlist)</visible>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <enable>stringcompare(Skin.String(tvshow.widget),playlist)</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="305">
-                    <label>31144</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    
-                    <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
-                    <selected>Skin.HasSetting(ActivateTvTunes)</selected>
-                    <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                <control type="radiobutton" id="306">
-                    <label>31146</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    
-                    <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
-                    <selected>!Skin.HasSetting(disable.fanart)</selected>
-                    <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 
                 
                 <!--------->
