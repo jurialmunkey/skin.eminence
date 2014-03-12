@@ -181,7 +181,7 @@ msgid "Tvshows widget"
 msgstr ""
 
 msgctxt "#31143"
-msgid "DVD Menu"
+msgid "Disc Menu"
 msgstr ""
 
 msgctxt "#31144"
