@@ -352,8 +352,8 @@
                     <include condition="substring(Container.FolderPath,movies) + !stringcompare(Skin.String(movie.widget),recommended) + !stringcompare(Skin.String(movie.widget),playlist)">ContentRandomMoviesWidget</include>
                     <include condition="substring(Container.FolderPath,movies) + stringcompare(Skin.String(movie.widget),recommended)">ContentRecommendedMoviesWidget</include>
                     <include condition="substring(Container.FolderPath,movies) + stringcompare(Skin.String(movie.widget),playlist)">ContentPlaylistMoviesWidget</include>
-                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + !stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">RandomEpisodesWidget</include>
-                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),recommended)">RandomEpisodesWidget</include>
+                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + !stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">ContentRandomEpisodesWidget</include>
+                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),recommended)">ContentRecommendedEpisodesWidget</include>
                     <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),playlist)">ContentPlaylistEpisodesWidget</include>
                 </control>
                 <control type="image">
