@@ -284,7 +284,7 @@
                         <height>70</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[Container(9501).ListItem.Property(Plot)]</label>
+                        <label>$VAR[WidgetPlot]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -320,7 +320,7 @@
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
                         <textcolor>Selected</textcolor>
-                        <label>$INFO[Container(9501).ListItem.Property(Plot)]</label>
+                        <label>$VAR[WidgetPlot]</label>
                     </control>
                 </control>
                 <control type="wraplist" id="9501">
@@ -337,7 +337,7 @@
                         <control type="image">
                             <width>933</width>
                             <height>537</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$VAR[WidgetFanart]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
@@ -345,16 +345,16 @@
                         <control type="image">
                             <width>933</width>
                             <height>537</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$VAR[WidgetFanart]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </focusedlayout>
-                    <content>
-                        <include condition="substring(Container.FolderPath,movies) + !Skin.HasSetting(movie.widget.recommended)">RandomMoviesWidget</include>
-                        <include condition="substring(Container.FolderPath,movies) + Skin.HasSetting(movie.widget.recommended)">RecommendedMoviesWidget</include>
-                        <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + !Skin.HasSetting(tvshow.widget.recommended)">RandomEpisodesWidget</include>
-                        <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + Skin.HasSetting(tvshow.widget.recommended)">RecommendedEpisodesWidget</include>
-                    </content>
+                    <include condition="substring(Container.FolderPath,movies) + !stringcompare(Skin.String(movie.widget),recommended) + !stringcompare(Skin.String(movie.widget),playlist)">ContentRandomMoviesWidget</include>
+                    <include condition="substring(Container.FolderPath,movies) + stringcompare(Skin.String(movie.widget),recommended)">ContentRecommendedMoviesWidget</include>
+                    <include condition="substring(Container.FolderPath,movies) + stringcompare(Skin.String(movie.widget),playlist)">ContentPlaylistMoviesWidget</include>
+                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + !stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">RandomEpisodesWidget</include>
+                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),recommended)">RandomEpisodesWidget</include>
+                    <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),playlist)">ContentPlaylistEpisodesWidget</include>
                 </control>
                 <control type="image">
                     <posx>11</posx>

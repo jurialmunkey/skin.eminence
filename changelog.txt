@@ -1,5 +1,6 @@
 [B]0.9.20[/B]
 Changed Home Screen titles
+Ability to add a playlist in hub spotlight section
 
 [B]0.9.19[/B]
 EPG Colours

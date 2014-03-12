@@ -207,23 +207,50 @@
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
-                    <onclick>Skin.ToggleSetting(movie.widget.recommended)</onclick>
+                    <onclick condition="!stringcompare(Skin.String(movie.widget),playlist) + !stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,recommended)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetString(movie.widget,random)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
                 <control type="button" id="302">
+                    <label>  -  $LOCALIZE[559]</label>
+                    <label2>$INFO[Skin.String(movie.widget.playlist)]</label2>
+                    <width>1020</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <visible>ControlGroup(3).HasFocus(33) + stringcompare(Skin.String(movie.widget),playlist)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="button" id="303">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
+                    <onclick condition="!stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
                     
-                    <onclick>Skin.ToggleSetting(tvshow.widget.recommended)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="303">
+                
+                <control type="button" id="304">
+                    <label>  -  $LOCALIZE[559]</label>
+                    <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
+                    <width>1020</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <visible>ControlGroup(3).HasFocus(33) + stringcompare(Skin.String(tvshow.widget),playlist)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="305">
                     <label>31144</label>
                     <width>1020</width>
                     <radioposx>944</radioposx>
@@ -235,7 +262,7 @@
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="304">
+                <control type="radiobutton" id="306">
                     <label>31146</label>
                     <width>1020</width>
                     <radioposx>944</radioposx>
