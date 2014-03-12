@@ -12,6 +12,8 @@
 			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 			    <visible>!Window.IsVisible(3062)</visible>
+			    <include>Animation.FadeIn</include>
+			    <include>Animation.FadeOut</include>
 
                 <control type="panel" id="9200">
                     <posx>14</posx>
