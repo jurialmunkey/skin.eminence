@@ -91,7 +91,7 @@
                     <control type="button" id="299">
                         <include>Home-Menu-Button</include>
                         <onclick>SetProperty(homefocus,299,home)</onclick>
-                        <colordiffuse>ff777777</colordiffuse>
+                        <colordiffuse>ff555555</colordiffuse>
                         <onleft>324</onleft>
                         <onright>301</onright>
                         <onclick>PlayDVD</onclick>
