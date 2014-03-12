@@ -5,6 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
 	<controls>
+	    <include>GlobalOverlay</include>
         <include>GlobalLeftHeader</include>
         
         <control type="group">		
