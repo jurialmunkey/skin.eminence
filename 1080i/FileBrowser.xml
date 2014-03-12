@@ -44,7 +44,7 @@
                 <posy>189</posy>
                 <width>1200</width>
 				<height>483</height>
-				<onup>413</onup>
+				<onup>9100</onup>
 				<onleft>450</onleft>
 				<onright>450</onright>
 				<ondown>450</ondown>
@@ -119,7 +119,7 @@
                 <posy>189</posy>
                 <width>1200</width>
 				<height>483</height>
-				<onup>413</onup>
+				<onup>9100</onup>
 				<onleft>451</onleft>
 				<onright>451</onright>
 				<ondown>451</ondown>
@@ -221,7 +221,7 @@
                 <colordiffuse>TopBar</colordiffuse>
                 <aspectratio>scale</aspectratio>
             </control>		
-            <control type="grouplist">
+            <control type="grouplist" id="9100">
                 <posx>250</posx>
                 <posy>29</posy>
                 <width>1670</width>
