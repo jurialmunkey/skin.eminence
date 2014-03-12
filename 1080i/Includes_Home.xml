@@ -17,7 +17,7 @@
     <include name="Home-Highlight">
         <posy>330</posy>
         <width>170</width>
-        <height>8</height>
+        <height>6</height>
         <texture colordiffuse="Highlight">common/white.png</texture>
         <animation effect="fade" start="0" end="100" time="100">Visible</animation>
         <visible>!Skin.HasSetting(home.talltiles) + !Window.IsVisible(videoosd)</visible>
