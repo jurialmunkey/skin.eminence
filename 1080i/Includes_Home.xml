@@ -24,7 +24,7 @@
     </include>
     
     <include name="Short-Home-Menu-Label">
-        <posy>280</posy>
+        <posy>290</posy>
         <width>180</width>
         <align>center</align>
         <aligny>top</aligny>
@@ -78,7 +78,7 @@
         </control>
     </include>
     
-    <include name="Short-Home-BG-Y"><posy>256r</posy></include>
+    <include name="Short-Home-BG-Y"><posy>266r</posy></include>
     <include name="Tall-Home-BG-Y"><posy>376r</posy></include>
     <include name="Short-Home-Button-Group-Width"><width>196</width></include>
     <include name="Tall-Home-Button-Group-Width"><width>221</width></include>
@@ -91,7 +91,7 @@
         <posx>20</posx>
         <width>1880</width>
         <itemgap>-9</itemgap>
-        <posy>338r</posy>
+        <posy>348r</posy>
         <height>348</height>
     </include>
     <include name="Tall-Home-Grouplist">
@@ -153,6 +153,7 @@
                         <include>Home-Menu-Label</include>
                         <label>341</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(299)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(299)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -187,6 +188,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.301.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(301)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(301)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -219,6 +221,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.302.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(302)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(302)">Conditional</animation>
                     </control>
 
                     <control type="image">
@@ -252,6 +255,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.303.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(303)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(303)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -284,6 +288,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.304.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(304)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(304)">Conditional</animation>
                     </control>
        
                     <control type="image">
@@ -317,6 +322,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.305.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(305)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(305)">Conditional</animation>
                     </control>
  
                     <control type="image">
@@ -352,6 +358,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.306.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(306)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(306)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -385,6 +392,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.307.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(307)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(307)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -417,6 +425,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.308.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(308)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(308)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -449,6 +458,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.309.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(309)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(309)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -481,6 +491,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.310.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(310)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(310)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -513,6 +524,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.311.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(311)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(311)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -545,6 +557,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.312.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(312)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(312)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -577,6 +590,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.320.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(313)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(313)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -609,6 +623,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.321.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(314)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(314)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -641,6 +656,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.322.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(315)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(315)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -673,6 +689,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.323.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(316)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(316)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -705,6 +722,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.324.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(317)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(317)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -737,6 +755,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.325.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(318)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(318)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -769,6 +788,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.326.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(319)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(319)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -801,6 +821,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.327.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(320)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(320)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -833,6 +854,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.328.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(321)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(321)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -865,6 +887,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.329.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(322)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(322)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -902,6 +925,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.313.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(323)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(323)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -934,6 +958,7 @@
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.314.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(324)">Conditional</animation>
+                        <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(324)">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Highlight</include>
@@ -950,7 +975,7 @@
     <include name="Short-Home-Sides">
         <control type="button" id="351">
             <posx>-164</posx>
-            <posy>242r</posy>   
+            <posy>252r</posy>   
             <onfocus>SetFocus(301)</onfocus>
             <texturefocus colordiffuse="TopBarDark">home/tile.png</texturefocus>
             <texturenofocus colordiffuse="TopBarDark">home/tile.png</texturenofocus>
@@ -961,7 +986,7 @@
         </control>
         <control type="button" id="352">
             <posx>1890</posx>
-            <posy>242r</posy>   
+            <posy>252r</posy>   
             <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
             <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>
             <onfocus condition="Skin.HasSetting(home.314.enabled)">SetFocus(314)</onfocus>
