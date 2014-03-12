@@ -62,7 +62,6 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="32" description="Home">
                     <label>31168</label>
@@ -70,7 +69,6 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="33" description="Movies Hub">
                     <label>31179</label>
@@ -78,7 +76,6 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="35" description="TV Hub">
                     <label>31180</label>
@@ -86,7 +83,6 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
@@ -94,7 +90,6 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                 </control>
             </control>
             
