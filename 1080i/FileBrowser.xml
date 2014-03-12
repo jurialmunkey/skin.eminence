@@ -44,9 +44,9 @@
                 <posy>189</posy>
                 <width>1200</width>
 				<height>483</height>
-				<onup>9100</onup>
-				<onleft>450</onleft>
-				<onright>450</onright>
+				<onup>450</onup>
+				<onleft>9100</onleft>
+				<onright>9100</onright>
 				<ondown>450</ondown>
 				<itemlayout height="69" width="600">
                     <control type="image">
@@ -119,9 +119,9 @@
                 <posy>189</posy>
                 <width>1200</width>
 				<height>483</height>
-				<onup>9100</onup>
-				<onleft>451</onleft>
-				<onright>451</onright>
+				<onup>451</onup>
+				<onleft>9100</onleft>
+				<onright>9100</onright>
 				<ondown>451</ondown>
 				<itemlayout height="69" width="600">
                     <control type="image">
