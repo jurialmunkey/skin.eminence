@@ -218,6 +218,7 @@
                             <onclick>Skin.SetAddon(HomeAddon.Path,xbmc.addon.audio,xbmc.addon.video,xbmc.addon.image,xbmc.addon.executable)</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],RunAddon($INFO[Skin.String(HomeAddon.Path)]))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$INFO[System.AddonTitle($INFO[Skin.String(HomeAddon.Path)])])</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],$INFO[System.AddonIcon($INFO[Skin.String(HomeAddon.Path)])])</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
                             <onclick>SetProperty(showimages,1,home)</onclick>
                             <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>
