@@ -25,7 +25,7 @@
                     <pagecontrol>60</pagecontrol>
                     <viewtype label="539">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
-                    <orientation>horizontal</orientation>
+                    <orientation>vertical</orientation>
 
                     <itemlayout width="476" height="100">
 
@@ -293,8 +293,8 @@
                         </item>
                         
                         <item id="17">
-                            <description>Disable</description>
-                            <label>24021</label>
+                            <description>Remove</description>
+                            <label>117</label>
                             <icon>special://skin/extras/icons/forbidden.png</icon>
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.label])</onclick>
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.icon])</onclick>
