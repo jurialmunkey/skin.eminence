@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="PVRRecordingLayout">
+        <itemlayout width="945" height="140">
+            <control type="image">
+                <width>945</width>
+                <height>130</height>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+            </control>    
+            <include>PVRrecordinglayout</include>
+        </itemlayout>
+        <focusedlayout width="945" height="140">
+
+            <control type="group"> 
+                
+                <visible>ControlGroup(50).HasFocus()</visible>                
+                <control type="image">
+                    <width>945</width>
+                    <height>130</height>
+                    <texture border="12" colordiffuse="White">common/border-inner.png</texture>
+                    
+                </control>
+                <include>PVRrecordinglayoutfocus</include>
+            </control>
+            <control type="group">
+                <visible>!ControlGroup(50).HasFocus()</visible>
+                <control type="image">
+                    <width>945</width>
+                    <height>130</height>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>   
+                <include>PVRrecordinglayout</include>
+            </control>
+        </focusedlayout>
+    </include>
     <include name="PVRInfoPanel">
         <control type="group">
             <posx>974</posx>
@@ -169,17 +202,17 @@
     <include name="PVRfocusedlayout">
         <focusedlayout width="945" height="140">
             <control type="group">
-                <visible>!ControlGroup(9000).HasFocus()</visible>
+                <visible>ControlGroup(50).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="White" border="12">common/border-inner.png</texture>
                 
                 </control>
                 <include>PVRlistlayoutfocus</include>
             </control>
             <control type="group">
-                <visible>ControlGroup(9000).HasFocus()</visible>
+                <visible>!ControlGroup(50).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
@@ -260,35 +293,7 @@
                 <viewtype label="Wide">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
-                <itemlayout width="945" height="140">
-                    <control type="image">
-                        <width>945</width>
-                        <height>130</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    </control>    
-                    <include>PVRrecordinglayout</include>
-                </itemlayout>
-                <focusedlayout width="945" height="140">
-
-                    <control type="group">    
-                        <visible>!ControlGroup(9000).HasFocus()</visible>                
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                        </control>
-                        <include>PVRrecordinglayoutfocus</include>
-                    </control>
-                    <control type="group">
-                        <visible>ControlGroup(9000).HasFocus()</visible>
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>   
-                        <include>PVRrecordinglayout</include>
-                    </control>
-                </focusedlayout>
+                <include>PVRRecordingLayout</include>
                 
             </control>
             <include>PVRInfoPanel</include>
@@ -331,8 +336,7 @@
                         <width>554</width>
                         <height>67</height>
                         <texture border="12">common/border-inner.png</texture>
-                        <colordiffuse>PosterBorder</colordiffuse>
-                        <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
+                        <colordiffuse>PosterBorder-NF</colordiffuse>
                     </control>   
 
                     <control type="image">
@@ -564,35 +568,7 @@
                 <viewtype label="Wide">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
-                <itemlayout width="945" height="140">
-                    <control type="image">
-                        <width>945</width>
-                        <height>130</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    </control>    
-                    <include>PVRrecordinglayout</include>
-                </itemlayout>
-                <focusedlayout width="945" height="140">
-                    
-                    <control type="group">    
-                        <visible>!ControlGroup(9000).HasFocus()</visible>                
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                        </control>
-                        <include>PVRrecordinglayoutfocus</include>
-                    </control>
-                    <control type="group">
-                        <visible>ControlGroup(9000).HasFocus()</visible>
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>   
-                        <include>PVRrecordinglayout</include>
-                    </control>
-                </focusedlayout>
+                <include>PVRRecordingLayout</include>
             </control>
             <include>PVRInfoPanel</include>
         </control>
@@ -615,35 +591,7 @@
                 <viewtype label="Wide">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
-                <itemlayout width="945" height="140">
-                    <control type="image">
-                        <width>945</width>
-                        <height>130</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    </control>    
-                    <include>PVRrecordinglayout</include>
-                </itemlayout>
-                <focusedlayout width="945" height="140">
-                    
-                    <control type="group">    
-                        <visible>!ControlGroup(9000).HasFocus()</visible>                
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                        </control>
-                        <include>PVRrecordinglayoutfocus</include>
-                    </control>
-                    <control type="group">
-                        <visible>ControlGroup(9000).HasFocus()</visible>
-                        <control type="image">
-                            <width>945</width>
-                            <height>130</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>   
-                        <include>PVRrecordinglayout</include>
-                    </control>
-                </focusedlayout>
+                <include>PVRRecordingLayout</include>
             </control>
             <include>PVRInfoPanel</include>
         </control>

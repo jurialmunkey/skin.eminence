@@ -13,11 +13,11 @@
     <color name="HomeCustom4">ff753555</color>	
     <color name="HomeCustom5">ff557535</color>
 	<color name="HomeCustom6">ff555555</color>
-	<color name="HomeCustom7">ff777777</color>
-	<color name="HomeCustom8">ff999999</color>
+	<color name="HomeCustom7">ff666666</color>
+	<color name="HomeCustom8">ff777777</color>
 	
 	<!-- Border Highlight -->
-	<color name="White">ffA9A9A9</color>
+	<color name="White">bf9a9a9a</color>
 		
 	<!-- Home Header And Panels -->
 	<color name="MainLabel">FFededed</color>

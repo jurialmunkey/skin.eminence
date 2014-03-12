@@ -22,7 +22,7 @@
             <include>DialogVisibility</include>
             <visible>![ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]</visible>
             <visible>!Control.IsVisible(10)</visible>
-            <visible>!Control.IsVisible(37)</visible>
+            <visible>!Control.IsVisible(9001)</visible>
             <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
@@ -45,17 +45,17 @@
             <posy>70</posy>
             <posx>233</posx>
             <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
-            <animation effect="slide" end="-234" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(37) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+            <animation effect="slide" end="-234" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(9001) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
             <control type="scrollbar" id="60">
                 <visible>!Control.IsVisible(10)</visible>
-                <visible>!Control.HasFocus(37)</visible>
+                <visible>!Control.HasFocus(9001)</visible>
                 <visible>!ControlGroup(9000).HasFocus()</visible>
-                <posx>-11</posx>
+                <posx>-8</posx>
                 <posy>210</posy>
                 <height>690</height>
                 <onleft>9000</onleft>
                 <onright>50</onright>
-                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
             </control>
             <include>DialogVisibility</include>
@@ -64,7 +64,7 @@
             <animation effect="slide" end="-1950" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
             <control type="group" id="50">
-                <visible>!Control.HasFocus(37)</visible>
+                <visible>!Control.HasFocus(9001)</visible>
                 
                 <include description="id31-10">EPGTimelineView</include>
                 <include description="id32-11">LiveTVChannelView</include>
@@ -94,7 +94,7 @@
             <control type="group">
                 <posx>18</posx>
                 <posy>210</posy>
-                <visible>Control.HasFocus(37)</visible>
+                <visible>Control.HasFocus(9001)</visible>
                 <control type="image">
                     
                     <width>1416</width>
@@ -164,7 +164,7 @@
                     <include>DefNavMenuButton</include>
                 </control>
                 
-                <control type="button" id="37" description="Fullscreen">
+                <control type="button" id="9001" description="Fullscreen">
                     <label>$LOCALIZE[31158]</label>
                     <include>DefNavMenuButton</include>
                     <onclick>Action(fullscreen)</onclick>
