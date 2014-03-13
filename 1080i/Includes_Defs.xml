@@ -197,12 +197,6 @@
             <include>View_56_BigList</include>  
             <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>          
 		</control>
-		<control type="group">
-	        <visible>ControlGroup(9000).HasFocus()</visible>
-	        <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
-            <include>GlobalVignette</include>
-	    </control>
 	</include>
 	
 	<include name="DefMyNavBarGroupList">

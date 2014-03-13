@@ -14,8 +14,9 @@
 	
 	<include name="GlobalVignette">
 		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture colordiffuse="7F000000">common/white.png</texture>
+			<width>1920</width>
+			<height>448</height>
+			<texture colordiffuse="7F000000">common/gradient.png</texture>
 		</control>
 		
 	</include>
@@ -128,9 +129,19 @@
 		    </control>
 			<control type="group">		
 			    <visible>Window.IsVisible(home)</visible>
+			    <visible>!Control.HasFocus(9600)</visible>
+			    <animation effect="slide" end="0" start="0,-200" time="200" condition="!Control.HasFocus(9600)" reversible="false">Conditional</animation>
                 <include>GlobalVignette</include>
                 <include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
+            </control>
+            <control type="image">
+                <posy>384r</posy>
+                <width>1920</width>
+                <height>384</height>
+                <texture colordiffuse="7F000000" flipy="true">common/gradient.png</texture>
+                <visible>Control.HasFocus(9600)</visible>
+                <include>Animation.FadeOut</include>
             </control>
             <control type="group">
                 <left>30</left>
@@ -138,6 +149,7 @@
                 <visible>Control.HasFocus(9600)</visible>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
+                
                 <control type="label">
                     <top>25</top>
                     <width>1860</width>

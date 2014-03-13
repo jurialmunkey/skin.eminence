@@ -143,7 +143,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="298">
                         <include>Home-Menu-Button</include>
-                        <!--<onclick>SetProperty(homefocus,298,home)</onclick>-->
+                        <onclick>SetProperty(homefocus,298,home)</onclick>
                         <colordiffuse>ff555555</colordiffuse>
                         <onleft>324</onleft>
                         <onright>299</onright>
