@@ -35,4 +35,12 @@
 	    <value>$INFO[ListItem.Icon]</value>
 	</variable>
 	
+	<variable name="PlayerBigIcon">
+        <value condition="Player.Rewinding">common/bigrw.png</value>
+        <value condition="Player.Forwarding">common/bigff.png</value>
+        <!--<value condition="substring(Player.SeekOffset,-) + [Player.DisplayAfterSeek | Player.Seeking]">common/bigprevious.png</value>
+        <value condition="!substring(Player.SeekOffset,-) + [Player.DisplayAfterSeek | Player.Seeking]">common/bignext.png</value>-->
+	    <value condition="Player.Paused">common/bigpause.png</value>
+	</variable>
+	
 </includes>

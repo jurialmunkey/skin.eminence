@@ -102,6 +102,15 @@
                 <include condition="stringcompare(Skin.String(home.widget),ContentMixedWidget)">ContentMixedWidget</include>
                 <include condition="IsEmpty(Skin.String(home.widget))">ContentMixedWidget</include>
             </control>
+            <!--<control type="image">
+                <aspectratio>center</aspectratio>
+                <include>Dimensions_Fullscreen</include>
+                <texture>common/bigplay.png</texture>
+                <visible>Control.HasFocus(9600)</visible>
+                <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+            </control>-->
             
 			
 			<control type="videowindow">

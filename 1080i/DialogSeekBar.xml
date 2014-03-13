@@ -490,7 +490,16 @@
 		
 		
 		
-		
+		<control type="image">
+            <aspectratio>center</aspectratio>
+            <include>Dimensions_Fullscreen</include>
+            <texture>$VAR[PlayerBigIcon]</texture>
+            <visible>![!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]]</visible>
+            <visible>Player.Seeking | Player.DisplayAfterSeek | Player.Paused</visible>
+            <animation effect="fade" start="100" end="20" condition="true">Conditional</animation>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+        </control>
 		
 		<control type="group">
 		    <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
