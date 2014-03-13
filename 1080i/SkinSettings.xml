@@ -241,12 +241,13 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <enable>!Skin.HasSetting(home.usewidgetbg)</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                    <onclick condition="!stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecentMoviesWidget)</onclick>
-                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">Skin.SetString(home.widget,ContentRandomMoviesWidget)</onclick>
-                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedMoviesWidget)</onclick>
-                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">Skin.SetString(home.widget,ContentRandomEpisodesWidget)</onclick>
-                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedEpisodesWidget)</onclick>
-                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">Skin.SetString(home.widget,ContentRecentEpisodesWidget)</onclick>
+                    <onclick condition="!stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecentMoviesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">Skin.SetString(home.widget,ContentMixedWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedEpisodesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">Skin.SetString(home.widget,ContentRandomEpisodesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">Skin.SetString(home.widget,ContentRecentEpisodesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">Skin.SetString(home.widget,ContentRecommendedMoviesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">Skin.SetString(home.widget,ContentRandomMoviesWidget)</onclick>
                 </control>
                 <control type="radiobutton" id="205">
                     <label>31148</label>

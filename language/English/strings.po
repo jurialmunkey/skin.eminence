@@ -340,3 +340,7 @@ msgctxt "#31182"
 msgid "Widget as home background (press up to access)"
 msgstr ""
 
+msgctxt "#31183"
+msgid "Mix of in-progress tv-shows and random movies"
+msgstr ""
+

@@ -35,6 +35,7 @@
             <include>DialogVisibility</include>
             <visible>[Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
+            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
         
@@ -106,6 +107,7 @@
             <posy>70</posy>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
+            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
             
             <control type="label">

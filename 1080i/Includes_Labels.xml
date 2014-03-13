@@ -259,7 +259,8 @@
         <value condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">$LOCALIZE[20343] $LOCALIZE[31110]</value>
         <value condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">$LOCALIZE[20343] $LOCALIZE[31109]</value>
         <value condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">$LOCALIZE[20342] $LOCALIZE[31109]</value>
-        <value>$LOCALIZE[20342] $LOCALIZE[31112]</value>
+        <value condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">$LOCALIZE[20342] $LOCALIZE[31112]</value>
+        <value>$LOCALIZE[31183]</value>
 	</variable>
 	
 	<variable name="WidgetPlot">

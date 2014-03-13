@@ -33,8 +33,8 @@
     <variable name="GlobalFanart">
         <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">-</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
-        <value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
-        <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>
+        <!--<value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
+        <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>-->
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg)">$INFO[Container(9600).ListItem.Icon]</value>
@@ -99,7 +99,8 @@
                 <include condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">ContentRecentEpisodesWidget</include>
                 <include condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">ContentRecentMoviesWidget</include>
                 <include condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">ContentRandomMoviesWidget</include>
-                <include condition="IsEmpty(Skin.String(home.widget))">ContentRandomMoviesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentMixedWidget)">ContentMixedWidget</include>
+                <include condition="IsEmpty(Skin.String(home.widget))">ContentMixedWidget</include>
             </control>
             
 			

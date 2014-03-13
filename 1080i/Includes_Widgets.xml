@@ -1,5 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="MixedWidget">
+        <item id="1">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.1.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.1.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.1.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.1.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.1.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.1.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.1.File))</visible>
+	    </item>
+	    <item id="31">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.1.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.1.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.1.Title)]$INFO[Window(home).Property(RecommendedEpisode.1.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.1.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.1.File))</visible>
+	    </item>
+	    <item id="2">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.2.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.2.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.2.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.2.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.2.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.2.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.2.File))</visible>
+	    </item>
+	    <item id="32">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.2.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.2.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.2.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.2.Title)]$INFO[Window(home).Property(RecommendedEpisode.2.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.2.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.2.File))</visible>
+	    </item>
+	    <item id="3">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.3.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.3.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.3.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.3.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.3.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.3.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.3.File))</visible>
+	    </item>
+	    <item id="33">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.3.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.3.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.3.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.3.Title)]$INFO[Window(home).Property(RecommendedEpisode.3.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.3.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.3.File))</visible>
+	    </item>
+	    <item id="4">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.4.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.4.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.4.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.4.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.4.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.4.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.4.File))</visible>
+	    </item>
+	    <item id="34">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.4.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.4.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.4.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.4.Title)]$INFO[Window(home).Property(RecommendedEpisode.4.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.4.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.4.File))</visible>
+	    </item>
+	    <item id="5">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.5.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.5.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.5.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.5.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.5.File))</visible>
+	    </item>
+	    <item id="35">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.5.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.5.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.5.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.5.Title)]$INFO[Window(home).Property(RecommendedEpisode.5.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.5.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.5.File))</visible>
+	    </item>
+	    <item id="6">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.6.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.6.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.6.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.6.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.6.File))</visible>
+	    </item>
+	    <item id="36">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.6.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.6.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.6.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.6.Title)]$INFO[Window(home).Property(RecommendedEpisode.6.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.6.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.6.File))</visible>
+	    </item>
+	    <item id="7">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.7.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.7.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.7.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.7.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.7.File))</visible>
+	    </item>
+	    <item id="37">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.7.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.7.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.7.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.7.Title)]$INFO[Window(home).Property(RecommendedEpisode.7.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.7.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.7.File))</visible>
+	    </item>
+	    <item id="8">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.8.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.8.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.8.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.8.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.8.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.8.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.8.File))</visible>
+	    </item>
+	    <item id="38">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.8.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.8.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.8.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.8.Title)]$INFO[Window(home).Property(RecommendedEpisode.8.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.8.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.8.File))</visible>
+	    </item>
+	    <item id="9">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.9.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.9.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.9.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.9.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.9.File))</visible>
+	    </item>
+	    <item id="39">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.9.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.9.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.9.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.9.Title)]$INFO[Window(home).Property(RecommendedEpisode.9.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.9.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.9.File))</visible>
+	    </item>
+	    <item id="10">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.10.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RandomMovie.10.Art(fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RandomMovie.10.Art(fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RandomMovie.10.Title)]</label>
+            <label2>$INFO[Window(home).Property(RandomMovie.10.Year)]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RandomMovie.10.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RandomMovie.10.File))</visible>
+	    </item>
+	    <item id="40">
+	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecommendedEpisode.10.File)])</onclick>
+            <icon>$INFO[Window(home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</icon>
+	        <thumb>$INFO[Window(home).Property(RecommendedEpisode.10.Art(tvshow.fanart))]</thumb>
+            <label>$INFO[Window(home).Property(RecommendedEpisode.10.TvShowTitle)]</label>
+            <label2>$INFO[Window(home).Property(RecommendedEpisode.10.Title)]$INFO[Window(home).Property(RecommendedEpisode.10.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
+            <property name="Plot">$INFO[Window(home).Property(RecommendedEpisode.10.Plot)]</property>
+            <visible>!IsEmpty(Window(home).Property(RecommendedEpisode.10.File))</visible>
+	    </item>
+    </include>
     <include name="RandomMoviesWidget">
 	    <item id="1">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RandomMovie.1.File)])</onclick>
@@ -752,4 +934,5 @@
 	<include name="ContentRecommendedEpisodesWidget"><content target="video"><include>RecommendedEpisodesWidget</include></content></include>
 	<include name="ContentRandomEpisodesWidget"><content target="video"><include>RandomEpisodesWidget</include></content></include>
 	<include name="ContentRecentEpisodesWidget"><content target="video"><include>RecentEpisodesWidget</include></content></include>
+	<include name="ContentMixedWidget"><content target="video"><include>MixedWidget</include></content></include>
 </includes>
