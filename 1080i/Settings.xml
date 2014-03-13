@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9001</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <background>0</background>
+    
 	<controls>
 
 		<include>GlobalBackground</include>

@@ -1,3 +1,6 @@
+[B]0.9.22[/B]
+Quick Nav Mode -- Don't close the current view when going back to home menu (make home menu act like a pop-up dialog)
+
 [B]0.9.21[/B]
 Homescreen widget (press up to access)
 Fixed bug with filebrowser and addon settings

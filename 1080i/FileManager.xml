@@ -3,6 +3,7 @@
 <window id="3">
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
 
 	<controls>
 

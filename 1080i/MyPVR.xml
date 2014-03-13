@@ -2,6 +2,7 @@
 <window>
     <allowoverlay>no</allowoverlay>
     <background>0</background>
+    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     <controls>
     
         <include>GlobalBackground</include>

@@ -344,3 +344,6 @@ msgctxt "#31183"
 msgid "Mix of in-progress tv-shows and random movies"
 msgstr ""
 
+msgctxt "#31184"
+msgid "Quick Nav Mode (keep current view when opening home menu)"
+msgstr ""
