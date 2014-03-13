@@ -1,5 +1,6 @@
 [B]0.9.21[/B]
 Homescreen widget (press up to access)
+Fixed bug with filebrowser and addon settings
 
 [B]0.9.20[/B]
 Changed Home Screen titles

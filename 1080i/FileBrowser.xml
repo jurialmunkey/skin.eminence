@@ -9,7 +9,6 @@
 
 		<control type="group">
 		    <posy>210</posy>
-		    <visible>!Window.IsVisible(addonsettings)</visible>
 		    <include>Animation.SlideOpen.Up</include>
             <include>Animation.FadeOut</include>
 			
