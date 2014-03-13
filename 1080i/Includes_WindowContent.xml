@@ -134,7 +134,7 @@
             </control>
             <control type="group">
                 <left>30</left>
-                <posy>165r</posy>
+                <posy>172r</posy>
                 <visible>Control.HasFocus(9600)</visible>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
