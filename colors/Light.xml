@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
 	<color name="White">FFFFFFFF</color>
-
+    
 	
 	<!-- Main Colors -->
 	<color name="Background">ffDEDEDE</color>

@@ -347,3 +347,7 @@ msgstr ""
 msgctxt "#31184"
 msgid "Quick Nav Mode (keep current view when opening home menu)"
 msgstr ""
+
+msgctxt "#31185"
+msgid "Decrease the fade on background fanart"
+msgstr ""

@@ -24,6 +24,7 @@
 	<color name="SubLabel">BFededed</color>
 	<color name="TopBar">ff333333</color>
 	<color name="TopBarDark">ff181818</color>
+	<color name="TopBarDarkIcon">ffededed</color>
 	<color name="TopBarIcon">ffededed</color>
 	<color name="TopBarDisabled">2fededed</color>
 	

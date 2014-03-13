@@ -29,7 +29,7 @@
         <align>center</align>
         <aligny>top</aligny>
         <font>Font-HomeMenu</font>
-        <textcolor>TopBarIcon</textcolor>
+        <textcolor>TopBarDarkIcon</textcolor>
     </include>
     
     <include name="Tall-Home-Menu-Label">
@@ -1025,7 +1025,7 @@
             <animation effect="slide" start="400,400" end="0" delay="0" time="75" condition="Window.IsActive(home)">WindowOpen</animation>
         </control>
         <control type="button" id="352">
-            <posx>1890</posx>
+            <posx>1889</posx>
             <posy>252r</posy>   
             <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
             <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>

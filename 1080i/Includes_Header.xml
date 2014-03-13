@@ -93,6 +93,7 @@
 	</variable>
 	
 	<variable name="HeaderColorFG">
+	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)">TopBarDarkIcon</value>
 	    <value>TopBarIcon</value>
 	</variable>
 	
