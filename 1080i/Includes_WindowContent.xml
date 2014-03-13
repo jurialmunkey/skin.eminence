@@ -19,8 +19,8 @@
 		</control>
 		
 	</include>
-
-    <variable name="GlobalFanart-Movies">
+	
+	<variable name="GlobalFanart-Movies">
         <value condition="!IsEmpty(Skin.String(home.fanart)) + [!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))]">$INFO[Skin.String(home.fanart)]</value>
         <value condition="!IsEmpty(Skin.String(weather.fanart)) + Skin.HasSetting(home.useweatherfanart)">$INFO[Skin.String(weather.fanart)]$INFO[Weather.fanartcode]/</value>
         <value condition="IntegerGreaterThan(System.Time(ss),48)">$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</value>
@@ -29,7 +29,7 @@
         <value condition="IntegerGreaterThan(System.Time(ss),12)">$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</value>
         <value>$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</value>
     </variable>
-    
+
     <variable name="GlobalFanart">
         <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">-</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
@@ -37,6 +37,7 @@
         <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg)">$INFO[Container(9600).ListItem.Icon]</value>
         <value condition="Window.IsVisible(home)">$VAR[GlobalFanart-Movies]</value>
         <value>-</value>
     </variable>
@@ -72,6 +73,36 @@
                 <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
                 <visible>!Window.IsVisible(home)</visible>
 			</control>
+			
+			<control type="wraplist" id="9600">
+			    <visible>Window.IsVisible(home)</visible>
+			    <visible>!Skin.HasSetting(home.usewidgetbg)</visible>
+			    <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
+                <include>Dimensions_Fullscreen</include>
+				<include>Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
+				<ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+				<ondown>300</ondown>
+				<onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
+				<onback>300</onback>
+                <orientation>horizontal</orientation>
+                <preloaditems>1</preloaditems>
+                <scrolltime tween="quadratic">500</scrolltime>
+                <itemlayout width="1920" height="1080">
+                </itemlayout>
+                <focusedlayout width="1920" height="1080">
+                    
+                </focusedlayout>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">ContentRecommendedMoviesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">ContentRandomEpisodesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">ContentRecommendedEpisodesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">ContentRecentEpisodesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">ContentRecentMoviesWidget</include>
+                <include condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">ContentRandomMoviesWidget</include>
+                <include condition="IsEmpty(Skin.String(home.widget))">ContentRandomMoviesWidget</include>
+            </control>
+            
+			
 			<control type="videowindow">
 				<include>Dimensions_Fullscreen</include>
 				<visible>Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]</visible>
@@ -90,6 +121,44 @@
                 <include>GlobalVignette</include>
                 <include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
+            </control>
+            <control type="group">
+                <left>30</left>
+                <posy>165r</posy>
+                <visible>Control.HasFocus(9600)</visible>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <control type="label">
+                    <top>25</top>
+                    <width>1860</width>
+                    <height>100</height>
+                    <font>Font-Header</font>
+                    <label>$INFO[Container(9600).ListItem.Label]</label>
+                    <aligny>top</aligny>
+                    <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                </control>
+                <control type="grouplist">
+                    <posy>115</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>16</itemgap>
+                    <width>1860</width>
+                    <control type="label">
+                        <width>auto</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>Highlight</textcolor>
+                        <scroll>true</scroll>
+                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                    </control>
+                    <control type="label">
+                        <width>1800</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <scroll>true</scroll>
+                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
+                    </control>
+                </control>
             </control>
 		</control>	
 	</include>

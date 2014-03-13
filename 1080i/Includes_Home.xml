@@ -65,6 +65,10 @@
     <include name="Home-Menu-Button">
         <onclick>SetProperty(focushub,1,home)</onclick>
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Back</onclick>
+        <onup condition="Window.IsVisible(PlayerControls.xml)">Back</onup>
+        <onup condition="Player.HasVideo + Window.IsVisible(home)">Action(fullscreen)</onup>
+        <onup condition="!Player.HasVideo + Window.IsVisible(home)">SetFocus(9600)</onup>
+        <onup condition="!Player.HasVideo + Window.IsVisible(home)">CancelAlarm(Move9600,true)</onup>
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
         <aspectratio scalediffuse="false">center</aspectratio>
         <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-Menu-Button</include>
@@ -108,7 +112,7 @@
     
     <include name="Home-Menu">
         <control type="group">
-            <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)]">Conditional</animation>
+            <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)] | [Window.IsVisible(home) + Control.HasFocus(9600)]">Conditional</animation>
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="Window.IsActive(home)">WindowClose</animation>
             <animation effect="slide" end="0,-56" start="0" delay="0" time="150" condition="Window.IsActive(videoosd)">Conditional</animation>
             <control type="button" id="353">

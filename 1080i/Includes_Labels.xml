@@ -253,6 +253,15 @@
 	    <value>$LOCALIZE[31112]</value>
 	</variable>
 	
+	<variable name="HomeWidgetType">
+	    <value condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">$LOCALIZE[20342] $LOCALIZE[31110]</value>
+        <value condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">$LOCALIZE[20343] $LOCALIZE[31112]</value>
+        <value condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">$LOCALIZE[20343] $LOCALIZE[31110]</value>
+        <value condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">$LOCALIZE[20343] $LOCALIZE[31109]</value>
+        <value condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">$LOCALIZE[20342] $LOCALIZE[31109]</value>
+        <value>$LOCALIZE[20342] $LOCALIZE[31112]</value>
+	</variable>
+	
 	<variable name="WidgetPlot">
 	    <value condition="!IsEmpty(Container(9501).ListItem.Plot)">$INFO[Container(9501).ListItem.Plot]</value>
 	    <value>$INFO[Container(9501).ListItem.Property(Plot)]</value>

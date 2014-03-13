@@ -222,6 +222,33 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="203">
+                    <label>31182</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.usewidgetbg)</onclick>
+                    <selected>!Skin.HasSetting(home.usewidgetbg)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="button" id="204" description="Widget Type">
+                    <label>31181</label>
+                    <label2>$VAR[HomeWidgetType]</label2>
+                    <width>1020</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <enable>!Skin.HasSetting(home.usewidgetbg)</enable>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <onclick condition="!stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget) + !stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget) + !stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecentMoviesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">Skin.SetString(home.widget,ContentRandomMoviesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedMoviesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">Skin.SetString(home.widget,ContentRandomEpisodesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedEpisodesWidget)</onclick>
+                    <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">Skin.SetString(home.widget,ContentRecentEpisodesWidget)</onclick>
+                </control>
+                <control type="radiobutton" id="205">
                     <label>31148</label>
                     <width>1020</width>
                     <radioposx>944</radioposx>
@@ -231,15 +258,16 @@
                     <selected>Skin.HasSetting(home.useweatherfanart)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <enable>Skin.HasSetting(home.usewidgetbg)</enable>
                 </control>
-                <control type="button" id="204">
+                <control type="button" id="206">
                     <label>31149</label>
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(home.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <enable>!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))</enable>
+                    <enable>Skin.HasSetting(home.usewidgetbg) + [!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))]</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 

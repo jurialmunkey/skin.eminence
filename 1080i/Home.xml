@@ -6,9 +6,13 @@
 	<background>0</background>
 	<onload>ClearProperty(globalsearch,home)</onload>
 	<onload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
+	<onload>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onload>    
 	<controls>
 		<include>GlobalBackground</include>
-        <include>GlobalTopBar</include>
+		<control type="group">
+		    <animation effect="slide" start="0" end="0,-200" time="200" condition="Control.HasFocus(9600)">Conditional</animation>
+            <include>GlobalTopBar</include>
+        </control>
         <include>Home-Menu</include>
         <control type="button" id="399">
             <visible allowhiddenfocus="true">false</visible>

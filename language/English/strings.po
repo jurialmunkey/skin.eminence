@@ -331,3 +331,12 @@ msgstr ""
 msgctxt "#31180"
 msgid "Tv Shows Hub"
 msgstr ""
+
+msgctxt "#31181"
+msgid "Widget"
+msgstr ""
+
+msgctxt "#31182"
+msgid "Widget as home background (press up to access)"
+msgstr ""
+
