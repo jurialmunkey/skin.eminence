@@ -1,0 +1,44 @@
+Home Customisation
+ - Add item from favourites
+ - Move items
+
+Header
+ - Library stat options: disable, unwatched, watched
+
+Views and Nav Menu
+ - Small indicator arrows for items with navigation.
+ - Currently playing playlist for videos
+
+OSD and Seekbar
+ - Eject button
+ - 3D Stereoscopic features
+ - Subs pop-up menu for download
+ - Subs onclick enable/disable
+ - Audio/Video Codec information screens
+ - Pause Circle overlay
+ - Replace fullscreen fade with gradient
+
+Hub options
+ - Skip Hub
+ - Configure Right Items
+ - Recently Added
+
+PVR / TV
+ - Timer Channel Group Header visibility
+ - Channel Manager
+ - On-screen EPG
+ - Search Dialog
+
+Addons
+ - Tv Guide
+ - DVD Extras
+ - Artwork Downloader
+
+Missing Windows
+ - Peripheral
+ - Karaoke
+ - Music playlist editor
+
+Weather
+ - Large icon when no weather fanart present
+
