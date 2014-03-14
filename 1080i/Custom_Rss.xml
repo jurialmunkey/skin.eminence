@@ -28,16 +28,7 @@
             <width>1860</width>
             <orientation>horizontal</orientation>
             <visible>Skin.HasSetting(rss.tvnextaired)</visible>
-            <control type="label">
-                
-                <width>auto</width>
-                <font>Font-RSS</font>
-                <aligny>top</aligny>
-                <scroll>true</scroll>
-                <textcolor>PanelFG-NF</textcolor>
-                <label>$LOCALIZE[31187]...</label>
-                
-            </control>
+
             <control type="label">
                 <width>1860</width>
                 <font>Font-RSS</font>
