@@ -9,6 +9,7 @@
 	<include file="Includes_Home.xml" />
 	<include file="Includes_Header.xml" />
 	<include file="Includes_Widgets.xml" />
+	<include file="Includes_Hub.xml" />
 	<include file="Includes_Images.xml" />
 	<include file="Includes_Animation.xml" />
 	<include file="Includes_WindowContent.xml" />

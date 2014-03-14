@@ -125,7 +125,6 @@
                 <posy>210</posy>
                 <width>450</width>
                 <height>700</height>
-                <onright>SetProperty(FromWidget,1)</onright>
                 <onright>50</onright>
                 <onleft>CancelAlarm(Move9501,true)</onleft>
                 <onleft>9501</onleft>                
@@ -235,8 +234,8 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <include condition="substring(Container.FolderPath,movies)">QuickNavWidget</include>
-                    <include condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">QuickNavWidget</include>
+                    <include condition="substring(Container.FolderPath,movies)">QuickNavMoviesHub</include>
+                    <include condition="substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)">QuickNavTvshowsHub</include>
                 </content>
             </control>
             <control type="label">

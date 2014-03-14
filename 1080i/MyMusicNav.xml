@@ -87,7 +87,6 @@
                 <posy>210</posy>
                 <width>1434</width>
                 <height>700</height>
-                <onright>SetProperty(FromWidget,1)</onright>
                 <onright>50</onright>
                 <onleft>CancelAlarm(Move9501,true)</onleft>
                 <onleft>9501</onleft>                
@@ -194,7 +193,7 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <include>MusicQuickNavWidget</include>
+                    <include>QuickNavMusicHub</include>
                 </content>
             </control>
             
