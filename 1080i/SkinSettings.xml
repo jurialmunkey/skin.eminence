@@ -94,6 +94,13 @@
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
+                <control type="togglebutton" id="36" description="Add-ons">
+                    <label>24001</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                </control>
             </control>
             
             <include>DefSettingsSeparator</include>
@@ -127,17 +134,7 @@
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="103">
-                    <label>13305</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(disable.rss)</onclick>
-                    <selected>!Skin.HasSetting(disable.rss)</selected>
-                    <visible>ControlGroup(3).HasFocus(31)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 <control type="button" id="104">
                     <label>31138</label>
                     <width>1020</width>
@@ -173,18 +170,7 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="109">
-                    <label>31144</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    
-                    <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
-                    <selected>Skin.HasSetting(ActivateTvTunes)</selected>
-                    <visible>ControlGroup(3).HasFocus(31)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 <control type="radiobutton" id="110">
                     <label>31146</label>
                     <width>1020</width>
@@ -482,6 +468,44 @@
                     <onclick>Skin.ToggleSetting(showdetailedosdinfo)</onclick>
                     <selected>Skin.HasSetting(showdetailedosdinfo)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <!------------>
+                <!-- ADDONS -->
+                <!------------>
+                <control type="radiobutton" id="601">
+                    <label>31144</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
+                    <selected>Skin.HasSetting(ActivateTvTunes)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="602">
+                    <label>13305</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(disable.rss)</onclick>
+                    <selected>!Skin.HasSetting(disable.rss)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="603">
+                    <label>31188</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(rss.tvnextaired)</onclick>
+                    <selected>Skin.HasSetting(rss.tvnextaired)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <enable>!Skin.HasSetting(disable.rss)</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 

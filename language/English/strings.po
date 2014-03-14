@@ -355,3 +355,11 @@ msgstr ""
 msgctxt "#31186"
 msgid "Custom Item"
 msgstr ""
+
+msgctxt "#31187"
+msgid "Next Aired"
+msgstr ""
+
+msgctxt "#31188"
+msgid "Show next aired in RSS feed"
+msgstr ""
