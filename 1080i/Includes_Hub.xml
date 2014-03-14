@@ -75,6 +75,12 @@
             <icon>special://skin/extras/icons/timer.png</icon>
 	        <property name="Color">1</property>
 	    </item>
+	    <item id="11">
+	        <label>31110</label>	        
+            <onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
+            <icon>special://skin/extras/icons/recent.png</icon>
+	        <property name="Color">1</property>
+	    </item>
 	    <item id="3">
 	        <label>137</label>
             <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>

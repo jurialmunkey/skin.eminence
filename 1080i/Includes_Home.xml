@@ -114,6 +114,14 @@
     </include>
     
     <include name="Home-Menu">
+        <control type="button">
+            <posx>0</posx>
+            <posy>128r</posy>
+            <width>1920</width>
+            <height>128</height>
+            <onfocus>SetFocus(300)</onfocus>
+            <animation effect="fade" start="100" end="0" condition="true">Conditional</animation>
+        </control>
         <control type="group">
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="!Window.IsActive(home) + ![ControlGroup(300).HasFocus() | Control.HasFocus(351) | Control.HasFocus(352) | Control.HasFocus(353) | Control.HasFocus(350)] | [Window.IsVisible(home) + Control.HasFocus(9600)]">Conditional</animation>
             <animation effect="slide" end="0,376" start="0" delay="0" time="150" condition="Window.IsActive(home)">WindowClose</animation>
@@ -1027,9 +1035,7 @@
         <control type="button" id="352">
             <posx>1889</posx>
             <posy>252r</posy>   
-            <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
-            <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>
-            <onfocus condition="Skin.HasSetting(home.314.enabled)">SetFocus(314)</onfocus>
+            <onfocus>SetFocus(324)</onfocus>
             <texturefocus colordiffuse="TopBarDark">home/tile.png</texturefocus>
             <texturenofocus colordiffuse="TopBarDark">home/tile.png</texturenofocus>
             <include>Home-Menu-Button</include>
@@ -1053,9 +1059,7 @@
         <control type="button" id="352">
             <posx>1856</posx>
             <posy>358r</posy>   
-            <onfocus condition="Skin.HasSetting(home.312.enabled)">SetFocus(312)</onfocus>
-            <onfocus condition="Skin.HasSetting(home.313.enabled)">SetFocus(313)</onfocus>
-            <onfocus condition="Skin.HasSetting(home.314.enabled)">SetFocus(314)</onfocus>
+            <onfocus>SetFocus(324)</onfocus>
             <texturefocus colordiffuse="PanelBG">home/half-tile.png</texturefocus>
             <texturenofocus colordiffuse="PanelBG">home/half-tile.png</texturenofocus>
             <include>Home-Menu-Button</include>

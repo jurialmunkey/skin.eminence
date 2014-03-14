@@ -121,6 +121,8 @@
             <onfocus>Skin.SetBool(skin.init)</onfocus>
             <onfocus>Skin.SetBool(disable.bgvideo)</onfocus>
             <onfocus>Skin.SetBool(HideDebugInfo)</onfocus>
+            <onfocus>Skin.SetBool(showdetailedosdinfo)</onfocus>
+            <onfocus>Skin.SetBool(disable.pvricon)</onfocus>
             <onfocus>ReplaceWindow(home)</onfocus>
             
         </control>
