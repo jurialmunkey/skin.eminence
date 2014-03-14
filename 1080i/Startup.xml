@@ -129,6 +129,7 @@
         <control type="button" id="9315">
             <animation effect="fade" start="0" end="0" time="0" delay="1000">Focus</animation>
             <onfocus condition="!Skin.HasSetting(skin.init)">SetFocus(9314)</onfocus>
+            <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init)">ReplaceWindow(home)</onfocus>
         </control>
         <control type="image">

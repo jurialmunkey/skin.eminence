@@ -508,6 +508,17 @@
                     <enable>!Skin.HasSetting(disable.rss)</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="604">
+                    <label>31189</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
+                    <selected>Skin.HasSetting(NextAired.Update)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
             </control>
         </control>

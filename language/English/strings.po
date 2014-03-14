@@ -363,3 +363,7 @@ msgstr ""
 msgctxt "#31188"
 msgid "Show next aired in RSS feed"
 msgstr ""
+
+msgctxt "#31189"
+msgid "Update next aired data on startup"
+msgstr ""
