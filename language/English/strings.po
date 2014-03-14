@@ -351,3 +351,7 @@ msgstr ""
 msgctxt "#31185"
 msgid "Decrease the fade on background fanart"
 msgstr ""
+
+msgctxt "#31186"
+msgid "Custom Item"
+msgstr ""

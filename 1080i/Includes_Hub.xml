@@ -13,6 +13,31 @@
             <icon>special://skin/extras/icons/timer.png</icon>
 	        <property name="Color">1</property>
 	    </item>
+	    
+	    
+	    <item id="11">
+	        <label>$INFO[Skin.String(moviehub.1.Label)]</label>	        
+            <onclick>$INFO[Skin.String(moviehub.1.Path)]</onclick>
+            <icon>$INFO[Skin.String(moviehub.1.Icon)]</icon>
+	        <property name="Color">1</property>
+	        <visible>Skin.HasSetting(moviehub.1.enabled)</visible>
+	    </item>
+	    <item id="12">
+	        <label>$INFO[Skin.String(moviehub.2.Label)]</label>	        
+            <onclick>$INFO[Skin.String(moviehub.2.Path)]</onclick>
+            <icon>$INFO[Skin.String(moviehub.2.Icon)]</icon>
+	        <property name="Color">1</property>
+	        <visible>Skin.HasSetting(moviehub.2.enabled)</visible>
+	    </item>
+	    <item id="13">
+	        <label>$INFO[Skin.String(moviehub.3.Label)]</label>	        
+            <onclick>$INFO[Skin.String(moviehub.3.Path)]</onclick>
+            <icon>$INFO[Skin.String(moviehub.3.Icon)]</icon>
+	        <property name="Color">1</property>
+	        <visible>Skin.HasSetting(moviehub.3.enabled)</visible>
+	    </item>
+	    
+	    
 	    <item id="3">
 	        <label>137</label>
             <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
@@ -75,12 +100,27 @@
             <icon>special://skin/extras/icons/timer.png</icon>
 	        <property name="Color">1</property>
 	    </item>
-	    <!--<item id="11">
-	        <label>31110</label>	        
-            <onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
-            <icon>special://skin/extras/icons/recent.png</icon>
+	    <item id="11">
+	        <label>$INFO[Skin.String(tvshowhub.1.Label)]</label>	        
+            <onclick>$INFO[Skin.String(tvshowhub.1.Path)]</onclick>
+            <icon>$INFO[Skin.String(tvshowhub.1.Icon)]</icon>
 	        <property name="Color">1</property>
-	    </item>-->
+	        <visible>Skin.HasSetting(tvshowhub.1.enabled)</visible>
+	    </item>
+	    <item id="12">
+	        <label>$INFO[Skin.String(tvshowhub.2.Label)]</label>	        
+            <onclick>$INFO[Skin.String(tvshowhub.2.Path)]</onclick>
+            <icon>$INFO[Skin.String(tvshowhub.2.Icon)]</icon>
+	        <property name="Color">1</property>
+	        <visible>Skin.HasSetting(tvshowhub.2.enabled)</visible>
+	    </item>
+	    <item id="13">
+	        <label>$INFO[Skin.String(tvshowhub.3.Label)]</label>	        
+            <onclick>$INFO[Skin.String(tvshowhub.3.Path)]</onclick>
+            <icon>$INFO[Skin.String(tvshowhub.3.Icon)]</icon>
+	        <property name="Color">1</property>
+	        <visible>Skin.HasSetting(tvshowhub.3.enabled)</visible>
+	    </item>
 	    <item id="3">
 	        <label>137</label>
             <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
