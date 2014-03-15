@@ -284,7 +284,7 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                
+               
                 <!---------------->
                 <!-- Movies Hub -->
                 <!---------------->

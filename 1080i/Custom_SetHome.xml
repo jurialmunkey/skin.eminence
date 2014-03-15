@@ -543,7 +543,7 @@
                         <onclick>ActivateWindow(3061)</onclick>
                         <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>
                         <onleft>9328</onleft>
-                        <onright>9301</onright>
+                        <onright>9330</onright>
                         <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9329)">Conditional</animation>
                     </control>
                     <control type="image">
@@ -555,6 +555,54 @@
                         <include>Home-Menu-Label</include>
                         <label fallback="31169">$INFO[Skin.String(home.329.Label)]</label>
                         <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9329)">Conditional</animation>
+                    </control>
+                </control>
+                
+                <!-- SYSTEM BUTTONS -->
+                <control type="group">
+                    <include>Home-Button-Group-Width</include>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="9330">
+                        <include>Home-Menu-Button</include>
+                        <onclick>SetProperty(item,home.313,3062)</onclick>
+                        <onclick>ActivateWindow(3062)</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
+                        <onleft>9329</onleft>
+                        <onright>9331</onright>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9330)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/tile.png" fallback="special://skin/extras/icons/addtile.png" aligny="center" align="center">$INFO[Skin.String(home.313.Icon)]</texture>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9330)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label fallback="31169">$INFO[Skin.String(home.313.Label)]</label>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9330)">Conditional</animation>
+                    </control>
+                </control>
+                <control type="group">
+                    <include>Home-Button-Group-Width</include>
+                    <include>Home-Menu-Button-BG</include>
+                    <control type="button" id="9331">
+                        <include>Home-Menu-Button</include>
+                        <onclick>SetProperty(item,home.314,3062)</onclick>
+                        <onclick>ActivateWindow(3062)</onclick>
+                        <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
+                        <onleft>9330</onleft>
+                        <onright>9301</onright>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9331)">Conditional</animation>
+                    </control>
+                    <control type="image">
+                        <include>Home-Menu-Button</include>
+                        <texture diffuse="home/tile.png" fallback="special://skin/extras/icons/addtile.png" aligny="center" align="center">$INFO[Skin.String(home.314.Icon)]</texture>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9331)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <include>Home-Menu-Label</include>
+                        <label fallback="31169">$INFO[Skin.String(home.314.Label)]</label>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9331)">Conditional</animation>
                     </control>
                 </control>
                
