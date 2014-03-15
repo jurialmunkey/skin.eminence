@@ -235,21 +235,19 @@
 	<include name="DefContextMenuBackground">
 	    <control type="image">
             <posy>18</posy>
-            <posx>198</posx>
-            <width>254</width>
+            <posx>210</posx>
+            <width>300</width>
             <height>164</height>	
-            <texture align="left">home/half-tile.png</texture>
+            <texture flipx="true" flipy="true">home/head-tile.png</texture>
             <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-            <aspectratio>scale</aspectratio>
         </control>
         <control type="image">
             <posy>18</posy>
-            <posx>300</posx>
+            <posx>510</posx>
             <width>1800</width>
             <height>164</height>	
-            <texture>common/white.png</texture>
+            <texture border="2">common/white.png</texture>
             <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-            <aspectratio>scale</aspectratio>
         </control>
 	</include>
 	

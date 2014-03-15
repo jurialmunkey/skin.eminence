@@ -10,12 +10,11 @@
 		<control type="group" description="Left Side Header">
             <control type="image">
                 <posy>18</posy>
-                <posx>-64</posx>
+                <posx>-88</posx>
                 <width>300</width>
                 <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
+                <texture align="left">home/head-tile.png</texture>
                 <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
             </control>
 
             <control type="image">
@@ -41,33 +40,11 @@
         </control>
         
 		<control type="group">		
-            <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9000">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
-
+                <include>DefContextMenuGroupList</include>
 				<control type="button" id="95">
 					<description>General</description>
 					<width>334</width>
@@ -143,7 +120,7 @@
 
 		<control type="group">
 			<posy>210</posy>
-			<animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+			<include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
 
@@ -177,6 +154,7 @@
 					<description>XBMC XBE BUILD Version</description>
 					<width>1330</width>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 				<control type="label" id="21">
@@ -184,6 +162,7 @@
 					<width>1330</width>
 					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 				
 				<control type="label">
@@ -213,6 +192,7 @@
 					<width>1330</width>
 					<label>$LOCALIZE[31121]: $INFO[system.memory(used.percent)]</label>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 				
 				<control type="label">
@@ -228,6 +208,7 @@
 					<height>20</height>
 					<info>system.memory(used)</info>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 				<control type="label" id="25">
@@ -240,11 +221,13 @@
 				<control type="label" id="2">
 					<description>Label 2</description>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="3">
                     <font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<description>Label 3</description>
 					<width>1330</width>
 				</control>
@@ -252,24 +235,28 @@
 				<control type="label" id="4">
 					<description>Label 4</description>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="5">
 					<description>Label 5</description>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="6">
 					<description>Label 6</description>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<width>1330</width>
 				</control>
 
 				<control type="label" id="7">
 					<description>Label 7</description>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 					<width>1330</width>
 				</control>
 
@@ -277,24 +264,28 @@
 					<description>Label 8</description>
 					<width>1330</width>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 				<control type="label" id="9">
 					<description>Label 9</description>
 					<width>1330</width>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 				<control type="label" id="10">
 					<description>Label 10</description>
 					<width>1330</width>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 				<control type="label" id="11">
 					<description>Label 11</description>
 					<width>1330</width>
 					<font>Font-ListInfo</font>
+					<textcolor>TopBarIcon</textcolor>
 				</control>
 
 			</control>

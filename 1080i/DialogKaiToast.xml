@@ -6,6 +6,7 @@
     <zorder>3</zorder>
     <controls>
         <control type="group">		
+            <posx>900</posx>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
@@ -56,7 +57,7 @@
 				<posy>0</posy>
 				<height>164</height>
 				<aligny>center</aligny>
-				<width>1450</width>
+				<width>590</width>
 				<align>left</align>
 				<textcolor>TopBarIcon</textcolor>
 			</control>
@@ -64,7 +65,7 @@
 				<description>Message</description>
 				<posx>400</posx>
 				<posy>36</posy>
-				<width>1450</width>
+				<width>590</width>
 				<height>164</height>
 				<align>left</align>
 				<aligny>center</aligny>

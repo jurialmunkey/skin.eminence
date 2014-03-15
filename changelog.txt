@@ -6,6 +6,7 @@ Separated tvshow and movie hub includes
 Add favourites support in custom
 Add options to change settings/power colour
 Show fullscreen tile only in quick nav mode
+Fix Set Path not enabling the tile
 
 [B]0.9.21[/B]
 Homescreen widget (press up to access)

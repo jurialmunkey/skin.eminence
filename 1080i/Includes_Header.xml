@@ -44,6 +44,7 @@
     </variable>
     
     <variable name="MainHeaderIcon">
+        
         <value condition="Window.IsVisible(DialogMuteBug.xml)">special://skin/extras/icons/mute.png</value>
         <value condition="Window.IsVisible(DialogButtonMenu.xml)">special://skin/extras/icons/power.png</value>
         <value condition="Window.IsVisible(DialogFavourites.xml)">special://skin/extras/icons/favourites.png</value>
@@ -98,22 +99,24 @@
 	</variable>
 	
 	<include name="HeaderLeftTile">
+
 	    <control type="image">
             <posy>18</posy>
-            <posx>-64</posx>
+            <posx>-88</posx>
             <width>300</width>
             <height>164</height>	
-            <texture align="left" colordiffuse="TopBar">home/half-tile.png</texture>
-            <aspectratio>scale</aspectratio>
+            <texture align="left" border="2">home/head-tile.png</texture>
+            <colordiffuse>TopBar</colordiffuse>
+         
         </control>
+        
         <control type="image">
             <posy>18</posy>
-            <posx>-64</posx>
+            <posx>-88</posx>
             <width>300</width>
             <height>164</height>	
-            <texture align="left" colordiffuse="TopBarDark">home/half-tile.png</texture>
-            <aspectratio>scale</aspectratio>
-            <visible>Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
+            <texture align="left" colordiffuse="TopBarDark">home/head-tile.png</texture>
+            <visible>Window.IsVisible(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
             <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.Previous(VideoFullScreen.xml) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeIn</include>
             <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeOut</include>
         </control>
@@ -297,17 +300,27 @@
     </include>
     
     <include name="GlobalTopBar">
-        <include>GlobalLeftHeader</include>
+        <control type="group">
+            <visible>!Window.IsVisible(DialogBusy.xml)</visible>
+            <include>GlobalLeftHeader</include>
+        </control>
         <control type="group" description="Main Header">
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
+            <visible>!Window.IsActive(DialogMediaSource.xml)</visible>
+            <visible>!Window.IsActive(DialogContentSettings.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogProgress.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!ControlGroup(9500).HasFocus()</visible>
-            <include>Animation.HeaderDialog</include>
+            <include>Animation.VisibleFadeIn</include>
+            <include>Animation.VisibleFadeOut</include>
             <include>HeaderMainInfo</include>
-            <include>HeaderRightInfo</include>
+            <control type="group">
+                <include>Animation.VisibleFadeIn</include>
+                <include>Animation.VisibleFadeOut</include>
+                <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
+                <include>HeaderRightInfo</include>
+            </control>
         </control>
     </include>
     

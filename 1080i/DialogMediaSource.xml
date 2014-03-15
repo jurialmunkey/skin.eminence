@@ -89,7 +89,9 @@
 
 		</control>
 		<control type="group">		
-            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible>!Window.IsVisible(addonsettings)</visible>
             <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9700">
                 <include>DefContextMenuGroupList</include>

@@ -270,6 +270,7 @@
                             <label2>748</label2>
                             <icon>special://skin/extras/icons/configure.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path])</onclick>
+                            <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                         </item>
                         
                         <item id="16">

@@ -9,7 +9,7 @@
 
 		<control type="group">
 		    <posy>210</posy>
-		    <include>Animation.SlideOpen.Up</include>
+		    <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
 			
             <control type="image">
@@ -201,7 +201,8 @@
 		</control>
 		
 		<control type="group">		
-            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
             <control type="image">
                 <posy>18</posy>
                 <posx>198</posx>

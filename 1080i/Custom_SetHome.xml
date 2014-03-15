@@ -36,7 +36,7 @@
                         <onclick>SetProperty(item,home.301,3061)</onclick>
                         <onclick>ActivateWindow(3061)</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
-                        <onleft>9329</onleft>
+                        <onleft>9331</onleft>
                         <onright>9302</onright>
                         <animation effect="fade" start="100" end="45" time="100" condition="!Control.HasFocus(9301)">Conditional</animation>
                     </control>
