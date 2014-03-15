@@ -210,7 +210,7 @@
                             
                         </item>
                         
-                        <item id="10">
+                        <item id="12">
                             <description>Custom Addon</description>
                             <label>31163</label>
                             <label2>24001</label2>
@@ -227,6 +227,15 @@
                         </item>
                         
                         <item id="13">
+                            <description>Custom Fav</description>
+                            <label>31163</label>
+                            <label2>Favourites</label2>
+                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <onclick>RunScript(script.favourites,property=$INFO[Window(3061).Property(item)])</onclick>
+                            <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
+                        </item>
+                        
+                        <item id="14">
                             <description>Custom Video Playlist</description>
                             <label>31163</label>
                             <label2>20012</label2>
@@ -237,12 +246,9 @@
                             <onclick>SetProperty(showimages,1,home)</onclick>
                             <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
-                            
-                            
-                            
                         </item>
                         
-                        <item id="14">
+                        <item id="15">
                             <description>Custom Music Playlist</description>
                             <label>31163</label>
                             <label2>20011</label2>
@@ -274,7 +280,7 @@
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
                         </item>
                         
-                        <item id="18">
+                        <item id="17">
                             <description>Custom Icon</description>
                             <label>31164</label>
                             <label2>31165</label2>
@@ -285,7 +291,7 @@
                             
                         </item>
                         
-                        <item id="19">
+                        <item id="18">
                             <description>Color</description>
                             <label>31164</label>
                             <label2>Set Colour</label2>
@@ -294,7 +300,7 @@
                             <onclick>ActivateWindow(3062)</onclick>
                         </item>
                         
-                        <item id="17">
+                        <item id="19">
                             <description>Remove</description>
                             <label>117</label>
                             <icon>special://skin/extras/icons/forbidden.png</icon>
@@ -305,7 +311,7 @@
                             					
                         </item>
                         
-                        <item id="18">
+                        <item id="20">
                             <description>Done</description>
                             <label>186</label>
                             <icon>special://skin/extras/icons/close.png</icon>
