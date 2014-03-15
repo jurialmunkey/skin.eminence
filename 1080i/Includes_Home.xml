@@ -145,7 +145,7 @@
                 <control type="group">
                     <include>Home-Button-Group-Width</include>
                     <include>Home-Menu-Visibility</include>
-                    <visible>Player.HasMedia</visible>
+                    <visible>Player.HasMedia + Skin.HasSetting(home.autopop)</visible>
                     <animation effect="slide" start="400,400" end="0" time="75">Visible</animation>
                     <animation effect="slide" start="400,400" end="0" time="75" condition="Window.IsActive(home)">WindowOpen</animation>
                     <include>Home-Menu-Button-BG</include>
@@ -156,7 +156,7 @@
                         <onleft>324</onleft>
                         <onright>299</onright>
                         <onclick>Action(fullscreen)</onclick>
-                        <visible>Player.HasMedia</visible>
+                        <visible>Player.HasMedia + Skin.HasSetting(home.autopop)</visible>
                         <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(298)">Conditional</animation>
                     </control>
                     <control type="image">
