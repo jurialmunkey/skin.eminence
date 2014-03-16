@@ -216,7 +216,6 @@
                     <radioposx>944</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
                     <selected>Skin.HasSetting(home.talltiles)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
