@@ -43,7 +43,8 @@
                     <label>$LOCALIZE[20126]</label>
                     <onclick>dialog.close(all,true)</onclick>
                     <onclick>System.LogOff</onclick>
-                    <visible>System.Loggedon + System.HasLoginScreen</visible>
+                    <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+                    <visible>System.Loggedon</visible>
                 </control>
 
                 <control type="button" id="3114">

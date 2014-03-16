@@ -10,7 +10,7 @@
 			<posy>210</posy>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-			<visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(ProfileSettings.xml) + !Window.IsVisible(LockSettings.xml)</visible>
+			<visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(ProfileSettings.xml) + !Window.IsVisible(LockSettings.xml) + !Window.IsVisible(DialogSelect.xml)</visible>
 
             
             <control type="label">
@@ -36,13 +36,13 @@
 				<onup>-</onup>
 				<ondown>5</ondown>
 			</control>
-			<control type="radiobutton" id="5">
+			<control type="button" id="5">
 				<description>Auto login</description>
 				<posx>265</posx>
 				<posy>189</posy>
-				<radioposx>850</radioposx>
 				<width>920</width>
-				<label>$LOCALIZE[31120]$INFO[system.profileautologin,:  ,]</label>
+				<label>$LOCALIZE[31120]</label>
+				<label2>$INFO[system.profileautologin]</label2>
 				<align>left</align>
 				<onright>-</onright>
 				<onleft>-</onleft>
