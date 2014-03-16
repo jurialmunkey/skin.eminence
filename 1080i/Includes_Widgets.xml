@@ -741,6 +741,8 @@
 	<include name="ContentRecentMoviesWidget"><content target="video"><include>RecentMoviesWidget</include></content></include>
 	<include name="ContentPlaylistEpisodesWidget"><content target="video">$INFO[Skin.String(tvshow.widget.playlist)]</content></include>
 	<include name="ContentRecommendedEpisodesWidget"><content target="video"><include>RecommendedEpisodesWidget</include></content></include>
+	<include name="ContentRecommendedWidget"><content target="video"><include>RecommendedEpisodesWidget</include><include>RecommendedMoviesWidget</include></content></include>
+	<include name="ContentRandomWidget"><content target="video"><include>RandomEpisodesWidget</include><include>RandomMoviesWidget</include></content></include>
 	<include name="ContentRandomEpisodesWidget"><content target="video"><include>RandomEpisodesWidget</include></content></include>
 	<include name="ContentRecentEpisodesWidget"><content target="video"><include>RecentEpisodesWidget</include></content></include>
 	<include name="ContentMixedWidget"><content target="video"><include>MixedWidget</include></content></include>

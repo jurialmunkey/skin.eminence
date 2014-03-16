@@ -70,6 +70,7 @@
         <onup condition="!Player.HasVideo + Window.IsVisible(home)">SetFocus(9600)</onup>
         <onup condition="!Player.HasVideo + Window.IsVisible(home)">CancelAlarm(Move9600,true)</onup>
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
+        <ondown condition="!Player.HasMedia + Window.IsVisible(home)">ActivateWindow(3101)</ondown>
         <onback condition="Window.IsVisible(PlayerControls.xml) + Player.HasMedia + Skin.HasSetting(home.autopop)">Action(fullscreen)</onback>
         <aspectratio scalediffuse="false">center</aspectratio>
         <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-Menu-Button</include>

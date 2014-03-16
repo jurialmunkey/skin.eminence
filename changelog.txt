@@ -1,3 +1,6 @@
+[B]0.9.23[/B]
+"Today" Widget on down from home screen (Window id 3101)
+
 [B]0.9.22[/B]
 Quick Nav Mode -- Don't close the current view when going back to home menu (make home menu act like a pop-up dialog)
 Option to add up to three custom items to hub pages
