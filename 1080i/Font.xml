@@ -9,6 +9,11 @@
 			<filename>Arial.ttf</filename>
 			<size>30</size>
 		</font>
+		<font>
+			<name>Font-Startup</name>
+			<filename>SourceSansPro-Regular.ttf</filename>
+			<size>384</size>
+		</font>
 		
 		
 		<!-- SKIN FONTS -->
@@ -126,6 +131,11 @@
 			<name>font13</name>
 			<filename>Arial.ttf</filename>
 			<size>30</size>
+		</font>
+		<font>
+			<name>Font-Startup</name>
+			<filename>SourceSansPro-Regular.ttf</filename>
+			<size>384</size>
 		</font>
 		
 		

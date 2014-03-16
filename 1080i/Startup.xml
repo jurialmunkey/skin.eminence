@@ -127,21 +127,27 @@
             
         </control>
         <control type="button" id="9315">
-            <animation effect="fade" start="0" end="0" time="0" delay="1000">Focus</animation>
             <onfocus condition="!Skin.HasSetting(skin.init)">SetFocus(9314)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
-            <onfocus condition="Skin.HasSetting(skin.init)">ReplaceWindow(home)</onfocus>
-            <onfocus condition="Skin.HasSetting(skin.init)">ReloadSkin()</onfocus>
+            <onfocus condition="Skin.HasSetting(skin.init)">AlarmClock(GoHome,ReplaceWindow(home),00:01,silent,false)</onfocus>
         </control>
-        <control type="image">
+        <control type="label">
             <description>Loading</description>
-            <posx>832</posx>
-            <posy>412</posy>
-            <width>256</width>
-            <height>256</height>
-            <texture>home/loading.png</texture>
-            <aspectratio align="center">keep</aspectratio>
-            <animation effect="rotate" center="auto" start="360" end="0" time="4500" loop="true" condition="true">Conditional</animation>
+            <posy>200</posy>
+            <width>1920</width>
+            <align>center</align>
+            <aligny>top</aligny>
+            <label>e</label>
+            <font>Font-Startup</font>
+        </control>
+        <control type="label">
+            <description>Loading</description>
+            <posy>600</posy>
+            <width>1920</width>
+            <align>center</align>
+            <aligny>top</aligny>
+            <label>[COLOR=Highlight]$LOCALIZE[31194][/COLOR]  eminence</label>
+            <font>Font-ListInfo</font>
         </control>
     </controls>
 </window>
