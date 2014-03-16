@@ -367,3 +367,15 @@ msgstr ""
 msgctxt "#31189"
 msgid "Update next aired data on startup"
 msgstr ""
+
+msgctxt "#31190"
+msgid "Login"
+msgstr ""
+
+msgctxt "#31191"
+msgid "User login"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Select a profile"
+msgstr ""

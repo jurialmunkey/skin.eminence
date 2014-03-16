@@ -123,7 +123,7 @@
             <onfocus>Skin.SetBool(HideDebugInfo)</onfocus>
             <onfocus>Skin.SetBool(showdetailedosdinfo)</onfocus>
             <onfocus>Skin.SetBool(disable.pvricon)</onfocus>
-            <onfocus>ReplaceWindow(home)</onfocus>
+            <onfocus>SetFocus(9315)</onfocus>
             
         </control>
         <control type="button" id="9315">
@@ -131,6 +131,7 @@
             <onfocus condition="!Skin.HasSetting(skin.init)">SetFocus(9314)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init)">ReplaceWindow(home)</onfocus>
+            <onfocus condition="Skin.HasSetting(skin.init)">ReloadSkin()</onfocus>
         </control>
         <control type="image">
             <description>Loading</description>
