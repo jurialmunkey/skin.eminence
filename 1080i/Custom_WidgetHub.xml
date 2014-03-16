@@ -2,7 +2,7 @@
 <!-- Foundation -->
 <window type="window" id="3101">
 	<defaultcontrol always="true">9500</defaultcontrol>
-	<allowoverlay>true</allowoverlay>
+	<allowoverlay>false</allowoverlay>
 	<controls>
 	    <control type="image">
             <include>Dimensions_Fullscreen</include>
@@ -23,8 +23,25 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>!Control.HasFocus(9700)</visible>
-            <visible>[!Control.HasFocus(9501) + !Control.HasFocus(9500)] | !IsEmpty(Container(9700).ListItem.Label)</visible>
+            <visible>Control.HasFocus(9705)</visible>
+        </control>
+        
+        <control type="button">
+            <posy>600</posy>
+            <posx>102</posx>
+            <width>48</width>
+            <height>48</height>
+            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
+            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
+            <visible>[Control.HasFocus(9501) | Control.HasFocus(9500)] + !IsEmpty(Container(9700).ListItem.Label)</visible>
         </control>
         
         <control type="button">
@@ -42,7 +59,25 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>!Control.HasFocus(9705)</visible>
+            <visible>Control.HasFocus(9700)</visible>
+        </control>
+        
+        <control type="button">
+            <posy>600</posy>
+            <posx>1770</posx>
+            <width>48</width>
+            <height>48</height>
+            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
+            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
+            <visible>[Control.HasFocus(9501) | Control.HasFocus(9500)]</visible>
         </control>
         
         
@@ -75,9 +110,11 @@
                     <posy>11</posy>
                     <width>1394</width>
                     <height>668</height>
-                    <onright>9501</onright>
+                    <onleft>Control.Move(9700,1)</onleft>
                     <onup>9700</onup>
                     <ondown>9700</ondown>
+                    <onright>9501</onright>
+                    <onback>9501</onback>
                     <viewtype label="31155">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
                     <orientation>vertical</orientation>
@@ -430,8 +467,8 @@
                     <posy>201</posy>
                     <width>956</width>
                     <height>708</height>
-                    <onleft>SetProperty(Movement,1,3101)</onleft>
                     <onleft>9500</onleft>
+                    <onback>9500</onback>
                     <onup>52</onup>
                     <ondown>52</ondown>
                     <viewtype label="31153">list</viewtype>
