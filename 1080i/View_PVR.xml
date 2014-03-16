@@ -302,8 +302,6 @@
     <include name="EPGTimelineView">
         <control type="group">
             <visible>Control.IsVisible(10)</visible>
-            <!--<animation effect="slide" start="-1920" reversible="false" end="0" delay="0" time="200" condition="Control.IsVisible(10)">Conditional</animation>
-            <animation effect="slide" end="-1920" reversible="false" start="0" delay="0" time="200" condition="!Control.IsVisible(10)">Conditional</animation>-->
             <control type="epggrid" id="10">
                 <posx>-215</posx>
                 <posy>70</posy>
@@ -314,7 +312,7 @@
                 <scrolltime>350</scrolltime>
                 <timeblocks>35</timeblocks>
                 <rulerunit>6</rulerunit>
-                <onback condition="!Window.Previous(VideoFullScreen.xml)">9131</onback>
+                <onback condition="!Window.Previous(VideoFullScreen.xml)">9000</onback>
                 <onleft>31</onleft>
                 <onright>31</onright>
                 <onup>10</onup>
