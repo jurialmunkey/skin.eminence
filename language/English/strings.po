@@ -337,7 +337,7 @@ msgid "Widget"
 msgstr ""
 
 msgctxt "#31182"
-msgid "Widget as home background (press up to access)"
+msgid "Home background widget (press up to access)"
 msgstr ""
 
 msgctxt "#31183"
@@ -386,4 +386,8 @@ msgstr ""
 
 msgctxt "#31194"
 msgid "Loading..."
+msgstr ""
+
+msgctxt "#31195"
+msgid "Access recent/in-progress hub by pressing down"
 msgstr ""

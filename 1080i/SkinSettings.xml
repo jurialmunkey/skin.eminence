@@ -222,6 +222,17 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="208">
+                    <label>31195</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
+                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 <control type="radiobutton" id="203">
                     <label>31182</label>
                     <width>1020</width>
