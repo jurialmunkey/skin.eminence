@@ -5,8 +5,6 @@
 	<allowoverlay>true</allowoverlay>
 	<controls>
 	    <control type="image">
-	        <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
             <include>Dimensions_Fullscreen</include>
             <texture colordiffuse="Background">common/white.png</texture>
         </control>
