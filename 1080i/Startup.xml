@@ -2,6 +2,7 @@
 <!-- Foundation -->
 <window>
     <defaultcontrol always="true">9315</defaultcontrol>
+    <onload>ClearProperty(homefocus,home)</onload>
 	<controls>
         <control type="button" id="9314">
             
