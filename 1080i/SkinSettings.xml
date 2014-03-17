@@ -210,17 +210,7 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="202">
-                    <label>31178</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
-                    <selected>Skin.HasSetting(home.talltiles)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 <control type="radiobutton" id="208">
                     <label>31195</label>
                     <width>1020</width>
@@ -232,6 +222,7 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
                 <control type="radiobutton" id="203">
                     <label>31182</label>
                     <width>1020</width>
@@ -259,6 +250,18 @@
                     <onclick condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">Skin.SetString(home.widget,ContentRecentEpisodesWidget)</onclick>
                     <onclick condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">Skin.SetString(home.widget,ContentRecommendedMoviesWidget)</onclick>
                     <onclick condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">Skin.SetString(home.widget,ContentRandomMoviesWidget)</onclick>
+                </control>
+                <control type="radiobutton" id="209">
+                    <label>31198</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
+                    <enable>!Skin.HasSetting(home.usewidgetbg)</enable>
+                    <selected>Skin.HasSetting(home.showinfoonwidget)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="205">
                     <label>31148</label>
@@ -291,6 +294,17 @@
                     
                     <onclick>Skin.ToggleSetting(home.autopop)</onclick>
                     <selected>Skin.HasSetting(home.autopop)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="202">
+                    <label>31178</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
+                    <selected>Skin.HasSetting(home.talltiles)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>

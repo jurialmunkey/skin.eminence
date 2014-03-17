@@ -23,6 +23,12 @@
 			<size>34</size>
 			<style>uppercase</style>
 		</font>
+		
+		<font>
+			<name>Font-WidgetInfoTitle</name>
+			<filename>SourceSansPro-Black.ttf</filename>
+			<size>48</size>
+		</font>
 
 		<font>
 			<name>Font-PVRTitle</name>
@@ -151,6 +157,13 @@
 			<filename>Homizio-Black.ttf</filename>
 			<size>34</size>
 			<style>uppercase</style>
+		</font>
+		
+		<font>
+		    <linespacing>1.05</linespacing>
+			<name>Font-WidgetInfoTitle</name>
+			<filename>Homizio-Black.ttf</filename>
+			<size>48</size>
 		</font>
 
 		<font>

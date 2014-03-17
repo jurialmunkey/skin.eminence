@@ -140,11 +140,61 @@
                 <include>Animation.FadeOut</include>
             </control>
             <control type="group">
+                <posy>400</posy>
+                <visible>Skin.HasSetting(home.showinfoonwidget)</visible>
+                <visible>!Skin.HasSetting(home.usewidgetbg)</visible>
+                <visible>Window.IsVisible(home)</visible>
+                <animation effect="slide" start="0" end="0,320" time="550" tween="back" reversible="false" condition="Control.HasFocus(9600)">Conditional</animation>
+                <animation effect="slide" end="0" start="0,320" time="150" reversible="false" condition="!Control.HasFocus(9600)">Conditional</animation>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <control type="image">
+                    <posx>-100</posx>
+                    <width>900</width>
+                    <height>340</height>	
+                    <texture align="left" border="150">home/half-tile.png</texture>
+                    <colordiffuse>TopBarDark</colordiffuse>
+                    <animation effect="fade" start="100" end="95" condition="true">Conditional</animation>
+                </control>
+                <control type="grouplist">
+                    
+                    <posx>64</posx>
+                    <posy>20</posy>
+                    <width>650</width>
+                    <orientation>vertical</orientation>
+                    <control type="label">
+                        <label>$VAR[HomeWidgetType2]</label>
+                        <aligny>top</aligny>
+                        <height>35</height>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.Label]</label>
+                        <aligny>top</aligny>
+                        <font>Font-WidgetInfoTitle</font>
+                        <height>70</height>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                    <control type="textbox">
+                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
+                        <aligny>top</aligny>
+                        <height>120</height>
+                        <font>Font-ListInfo</font>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                        <aligny>center</aligny>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
                 <left>30</left>
                 <posy>172r</posy>
                 <visible>Control.HasFocus(9600)</visible>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
+                <visible>!Skin.HasSetting(home.showinfoonwidget)</visible>
                 
                 <control type="label">
                     <top>25</top>

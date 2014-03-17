@@ -1,3 +1,7 @@
+[B]0.9.24[/B]
+Info panel for home screen widget
+PVR Channel Manager
+
 [B]0.9.23[/B]
 "Today" Widget on down from home screen (Window id 3101)
 Fix profile settings visibility and log out screen

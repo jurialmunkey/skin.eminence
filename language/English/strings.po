@@ -391,3 +391,15 @@ msgstr ""
 msgctxt "#31195"
 msgid "Access recent/in-progress hub by pressing down"
 msgstr ""
+
+msgctxt "#31196"
+msgid "Channel Options"
+msgstr ""
+
+msgctxt "#31197"
+msgid "General Options"
+msgstr ""
+
+msgctxt "#31198"
+msgid "Show widget info panel"
+msgstr ""
