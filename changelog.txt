@@ -4,6 +4,7 @@ Fix profile settings visibility and log out screen
 Rudimentary Codec Info
 Fix randomise of multiimage on home
 Add subtitles "download" pop-up on osd
+Add large weather icon for MyWeather.xml when no fanart present
 
 [B]0.9.22[/B]
 Quick Nav Mode -- Don't close the current view when going back to home menu (make home menu act like a pop-up dialog)
