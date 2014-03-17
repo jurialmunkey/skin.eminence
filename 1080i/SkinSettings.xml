@@ -219,6 +219,7 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
                     <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <enable>!Skin.HasSetting(home.talltiles)</enable>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>

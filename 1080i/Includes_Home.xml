@@ -86,8 +86,16 @@
     
     <include name="GoBackToHome"><previouswindow>playercontrols</previouswindow></include>
     
-    <include name="Short-Home-BG-Y"><posy>266r</posy></include>
-    <include name="Tall-Home-BG-Y"><posy>376r</posy></include>
+    <include name="Short-Home-BG-Y">
+        <posy>266r</posy>
+        <texturefocus colordiffuse="TopBarDark">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="TopBarDark">common/white.png</texturenofocus>
+    </include>
+    <include name="Tall-Home-BG-Y">
+        <posy>376r</posy>
+        <texturefocus colordiffuse="PanelBG">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="PanelBG">common/white.png</texturenofocus>
+    </include>
     <include name="Short-Home-Button-Group-Width"><width>196</width></include>
     <include name="Tall-Home-Button-Group-Width"><width>221</width></include>
     <include name="Home-Button-Group-Width">    
@@ -134,8 +142,7 @@
                 <include condition="Skin.HasSetting(home.talltiles)">Tall-Home-BG-Y</include>
                 <width>1920</width>
                 <height>500</height>
-                <texturefocus colordiffuse="TopBarDark">common/white.png</texturefocus>
-                <texturenofocus colordiffuse="TopBarDark">common/white.png</texturenofocus>
+                
                 <onfocus>SetFocus(300)</onfocus>
                 <include>Home-Menu-Button</include>
             </control>
