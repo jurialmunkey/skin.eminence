@@ -18,6 +18,7 @@
             </control>
 			
 			<control type="group">
+                <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
 			    <posx>233</posx>
 			    <posy>70</posy>
 			    <include>DefSideLabel</include>
