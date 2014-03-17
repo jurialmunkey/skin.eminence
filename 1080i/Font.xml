@@ -113,6 +113,11 @@
 			<size>160</size>
 		</font>
 		<font>
+			<name>Font-HugeWeather</name>
+			<filename>Weather.ttf</filename>
+			<size>320</size>
+		</font>
+		<font>
 			<name>Font-WeatherTemp</name>
 			<filename>SourceSansPro-Black.ttf</filename>
 			<size>92</size>

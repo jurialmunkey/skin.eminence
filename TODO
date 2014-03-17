@@ -1,5 +1,4 @@
 Home Customisation
- - Add item from favourites
  - Move items
 
 Header
@@ -12,15 +11,11 @@ Views and Nav Menu
 OSD and Seekbar
  - Eject button
  - 3D Stereoscopic features
- - Subs pop-up menu for download
- - Subs onclick enable/disable
- - Audio/Video Codec information screens
- - Pause Circle overlay
- - Replace fullscreen fade with gradient
+ - Audio Codec information
+ - Live TV Codec information
 
 Hub options
  - Skip Hub
- - Recently Added
 
 PVR / TV
  - Timer Channel Group Header visibility

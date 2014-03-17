@@ -73,6 +73,17 @@
                 <imagepath>$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</imagepath>
                 <aspectratio>scale</aspectratio>
             </control>
+             <control type="label">
+                <posx>29</posx>
+                <posy>230</posy>
+                <width>668</width>
+                <height>378</height>
+                <font>Font-HugeWeather</font>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label> [B]$VAR[WeatherLabel][/B] </label>
+                <visible>IsEmpty(Skin.String(weather.fanart))</visible>
+            </control>
             <control type="group">
                 <posy>610</posy>
                 <control type="label">
@@ -188,21 +199,7 @@
                 </control>
                 
             </control>
-            
-           <!-- <control type="image">
-                <posy>920</posy>
-                <posx>1069</posx>
-                <width>16</width>
-                <height>16</height>
-                <aspectratio>keep</aspectratio>
-                <texture>common/16-arrow-down.png</texture>
-                <animation effect="fade" start="100" end="35" condition="true">Conditional</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-                <include>DialogVisibility</include>
-            </control>-->
+
             
             <control type="list" id="9100">
                 <posx>720</posx>
