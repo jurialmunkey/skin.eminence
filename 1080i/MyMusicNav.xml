@@ -276,6 +276,19 @@
                     <usealttexture>MusicPartyMode.Enabled</usealttexture>
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
+                    <visible>!Container.Content(musicvideos)</visible>
+                </control>
+                
+                <control type="togglebutton" id="9023">
+                    <description>PartyMode</description>
+                    <include>DefNavMenuButton</include>
+                    <onclick>PlayerControl(Partymode(video))</onclick>
+                    <label>589</label>
+                    <altlabel>✓  $LOCALIZE[589]</altlabel>
+                    <usealttexture>MusicPartyMode.Enabled</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                    <visible>Container.Content(musicvideos)</visible>
                 </control>
                 
                 <control type="button" id="9001">

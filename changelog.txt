@@ -1,3 +1,6 @@
+[B]0.9.25[/B]
+Fix music videos not going to party mode
+
 [B]0.9.24[/B]
 Info panel for home screen widget
 PVR Channel Manager
