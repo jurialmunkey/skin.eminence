@@ -80,6 +80,23 @@
             <visible>[Control.HasFocus(9501) | Control.HasFocus(9500)]</visible>
         </control>
         
+        <control type="button">
+            <posy>600</posy>
+            <posx>1770</posx>
+            <width>48</width>
+            <height>48</height>
+            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
+            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
+            <visible>Control.HasFocus(9705)  + !IsEmpty(Container(9701).ListItem.Label)</visible>
+        </control>
         
 	    <control type="group">
             
