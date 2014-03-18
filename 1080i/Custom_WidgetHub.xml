@@ -594,7 +594,7 @@
                     <posy>-65</posy>
                     <width>690</width>
                     <font>Font-WidgetCategory</font>
-                    <label>31110</label>
+                    <label>31193</label>
                     <animation effect="fade" end="25" condition="true">Conditional</animation>
                 </control>               
                     
@@ -664,7 +664,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
-                        <label>$INFO[Container(9700).ListItem.Label]</label>
+                        <label>$INFO[Container(9701).ListItem.Label]</label>
                     </control>
             
                     <control type="label">
@@ -676,7 +676,7 @@
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo</font>
-                        <label>$INFO[Container(9700).ListItem.Label2]</label>
+                        <label>$INFO[Container(9701).ListItem.Label2]</label>
                     </control>
                 </control>
             </control>
