@@ -135,6 +135,7 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                
                 <control type="button" id="104">
                     <label>31138</label>
                     <width>1020</width>
@@ -195,6 +196,9 @@
                     <visible>ControlGroup(3).HasFocus(31)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
+                
+                
                 
                 
                 
@@ -374,6 +378,20 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="306">
+                    <label>31199</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
+                    <selected>Skin.HasSetting(home.disablehubs)</selected>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                
+                
                 <!---------------->
                 <!-- TVshow Hub -->
                 <!---------------->
@@ -436,6 +454,18 @@
                     <width>1020</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="506">
+                    <label>31199</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
+                    <selected>Skin.HasSetting(home.disablehubs)</selected>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>

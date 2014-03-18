@@ -63,7 +63,7 @@
     </include>
     
     <include name="Home-Menu-Button">
-        <onclick>SetProperty(focushub,1,home)</onclick>
+        <onclick condition="!Skin.HasSetting(home.disablehubs)">SetProperty(focushub,1,home)</onclick>
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onclick>
         <onup condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onup>
         <onup condition="Player.HasVideo + Window.IsVisible(home)">Action(fullscreen)</onup>
