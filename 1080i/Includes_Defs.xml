@@ -560,12 +560,14 @@
             <onup>-</onup>
             <ondown>-</ondown>
 
-            <control type="button" id="1">
+            <control type="togglebutton" id="1">
                 <description>Subs</description>
-                <label>287</label>
+                <label>✓  $LOCALIZE[287]</label>
+                <altlabel>$LOCALIZE[287]</altlabel>
+                <alttexturefocus>-</alttexturefocus>
                 <include>DefOSDControls</include>
                 <onclick>Action(ShowSubtitles)</onclick>
-                <animation effect="fade" start="100" end="33" condition="!VideoPlayer.SubtitlesEnabled">Conditional</animation>
+                <usealttexture>!VideoPlayer.SubtitlesEnabled</usealttexture>
                 <onup>9001</onup>
             </control>
 
