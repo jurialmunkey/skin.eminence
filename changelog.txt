@@ -4,6 +4,7 @@ PVR Channel Manager
 Fix home colour
 Option to skip hubs and go directly to library
 Updates to global search
+Widget hub updates
 
 [B]0.9.23[/B]
 "Today" Widget on down from home screen (Window id 3101)

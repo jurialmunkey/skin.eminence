@@ -213,57 +213,39 @@
                     <onup>9500</onup>
                     <ondown>9500</ondown>
                     <orientation>vertical</orientation>
-                    <itemlayout width="450" height="140">
+                    <itemlayout width="450" height="100">
                         <control type="image">
                             <width>450</width>
-                            <height>130</height>
+                            <height>90</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Property(Color))</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                            <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                            <colordiffuse>PanelFG</colordiffuse>
-                        </control>
+              
                         <control type="label">
-                            <posx>420</posx>
-                            <posy>15</posy>
-                            <width>270</width>
-                            <align>right</align>
+                            <posx>30</posx>
+                            <posy>-2</posy>
+                            <width>390</width>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>PanelFG</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>420</posx>
-                            <posy>48</posy>
-                            <width>270</width>
-                            <align>right</align>
+                            <posx>30</posx>
+                            <posy>30</posy>
+                            <width>390</width>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>PanelFG</textcolor>
-                            <font>Font-ListInfo</font>
+                            <font>Font-ListInfo-Small</font>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="450" height="140">
+                    <focusedlayout width="450" height="100">
                         <control type="image">
                             <width>450</width>
-                            <height>130</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                            <height>90</height>
+                            <texture colordiffuse="White" border="12">common/border-inner.png</texture>
                             <visible>Control.HasFocus(9500)</visible>
                             <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -271,47 +253,28 @@
                         </control>
                         <control type="image">
                             <width>450</width>
-                            <height>130</height>
+                            <height>90</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             <visible>!Control.HasFocus(9500)</visible>
                         </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Property(Color))</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>  
-                            <width>107</width>
-                            <height>107</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                            <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                            <colordiffuse>PanelFG</colordiffuse>
-                        </control>
                         <control type="label">
-                            <posx>420</posx>
-                            <posy>15</posy>
-                            <width>270</width>
-                            <align>right</align>
+                            <posx>30</posx>
+                            <posy>-2</posy>
+                            <width>390</width>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>Selected</textcolor>
                             <label>$INFO[ListItem.Label]</label>
                             <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>420</posx>
-                            <posy>48</posy>
-                            <width>270</width>
-                            <align>right</align>
+                            <posx>30</posx>
+                            <posy>30</posy>
+                            <width>390</width>
+                            <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>Selected</textcolor>
-                            <font>Font-ListInfo</font>
+                            <font>Font-ListInfo-Small</font>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </focusedlayout>
@@ -368,6 +331,7 @@
                             <height>690</height>
                             <texture colordiffuse="White" border="5">common/border-inner.png</texture>
                         </control>
+
                         <control type="label">
                             <posx>20</posx>
                             <posy>555</posy>

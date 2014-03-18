@@ -149,7 +149,7 @@
                 <visible>!IsEmpty(Container(9600).ListItem.Label)</visible>
                 <animation effect="slide" start="0" end="0,320" time="550" tween="back" reversible="false" condition="Control.HasFocus(9600)">Conditional</animation>
                 <animation effect="slide" end="0" start="0,320" time="150" reversible="false" condition="!Control.HasFocus(9600)">Conditional</animation>
-                <include>Animation.FadeIn</include>
+                <include>Animation.SlideOpen.Right</include>
                 <include>Animation.FadeOut</include>
                 <control type="image">
                     <posx>-100</posx>
