@@ -102,8 +102,21 @@
 				<posx>1522</posx>
                 <posy>250</posy>
                 <width>330</width>
-                <height>330</height>
+                <height>120</height>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
+			</control>
+			
+			<control type="button" id="160">
+				<posx>1500</posx>
+                <posy>596</posy>
+                <width>450</width>
+                <height>66</height>
+                <label>31200</label>
+                <ondown>150</ondown>
+                <onleft>120</onleft>
+                <align>left</align>
+                <focusedcolor>Highlight</focusedcolor>
+                <texturefocus>-</texturefocus>
 			</control>
 			
 			<control type="list" id="150">
@@ -114,7 +127,7 @@
                 <height>351</height>
                 <onleft>120</onleft>
                 <onright>120</onright>
-                <onup>120</onup>
+                <onup>160</onup>
                 <ondown>120</ondown>
                 <orientation>vertical</orientation>
                 <scrolltime>0</scrolltime>

@@ -407,3 +407,7 @@ msgstr ""
 msgctxt "#31199"
 msgid "Skip hubs and go straight to library"
 msgstr ""
+
+msgctxt "#31200"
+msgid "Manual search..."
+msgstr ""
