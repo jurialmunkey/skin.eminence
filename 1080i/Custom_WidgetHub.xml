@@ -470,6 +470,7 @@
                     <posy>201</posy>
                     <width>956</width>
                     <height>708</height>
+                    <onright>9701</onright>
                     <onleft>9500</onleft>
                     <onback>9500</onback>
                     <onup>52</onup>
@@ -575,6 +576,106 @@
                         <align>center</align>
                         <font>Font-ListInfo</font>
                         <label>$INFO[Container(9705).ListItem.Year]$INFO[Container(9705).ListItem.Rating,  •  ,]</label>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <posx>4091</posx>
+                <posy>280</posy>
+                <control type="image">
+                    
+                    <width>1416</width>
+                    <height>690</height>
+                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                </control>     
+                <control type="label">
+                    <posx>18</posx>
+                    <posy>-65</posy>
+                    <width>690</width>
+                    <font>Font-WidgetCategory</font>
+                    <label>31110</label>
+                    <animation effect="fade" end="25" condition="true">Conditional</animation>
+                </control>               
+                    
+                <control type="wraplist" id="9701">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <onright>Control.Move(9701,1)</onright>
+                    <onup>9701</onup>
+                    <ondown>9701</ondown>
+                    <onleft>9705</onleft>
+                    <onback>9705</onback>
+                    <viewtype label="31155">list</viewtype>
+                    <scrolltime tween="quadratic">400</scrolltime>
+                    <orientation>vertical</orientation>
+                    <itemlayout width="1394" height="668">
+         
+                        <control type="image">
+                            <width>1394</width>
+                            <height>668</height>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio aligny="center">scale</aspectratio>
+                        </control>
+                    
+                    </itemlayout>
+
+                    <focusedlayout width="1394" height="668">
+
+                        <control type="image">
+                            <width>1394</width>
+                            <height>668</height>
+                            <texture background="true">$INFO[ListItem.Icon]</texture>
+                            <aspectratio aligny="center">scale</aspectratio>
+                        
+                        </control>
+
+                    </focusedlayout>
+                    <include>ContentYoutubeTrailers</include>
+
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
+                </control>
+
+                <control type="group">
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>615</posy>
+                        <width>1394</width>
+                        <height>64</height>
+                        <texture colordiffuse="PanelBG">common/white.png</texture>
+                        <aspectratio>scale</aspectratio>
+                        <animation effect="fade" end="50" condition="true">Conditional</animation>
+                    </control>
+                
+            
+                    <control type="label">
+                        <posx>31</posx>
+                        <posy>615</posy>
+                        <width>1394</width>
+                        <height>64</height>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <label>$INFO[Container(9700).ListItem.Label]</label>
+                    </control>
+            
+                    <control type="label">
+                        <posx>1385</posx>
+                        <posy>615</posy>
+                        <width>1394</width>
+                        <height>64</height>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[Container(9700).ListItem.Label2]</label>
                     </control>
                 </control>
             </control>
