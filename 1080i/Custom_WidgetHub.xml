@@ -140,7 +140,7 @@
                         </control>
 
                     </focusedlayout>
-                    <include>ContentRecommendedWidget</include>
+                    <include>ContentRecommendedEpisodesWidget</include>
 
                 </control>
                 <control type="image">
