@@ -284,36 +284,29 @@
 	<!------------------->
 	<!-- Global Search -->
 	<!------------------->
-	
+	<include name="DefGlobalSearchListNF">
+	    <control type="image">
+            <height>336</height>
+            <width>221</width>
+            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+        </control>
+        <control type="image">
+            <posx>11</posx>
+            <posy>11</posy>
+            <height>314</height>
+            <width>199</width>
+            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <aspectratio aligny="top">scale</aspectratio>
+        </control>
+	</include>
 	<include name="DefGlobalSearchList">
-	    <onleft>198</onleft>
 	    <width>1434</width>
         <height>354</height>
         <orientation>horizontal</orientation>
         <wraparound>true</wraparound>
         <scrolltime tween="Quadratic" easing="out">300</scrolltime>
         <itemlayout width="239" height="354">
-            <control type="image">
-                <height>336</height>
-                <width>221</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
-            <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <height>284</height>
-                <width>199</width>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-            </control>
-            <control type="label">
-                <posx>110</posx>
-                <posy>282</posy>
-                <width>185</width>
-                <align>center</align>
-                <font>Font-ListInfo</font>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
+            <include>DefGlobalSearchListNF</include>
         </itemlayout>
     </include>
     
@@ -321,19 +314,35 @@
         <control type="image">
             <posx>11</posx>
             <posy>11</posy>
-            <height>284</height>
+            <height>314</height>
             <width>199</width>
             <texture background="true">$INFO[ListItem.Icon]</texture>
             <aspectratio aligny="top">scale</aspectratio>
         </control>
         <control type="label">
-            <posx>110</posx>
-            <posy>282</posy>
-            <width>185</width>
-            <align>center</align>
-            <textcolor>RadioFO</textcolor>
-            <font>Font-ListInfo</font>
+            <posx>230</posx>
+            <posy>14</posy>
+            <width>440</width>
+            <align>left</align>
+            <font>Font-WidgetInfoTitle</font>
             <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="textbox">
+            <posx>230</posx>
+            <posy>80</posy>
+            <width>440</width>
+            <height>195</height>
+            <align>left</align>
+            <font>Font-ListInfo</font>
+            <label>$INFO[ListItem.Property(Plot)]</label>
+        </control>
+        <control type="label">
+            <posx>230</posx>
+            <posy>270</posy>
+            <width>440</width>
+            <align>left</align>
+            <font>Font-ListInfo-Small</font>
+            <label>$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Rating)]</label>
         </control>
 	</include>
 	

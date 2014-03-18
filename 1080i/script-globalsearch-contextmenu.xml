@@ -1,67 +1,51 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog">
-	<defaultcontrol always="true">1006</defaultcontrol>
+	<defaultcontrol always="true">1004</defaultcontrol>
 	<controls>
         <control type="group">		
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
+            
             <control type="grouplist" id="1006">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
+                <include>DefMyNavBarGroupList</include>
                 <control type="button" id="1004">
                     <description>Buttons</description>
                     <label>$INFO[Control.GetLabel(1001)]</label>
                     <onclick>SendClick(1001)</onclick>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
                 <control type="button" id="1005">
                     <description>Buttons</description>
                     <label>$INFO[Control.GetLabel(1002)]</label>
                     <onclick>SendClick(1002)</onclick>
-                    <include>DefContextMenuButton</include>
+                    <include>DefNavMenuButton</include>
                 </control>
   
             </control>
         </control>
         <control type="image" id="997">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
         <control type="image" id="998">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
         <control type="image" id="999">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
         <control type="button" id="1001">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
         <control type="button" id="1002">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
         <control type="button" id="1003">
             <visible>false</visible>
+            <onfocus>1004</onfocus>
         </control>
 	</controls>
 

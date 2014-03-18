@@ -7,17 +7,17 @@
     <controls>
 
         <control type="group">
-            
+            <control type="image">
+		        <include>Dimensions_Fullscreen</include>
+		        <texture colordiffuse="Background">common/white.png</texture>
+		        <include>Animation.FadeIn</include>
+		        <include>Animation.FadeOut</include>
+		    </control>
             <control type="group" id="100">
-                <include>GlobalBackground</include>	
-                <control type="image">
-                    <include>Dimensions_Fullscreen</include>
-                    <texture>common/white.png</texture>
-                    <colordiffuse>PanelBG</colordiffuse>
-                    <animation effect="fade" end="75" condition="true">Conditional</animation>
-                    <include>Animation.FadeIn</include>
-                </control>	
+                <animation effect="slide" end="-233" start="0" time="200" condition="Window.IsActive(script-globalsearch-contextmenu.xml)">Conditional</animation>
                 <control type="grouplist">
+                    <include>Animation.SlideOpen.Left</include>
+                    <include>Animation.FadeOut</include>
                     <visible>IsEmpty(Control.GetLabel(190)) + !Window.IsVisible(AddonSettings)</visible>
                     <animation effect="slide" start="0" end="-1920" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
                     <posx>251</posx>
@@ -53,20 +53,16 @@
                             <ondown condition="Control.IsVisible(119)">111</ondown>
                         
                             <include>DefGlobalSearchList</include>
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(111)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(111)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(111)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(111)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -114,20 +110,17 @@
                             <ondown condition="Control.IsVisible(129)">121</ondown>
                         
                             <include>DefGlobalSearchList</include>
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(121)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(121)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(121)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <visible>Control.HasFocus(121)</visible>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(121)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -172,20 +165,16 @@
                             <ondown condition="Control.IsVisible(139)">131</ondown>
                         
                             <include>DefGlobalSearchList</include>
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(131)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(131)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(131)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(131)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                     </control>
@@ -218,20 +207,16 @@
                             <ondown condition="Control.IsVisible(149)">141</ondown>
                         
                             <include>DefGlobalSearchList</include>
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(141)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(141)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(141)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(141)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -277,20 +262,16 @@
                             <ondown condition="Control.IsVisible(149)">141</ondown>
                             <ondown condition="Control.IsVisible(159)">151</ondown>
                         
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(151)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(151)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(151)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(151)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -336,20 +317,16 @@
                             <ondown condition="Control.IsVisible(159)">151</ondown>
                             <ondown condition="Control.IsVisible(169)">161</ondown>
                         
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(161)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(161)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(161)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(161)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -395,20 +372,16 @@
                             <ondown condition="Control.IsVisible(169)">161</ondown>
                             <ondown condition="Control.IsVisible(179)">171</ondown>
                         
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(171)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(171)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(171)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(171)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -452,20 +425,16 @@
                             <ondown condition="Control.IsVisible(179)">171</ondown>
                             <ondown condition="Control.IsVisible(189)">181</ondown>
                         
-                            <focusedlayout width="239" height="354">
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                                <visible>Control.HasFocus(181)</visible>
-                            </control>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                                <visible>!Control.HasFocus(181)</visible>
-                            </control>
-                            <include>DefGlobalSearchListEnd</include>
+                            <focusedlayout width="717" height="354" condition="Control.HasFocus(181)">
+                                <control type="image">
+                                    <height>336</height>
+                                    <width>699</width>
+                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                </control>
+                                <include>DefGlobalSearchListEnd</include>
+                            </focusedlayout>
+                            <focusedlayout width="239" height="354" condition="!Control.HasFocus(181)">
+                                <include>DefGlobalSearchListNF</include>
                             </focusedlayout>
                         </control>
                         <control type="label">
@@ -482,12 +451,12 @@
                         </control>
                     </control>        
                 </control>
-                <include>GlobalTopBar</include>
+                
                 
 
 
         </control>
-
+        <include>GlobalTopBar</include>
         <control type="button" id="198">
             <posx>200</posx>
             <posy>210</posy>
@@ -497,6 +466,7 @@
             <focusedcolor>Highlight</focusedcolor>
             <align>left</align>
             <onright>100</onright>
+            <visible>false</visible>
             <animation effect="slide" start="0" end="-1920" time="200" condition="Window.IsVisible(script-globalsearch-infodialog.xml)">Conditional</animation>
         </control>
         <control type="label" id="199">
