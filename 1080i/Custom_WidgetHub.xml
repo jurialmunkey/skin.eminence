@@ -87,6 +87,7 @@
 	        <include>Animation.FadeOut</include>
 	        <animation effect="slide" start="0" end="1920" time="200" condition="Control.HasFocus(9700)">Conditional</animation>
 	        <animation effect="slide" start="0" end="-1920" time="200" condition="Control.HasFocus(9705)">Conditional</animation>
+	        <animation effect="slide" start="0" end="-3840" time="200" condition="Control.HasFocus(9701)">Conditional</animation>
 	        <control type="group">
                 <posx>-1669</posx>
                 <posy>280</posy>
