@@ -14,14 +14,11 @@ OSD and Seekbar
  - Audio Codec information
  - Live TV Codec information
 
-Hub options
- - Skip Hub
-
 PVR / TV
  - Timer Channel Group Header visibility
- - Channel Manager
  - On-screen EPG
  - Search Dialog
+ - Small fixes to channel manager
 
 Addons
  - Tv Guide
