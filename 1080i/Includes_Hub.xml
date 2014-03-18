@@ -243,7 +243,7 @@
 	    
 	    <item id="11">
 	        <label>20389</label>
-            <onclick>ActivateWindow(Music,videodb://musicvideos/titles/,return)</onclick>
+            <onclick>ActivateWindow(Video,videodb://musicvideos/titles/,return)</onclick>
             <icon>special://skin/extras/icons/musicvideo.png</icon>
 	        <property name="Color">1</property>
 	    </item>
