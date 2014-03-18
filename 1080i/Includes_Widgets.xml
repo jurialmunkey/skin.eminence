@@ -551,93 +551,93 @@
 	    </item>
 	</include>
 	<include name="RecentEpisodesWidget">
-	    <item id="41">
+	    <item id="31">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.1.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.1.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.1.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.1.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.1.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.1.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.1.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.1.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.1.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.1.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.1.File))</visible>
 	    </item>
-	    <item id="42">
+	    <item id="32">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.2.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.2.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.2.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.2.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.2.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.2.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.2.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.2.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.2.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.2.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.2.File))</visible>
 	    </item>
-	    <item id="43">
+	    <item id="33">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.3.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.3.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.3.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.3.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.3.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.3.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.3.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.3.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.3.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.3.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.3.File))</visible>
 	    </item>
-	    <item id="44">
+	    <item id="34">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.4.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.4.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.4.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.4.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.4.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.4.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.4.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.4.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.4.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.4.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.4.File))</visible>
 	    </item>
-	    <item id="45">
+	    <item id="35">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.5.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.5.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.5.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.5.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.5.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.5.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.5.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.5.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.5.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.5.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.5.File))</visible>
 	    </item>
-	    <item id="46">
+	    <item id="36">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.6.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.6.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.6.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.6.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.6.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.6.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.6.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.6.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.6.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.6.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.6.File))</visible>
 	    </item>
-	    <item id="47">
+	    <item id="37">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.7.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.7.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.7.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.7.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.7.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.7.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.7.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.7.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.7.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.7.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.7.File))</visible>
 	    </item>
-	    <item id="48">
+	    <item id="38">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.8.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.8.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.8.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.8.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.8.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.8.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.8.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.8.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.8.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.8.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.8.File))</visible>
 	    </item>
-	    <item id="49">
+	    <item id="39">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.9.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.9.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.9.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.9.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.9.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.9.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.9.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.9.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.9.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.9.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.9.File))</visible>
 	    </item>
-	    <item id="50">
+	    <item id="40">
 	        <onclick>PlayMedia($ESCINFO[Window(home).Property(RecentEpisode.10.File)])</onclick>
-            <icon>$INFO[Window(home).Property(RecentEpisode.10.Art(thumb))]</icon>
+            <icon>$INFO[Window(home).Property(RecentEpisode.10.Art(tvshow.fanart))]</icon>
 	        <thumb>$INFO[Window(home).Property(RecentEpisode.10.Art(tvshow.fanart))]</thumb>
-            <label>$INFO[Window(home).Property(RecentEpisode.10.TvShowTitle)]</label>
-            <label2>$INFO[Window(home).Property(RecentEpisode.10.EpisodeNo),[UPPERCASE],[/UPPERCASE]]</label2>
+            <label>$INFO[Window(home).Property(RecentEpisode.10.Title)]</label>
+            <label2>$INFO[Window(home).Property(RecentEpisode.10.TvShowTitle)]$INFO[Window(home).Property(RecentEpisode.10.EpisodeNo), • [UPPERCASE],[/UPPERCASE]]</label2>
             <property name="Plot">$INFO[Window(home).Property(RecentEpisode.10.Plot)]</property>
             <visible>!IsEmpty(Window(home).Property(RecentEpisode.10.File))</visible>
 	    </item>

@@ -101,7 +101,7 @@
                     <posy>-65</posy>
                     <width>690</width>
                     <font>Font-WidgetCategory</font>
-                    <label>31193</label>
+                    <label>31110</label>
                     <animation effect="fade" end="25" condition="true">Conditional</animation>
                 </control>               
                     
@@ -113,8 +113,8 @@
                     <onleft>Control.Move(9700,1)</onleft>
                     <onup>9700</onup>
                     <ondown>9700</ondown>
-                    <onright>9501</onright>
-                    <onback>9501</onback>
+                    <onright>9500</onright>
+                    <onback>9500</onback>
                     <viewtype label="31155">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
                     <orientation>vertical</orientation>
@@ -140,7 +140,7 @@
                         </control>
 
                     </focusedlayout>
-                    <include>ContentYoutubeTrailers</include>
+                    <include>ContentRecommendedWidget</include>
 
                 </control>
                 <control type="image">
@@ -193,14 +193,14 @@
                 <posy>70</posy>
                 <include>DialogVisibility</include>
     
-                <control type="label">
+                <!--<control type="label">
                     <posx>984</posx>
                     <posy>145</posy>
                     <width>690</width>
                     <font>Font-WidgetCategory</font>
                     <label>31109</label>
                     <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>
+                </control>-->
     
                 <control type="list" id="9500">
                     <posx>984</posx>
@@ -208,8 +208,7 @@
                     <width>450</width>
                     <height>700</height>
                     <onright>9705</onright>
-                    <onleft>CancelAlarm(Move9501,true)</onleft>
-                    <onleft>9501</onleft>                
+                    <onleft>9700</onleft>                
                     <onup>9500</onup>
                     <ondown>9500</ondown>
                     <orientation>vertical</orientation>
@@ -286,13 +285,53 @@
                     <posy>145</posy>
                     <width>690</width>
                     <font>Font-WidgetCategory</font>
-                    <label>31110</label>
+                    <label>$LOCALIZE[31109] $LOCALIZE[20343]</label>
                     <animation effect="fade" end="25" condition="true">Conditional</animation>
                 </control>
                 <control type="group">
                     <posx>18</posx>
                     <posy>210</posy>
                     <control type="group">
+                        <control type="image">
+                            <width>955</width>
+                            <height>690</height>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <posy>555</posy>
+                            <width>825</width>
+                            <align>left</align>
+                            <label>$INFO[Container(9500).ListItem.Label]</label>
+                        </control>
+                        <control type="label">
+                            <posx>935</posx>
+                            <posy>555</posy>
+                            <width>915</width>
+                            <align>right</align>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[Container(9500).ListItem.Label2]</label>
+                        </control>
+                        <control type="textbox">
+                            <posx>20</posx>
+                            <posy>606</posy>
+                            <width>915</width>
+                            <height>70</height>
+                            <align>left</align>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$INFO[Container(9500).ListItem.Property(Plot)]</label>
+                        </control>
+                        <control type="image">
+                            <posx>11</posx>
+                            <posy>11</posy>
+                            <width>933</width>
+                            <height>537</height>
+                            <texture background="true">$INFO[Container(9500).ListItem.Icon]</texture>
+                            <aspectratio>scale</aspectratio>
+                            <fadetime>250</fadetime>
+                            </control>
+                    </control>
+                    <!--<control type="group">
                         <visible>!Control.HasFocus(9501)</visible>
                         <control type="image">
                             <width>955</width>
@@ -389,7 +428,7 @@
                             </control>
                         </focusedlayout>
                         <include>ContentRecommendedWidget</include>
-                    </control>
+                    </control>-->
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>
@@ -423,7 +462,7 @@
                     <posy>145</posy>
                     <width>690</width>
                     <font>Font-WidgetCategory</font>
-                    <label>31109</label>
+                    <label>$LOCALIZE[31109] $LOCALIZE[20342]</label>
                     <animation effect="fade" end="25" condition="true">Conditional</animation>
                 </control>
                 <control type="panel" id="9705">
