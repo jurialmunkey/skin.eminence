@@ -215,19 +215,6 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="208">
-                    <label>31195</label>
-                    <width>1020</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
-                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
-                    <enable>!Skin.HasSetting(home.talltiles)</enable>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                
                 <control type="radiobutton" id="203">
                     <label>31182</label>
                     <width>1020</width>
@@ -290,6 +277,17 @@
                     <enable>Skin.HasSetting(home.usewidgetbg) + [!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))]</enable>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="208">
+                    <label>31195</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
+                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 <control type="radiobutton" id="207">
                     <label>31184</label>
                     <width>1020</width>
@@ -302,6 +300,7 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
                 <control type="radiobutton" id="202">
                     <label>31178</label>
                     <width>1020</width>

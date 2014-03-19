@@ -38,6 +38,7 @@
         <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>-->
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg)">$INFO[Container(9600).ListItem.Icon]</value>
         <value condition="Window.IsVisible(home)">$VAR[GlobalFanart-Movies]</value>
         <value>-</value>
@@ -53,7 +54,7 @@
 				<include>Dimensions_Fullscreen</include>
 				<include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
-				<fadetime>800</fadetime>
+				<fadetime>600</fadetime>
 				<timeperimage>12000</timeperimage>
 				<randomize>true</randomize>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
@@ -66,7 +67,7 @@
 				<include>Dimensions_Fullscreen</include>
 				<include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
-				<fadetime>800</fadetime>
+				<fadetime>600</fadetime>
 				<timeperimage>12000</timeperimage>
 				<randomize>true</randomize>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
@@ -78,33 +79,40 @@
 			</control>
 			
 			<control type="wraplist" id="9600">
-			    <visible>Window.IsVisible(home)</visible>
-			    <visible>!Skin.HasSetting(home.usewidgetbg)</visible>
-			    <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
-			    <posy>1080</posy>
-                <include>Dimensions_Fullscreen</include>
-				<include>Animation.FadeIn</include>
-				<include>Animation.FadeOut</include>
-				<ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
-				<ondown>300</ondown>
-				<onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
-				<onback>300</onback>
-                <orientation>horizontal</orientation>
-                <preloaditems>1</preloaditems>
-                <scrolltime tween="quadratic">500</scrolltime>
-                <itemlayout width="1920" height="1080">
-                </itemlayout>
-                <focusedlayout width="1920" height="1080">
-                    
-                </focusedlayout>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">ContentRecommendedMoviesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">ContentRandomEpisodesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">ContentRecommendedEpisodesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">ContentRecentEpisodesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">ContentRecentMoviesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">ContentRandomMoviesWidget</include>
-                <include condition="stringcompare(Skin.String(home.widget),ContentMixedWidget)">ContentMixedWidget</include>
-                <include condition="IsEmpty(Skin.String(home.widget))">ContentMixedWidget</include>
+			    <visible>stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRecommendedMoviesWidget</include>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRecentMoviesWidget</include>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRandomMoviesWidget</include>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRandomEpisodesWidget</include>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRecommendedEpisodesWidget</include>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)</visible>
+			    <include>Def9600List</include>
+			    <include>ContentRecentEpisodesWidget</include>
+            </control>
+            
+            <control type="wraplist" id="9600">
+			    <visible>stringcompare(Skin.String(home.widget),ContentMixedWidget) | IsEmpty(Skin.String(home.widget))</visible>
+			    <include>Def9600List</include>
+			    <include>ContentMixedWidget</include>
             </control>
 
             
@@ -147,8 +155,8 @@
                 <visible>!Player.HasVideo</visible>
                 <visible>!Skin.HasSetting(home.talltiles)</visible>
                 <visible>!IsEmpty(Container(9600).ListItem.Label)</visible>
-                <animation effect="slide" start="0" end="0,320" time="550" tween="back" reversible="false" condition="Control.HasFocus(9600)">Conditional</animation>
-                <animation effect="slide" end="0" start="0,320" time="150" reversible="false" condition="!Control.HasFocus(9600)">Conditional</animation>
+                <animation effect="slide" start="0" end="0,320" time="500" tween="back" reversible="true" easing="out" condition="Control.HasFocus(9600)">Conditional</animation>
+                
                 <include>Animation.SlideOpen.Right</include>
                 <include>Animation.FadeOut</include>
                 <control type="image">
@@ -182,12 +190,28 @@
                         <aligny>top</aligny>
                         <height>120</height>
                         <font>Font-ListInfo</font>
+                        <visible>!IsEmpty(Container(9600).ListItem.Property(Plot))</visible>
+                    </control>
+                    <control type="textbox">
+                        <label>$INFO[Container(9600).ListItem.Plot]</label>
+                        <aligny>top</aligny>
+                        <height>120</height>
+                        <font>Font-ListInfo</font>
+                        <visible>IsEmpty(Container(9600).ListItem.Property(Plot))</visible>
                     </control>
                     <control type="label">
                         <label>$INFO[Container(9600).ListItem.Label2]</label>
                         <aligny>center</aligny>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
+                        <visible>!IsEmpty(Container(9600).ListItem.Label2)</visible>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year,,  •  ]$INFO[Container(9600).ListItem.Rating]</label>
+                        <aligny>center</aligny>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>IsEmpty(Container(9600).ListItem.Label2)</visible>
                     </control>
                 </control>
             </control>

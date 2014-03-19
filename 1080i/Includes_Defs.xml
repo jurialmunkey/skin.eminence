@@ -99,6 +99,35 @@
 	<include name="9500Focus">
         <defaultcontrol always="true">9500</defaultcontrol>
     </include>
+    
+    <include name="Def9600List">
+        <visible>Window.IsVisible(home)</visible>
+        <visible>!Skin.HasSetting(home.usewidgetbg)</visible>
+        <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
+        <posy>1080</posy>
+        <include>Dimensions_Fullscreen</include>
+        <include>Animation.FadeIn</include>
+        <include>Animation.FadeOut</include>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)">Skin.SetString(home.widget,ContentRecentMoviesWidget)</onup>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)">Skin.SetString(home.widget,ContentRecommendedEpisodesWidget)</onup>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)">Skin.SetString(home.widget,ContentRandomEpisodesWidget)</onup>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)">Skin.SetString(home.widget,ContentRecentEpisodesWidget)</onup>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">Skin.SetString(home.widget,ContentRecommendedMoviesWidget)</onup>
+        <onup condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">Skin.SetString(home.widget,ContentRandomMoviesWidget)</onup>
+        <onup>SetProperty(changedwidget,1,home)</onup>
+        <ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+        <ondown>300</ondown>
+        <onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
+        <onback>300</onback>
+        <orientation>horizontal</orientation>
+        <preloaditems>1</preloaditems>
+        <scrolltime tween="quadratic">500</scrolltime>
+        <itemlayout width="1920" height="1080">
+        </itemlayout>
+        <focusedlayout width="1920" height="1080">
+        </focusedlayout>
+    </include>
+    
     	
     <include name="50Focus">
         <defaultcontrol always="true">50</defaultcontrol>

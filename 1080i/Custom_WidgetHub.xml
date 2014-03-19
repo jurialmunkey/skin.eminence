@@ -213,15 +213,6 @@
                 <posy>70</posy>
                 <include>DialogVisibility</include>
     
-                <!--<control type="label">
-                    <posx>984</posx>
-                    <posy>145</posy>
-                    <width>690</width>
-                    <font>Font-WidgetCategory</font>
-                    <label>31109</label>
-                    <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>-->
-    
                 <control type="list" id="9500">
                     <posx>984</posx>
                     <posy>210</posy>
@@ -246,8 +237,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>PanelFG</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
-                            <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                            <label>$INFO[ListItem.TvShowTitle]</label>
                         </control>
                         <control type="label">
                             <posx>30</posx>
@@ -257,7 +247,7 @@
                             <aligny>center</aligny>
                             <textcolor>PanelFG</textcolor>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="450" height="100">
@@ -283,8 +273,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <textcolor>Selected</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
-                            <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                            <label>$INFO[ListItem.TvShowTitle]</label>
                         </control>
                         <control type="label">
                             <posx>30</posx>
@@ -294,7 +283,7 @@
                             <aligny>center</aligny>
                             <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]</label>
+                            <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
                     <include>ContentRecentEpisodesWidget</include>
@@ -322,7 +311,7 @@
                             <posy>555</posy>
                             <width>825</width>
                             <align>left</align>
-                            <label>$INFO[Container(9500).ListItem.Label]</label>
+                            <label>$INFO[Container(9500).ListItem.TvShowTitle]</label>
                         </control>
                         <control type="label">
                             <posx>935</posx>
@@ -330,7 +319,7 @@
                             <width>915</width>
                             <align>right</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[Container(9500).ListItem.Label2]</label>
+                            <label>$INFO[Container(9500).ListItem.Label]$INFO[Container(9500).ListItem.Premiered,  •  ,]</label>
                         </control>
                         <control type="textbox">
                             <posx>20</posx>
@@ -339,7 +328,7 @@
                             <height>70</height>
                             <align>left</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[Container(9500).ListItem.Property(Plot)]</label>
+                            <label>$INFO[Container(9500).ListItem.Plot]</label>
                         </control>
                         <control type="image">
                             <posx>11</posx>
@@ -351,104 +340,7 @@
                             <fadetime>250</fadetime>
                             </control>
                     </control>
-                    <!--<control type="group">
-                        <visible>!Control.HasFocus(9501)</visible>
-                        <control type="image">
-                            <width>955</width>
-                            <height>690</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>20</posx>
-                            <posy>555</posy>
-                            <width>825</width>
-                            <align>left</align>
-                            <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
-                        </control>
-                        <control type="label">
-                            <posx>935</posx>
-                            <posy>555</posy>
-                            <width>915</width>
-                            <align>right</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[Container(9501).CurrentPage] $LOCALIZE[20163] $INFO[Container(9501).NumPages]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>20</posx>
-                            <posy>606</posy>
-                            <width>915</width>
-                            <height>70</height>
-                            <align>left</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$VAR[WidgetPlot]</label>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <visible>Control.HasFocus(9501)</visible>
-                        <control type="image">
-                            <width>955</width>
-                            <height>690</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
-                        </control>
-
-                        <control type="label">
-                            <posx>20</posx>
-                            <posy>555</posy>
-                            <width>825</width>
-                            <align>left</align>
-                            <textcolor>Selected</textcolor>
-                            <scroll>true</scroll>
-                            <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
-                        </control>
-                        <control type="label">
-                            <posx>935</posx>
-                            <posy>555</posy>
-                            <width>915</width>
-                            <align>right</align>
-                            <font>Font-ListInfo-Small</font>
-                            <textcolor>Selected</textcolor>
-                            <label>$INFO[Container(9501).CurrentPage] $LOCALIZE[20163] $INFO[Container(9501).NumPages]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>20</posx>
-                            <posy>606</posy>
-                            <width>915</width>
-                            <height>70</height>
-                            <align>left</align>
-                            <font>Font-ListInfo-Small</font>
-                            <textcolor>Selected</textcolor>
-                            <label>$VAR[WidgetPlot]</label>
-                        </control>
-                    </control>
-                    <control type="wraplist" id="9501">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <onleft condition="!IsEmpty(Container(9700).ListItem.Label)">9700</onleft>
-                        <onright>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onright>
-                        <onright>9500</onright>
-                        <width>933</width>
-                        <height>537</height>
-                        <orientation>vertical</orientation>
-                        <preloaditems>1</preloaditems>
-                        <scrolltime tween="cubic">500</scrolltime>
-                        <itemlayout width="933" height="537">
-                            <control type="image">
-                                <width>933</width>
-                                <height>537</height>
-                                <texture>$VAR[WidgetFanart]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout width="933" height="537">
-                            <control type="image">
-                                <width>933</width>
-                                <height>537</height>
-                                <texture>$VAR[WidgetFanart]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
-                        </focusedlayout>
-                        <include>ContentRecommendedWidget</include>
-                    </control>-->
+                   
                     <control type="image">
                         <posx>11</posx>
                         <posy>11</posy>
