@@ -254,7 +254,7 @@
                 <control type="textbox">
                     <posx>22</posx>
                     <posy>320</posy>
-                    <height>300</height>
+                    <height>304</height>
                     <width>400</width>
                     <textcolor>Selected</textcolor>
                     <align>justify</align>
