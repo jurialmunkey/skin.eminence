@@ -164,13 +164,13 @@
                         <textcolor>Highlight</textcolor>
                     </control>
                     <control type="textbox">
-                        <label>$INFO[Container(9600).ListItem.Plot]</label>
+                        <label>$INFO[Container(9600).ListItem.Plot]$INFO[Container(9600).ListItem.Property(Album_Description)]</label>
                         <aligny>top</aligny>
                         <height>120</height>
                         <font>Font-ListInfo</font>
                     </control>
                     <control type="label">
-                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
+                        <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
                         <aligny>center</aligny>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
@@ -215,7 +215,7 @@
                         <aligny>top</aligny>
                         <textcolor>Highlight</textcolor>
                         <scroll>true</scroll>
-                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year,,  •  ]$INFO[Container(9600).ListItem.Rating]</label>
+                        <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year,,  •  ]$INFO[Container(9600).ListItem.Rating]</label>
                     </control>
                     <control type="label">
                         <width>1800</width>
