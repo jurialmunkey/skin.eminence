@@ -419,3 +419,11 @@ msgstr ""
 msgctxt "#31203"
 msgid "Reset global background path to default"
 msgstr ""
+
+msgctxt "#31204"
+msgid "Match highlight to tile color"
+msgstr ""
+
+msgctxt "#31205"
+msgid "Don't fade unfocused tiles"
+msgstr ""

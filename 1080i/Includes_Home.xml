@@ -14,11 +14,14 @@
         <value condition="Skin.HasSetting(home.310.enabled)">SetFocus(310)</value>
     </variable>
     
+    <include name="Home-Highlight-DontMatchColor"><texture colordiffuse="Highlight">common/white.png</texture></include>
+    <include name="Home-Highlight-MatchColor"><texture>common/white.png</texture></include>
     <include name="Home-Highlight">
         <posy>330</posy>
         <width>170</width>
         <height>6</height>
-        <texture colordiffuse="Highlight">common/white.png</texture>
+        <include condition="Skin.HasSetting(home.matchcolor)">Home-Highlight-MatchColor</include>
+        <include condition="!Skin.HasSetting(home.matchcolor)">Home-Highlight-DontMatchColor</include>
         <animation effect="fade" start="0" end="100" time="100">Visible</animation>
         <visible>!Skin.HasSetting(home.talltiles) + !Window.IsVisible(videoosd)</visible>
     </include>
@@ -167,17 +170,17 @@
                         <onright>299</onright>
                         <onclick>Action(fullscreen)</onclick>
                         <visible>Player.HasMedia + Skin.HasSetting(home.autopop)</visible>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(298)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(298)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">special://skin/extras/icons/fullscreen.png</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(298)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(298)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>31106</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(298)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(298)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(298)">Conditional</animation>
                     </control>
                     <control type="image">
@@ -200,17 +203,17 @@
                         <onright>301</onright>
                         <onclick>PlayDVD</onclick>
                         <visible>System.HasMediadvd</visible>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(299)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(299)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">special://skin/extras/icons/play.png</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(299)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(299)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>341</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(299)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(299)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(299)">Conditional</animation>
                     </control>
                     <control type="image">
@@ -237,20 +240,21 @@
                         <onleft>299</onleft>
                         <onright>302</onright>
                         
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(301)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(301)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.301.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(301)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(301)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.301.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(301)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(301)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(301)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(301)</visible>
                     </control>
@@ -272,21 +276,22 @@
                         <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
                         <onleft>301</onleft>
                         <onright>303</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(302)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(302)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.302.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(302)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(302)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.302.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(302)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(302)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(302)">Conditional</animation>
                     </control>
 
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(302)</visible>
                     </control>
@@ -308,20 +313,21 @@
                         <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
                         <onleft>302</onleft>
                         <onright>304</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(303)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(303)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.303.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(303)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(303)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.303.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(303)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(303)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(303)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(303)</visible>
                     </control>
@@ -343,21 +349,22 @@
                         <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
                         <onleft>303</onleft>
                         <onright>305</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(304)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(304)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.304.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(304)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(304)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.304.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(304)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(304)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(304)">Conditional</animation>
                     </control>
        
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(304)</visible>
                     </control>
@@ -379,21 +386,22 @@
                         <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
                         <onleft>304</onleft>
                         <onright>306</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(305)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(305)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.305.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(305)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(305)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.305.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(305)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(305)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(305)">Conditional</animation>
                     </control>
  
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(305)</visible>
                     </control>
@@ -415,22 +423,23 @@
                         <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <onleft>305</onleft>
                         <onright>307</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(306)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(306)]">Conditional</animation>
                         <visible>Skin.HasSetting(home.306.enabled)</visible>
                     </control>
                     
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.306.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(306)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(306)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.306.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(306)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(306)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(306)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(306)</visible>
                     </control>
@@ -452,21 +461,22 @@
                         <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <onleft>306</onleft>
                         <onright>308</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(307)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(307)]">Conditional</animation>
                         <visible>Skin.HasSetting(home.307.enabled)</visible>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.307.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(307)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(307)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.307.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(307)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(307)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(307)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(307)</visible>
                     </control>
@@ -488,20 +498,21 @@
                         <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
                         <onleft>307</onleft>
                         <onright>309</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(308)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(308)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.308.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(308)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(308)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.308.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(308)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(308)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(308)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(308)</visible>
                     </control>
@@ -523,20 +534,21 @@
                         <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
                         <onleft>308</onleft>
                         <onright>310</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(309)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(309)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.309.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(309)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(309)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.309.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(309)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(309)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(309)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(309)</visible>
                     </control>
@@ -558,20 +570,21 @@
                         <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
                         <onleft>309</onleft>
                         <onright>311</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(310)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(310)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.310.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(310)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(310)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.310.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(310)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(310)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(310)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(310)</visible>
                     </control>
@@ -593,20 +606,21 @@
                         <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
                         <onleft>310</onleft>
                         <onright>312</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(311)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(311)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.311.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(311)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(311)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.311.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(311)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(311)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(311)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(311)</visible>
                     </control>
@@ -628,20 +642,21 @@
                         <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <onleft>311</onleft>
                         <onright>313</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(312)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(312)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.312.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(312)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(312)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.312.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(312)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(312)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(312)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(312)</visible>
                     </control>
@@ -663,20 +678,21 @@
                         <colordiffuse>$INFO[Skin.String(home.320.bgcolor)]</colordiffuse>
                         <onleft>312</onleft>
                         <onright>314</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(313)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(313)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.320.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(313)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(313)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.320.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(313)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(313)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(313)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.320.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(313)</visible>
                     </control>
@@ -698,20 +714,21 @@
                         <colordiffuse>$INFO[Skin.String(home.321.bgcolor)]</colordiffuse>
                         <onleft>313</onleft>
                         <onright>315</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(314)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(314)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.321.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(314)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(314)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.321.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(314)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(314)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(314)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.321.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(314)</visible>
                     </control>
@@ -733,20 +750,21 @@
                         <colordiffuse>$INFO[Skin.String(home.322.bgcolor)]</colordiffuse>
                         <onleft>314</onleft>
                         <onright>316</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(315)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(315)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.322.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(315)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(315)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.322.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(315)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(315)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(315)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.322.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(315)</visible>
                     </control>
@@ -768,20 +786,21 @@
                         <colordiffuse>$INFO[Skin.String(home.323.bgcolor)]</colordiffuse>
                         <onleft>315</onleft>
                         <onright>317</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(316)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(316)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.323.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(316)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(316)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.323.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(316)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(316)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(316)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.323.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(316)</visible>
                     </control>
@@ -803,20 +822,21 @@
                         <colordiffuse>$INFO[Skin.String(home.324.bgcolor)]</colordiffuse>
                         <onleft>316</onleft>
                         <onright>318</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(317)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(317)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.324.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(317)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(317)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.324.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(317)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(317)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(317)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.324.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(317)</visible>
                     </control>
@@ -838,20 +858,21 @@
                         <colordiffuse>$INFO[Skin.String(home.325.bgcolor)]</colordiffuse>
                         <onleft>317</onleft>
                         <onright>319</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(318)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(318)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.325.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(318)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(318)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.325.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(318)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(318)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(318)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.325.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(318)</visible>
                     </control>
@@ -873,20 +894,21 @@
                         <colordiffuse>$INFO[Skin.String(home.326.bgcolor)]</colordiffuse>
                         <onleft>318</onleft>
                         <onright>320</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(319)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(319)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.326.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(319)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(319)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.326.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(319)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(319)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(319)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.326.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(319)</visible>
                     </control>
@@ -908,20 +930,21 @@
                         <colordiffuse>$INFO[Skin.String(home.327.bgcolor)]</colordiffuse>
                         <onleft>319</onleft>
                         <onright>321</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(320)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(320)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.327.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(320)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(320)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.327.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(320)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(320)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(320)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.327.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(320)</visible>
                     </control>
@@ -943,20 +966,21 @@
                         <colordiffuse>$INFO[Skin.String(home.328.bgcolor)]</colordiffuse>
                         <onleft>320</onleft>
                         <onright>322</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(321)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(321)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.328.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(321)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(321)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.328.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(321)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(321)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(321)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.328.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(321)</visible>
                     </control>
@@ -978,20 +1002,21 @@
                         <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>
                         <onleft>321</onleft>
                         <onright>323</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(322)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(322)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.329.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(322)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(322)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.329.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(322)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(322)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(322)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(322)</visible>
                     </control>
@@ -1016,20 +1041,21 @@
                         <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
                         <onleft>322</onleft>
                         <onright>324</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(323)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(323)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.313.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(323)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(323)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.313.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(323)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(323)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(323)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(323)</visible>
                     </control>
@@ -1049,20 +1075,21 @@
                         <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
                         <onleft>323</onleft>
                         <onright>298</onright>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(324)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(324)]">Conditional</animation>
                     </control>
                     <control type="image">
                         <include>Home-Menu-Button</include>
                         <texture diffuse="home/tile.png" aligny="center" align="center">$INFO[Skin.String(home.314.Icon)]</texture>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(324)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(324)]">Conditional</animation>
                     </control>
                     <control type="label">
                         <include>Home-Menu-Label</include>
                         <label>$INFO[Skin.String(home.314.Label)]</label>
-                        <animation effect="fade" start="100" end="45" time="100" condition="Window.IsVisible(videoosd) | !Control.HasFocus(324)">Conditional</animation>
+                        <animation effect="fade" start="100" end="45" time="100" condition="!Skin.HasSetting(home.dontfade) + [Window.IsVisible(videoosd) | !Control.HasFocus(324)]">Conditional</animation>
                         <animation effect="slide" start="0" end="0,-10" time="100" condition="!Skin.HasSetting(home.talltiles) + Control.HasFocus(324)">Conditional</animation>
                     </control>
                     <control type="image">
+                        <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
                         <include>Home-Highlight</include>
                         <visible>Control.HasFocus(324)</visible>
                     </control>

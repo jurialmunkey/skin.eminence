@@ -1,5 +1,9 @@
 [B]0.9.26[/B]
 Options to customise each tile widget and background!!!
+Option to remove fade on tiles
+Option to match highlight to tile colour
+New custom colours
+Roboto font set
 
 [B]0.9.25[/B]
 Fix music videos not going to party mode

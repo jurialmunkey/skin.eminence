@@ -7,12 +7,12 @@
 	<color name="Green">FF85b503</color>
 	
 	<!-- Home Tile Colors -->
-    <color name="HomeCustom1">ff357555</color>
-    <color name="HomeCustom2">ff355575</color>
-    <color name="HomeCustom3">ff553575</color>	
-    <color name="HomeCustom4">ff753555</color>	
-    <color name="HomeCustom5">ff557535</color>
-	<color name="HomeCustom6">ff555555</color>
+    <color name="HomeCustom1">bF33b5e5</color>
+    <color name="HomeCustom2">bFb5e533</color>
+    <color name="HomeCustom3">bfe533b5</color>	
+    <color name="HomeCustom4">bfe5b533</color>	
+    <color name="HomeCustom5">bfb533e5</color>
+	<color name="HomeCustom6">bf33e5b5</color>
 	<color name="HomeCustom7">ff666666</color>
 	<color name="HomeCustom8">ff777777</color>
 	
