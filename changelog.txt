@@ -1,5 +1,6 @@
 [B]0.9.25[/B]
 Fix music videos not going to party mode
+Cleanup of widget code
 Added ability to cycle home bg widget on up
 
 [B]0.9.24[/B]
