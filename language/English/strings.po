@@ -200,12 +200,8 @@ msgctxt "#31147"
 msgid "Views"
 msgstr ""
 
-msgctxt "#31148"
-msgid "Use weather fanart for home background"
-msgstr ""
-
 msgctxt "#31149"
-msgid "Set home background image path"
+msgid "Set global background"
 msgstr ""
 
 msgctxt "#31150"
@@ -410,4 +406,16 @@ msgstr ""
 
 msgctxt "#31200"
 msgid "Manual search..."
+msgstr ""
+
+msgctxt "#31201"
+msgid "Set Colour"
+msgstr ""
+
+msgctxt "#31202"
+msgid "Background"
+msgstr ""
+
+msgctxt "#31203"
+msgid "Reset global background path to default"
 msgstr ""

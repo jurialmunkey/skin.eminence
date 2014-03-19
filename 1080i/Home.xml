@@ -4,9 +4,11 @@
 	<defaultcontrol always="true">399</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<background>0</background>
+	<onunload>ClearProperty(bgwidget,home)</onunload>
+	<onunload>ClearProperty(bgwidget.type,home)</onunload>
 	<onload>ClearProperty(globalsearch,home)</onload>
 	<onload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
-	<onload>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onload>    
+	<onload>AlarmClock(Move9600,Control.Move(9600,1),00:15,silent,loop)</onload>    
 	<controls>
 		<include>GlobalBackground</include>
 		<control type="group">

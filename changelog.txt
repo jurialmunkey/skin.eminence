@@ -1,7 +1,9 @@
+[B]0.9.26[/B]
+Options to customise each tile widget and background!!!
+
 [B]0.9.25[/B]
 Fix music videos not going to party mode
 Cleanup of widget code
-Added ability to cycle home bg widget on up
 
 [B]0.9.24[/B]
 Info panel for home screen widget

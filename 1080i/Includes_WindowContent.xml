@@ -21,26 +21,19 @@
 		
 	</include>
 	
-	<variable name="GlobalFanart-Movies">
-        <value condition="!IsEmpty(Skin.String(home.fanart)) + [!Skin.HasSetting(home.useweatherfanart) | IsEmpty(Skin.String(weather.fanart))]">$INFO[Skin.String(home.fanart)]</value>
-        <value condition="!IsEmpty(Skin.String(weather.fanart)) + Skin.HasSetting(home.useweatherfanart)">$INFO[Skin.String(weather.fanart)]$INFO[Weather.fanartcode]/</value>
-        <value condition="IntegerGreaterThan(System.Time(ss),48)">$INFO[Window(home).Property(RandomMovie.5.Art(fanart))]</value>
-        <value condition="IntegerGreaterThan(System.Time(ss),36)">$INFO[Window(home).Property(RandomMovie.9.Art(fanart))]</value>
-        <value condition="IntegerGreaterThan(System.Time(ss),24)">$INFO[Window(home).Property(RandomMovie.8.Art(fanart))]</value>
-        <value condition="IntegerGreaterThan(System.Time(ss),12)">$INFO[Window(home).Property(RandomMovie.7.Art(fanart))]</value>
-        <value>$INFO[Window(home).Property(RandomMovie.6.Art(fanart))]</value>
+	<variable name="GlobalWidget">
+	    <value condition="!IsEmpty(Window(home).Property(bgwidget))">$INFO[Window(home).Property(bgwidget)]</value>
+        <value condition="!IsEmpty(Skin.String(home.fanart))">$INFO[Skin.String(home.fanart)]</value>
+        <value>special://skin/extras/backgrounds/</value>
     </variable>
 
     <variable name="GlobalFanart">
         <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">-</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
-        <!--<value condition="Control.HasFocus(9500) + !IsEmpty(Container(9500).ListItem.Thumb)">$INFO[Container(9500).ListItem.Thumb]</value>
-        <value condition="[Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(Container(9501).ListItem.Thumb)">$INFO[Container(9501).ListItem.Thumb]</value>-->
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
-        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
-        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !Skin.HasSetting(home.usewidgetbg)">$INFO[Container(9600).ListItem.Icon]</value>
-        <value condition="Window.IsVisible(home)">$VAR[GlobalFanart-Movies]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
         <value>-</value>
     </variable>
     
@@ -77,42 +70,26 @@
                 <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
                 <visible>!Window.IsVisible(home)</visible>
 			</control>
-			
-			<control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRecommendedMoviesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRecommendedMoviesWidget</include>
-            </control>
+
             <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRecentMoviesWidget</include>
-            </control>
-            <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRandomMoviesWidget</include>
-            </control>
-            <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRandomEpisodesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRandomEpisodesWidget</include>
-            </control>
-            <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRecommendedEpisodesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRecommendedEpisodesWidget</include>
-            </control>
-            <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentRecentEpisodesWidget)</visible>
-			    <include>Def9600List</include>
-			    <include>ContentRecentEpisodesWidget</include>
-            </control>
-            
-            <control type="wraplist" id="9600">
-			    <visible>stringcompare(Skin.String(home.widget),ContentMixedWidget) | IsEmpty(Skin.String(home.widget))</visible>
-			    <include>Def9600List</include>
-			    <include>ContentMixedWidget</include>
+			    <visible>Window.IsVisible(home)</visible>
+                <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
+                <posy>1080</posy>
+                <include>Dimensions_Fullscreen</include>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+                <ondown>300</ondown>
+                <onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
+                <onback>300</onback>
+                <orientation>horizontal</orientation>
+                <preloaditems>1</preloaditems>
+                <scrolltime tween="quadratic">500</scrolltime>
+                <itemlayout width="1920" height="1080">
+                </itemlayout>
+                <focusedlayout width="1920" height="1080">
+                </focusedlayout>
+			    <content target="video">$VAR[GlobalWidget]</content>
             </control>
 
             
@@ -134,28 +111,22 @@
 			<control type="group">		
 			    <visible>Window.IsVisible(home)</visible>
 			    <visible>!Control.HasFocus(9600)</visible>
-			    <animation effect="slide" end="0" start="0,-200" time="200" condition="!Control.HasFocus(9600)" reversible="false">Conditional</animation>
                 <include>GlobalVignette</include>
                 <include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
             </control>
-            <control type="image">
-                <posy>384r</posy>
-                <width>1920</width>
-                <height>384</height>
-                <texture colordiffuse="7F000000" flipy="true">common/gradient.png</texture>
-                <visible>Control.HasFocus(9600)</visible>
-                <include>Animation.FadeOut</include>
-            </control>
+            
             <control type="group">
                 <posy>400</posy>
                 <visible>Skin.HasSetting(home.showinfoonwidget)</visible>
-                <visible>!Skin.HasSetting(home.usewidgetbg)</visible>
+                <visible>!IsEmpty(Window(home).Property(bgwidget))</visible>
+                <visible>!stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108])</visible>
                 <visible>Window.IsVisible(home)</visible>
                 <visible>!Player.HasVideo</visible>
                 <visible>!Skin.HasSetting(home.talltiles)</visible>
                 <visible>!IsEmpty(Container(9600).ListItem.Label)</visible>
-                <animation effect="slide" start="0" end="0,320" time="500" tween="back" reversible="true" easing="out" condition="Control.HasFocus(9600)">Conditional</animation>
+                <animation effect="slide" start="0" end="0,320" time="500" tween="back" reversible="false" easing="out" condition="Control.HasFocus(9600)">Conditional</animation>
+                <animation effect="slide" end="0" start="0,320" time="150" reversible="false" condition="!Control.HasFocus(9600)">Conditional</animation>
                 
                 <include>Animation.SlideOpen.Right</include>
                 <include>Animation.FadeOut</include>
@@ -174,9 +145,16 @@
                     <width>650</width>
                     <orientation>vertical</orientation>
                     <control type="label">
-                        <label>$VAR[HomeWidgetType2]</label>
+                        <label>$INFO[Window(Home).Property(bgwidget.type)]</label>
                         <aligny>top</aligny>
                         <height>35</height>
+                        <visible>!IsEmpty(Window(Home).Property(bgwidget.type))</visible>
+                    </control>
+                    <control type="label">
+                        <label>31112</label>
+                        <aligny>top</aligny>
+                        <height>35</height>
+                        <visible>IsEmpty(Window(Home).Property(bgwidget.type))</visible>
                     </control>
                     <control type="label">
                         <label>$INFO[Container(9600).ListItem.Label]</label>
@@ -186,35 +164,29 @@
                         <textcolor>Highlight</textcolor>
                     </control>
                     <control type="textbox">
-                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
-                        <aligny>top</aligny>
-                        <height>120</height>
-                        <font>Font-ListInfo</font>
-                        <visible>!IsEmpty(Container(9600).ListItem.Property(Plot))</visible>
-                    </control>
-                    <control type="textbox">
                         <label>$INFO[Container(9600).ListItem.Plot]</label>
                         <aligny>top</aligny>
                         <height>120</height>
                         <font>Font-ListInfo</font>
-                        <visible>IsEmpty(Container(9600).ListItem.Property(Plot))</visible>
                     </control>
                     <control type="label">
-                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
                         <aligny>center</aligny>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
-                        <visible>!IsEmpty(Container(9600).ListItem.Label2)</visible>
-                    </control>
-                    <control type="label">
-                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year,,  •  ]$INFO[Container(9600).ListItem.Rating]</label>
-                        <aligny>center</aligny>
-                        <font>Font-ListInfo-Small</font>
-                        <height>65</height>
-                        <visible>IsEmpty(Container(9600).ListItem.Label2)</visible>
                     </control>
                 </control>
             </control>
+            <control type="image">
+                <posy>384r</posy>
+                <width>1920</width>
+                <height>384</height>
+                <texture colordiffuse="7F000000" flipy="true">common/gradient.png</texture>
+                <visible>Control.HasFocus(9600)</visible>
+                <include>Animation.FadeOut</include>
+                <visible>!Skin.HasSetting(home.showinfoonwidget) | Skin.HasSetting(home.talltiles)</visible>
+            </control>
+
             <control type="group">
                 <left>30</left>
                 <posy>172r</posy>
@@ -243,7 +215,7 @@
                         <aligny>top</aligny>
                         <textcolor>Highlight</textcolor>
                         <scroll>true</scroll>
-                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                        <label>$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year,,  •  ]$INFO[Container(9600).ListItem.Rating]</label>
                     </control>
                     <control type="label">
                         <width>1800</width>
@@ -251,7 +223,7 @@
                         <aligny>top</aligny>
                         <textcolor>$VAR[TopBarSubLabel]</textcolor>
                         <scroll>true</scroll>
-                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
+                        <label>$INFO[Container(9600).ListItem.Plot]</label>
                     </control>
                 </control>
             </control>

@@ -12,6 +12,7 @@
 			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
 			    <visible>!Window.IsVisible(3062)</visible>
+			    <visible>!Window.IsVisible(3065)</visible>
 			    <include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
 
@@ -292,10 +293,18 @@
                             
                         </item>
                         
+                        <item id="25">
+                            <description>Widget / Background</description>
+                            <label>31202</label>
+                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3065)</onclick>
+                            <onclick>ActivateWindow(3065)</onclick>
+                        </item>
+                        
                         <item id="18">
                             <description>Color</description>
                             <label>31164</label>
-                            <label2>Set Colour</label2>
+                            <label2>31201</label2>
                             <icon>special://skin/extras/icons/configure.png</icon>
                             <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3062)</onclick>
                             <onclick>ActivateWindow(3062)</onclick>
