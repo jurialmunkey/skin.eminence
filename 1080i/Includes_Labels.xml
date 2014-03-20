@@ -2,6 +2,11 @@
 <includes>
 	<variable name="HDSD">
 	    <value condition="ListItem.IsStereoscopic">3D</value>
+	    <value condition="[substring(ListItem.FilenameAndPath,bluray) | substring(ListItem.FilenameAndPath,bdrip) | substring(ListItem.FilenameAndPath,bd25) | substring(ListItem.FilenameAndPath,bd50)]">Bluray</value>
+		<value condition="substring(ListItem.FilenameAndPath,hddvd)">HD-DVD</value>
+		<value condition="substring(ListItem.FilenameAndPath,dvd)">DVD</value>
+		<value condition="[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,hdtv) | substring(ListItem.FilenameAndPath,dsr)]">TV</value>
+		<value condition="substring(ListItem.FilenameAndPath,vhs)">VHS</value>
 	    <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">HD</value>
 	    <value condition="!IsEmpty(ListItem.VideoResolution)">SD</value>
 	</variable>
@@ -39,6 +44,7 @@
 	</variable>
 	
 	<variable name="ExtraInfo">
+	    <value condition="Container.Content(Sets) | substring(ListItem.Path,videodb://movies/sets,left)">$INFO[ListItem.Year]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31107]  •  ]$VAR[HDSD]$INFO[ListItem.VideoResolution, ,]</value>
 	    <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
 	    <value condition="Container.Content(Tvshows)">$INFO[ListItem.Studio]</value>

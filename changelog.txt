@@ -4,6 +4,10 @@ Option to remove fade on tiles
 Option to match highlight to tile colour
 New custom colours
 Roboto font set
+Option for "two tone mode" set focused tile colour to highlight and unfocused to grey
+Option to set widget for settings/power
+Remove extra info var for movie sets
+Add Blur-ray etc. tags
 
 [B]0.9.25[/B]
 Fix music videos not going to party mode
