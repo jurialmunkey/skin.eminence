@@ -1,3 +1,6 @@
+[B]0.9.27[/B]
+Roboto font updated to support CJK characters from Droid Sans Fallback
+
 [B]0.9.26[/B]
 Options to customise each tile widget and background!!!
 Option to remove fade on tiles
