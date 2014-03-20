@@ -268,8 +268,8 @@
                     <width>400</width>
                     <textcolor>Selected</textcolor>
                     <align>center</align>
-                    <font>Font-ListInfo</font>
-                    <label>$INFO[ListItem.Studio]</label>
+                    <font>Font-ListInfo-Small</font>
+                    <label>$VAR[ExtraInfo]</label>
                 </control>
             </control>
             <control type="group">
