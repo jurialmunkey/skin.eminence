@@ -10,7 +10,6 @@
                         
             <onfocus>Skin.ResetSettings</onfocus>
             <onfocus>Skin.SetBool(home.showinfoonwidget)</onfocus>
-            <onfocus>Skin.SetBool(home.usemixedglobalwidget)</onfocus>
             
             <!-- 301 Item -->
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
