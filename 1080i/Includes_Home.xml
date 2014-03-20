@@ -14,7 +14,7 @@
         <value condition="Skin.HasSetting(home.310.enabled)">SetFocus(310)</value>
     </variable>
     
-    <include name="Home-Highlight-DontMatchColor"><texture colordiffuse="Highlight">common/white.png</texture></include>
+    <include name="Home-Highlight-DontMatchColor"><texture colordiffuse="Highlight-NF">common/white.png</texture></include>
     <include name="Home-Highlight-MatchColor"><texture>common/white.png</texture></include>
     <include name="Home-Highlight">
         <posy>330</posy>
@@ -56,7 +56,7 @@
     </include>
     
     <include name="Short-Home-Menu-Button-Match">
-        <texturefocus border="50" colordiffuse="Highlight">home/tile.png</texturefocus>
+        <texturefocus border="50" colordiffuse="Highlight-NF">home/tile.png</texturefocus>
         <texturenofocus border="50" colordiffuse="ff2a2a2a">home/tile.png</texturenofocus>
     </include>
     
