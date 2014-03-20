@@ -431,3 +431,7 @@ msgstr ""
 msgctxt "#31206"
 msgid "Two tone mode (focused tiles match highlight)"
 msgstr ""
+
+msgctxt "#31207"
+msgid "Movie Set"
+msgstr ""

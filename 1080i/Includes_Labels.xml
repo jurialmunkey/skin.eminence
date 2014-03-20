@@ -44,7 +44,7 @@
 	</variable>
 	
 	<variable name="ExtraInfo">
-	    <value condition="Container.Content(Sets) | substring(ListItem.Path,videodb://movies/sets,left)">$INFO[ListItem.Year]</value>
+	    <value condition="Container.Content(Sets) | substring(ListItem.Path,videodb://movies/sets,left)">$LOCALIZE[31207]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31107]  •  ]$VAR[HDSD]$INFO[ListItem.VideoResolution, ,]</value>
 	    <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
 	    <value condition="Container.Content(Tvshows)">$INFO[ListItem.Studio]</value>
