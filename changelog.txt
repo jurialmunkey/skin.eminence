@@ -8,6 +8,7 @@ Option for "two tone mode" set focused tile colour to highlight and unfocused to
 Option to set widget for settings/power
 Remove extra info var for movie sets
 Add Blur-ray etc. tags
+Added override to have global mixed widget as background
 
 [B]0.9.25[/B]
 Fix music videos not going to party mode

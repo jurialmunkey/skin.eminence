@@ -435,3 +435,11 @@ msgstr ""
 msgctxt "#31207"
 msgid "Movie Set"
 msgstr ""
+
+msgctxt "#31208"
+msgid "Tiles"
+msgstr ""
+
+msgctxt "#31209"
+msgid "Override background settings with mixed widget"
+msgstr ""

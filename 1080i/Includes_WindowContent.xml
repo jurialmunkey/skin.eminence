@@ -32,6 +32,7 @@
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + Skin.HasSetting(home.usemixedglobalwidget)">$INFO[Container(9600).ListItem.Icon]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
         <value>-</value>
@@ -73,6 +74,7 @@
 
             <control type="wraplist" id="9600">
 			    <visible>Window.IsVisible(home)</visible>
+			    <visible>!Skin.HasSetting(home.usemixedglobalwidget)</visible>
                 <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
                 <posy>1080</posy>
                 <include>Dimensions_Fullscreen</include>
@@ -90,6 +92,27 @@
                 <focusedlayout width="1920" height="1080">
                 </focusedlayout>
 			    <content target="video">$VAR[GlobalWidget]</content>
+            </control>
+            <control type="wraplist" id="9600">
+			    <visible>Window.IsVisible(home)</visible>
+			    <visible>Skin.HasSetting(home.usemixedglobalwidget)</visible>
+                <visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
+                <posy>1080</posy>
+                <include>Dimensions_Fullscreen</include>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+                <ondown>300</ondown>
+                <onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
+                <onback>300</onback>
+                <orientation>horizontal</orientation>
+                <preloaditems>1</preloaditems>
+                <scrolltime tween="quadratic">500</scrolltime>
+                <itemlayout width="1920" height="1080">
+                </itemlayout>
+                <focusedlayout width="1920" height="1080">
+                </focusedlayout>
+			    <include>ContentMixedWidget</include>
             </control>
 
             
@@ -119,6 +142,7 @@
             <control type="group">
                 <posy>400</posy>
                 <visible>Skin.HasSetting(home.showinfoonwidget)</visible>
+                <visible>!Skin.HasSetting(home.usemixedglobalwidget)</visible>
                 <visible>!IsEmpty(Window(home).Property(bgwidget))</visible>
                 <visible>!stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108])</visible>
                 <visible>Window.IsVisible(home)</visible>
@@ -177,6 +201,59 @@
                     </control>
                 </control>
             </control>
+            <control type="group">
+                <posy>400</posy>
+                <visible>Skin.HasSetting(home.showinfoonwidget)</visible>
+                <visible>Skin.HasSetting(home.usemixedglobalwidget)</visible>
+                <visible>Window.IsVisible(home)</visible>
+                <visible>!Player.HasVideo</visible>
+                <visible>!Skin.HasSetting(home.talltiles)</visible>
+                <visible>!IsEmpty(Container(9600).ListItem.Label)</visible>
+                <animation effect="slide" start="0" end="0,320" time="500" tween="back" reversible="false" easing="out" condition="Control.HasFocus(9600)">Conditional</animation>
+                <animation effect="slide" end="0" start="0,320" time="150" reversible="false" condition="!Control.HasFocus(9600)">Conditional</animation>
+                
+                <include>Animation.SlideOpen.Right</include>
+                <include>Animation.FadeOut</include>
+                <control type="image">
+                    <posx>-100</posx>
+                    <width>900</width>
+                    <height>340</height>	
+                    <texture align="left" border="150">home/half-tile.png</texture>
+                    <colordiffuse>TopBarDark</colordiffuse>
+                    <animation effect="fade" start="100" end="95" condition="true">Conditional</animation>
+                </control>
+                <control type="grouplist">
+                    
+                    <posx>64</posx>
+                    <posy>20</posy>
+                    <width>650</width>
+                    <orientation>vertical</orientation>
+                    <control type="label">
+                        <label>$LOCALIZE[31112] / $LOCALIZE[31110]</label>
+                        <aligny>top</aligny>
+                        <height>35</height>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.Label]</label>
+                        <aligny>top</aligny>
+                        <font>Font-WidgetInfoTitle</font>
+                        <height>70</height>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                    <control type="textbox">
+                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
+                        <aligny>top</aligny>
+                        <height>120</height>
+                        <font>Font-ListInfo</font>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                        <aligny>center</aligny>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                    </control>
+                </control>
+            </control>
             <control type="image">
                 <posy>384r</posy>
                 <width>1920</width>
@@ -209,6 +286,7 @@
                     <orientation>horizontal</orientation>
                     <itemgap>16</itemgap>
                     <width>1860</width>
+                    <visible>!Skin.HasSetting(home.usemixedglobalwidget)</visible>
                     <control type="label">
                         <width>auto</width>
                         <font>Font-Sublabel</font>
@@ -224,6 +302,29 @@
                         <textcolor>$VAR[TopBarSubLabel]</textcolor>
                         <scroll>true</scroll>
                         <label>$INFO[Container(9600).ListItem.Plot]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <posy>115</posy>
+                    <orientation>horizontal</orientation>
+                    <itemgap>16</itemgap>
+                    <width>1860</width>
+                    <visible>Skin.HasSetting(home.usemixedglobalwidget)</visible>
+                    <control type="label">
+                        <width>auto</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>Highlight</textcolor>
+                        <scroll>true</scroll>
+                        <label>$INFO[Container(9600).ListItem.Label2]</label>
+                    </control>
+                    <control type="label">
+                        <width>1800</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <scroll>true</scroll>
+                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
                     </control>
                 </control>
             </control>
