@@ -278,7 +278,7 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.matchcolor)</onclick>
                     <selected>Skin.HasSetting(home.matchcolor)</selected>
-                    <enable>!Skin.HasSetting(home.talltiles)</enable>
+                    <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
@@ -290,12 +290,24 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.dontfade)</onclick>
-                    <enable>!Skin.HasSetting(home.talltiles)</enable>
+                    <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <selected>Skin.HasSetting(home.dontfade)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="214">
+                    <label>31206</label>
+                    <width>1020</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.monochromemode)</onclick>
+                    <selected>Skin.HasSetting(home.monochromemode)</selected>
+                    <enable>!Skin.HasSetting(home.talltiles)</enable>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 <control type="radiobutton" id="202">
                     <label>31178</label>

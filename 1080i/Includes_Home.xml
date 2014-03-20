@@ -20,8 +20,8 @@
         <posy>330</posy>
         <width>170</width>
         <height>6</height>
-        <include condition="Skin.HasSetting(home.matchcolor)">Home-Highlight-MatchColor</include>
-        <include condition="!Skin.HasSetting(home.matchcolor)">Home-Highlight-DontMatchColor</include>
+        <include condition="Skin.HasSetting(home.matchcolor) + !Skin.HasSetting(home.monochromemode)">Home-Highlight-MatchColor</include>
+        <include condition="!Skin.HasSetting(home.matchcolor) | Skin.HasSetting(home.monochromemode)">Home-Highlight-DontMatchColor</include>
         <animation effect="fade" start="0" end="100" time="100">Visible</animation>
         <visible>!Skin.HasSetting(home.talltiles) + !Window.IsVisible(videoosd)</visible>
     </include>
@@ -50,12 +50,22 @@
         <include condition="Skin.HasSetting(home.talltiles)">Tall-Home-Menu-Label</include>
     </include>
     
+    <include name="Short-Home-Menu-Button-Default">
+        <texturefocus border="50">home/tile.png</texturefocus>
+        <texturenofocus border="50">home/tile.png</texturenofocus>
+    </include>
+    
+    <include name="Short-Home-Menu-Button-Match">
+        <texturefocus border="50" colordiffuse="Highlight">home/tile.png</texturefocus>
+        <texturenofocus border="50" colordiffuse="ff2a2a2a">home/tile.png</texturenofocus>
+    </include>
+    
     <include name="Short-Home-Menu-Button">
         <posy>96</posy>
         <width>196</width>
         <height>170</height>	
-        <texturefocus border="50">home/tile.png</texturefocus>
-        <texturenofocus border="50">home/tile.png</texturenofocus>
+        <include condition="!Skin.HasSetting(home.monochromemode)">Short-Home-Menu-Button-Default</include>
+        <include condition="Skin.HasSetting(home.monochromemode)">Short-Home-Menu-Button-Match</include>
     </include>
     
     <include name="Tall-Home-Menu-Button">
