@@ -1045,6 +1045,8 @@
                     <animation effect="slide" start="400,400" end="0" delay="300" time="100" condition="Window.IsActive(home)">WindowOpen</animation>
                     <control type="button" id="323">
                         <include>Home-Menu-Button</include>
+                        <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.313.bgwidget.type)],home)</onfocus>
+                        <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.313.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.313.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.313.Path)]</onclick>
@@ -1079,6 +1081,8 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="324">
                         <include>Home-Menu-Button</include>
+                        <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.314.bgwidget.type)],home)</onfocus>
+                        <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.314.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.314.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.314.Path)]</onclick>

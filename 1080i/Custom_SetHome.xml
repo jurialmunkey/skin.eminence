@@ -564,8 +564,8 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9330">
                         <include>Home-Menu-Button</include>
-                        <onclick>SetProperty(item,home.313,3062)</onclick>
-                        <onclick>ActivateWindow(3062)</onclick>
+                        <onclick>SetProperty(item,home.313,3068)</onclick>
+                        <onclick>ActivateWindow(3068)</onclick>
                         <colordiffuse>$INFO[Skin.String(home.313.bgcolor)]</colordiffuse>
                         <onleft>9329</onleft>
                         <onright>9331</onright>
@@ -587,8 +587,8 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9331">
                         <include>Home-Menu-Button</include>
-                        <onclick>SetProperty(item,home.314,3062)</onclick>
-                        <onclick>ActivateWindow(3062)</onclick>
+                        <onclick>SetProperty(item,home.314,3068)</onclick>
+                        <onclick>ActivateWindow(3068)</onclick>
                         <colordiffuse>$INFO[Skin.String(home.314.bgcolor)]</colordiffuse>
                         <onleft>9330</onleft>
                         <onright>9301</onright>
