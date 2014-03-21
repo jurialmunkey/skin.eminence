@@ -17,7 +17,7 @@
 	<color name="HomeCustom8">ff777777</color>
 	
 	<!-- Border Highlight -->
-	<color name="White">bfa9a9a9</color>
+	<color name="White">ff33b5e5</color>
 		
 	<!-- Home Header And Panels -->
 	<color name="MainLabel">FFededed</color>
@@ -42,7 +42,7 @@
 	<color name="Selected">fff0f0f0</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="PosterBorder-NF">1e888888</color>
-	<color name="BorderColor">3e181818</color>
+	<color name="BorderColor">7f181818</color>
 	<color name="PanelBG">ff181818</color>
 	<color name="RadioFO">ffffffff</color>
 	<color name="PanelFG">ffdddddd</color>

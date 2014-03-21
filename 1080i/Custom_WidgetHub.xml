@@ -114,7 +114,7 @@
                     
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>     
                 <control type="label">
                     <posx>18</posx>
@@ -227,7 +227,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
                         </control>
               
                         <control type="label">
@@ -254,7 +254,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture colordiffuse="White" border="12">common/border-inner.png</texture>
+                            <texture border="12">common/border-inner-highlight.png</texture>
                             <visible>Control.HasFocus(9500)</visible>
                             <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -263,7 +263,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
                             <visible>!Control.HasFocus(9500)</visible>
                         </control>
                         <control type="label">
@@ -306,6 +306,12 @@
                             <height>690</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
+                       <!-- <control type="image">
+                            <posy>682</posy>
+                            <width>955</width>
+                            <height>8</height>
+                            <texture colordiffuse="Highlight" border="5">common/white.png</texture>
+                        </control>-->
                         <control type="label">
                             <posx>20</posx>
                             <posy>555</posy>
@@ -498,7 +504,7 @@
                     
                     <width>1416</width>
                     <height>690</height>
-                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>     
                 <control type="label">
                     <posx>18</posx>

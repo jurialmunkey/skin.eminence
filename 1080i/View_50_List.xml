@@ -8,7 +8,16 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Animation.ViewChange</include>     
-            <include>DefSideLabel</include>       
+            <include>DefSideLabel</include> 
+            <control type="scrollbar" id="60">
+                <posx>-18</posx>
+                <posy>210</posy>
+                <height>690</height>
+                <include>DefScrollBarMove</include>
+                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60)">Conditional</animation>
+                <animation effect="fade" start="100" end="0" condition="[!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)] | ControlGroup(9000).HasFocus()">Conditional</animation>
+
+            </control>      
             <control type="list" id="50">
                 <posx>5</posx>
                 <posy>210</posy>
@@ -26,46 +35,49 @@
 
                 <itemlayout width="972" height="69">
                     <control type="group">
-                        <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
-                        <control type="image">
-                            <posx>8</posx>
-                            <posy>9</posy>
-                            <width>48</width>
-                            <height>48</height>
-                            <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
-                            <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+                        <control type="group">
+                        
+                            <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
+                            <control type="image">
+                                <posx>8</posx>
+                                <posy>9</posy>
+                                <width>48</width>
+                                <height>48</height>
+                                <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+                                <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>32</posx>
+                                <posy>9</posy>
+                                <width>48</width>
+                                <height>48</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>Font-Button</font>
+                                <label>$VAR[WatchedLabel]</label>
+                                <visible>ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+                            </control>
+                            <control type="label">
+                                <posx>64</posx>
+                                <width>900</width>
+                                <font>Font-Button</font>
+                                <label>$VAR[VARLabel]</label>
+                            </control>
                         </control>
                         <control type="label">
-                            <posx>32</posx>
-                            <posy>9</posy>
-                            <width>48</width>
-                            <height>48</height>
-                            <align>center</align>
-                            <aligny>center</aligny>
-                            <font>Font-Button</font>
-                            <label>$VAR[WatchedLabel]</label>
-                            <visible>ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
-                        </control>
-                        <control type="label">
-                            <posx>64</posx>
+                            <posx>30</posx>
                             <width>900</width>
                             <font>Font-Button</font>
                             <label>$VAR[VARLabel]</label>
+                            <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
                         </control>
-                    </control>
-                    <control type="label">
-                        <posx>30</posx>
-                        <width>900</width>
-                        <font>Font-Button</font>
-                        <label>$VAR[VARLabel]</label>
-                        <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
-                    </control>
-                    <control type="label">
-                        <posx>936</posx>
-                        <width>900</width>
-                        <font>Font-ListInfo-Small</font>
-                        <align>right</align>
-                        <label>$INFO[ListItem.Label2]</label>
+                        <control type="label">
+                            <posx>936</posx>
+                            <width>900</width>
+                            <font>Font-ListInfo-Small</font>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
                     </control>
     
 
@@ -73,13 +85,12 @@
 
                 <focusedlayout width="972" height="69">
                     <control type="group">
-                        
                         <control type="group">
                             <visible>Control.HasFocus(50)</visible>
                             <control type="image">
                                 <height>69</height>
-                                <width>969</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                                <width>977</width>
+                                <texture border="12">common/border-inner-highlight.png</texture>
                                 <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             </control>
@@ -181,12 +192,22 @@
             <control type="group">
                 <posx>990</posx>
                 <posy>210</posy>
-                <visible>[!substring(Container.FolderPath,plugin://,left) + !Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + ![[Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <width>444</width>
                     <height>690</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
+                <!--<control type="image">
+                    <posy>682</posy>
+                    <width>444</width>
+                    <height>8</height>
+                    <texture colordiffuse="Highlight" border="5">common/white.png</texture>
+                </control>-->
+            </control>
+            <control type="group">
+                <posx>990</posx>
+                <posy>210</posy>
+                <visible>[!substring(Container.FolderPath,plugin://,left) + !Container.Content(addons) + !Container.Content(episodes) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + ![[Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
@@ -213,12 +234,6 @@
                 <posx>990</posx>
                 <posy>210</posy>
                 <visible>[Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)] + !substring(Container.FolderPath,plugin://,left)</visible>
-                <control type="image">
-                    <height>690</height>
-                    <width>444</width>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    
-                </control>
                 <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
@@ -277,11 +292,6 @@
                 <posy>210</posy>
                 <visible>!Window.IsVisible(MyVideoPlaylist.xml) + [!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + [Container.Content(addons) | substring(Container.FolderPath,plugin://,left)] ]] + !stringcompare(ListItem.Label,..)</visible>
                 <control type="image">
-                    <width>444</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control>
-                <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
                     <width>422</width>
@@ -295,7 +305,7 @@
 
                 <control type="label">
                     <posx>22</posx>
-                    <posy>450</posy>
+                    <posy>446</posy>
                     <height>68</height>
                     <width>400</width>
                     <textcolor>Selected</textcolor>
@@ -306,7 +316,7 @@
                 </control>
                 <control type="textbox">
                     <posx>22</posx>
-                    <posy>516</posy>
+                    <posy>514</posy>
                     <height>160</height>
                     <width>400</width>
                     <textcolor>Selected</textcolor>
@@ -315,15 +325,7 @@
                     <label>$VAR[PlotBox]</label>
                 </control>
             </control>
-            <control type="scrollbar" id="60">
-                <posx>-18</posx>
-                <posy>210</posy>
-                <height>690</height>
-                <include>DefScrollBarMove</include>
-                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-                <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
-
-            </control>
+            
         </control>
 
 	</include>
