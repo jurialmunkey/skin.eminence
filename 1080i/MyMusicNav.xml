@@ -98,7 +98,7 @@
                     <control type="image">
                         <width>464</width>
                         <height>130</height>
-                        <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>11</posx>
@@ -144,13 +144,13 @@
                     <control type="image">
                         <width>464</width>
                         <height>130</height>
-                        <texture border="12">common/border-inner-highlight.png</texture>
+                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
                         <width>464</width>
                         <height>130</height>
-                        <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">

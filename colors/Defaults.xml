@@ -16,8 +16,7 @@
 	<color name="HomeCustom7">ff666666</color>
 	<color name="HomeCustom8">ff777777</color>
 	
-	<!-- Border Highlight -->
-	<color name="White">ff33b5e5</color>
+	
 		
 	<!-- Home Header And Panels -->
 	<color name="MainLabel">FFededed</color>
@@ -29,6 +28,7 @@
 	<color name="TopBarDisabled">2fededed</color>
 	
 	<!-- Highlight Colors -->
+	<color name="PosterHighlight">bfa9a9a9</color>
 	<color name="Highlight-NF">AF33b5e5</color>
 	<color name="Highlight">FF33b5e5</color>
 	

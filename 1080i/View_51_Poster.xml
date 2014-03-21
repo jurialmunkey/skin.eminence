@@ -173,7 +173,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                             </control>
                            <!-- <control type="image">
                                 <posy>682</posy>
@@ -260,7 +260,7 @@
                             <control type="image">
                                 <height>690</height>
                                 <width>444</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                             </control>
                           <!--  <control type="image">
                                 <posy>682</posy>
@@ -371,7 +371,7 @@
                         <control type="image">
                             <height>690</height>
                             <width>444</width>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                         </control>
                         <!--<control type="image">
                             <posy>682</posy>

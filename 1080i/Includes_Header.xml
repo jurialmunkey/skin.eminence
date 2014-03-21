@@ -114,7 +114,7 @@
         
         <control type="image">
             <posy>18</posy>
-            <posx>-88</posx>
+            <posx>-87</posx>
             <width>300</width>
             <height>164</height>	
             <texture align="left" colordiffuse="TopBarDark">home/head-tile.png</texture>

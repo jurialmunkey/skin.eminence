@@ -77,7 +77,7 @@
 					<control type="image">
 						<width>456</width>
 						<height>213</height>
-						<texture border="3" colordiffuse="White">common/border-inner.png</texture>
+						<texture border="3" colordiffuse="PosterHighlight">common/border-inner.png</texture>
 					</control>
 
 					<control type="image">

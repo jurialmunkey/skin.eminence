@@ -227,7 +227,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
               
                         <control type="label">
@@ -254,7 +254,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture border="12">common/border-inner-highlight.png</texture>
+                            <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                             <visible>Control.HasFocus(9500)</visible>
                             <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -263,7 +263,7 @@
                         <control type="image">
                             <width>450</width>
                             <height>90</height>
-                            <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                             <visible>!Control.HasFocus(9500)</visible>
                         </control>
                         <control type="label">
@@ -425,7 +425,7 @@
                             <control type="image">
                                 <height>336</height>
                                 <width>221</width>
-                                <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                             </control>
  
             

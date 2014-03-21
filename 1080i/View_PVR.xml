@@ -18,7 +18,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture border="12">common/border-inner-highlight.png</texture>
+                    <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                     
                 </control>
                 <include>PVRrecordinglayoutfocus</include>
@@ -207,7 +207,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture border="12">common/border-inner-highlight.png</texture>
+                    <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                     
                 </control>
                 <include>PVRlistlayoutfocus</include>
@@ -436,23 +436,9 @@
                         <width>246</width>
                         <height>67</height>
                         <texture border="5">common/border-inner.png</texture>
-                        <colordiffuse>Highlight</colordiffuse>
+                        <colordiffuse>PosterHighlight</colordiffuse>
                     </control>
-                    
-                    <!--<control type="image" id="2">
-                        <width>246</width>
-                        <height>67</height>
-                        <texture>pvrgenre/$INFO[ListItem.Property(GenreType)].png</texture>
-                        <aspectratio>scale</aspectratio>
-                        <colordiffuse>7fffffff</colordiffuse>
-                    </control> 
-                    <control type="image" id="2">
-                        <width>246</width>
-                        <height>67</height>
-                        <texture border="5">common/border.png</texture>
-                        <animation effect="fade" start="100" end="35" condition="true">Conditional</animation>
-                    </control> -->
-    
+
                     <control type="image">
                         <posy>6</posy>
                         <width>52</width>

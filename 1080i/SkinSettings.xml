@@ -229,7 +229,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>ActivateWindow(3063)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <visible>ControlGroup(3).HasFocus(32) | ControlGroup(3).HasFocus(37)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 

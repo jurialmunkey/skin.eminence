@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<colors>
-	<color name="White">FFFFFFFF</color>
-    
-	
+<colors>	
 	<!-- Main Colors -->
 	<color name="Background">ffDEDEDE</color>
 	<color name="Selected">ff404040</color>
@@ -13,6 +10,7 @@
 	<color name="PanelFG-NF">bf474747</color>
 	<color name="Disabled">3f474747</color>
 	
+	<color name="PosterHighlight">FFFFFFFF</color>
 	<color name="PosterBorder">be888888</color>
 	<color name="PosterBorder-NF">3e888888</color>
 </colors>

@@ -150,7 +150,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                         </control>    
                         <control type="image">
                             <posx>11</posx>
@@ -225,7 +225,7 @@
                         <control type="image">
                             <width>700</width>
                             <height>218</height>
-                            <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                         </control>    
                         <control type="image">
                             <posx>11</posx>

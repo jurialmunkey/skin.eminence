@@ -78,7 +78,7 @@
                     <control type="image">
                         <width>1416</width>
                         <height>130</height>
-                        <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <posx>11</posx>

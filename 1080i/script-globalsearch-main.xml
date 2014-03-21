@@ -57,7 +57,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -114,7 +114,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                     <visible>Control.HasFocus(121)</visible>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
@@ -169,7 +169,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -211,7 +211,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -266,7 +266,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -321,7 +321,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -376,7 +376,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
@@ -429,7 +429,7 @@
                                 <control type="image">
                                     <height>336</height>
                                     <width>699</width>
-                                    <texture colordiffuse="White" border="5">common/border-inner.png</texture>
+                                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                                 </control>
                                 <include>DefGlobalSearchListEnd</include>
                             </focusedlayout>
