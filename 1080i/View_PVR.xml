@@ -5,7 +5,7 @@
             <control type="image">
                 <width>945</width>
                 <height>130</height>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
             </control>    
             <include>PVRrecordinglayout</include>
         </itemlayout>
@@ -17,7 +17,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture border="12" colordiffuse="White">common/border-inner.png</texture>
+                    <texture border="12">common/border-inner-highlight.png</texture>
                     
                 </control>
                 <include>PVRrecordinglayoutfocus</include>
@@ -27,7 +27,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
                 </control>   
                 <include>PVRrecordinglayout</include>
             </control>
@@ -40,7 +40,7 @@
             <control type="image">
                 <width>460</width>
                 <height>690</height>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
             </control>
             <control type="group">
                 <posx>11</posx>
@@ -194,7 +194,7 @@
             <control type="image">
                 <width>945</width>
                 <height>130</height>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
             </control>        
             <include>PVRlistlayout</include>
         </itemlayout>
@@ -206,7 +206,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture colordiffuse="White" border="12">common/border-inner.png</texture>
+                    <texture border="12">common/border-inner-highlight.png</texture>
                 
                 </control>
                 <include>PVRlistlayoutfocus</include>
@@ -216,7 +216,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>130</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
                 </control>
                 <include>PVRlistlayout</include>
             </control>
@@ -334,7 +334,7 @@
                         <width>554</width>
                         <height>67</height>
                         <texture border="12">common/border-inner.png</texture>
-                        <colordiffuse>PosterBorder-NF</colordiffuse>
+                        <colordiffuse>PosterBorder-NF-NF</colordiffuse>
                     </control>   
 
                     <control type="image">
@@ -394,7 +394,7 @@
                         <width>246</width>
                         <height>67</height>
                         <texture border="5">common/border-inner.png</texture>
-                        <colordiffuse>PosterBorder</colordiffuse>
+                        <colordiffuse>PosterBorder-NF</colordiffuse>
                     </control> 
                     <control type="image" id="2">
                         <width>246</width>
@@ -487,7 +487,7 @@
                 <posy>210</posy>
                 <height>690</height>
                 <width>1884</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
             </control>
 
 
