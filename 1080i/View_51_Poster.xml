@@ -193,7 +193,7 @@
                             </control>
                             <control type="label">
                                 <posx>22</posx>
-                                <posy>614</posy>
+                                <posy>618</posy>
                                 <height>68</height>
                                 <width>408</width>
                                 <align>left</align>
@@ -203,7 +203,7 @@
                             </control>
                             <control type="label">
                                 <posx>422</posx>
-                                <posy>614</posy>
+                                <posy>618</posy>
                                 <height>68</height>
                                 <width>408</width>
                                 <align>right</align>
