@@ -60,28 +60,14 @@
                 <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
-                    <height>284</height>
+                    <height>314</height>
                     <width>438</width>
                     <texture background="true">$VAR[FanartImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
                 </control>
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>282</posy>
-                    <width>330</width>
-                    <align>left</align>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label">
-                    <posx>442</posx>
-                    <posy>282</posy>
-                    <width>130</width>
-                    <align>right</align>
-                    <font>Font-ListInfo-Small</font>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
+
             </control>
 
         </itemlayout>
@@ -143,30 +129,14 @@
                 <control type="image">
                     <posx>11</posx>
                     <posy>11</posy>
-                    <height>284</height>
+                    <height>314</height>
                     <width>438</width>
                     <texture background="true">$VAR[FanartImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
                 </control>
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>282</posy>
-                    <width>330</width>
-                    <align>left</align>
-                    <textcolor>Selected</textcolor>
-                    <label>$INFO[ListItem.Label]</label>
-                </control>
-                <control type="label">
-                    <posx>442</posx>
-                    <posy>282</posy>
-                    <width>130</width>
-                    <align>right</align>
-                    <textcolor>Selected</textcolor>
-                    <font>Font-ListInfo-Small</font>
-                    <label>$INFO[ListItem.Label2]</label>
-                </control>
+
             </control>
 
         </focusedlayout>
