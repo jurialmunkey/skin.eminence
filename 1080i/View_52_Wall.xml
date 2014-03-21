@@ -340,7 +340,7 @@
             <control type="group">
                 <width>1452</width>
                 <posy>145</posy>
-                <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]]</visible>
+                
                 <!--<control type="image">
                     <posx>18</posx>
                     <posy>54</posy>
@@ -355,6 +355,7 @@
                     <font>Font-WidgetCategory</font>
                     <label>$INFO[ListItem.Label]</label>
                     <animation effect="fade" start="100" end="66" condition="true">Conditional</animation>
+                    <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | Container.Content(episodes)</visible>
                 </control>
                 <control type="label">
                     <right>22</right>
@@ -363,6 +364,7 @@
                     <font>Font-WidgetCategory</font>
                     <label>$VAR[ExtraInfo]</label>
                     <animation effect="fade" start="100" end="33" condition="true">Conditional</animation>
+                    <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]]</visible>
                 </control>
             </control>
             <control type="scrollbar" id="60">
