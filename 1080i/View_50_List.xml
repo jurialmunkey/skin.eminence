@@ -14,15 +14,15 @@
                 <posy>210</posy>
                 <height>690</height>
                 <include>DefScrollBarMove</include>
-                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60)">Conditional</animation>
+                <animation effect="fade" start="100" end="24" time="400" condition="!Control.HasFocus(60)">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="[!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)] | ControlGroup(9000).HasFocus()">Conditional</animation>
 
             </control>      
             <control type="list" id="50">
-                <posx>5</posx>
+                <posx>18</posx>
                 <posy>210</posy>
                 <width>972</width>
-                <height>690</height>
+                <height>693</height>
                 <onleft>60</onleft>
                 <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
                 <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
@@ -33,14 +33,21 @@
                 <viewtype label="535">list</viewtype>
                 <scrolltime tween="quadratic">400</scrolltime>
 
-                <itemlayout width="972" height="69">
+                <itemlayout width="972" height="77">
                     <control type="group">
+                        <control type="image">
+                                <height>74</height>
+                                <width>969</width>
+                                <texture border="12" colordiffuse="PosterBorder-NF" flipx="false">common/border-inner.png</texture>
+                                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                            </control>
                         <control type="group">
                         
                             <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
                             <control type="image">
                                 <posx>8</posx>
-                                <posy>9</posy>
+                                <posy>13</posy>
                                 <width>48</width>
                                 <height>48</height>
                                 <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
@@ -48,7 +55,7 @@
                             </control>
                             <control type="label">
                                 <posx>32</posx>
-                                <posy>9</posy>
+                                <posy>13</posy>
                                 <width>48</width>
                                 <height>48</height>
                                 <align>center</align>
@@ -59,6 +66,7 @@
                             </control>
                             <control type="label">
                                 <posx>64</posx>
+                                <height>74</height>
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[VARLabel]</label>
@@ -66,6 +74,7 @@
                         </control>
                         <control type="label">
                             <posx>30</posx>
+                            <height>74</height>
                             <width>900</width>
                             <font>Font-Button</font>
                             <label>$VAR[VARLabel]</label>
@@ -73,6 +82,7 @@
                         </control>
                         <control type="label">
                             <posx>936</posx>
+                            <height>74</height>
                             <width>900</width>
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
@@ -83,14 +93,14 @@
 
                 </itemlayout>
 
-                <focusedlayout width="972" height="69">
+                <focusedlayout width="972" height="77">
                     <control type="group">
                         <control type="group">
                             <visible>Control.HasFocus(50)</visible>
                             <control type="image">
-                                <height>69</height>
-                                <width>977</width>
-                                <texture border="12">common/border-inner-highlight.png</texture>
+                                <height>74</height>
+                                <width>969</width>
+                                <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
                                 <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             </control>
@@ -98,7 +108,7 @@
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
                                 <control type="image">
                                     <posx>8</posx>
-                                    <posy>9</posy>
+                                    <posy>13</posy>
                                     <width>48</width>
                                     <height>48</height>
                                     <texture colordiffuse="PanelFG">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
@@ -106,7 +116,7 @@
                                 </control>
                                 <control type="label">
                                     <posx>32</posx>
-                                    <posy>9</posy>
+                                    <posy>13</posy>
                                     <width>48</width>
                                     <height>48</height>
                                     <align>center</align>
@@ -117,6 +127,7 @@
                                 </control>
                                 <control type="label">
                                     <posx>64</posx>
+                                    <height>74</height>
                                     <width>900</width>
                                     <font>Font-Button</font>
                                     <label>$VAR[VARLabel]</label>
@@ -125,6 +136,7 @@
                             </control>
                             <control type="label">
                                 <posx>30</posx>
+                                <height>74</height>
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[VARLabel]</label>
@@ -134,6 +146,7 @@
                             <control type="label">
                                 <posx>936</posx>
                                 <width>900</width>
+                                <height>74</height>
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
@@ -142,11 +155,18 @@
                         </control>
                         <control type="group">
                             <visible>!Control.HasFocus(50)</visible>
+                            <control type="image">
+                                <height>74</height>
+                                <width>969</width>
+                                <texture border="12" colordiffuse="PosterBorder-NF" flipx="false">common/border-inner.png</texture>
+                                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                            </control>
                             <control type="group">
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
                                 <control type="image">
                                     <posx>8</posx>
-                                    <posy>9</posy>
+                                    <posy>13</posy>
                                     <width>48</width>
                                     <height>48</height>
                                     <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
@@ -154,7 +174,7 @@
                                 </control>
                                 <control type="label">
                                     <posx>32</posx>
-                                    <posy>9</posy>
+                                    <posy>13</posy>
                                     <width>48</width>
                                     <height>48</height>
                                     <align>center</align>
@@ -165,6 +185,7 @@
                                 </control>
                                 <control type="label">
                                     <posx>64</posx>
+                                    <height>74</height>
                                     <width>900</width>
                                     <font>Font-Button</font>
                                     <label>$VAR[VARLabel]</label>
@@ -172,6 +193,7 @@
                             </control>
                             <control type="label">
                                 <posx>30</posx>
+                                <height>74</height>
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[VARLabel]</label>
@@ -179,6 +201,7 @@
                             </control>
                             <control type="label">
                                 <posx>936</posx>
+                                <height>74</height>
                                 <width>900</width>
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
@@ -197,12 +220,6 @@
                     <height>690</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
-                <!--<control type="image">
-                    <posy>682</posy>
-                    <width>444</width>
-                    <height>8</height>
-                    <texture colordiffuse="Highlight" border="5">common/white.png</texture>
-                </control>-->
             </control>
             <control type="group">
                 <posx>990</posx>
