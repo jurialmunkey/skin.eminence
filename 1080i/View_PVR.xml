@@ -13,6 +13,7 @@
 
             <control type="group"> 
                 
+                
                 <visible>ControlGroup(50).HasFocus()</visible>                
                 <control type="image">
                     <width>945</width>
@@ -207,7 +208,7 @@
                     <width>945</width>
                     <height>130</height>
                     <texture border="12">common/border-inner-highlight.png</texture>
-                
+                    
                 </control>
                 <include>PVRlistlayoutfocus</include>
             </control>
@@ -309,7 +310,7 @@
                 <height>637</height>
                 <pagecontrol>10</pagecontrol>
                 <progresstexture border="5" colordiffuse="bf777777">windows/pvr/progressline.png</progresstexture>
-                <scrolltime>350</scrolltime>
+                <scrolltime tween="quadratic">300</scrolltime>
                 <timeblocks>35</timeblocks>
                 <rulerunit>6</rulerunit>
                 <onback condition="!Window.Previous(VideoFullScreen.xml)">9000</onback>
