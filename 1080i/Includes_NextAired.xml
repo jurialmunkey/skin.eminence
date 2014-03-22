@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <include name="NextAiredList">
+        <posx>11</posx>
+        <posy>210</posy>
+        <width>1365</width>
+        <height>690</height>
+        <viewtype label="31152">list</viewtype>
+        <scrolltime tween="quadratic">400</scrolltime>
+        <orientation>horizontal</orientation>
+        <itemlayout width="455" height="690">
+            <control type="group">
+                <control type="group">
+                    <control type="image">
+                        <height>690</height>
+                        <width>444</width>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>607</height>
+                        <width>422</width>
+                        <texture background="true">$INFO[ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
+                    </control>
+                    <control type="label">
+                        <posx>22</posx>
+                        <posy>618</posy>
+                        <height>68</height>
+                        <width>408</width>
+                        <align>left</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-Button</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>422</posx>
+                        <posy>618</posy>
+                        <height>68</height>
+                        <width>408</width>
+                        <align>right</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Property(ShortTime)]</label>
+                    </control>
+                </control>
+
+            </control>
+        </itemlayout>
+        <focusedlayout width="455" height="690">
+            <control type="group">
+                <control type="group">
+                    <control type="image">
+                        <height>690</height>
+                        <width>444</width>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>
+                        <height>607</height>
+                        <width>422</width>
+                        <texture background="true">$INFO[ListItem.Thumb]</texture>
+                        <aspectratio aligny="top">scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
+                    </control>
+                    <control type="label">
+                        <posx>22</posx>
+                        <posy>618</posy>
+                        <height>68</height>
+                        <width>408</width>
+                        <align>left</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-Button</font>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <posx>422</posx>
+                        <posy>618</posy>
+                        <height>68</height>
+                        <width>408</width>
+                        <align>right</align>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Property(ShortTime)]</label>
+                    </control>
+                </control>
+
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="NextAiredWindow">
+        <control type="group">
+            <posx>233</posx>
+            <posy>70</posy>
+            
+            <control type="grouplist" id="9500">
+                <posx>18</posx>
+                <posy>210</posy>
+                <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                <height>700</height>
+                <itemgap>10</itemgap>
+                <orientation>vertical</orientation>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[11]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.1.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(200)</visible>
+                    
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[11]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.1.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(200)</visible>
+                    
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[12]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.2.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(201)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[12]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.2.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(201)</visible>
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[13]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.3.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(202)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[13]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.3.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(202)</visible>
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[14]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.4.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(203)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[14]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.4.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(203)</visible>
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[15]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.5.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(204)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[15]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.5.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(204)</visible>
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[16]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.6.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(205)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[16]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.6.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(205)</visible>
+                </control>
+                
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[17]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.7.Date)]</label2>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <visible>!Control.HasFocus(206)</visible>
+                </control>
+                <control type="button">
+                    <height>90</height>
+                    <width>494</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label>$LOCALIZE[17]</label>
+                    <label2>$INFO[Window(home).Property(NextAired.7.Date)]</label2>
+                    <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
+                    <visible>Control.HasFocus(206)</visible>
+                </control>
+                
+                
+                
+            </control>
+            <control type="group">
+                <posx>512</posx>
+                <control type="list" id="8">
+                </control>
+                <control type="fixedlist" id="200">
+                    <onup>206</onup>
+                    <ondown>201</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(200)</visible>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="201">
+                    <ondown>202</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(201)</visible>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="202">
+                    <ondown>203</ondown>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="203">
+                    <ondown>204</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(203)</visible>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="204">
+                    <ondown>205</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(204)</visible>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="205">
+                    <ondown>206</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(205)</visible>
+                    <include>NextAiredList</include>
+                </control>
+                <control type="fixedlist" id="206">
+                    <ondown>200</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(206)</visible>
+                    <include>NextAiredList</include>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

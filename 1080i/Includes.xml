@@ -13,6 +13,7 @@
 	<include file="Includes_Images.xml" />
 	<include file="Includes_Animation.xml" />
 	<include file="Includes_WindowContent.xml" />
+	<include file="Includes_NextAired.xml" />
 	
 	<include file="View_50_List.xml" />
 	<include file="View_51_Poster.xml" />
