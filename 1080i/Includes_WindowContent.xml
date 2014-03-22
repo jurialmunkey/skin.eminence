@@ -199,6 +199,14 @@
                         <aligny>center</aligny>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
+                        <visible>!IsEmpty(Container(9600).ListItem.Year)</visible>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>IsEmpty(Container(9600).ListItem.Year)</visible>
                     </control>
                 </control>
             </control>

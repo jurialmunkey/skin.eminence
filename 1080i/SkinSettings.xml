@@ -66,8 +66,8 @@
                     <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="togglebutton" id="32" description="Home">
-                    <label>31168</label>
+                <control type="togglebutton" id="32" description="Background">
+                    <label>31202</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
@@ -220,19 +220,9 @@
                 
                 
                 
-                <!----------------->
-                <!-- Home Window -->
-                <!----------------->
-                <control type="button" id="201">
-                    <label>31164</label>
-                    <width>1020</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>ActivateWindow(3063)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32) | ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                
+                <!----------------------->
+                <!-- Background Window -->
+                <!----------------------->
                 <control type="radiobutton" id="209">
                     <label>31198</label>
                     <width>1020</width>
@@ -292,9 +282,19 @@
                 
                 
                 
-                <!------------------>
-                <!-- Home Window 2-->
-                <!------------------>
+                <!---------------->
+                <!-- Home Tiles -->
+                <!---------------->
+                
+                <control type="button" id="201">
+                    <label>31164</label>
+                    <width>1020</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>ActivateWindow(3063)</onclick>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 
                 <control type="radiobutton" id="213">

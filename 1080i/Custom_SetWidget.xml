@@ -121,6 +121,26 @@
                             <onclick>Close</onclick>
                         </item>
                         
+                        <item id="15">
+                            <description>Movies Ongoing</description>
+                            <label>20342</label>
+                            <label2>31110</label2>
+                            <icon>special://skin/extras/icons/film.png</icon>
+                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget.type],$LOCALIZE[31110])</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget],plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)])</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="23">
+                            <description>Playlist</description>
+                            <label>31163</label>
+                            <label2>559</label2>
+                            <icon>special://skin/extras/icons/playlist.png</icon>
+                            <onclick>Skin.SetFile($INFO[Window(3065).Property(item),,.bgwidget],.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget.type])</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
                         <item id="2">
                             <description>TV Spotlight</description>
                             <label>20343</label>
@@ -141,17 +161,18 @@
                             <onclick>Close</onclick>
                         </item>
                         
-                        <item id="4">
-                            <description>Playlist</description>
-                            <label>31163</label>
-                            <label2>559</label2>
-                            <icon>special://skin/extras/icons/playlist.png</icon>
-                            <onclick>Skin.SetFile($INFO[Window(3065).Property(item),,.bgwidget],.xsp|.m3u,special://profile/playlists/video/)</onclick>
-                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget.type])</onclick>
+                        <item id="13">
+                            <description>TV Ongoing</description>
+                            <label>20343</label>
+                            <label2>31110</label2>
+                            <icon>special://skin/extras/icons/tv.png</icon>
+                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget.type],$LOCALIZE[31110])</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget],plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)])</onclick>
                             <onclick>Close</onclick>
                         </item>
+                    
                         
-                        <item id="4">
+                        <item id="21">
                             <description>Slideshow</description>
                             <label>31163</label>
                             <label2>108</label2>
@@ -169,7 +190,7 @@
                             <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget])</onclick>
                         </item>
                         
-                        <item id="5">
+                        <item id="25">
                             <description>Label</description>
                             <label>31163</label>
                             <label2>13334</label2>

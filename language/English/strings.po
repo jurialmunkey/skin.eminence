@@ -437,7 +437,7 @@ msgid "Movie Set"
 msgstr ""
 
 msgctxt "#31208"
-msgid "Tiles"
+msgid "Home Tiles"
 msgstr ""
 
 msgctxt "#31209"
