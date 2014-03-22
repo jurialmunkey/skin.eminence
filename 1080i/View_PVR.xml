@@ -335,7 +335,7 @@
                         <width>554</width>
                         <height>67</height>
                         <texture border="12">common/border-inner.png</texture>
-                        <colordiffuse>PosterBorder-NF-NF</colordiffuse>
+                        <colordiffuse>PosterBorder-NF</colordiffuse>
                     </control>   
 
                     <control type="image">
@@ -436,7 +436,7 @@
                         <width>246</width>
                         <height>67</height>
                         <texture border="5">common/border-inner.png</texture>
-                        <colordiffuse>PosterHighlight</colordiffuse>
+                        <colordiffuse>Highlight</colordiffuse>
                     </control>
 
                     <control type="image">
