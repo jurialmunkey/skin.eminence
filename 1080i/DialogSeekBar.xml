@@ -17,7 +17,7 @@
 		<control type="group" description="MusicVis">
 		    <posx>251</posx>
 			<posy>280</posy>
-			<animation effect="slide" start="0" end="0,-32" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
+			<animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
 			<visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-XBMC_Lyrics-main.xml)]</visible>
             <include>Animation.SlideOpen.LeftToRight</include>
             <control type="image">
@@ -90,7 +90,7 @@
                 <posx>251</posx>
                 <posy>280</posy>
                 <visible>VideoPlayer.Content(livetv)</visible>
-                <animation effect="slide" start="0" end="0,-32" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
+                <animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
                 <control type="image">
                     <width>1416</width>
                     <height>690</height>
@@ -456,7 +456,7 @@
 		    <animation effect="fade" start="0" end="100" time="200">Visible</animation>
 		    <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 		    <posy>1080</posy>
-		    <animation effect="slide" start="0" end="0,-64" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
+		    <animation effect="slide" start="0" end="0,-80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
 		    <control type="image">
                 <width>1920</width>
                 <height>364</height>	

@@ -3,6 +3,7 @@
     <defaultcontrol always="true">120</defaultcontrol>
 	<controls>
 		<control type="group">
+		    <posy>-8</posy>
 		    <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
 			

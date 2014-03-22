@@ -4,6 +4,10 @@
     <defaultcontrol always="true">9315</defaultcontrol>
     <onload>ClearProperty(homefocus,home)</onload>
 	<controls>
+	    <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="Background">common/white.png</texture>
+        </control>
         <control type="button" id="9314">
             
             <visible allowhiddenfocus="true">false</visible>

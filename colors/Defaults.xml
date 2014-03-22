@@ -47,6 +47,6 @@
 	<color name="PanelBG">ff181818</color>
 	<color name="RadioFO">ffffffff</color>
 	<color name="PanelFG">ffdddddd</color>
-	<color name="PanelFG-NF">bfdddddd</color>
+	<color name="PanelFG-NF">9fdddddd</color>
 	<color name="Disabled">3fededed</color>
 </colors>
