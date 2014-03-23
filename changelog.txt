@@ -1,5 +1,7 @@
 [B]0.9.28[/B]
 New osd icons
+Playlist in Nav Menu
+Visualisation when on fullscreen in nav menu
 
 [B]0.9.27[/B]
 Roboto font updated to support CJK characters from Droid Sans Fallback

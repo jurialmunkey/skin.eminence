@@ -92,6 +92,14 @@
                     <posy>11</posy>
                     <width>1394</width>
                     <height>668</height>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="visualisation">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <visible>Player.HasAudio</visible>
                 </control>
                 <control type="image">
                     <posx>11</posx>
@@ -515,6 +523,15 @@
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
+                
+                <control type="button" id="9091">
+                    <description>Video Playlist</description>
+                    <include>DefNavMenuButton</include>
+                    <label>559</label>
+                    <onclick>ActivateWindow(VideoPlaylist)</onclick>
+                    <visible>IntegerGreaterThan(Playlist.Length(video),1)</visible>
+                </control>
+                
                 
                 <control type="button" id="9001">
                     <description>Fullscreen</description>

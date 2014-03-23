@@ -14,8 +14,7 @@
                 <width>1434</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
-                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
+                <onright>9000</onright>
                 <onup>56</onup>
                 <ondown>56</ondown>
                 <include>DefOnBack</include>

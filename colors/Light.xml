@@ -9,6 +9,7 @@
 	<color name="PanelFG">ff474747</color>
 	<color name="PanelFG-NF">bf474747</color>
 	<color name="Disabled">3f474747</color>
+	<color name="OSD-NF">bf181818</color>
 	
 	<color name="PosterHighlight">FFFFFFFF</color>
 	<color name="PosterBorder">be888888</color>

@@ -63,6 +63,53 @@
 
 		<include>DefMyNavViews</include>
 		
+		<control type="group">
+            <posx>0</posx>
+            <posy>70</posy>
+            <include>DialogVisibility</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
+            <control type="group">
+                <posx>18</posx>
+                <posy>210</posy>
+                <control type="image">
+                    
+                    <width>1416</width>
+                    <height>690</height>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control> 
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture colordiffuse="Black">common/white.png</texture>
+                </control>
+                <control type="videowindow">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="visualisation">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <visible>Player.HasAudio</visible>
+                </control>
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>1394</width>
+                    <height>668</height>
+                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
+                </control>
+            </control>
+        </control>
+		
 		
 		<control type="group">
             <posx>233</posx>
@@ -290,6 +337,15 @@
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                     <visible>Container.Content(musicvideos)</visible>
+                </control>
+                
+                
+                <control type="button" id="9091">
+                    <description>Music Playlist</description>
+                    <include>DefNavMenuButton</include>
+                    <label>559</label>
+                    <onclick>ActivateWindow(MusicPlaylist)</onclick>
+                    <visible>IntegerGreaterThan(Playlist.Length(music),1)</visible>
                 </control>
                 
                 <control type="button" id="9001">
