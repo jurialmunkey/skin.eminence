@@ -5,21 +5,22 @@
     <zorder>5</zorder>
 	<controls>
 	    <control type="group">
+	        <posy>8</posy>
 	        <animation type="WindowOpen">
                 <effect type="fade" start="0" end="100" time="200"/>
-                <effect type="slide" start="0,64" end="0" time="200"/>
+                <effect type="slide" start="0,48" end="0" time="200"/>
             </animation>
             <animation type="Visible">
                 <effect type="fade" start="0" end="100" time="200"/>
-                <effect type="slide" start="0,64" end="0" time="200"/>
+                <effect type="slide" start="0,48" end="0" time="200"/>
             </animation>
             <animation type="Hidden">
                 <effect type="fade" end="0" start="100" time="200"/>
-                <effect type="slide" end="0,64" start="0" time="200"/>
+                <effect type="slide" end="0,48" start="0" time="200"/>
             </animation>
             <animation type="WindowClose">
                 <effect type="fade" end="0" start="100" time="200"/>
-                <effect type="slide" end="0,64" start="0" time="200"/>
+                <effect type="slide" end="0,48" start="0" time="200"/>
             </animation>
             <include>MusicOSDLeft</include>
     
@@ -27,7 +28,7 @@
             
                 <posy>1008</posy>
                 <width>1920</width>
-                <height>64</height>
+                <height>48</height>
                 <itemgap>16</itemgap>
                 <orientation>horizontal</orientation>
                 <align>center</align>
@@ -38,8 +39,8 @@
 
                 <control type="button" id="12">
                     <description>Skip Back</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>210</label>
                     <font>-</font>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/next.png</texturefocus>
@@ -49,8 +50,8 @@
 
                 <control type="button" id="13">
                     <description>Rewind</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>31036</label>
                     <font>-</font>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/ff.png</texturefocus>
@@ -60,8 +61,8 @@
 
                 <control type="togglebutton" id="14">
                     <description>Play/Pause</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>31037</label>
                     <altlabel>208</altlabel>
                     <font>-</font>
@@ -75,8 +76,8 @@
 
                 <control type="button" id="15">
                     <description>Stop</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>31038</label>
                     <font>-</font>
                     <texturefocus colordiffuse="Highlight">osd/stop.png</texturefocus>
@@ -86,8 +87,8 @@
 
                 <control type="button" id="16">
                     <description>Fast Forward</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>31039</label>
                     <font>-</font>
                     <texturefocus colordiffuse="Highlight">osd/ff.png</texturefocus>
@@ -97,8 +98,8 @@
 
                 <control type="button" id="17">
                     <description>Next</description>
-                    <width>64</width>
-                    <height>64</height>
+                    <width>48</width>
+                    <height>48</height>
                     <label>209</label>
                     <font>-</font>
                     <texturefocus colordiffuse="Highlight">osd/next.png</texturefocus>

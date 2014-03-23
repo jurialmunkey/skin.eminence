@@ -24,8 +24,8 @@
 	
 	<include name="VideoOSDFullscreen">
 	    <control type="button" id="4">
-	        <width>64</width>
-            <height>64</height>
+	        <width>48</width>
+            <height>48</height>
             <font>-</font>
             <include>DefOSDUpDown</include>
             <texturefocus colordiffuse="Highlight">osd/fullscreen.png</texturefocus>
@@ -42,8 +42,8 @@
 	    <control type="button" id="4">
             <description>DVD Menu</description>
             <label>31143</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/dvdmenu.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/dvdmenu.png</texturenofocus>
@@ -57,8 +57,8 @@
         <control type="button" id="5">
             <description>Info</description>
             <label>31119</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
@@ -71,8 +71,8 @@
         <control type="button" id="6">
             <description>Bookmarks</description>
             <label>298</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/bookmarks.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/bookmarks.png</texturenofocus>
@@ -86,8 +86,8 @@
 	    <control type="button" id="4">
             <description>Channels</description>
             <label>19019</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/tvchannels.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/tvchannels.png</texturenofocus>
@@ -99,8 +99,8 @@
         <control type="button" id="5">
             <description>EPG</description>
             <label>19032</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/epg.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/epg.png</texturenofocus>
@@ -114,8 +114,8 @@
         <control type="button" id="6">
             <description>Info</description>
             <label>31119</label>
-            <width>64</width>
-            <height>64</height>
+            <width>48</width>
+            <height>48</height>
             <font>-</font>
             <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
             <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
@@ -131,7 +131,7 @@
             <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
             <posx>728r</posx>
             <posy>1008</posy>
-            <height>64</height>
+            <height>48</height>
             <width>696</width>
             <itemgap>16</itemgap>
             <orientation>horizontal</orientation>
@@ -144,8 +144,8 @@
             <control type="button" id="4">
                 <description>Info</description>
                 <label>31119</label>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
@@ -155,8 +155,8 @@
             
             <control type="button" id="5">
                 <description>Viz</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/viz.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/viz.png</texturenofocus>
@@ -170,8 +170,8 @@
 
             <control type="togglebutton" id="6">
                 <description>Lyrics</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/subs.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs.png</texturenofocus>
@@ -190,7 +190,7 @@
             <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
             <posx>32</posx>
             <posy>1008</posy>
-            <height>64</height>
+            <height>48</height>
             <itemgap>16</itemgap>
             <orientation>horizontal</orientation>
             <align>left</align>
@@ -200,40 +200,40 @@
             <ondown>-</ondown>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-one.png</texture>
                 <visible>!Control.HasFocus(1)</visible>
                 <visible>Playlist.IsRepeatOne</visible>
             </control>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="Highlight" flipx="false">osd/repeat-one.png</texture>
                 <visible>Control.HasFocus(1)</visible>
                 <visible>Playlist.IsRepeatOne</visible>
             </control>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-all.png</texture>
                 <visible>!Control.HasFocus(1)</visible>
                 <visible>Playlist.IsRepeat</visible>
             </control>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="Highlight" flipx="false">osd/repeat-all.png</texture>
                 <visible>Control.HasFocus(1)</visible>
                 <visible>Playlist.IsRepeat</visible>
             </control>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-off.png</texture>
                 <visible>!Control.HasFocus(1)</visible>
                 <visible>!Playlist.IsRepeat</visible>
@@ -241,8 +241,8 @@
             </control>
             <control type="image">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <texture colordiffuse="Highlight" flipx="false">osd/repeat-off.png</texture>
                 <visible>Control.HasFocus(1)</visible>
                 <visible>!Playlist.IsRepeat</visible>
@@ -253,7 +253,7 @@
             <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
             <posx>32</posx>
             <posy>1008</posy>
-            <height>64</height>
+            <height>48</height>
             <itemgap>16</itemgap>
             <orientation>horizontal</orientation>
             <align>left</align>
@@ -264,8 +264,8 @@
             
             <control type="button" id="1">
                 <description>Audio Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">-</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">-</texturenofocus>
@@ -275,8 +275,8 @@
             </control>
 
             <control type="togglebutton" id="2">
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/shuffle-on.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/shuffle-on.png</texturenofocus>
@@ -290,8 +290,8 @@
             
             <control type="button" id="3">
                 <description>Playlist </description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/playlist.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/playlist.png</texturenofocus>
@@ -309,7 +309,7 @@
             <visible>Window.IsVisible(fullscreenvideo)</visible>
             <posx>32</posx>
             <posy>1008</posy>
-            <height>64</height>
+            <height>48</height>
             <itemgap>16</itemgap>
             <orientation>horizontal</orientation>
             <align>left</align>
@@ -321,8 +321,8 @@
             <control type="button" id="9001">
                 <description>Subs Download</description>
                 <label>33003</label>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/subs-download.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs-download.png</texturenofocus>
@@ -333,8 +333,8 @@
 
             <control type="togglebutton" id="1">
                 <description>Subs</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/subs.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs.png</texturenofocus>
@@ -350,8 +350,8 @@
 
             <control type="button" id="2">
                 <description>Audio</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/audio.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/audio.png</texturenofocus>
@@ -363,8 +363,8 @@
 
             <control type="button" id="3">
                 <description>Video Settings</description>
-                <width>64</width>
-                <height>64</height>
+                <width>48</width>
+                <height>48</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/video.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/video.png</texturenofocus>
