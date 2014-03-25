@@ -9,6 +9,7 @@
 	<include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
 	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onload>    
 	<onload>ClearProperty(focushub,home)</onload>
+	<onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
         
@@ -385,6 +386,7 @@
         </control>
 		
         <include>GlobalTopBar</include>
+        
         
         
         

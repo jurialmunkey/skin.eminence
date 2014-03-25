@@ -180,6 +180,7 @@
             <include>View_55_Banner</include>            
             <include>View_56_BigList</include>            
 		</control>
+		<include>NextAiredRSS</include>
 
 	</include>
 	

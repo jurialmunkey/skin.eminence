@@ -1,3 +1,7 @@
+[B]0.9.29[/B]
+Next Aired info for individual shows in RSS.
+Unwatched episode count on right of rss
+
 [B]0.9.28[/B]
 New osd icons
 Playlist in Nav Menu
