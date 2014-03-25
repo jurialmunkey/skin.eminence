@@ -355,7 +355,7 @@
                 <control type="label">
                     <posx>485</posx>
                     <posy>602</posy>
-                    <width>749</width>
+                    <width>899</width>
                     <align>left</align>
                     <textcolor>TopBarIcon</textcolor>
                     <font>Font-ListInfo</font>

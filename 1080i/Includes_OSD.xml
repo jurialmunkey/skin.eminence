@@ -42,11 +42,6 @@
 	    <control type="button" id="4">
             <description>DVD Menu</description>
             <label>31143</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/dvdmenu.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/dvdmenu.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick>PlayerControl(ShowVideoMenu)</onclick>
@@ -57,11 +52,6 @@
         <control type="button" id="5">
             <description>Info</description>
             <label>31119</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
@@ -71,11 +61,6 @@
         <control type="button" id="6">
             <description>Bookmarks</description>
             <label>298</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/bookmarks.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/bookmarks.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick>ActivateWindow(125)</onclick>
@@ -86,11 +71,6 @@
 	    <control type="button" id="4">
             <description>Channels</description>
             <label>19019</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/tvchannels.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/tvchannels.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick>ActivateWindowAndFocus(mypvr,32,0,11,0)</onclick>
@@ -99,11 +79,6 @@
         <control type="button" id="5">
             <description>EPG</description>
             <label>19032</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/epg.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/epg.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick>ActivateWindow(mypvr)</onclick>
@@ -114,11 +89,6 @@
         <control type="button" id="6">
             <description>Info</description>
             <label>31119</label>
-            <width>48</width>
-            <height>48</height>
-            <font>-</font>
-            <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
-            <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
             <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
@@ -133,7 +103,6 @@
             <posy>1008</posy>
             <height>48</height>
             <width>696</width>
-            <itemgap>16</itemgap>
             <orientation>horizontal</orientation>
             <align>right</align>
             <onleft>17</onleft>
@@ -144,22 +113,12 @@
             <control type="button" id="4">
                 <description>Info</description>
                 <label>31119</label>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/info.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/info.png</texturenofocus>
                 <include>DefOSDControls</include>
                 <onclick>Skin.ToggleSetting(Vis.ExtraInfo)</onclick>
             </control>
             
             <control type="button" id="5">
                 <description>Viz</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/viz.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/viz.png</texturenofocus>
                 <include>DefOSDControls</include>
                 <label>5</label>
                 <onclick>ActivateWindow(musicsettings)</onclick>
@@ -168,87 +127,16 @@
 
             
 
-            <control type="togglebutton" id="6">
+            <control type="button" id="6">
                 <description>Lyrics</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/subs.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs.png</texturenofocus>
-                <alttexturefocus colordiffuse="Highlight" flipx="false">osd/subs-off.png</alttexturefocus>
-                <alttexturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs-off.png</alttexturenofocus>
                 <include>DefOSDControls</include>
                 <label>24013</label>
                 <onclick>RunScript(script.cu.lrclyrics)</onclick>
-                <usealttexture>!Window.IsVisible(script-XBMC_Lyrics-main.xml)</usealttexture>
             </control>
         </control>
 	</include>
 	
 	<include name="MusicOSDLeft">
-	    <control type="grouplist">
-            <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
-            <posx>32</posx>
-            <posy>1008</posy>
-            <height>48</height>
-            <itemgap>16</itemgap>
-            <orientation>horizontal</orientation>
-            <align>left</align>
-            <onleft>6</onleft>
-            <onright>12</onright>
-            <onup>-</onup>
-            <ondown>-</ondown>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-one.png</texture>
-                <visible>!Control.HasFocus(1)</visible>
-                <visible>Playlist.IsRepeatOne</visible>
-            </control>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="Highlight" flipx="false">osd/repeat-one.png</texture>
-                <visible>Control.HasFocus(1)</visible>
-                <visible>Playlist.IsRepeatOne</visible>
-            </control>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-all.png</texture>
-                <visible>!Control.HasFocus(1)</visible>
-                <visible>Playlist.IsRepeat</visible>
-            </control>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="Highlight" flipx="false">osd/repeat-all.png</texture>
-                <visible>Control.HasFocus(1)</visible>
-                <visible>Playlist.IsRepeat</visible>
-            </control>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="OSD-NF" flipx="false">osd/repeat-off.png</texture>
-                <visible>!Control.HasFocus(1)</visible>
-                <visible>!Playlist.IsRepeat</visible>
-                <visible>!Playlist.IsRepeatOne</visible>
-            </control>
-            <control type="image">
-                <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <texture colordiffuse="Highlight" flipx="false">osd/repeat-off.png</texture>
-                <visible>Control.HasFocus(1)</visible>
-                <visible>!Playlist.IsRepeat</visible>
-                <visible>!Playlist.IsRepeatOne</visible>
-            </control>
-        </control>
 	    <control type="grouplist" id="100">
             <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
             <posx>32</posx>
@@ -264,37 +152,19 @@
             
             <control type="button" id="1">
                 <description>Audio Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">-</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">-</texturenofocus>
                 <include>DefOSDControls</include>
                 <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
                 <onclick>XBMC.PlayerControl(Repeat)</onclick>
             </control>
 
-            <control type="togglebutton" id="2">
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/shuffle-on.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/shuffle-on.png</texturenofocus>
-                <alttexturefocus colordiffuse="Highlight" flipx="false">osd/shuffle-off.png</alttexturefocus>
-                <alttexturenofocus colordiffuse="OSD-NF" flipx="false">osd/shuffle-off.png</alttexturenofocus>
+            <control type="button" id="2">
                 <include>DefOSDControls</include>
                 <label>$LOCALIZE[191]$INFO[Playlist.Random, : ]</label>
                 <onclick>XBMC.PlayerControl(Random)</onclick>
-                <usealttexture>!Playlist.IsRandom</usealttexture>
             </control>
             
             <control type="button" id="3">
                 <description>Playlist </description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/playlist.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/playlist.png</texturenofocus>
                 <include>DefOSDControls</include>
                 <label>559</label>
                 <onclick>ActivateWindow(MusicPlaylist)</onclick>
@@ -317,6 +187,7 @@
             <onright>12</onright>
             <onup>-</onup>
             <ondown>-</ondown>
+            <usecontrolcoords>true</usecontrolcoords>
             
             <control type="button" id="9001">
                 <description>Subs Download</description>
@@ -332,14 +203,10 @@
             </control>
 
             <control type="togglebutton" id="1">
+                <posx>-48</posx>
                 <description>Subs</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/subs.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs.png</texturenofocus>
-                <alttexturefocus colordiffuse="Highlight" flipx="false">osd/subs-off.png</alttexturefocus>
-                <alttexturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs-off.png</alttexturenofocus>
+                <alttexturefocus>-</alttexturefocus>
+                <alttexturenofocus>-</alttexturenofocus>
                 <label>✓  $LOCALIZE[287]</label>
                 <altlabel>$LOCALIZE[287]</altlabel>
                 <include>DefOSDControls</include>
@@ -350,11 +217,6 @@
 
             <control type="button" id="2">
                 <description>Audio</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/audio.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/audio.png</texturenofocus>
                 <label>292</label>
                 <include>DefOSDControls</include>
                 <onclick>ActivateWindow(124)</onclick>
@@ -363,11 +225,6 @@
 
             <control type="button" id="3">
                 <description>Video Settings</description>
-                <width>48</width>
-                <height>48</height>
-                <font>-</font>
-                <texturefocus colordiffuse="Highlight" flipx="false">osd/video.png</texturefocus>
-                <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/video.png</texturenofocus>
                 <label>291</label>
                 <include>DefOSDControls</include>
                 <onclick>ActivateWindow(123)</onclick>

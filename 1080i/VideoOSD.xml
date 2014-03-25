@@ -145,7 +145,7 @@
                 <posy>1008</posy>
                 <height>48</height>
                 <width>696</width>
-                <itemgap>16</itemgap>
+                <itemgap>0</itemgap>
                 <orientation>horizontal</orientation>
                 <align>right</align>
                 <onleft>17</onleft>
