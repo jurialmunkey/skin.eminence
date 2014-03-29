@@ -323,7 +323,6 @@
         </control>
         <control type="group" description="Main Header">
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <visible>!Window.IsActive(DialogContentSettings.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogProgress.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>

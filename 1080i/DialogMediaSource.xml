@@ -6,8 +6,9 @@
 
 	<controls>
 	    <control type="group">
-		    <posx>253</posx>
+			<posx>253</posx>
 		    <posy>70</posy>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
 		    <include>Animation.SlideOpen.Left</include>
 		    <control type="label" description="Info Label" id="2">
                 <include>DefSideLabelCoords</include>
@@ -19,7 +20,7 @@
 			<include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
-
+            <include>DefSettingsLines</include>
 
             <!-- LEFT LIST -->
             <control type="grouplist" id="9100">
@@ -110,7 +111,7 @@
             
             
             <!-- OK CANCEL DEFAULTS -->
-            <include>DefSettingsLines</include>
+            
             <control type="grouplist" id="9101">
                 <include>DefSettingsOKCancelGroup</include>
 

@@ -6,186 +6,149 @@
 
 	<controls>
 
-
+        <control type="group">
+			<posx>253</posx>
+		    <posy>70</posy>
+		    <visible>!Window.IsVisible(addonsettings)</visible>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
+		    <include>Animation.SlideOpen.Left</include>
+		    <control type="label" description="Info Label" id="20">
+                <include>DefSideLabelCoords</include>
+                <label>20333</label>
+            </control>
+        </control>
+        
 		<control type="group">
 		    <visible>!Window.IsVisible(addonsettings)</visible>
 		    <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <posy>210</posy>
-			
-            <control type="image">
-				<width>1920</width>
-				<height>764</height>
-				<texture border="5" colordiffuse="TopBar">common/white.png</texture>
-            </control>
-            
-			<control type="label" id="20">
-				<description>Header Label</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
-				<include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
-				<label>20333</label>
-			</control>
-
-			<control type="spincontrolex" id="3">
-				<description>Directory Content</description>
-				<posx>265</posx>
-                <posy>120</posy>
-                <width>1438</width>
-				<font>-</font>
-				<label>-</label>
-				<align>right</align>
-				<onup>29</onup>
-				<ondown>4</ondown>
-				<onleft>28</onleft>
-				<onright>28</onright>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-                <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-			</control>
-
-			<control type="label">
-				<description>Directory Contains</description>
-				<posx>295</posx>
-                <posy>120</posy>
-                <width>1438</width>
-				<label>20344</label>
-                <textcolor>TopBarIcon</textcolor>
-			</control>
-
-			<control type="label">
-				<description>Content Picker label</description>
-				<posx>1570</posx>
+            <posy>160</posy>
+            <include>DefSettingsLines</include>
+            <!-- LEFT LIST -->
+            <control type="label">
+				<posx>290</posx>
 				<posy>120</posy>
-				<width>458</width>
-				<align>right</align>
+				<width>325</width>
 				<label>$INFO[Control.GetLabel(3)]</label>
-                <textcolor>TopBarIcon</textcolor>
+				<include>Animation.SlideOpen.Left</include>
 			</control>
+            <control type="grouplist" id="9100">
+                <height>552</height>
+                <include>DefSettingsLeftGroup</include>
+                <onright>5</onright>
+                <onleft>9101</onleft>
+                <control type="group" id="3000">
+                   <height>135</height>
+                   <onright>5</onright>
+                   <control type="spincontrolex" id="3">
+                        <textoffsetx>30</textoffsetx>
+                        <font>-</font>
+                        <onright>5</onright>
+                        <ondown>4</ondown>
+			            <description>Directory Content</description>
+			            <include>DefSettingsCategoryButton</include>
+		            </control>
+		            <control type="label">
+		                <font>-</font>
+			            <include>DefSettingsCategoryButton</include>
+		            </control>
+			    </control>
+			    
+			    <control type="list" id="4">
+			        <height>414</height>
+			        <onup>3</onup>
+			        <onright>5</onright>
+			        <onleft>9101</onleft>
+				    <include>DefSettingsLeftGroup</include>
+				    <itemlayout height="69">
 
-			<control type="list" id="4">
-				<posx>265</posx>
-                <posy>189</posy>
-                <width>1438</width>
-				<height>278</height>
-				<onup>3</onup>
-				<onleft>5</onleft>
-				<onright>3</onright>
-				<ondown>5</ondown>
-				<itemlayout height="69">
+					    <control type="label">
+						    <posx>30</posx>
+						    <width>325</width>
+						    <info>ListItem.Label</info>
+						    <selectedcolor>Highlight-NF</selectedcolor>
+					    </control>
 
-					<control type="label">
-						<posx>60</posx>
-						<width>570</width>
-						<info>ListItem.Label</info>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
-					</control>
+				    </itemlayout>
 
-				</itemlayout>
+				    <focusedlayout height="69">
+				        <control type="image">
+				            <include>DefSettingsCategoryButton</include>
+                            <visible>Control.HasFocus(4)</visible>
+				            <texture border="12" colordiffuse="PosterBorder">common/border-inner.png</texture>
+				        </control>
 
-				<focusedlayout height="69">
+					    <control type="label">
+					        <posx>30</posx>
+				            <width>325</width>
+						    <info>ListItem.Label</info>
+						    <selectedcolor>Highlight</selectedcolor>
+						    <textcolor>Selected</textcolor>
+						    <visible>Control.HasFocus(4)</visible>
+					    </control>
+                        <control type="label">
+						    <posx>30</posx>
+						    <width>325</width>
+						    <info>ListItem.Label</info>
+						    <selectedcolor>Highlight-NF</selectedcolor>
+						    <visible>!Control.HasFocus(4)</visible>
+					    </control>
+				    </focusedlayout>
 
-					<control type="label">
-						<posx>60</posx>
-						<width>570</width>
-						<info>ListItem.Label</info>
-						<selectedcolor>Highlight</selectedcolor>
-						<textcolor>Highlight</textcolor>
-						<visible>Control.HasFocus(4)</visible>
-					</control>
-                    <control type="label">
-						<posx>60</posx>
-						<width>570</width>
-						<info>ListItem.Label</info>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
-						<visible>!Control.HasFocus(4)</visible>
-					</control>
-				</focusedlayout>
+			    </control>
+            </control>
+			
 
-			</control>
+
+			
 
 			<control type="grouplist" id="5">
+			
+			    <ondown>9101</ondown>
+			    <onleft>3</onleft>
 				<description>Control Area</description>
-                <posx>265</posx>
-                <posy>465</posy>
-                <width>1438</width>
-                <height>687</height>
-                <itemgap>3</itemgap>
-				<onup>4</onup>
-				<ondown>4</ondown>
-				<onleft>4</onleft>
-				<onright>6</onright>
-				<orientation>vertical</orientation>
+                <include>DefSettingsRightGroup</include>
 			</control>
 
 			<control type="button" id="7">
 				<description>default</description>
-				<align>left</align>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
+				<radioposx>950</radioposx>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>radioButton</description>
-				<align>left</align>
-				<radioposx>1314</radioposx>
-				<texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <textcolor>TopBarIcon</textcolor>
-                <focusedcolor>Highlight</focusedcolor>
-                <disabledcolor>TopBarDisabled</disabledcolor>
-				<textureradioonfocus colordiffuse="Highlight">buttons/radio-on.png</textureradioonfocus>
-                <textureradioonnofocus colordiffuse="TopBarIcon">buttons/radio-on.png</textureradioonnofocus>
-                <textureradioofffocus colordiffuse="Highlight">buttons/radio-off.png</textureradioofffocus>
-                <textureradiooffnofocus colordiffuse="TopBarIcon">buttons/radio-off.png</textureradiooffnofocus>
+				<radioposx>950</radioposx>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
 			</control>
-			
-			
-            
-
-		</control>
-		<control type="group">		
-		    <visible>!Window.IsVisible(addonsettings)</visible>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-            <include>DefContextMenuBackground</include>
-            <control type="grouplist">
-                <include>DefContextMenuGroupList</include>
+		
+            <control type="grouplist" id="9101">
+                <onup>5</onup>
+                <include>DefSettingsOKCancelGroup</include>
                 <control type="button" id="28">
                     <description>Ok</description>
                     <label>186</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
 
                 <control type="button" id="29">
                     <description>Cancel</description>
                     <label>222</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
                 
                 <control type="button" id="6">
                     <description>Settings</description>
                     <label>5</label>
-                    <include>DefContextMenuButton</include>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
             </control>
-        </control>
+         </control>
+
 
 	</controls>
 
