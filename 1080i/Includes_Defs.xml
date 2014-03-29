@@ -47,7 +47,8 @@
     
     <include name="DefSettingsOKCancelButton">
         <font>Font-ListInfo-Small</font>
-        <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+        <texturenofocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight" border="5">common/border-inner.png</texturefocus>
         <height>66</height>
         <width>342</width>	
     </include>

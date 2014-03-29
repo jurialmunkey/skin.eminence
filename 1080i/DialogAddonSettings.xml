@@ -103,28 +103,24 @@
                 <orientation>horizontal</orientation>
                 <control type="button" id="10">
                     <label>186</label>
-                    <font>Font-ListInfo-Small</font>
-                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
-                    <height>66</height>
-                    <width>342</width>	
+                    <include>DefSettingsOKCancelButton</include>
+
                 </control>
 
                 <control type="button" id="11">
                     <description>Cancel</description>
                     <label>222</label>
-                    <font>Font-ListInfo-Small</font>
-                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
-                    <height>66</height>
-                    <width>342</width>	
+
+                    <include>DefSettingsOKCancelButton</include>
+	
                 </control>
                 
                 <control type="button" id="12">
                     <description>Defaults Button</description>
                     <label>409</label>
-                    <font>Font-ListInfo-Small</font>
-                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
-                    <height>66</height>
-                    <width>342</width>	
+
+                    <include>DefSettingsOKCancelButton</include>
+
                 </control>
             </control>
 			

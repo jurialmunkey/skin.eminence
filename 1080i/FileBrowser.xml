@@ -44,7 +44,7 @@
 				    <control type="image">
 						<width>352</width>
 						<height>135</height>
-						<texture border="5" colordiffuse="PosterBorder-NF">common/border-inner.png</texture>
+						<texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
 					</control>
 					<control type="image">
 						<width>135</width>
@@ -75,7 +75,7 @@
 				    <control type="image">
 						<width>352</width>
 						<height>135</height>
-						<texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
+						<texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
 					</control>
 					<control type="image">
 						<width>135</width>
