@@ -19,6 +19,8 @@
                 </control>                    
                     
                 <control type="wraplist" id="54">
+                    <visible>!Container.Content(songs)</visible>
+                    <visible>!Container.Content(albums)</visible>
                     <posx>11</posx>
                     <posy>11</posy>
                     <width>1394</width>

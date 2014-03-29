@@ -358,7 +358,16 @@
 
             </control>
         </control>
+        <control type="list" id="9360">
+            <posy>1080</posy>
+            <itemlayout width="972" height="69">
+            </itemlayout>
 
+            <focusedlayout width="972" height="69">
+            </focusedlayout>
+            <content target="music">$VAR[9360Content]</content>
+
+        </control>
 	</controls>
 
 </window>

@@ -143,6 +143,7 @@
     </include>
     <include name="View_52_Wall_NoInfo">
         <control type="panel" id="52">
+            <visible>!Container.Content(songs)</visible>
             <posx>18</posx>
             <posy>201</posy>
             <width>1434</width>
@@ -163,13 +164,14 @@
     </include>
     <include name="View_52_Wall_Info">
         <control type="panel" id="52">
+            <visible>!Container.Content(songs)</visible>
             <posx>18</posx>
             <posy>201</posy>
             <width>956</width>
             <height>708</height>
             <onleft>60</onleft>
-                <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
-                <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
+            <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
+            <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
             <onup>52</onup>
             <ondown>52</ondown>
             <include>DefOnBack</include>
@@ -331,6 +333,7 @@
 	
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
+            
             <include>Animation.ViewChange</include> 
             <include>DefSideLabel</include>           
             <include condition="!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>

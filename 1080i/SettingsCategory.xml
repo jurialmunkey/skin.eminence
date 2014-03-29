@@ -64,7 +64,8 @@
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
 				<include>DefSettingsRightGroup</include>
-				<onright>60</onright>
+				<onright>ClearProperty(movement,settings)</onright>
+                <onright>$VAR[DefSettingsOnRight]</onright>
 				<onleft>3</onleft>
 				<onup>21</onup>
 				<ondown>-</ondown>
@@ -98,12 +99,12 @@
 			<control type="textbox" id="6">
 			    <include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
-			    <posx>295</posx>
-				<posy>700</posy>
-				<width>1416</width>
-				<height>80</height>
-				<align>left</align>
-				<font>Font-ListInfo</font>
+			    <posx>285</posx>
+                <width>1376</width>
+                <posy>685</posy>
+                <height>105</height>
+				<align>justify</align>
+				<font>Font-ListInfo-Small</font>
 				<textcolor>Disabled</textcolor>
 			</control>
 			
@@ -135,7 +136,7 @@
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <align>left</align>
-            <radioposx>942</radioposx>
+            <radioposx>952</radioposx>
             <font>Font-ListInfo</font>
             <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>
@@ -147,22 +148,6 @@
             <font>Font-ListInfo</font>
             <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>
-		
-		<control type="scrollbar" id="60">
-		    <posx>650</posx>
-            <posy>280</posy>
-            <height>549</height>
-            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>3</onleft>
-            <onright>ClearProperty(movement,settings)</onright>
-				<onright>$VAR[DefSettingsOnRight]</onright>
-            <include>Animation.SlideOpen.Settings</include>
-            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
-            <include>DialogVisibility</include>
-        </control>
-        
-        
-
 	</controls>
 
 </window>

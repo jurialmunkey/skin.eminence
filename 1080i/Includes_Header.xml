@@ -111,6 +111,7 @@
             <colordiffuse>TopBarCorner</colordiffuse>
             <visible>![Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)]</visible>
         </control>
+ 
         
         <control type="image">
             <posy>18</posy>
@@ -134,6 +135,8 @@
             <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeOut</include>
             <animation effect="fade" end="90" condition="true">Conditional</animation>
         </control>
+        
+        
 	</include>
 	
 	<include name="HeaderSortLetter">
@@ -320,7 +323,6 @@
         </control>
         <control type="group" description="Main Header">
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <visible>!Window.IsActive(DialogMediaSource.xml)</visible>
             <visible>!Window.IsActive(DialogContentSettings.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogProgress.xml)</visible>

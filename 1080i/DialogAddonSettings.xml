@@ -9,8 +9,12 @@
 		    <posx>253</posx>
 		    <posy>70</posy>
 		    <include>Animation.SlideOpen.Left</include>
-		    <control type="label" id="20" description="Info Label">
+		    <control type="label" description="Info Label">
                 <include>DefSideLabelCoords</include>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label" id="20">
+                <visible>false</visible>
             </control>
         </control>
         
@@ -21,25 +25,31 @@
             <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
 
 
+            <!-- LEFT LIST -->
             <control type="grouplist" id="9">
-			    <height>690</height>
                 <include>DefSettingsLeftGroup</include>
-				<onright>2</onright>
-				<onleft>10</onleft>
-				<onup>10</onup>
-			</control>
-			
+                <onright>2</onright>
+                <onleft>10</onleft>
+                <onup>10</onup>
+            </control>
+            
+            <control type="button" id="13">
+                <description>Default Category Button</description>
+                <include>DefSettingsCategoryButton</include>	
+            </control>
+            
+            
+            <!-- RIGHT LIST -->
 			<control type="grouplist" id="2">
 				<description>Control Area</description>
-				<height>690</height>
 				<pagecontrol>10</pagecontrol>
 				<include>DefSettingsRightGroup</include>
 				<onleft>9</onleft>
 				<onright>10</onright>
-				<onup>10</onup>
+				<onup>-</onup>
+				<ondown>-</ondown>
 			</control>
 
-			
 			<control type="button" id="3">
                 <description>Default Button</description>
                 <align>left</align>
@@ -49,7 +59,7 @@
 
             <control type="radiobutton" id="4">
                 <description>Default Radio Button</description>
-                <radioposx>942</radioposx>
+                <radioposx>950</radioposx>
                 <align>left</align>
                 <font>Font-ListInfo</font>
                 <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
@@ -60,15 +70,6 @@
                 <align>left</align>
                 <font>Font-ListInfo</font>
                 <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-            </control>
-
-            <control type="button" id="13">
-                <description>Default Category Button</description>
-                <align>left</align>
-                <focusedcolor>PanelFG</focusedcolor>
-                <height>66</height>
-                <width>393</width>		
-                
             </control>
 
             <control type="label" id="7">
@@ -88,51 +89,48 @@
                 <font>Font-ListInfo</font>
                 <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
-			
-			
-			
             
             
-
-
-		</control>
-		
-		<control type="scrollbar" id="61">
-		    <posx>650</posx>
-            <posy>280</posy>
-            <height>690</height>
-            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>9</onleft>
-            <onright>2</onright>
-            <include>Animation.SlideOpen.Left</include>
-            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(61)">Conditional</animation>
-        </control>
-        
-		<control type="group">	
-			
-            <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
+            <!-- OK CANCEL DEFAULTS -->
+            <include>DefSettingsLines</include>
             <control type="grouplist">
-                <ondown>2</ondown>	
-                <include>DefContextMenuGroupList</include>
+                <posx>265</posx>
+                <posy>705</posy>
+                <width>1390</width>
+                <align>center</align>
+                <itemgap>32</itemgap>
+                <onup>2</onup>
+                <orientation>horizontal</orientation>
                 <control type="button" id="10">
                     <label>186</label>
-                    <include>DefContextMenuButton</include>
+                    <font>Font-ListInfo-Small</font>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <height>66</height>
+                    <width>342</width>	
                 </control>
 
                 <control type="button" id="11">
                     <description>Cancel</description>
                     <label>222</label>
-                    <include>DefContextMenuButton</include>
+                    <font>Font-ListInfo-Small</font>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <height>66</height>
+                    <width>342</width>	
                 </control>
                 
                 <control type="button" id="12">
                     <description>Defaults Button</description>
                     <label>409</label>
-                    <include>DefContextMenuButton</include>
+                    <font>Font-ListInfo-Small</font>
+                    <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
+                    <height>66</height>
+                    <width>342</width>	
                 </control>
             </control>
-        </control>
+			
+		</control>
+
+        
 	</controls>
 
 </window>

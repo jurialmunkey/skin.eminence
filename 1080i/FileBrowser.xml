@@ -6,253 +6,130 @@
     <onunload>ClearProperty(showimages,home)</onunload>
 	<controls>
 
-
+        <control type="group">
+            <posx>253</posx>
+            <posy>70</posy>
+            <include>Animation.SlideOpen.Left</include>
+            <control type="label" id="311">
+                <include>DefSideLabelCoords</include>
+                <label>20333</label>
+            </control>
+        </control>
 		<control type="group">
 		    <posy>210</posy>
 		    <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-			
-            <control type="image">
-                
-				<width>1920</width>
-				<height>764</height>
-				<texture border="5" colordiffuse="TopBar">common/white.png</texture>
-            </control>
-
-			<control type="label" id="311">
-				<description>Settings</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<label>20333</label>
-				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
-			</control>
+            
+            
 			<control type="label" id="412">
 				<description>Content Picker label</description>
-				<posx>295</posx>
-				<posy>110</posy>
+				<posx>245</posx>
+				<posy>0</posy>
 				<width>1438</width>
 				<align>left</align>
+				<font>Font-ListInfo-Small</font>
                 <textcolor>Disabled</textcolor>
 			</control>
 			
 			<control type="panel" id="450">
-				<posx>295</posx>
-                <posy>189</posy>
-                <width>1200</width>
-				<height>483</height>
+				<posx>257</posx>
+                <posy>70</posy>
+                <width>1420</width>
+				<height>552</height>
 				<onup>450</onup>
 				<onleft>9100</onleft>
 				<onright>9100</onright>
 				<ondown>450</ondown>
-				<itemlayout height="69" width="600">
-                    <control type="image">
-						<width>66</width>
-						<height>66</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
-						<visible>IsEmpty(Window(home).Property(showimages))</visible>
+				<itemlayout height="138" width="355">
+				    <control type="image">
+						<width>352</width>
+						<height>135</height>
+						<texture border="5" colordiffuse="PosterBorder-NF">common/border-inner.png</texture>
 					</control>
 					<control type="image">
-						<width>66</width>
-						<height>66</height>
+						<width>135</width>
+						<height>135</height>
 						<texture>$INFO[Listitem.FileNameAndPath]</texture>
-						<visible>!IsEmpty(Window(home).Property(showimages))</visible>
+						<visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+					</control>
+					<control type="image">
+					    <posx>11</posx>
+					    <posy>11</posy>
+						<width>113</width>
+						<height>113</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+						<visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
 					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
+					    <posx>335</posx>
+						<width>190</width>
+						<height>138</height>
+						<align>right</align>
 						<aligny>center</aligny>
-						<font>Font-ListInfo</font>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
+						<font>Font-ListInfo-Small</font>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
-
 				</itemlayout>
 
-				<focusedlayout height="69" width="600">
-            
-					<control type="image">
-						<width>66</width>
-						<height>66</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
-						<visible>IsEmpty(Window(home).Property(showimages))</visible>
+				<focusedlayout height="138" width="355">
+				    <control type="image">
+						<width>352</width>
+						<height>135</height>
+						<texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
 					</control>
 					<control type="image">
-						<width>66</width>
-						<height>66</height>
+						<width>135</width>
+						<height>135</height>
 						<texture>$INFO[Listitem.FileNameAndPath]</texture>
-						<visible>!IsEmpty(Window(home).Property(showimages))</visible>
+						<visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+					</control>
+					<control type="image">
+					    <posx>11</posx>
+					    <posy>11</posy>
+						<width>113</width>
+						<height>113</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+						<visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
 					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
+					    <posx>335</posx>
+						<width>190</width>
+						<height>138</height>
+						<align>right</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>Highlight</textcolor>
-						<visible>Control.HasFocus(450)</visible>
-					</control>
-					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
-						<font>Font-ListInfo</font>
-						<visible>!Control.HasFocus(450)</visible>
+						<font>Font-ListInfo-Small</font>
+						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
 
 			</control>
-			
-			<control type="panel" id="451">
-				<posx>295</posx>
-                <posy>189</posy>
-                <width>1200</width>
-				<height>483</height>
-				<onup>451</onup>
-				<onleft>9100</onleft>
-				<onright>9100</onright>
-				<ondown>451</ondown>
-				<itemlayout height="69" width="600">
-                    <control type="image">
-						<width>66</width>
-						<height>66</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Thumb]</texture>
-					</control>
-					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<font>Font-ListInfo</font>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
-					</control>
-
-				</itemlayout>
-
-				<focusedlayout height="69" width="600">
-            
-					<control type="image">
-						<width>66</width>
-						<height>66</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Thumb]</texture>
-					</control>
-					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>Highlight</textcolor>
-						
-						<visible>Control.HasFocus(451)</visible>
-					</control>
-					<control type="label">
-						<posx>88</posx>
-						<width>500</width>
-						<height>66</height>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]$INFO[ListItem.Label2,[CR],]</label>
-						<selectedcolor>Highlight-NF</selectedcolor>
-						<textcolor>TopBarIcon</textcolor>
-						<font>Font-ListInfo</font>
-						<visible>!Control.HasFocus(451)</visible>
-					</control>
-				</focusedlayout>
-
-			</control>
-
-			<control type="image">
-				<posx>1550</posx>
-                <posy>189</posy>
-                <width>320</width>
-                <height>320</height>
-				<texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
-				<aspectratio align="right" aligny="top">keep</aspectratio>
-				<visible>IsEmpty(Window(home).Property(showimages))</visible>
-			</control>
-			
-			<control type="image">
-				<posx>1550</posx>
-                <posy>189</posy>
-                <width>320</width>
-                <height>320</height>
-				<texture>$INFO[ListItem.FileNameAndPath]</texture>
-				<aspectratio align="right" aligny="top">keep</aspectratio>
-				<visible>!IsEmpty(Window(home).Property(showimages))</visible>
-			</control>
-
-			
-
-			
 
 		</control>
 		
 		<control type="group">		
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>		
+            <posy>160</posy>
+            <posx>6</posx>		
             <control type="grouplist" id="9100">
-                <posx>250</posx>
-                <posy>29</posy>
-                <width>1670</width>
-                <height>164</height>
-                <itemgap>0</itemgap>
-                <orientation>horizontal</orientation>
+                <onup>450</onup>
+                <include>DefSettingsOKCancelGroup</include>
                 <control type="button" id="413">
                     <description>Ok</description>
-                    <include>DefContextMenuButton</include>
                     <label>186</label>
-                    <onleft>415</onleft>
-                    <onright>414</onright>
-                    <ondown>450</ondown>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
 
                 <control type="button" id="414">
                     <description>Cancel</description>
-                    <include>DefContextMenuButton</include>
                     <label>222</label>
-                    <onleft>413</onleft>
-                    <onright>415</onright>
-                    <ondown>450</ondown>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
 
                 <control type="button" id="415">
                     <description>Create Folder</description>
-                    <include>DefContextMenuButton</include>
                     <label>119</label>
-                    <onleft>414</onleft>
-                    <onright>413</onright>
-                    <ondown>450</ondown>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
             </control>
         </control>
