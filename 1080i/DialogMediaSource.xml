@@ -72,10 +72,11 @@
 				<onleft>9100</onleft>
 				<ondown>9101</ondown>
 				<include>DefSettingsRightGroup</include>
-				<itemlayout height="69" width="600">
+				<itemlayout height="69" width="1200">
 
 					<control type="label">
 						<posx>30</posx>
+						<include>DefSettingsRightGroupWidth</include>
 						<width>500</width>
 						<height>66</height>
 						<aligny>center</aligny>
@@ -86,7 +87,7 @@
 
 				</itemlayout>
 
-				<focusedlayout height="69" width="600">
+				<focusedlayout height="69" width="1200">
 				
 				    <control type="image">
 				        <height>66</height>
@@ -97,6 +98,7 @@
 
 					<control type="label">
 						<posx>30</posx>
+						<include>DefSettingsRightGroupWidth</include>
 						<width>500</width>
 						<height>66</height>
 						<aligny>center</aligny>

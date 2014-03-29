@@ -39,7 +39,7 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>!Container.Content(movies) + !Container.Content(seasons)</visible>
+						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets)</visible>
                     </control>
 					<control type="image">
                         <posx>11</posx>
@@ -50,8 +50,9 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>Container.Content(movies) | Container.Content(seasons)</visible>
+						<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets)</visible>
                     </control>
+					
 					<control type="group">
 						<animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(sets)">Conditional</animation>
 
