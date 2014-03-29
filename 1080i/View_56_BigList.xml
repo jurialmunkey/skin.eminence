@@ -39,26 +39,42 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
+						<visible>!Container.Content(movies) + !Container.Content(seasons)</visible>
                     </control>
-                    <control type="label">
-                        <posx>144</posx>
-                        <posy>15</posy>
-                        <width>1200</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>PanelFG</textcolor>
-                        <label>$VAR[VARLabel]</label>
+					<control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>  
+                        <width>71</width>
+                        <height>107</height>
+                        <texture>$VAR[PosterImage]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
+						<visible>Container.Content(movies) | Container.Content(seasons)</visible>
                     </control>
-                    <control type="label">
-                        <posx>144</posx>
-                        <posy>48</posy>
-                        <width>1200</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>PanelFG</textcolor>
-                        <font>Font-ListInfo-Small</font>
-                        <label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
-                    </control>
+					<control type="group">
+						<animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(sets)">Conditional</animation>
+
+						<control type="label">
+							<posx>144</posx>
+							<posy>15</posy>
+							<width>1200</width>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>PanelFG</textcolor>
+							<label>$VAR[VARLabel]</label>
+						</control>
+						<control type="label">
+							<posx>144</posx>
+							<posy>48</posy>
+							<width>1200</width>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>PanelFG</textcolor>
+							<font>Font-ListInfo-Small</font>
+							<label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
+						</control>
+					</control>	
                     <control type="label">
                         <posx>1372</posx>
                         <height>130</height>
@@ -88,26 +104,41 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
+						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets)</visible>
                     </control>
-                    <control type="label">
-                        <posx>144</posx>
-                        <posy>15</posy>
-                        <width>1200</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <label>$VAR[VARLabel]</label>
+					<control type="image">
+                        <posx>11</posx>
+                        <posy>11</posy>  
+                        <width>71</width>
+                        <height>107</height>
+                        <texture>$VAR[PosterImage]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
+                        <bordersize>1</bordersize>
+						<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets)</visible>
                     </control>
-                    <control type="label">
-                        <posx>144</posx>
-                        <posy>48</posy>
-                        <width>1200</width>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <font>Font-ListInfo-Small</font>
-                        <label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
-                    </control>
+					<control type="group">
+					  <animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(sets)">Conditional</animation>
+						<control type="label">
+							<posx>144</posx>
+							<posy>15</posy>
+							<width>1200</width>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>Selected</textcolor>
+							<label>$VAR[VARLabel]</label>
+						</control>
+						<control type="label">
+							<posx>144</posx>
+							<posy>48</posy>
+							<width>1200</width>
+							<align>left</align>
+							<aligny>center</aligny>
+							<textcolor>Selected</textcolor>
+							<font>Font-ListInfo-Small</font>
+							<label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
+						</control>
+					</control>
                     <control type="label">
                         <posx>1372</posx>
                         <height>130</height>

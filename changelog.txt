@@ -1,3 +1,8 @@
+[B]0.9.30[/B]
+Big List for posters
+New addon, content settings and add source windows
+New file browser window
+
 [B]0.9.29[/B]
 Next Aired info for individual shows in RSS.
 Unwatched episode count on right of rss
