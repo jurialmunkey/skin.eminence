@@ -41,7 +41,7 @@
 	
 	<!-- Main Colors -->
 	<color name="Background">ff222222</color>
-	<color name="Silhouette">4f000000</color>
+	<color name="Silhouette">3f000000</color>
 	<color name="Selected">fff0f0f0</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="PosterBorder-NF">1e888888</color>
