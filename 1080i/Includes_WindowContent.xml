@@ -340,10 +340,10 @@
 		</control>	
 		<control type="image">
 		    <posx>0</posx>
-		    <posy>200r</posy>
+		    <posy>0</posy>
 		    <width>1920</width>
-		    <height>200</height>
-		    <texture border="0,145,0,0">special://skin/extras/border/grass.png</texture>
+		    <height>1080</height>
+		    <texture>special://skin/extras/border/silhouette.png</texture>
 		    <colordiffuse>2f000000</colordiffuse>
 		    <include>Animation.FadeIn</include>
 		    <include>Animation.FadeOut</include>
