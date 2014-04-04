@@ -2,6 +2,7 @@
 <colors>	
 	<!-- Main Colors -->
 	<color name="Background">ffDEDEDE</color>
+	<color name="Silhouette">2f000000</color>
 	<color name="Selected">ff404040</color>
 	<color name="PanelBG">FFededed</color>
 	<color name="DimFanart">E9dddddd</color>

@@ -344,7 +344,7 @@
 		    <width>1920</width>
 		    <height>1080</height>
 		    <texture>special://skin/extras/border/silhouette.png</texture>
-		    <colordiffuse>2f000000</colordiffuse>
+		    <colordiffuse>Silhouette</colordiffuse>
 		    <include>Animation.FadeIn</include>
 		    <include>Animation.FadeOut</include>
 		    <visible>Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml)</visible>
