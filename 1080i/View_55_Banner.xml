@@ -39,23 +39,12 @@
                             <posy>11</posy>
                             <width>678</width>
                             <height>125</height>
-                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
-                            <aspectratio aligny="top" align="center">keep</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
-                            <visible>!IsEmpty(ListItem.Art(banner))</visible>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>
-                            <width>678</width>
-                            <height>125</height>
-                            <texture background="true">$VAR[FanartImage]</texture>
-                            <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <texture background="true">$VAR[BannerImage]</texture>
+                            <aspectratio aligny="top" align="center">scale</aspectratio>
                             <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                             <bordersize>1</bordersize>
                         </control>
+
                         <control type="label">
                             <posx>20</posx>
                             <posy>142</posy>
@@ -157,20 +146,8 @@
                             <posy>11</posy>
                             <width>678</width>
                             <height>125</height>
-                            <texture background="true">$INFO[ListItem.Art(banner)]</texture>
-                            <aspectratio aligny="top" align="center">keep</aspectratio>
-                            <visible>!IsEmpty(ListItem.Art(banner))</visible>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>
-                            <width>678</width>
-                            <height>125</height>
-                            <texture background="true">$VAR[FanartImage]</texture>
-                            <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <visible>IsEmpty(ListItem.Art(banner))</visible>
+                            <texture background="true">$VAR[BannerImage]</texture>
+                            <aspectratio aligny="top" align="center">scale</aspectratio>
                             <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                             <bordersize>1</bordersize>
                         </control>

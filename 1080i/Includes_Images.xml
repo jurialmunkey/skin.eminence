@@ -23,6 +23,11 @@
 	    <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 	    <value>$INFO[ListItem.Icon]</value>
 	</variable>
+	<variable name="BannerImage">
+	    <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+        <value condition="!IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
+	    <value>$VAR[FanartImage]</value>
+	</variable>
 
 	<variable name="SquareImage">
 	    <value condition="stringcompare(ListItem.Label,$LOCALIZE[21452])">DefaultAddSource.png</value>

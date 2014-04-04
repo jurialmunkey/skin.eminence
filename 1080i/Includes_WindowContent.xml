@@ -338,6 +338,18 @@
                 </control>
             </control>
 		</control>	
+		<control type="image">
+		    <posx>0</posx>
+		    <posy>200r</posy>
+		    <width>1920</width>
+		    <height>200</height>
+		    <texture border="0,145,0,0">special://skin/extras/border/grass.png</texture>
+		    <colordiffuse>2f000000</colordiffuse>
+		    <include>Animation.FadeIn</include>
+		    <include>Animation.FadeOut</include>
+		    <visible>Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml)</visible>
+
+		</control>
 	</include>
 	
 </includes>

@@ -1,3 +1,7 @@
+[B]0.9.31[/B]
+Border runner for settings
+Fixed banner scaling and add variable
+
 [B]0.9.30[/B]
 Big List for posters
 New addon, content settings and add source windows
