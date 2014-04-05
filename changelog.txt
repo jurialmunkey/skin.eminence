@@ -1,8 +1,8 @@
 [B]0.9.31[/B]
-Border runner for settings
 Fixed banner scaling and add variable
-ADDED ABILITY TO MOVE TILES
-
+Colour themes Magenta Crimson Lime Light Default Cyan
+Ability to move tile positions
+Silhouette in settings
 
 [B]0.9.30[/B]
 Big List for posters

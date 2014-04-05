@@ -7,7 +7,7 @@
 	<background>0</background>
 	<views>50,51,52,53,54,55,56</views>
 	<include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onload>    
+	<onload>AlarmClock(Move9501,Control.Move(9501,1),00:07,silent,loop)</onload>    
 	<onload>ClearProperty(focushub,home)</onload>
 	<onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
 	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
@@ -345,7 +345,7 @@
                 <control type="wraplist" id="9501">
                     <posx>11</posx>
                     <posy>11</posy>
-                    <onright>AlarmClock(Move9501,Control.Move(9501,1),00:05,silent,loop)</onright>
+                    <onright>AlarmClock(Move9501,Control.Move(9501,1),00:07,silent,loop)</onright>
                     <onright>9500</onright>
                     <width>933</width>
                     <height>537</height>

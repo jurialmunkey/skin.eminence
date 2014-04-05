@@ -601,6 +601,19 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="405">
+                    <label>31216</label>
+                    <width>1030</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    
+                    <onclick>Skin.ToggleSetting(hide.clearartosd)</onclick>
+                    <selected>!Skin.HasSetting(hide.clearartosd)</selected>
+                    <visible>ControlGroup(3).HasFocus(34)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
                 <!------------>
                 <!-- ADDONS -->
                 <!------------>
