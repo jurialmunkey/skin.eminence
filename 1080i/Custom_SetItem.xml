@@ -310,6 +310,16 @@
                             <onclick>ActivateWindow(3062)</onclick>
                         </item>
                         
+                        <item id="60">
+                            <description>Move</description>
+                            <label>31211</label>
+                            <label2>31212</label2>
+                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3064)</onclick>
+                            <onclick>Close</onclick>
+                            <onclick>ActivateWindow(3064)</onclick>
+                        </item>
+                        
                         <item id="19">
                             <description>Remove</description>
                             <label>117</label>

@@ -447,3 +447,23 @@ msgstr ""
 msgctxt "#31210"
 msgid "Show settings silhouette throughout skin"
 msgstr ""
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr ""
+
+msgctxt "#31212"
+msgid "Swap with another tile"
+msgstr ""
+
+msgctxt "#31213"
+msgid "Click on a tile to see the available customisation options. Either select a preset tile option or modify an existing tile's name, colour, icon, path and background widget. You can also swap the position of tiles."
+msgstr ""
+
+msgctxt "#31214"
+msgid "Customise your home menu tiles"
+msgstr ""
+
+msgctxt "#31215"
+msgid "Choose a tile to swap with this one"
+msgstr ""

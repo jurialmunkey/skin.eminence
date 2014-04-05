@@ -454,6 +454,7 @@
 		<!-- Path label -->
 
 		<control type="label">
+		    <width>1920</width>
 			<include>ControlID</include>
 			<label>$INFO[Container.FolderPath]</label>
 			<visible>!Skin.HasSetting(HideDebugInfo)</visible>

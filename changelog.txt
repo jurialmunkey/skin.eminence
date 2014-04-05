@@ -1,6 +1,8 @@
 [B]0.9.31[/B]
 Border runner for settings
 Fixed banner scaling and add variable
+ADDED ABILITY TO MOVE TILES
+
 
 [B]0.9.30[/B]
 Big List for posters
