@@ -1,3 +1,6 @@
+[B]0.9.32[/B]
+Wall view additional info (rating and watched)
+
 [B]0.9.31[/B]
 Fixed banner scaling and add variable
 Colour themes Magenta Crimson Lime Light Default Cyan

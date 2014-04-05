@@ -246,7 +246,7 @@
                 <textcolor>Selected</textcolor>
                 <align>center</align>
                 <font>Font-ListInfo-Small</font>
-                <label>$VAR[ExtraInfo]</label>
+                <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
             </control>
             <control type="image">
                 <posx>11</posx>
@@ -313,7 +313,7 @@
                 <textcolor>Selected</textcolor>
                 <align>center</align>
                 <font>Font-ListInfo-Small</font>
-                <label>$VAR[ExtraInfo]</label>
+                <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
             </control>
             <control type="image">
                 <posx>11</posx>
@@ -365,7 +365,7 @@
                     <width>500</width>
                     <align>right</align>
                     <font>Font-WidgetCategory</font>
-                    <label>$VAR[ExtraInfo]</label>
+                    <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
                     <animation effect="fade" start="100" end="33" condition="true">Conditional</animation>
                     <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]]</visible>
                 </control>
