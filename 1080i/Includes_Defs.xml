@@ -376,10 +376,7 @@
 	<!-- Context Menu -->
 	<!------------------>
 	
-	<variable name="HeaderTileTexture">
-	    <value condition="Window.IsVisible(home) | Window.IsVisible(visualisation) | Window.IsVisible(fullscreenvideo)">home/head-tile.png</value>
-	    <value>home/head-tile-glass.png</value>
-	</variable>
+	
 	<include name="DefContextMenuBackground">
         <control type="group">
             <control type="image">

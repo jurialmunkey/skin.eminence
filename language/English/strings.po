@@ -443,3 +443,7 @@ msgstr ""
 msgctxt "#31209"
 msgid "Override background settings with mixed widget"
 msgstr ""
+
+msgctxt "#31210"
+msgid "Show settings silhouette throughout skin"
+msgstr ""

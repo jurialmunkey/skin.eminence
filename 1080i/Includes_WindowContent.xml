@@ -28,7 +28,7 @@
     </variable>
 
     <variable name="GlobalFanart">
-        <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">-</value>
+        <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">noop</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
@@ -36,7 +36,7 @@
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + !Control.HasFocus(9600)">$INFO[Container(9600).ListItem.Path]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + Control.HasFocus(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
-        <value>-</value>
+        <value>noop</value>
     </variable>
     
 	<include name="GlobalBackground">
@@ -58,7 +58,7 @@
                 <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
                 <visible>Window.IsVisible(home)</visible>
 			</control>
-			<control type="multiimage">
+			<control type="multiimage" id="9238">
 				<include>Dimensions_Fullscreen</include>
 				<include>Animation.FadeIn</include>
 				<include>Animation.FadeOut</include>
@@ -131,6 +131,19 @@
                 <animation effect="fade" start="100" end="50" condition="![Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + Skin.HasSetting(fanart.showmore)">Conditional</animation>
                 <animation effect="fade" start="100" end="92" condition="[Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]]">Conditional</animation>
                 <visible>!Window.IsVisible(home)</visible>
+		    </control>
+		    <control type="image">
+		        <posx>0</posx>
+		        <posy>0</posy>
+		        <width>1920</width>
+		        <height>1080</height>
+		        <texture>special://skin/extras/border/silhouette.png</texture>
+		        <colordiffuse>Silhouette</colordiffuse>
+		        <include>Animation.FadeIn</include>
+		        <include>Animation.FadeOut</include>
+		        <visible>!Window.IsVisible(home)</visible>
+		        <visible>IsEmpty(Control.GetLabel(9238))</visible>
+		        <visible>Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml) | Skin.HasSetting(show.silhouette)</visible>
 		    </control>
 			<control type="group">		
 			    <visible>Window.IsVisible(home)</visible>
@@ -338,19 +351,7 @@
                 </control>
             </control>
 		</control>	
-		<control type="image">
-		    <posx>0</posx>
-		    <posy>0</posy>
-		    <width>1920</width>
-		    <height>1080</height>
-		    <texture>special://skin/extras/border/silhouette.png</texture>
-		    <colordiffuse>Silhouette</colordiffuse>
-		    <include>Animation.FadeIn</include>
-		    <include>Animation.FadeOut</include>
-		    <visible>!Window.IsVisible(home)</visible>
-		    <visible>Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml)</visible>
-
-		</control>
+		
 	</include>
 	
 </includes>
