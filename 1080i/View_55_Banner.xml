@@ -40,7 +40,7 @@
                             <width>678</width>
                             <height>125</height>
                             <texture background="true">$VAR[BannerImage]</texture>
-                            <aspectratio aligny="top" align="center">scale</aspectratio>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
                             <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                             <bordersize>1</bordersize>
                         </control>
@@ -147,7 +147,7 @@
                             <width>678</width>
                             <height>125</height>
                             <texture background="true">$VAR[BannerImage]</texture>
-                            <aspectratio aligny="top" align="center">scale</aspectratio>
+                            <aspectratio aligny="center" align="center">scale</aspectratio>
                             <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                             <bordersize>1</bordersize>
                         </control>
