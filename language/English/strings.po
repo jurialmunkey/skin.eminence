@@ -471,3 +471,7 @@ msgstr ""
 msgctxt "#31216"
 msgid "Show clearart/logo with osd"
 msgstr ""
+
+msgctxt "#31217"
+msgid "Show power button"
+msgstr ""

@@ -230,7 +230,7 @@
                         <item id="13">
                             <description>Custom Fav</description>
                             <label>31163</label>
-                            <label2>Favourites</label2>
+                            <label2>1036</label2>
                             <icon>special://skin/extras/icons/configure.png</icon>
                             <onclick>RunScript(script.favourites,property=$INFO[Window(3061).Property(item)])</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>

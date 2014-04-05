@@ -327,6 +327,18 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="215">
+                    <label>31217</label>
+                    <width>1030</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
+                    <selected>Skin.HasSetting(home.314.enabled)</selected>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
                 <control type="radiobutton" id="202">
                     <label>31178</label>
                     <width>1030</width>
@@ -340,6 +352,8 @@
                     <visible>ControlGroup(3).HasFocus(37)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
+                
                
                 <!---------------->
                 <!-- Movies Hub -->
