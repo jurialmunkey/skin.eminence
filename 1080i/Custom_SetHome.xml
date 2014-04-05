@@ -35,7 +35,7 @@
                     <aligny>center</aligny>
                     <font>Font-ListInfo</font>
                     <wrapmultiline>true</wrapmultiline>
-                    <label>[B]$LOCALIZE[31214][/B][CR]$LOCALIZE[31213]]</label>
+                    <label>[B]$LOCALIZE[31214][/B][CR]$LOCALIZE[31213]</label>
                 </control>
             </control>
             <control type="image">

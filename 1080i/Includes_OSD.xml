@@ -192,8 +192,9 @@
             <control type="button" id="9001">
                 <description>Subs Download</description>
                 <label>33003</label>
-                <width>48</width>
-                <height>48</height>
+                <posy>8</posy>
+                <width>32</width>
+                <height>32</height>
                 <font>-</font>
                 <texturefocus colordiffuse="Highlight" flipx="false">osd/subs-download.png</texturefocus>
                 <texturenofocus colordiffuse="OSD-NF" flipx="false">osd/subs-download.png</texturenofocus>
