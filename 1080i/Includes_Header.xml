@@ -107,37 +107,10 @@
             <posx>-88</posx>
             <width>300</width>
             <height>164</height>	
-            <texture align="left" border="2">home/head-tile.png</texture>
-            <colordiffuse>TopBarCorner</colordiffuse>
-            <visible>![Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)]</visible>
+            <texture align="left" border="75">$VAR[HeaderTileTexture]</texture>
+            <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
+            <animation effect="fade" start="100" end="90" condition="false">Conditional</animation>
         </control>
- 
-        
-        <control type="image">
-            <posy>18</posy>
-            <posx>-87</posx>
-            <width>300</width>
-            <height>164</height>	
-            <texture align="left" colordiffuse="TopBarDark">home/head-tile.png</texture>
-            <visible>Window.IsVisible(home)</visible>
-            <visible>!Window.IsVisible(favourites)</visible>
-            <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.Previous(VideoFullScreen.xml) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeIn</include>
-            <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeOut</include>
-        </control>
-        
-        <control type="image">
-            <posy>18</posy>
-            <posx>-87</posx>
-            <width>300</width>
-            <height>164</height>	
-            <texture align="left" colordiffuse="TopBarDark">home/head-tile.png</texture>
-            <visible>Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)</visible>
-            <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.Previous(VideoFullScreen.xml) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeIn</include>
-            <include condition="!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation) + !Window.IsVisible(DialogButtonMenu.xml)">Animation.FadeOut</include>
-            <animation effect="fade" end="90" condition="true">Conditional</animation>
-        </control>
-        
-        
 	</include>
 	
 	<include name="HeaderSortLetter">

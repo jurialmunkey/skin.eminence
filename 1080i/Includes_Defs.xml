@@ -376,22 +376,18 @@
 	<!-- Context Menu -->
 	<!------------------>
 	
+	<variable name="HeaderTileTexture">
+	    <value condition="Window.IsVisible(home) | Window.IsVisible(visualisation) | Window.IsVisible(fullscreenvideo)">home/head-tile.png</value>
+	    <value>home/head-tile-glass.png</value>
+	</variable>
 	<include name="DefContextMenuBackground">
         <control type="group">
             <control type="image">
                 <posy>18</posy>
                 <posx>210</posx>
-                <width>300</width>
-                <height>164</height>	
-                <texture flipx="true" flipy="true">home/head-tile.png</texture>
-                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>510</posx>
                 <width>1800</width>
                 <height>164</height>	
-                <texture border="2">common/white.png</texture>
+                <texture flipx="true" flipy="true" border="75">$VAR[HeaderTileTexture]</texture>
                 <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             </control>
         </control>
