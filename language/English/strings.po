@@ -341,7 +341,7 @@ msgid "Mix of in-progress tv-shows and random movies"
 msgstr ""
 
 msgctxt "#31184"
-msgid "Quick Nav Mode (keep current view when opening home menu)"
+msgid "Quick nav mode (keep current view open when returning home)"
 msgstr ""
 
 msgctxt "#31185"
@@ -413,7 +413,7 @@ msgid "Set Colour"
 msgstr ""
 
 msgctxt "#31202"
-msgid "Background"
+msgid "Background Widgets"
 msgstr ""
 
 msgctxt "#31203"

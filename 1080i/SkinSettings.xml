@@ -68,13 +68,6 @@
                     <usealttexture>ControlGroup(3).HasFocus(31)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="togglebutton" id="32" description="Background">
-                    <label>31202</label>
-                    <align>left</align>
-                    <textcolor>Disabled</textcolor>
-                    <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
-                </control>
                 <control type="togglebutton" id="37" description="HomeTiles">
                     <label>31208</label>
                     <align>left</align>
@@ -82,8 +75,16 @@
                     <usealttexture>ControlGroup(3).HasFocus(37)</usealttexture>
                     <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
                 </control>
-                <control type="togglebutton" id="38" description="Add-ons">
-                    <label>20445</label>
+                <control type="togglebutton" id="32" description="Background">
+                    <label>31202</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
+                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                </control>
+                
+                <control type="togglebutton" id="38" description="Fanart">
+                    <label>$LOCALIZE[20445]</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(38)</usealttexture>
@@ -194,17 +195,7 @@
                 
                 
                 
-                <control type="radiobutton" id="117">
-                    <label>31184</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.autopop)</onclick>
-                    <selected>Skin.HasSetting(home.autopop)</selected>
-                    <visible>ControlGroup(3).HasFocus(31)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 
                 
                 
@@ -673,6 +664,17 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
                     <selected>Skin.HasSetting(NextAired.Update)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="radiobutton" id="605">
+                    <label>31184</label>
+                    <width>1030</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.autopop)</onclick>
+                    <selected>Skin.HasSetting(home.autopop)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>

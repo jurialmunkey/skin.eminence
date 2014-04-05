@@ -7,7 +7,7 @@
 	<controls>
 
         <control type="group">
-            <posx>253</posx>
+            <posx>251</posx>
             <posy>70</posy>
             <include>Animation.SlideOpen.Left</include>
             <control type="label" id="311">
@@ -32,77 +32,116 @@
 			</control>
 			
 			<control type="panel" id="450">
-				<posx>257</posx>
+                <posx>251</posx>
                 <posy>70</posy>
-                <width>1420</width>
-				<height>552</height>
-				<onup>450</onup>
-				<onleft>9100</onleft>
-				<onright>9100</onright>
-				<ondown>450</ondown>
-				<itemlayout height="138" width="355">
-				    <control type="image">
-						<width>352</width>
-						<height>135</height>
-						<texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
-					</control>
-					<control type="image">
-						<width>135</width>
-						<height>135</height>
+                <width>1434</width>
+                <height>560</height>
+                <onleft>9100</onleft>
+                <onright>9100</onright>
+                <onup>53</onup>
+                <ondown>53</ondown>
+                <include>DefOnBack</include>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="539">list</viewtype>
+                <scrolltime tween="quadratic">400</scrolltime>
+                <orientation>vertical</orientation>
+
+                <itemlayout width="476" height="140">
+
+                    <control type="image">
+                        <width>464</width>
+                        <height>130</height>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+						<posx>11</posx>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
 						<texture>$INFO[Listitem.FileNameAndPath]</texture>
 						<visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
 					<control type="image">
 					    <posx>11</posx>
-					    <posy>11</posy>
-						<width>113</width>
-						<height>113</height>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
-					<control type="label">
-					    <posx>335</posx>
-						<width>190</width>
-						<height>138</height>
-						<align>right</align>
-						<aligny>center</aligny>
-						<font>Font-ListInfo-Small</font>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</itemlayout>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>15</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <label>$VAR[VARLabel]</label>
+                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>48</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                    </control>
 
-				<focusedlayout height="138" width="355">
-				    <control type="image">
-						<width>352</width>
-						<height>135</height>
-						<texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
-					</control>
-					<control type="image">
-						<width>135</width>
-						<height>135</height>
+                </itemlayout>
+
+                <focusedlayout width="476" height="140">
+
+                    <control type="image">
+                        <width>464</width>
+                        <height>130</height>
+                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+						<posx>11</posx>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
 						<texture>$INFO[Listitem.FileNameAndPath]</texture>
 						<visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
 					<control type="image">
 					    <posx>11</posx>
-					    <posy>11</posy>
-						<width>113</width>
-						<height>113</height>
+                        <posy>11</posy>  
+                        <width>107</width>
+                        <height>107</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 						<visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
 					</control>
-					<control type="label">
-					    <posx>335</posx>
-						<width>190</width>
-						<height>138</height>
-						<align>right</align>
-						<aligny>center</aligny>
-						<font>Font-ListInfo-Small</font>
-						<label>$INFO[ListItem.Label]</label>
-					</control>
-				</focusedlayout>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>15</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <label>$VAR[VARLabel]</label>
+                        <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>437</posx>
+                        <posy>48</posy>
+                        <width>300</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                    </control>
 
-			</control>
+                </focusedlayout>
+
+            </control>
+            
+			
+			
 
 		</control>
 		

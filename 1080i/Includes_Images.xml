@@ -32,7 +32,7 @@
 	<variable name="SquareImage">
 	    <value condition="stringcompare(ListItem.Label,$LOCALIZE[21452])">DefaultAddSource.png</value>
 	    <value condition="!IsEmpty(ListItem.Thumb) + [Container.Content(episodes) | Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs)]">$INFO[ListItem.Thumb]</value>
-	    <value>$VAR[PosterImage]</value>
+	    <value>$VAR[FanartImage]</value>
 	</variable>
 	
 	<variable name="WidgetFanart">
