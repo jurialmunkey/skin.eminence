@@ -133,6 +133,7 @@
 		    </control>
 		    <control type="image">
 		        <include>Dimensions_Fullscreen</include>
+		        <fadetime>1000</fadetime>
 		        <texture colordiffuse="7f777777" fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
 		        <visible>Skin.HasSetting(purplefade)</visible>
 		        <include condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">Animation.FadeIn</include>
