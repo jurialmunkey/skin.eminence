@@ -19,9 +19,6 @@
 	        <colordiffuse>Silhouette</colordiffuse>
 	        <include>Animation.FadeIn</include>
 	        <include>Animation.FadeOut</include>
-	        <visible>!Window.IsVisible(home)</visible>
-	        <visible>IsEmpty(Control.GetLabel(9238))</visible>
-	        <visible>Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml) | Skin.HasSetting(show.silhouette)</visible>
 	    </control>
         <control type="image">
 			<width>1920</width>
