@@ -4,6 +4,7 @@ Sunset background fade option
 Fix Yes No OK dialog background
 Tweak sunset opacity
 Fix not being able to go to widget hub on down from osd home
+Cleanup of images
 
 [B]0.9.32[/B]
 Wall view additional info (rating and watched)
