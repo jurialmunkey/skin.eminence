@@ -48,4 +48,32 @@
 	    <value condition="Player.Paused">common/bigpause.png</value>
 	</variable>
 	
+	
+	<variable name="SunsetTimerImage">
+	    <value condition="System.Time(00:00,01:00)">special://skin/extras/sunset/01.png</value>
+	    <value condition="System.Time(01:00,02:00)">special://skin/extras/sunset/02.png</value>
+	    <value condition="System.Time(02:00,03:00)">special://skin/extras/sunset/03.png</value>
+	    <value condition="System.Time(03:00,04:00)">special://skin/extras/sunset/04.png</value>
+	    <value condition="System.Time(04:00,05:00)">special://skin/extras/sunset/05.png</value>
+	    <value condition="System.Time(05:00,06:00)">special://skin/extras/sunset/06.png</value>
+	    <value condition="System.Time(06:00,07:00)">special://skin/extras/sunset/07.png</value>
+	    <value condition="System.Time(07:00,08:00)">special://skin/extras/sunset/08.png</value>
+	    <value condition="System.Time(08:00,09:00)">special://skin/extras/sunset/09.png</value>
+	    <value condition="System.Time(09:00,10:00)">special://skin/extras/sunset/10.png</value>
+	    <value condition="System.Time(10:00,11:00)">special://skin/extras/sunset/11.png</value>
+	    <value condition="System.Time(11:00,12:00)">special://skin/extras/sunset/12.png</value>
+	    <value condition="System.Time(12:00,13:00)">special://skin/extras/sunset/13.png</value>
+	    <value condition="System.Time(13:00,14:00)">special://skin/extras/sunset/14.png</value>
+	    <value condition="System.Time(14:00,15:00)">special://skin/extras/sunset/15.png</value>
+	    <value condition="System.Time(15:00,16:00)">special://skin/extras/sunset/16.png</value>
+	    <value condition="System.Time(16:00,17:00)">special://skin/extras/sunset/17.png</value>
+	    <value condition="System.Time(17:00,18:00)">special://skin/extras/sunset/18.png</value>
+	    <value condition="System.Time(18:00,19:00)">special://skin/extras/sunset/19.png</value>
+	    <value condition="System.Time(19:00,20:00)">special://skin/extras/sunset/20.png</value>
+	    <value condition="System.Time(20:00,21:00)">special://skin/extras/sunset/21.png</value>
+	    <value condition="System.Time(21:00,22:00)">special://skin/extras/sunset/22.png</value>
+	    <value condition="System.Time(22:00,23:00)">special://skin/extras/sunset/23.png</value>
+	    <value>special://skin/extras/sunset/24.png</value>
+	</variable>
+	
 </includes>

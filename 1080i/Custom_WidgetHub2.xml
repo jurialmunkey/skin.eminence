@@ -7,7 +7,7 @@
 	<controls>
 	    <control type="image">
             <include>Dimensions_Fullscreen</include>
-            <texture>special://skin/extras/border/sunset.png</texture>
+            <texture fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
             <include>Animation.FadeIn</include>
             <colordiffuse>ffbbbbbb</colordiffuse>
         </control>
