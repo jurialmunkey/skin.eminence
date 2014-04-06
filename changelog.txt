@@ -1,5 +1,6 @@
 [B]0.9.33[/B]
 New down widget hub
+Sunset background fade option
 
 [B]0.9.32[/B]
 Wall view additional info (rating and watched)

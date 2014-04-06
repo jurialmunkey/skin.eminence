@@ -475,3 +475,7 @@ msgstr ""
 msgctxt "#31217"
 msgid "Show power button"
 msgstr ""
+
+msgctxt "#31218"
+msgid "Sunset background fade"
+msgstr ""

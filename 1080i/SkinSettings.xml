@@ -550,6 +550,17 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="825">
+                    <label>31218</label>
+                    <width>1030</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(purplefade)</onclick>
+                    <selected>Skin.HasSetting(purplefade)</selected>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 <!--------->
                 <!-- OSD -->

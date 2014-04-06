@@ -132,6 +132,13 @@
                 <visible>!Window.IsVisible(home)</visible>
 		    </control>
 		    <control type="image">
+		        <include>Dimensions_Fullscreen</include>
+		        <texture colordiffuse="7f777777">home/purplebg.png</texture>
+		        <visible>Skin.HasSetting(purplefade)</visible>
+		        <include condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">Animation.FadeIn</include>
+		        <visible>!Window.IsVisible(home) + !Window.IsVisible(visualisation) + !Window.IsVisible(fullscreenvideo)</visible>
+		    </control>
+		    <control type="image">
 		        <posx>0</posx>
 		        <posy>0</posy>
 		        <width>1920</width>
