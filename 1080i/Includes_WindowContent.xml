@@ -134,7 +134,7 @@
 		    <control type="image">
 		        <include>Dimensions_Fullscreen</include>
 		        <fadetime>1000</fadetime>
-		        <texture colordiffuse="7f777777" fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
+		        <texture colordiffuse="4f777777" fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
 		        <visible>Skin.HasSetting(purplefade)</visible>
 		        <include condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">Animation.FadeIn</include>
 		        <visible>!Window.IsVisible(home) + !Window.IsVisible(visualisation) + !Window.IsVisible(fullscreenvideo)</visible>
@@ -150,7 +150,7 @@
 		        <include>Animation.FadeOut</include>
 		        <visible>!Window.IsVisible(home)</visible>
 		        <visible>IsEmpty(Control.GetLabel(9238))</visible>
-		        <visible>Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml) | Skin.HasSetting(show.silhouette)</visible>
+		        <visible>Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml) | Skin.HasSetting(show.silhouette)</visible>
 		    </control>
 			<control type="group">		
 			    <visible>Window.IsVisible(home)</visible>

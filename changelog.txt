@@ -2,6 +2,7 @@
 New down widget hub
 Sunset background fade option
 Fix Yes No OK dialog background
+Tweak sunset opacity
 
 [B]0.9.32[/B]
 Wall view additional info (rating and watched)
