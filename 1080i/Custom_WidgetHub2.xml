@@ -7,7 +7,7 @@
 	<controls>
 	    <control type="image">
             <include>Dimensions_Fullscreen</include>
-            <texture>home/purplebg.png</texture>
+            <texture>special://skin/extras/border/sunset.png</texture>
             <include>Animation.FadeIn</include>
             <colordiffuse>ffbbbbbb</colordiffuse>
         </control>
