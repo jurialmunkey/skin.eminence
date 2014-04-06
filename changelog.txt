@@ -5,6 +5,7 @@ Update Filebrowser and FileManager to match skin style
 Home context menu top bar
 Fix Dialog Select navigation
 Fix addonsettings and dialogselect visibility
+Switch to using autoscroll for widgets
 
 [B]0.9.31[/B]
 Fixed banner scaling and add variable

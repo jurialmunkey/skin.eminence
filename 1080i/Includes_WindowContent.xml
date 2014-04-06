@@ -82,9 +82,8 @@
                 <include>Dimensions_Fullscreen</include>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
-                <ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+                <autoscroll time="10000">!Control.HasFocus(9501)</autoscroll>
                 <ondown>300</ondown>
-                <onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
                 <onback>300</onback>
                 <orientation>horizontal</orientation>
                 <preloaditems>1</preloaditems>
@@ -103,9 +102,8 @@
                 <include>Dimensions_Fullscreen</include>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
-                <ondown>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</ondown>
+                <autoscroll time="10000">!Control.HasFocus(9600)</autoscroll>
                 <ondown>300</ondown>
-                <onback>AlarmClock(Move9600,Control.Move(9600,1),00:10,silent,loop)</onback>
                 <onback>300</onback>
                 <orientation>horizontal</orientation>
                 <preloaditems>1</preloaditems>
