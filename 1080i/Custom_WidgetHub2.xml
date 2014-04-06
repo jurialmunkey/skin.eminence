@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="window" id="3101">
+	<defaultcontrol always="true">9511</defaultcontrol>
+	<allowoverlay>false</allowoverlay>
+	<onload>SetProperty(widget,movies,3101)</onload>
+	<controls>
+	    <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture>home/purplebg.png</texture>
+            <include>Animation.FadeIn</include>
+        </control>
+        <control type="image">
+	        <posx>0</posx>
+	        <posy>0</posy>
+	        <width>1920</width>
+	        <height>1080</height>
+	        <texture>special://skin/extras/border/silhouette.png</texture>
+	        <colordiffuse>Silhouette</colordiffuse>
+	        <include>Animation.FadeIn</include>
+	        <include>Animation.FadeOut</include>
+	        <visible>!Window.IsVisible(home)</visible>
+	        <visible>IsEmpty(Control.GetLabel(9238))</visible>
+	        <visible>Window.IsVisible(Settings.xml) | Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(SkinSettings.xml) | Window.IsVisible(ProfileSettings.xml) | Window.IsVisible(SettingsProfile.xml) | Skin.HasSetting(show.silhouette)</visible>
+	    </control>
+        <control type="image">
+			<width>1920</width>
+			<height>448</height>
+			<texture colordiffuse="7F000000">common/gradient.png</texture>
+		</control>
+		<control type="image">
+		    <posy>448r</posy>
+			<width>1920</width>
+			<height>448</height>
+			<texture colordiffuse="7F000000" flipy="true">common/gradient.png</texture>
+		</control>
+		<control type="grouplist" description="menu">
+		    <include>Animation.DelayFadeIn</include>
+	        <posy>680</posy>
+	        <orientation>horizontal</orientation>
+	        <align>center</align>
+	        <width>1920</width>
+	        <itemgap>64</itemgap>
+	        <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="7F000000">widget/movie.png</texture>
+			    <visible>!stringcompare(Window(3101).Property(widget),movies)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="3fffffff">widget/movie.png</texture>
+			    <visible>stringcompare(Window(3101).Property(widget),movies)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="7F000000">widget/tv.png</texture>
+			    <visible>!stringcompare(Window(3101).Property(widget),episodes)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="3Fffffff">widget/tv.png</texture>
+			    <visible>stringcompare(Window(3101).Property(widget),episodes)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="7F000000">widget/livetv.png</texture>
+			    <visible>!stringcompare(Window(3101).Property(widget),nextaired)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="3Fffffff">widget/livetv.png</texture>
+			    <visible>stringcompare(Window(3101).Property(widget),nextaired)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="7F000000">widget/trailer.png</texture>
+			    <visible>!stringcompare(Window(3101).Property(widget),trailers)</visible>
+		    </control>
+		    <control type="image">
+			    <width>128</width>
+			    <height>128</height>
+			    <texture colordiffuse="3fffffff">widget/trailer.png</texture>
+			    <visible>stringcompare(Window(3101).Property(widget),trailers)</visible>
+		    </control>
+		</control>
+	    <control type="group">
+	        <posy>240</posy>
+	        <include>Animation.SlideOpen.Up</include>
+	        <control type="image">
+	            <posy>0</posy>
+	            <texture colordiffuse="TopBarDark">common/white.png</texture>
+	            <height>380</height>
+	            <width>1920</width>
+	        </control>
+	       
+	        <control type="wraplist" id="9511">
+	            <posx>-115</posx>
+	            <posy>20</posy>
+	            <width>2120</width>
+	            <height>340</height>
+	            <ondown condition="stringcompare(Window(3101).Property(widget),trailers)">SetProperty(widget,movies,3101)</ondown>
+	            <ondown condition="stringcompare(Window(3101).Property(widget),nextaired)">SetProperty(widget,trailers,3101)</ondown>
+	            <ondown condition="stringcompare(Window(3101).Property(widget),episodes)">SetProperty(widget,nextaired,3101)</ondown>
+	            <ondown condition="stringcompare(Window(3101).Property(widget),movies)">SetProperty(widget,episodes,3101)</ondown>
+	            <focusposition>2</focusposition>
+	            <scrolltime tween="quadratic">400</scrolltime>
+	            <orientation>horizontal</orientation>
+	            <itemlayout width="190" height="340">
+	                <control type="image">
+
+	                    <width>220</width>
+	                    <height>340</height>
+	                    <texture diffuse="home/half-tile.png">$VAR[FanartImage]</texture>
+	                    <aspectratio scalediffuse="false">scale</aspectratio>
+	                </control>
+	            </itemlayout>
+	            <focusedlayout width="1330" height="340">
+	                <control type="image">
+	                    <width>600</width>
+	                    <height>340</height>
+	                    <texture diffuse="home/tile-600x340.png">$VAR[FanartImage]</texture>
+	                    <aspectratio scalediffuse="false">scale</aspectratio>
+	                </control>
+	            </focusedlayout>
+	            <content target="video">$VAR[WidgetHubSelect]</content>
+	        </control>
+	        <control type="group">
+
+	            <posx>820</posx>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>820</width>
+                    <height>340</height>
+                    <texture colordiffuse="TopBarDark" border="100">home/tile-600x340.png</texture>                
+                </control>
+                <control type="grouplist">
+                    
+                    <posx>70</posx>
+                    <posy>40</posy>
+                    <width>670</width>
+                    <orientation>vertical</orientation>
+                    <control type="label">
+                        <label>$VAR[WidgetHubLabel]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <height>35</height>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Label]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <font>Font-WidgetInfoTitle</font>
+                        <height>70</height>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                    <control type="textbox">
+                        <label>$INFO[Container(9511).ListItem.Plot]$INFO[Container(9511).ListItem.Property(Album_Description)]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <height>120</height>
+                        <font>Font-ListInfo</font>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle,,  •  ]$INFO[Container(9511).ListItem.Year]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>!IsEmpty(Container(9511).ListItem.Year)</visible>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>IsEmpty(Container(9511).ListItem.Year)</visible>
+                    </control>
+                </control>
+            </control>
+	    </control>
+	    
+        <include>GlobalTopBar</include>
+		
+	    
+	</controls>
+</window>

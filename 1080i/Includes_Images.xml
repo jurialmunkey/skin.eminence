@@ -18,7 +18,7 @@
 	</variable>
 	<variable name="FanartImage">
 	    <value condition="stringcompare(ListItem.Label,$LOCALIZE[21452])">DefaultAddSource.png</value>
-	    <value condition="!IsEmpty(ListItem.Thumb) + [Container.Content(episodes) | Container.Content(Albums) | Container.Content(Songs)]">$INFO[ListItem.Thumb]</value>
+	    <value condition="!IsEmpty(ListItem.Thumb) + [Container.Content(episodes) | Container.Content(Albums) | Container.Content(Songs) | [Window.IsVisible(3101) + stringcompare(Window(3101).Property(widget),episodes)]]">$INFO[ListItem.Thumb]</value>
 	    <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 	    <value condition="!IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 	    <value>$INFO[ListItem.Icon]</value>

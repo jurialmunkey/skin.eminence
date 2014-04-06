@@ -393,4 +393,18 @@
         <value condition="stringcompare(Skin.String(home.widget),ContentRecentMoviesWidget)">special://skin/extras/playlists/RandomMovies.xsp</value>
         <value condition="stringcompare(Skin.String(home.widget),ContentRandomMoviesWidget)">videodb://recentlyaddedmovies/</value>
     </variable>
+    
+    <variable name="WidgetHubLabel">
+        <value condition="stringcompare(Window(3101).Property(widget),episodes)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),nextaired)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),movies)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),trailers)">$LOCALIZE[31193]</value>
+    </variable>
+    
+    <variable name="WidgetHubSelect">
+        <value condition="stringcompare(Window(3101).Property(widget),nextaired)">library://video/inprogressshows.xml/</value>
+        <value condition="stringcompare(Window(3101).Property(widget),episodes)">videodb://recentlyaddedepisodes/</value>
+        <value condition="stringcompare(Window(3101).Property(widget),trailers)">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</value>
+        <value>videodb://recentlyaddedmovies/</value>
+    </variable>
 </includes>

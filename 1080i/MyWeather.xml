@@ -80,6 +80,7 @@
                 <height>378</height>
                 <font>Font-HugeWeather</font>
                 <align>center</align>
+                <textcolor>PanelFG</textcolor>
                 <aligny>center</aligny>
                 <label> [B]$VAR[WeatherLabel][/B] </label>
                 <visible>IsEmpty(Skin.String(weather.fanart))</visible>

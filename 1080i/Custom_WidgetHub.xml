@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
-<window type="window" id="3101">
+<window type="window" id="3102">
 	<defaultcontrol always="true">9500</defaultcontrol>
 	<allowoverlay>false</allowoverlay>
 	<controls>

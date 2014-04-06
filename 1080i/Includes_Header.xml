@@ -98,12 +98,12 @@
 	</variable>
 	
 	<variable name="HeaderColorBG">
-	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)">TopBarDark</value>
+	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101)">TopBarDark</value>
 	    <value>TopBar</value>
 	</variable>
 	
 	<variable name="HeaderColorFG">
-	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)">TopBarDarkIcon</value>
+	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101)">TopBarDarkIcon</value>
 	    <value>TopBarIcon</value>
 	</variable>
 	
