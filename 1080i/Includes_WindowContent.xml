@@ -82,7 +82,7 @@
                 <include>Dimensions_Fullscreen</include>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
-                <autoscroll time="10000">!Control.HasFocus(9501)</autoscroll>
+                <autoscroll time="10000">!Control.HasFocus(9600)</autoscroll>
                 <ondown>300</ondown>
                 <onback>300</onback>
                 <orientation>horizontal</orientation>
