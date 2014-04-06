@@ -22,7 +22,10 @@
 			<posy>160</posy>
 			<include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
+            <visible>!Window.IsVisible(SliderDialog)</visible>
+            <visible>!Window.IsVisible(FileBrowser)</visible>
+            <visible>!Window.IsVisible(LockSettings.xml)</visible>
+            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 
 
             <!-- LEFT LIST -->

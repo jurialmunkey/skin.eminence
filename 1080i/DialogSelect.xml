@@ -7,7 +7,7 @@
 
 	<controls>
 	    <control type="scrollbar" id="60">
-		    <posx>265</posx>
+		    <posx>243</posx>
             <posy>280</posy>
             <height>690</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
@@ -41,7 +41,7 @@
 			    <include>Animation.SlideOpen.Right</include>            
 				<posx>265</posx>
 				<posy>120</posy>
-				<width>1400</width>
+				<width>1416</width>
 				<height>690</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
@@ -131,8 +131,8 @@
 				<height>690</height>
 				<itemgap>3</itemgap>
 				<orientation>vertical</orientation>
-				<onleft>5</onleft>
-				<onright>60</onright>
+				<onleft>60</onleft>
+				<onright>5</onright>
 				<onup>6</onup>
 				<ondown>6</ondown>
 				<pagecontrol>60</pagecontrol>
@@ -252,18 +252,20 @@
                 
             </control>
             <control type="button" id="5">
-                <posx>210</posx>
+                <posx>251</posx>
 				<posy>51</posy>
-				<width>1020</width>
+				
+				<width>1438</width>
 				<height>66</height>
-				<align>left</align>
+				<align>right</align>
 				<ondown>3</ondown>
 				<onright>3</onright>
 				<onleft>3</onleft>
 				
 				<texturefocus>-</texturefocus>
 				<focusedcolor>Highlight</focusedcolor>
-				<include>Animation.SlideOpen.Left</include>
+				<include>Animation.FadeIn</include>
+				<include>Animation.FadeOut</include>
             </control>
             
 		</control>
