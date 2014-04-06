@@ -10,22 +10,28 @@
 	<controls>
 	    <control type="group">
 	        <posy>8</posy>
+	        
 	        <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
 	        <animation type="WindowOpen" reversible="false">
-	            <effect type="slide" start="0,48" end="0" time="200"/>
+	            <effect type="slide" start="0,64" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" delay="150" time="200"/>
             </animation>
             <animation type="Visible">
                 <effect type="fade" start="0" end="100" time="200"/>
-                <effect type="slide" start="0,48" end="0" time="200"/>
+                <effect type="slide" start="0,64" end="0" time="200"/>
             </animation>
             <animation type="Hidden">
                 <effect type="fade" end="0" start="100" time="200"/>
-                <effect type="slide" end="0,48" start="0" time="200"/>
+                <effect type="slide" end="0,64" start="0" time="200"/>
+            </animation>
+            <animation type="Conditional" condition="!IsEmpty(Window(home).Property(closeosd))">
+                <effect type="fade" end="0" start="100" time="100"/>
+                <effect type="slide" end="0,64" start="0" time="75"/>
+                <effect type="zoom" start="100" end="100" time="300"/>
             </animation>
             <animation type="WindowClose">
                 <effect type="fade" end="0" start="100" time="200"/>
-                <effect type="slide" end="0,48" start="0" time="200"/>
+                <effect type="slide" end="0,64" start="0" time="200"/>
             </animation>
             
             <include condition="!VideoPlayer.Content(MusicVideos)">VideoOSDLeft</include>
