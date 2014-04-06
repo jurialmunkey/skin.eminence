@@ -21,7 +21,7 @@
                 <width>254</width>
                 <height>164</height>	
                 <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
+                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
@@ -30,7 +30,7 @@
                 <width>1800</width>
                 <height>164</height>	
                 <texture>common/white.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
+                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
                 <aspectratio>scale</aspectratio>
             </control>	
             <control type="group">
@@ -43,7 +43,7 @@
                     <align>left</align>
                     <font>Font-Button</font>
                     <align>left</align>
-                    <textcolor>TopBarIcon</textcolor>
+                    <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>	
                 <control type="label" id="2">
                     <posx>1100</posx>
@@ -51,7 +51,7 @@
                     <width>700</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <textcolor>TopBarIcon</textcolor>
+                    <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>
                 <control type="label" id="3">
                     <posx>1100</posx>
@@ -59,7 +59,7 @@
                     <width>700</width>
                     <font>Font-ListInfo</font>
                     <align>left</align>
-                    <textcolor>TopBarIcon</textcolor>
+                    <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>	
                 <control type="label" id="4">
                     <posx>1100</posx>
@@ -67,7 +67,7 @@
                     <width>700</width>
                     <font>Font-ListInfo</font>
                     <align>left</align>
-                    <textcolor>TopBarIcon</textcolor>
+                    <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>					
             </control>
 
@@ -78,7 +78,7 @@
                 <height>142</height>
                 <onright>10</onright>
                 <texturefocus>-</texturefocus>
-                <textcolor>TopBarIcon</textcolor>
+                <textcolor>$VAR[HeaderColorFG]</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
             </control>
         
@@ -89,7 +89,7 @@
                 <height>142</height>
                 <onleft>11</onleft>
                 <texturefocus>-</texturefocus>
-                <textcolor>TopBarIcon</textcolor>
+                <textcolor>$VAR[HeaderColorFG]</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
             </control>
 

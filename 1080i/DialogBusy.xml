@@ -24,7 +24,7 @@
             <aligny>top</aligny>
             <font>Font-Sublabel</font>
             <align>center</align>
-            <textcolor>TopBarIcon</textcolor>
+            <textcolor>$VAR[HeaderColorFG]</textcolor>
             <label>20186</label>
         </control>
 	</controls>
