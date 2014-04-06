@@ -9,6 +9,7 @@
             <include>Dimensions_Fullscreen</include>
             <texture>home/purplebg.png</texture>
             <include>Animation.FadeIn</include>
+            <colordiffuse>ffbbbbbb</colordiffuse>
         </control>
         <control type="image">
 	        <posx>0</posx>
