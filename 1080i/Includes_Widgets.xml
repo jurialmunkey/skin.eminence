@@ -401,10 +401,35 @@
         <value condition="stringcompare(Window(3101).Property(widget),trailers)">$LOCALIZE[31193]</value>
     </variable>
     
-    <variable name="WidgetHubSelect">
-        <value condition="stringcompare(Window(3101).Property(widget),nextaired)">library://video/inprogressshows.xml/</value>
-        <value condition="stringcompare(Window(3101).Property(widget),episodes)">videodb://recentlyaddedepisodes/</value>
-        <value condition="stringcompare(Window(3101).Property(widget),trailers)">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</value>
-        <value>videodb://recentlyaddedmovies/</value>
-    </variable>
+    <include name="WidgetHubListContent">
+        <include>Animation.FadeIn</include>
+        <posx>-115</posx>
+        <posy>20</posy>
+        <width>2120</width>
+        <height>340</height>
+        <ondown condition="stringcompare(Window(3101).Property(widget),trailers)">SetProperty(widget,movies,3101)</ondown>
+        <ondown condition="stringcompare(Window(3101).Property(widget),nextaired)">SetProperty(widget,trailers,3101)</ondown>
+        <ondown condition="stringcompare(Window(3101).Property(widget),episodes)">SetProperty(widget,nextaired,3101)</ondown>
+        <ondown condition="stringcompare(Window(3101).Property(widget),movies)">SetProperty(widget,episodes,3101)</ondown>
+        <focusposition>2</focusposition>
+        <scrolltime tween="quadratic">400</scrolltime>
+        <orientation>horizontal</orientation>
+        <itemlayout width="190" height="340">
+            <control type="image">
+
+                <width>220</width>
+                <height>340</height>
+                <texture diffuse="home/half-tile.png">$VAR[FanartImage]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout width="1330" height="340">
+            <control type="image">
+                <width>600</width>
+                <height>340</height>
+                <texture diffuse="home/tile-600x340.png">$VAR[FanartImage]</texture>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+            </control>
+        </focusedlayout>
+    </include>
 </includes>
