@@ -1,5 +1,7 @@
 [B]0.9.34[/B]
 Insert item script python
+Remember widget hub position
+Fix silhouette showing on now playing vids
 
 [B]0.9.33[/B]
 New down widget hub
