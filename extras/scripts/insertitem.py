@@ -48,8 +48,8 @@ else:
     removetile()
     exit
 
+# Need a special one for 312
 if int(insertpoint) < 313:
-    # Need a special one for 312
     i = 312
     o = 320
     movetile()

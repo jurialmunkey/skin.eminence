@@ -151,6 +151,7 @@
 		        <width>1920</width>
 		        <height>1080</height>
 		        <texture>special://skin/extras/border/silhouette.png</texture>
+                <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
 		        <colordiffuse>Silhouette</colordiffuse>
 		        <include>Animation.FadeIn</include>
 		        <include>Animation.FadeOut</include>

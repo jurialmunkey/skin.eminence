@@ -3,7 +3,7 @@
 <window type="window" id="3101">
 	<defaultcontrol always="true">9511</defaultcontrol>
 	<allowoverlay>false</allowoverlay>
-	<onload>SetProperty(widget,movies,3101)</onload>
+	<onload condition="IsEmpty(Window(3101).Property(widget))">SetProperty(widget,movies,3101)</onload>
 	<controls>
 	    <control type="image">
             <include>Dimensions_Fullscreen</include>
