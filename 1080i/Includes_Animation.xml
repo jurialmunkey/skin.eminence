@@ -95,6 +95,13 @@
 	    <animation effect="slide" start="-1920" end="0" delay="0" time="200">Visible</animation>
 	    <animation effect="slide" end="-1920" start="0" delay="0" time="200">Hidden</animation>
 	</include>
+    
+    <include name="Animation.SlideOpen.Right.Delay">
+	    <animation effect="slide" start="-1920" end="0" delay="350" time="200">WindowOpen</animation>
+	    <animation effect="slide" end="-1920" start="0" delay="0" time="200">WindowClose</animation>
+	    <animation effect="slide" start="-1920" end="0" delay="350" time="200">Visible</animation>
+	    <animation effect="slide" end="-1920" start="0" delay="0" time="200">Hidden</animation>
+	</include>
 	
 	<include name="Animation.SlideOpen.LeftToRight">
 	    <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>

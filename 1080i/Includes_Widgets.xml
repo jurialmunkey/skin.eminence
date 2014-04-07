@@ -407,6 +407,7 @@
         <posy>20</posy>
         <width>2120</width>
         <height>340</height>
+        <onup>Back</onup>
         <ondown condition="stringcompare(Window(3101).Property(widget),trailers)">SetProperty(widget,movies,3101)</ondown>
         <ondown condition="stringcompare(Window(3101).Property(widget),nextaired)">SetProperty(widget,trailers,3101)</ondown>
         <ondown condition="stringcompare(Window(3101).Property(widget),episodes)">SetProperty(widget,nextaired,3101)</ondown>
