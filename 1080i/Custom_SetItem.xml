@@ -324,7 +324,7 @@
                             <description>Insert</description>
                             <label>31219</label>
                             <icon>special://skin/extras/icons/wand.png</icon>
-                            <onclick>RunScript(special://skin/extras/scripts/insertitem.py,$INFO[Window(3061).Property(item)])</onclick>
+                            <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,inserttile,$INFO[Window(3061).Property(item)])</onclick>
                         </item>
                         
                         <item id="19">

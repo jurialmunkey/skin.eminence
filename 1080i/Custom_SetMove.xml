@@ -179,15 +179,7 @@
                     <control type="button" id="9301">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.301.enabled)</visible>
-
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.301.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.301.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.301.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.301.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.301.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.301.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.301.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.301.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.301)</onclick>
                         <onclick>Close</onclick>
                         
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
@@ -212,14 +204,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9302">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.302.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.302.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.302.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.302.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.302.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.302.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.302.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.302.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.302)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
                         <onleft>9301</onleft>
@@ -243,14 +228,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9303">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.303.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.303.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.303.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.303.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.303.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.303.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.303.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.303.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.303)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
                         <onleft>9302</onleft>
@@ -274,14 +252,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9304">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.304.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.304.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.304.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.304.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.304.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.304.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.304.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.304.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.304)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
                         <onleft>9303</onleft>
@@ -305,14 +276,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9305">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.305.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.305.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.305.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.305.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.305.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.305.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.305.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.305.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.305)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
                         <onleft>9304</onleft>
@@ -336,14 +300,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9306">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.306.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.306.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.306.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.306.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.306.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.306.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.306.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.306.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.306)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <onleft>9305</onleft>
@@ -367,14 +324,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9307">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.307.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.307.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.307.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.307.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.307.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.307.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.307.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.307.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.307)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <onleft>9306</onleft>
@@ -398,14 +348,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9308">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.308.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.308.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.308.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.308.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.308.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.308.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.308.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.308.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.308)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
                         <onleft>9307</onleft>
@@ -429,14 +372,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9309">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.309.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.309.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.309.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.309.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.309.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.309.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.309.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.309.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.309)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
                         <onleft>9308</onleft>
@@ -460,14 +396,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9310">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.310.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.310.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.310.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.310.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.310.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.310.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.310.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.310.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.310)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
                         <onleft>9309</onleft>
@@ -491,14 +420,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9311">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.311.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.311.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.311.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.311.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.311.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.311.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.311.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.311.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.311)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
                         <onleft>9310</onleft>
@@ -522,14 +444,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9312">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.312.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.312.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.312.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.312.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.312.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.312.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.312.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.312.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.312)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <onleft>9311</onleft>
@@ -553,14 +468,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9320">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.320.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.320.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.320.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.320.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.320.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.320.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.320.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.320.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.320)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.320.bgcolor)]</colordiffuse>
                         <onleft>9312</onleft>
@@ -585,14 +493,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9321">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.321.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.321.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.321.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.321.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.321.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.321.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.321.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.321.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.321)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.321.bgcolor)]</colordiffuse>
                         <onleft>9320</onleft>
@@ -617,14 +518,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9322">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.322.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.322.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.322.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.322.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.322.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.322.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.322.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.322.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.322)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.322.bgcolor)]</colordiffuse>
                         <onleft>9321</onleft>
@@ -648,14 +542,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9323">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.323.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.323.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.323.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.323.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.323.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.323.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.323.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.323.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.323)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.323.bgcolor)]</colordiffuse>
                         <onleft>9322</onleft>
@@ -679,14 +566,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9324">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.324.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.324.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.324.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.324.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.324.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.324.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.324.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.324.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.324)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.324.bgcolor)]</colordiffuse>
                         <onleft>9323</onleft>
@@ -710,14 +590,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9325">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.325.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.325.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.325.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.325.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.325.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.325.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.325.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.325.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.325)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.325.bgcolor)]</colordiffuse>
                         <onleft>9324</onleft>
@@ -741,14 +614,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9326">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.326.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.326.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.326.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.326.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.326.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.326.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.326.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.326.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.326)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.326.bgcolor)]</colordiffuse>
                         <onleft>9325</onleft>
@@ -772,14 +638,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9327">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.327.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.327.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.327.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.327.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.327.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.327.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.327.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.327.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.327)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.327.bgcolor)]</colordiffuse>
                         <onleft>9326</onleft>
@@ -803,14 +662,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9328">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.328.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.328.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.328.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.328.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.328.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.328.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.328.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.328.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.328)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.328.bgcolor)]</colordiffuse>
                         <onleft>9327</onleft>
@@ -834,14 +686,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9329">
                         <include>Home-Menu-Button</include>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.label],$INFO[Skin.String(home.329.label)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.icon],$INFO[Skin.String(home.329.icon)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.path],$INFO[Skin.String(home.329.path)])</onclick>
-                        <onclick>Skin.SetString($INFO[Window(3064).Property(item),,.bgcolor],$INFO[Skin.String(home.329.bgcolor)])</onclick>
-                        <onclick>Skin.SetString(home.329.label,$INFO[Window(3064).Property(MoveItem.Label)])</onclick>
-                        <onclick>Skin.SetString(home.329.path,$INFO[Window(3064).Property(MoveItem.Path)])</onclick>
-                        <onclick>Skin.SetString(home.329.icon,$INFO[Window(3064).Property(MoveItem.Icon)])</onclick>
-                        <onclick>Skin.SetString(home.329.bgcolor,$INFO[Window(3064).Property(MoveItem.BgColor)])</onclick>
+                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.329)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>
                         <onleft>9328</onleft>

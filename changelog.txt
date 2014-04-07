@@ -2,6 +2,7 @@
 Insert item script python
 Remember widget hub position
 Fix silhouette showing on now playing vids
+Move/Swap items moved out to script
 
 [B]0.9.33[/B]
 New down widget hub
