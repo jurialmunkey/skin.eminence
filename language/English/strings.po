@@ -479,3 +479,7 @@ msgstr ""
 msgctxt "#31218"
 msgid "Sunset background fade"
 msgstr ""
+
+msgctxt "#31219"
+msgid "Insert item"
+msgstr ""

@@ -231,7 +231,7 @@
                             <description>Custom Fav</description>
                             <label>31163</label>
                             <label2>1036</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/favourites.png</icon>
                             <onclick>RunScript(script.favourites,property=$INFO[Window(3061).Property(item)])</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                         </item>
@@ -240,7 +240,7 @@
                             <description>Custom Video Playlist</description>
                             <label>31163</label>
                             <label2>20012</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/playlist.png</icon>
                             <onclick>Skin.SetFile(item.addon,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(Videos,$INFO[Skin.String(item.addon)],return))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
@@ -253,7 +253,7 @@
                             <description>Custom Music Playlist</description>
                             <label>31163</label>
                             <label2>20011</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/playlist.png</icon>
                             <onclick>Skin.SetFile(item.addon,.xsp|.m3u,special://profile/playlists/music/)</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(MusicLibrary,$INFO[Skin.String(item.addon)],return))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
@@ -269,7 +269,7 @@
                             <description>Custom Path</description>
                             <label>31164</label>
                             <label2>748</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/files.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path])</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                         </item>
@@ -278,7 +278,7 @@
                             <description>Custom Label</description>
                             <label>31164</label>
                             <label2>13334</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/keyboard.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
                         </item>
                         
@@ -286,7 +286,7 @@
                             <description>Custom Icon</description>
                             <label>31164</label>
                             <label2>31165</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/rocket2.png</icon>
                             <onclick>SetProperty(showimages,1,home)</onclick>
                             <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
                             
@@ -296,7 +296,7 @@
                         <item id="25">
                             <description>Widget / Background</description>
                             <label>31202</label>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/eye.png</icon>
                             <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3065)</onclick>
                             <onclick>ActivateWindow(3065)</onclick>
                         </item>
@@ -305,7 +305,7 @@
                             <description>Color</description>
                             <label>31164</label>
                             <label2>31201</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/flask2.png</icon>
                             <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3062)</onclick>
                             <onclick>ActivateWindow(3062)</onclick>
                         </item>
@@ -314,10 +314,17 @@
                             <description>Move</description>
                             <label>31211</label>
                             <label2>31212</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/signpost.png</icon>
                             <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3064)</onclick>
                             <onclick>Close</onclick>
                             <onclick>ActivateWindow(3064)</onclick>
+                        </item>
+                        
+                        <item id="61">
+                            <description>Insert</description>
+                            <label>31219</label>
+                            <icon>special://skin/extras/icons/wand.png</icon>
+                            <onclick>RunScript(special://skin/extras/scripts/insertitem.py,$INFO[Window(3061).Property(item)])</onclick>
                         </item>
                         
                         <item id="19">
@@ -328,7 +335,6 @@
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.icon])</onclick>
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.enabled])</onclick>	
                             <onclick>Close</onclick>
-                            					
                         </item>
                         
                         <item id="20">

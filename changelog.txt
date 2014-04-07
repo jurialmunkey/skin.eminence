@@ -1,3 +1,6 @@
+[B]0.9.34[/B]
+Insert item script python
+
 [B]0.9.33[/B]
 New down widget hub
 Sunset background fade option
