@@ -6,6 +6,7 @@ Move/Swap items moved out to script
 Ability to add video favourite as widget
  - some fixes to string strip
  - works for some music library nodes now
+Change video plugin views to use poster aspect based only on content (up to add-ons/plug-ins to set the right content).
 
 [B]0.9.33[/B]
 New down widget hub

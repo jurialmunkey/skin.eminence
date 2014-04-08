@@ -169,6 +169,17 @@
                 </animation>
                 
             </control>
+            <!-- Go Home Button -->
+            <control type="button">
+                <posy>10</posy>
+                <posx>30</posx>
+                <width>128</width>
+                <height>128</height>
+                <texturefocus>noop</texturefocus>
+                <texturenofocus>noop</texturenofocus>
+                <onclick condition="!Window.IsVisible(home) | Window.IsVisible(3101)">ActivateWindow(home)</onclick>
+                <onclick condition="Window.IsVisible(home) + !Window.IsVisible(3101)">ActivateWindow(3101)</onclick>
+            </control>
             <include>HeaderSortLetter</include>
             <control type="label">
                 <posx>0</posx>

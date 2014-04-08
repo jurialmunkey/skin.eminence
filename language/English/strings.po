@@ -485,5 +485,5 @@ msgid "Insert item"
 msgstr ""
 
 msgctxt "#31220"
-msgid "experimental"
+msgid "Experimental"
 msgstr ""
