@@ -3,6 +3,9 @@ Insert item script python
 Remember widget hub position
 Fix silhouette showing on now playing vids
 Move/Swap items moved out to script
+Ability to add video favourite as widget
+ - some fixes to string strip
+ - works for some music library nodes now
 
 [B]0.9.33[/B]
 New down widget hub

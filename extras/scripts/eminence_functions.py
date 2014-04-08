@@ -101,3 +101,18 @@ if sys.argv[1] in ['swapitem']:
     xbmc.executebuiltin("Skin.SetString(home."+str(o)+".bgcolor,"+str(bgcolor)+")")
     xbmc.executebuiltin("Skin.SetString(home."+str(o)+".bgwidget,"+str(bgwidget)+")")
     xbmc.executebuiltin("Skin.SetString(home."+str(o)+".bgwidget.type,"+str(bgwidgettype)+")")
+
+if sys.argv[1] in ['setfavourite']:
+    o = str(sys.argv[2])
+    o = o[-3:]
+    bgwidget = str(sys.argv[3])
+    bgwidgettype = str(sys.argv[4])
+    
+    # Remove ActivateWindow Part
+    bgwidget = bgwidget.replace('ActivateWindow(10025,','')
+    bgwidget = bgwidget.replace('ActivateWindow(10502,','')
+    bgwidget = bgwidget.replace(')','')
+        
+    # Set the strings
+    xbmc.executebuiltin("Skin.SetString(home."+str(o)+".bgwidget,"+str(bgwidget)+")")
+    xbmc.executebuiltin("Skin.SetString(home."+str(o)+".bgwidget.type,"+str(bgwidgettype)+")")

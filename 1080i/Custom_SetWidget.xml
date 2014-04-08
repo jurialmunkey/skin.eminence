@@ -190,6 +190,16 @@
                             <onclick>Skin.SetString($INFO[Window(3065).Property(item),,.bgwidget])</onclick>
                         </item>
                         
+                        <item id="13">
+                            <description>Custom Fav</description>
+                            <label>31163</label>
+                            <label2>$LOCALIZE[1036] ($LOCALIZE[31220])</label2>
+                            <icon>special://skin/extras/icons/favourites.png</icon>
+                            <onclick>Skin.SetString(Widget_Position,$INFO[Window(3065).Property(item)])</onclick>
+                            <onclick>RunScript(script.favourites,property=Widget_Favourite)</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
                         <item id="25">
                             <description>Label</description>
                             <label>31163</label>
