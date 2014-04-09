@@ -18,7 +18,7 @@
 		</control>
 
 		<include>GlobalBackground</include>
-
+        
         <control type="button">
             <posy>600</posy>
             <posx>1770</posx>
