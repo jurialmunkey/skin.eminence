@@ -313,7 +313,7 @@
                     <posy>11</posy>
                     <width>933</width>
                     <height>537</height>
-                    <texture>special://skin/extras/pvrhub/background.jpg</texture>
+                    <texture fallback="special://skin/extras/pvrhub/background.jpg">$INFO[Container(9501).ListItem.Thumb]</texture>
                     <aspectratio>scale</aspectratio>
                     <visible>!Player.HasVideo</visible>
                 </control>
