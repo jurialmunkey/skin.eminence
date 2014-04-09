@@ -306,7 +306,7 @@
                     </itemlayout>
                     <focusedlayout width="933" height="537">
                     </focusedlayout>
-                    <content target="video">pvr://recordings/</content>
+                    <content target="video">pvr://recordings/-1/</content>
                 </control>
                 <control type="image">
                     <posx>11</posx>
@@ -541,6 +541,7 @@
             <onfocus condition="!Control.IsVisible(10)">SetFocus(9310)</onfocus>
             <onfocus condition="Control.IsVisible(10)">SetFocus(50)</onfocus>
         </control>
+        
         <control type="label" id="29">
 			<description>Empty so we can pass the values up one level</description>
 			<visible>False</visible>

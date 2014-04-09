@@ -260,6 +260,14 @@
             <include>Animation.SlideOpen.Left</include>
             <control type="grouplist" id="996">
                 <include>DefMyNavBarGroupList</include>
+                <!--<control type="button" id="32">
+                    <description>Buttons</description>
+                    <label>Channel Group</label>
+                    <onright>SendClick(32)</onright>
+                    <onclick>SendClick(32)</onclick>
+                    <include>DefNavMenuButton</include>
+                    <visible>Window.IsVisible(MyPVR.xml)</visible>
+                </control>-->
                 <control type="button" id="1000">
                     <description>Buttons</description>
                     <include>DefNavMenuButton</include>
