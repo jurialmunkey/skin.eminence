@@ -208,6 +208,16 @@
                 <font>Font-WidgetCategory</font>
                 <label>19163</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <visible>!Player.HasVideo</visible>
+            </control>
+            <control type="label">
+                <posx>18</posx>
+                <posy>145</posy>
+                <width>690</width>
+                <font>Font-WidgetCategory</font>
+                <label>31170</label>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <visible>Player.HasVideo</visible>
             </control>
             <control type="group">
                 <posx>18</posx>
