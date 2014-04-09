@@ -245,7 +245,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onback>9500</onback>
-                <onright>NextChannelGroup</onright>
+                <onright>SendClick(32)</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -269,7 +269,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>12</onright>
                 <onback>9500</onback>
                 <onup>12</onup>
                 <ondown>12</ondown>
@@ -294,7 +294,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>13</onright>
                 <onback>9500</onback>
                 <onup>13</onup>
                 <ondown>13</ondown>
@@ -545,7 +545,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>14</onright>
                 <onback>9500</onback>
                 <onup>14</onup>
                 <ondown>14</ondown>
@@ -568,7 +568,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>17</onright>
                 <onback>9500</onback>
                 <onup>17</onup>
                 <ondown>17</ondown>
@@ -591,7 +591,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>15</onright>
                 <onback>9500</onback>
                 <onup>15</onup>
                 <ondown>15</ondown>
@@ -617,7 +617,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>NextChannelGroup</onright>
+                <onright>16</onright>
                 <onback>9500</onback>
                 <onup>16</onup>
                 <ondown>16</ondown>
