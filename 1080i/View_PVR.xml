@@ -50,8 +50,16 @@
                     <width>438</width>
                     <height>258</height>
                     <texture colordiffuse="Black" border="5">common/white.png</texture>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="image">
+                    <width>438</width>
+                    <height>258</height>
+                    <texture>special://skin/extras/pvrhub/background.jpg</texture>
+                    <visible>!Player.HasVideo</visible>
                 </control>
                 <control type="videowindow">
+                    <visible>Player.HasVideo</visible>
                     <width>438</width>
                     <height>258</height>
                 </control>
@@ -236,8 +244,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                
-                <onright>9000</onright>
+                <onback>9500</onback>
+                <onright>NextChannelGroup</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -261,8 +269,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>12</onup>
                 <ondown>12</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -286,8 +294,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>13</onup>
                 <ondown>13</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -313,8 +321,8 @@
                 <scrolltime tween="quadratic">300</scrolltime>
                 <timeblocks>35</timeblocks>
                 <rulerunit>6</rulerunit>
-                <onback condition="!Window.Previous(VideoFullScreen.xml)">9000</onback>
-                <onleft>31</onleft>
+                <onback>9500</onback>
+                <onleft>9500</onleft>
                 <onright>31</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
@@ -482,15 +490,7 @@
                 <posx>-215</posx>
                 <posy>711</posy>
 
-            
-                <!-- <control type="image">
-                    <right>460</right>
-                    <posy>22</posy>
-                    <height>145</height>
-                    <width>211</width>
-                    <texture>$VAR[PVRIcon]</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                </control>  -->           
+                       
                 <control type="image">
                     <right>30</right>
                     <posy>17</posy>
@@ -545,8 +545,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>14</onup>
                 <ondown>14</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -568,8 +568,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>17</onup>
                 <ondown>17</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -591,8 +591,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>15</onup>
                 <ondown>15</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -617,8 +617,8 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onright>9000</onright>
-                
+                <onright>NextChannelGroup</onright>
+                <onback>9500</onback>
                 <onup>16</onup>
                 <ondown>16</ondown>
                 <pagecontrol>60</pagecontrol>

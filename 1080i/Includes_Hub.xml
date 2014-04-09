@@ -87,6 +87,7 @@
 	        <property name="Color">1</property>
         </item>
     </include>
+    
     <include name="QuickNavTvshowsHub">
         <item id="1">
 	        <label>31157</label>
@@ -276,4 +277,43 @@
 	        <property name="Color">1</property>
         </item>
 	</include>
+    <include name="QuickNavPVRHub">
+        <item id="1">
+	        <label>$LOCALIZE[19023]</label>
+            <onclick>SetFocus(32)</onclick>
+            <icon>special://skin/extras/icons/livetv.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="2">
+	        <label>$LOCALIZE[31221]</label>
+            <onclick>SetFocus(31)</onclick>
+            <icon>special://skin/extras/icons/equalizer.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+	    <item id="3">
+	        <label>$LOCALIZE[19024]</label>
+            <onclick>SetFocus(33)</onclick>
+            <icon>special://skin/extras/icons/radio.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+        <item id="4">
+	        <label>$LOCALIZE[19163]</label>
+            <onclick>SetFocus(34)</onclick>
+            <icon>special://skin/extras/icons/database.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+        <item id="5">
+	        <label>$LOCALIZE[19040]</label>
+            <onclick>SetFocus(35)</onclick>
+            <icon>special://skin/extras/icons/timer.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+        <item id="6">
+	        <label>$LOCALIZE[137]</label>
+            <onclick>SetFocus(36)</onclick>
+            <icon>special://skin/extras/icons/search.png</icon>
+	        <property name="Color">1</property>
+	    </item>
+    </include>
+    
 </includes>

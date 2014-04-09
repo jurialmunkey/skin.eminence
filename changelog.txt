@@ -1,3 +1,6 @@
+[B]0.9.35[/B]
+PVR Hub
+
 [B]0.9.34[/B]
 Insert item script python
 Remember widget hub position
