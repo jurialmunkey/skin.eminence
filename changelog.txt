@@ -1,5 +1,6 @@
 [B]0.9.35[/B]
 PVR Hub
+Change pvr info to show channel thumb instead of video (video now in hub)
 
 [B]0.9.34[/B]
 Insert item script python

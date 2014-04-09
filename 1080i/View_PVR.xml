@@ -49,6 +49,12 @@
                 <control type="image">
                     <width>438</width>
                     <height>258</height>
+                    <texture fallback="special://skin/extras/pvrhub/background.jpg">$INFO[ListItem.Thumb]</texture>
+                    <aspectratio align="center" aligny="top">keep</aspectratio>
+                </control>
+                <!--<control type="image">
+                    <width>438</width>
+                    <height>258</height>
                     <texture colordiffuse="Black" border="5">common/white.png</texture>
                     <visible>Player.HasVideo</visible>
                 </control>
@@ -62,7 +68,7 @@
                     <visible>Player.HasVideo</visible>
                     <width>438</width>
                     <height>258</height>
-                </control>
+                </control>-->
             </control>
             <control type="group">
                 <posx>22</posx>
