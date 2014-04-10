@@ -341,7 +341,7 @@ msgid "Mix of in-progress tv-shows and random movies"
 msgstr ""
 
 msgctxt "#31184"
-msgid "Quick nav mode (keep current view open when returning home)"
+msgid "Quick nav mode"
 msgstr ""
 
 msgctxt "#31185"
@@ -429,7 +429,7 @@ msgid "Don't fade unfocused tiles"
 msgstr ""
 
 msgctxt "#31206"
-msgid "Two tone mode (focused tiles match highlight)"
+msgid "Use theme colour for focused tiles"
 msgstr ""
 
 msgctxt "#31207"
@@ -445,7 +445,7 @@ msgid "Override background settings with mixed widget"
 msgstr ""
 
 msgctxt "#31210"
-msgid "Show settings silhouette throughout skin"
+msgid "Show background silhouette throughout skin"
 msgstr ""
 
 msgctxt "#31211"
@@ -477,7 +477,7 @@ msgid "Show power button"
 msgstr ""
 
 msgctxt "#31218"
-msgid "Sunset background fade"
+msgid "Change background colour based on time of day"
 msgstr ""
 
 msgctxt "#31219"

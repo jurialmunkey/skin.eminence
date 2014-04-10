@@ -23,6 +23,15 @@
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
                 </control>
+                <control type="image">
+                    <right>36</right>
+                    <bottom>28</bottom>
+                    <height>32</height>
+                    <width>32</width>
+                    <colordiffuse>DFffffff</colordiffuse>
+                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
             </control>
 
         </itemlayout>
@@ -67,6 +76,15 @@
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
                 </control>
+                <control type="image">
+                    <right>36</right>
+                    <bottom>28</bottom>
+                    <height>32</height>
+                    <width>32</width>
+                    <colordiffuse>DFffffff</colordiffuse>
+                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
+                </control>
 
             </control>
 
@@ -91,6 +109,15 @@
                     <aspectratio aligny="top">scale</aspectratio>
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
+                </control>
+                <control type="image">
+                    <right>36</right>
+                    <bottom>28</bottom>
+                    <height>32</height>
+                    <width>32</width>
+                    <colordiffuse>DFffffff</colordiffuse>
+                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
                 </control>
             </control>
 
@@ -135,6 +162,15 @@
                     <aspectratio aligny="top">scale</aspectratio>
                     <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                     <bordersize>1</bordersize>
+                </control>
+                <control type="image">
+                    <right>36</right>
+                    <bottom>28</bottom>
+                    <height>32</height>
+                    <width>32</width>
+                    <colordiffuse>DFffffff</colordiffuse>
+                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
+                    <aspectratio aligny="top">keep</aspectratio>
                 </control>
 
             </control>
