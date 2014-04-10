@@ -221,7 +221,7 @@
             <itemgap>0</itemgap>
             <visible>!IsEmpty(Player.Duration) + Player.HasVideo</visible>
             <control type="label">
-                <width max="560">auto</width>
+                <width max="550">auto</width>
                 <font>Font-Sublabel</font>
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
@@ -236,7 +236,7 @@
                 <label>$INFO[Player.FinishTime,$LOCALIZE[31115] ,]</label>
             </control>
             <control type="label">
-                <width>320</width>
+                <width>330</width>
                 <font>Font-Sublabel</font>
                 <align>right</align>
                 <aligny>top</aligny>
@@ -252,14 +252,14 @@
             <itemgap>0</itemgap>
             <visible>!IsEmpty(Player.Duration) + !Player.HasVideo</visible>
             <control type="label">
-                <width max="880">auto</width>
+                <width max="870">auto</width>
                 <font>Font-Sublabel</font>
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <label>$VAR[MainHeaderSubLabel]</label>
             </control>
             <control type="label">
-                <width>320</width>
+                <width>330</width>
                 <font>Font-Sublabel</font>
                 <align>right</align>
                 <aligny>top</aligny>
