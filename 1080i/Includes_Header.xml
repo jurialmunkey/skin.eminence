@@ -3,15 +3,15 @@
 
     <variable name="TopBarMainLabel">
         <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">PanelFG</value>
-	    <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">MainLabel</value>
-	    <value>PanelFG</value>
-	</variable>
-	
-	<variable name="TopBarSubLabel">
-	    <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">PanelFG-NF</value>
-	    <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">SubLabel</value>
-	    <value>PanelFG-NF</value>
-	</variable>
+        <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">MainLabel</value>
+        <value>PanelFG</value>
+    </variable>
+    
+    <variable name="TopBarSubLabel">
+        <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">PanelFG-NF</value>
+        <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">SubLabel</value>
+        <value>PanelFG-NF</value>
+    </variable>
     
     <variable name="MainHeaderLabel">
         <value condition="Window.IsVisible(LoginScreen.xml)">$LOCALIZE[20096]</value>
@@ -27,21 +27,18 @@
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://)">$LOCALIZE[1214]</value>
         <value condition="Window.IsVisible(home) | IsEmpty(Container.NumItems) | Control.HasFocus(9500) | Control.HasFocus(9501)">$LOCALIZE[31176]</value>
         <value>$LOCALIZE[15100]</value>
-	</variable>
-	
-	
-	
+    </variable>
 
-	<variable name="MainHeaderSubLabel">
-	    <value condition="Window.IsVisible(LoginScreen.xml)">[COLOR=Highlight]$LOCALIZE[31191][/COLOR]  $LOCALIZE[31192]</value>
-	    <value condition="Window.IsVisible(3064)">[COLOR=Highlight]$LOCALIZE[31211][/COLOR] $LOCALIZE[31212]</value>
-	    <value condition="Window.IsVisible(3063)">[COLOR=Highlight]$LOCALIZE[31172][/COLOR] $LOCALIZE[31171]</value>
-	    <value condition="Window.IsVisible(script-globalsearch-main.xml)">$INFO[Control.GetLabel(110),[COLOR=Highlight],[/COLOR] $LOCALIZE[20342]    ]$INFO[Control.GetLabel(120),[COLOR=Highlight],[/COLOR] $LOCALIZE[20343]    ]$INFO[Control.GetLabel(130),[COLOR=Highlight],[/COLOR] $LOCALIZE[33054]    ]$INFO[Control.GetLabel(140),[COLOR=Highlight],[/COLOR] $LOCALIZE[20360]    ]$INFO[Control.GetLabel(150),[COLOR=Highlight],[/COLOR] $LOCALIZE[203489]    ]$INFO[Control.GetLabel(160),[COLOR=Highlight],[/COLOR] $LOCALIZE[133]    ]$INFO[Control.GetLabel(170),[COLOR=Highlight],[/COLOR] $LOCALIZE[132]    ]$INFO[Control.GetLabel(180),[COLOR=Highlight],[/COLOR] $LOCALIZE[134]    ]</value>
-	    <value condition="Player.HasAudio + IsEmpty(Window(10025).Property(TvTunesIsAlive))">[COLOR=Highlight]$INFO[MusicPlayer.Artist,,  ][/COLOR]$INFO[Player.Time,, / ]$INFO[Player.Duration]</value>
-	    <value condition="VideoPlayer.Content(musicvideos)">[COLOR=Highlight]$INFO[VideoPlayer.Artist,,  ][/COLOR]$INFO[Player.Time,, / ]$INFO[Player.Duration]</value>
-        <value condition="Player.HasVideo + VideoPlayer.Content(episodes)">[COLOR=Highlight]$INFO[VideoPlayer.TvShowTitle]$INFO[VideoPlayer.Season, ,]$INFO[VideoPlayer.Episode,x,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
-        <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
-        <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]$INFO[Player.Time,  •  , / ]$INFO[Player.Duration]</value>
+    <variable name="MainHeaderSubLabel">
+        <value condition="Window.IsVisible(LoginScreen.xml)">[COLOR=Highlight]$LOCALIZE[31191][/COLOR]  $LOCALIZE[31192]</value>
+        <value condition="Window.IsVisible(3064)">[COLOR=Highlight]$LOCALIZE[31211][/COLOR] $LOCALIZE[31212]</value>
+        <value condition="Window.IsVisible(3063)">[COLOR=Highlight]$LOCALIZE[31172][/COLOR] $LOCALIZE[31171]</value>
+        <value condition="Window.IsVisible(script-globalsearch-main.xml)">$INFO[Control.GetLabel(110),[COLOR=Highlight],[/COLOR] $LOCALIZE[20342]    ]$INFO[Control.GetLabel(120),[COLOR=Highlight],[/COLOR] $LOCALIZE[20343]    ]$INFO[Control.GetLabel(130),[COLOR=Highlight],[/COLOR] $LOCALIZE[33054]    ]$INFO[Control.GetLabel(140),[COLOR=Highlight],[/COLOR] $LOCALIZE[20360]    ]$INFO[Control.GetLabel(150),[COLOR=Highlight],[/COLOR] $LOCALIZE[203489]    ]$INFO[Control.GetLabel(160),[COLOR=Highlight],[/COLOR] $LOCALIZE[133]    ]$INFO[Control.GetLabel(170),[COLOR=Highlight],[/COLOR] $LOCALIZE[132]    ]$INFO[Control.GetLabel(180),[COLOR=Highlight],[/COLOR] $LOCALIZE[134]    ]</value>
+        <value condition="Player.HasAudio + IsEmpty(Window(10025).Property(TvTunesIsAlive))">[COLOR=Highlight]$INFO[MusicPlayer.Artist,,  ][/COLOR]</value>
+        <value condition="VideoPlayer.Content(musicvideos)">[COLOR=Highlight]$INFO[VideoPlayer.Artist,,  ][/COLOR]</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(episodes)">[COLOR=Highlight]$INFO[VideoPlayer.TvShowTitle]$INFO[VideoPlayer.Season, ,]$INFO[VideoPlayer.Episode,x,  ][/COLOR]</value>
+        <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]</value>
+        <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]</value>
         <value condition="!IsEmpty(Container.NumItems) + !Control.HasFocus(9500) + !Control.HasFocus(9501)">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
         <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20360]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
     </variable>
@@ -89,40 +86,40 @@
         <value condition="Window.IsVisible(MyMusicPlaylist.xml)">$LOCALIZE[559]</value>
         <value condition="Window.IsVisible(FileManager.xml)">$LOCALIZE[744]</value>
         <value>$LOCALIZE[10000]</value>
-	</variable>
-	
-	<variable name="HeaderTileTexture">
-	    <value condition="Window.IsVisible(home) | Window.IsVisible(visualisation) | Window.IsVisible(fullscreenvideo)">home/head-tile.png</value>
-	    <value>home/head-tile.png</value>
-	    <value>home/head-tile-glass.png</value>
-	</variable>
-	
-	<variable name="HeaderColorBG">
-	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDark</value>
-	    <value>TopBar</value>
-	</variable>
-	
-	<variable name="HeaderColorFG">
-	    <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDarkIcon</value>
-	    <value>TopBarIcon</value>
-	</variable>
-	
-	<include name="HeaderLeftTile">
+    </variable>
+    
+    <variable name="HeaderTileTexture">
+        <value condition="Window.IsVisible(home) | Window.IsVisible(visualisation) | Window.IsVisible(fullscreenvideo)">home/head-tile.png</value>
+        <value>home/head-tile.png</value>
+        <value>home/head-tile-glass.png</value>
+    </variable>
+    
+    <variable name="HeaderColorBG">
+        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDark</value>
+        <value>TopBar</value>
+    </variable>
+    
+    <variable name="HeaderColorFG">
+        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDarkIcon</value>
+        <value>TopBarIcon</value>
+    </variable>
+    
+    <include name="HeaderLeftTile">
 
-	    <control type="image">
+        <control type="image">
             <posy>18</posy>
             <posx>-88</posx>
             <width>300</width>
-            <height>164</height>	
+            <height>164</height>    
             <texture align="left" border="75">$VAR[HeaderTileTexture]</texture>
             <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
             <animation effect="fade" start="100" end="90" condition="false">Conditional</animation>
         </control>
-	</include>
-	
-	<include name="HeaderSortLetter">
-	    <control type="group">
-	        <visible>Container.Scrolling</visible>
+    </include>
+    
+    <include name="HeaderSortLetter">
+        <control type="group">
+            <visible>Container.Scrolling</visible>
             <animation type="Visible">
                 <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
                 <effect type="slide" start="0,-10" end="0,0" time="350" tween="sine" easing="out" />
@@ -144,17 +141,17 @@
                 <textcolor>$VAR[HeaderColorFG]</textcolor>
             </control>
         </control>
-	</include>
-	
-	<include name="HeaderLeftInfo">
-	    <control type="group">
+    </include>
+    
+    <include name="HeaderLeftInfo">
+        <control type="group">
             <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [Window.IsVisible(mutebug) | Skin.HasSetting(disable.pvricon) | [!Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo)]]]</visible>
             
             <control type="image">
                 <posy>10</posy>
                 <posx>30</posx>
                 <width>128</width>
-                <height>128</height>	
+                <height>128</height>    
                 <texture>$VAR[MainHeaderIcon]</texture>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>$VAR[HeaderColorFG]</colordiffuse>
@@ -169,8 +166,7 @@
                 </animation>
                 
             </control>
-            <!-- Go Home Button -->
-            <control type="button">
+            <control type="button" description="Click me to go home">
                 <posy>10</posy>
                 <posx>30</posx>
                 <width>128</width>
@@ -191,6 +187,7 @@
                 <textcolor>$VAR[HeaderColorFG]</textcolor>
                 <label>$VAR[IconHeader]</label>
             </control>
+            
         </control>
         <control type="group">
             <visible>VideoPlayer.Content(livetv) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(home)] + !Window.IsVisible(mutebug) + !Skin.HasSetting(disable.pvricon)</visible>
@@ -198,15 +195,15 @@
                 <posy>40</posy>
                 <posx>40</posx>
                 <width>120</width>
-                <height>120</height>	
+                <height>120</height>    
                 <texture>$INFO[Player.Art(thumb)]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
         </control>
-	</include>
-	
-	<include name="HeaderMainInfo">
-	    <control type="label">
+    </include>
+    
+    <include name="HeaderMainInfo">
+        <control type="label">
             <posx>245</posx>
             <posy>25</posy>
             <width>1200</width>
@@ -216,18 +213,78 @@
             <aligny>top</aligny>
             <textcolor>$VAR[TopBarMainLabel]</textcolor>
         </control>
-        <control type="label">
+        <control type="grouplist">
             <posx>245</posx>
             <posy>115</posy>
             <width>1200</width>
-            <font>Font-Sublabel</font>
-            <aligny>top</aligny>
-            <textcolor>$VAR[TopBarSubLabel]</textcolor>
-            <label>$VAR[MainHeaderSubLabel]</label>
+            <orientation>horizontal</orientation>
+            <itemgap>0</itemgap>
+            <visible>!IsEmpty(Player.Duration) + Player.HasVideo</visible>
+            <control type="label">
+                <width max="560">auto</width>
+                <font>Font-Sublabel</font>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$VAR[MainHeaderSubLabel]</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <font>Font-Sublabel</font>
+                <align>left</align>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$INFO[Player.FinishTime,$LOCALIZE[31115] ,]</label>
+            </control>
+            <control type="label">
+                <width>320</width>
+                <font>Font-Sublabel</font>
+                <align>right</align>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$INFO[Player.Time(hh:mm:ss),  •  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+            </control>
         </control>
-	</include>
-	
-	<include name="HeaderRightInfo">
+        <control type="grouplist">
+            <posx>245</posx>
+            <posy>115</posy>
+            <width>1200</width>
+            <orientation>horizontal</orientation>
+            <itemgap>0</itemgap>
+            <visible>!IsEmpty(Player.Duration) + !Player.HasVideo</visible>
+            <control type="label">
+                <width max="880">auto</width>
+                <font>Font-Sublabel</font>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$VAR[MainHeaderSubLabel]</label>
+            </control>
+            <control type="label">
+                <width>320</width>
+                <font>Font-Sublabel</font>
+                <align>right</align>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$INFO[Player.Time(hh:mm:ss),  •  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+            </control>
+        </control>
+        <control type="grouplist">
+            <posx>245</posx>
+            <posy>115</posy>
+            <width>1200</width>
+            <orientation>horizontal</orientation>
+            <visible>IsEmpty(Player.Duration)</visible>
+            <control type="label">
+                <width>1200</width>
+                <font>Font-Sublabel</font>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$VAR[MainHeaderSubLabel]</label>
+            </control>
+        </control>
+        
+    </include>
+    
+    <include name="HeaderRightInfo">
         <control type="group">
             <posx>400r</posx>
             <visible>!Window.IsActive(DialogExtendedProgressBar.xml)</visible>
