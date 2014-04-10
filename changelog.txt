@@ -2,6 +2,7 @@
 PVR Hub
 Change pvr info to show channel thumb instead of video (video now in hub)
 Set recordings to use all recordings
+Channelgroup swap now button label at top of channel list
 
 [B]0.9.34[/B]
 Insert item script python

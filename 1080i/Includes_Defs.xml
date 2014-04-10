@@ -263,8 +263,7 @@
                 <!--<control type="button" id="32">
                     <description>Buttons</description>
                     <label>Channel Group</label>
-                    <onright>SendClick(32)</onright>
-                    <onclick>SendClick(32)</onclick>
+                    <onclick>SetFocus(9009)</onclick>
                     <include>DefNavMenuButton</include>
                     <visible>Window.IsVisible(MyPVR.xml)</visible>
                 </control>-->

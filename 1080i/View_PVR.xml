@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <variable name="PVRTopLabelColor">
+        <value condition="Control.HasFocus(9009)">Highlight</value>
+        <value>PanelFG</value>
+    </variable>
     <include name="PVRRecordingLayout">
         <itemlayout width="945" height="140">
             <control type="image">
@@ -234,7 +238,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onback>9500</onback>
-                <onright>SendClick(32)</onright>
+                <onright>9009</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
                 <pagecontrol>60</pagecontrol>
