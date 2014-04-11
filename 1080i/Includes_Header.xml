@@ -264,7 +264,7 @@
                 <align>right</align>
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
-                <label>$INFO[Player.Time(hh:mm:ss),  •  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                <label>$INFO[Player.Time(hh:mm:ss),  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
             </control>
         </control>
         <control type="grouplist">
