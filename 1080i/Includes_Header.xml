@@ -252,16 +252,16 @@
             <itemgap>0</itemgap>
             <visible>!IsEmpty(Player.Duration) + !Player.HasVideo</visible>
             <control type="label">
-                <width max="870">auto</width>
+                <width max="880">auto</width>
                 <font>Font-Sublabel</font>
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <label>$VAR[MainHeaderSubLabel]</label>
             </control>
             <control type="label">
-                <width>330</width>
+                <width>320</width>
                 <font>Font-Sublabel</font>
-                <align>right</align>
+                <align>left</align>
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <label>$INFO[Player.Time(hh:mm:ss),  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
