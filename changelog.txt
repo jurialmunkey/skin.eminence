@@ -1,3 +1,7 @@
+[B]0.9.36[/B]
+Widget hub background to skin background (unless sunset on)
+Ability to change widget hub items
+
 [B]0.9.35[/B]
 PVR Hub
 Change pvr info to show channel thumb instead of video (video now in hub)

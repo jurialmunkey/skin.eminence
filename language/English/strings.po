@@ -491,3 +491,7 @@ msgstr ""
 msgctxt "#31221"
 msgid "EPG Timeline"
 msgstr ""
+
+msgctxt "#31222"
+msgid " •   Customise widget item"
+msgstr ""

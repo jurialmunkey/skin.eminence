@@ -77,8 +77,7 @@
     
     <include name="Home-Menu-Button">
         <onfocus>ClearProperty(bgwidget,home)</onfocus>
-        <onfocus>ClearProperty(bgwidget.type,home)</onfocus>
-        <onclick condition="!Skin.HasSetting(home.disablehubs)">SetProperty(focushub,1,home)</onclick>
+        <onfocus>ClearProperty(bgwidget.type,home)</onfocus>        
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onclick>
         <onup condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onup>
         <onup condition="Player.HasVideo + Window.IsVisible(home)">Action(fullscreen)</onup>
@@ -244,6 +243,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.301.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.301.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.301.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.301.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,301,home)</onclick>
                         <onclick>$INFO[Skin.String(home.301.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
@@ -281,6 +281,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.302.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.302.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.302.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.302.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,302,home)</onclick>
                         <onclick>$INFO[Skin.String(home.302.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
@@ -318,6 +319,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.303.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.303.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.303.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.303.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,303,home)</onclick>
                         <onclick>$INFO[Skin.String(home.303.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
@@ -354,6 +356,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.304.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.304.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.304.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.304.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,304,home)</onclick>
                         <onclick>$INFO[Skin.String(home.304.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
@@ -391,6 +394,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.305.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.305.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.305.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.305.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,305,home)</onclick>
                         <onclick>$INFO[Skin.String(home.305.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
@@ -429,6 +433,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.306.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.306.bgwidget)],home)</onfocus>
                         <onclick>SetProperty(homefocus,306,home)</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.306.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>$INFO[Skin.String(home.306.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <onleft>305</onleft>
@@ -468,6 +473,7 @@
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.307.bgwidget)],home)</onfocus>
                         <onclick>SetProperty(homefocus,307,home)</onclick>
                         <onclick>$INFO[Skin.String(home.307.Path)]</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.307.focushub)">SetProperty(focushub,1,home)</onclick>
                         <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <onleft>306</onleft>
                         <onright>308</onright>
@@ -503,6 +509,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.308.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.308.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.308.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.308.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>SetProperty(homefocus,308,home)</onclick>
                         <onclick>$INFO[Skin.String(home.308.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
@@ -538,6 +545,7 @@
                         <include>Home-Menu-Button</include>
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.309.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.309.bgwidget)],home)</onfocus>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.309.focushub)">SetProperty(focushub,1,home)</onclick>
                         <visible>Skin.HasSetting(home.309.enabled)</visible>
                         <onclick>SetProperty(homefocus,309,home)</onclick>
                         <onclick>$INFO[Skin.String(home.309.Path)]</onclick>
@@ -574,6 +582,7 @@
                         <include>Home-Menu-Button</include>
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.310.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.310.bgwidget)],home)</onfocus>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.310.focushub)">SetProperty(focushub,1,home)</onclick>
                         <visible>Skin.HasSetting(home.310.enabled)</visible>
                         <onclick>SetProperty(homefocus,310,home)</onclick>
                         <onclick>$INFO[Skin.String(home.310.Path)]</onclick>
@@ -611,6 +620,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.311.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.311.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.311.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.311.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.311.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
@@ -648,6 +658,7 @@
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.312.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.312.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.312.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>$INFO[Skin.String(home.312.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <onleft>311</onleft>
@@ -683,6 +694,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.320.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.320.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.320.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.320.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.320.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.320.bgcolor)]</colordiffuse>
@@ -720,6 +732,7 @@
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.321.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.321.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.321.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>$INFO[Skin.String(home.321.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.321.bgcolor)]</colordiffuse>
                         <onleft>313</onleft>
@@ -755,6 +768,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.322.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.322.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.322.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.322.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.322.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.322.bgcolor)]</colordiffuse>
@@ -791,6 +805,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.323.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.323.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.323.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.323.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.323.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.323.bgcolor)]</colordiffuse>
@@ -827,6 +842,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.324.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.324.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.324.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.324.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.324.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.324.bgcolor)]</colordiffuse>
@@ -864,6 +880,7 @@
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.325.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.325.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.325.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>$INFO[Skin.String(home.325.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.325.bgcolor)]</colordiffuse>
                         <onleft>317</onleft>
@@ -899,6 +916,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.326.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.326.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.326.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.326.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.326.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.326.bgcolor)]</colordiffuse>
@@ -936,6 +954,7 @@
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.327.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.327.enabled)</visible>
                         <onclick>ClearProperty(homefocus,home)</onclick>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.327.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>$INFO[Skin.String(home.327.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.327.bgcolor)]</colordiffuse>
                         <onleft>319</onleft>
@@ -971,6 +990,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.328.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.328.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.328.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.328.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.328.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.328.bgcolor)]</colordiffuse>
@@ -1007,6 +1027,7 @@
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.329.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.329.bgwidget)],home)</onfocus>
                         <visible>Skin.HasSetting(home.329.enabled)</visible>
+                        <onclick condition="!Skin.HasSetting(home.disablehubs) + IsEmpty(home.329.focushub)">SetProperty(focushub,1,home)</onclick>
                         <onclick>ClearProperty(homefocus,home)</onclick>
                         <onclick>$INFO[Skin.String(home.329.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>

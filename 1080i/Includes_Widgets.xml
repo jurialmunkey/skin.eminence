@@ -395,12 +395,32 @@
     </variable>
     
     <variable name="WidgetHubLabel">
-        <value condition="stringcompare(Window(3101).Property(widget),episodes)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),nextaired)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),movies)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),trailers)">$LOCALIZE[31193]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),episodes) + IsEmpty(Skin.String(home.502.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget.type)">$INFO[Skin.String(home.502.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),nextaired) + IsEmpty(Skin.String(home.503.bgwidget.type)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget.type)">$INFO[Skin.String(home.503.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),movies) + IsEmpty(Skin.String(home.501.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget.type)">$INFO[Skin.String(home.501.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),trailers) + IsEmpty(Skin.String(home.504.bgwidget.type)">$LOCALIZE[31193]</value>
+        <value condition="stringcompare(Window(3101).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget.type)">$INFO[Skin.String(home.504.bgwidget.type)]</value>
     </variable>
     
+    <variable name="WidgetHubMoviesContent">
+        <value condition="!IsEmpty(Skin.String(home.501.bgwidget))">$INFO[Skin.String(home.501.bgwidget)]</value>
+        <value>videodb://recentlyaddedmovies/</value>
+    </variable>
+    <variable name="WidgetHubEpisodesContent">
+        <value condition="!IsEmpty(Skin.String(home.502.bgwidget))">$INFO[Skin.String(home.502.bgwidget)]</value>
+        <value>videodb://recentlyaddedepisodes/</value>
+    </variable>
+    <variable name="WidgetHubNextAiredContent">
+        <value condition="!IsEmpty(Skin.String(home.503.bgwidget))">$INFO[Skin.String(home.503.bgwidget)]</value>
+        <value>library://video/inprogressshows.xml/</value>
+    </variable>
+    <variable name="WidgetHubTrailersContent">
+        <value condition="!IsEmpty(Skin.String(home.504.bgwidget))">$INFO[Skin.String(home.504.bgwidget)]</value>
+        <value>plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</value>
+    </variable>
     <include name="WidgetHubListContent">
         <include>Animation.FadeIn</include>
         <posx>-115</posx>
@@ -420,7 +440,7 @@
 
                 <width>220</width>
                 <height>340</height>
-                <texture diffuse="home/half-tile.png">$VAR[FanartImage]</texture>
+                <texture diffuse="home/half-tile.png">$VAR[WidgetFanart]</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
         </itemlayout>
@@ -428,7 +448,7 @@
             <control type="image">
                 <width>600</width>
                 <height>340</height>
-                <texture diffuse="home/tile-600x340.png">$VAR[FanartImage]</texture>
+                <texture diffuse="home/tile-600x340.png">$VAR[WidgetFanart]</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
             </control>
         </focusedlayout>

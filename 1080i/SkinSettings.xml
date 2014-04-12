@@ -11,6 +11,7 @@
             <posx>110</posx>
             <width>48</width>
             <height>48</height>
+            <visible>!Window.IsVisible(3065)</visible>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
             <aspectratio>keep</aspectratio>
@@ -26,6 +27,7 @@
         <control type="group">
 		    <posx>253</posx>
 		    <posy>70</posy>
+            <visible>!Window.IsVisible(3065)</visible>
 		    <include>DialogVisibility</include>
 		    <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
 		    <include>Animation.SlideOpen.Left</include>
@@ -49,6 +51,7 @@
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <include>DefSettingsSeparator</include>
+            <visible>!Window.IsVisible(3065)</visible>
  
             <control type="grouplist" id="3">
                 <description>Control Area</description>
@@ -149,19 +152,6 @@
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                
-                <control type="radiobutton" id="208">
-                    <label>31195</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
-                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
-                
                 <control type="radiobutton" id="216">
                     <label>31209</label>
                     <width>1030</width>
@@ -191,6 +181,62 @@
                     <font>Font-ListInfo</font>
                     <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
                     <onclick>Skin.Reset(home.fanart)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="208">
+                    <label>31195</label>
+                    <width>1030</width>
+                    <radioposx>944</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
+                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="button" id="241">
+                    <label>$LOCALIZE[31222] $NUMBER[1]</label>
+                    <width>1030</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.501,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="button" id="242">
+                    <label>$LOCALIZE[31222] $NUMBER[2]</label>
+                    <width>1030</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.502,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="button" id="243">
+                    <label>$LOCALIZE[31222] $NUMBER[3]</label>
+                    <width>1030</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.503,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                
+                <control type="button" id="244">
+                    <label>$LOCALIZE[31222] $NUMBER[4]</label>
+                    <width>1030</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.50143065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>

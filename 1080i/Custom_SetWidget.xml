@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3065">
-	<defaultcontrol always="true">9200</defaultcontrol>
-	<onunload>ClearProperty(item,3065)</onunload>
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <defaultcontrol always="true">9200</defaultcontrol>
+    <onunload>ClearProperty(item,3065)</onunload>
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
             
-			
-			<control type="group">
-			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
-			    <visible>!Window.IsVisible(3062)</visible>
-			    <include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
+            
+            <control type="group">
+                <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+                <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+                <visible>!Window.IsVisible(3062)</visible>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
 
                 <control type="panel" id="9200">
                     <posx>14</posx>
@@ -215,29 +215,28 @@
                             <onclick>Skin.Reset($INFO[Window(3065).Property(item),,.bgwidget.type])</onclick>
                             <onclick>Skin.Reset($INFO[Window(3065).Property(item),,.bgwidget])</onclick>
                             <onclick>Close</onclick>
-                            					
                         </item>
                         
                         <item id="20">
                             <description>Done</description>
                             <label>186</label>
                             <icon>special://skin/extras/icons/close.png</icon>
-                            <onclick>Close</onclick>					
+                            <onclick>Close</onclick>
                         </item>
                         
                         
                         
                         
 
-					</content>
+                    </content>
 
                 </control>
 
             </control>
 
-		</control>
-		
-		
-	    
-	</controls>
+        </control>
+        
+        
+        
+    </controls>
 </window>

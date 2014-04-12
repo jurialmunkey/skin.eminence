@@ -5,12 +5,13 @@
 	<allowoverlay>false</allowoverlay>
 	<onload condition="IsEmpty(Window(3101).Property(widget))">SetProperty(widget,movies,3101)</onload>
 	<controls>
-	    <control type="image">
+	    <!--<control type="image">
             <include>Dimensions_Fullscreen</include>
             <texture fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
             <include>Animation.FadeIn</include>
             <colordiffuse>ffbbbbbb</colordiffuse>
-        </control>
+        </control>-->
+        <include>GlobalBackground</include>
         <control type="image">
 	        <posx>0</posx>
 	        <posy>0</posy>
@@ -21,25 +22,14 @@
 	        <include>Animation.FadeIn</include>
 	        <include>Animation.FadeOut</include>
 	    </control>
-        <control type="image">
-			<width>1920</width>
-			<height>448</height>
-			<texture colordiffuse="7F000000">common/gradient.png</texture>
-		</control>
-		<control type="image">
-		    <posy>448r</posy>
-			<width>1920</width>
-			<height>448</height>
-			<texture colordiffuse="7F000000" flipy="true">common/gradient.png</texture>
-		</control>
-		<control type="grouplist" description="menu">
+		<control type="grouplist" description="menu" id="9512">
 		    <include>Animation.DelayFadeIn</include>
 	        <posy>680</posy>
 	        <orientation>horizontal</orientation>
 	        <align>center</align>
 	        <width>1920</width>
 	        <itemgap>64</itemgap>
-	        <control type="button">
+	        <control type="button" id="1">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="7F000000">widget/movie.png</texturenofocus>
@@ -47,7 +37,7 @@
                 <onclick>SetProperty(widget,movies,3101)</onclick>
 			    <visible>!stringcompare(Window(3101).Property(widget),movies)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="2">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="3fffffff">widget/movie.png</texturenofocus>
@@ -55,7 +45,7 @@
                 <onclick>SetProperty(widget,movies,3101)</onclick>
 			    <visible>stringcompare(Window(3101).Property(widget),movies)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="3">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="7F000000">widget/tv.png</texturenofocus>
@@ -63,7 +53,7 @@
                 <onclick>SetProperty(widget,episodes,3101)</onclick>
 			    <visible>!stringcompare(Window(3101).Property(widget),episodes)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="4">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="3Fffffff">widget/tv.png</texturenofocus>
@@ -71,7 +61,7 @@
                 <onclick>SetProperty(widget,episodes,3101)</onclick>
 			    <visible>stringcompare(Window(3101).Property(widget),episodes)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="5">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="7F000000">widget/livetv.png</texturenofocus>
@@ -79,7 +69,7 @@
                 <onclick>SetProperty(widget,nextaired,3101)</onclick>
 			    <visible>!stringcompare(Window(3101).Property(widget),nextaired)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="6">
 			    <width>128</width>
 			    <height>128</height>
 			    
@@ -88,7 +78,7 @@
                 <onclick>SetProperty(widget,nextaired,3101)</onclick>
 			    <visible>stringcompare(Window(3101).Property(widget),nextaired)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="7">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="7F000000">widget/trailer.png</texturenofocus>
@@ -96,7 +86,7 @@
                 <onclick>SetProperty(widget,trailers,3101)</onclick>
 			    <visible>!stringcompare(Window(3101).Property(widget),trailers)</visible>
 		    </control>
-		    <control type="button">
+		    <control type="button" id="8">
 			    <width>128</width>
 			    <height>128</height>
 			    <texturenofocus colordiffuse="3Fffffff">widget/trailer.png</texturenofocus>
@@ -118,22 +108,22 @@
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(3101).Property(widget),movies)</visible>
 	            <include>WidgetHubListContent</include>
-	            <content target="video">videodb://recentlyaddedmovies/</content>
+	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
 	        </control>
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(3101).Property(widget),episodes)</visible>
 	            <include>WidgetHubListContent</include>
-	            <content target="video">videodb://recentlyaddedepisodes/</content>
+	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
 	        </control>
 	        <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(3101).Property(widget),nextaired)</visible>
 	            <include>WidgetHubListContent</include>
-	            <content target="video">library://video/inprogressshows.xml/</content>
+	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
 	        </control>
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(3101).Property(widget),trailers)</visible>
                 <include>WidgetHubListContent</include>
-	            <content target="video">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</content>
+	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
 	        </control>
             
 	        <control type="group">
