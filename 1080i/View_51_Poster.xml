@@ -26,7 +26,7 @@
                 <focusposition>1</focusposition>
                 <movement>1</movement>
 
-                <itemlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons) + !substring(Container.FolderPath,plugin://plugin.video.youtube/,left)] | Container.Content(artists)">
+                <itemlayout width="486" height="690" condition="Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)">
                     <!-- Normal -->
                     <control type="group">
                         <posx>21</posx>
@@ -121,7 +121,7 @@
                     </control>
 
                 </itemlayout>
-                <itemlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + [Container.Content(addons) | substring(Container.FolderPath,plugin://plugin.video.youtube/,left)]]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                <itemlayout width="486" height="690" condition="![Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <!-- Normal -->
                     <control type="group">
                         <posx>21</posx>
@@ -163,7 +163,7 @@
 
                 </itemlayout>
 
-                <focusedlayout width="486" height="690" condition="Window.IsVisible(MyVideoPlaylist.xml) | [Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons) + !substring(Container.FolderPath,plugin://plugin.video.youtube/,left)] | Container.Content(artists)">
+                <focusedlayout width="486" height="690" condition="Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)">
                     <!-- NORMAL -->
                     <control type="group">
                         <posx>21</posx>
@@ -363,7 +363,7 @@
                     </control>
                 </focusedlayout>
                 
-                <focusedlayout width="486" height="690" condition="[!Window.IsVisible(MyVideoNav.xml) | [Window.IsVisible(MyVideoNav.xml) + [Container.Content(addons) | substring(Container.FolderPath,plugin://plugin.video.youtube/,left)]]] + !Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists)">
+                <focusedlayout width="486" height="690" condition="![Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <!-- Focused -->
                     <control type="group">
                         <posx>21</posx>
