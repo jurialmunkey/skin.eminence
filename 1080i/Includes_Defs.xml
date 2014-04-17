@@ -234,7 +234,7 @@
     </include>
     
     <include name="DefSideLabelCoords">
-        <posx>1542</posx>
+        <posx>1548</posx>
         <posy>210</posy>
         <aligny>top</aligny>
         <width>690</width>
