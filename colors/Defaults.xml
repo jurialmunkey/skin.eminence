@@ -30,7 +30,7 @@
 	<color name="TopBarDisabled">2fededed</color>
 	
 	<!-- Highlight Colors -->
-	<color name="PosterHighlight">bfbfbfbf</color>
+    <color name="PosterHighlight">FF33b5e5</color>
 	<color name="Highlight-NF">AF33b5e5</color>
 	<color name="Highlight">FF33b5e5</color>
 	

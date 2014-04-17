@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
 	<!-- Highlight Colors -->
-	<color name="PosterHighlight">FF33b5e5</color>
+	<color name="PosterHighlight">bfbfbfbf</color>
 	<color name="Highlight-NF">AF33b5e5</color>
 	<color name="Highlight">FF33b5e5</color>
-	<!--<color name="TopBarCorner">AF33b5e5</color>-->
 	
 	<!-- Keyboard -->
 	<color name="Keyboard">FFe533b5</color>
