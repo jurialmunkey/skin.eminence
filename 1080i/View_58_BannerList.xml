@@ -89,8 +89,8 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image">
-                            <right>24</right>
-                            <top>16</top>
+                            <right>28</right>
+                            <top>18</top>
                             <height>32</height>
                             <width>32</width>
                             <colordiffuse>DFffffff</colordiffuse>
