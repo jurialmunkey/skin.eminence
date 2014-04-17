@@ -10,15 +10,11 @@
 		<include>GlobalBackground</include>
 		
 		<control type="group">
-		    <posx>233</posx>
+		    <posx>horzpad</posx>
 		    <posy>70</posy> 
 		    <control type="label">
-                <posx>1475</posx>
-                <posy>174</posy>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
+                <include>DefSideLabelCoords</include>
                 <label>5</label>
-                <angle>270</angle>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
                 <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
@@ -27,18 +23,18 @@
             </control>
 		    <include>Animation.FadeIn</include>
             <control type="grouplist" id="9900">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <orientation>vertical</orientation>
-                <itemgap>12</itemgap>
+                <itemgap>10</itemgap>
                 <onright>9100</onright>
 
                 <control type="radiobutton" id="9001">
                     <description>Appearance</description>
                     <label>480</label>
                     <onclick>activatewindow(AppearanceSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onright>9101</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -55,8 +51,8 @@
                     <description>Videos</description>
                     <label>3</label>
                     <onclick>activatewindow(VideosSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onright>9102</onright>
                     <font>Font-Button</font>
                     <align>left</align>
@@ -73,8 +69,8 @@
                     <description>Music</description>
                     <label>2</label>
                     <onclick>activatewindow(MusicSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onright>9103</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -91,8 +87,8 @@
                     <description>Addons</description>
                     <label>24001</label>
                     <onclick>activatewindow(AddonBrowser)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onright>9104</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -109,9 +105,9 @@
                     <description>Pictures</description>
                     <label>1</label>
                     <onclick>activatewindow(PicturesSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
-                    <onright>9105</onright>
+                    <width>bannerwborder</width>
+                    <height>106</height>
+                    <onright>9106</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
                     <font>Font-Button</font>
@@ -127,8 +123,8 @@
                     <description>Weather</description>
                     <label>8</label>
                     <onclick>activatewindow(WeatherSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onright>9106</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -143,17 +139,17 @@
                 </control>
             </control>
             <control type="grouplist" id="9100">
-                <posx>732</posx>
+                <posx>747</posx>
                 <posy>210</posy>
                 <orientation>vertical</orientation>
-                <itemgap>12</itemgap>
+                <itemgap>10</itemgap>
                 <onleft>9900</onleft>
                 <control type="radiobutton" id="9101">
                     <description>Network</description>
                     <label>705</label>
                     <onclick>activatewindow(NetworkSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9001</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -170,8 +166,8 @@
                     <description>System</description>
                     <label>13000</label>
                     <onclick>activatewindow(SystemSettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9002</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -188,8 +184,8 @@
                     <description>Profiles</description>
                     <label>13200</label>
                     <onclick>activatewindow(Profiles)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9003</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -206,8 +202,8 @@
                     <description>System Info</description>
                     <label>130</label>
                     <onclick>activatewindow(7)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9004</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -224,8 +220,8 @@
                     <description>PVR Settings</description>
                     <label>19191</label>
                     <onclick>activatewindow(pvrsettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9005</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -243,8 +239,8 @@
                     <description>Skin Settings</description>
                     <label>20077</label>
                     <onclick>activatewindow(skinsettings)</onclick>
-                    <width>702</width>
-                    <height>105</height>
+                    <width>bannerwborder</width>
+                    <height>106</height>
                     <onleft>9006</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>

@@ -9,9 +9,9 @@
             <include>Animation.ViewChange</include>     
             <include>DefSideLabel</include>       
             <control type="panel" id="53">
-                <posx>18</posx>
-                <posy>210</posy>
-                <width>1434</width>
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>1458</width>
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
@@ -24,27 +24,25 @@
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>vertical</orientation>
 
-                <itemlayout width="476" height="140">
+                <itemlayout width="threecollist" height="fivelinelist">
 
                     <control type="image">
-                        <width>464</width>
-                        <height>130</height>
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture background="true">$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
-                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                        <bordersize>1</bordersize>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
-                        <width>300</width>
+                        <width>310</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG</textcolor>
@@ -52,9 +50,9 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
-                        <width>300</width>
+                        <width>310</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG</textcolor>
@@ -64,27 +62,25 @@
 
                 </itemlayout>
 
-                <focusedlayout width="476" height="140">
+                <focusedlayout width="threecollist" height="fivelinelist">
 
                     <control type="image">
-                        <width>464</width>
-                        <height>130</height>
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture background="true">$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
-                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                        <bordersize>1</bordersize>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
-                        <width>300</width>
+                        <width>310</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
@@ -92,9 +88,9 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>437</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
-                        <width>300</width>
+                        <width>310</width>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
@@ -106,9 +102,9 @@
 
             </control>
             <control type="scrollbar" id="60">
-                <posx>-11</posx>
-                <posy>210</posy>
-                <height>690</height>
+                <posx>-10</posx>
+                <posy>listy</posy>
+                <height>globalh</height>
                 <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>

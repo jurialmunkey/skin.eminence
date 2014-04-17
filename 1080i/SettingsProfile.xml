@@ -7,7 +7,8 @@
     <controls>
         <include>GlobalBackground</include>
 		<control type="group">
-			<posy>210</posy>
+			<posy>listy</posy>
+            <posx>-16</posx>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
 			<visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(ProfileSettings.xml) + !Window.IsVisible(LockSettings.xml) + !Window.IsVisible(DialogSelect.xml)</visible>

@@ -9,22 +9,22 @@
             <include>Animation.ViewChange</include>
             <include>DefSideLabel</include>
             <control type="group">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <control type="image">
                     
-                    <width>1416</width>
-                    <height>690</height>
+                    <width>globalw</width>
+                    <height>globalh</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>                    
                     
                 <control type="wraplist" id="54">
                     <visible>!Container.Content(songs)</visible>
                     <visible>!Container.Content(albums)</visible>
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>lovefilmw</width>
+                    <height>bigposterh</height>
                     <onleft>54</onleft>
                     <onright>54</onright>
                     <onup>9000</onup>
@@ -35,22 +35,22 @@
                     <viewtype label="31155">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
                     <orientation>horizontal</orientation>
-                    <itemlayout width="1394" height="668">
+                    <itemlayout width="1394" height="bigposterh">
          
                         <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
+                            <width>lovefilmw</width>
+                            <height>bigposterh</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center">scale</aspectratio>
                         </control>
                     
                     </itemlayout>
 
-                    <focusedlayout width="1394" height="668">
+                    <focusedlayout width="lovefilmw" height="bigposterh">
 
                         <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
+                            <width>lovefilmw</width>
+                            <height>bigposterh</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center">scale</aspectratio>
                         
@@ -60,29 +60,31 @@
 
                 </control>
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>lovefilmw</width>
+                    <height>bigposterh</height>
+                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
                 </control>
 
                 <control type="group">
+                    <height>globalh</height>
+                    <width>globalw</width>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
+                        <posx>globalpad</posx>
+                        <bottom>globalpad</bottom>
+                        <width>lovefilmw</width>
                         <height>64</height>
                         <texture colordiffuse="PanelBG">common/white.png</texture>
                         <aspectratio>scale</aspectratio>
-                        <animation effect="fade" end="50" condition="true">Conditional</animation>
+                        <animation effect="fade" end="66" condition="true">Conditional</animation>
                     </control>
                 
             
                     <control type="label">
-                        <posx>31</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
+                        <posx>30</posx>
+                        <bottom>globalpad</bottom>
+                        <width>1400</width>
                         <height>64</height>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -91,9 +93,9 @@
                     </control>
             
                     <control type="label">
-                        <posx>1385</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
+                        <right>30</right>
+                        <bottom>globalpad</bottom>
+                        <width>1400</width>
                         <height>64</height>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -104,7 +106,7 @@
                 </control>
                 <control type="scrollbar" id="60">
                     <posy>708</posy>
-                    <width>1416</width>
+                    <width>globalw</width>
                     <height>8</height>
                     <ondown>9000</ondown>
                     <onup>51</onup>

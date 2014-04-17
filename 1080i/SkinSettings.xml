@@ -143,8 +143,8 @@
                 <!----------------------->
                 <control type="radiobutton" id="209">
                     <label>31198</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
@@ -154,8 +154,8 @@
                 </control>
                 <control type="radiobutton" id="216">
                     <label>31209</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.usemixedglobalwidget)</onclick>
@@ -165,7 +165,7 @@
                 </control>
                 <control type="button" id="206">
                     <label>31149</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <label2>$INFO[Skin.String(home.fanart)]</label2>
@@ -176,7 +176,7 @@
                 </control>
                 <control type="button" id="210">
                     <label>31203</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
@@ -187,8 +187,8 @@
                 
                 <control type="radiobutton" id="208">
                     <label>31195</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
@@ -199,7 +199,7 @@
                 
                 <control type="button" id="241">
                     <label>$LOCALIZE[31222] $NUMBER[1]</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>SetProperty(item,home.501,3065)</onclick>
@@ -210,7 +210,7 @@
                 
                 <control type="button" id="242">
                     <label>$LOCALIZE[31222] $NUMBER[2]</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>SetProperty(item,home.502,3065)</onclick>
@@ -221,7 +221,7 @@
                 
                 <control type="button" id="243">
                     <label>$LOCALIZE[31222] $NUMBER[3]</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>SetProperty(item,home.503,3065)</onclick>
@@ -232,7 +232,7 @@
                 
                 <control type="button" id="244">
                     <label>$LOCALIZE[31222] $NUMBER[4]</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>SetProperty(item,home.50143065)</onclick>
@@ -249,7 +249,7 @@
                 
                 <control type="button" id="201">
                     <label>31164</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>ActivateWindow(3063)</onclick>
@@ -260,8 +260,8 @@
                 
                 <control type="radiobutton" id="213">
                     <label>31204</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.matchcolor)</onclick>
@@ -273,8 +273,8 @@
                 
                 <control type="radiobutton" id="212">
                     <label>31205</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.dontfade)</onclick>
@@ -286,8 +286,8 @@
                 
                 <control type="radiobutton" id="214">
                     <label>31206</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.monochromemode)</onclick>
@@ -299,8 +299,8 @@
                 
                 <control type="radiobutton" id="215">
                     <label>31217</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
@@ -311,8 +311,8 @@
                 
                 <control type="radiobutton" id="202">
                     <label>31178</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
@@ -331,7 +331,7 @@
                 <control type="button" id="301">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick condition="!stringcompare(Skin.String(movie.widget),playlist) + !stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,recommended)</onclick>
@@ -344,7 +344,7 @@
                 <control type="button" id="302">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(movie.widget.playlist)]</label2>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
@@ -358,7 +358,7 @@
                     <label2>$INFO[Skin.String(moviehub.1.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.1,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -370,7 +370,7 @@
                     <label2>$INFO[Skin.String(moviehub.2.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.2,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -382,7 +382,7 @@
                     <label2>$INFO[Skin.String(moviehub.3.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.3,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -391,8 +391,8 @@
                 
                 <control type="radiobutton" id="306">
                     <label>31199</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
@@ -410,7 +410,7 @@
                 <control type="button" id="501">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick condition="!stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
@@ -424,7 +424,7 @@
                 <control type="button" id="502">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
@@ -438,7 +438,7 @@
                     <label2>$INFO[Skin.String(tvshowhub.1.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.1,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -450,7 +450,7 @@
                     <label2>$INFO[Skin.String(tvshowhub.2.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.2,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -462,7 +462,7 @@
                     <label2>$INFO[Skin.String(tvshowhub.3.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.3,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -471,8 +471,8 @@
                 
                 <control type="radiobutton" id="506">
                     <label>31199</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
@@ -487,8 +487,8 @@
                 
                 <control type="radiobutton" id="802">
                     <label>31146</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -499,8 +499,8 @@
                 </control>
                 <control type="radiobutton" id="803">
                     <label>31185</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(fanart.showmore)</onclick>
@@ -510,8 +510,8 @@
                 </control>
                 <control type="radiobutton" id="832">
                     <label>31145</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -522,8 +522,8 @@
                 </control>
                 <control type="radiobutton" id="805">
                     <label>31210</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(show.silhouette)</onclick>
@@ -535,8 +535,8 @@
                 
                 <control type="radiobutton" id="825">
                     <label>31218</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(purplefade)</onclick>
@@ -546,7 +546,7 @@
                 </control>
                 <control type="button" id="801">
                     <label>31138</label>
-                    <width>1030</width>
+                    <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
@@ -559,8 +559,8 @@
                 <!--------->
                 <control type="radiobutton" id="401">
                     <label>31139</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -571,8 +571,8 @@
                 </control>
                 <control type="radiobutton" id="402">
                     <label>$LOCALIZE[31140]</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <disabledcolor>PanelFG-NF</disabledcolor>
@@ -585,8 +585,8 @@
                 </control>
                 <control type="radiobutton" id="403">
                     <label>31161</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -598,8 +598,8 @@
                 
                 <control type="radiobutton" id="404">
                     <label>31162</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -611,8 +611,8 @@
                 
                 <control type="radiobutton" id="405">
                     <label>31216</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -627,8 +627,8 @@
                 <!------------>
                 <control type="radiobutton" id="601">
                     <label>31144</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
@@ -638,8 +638,8 @@
                 </control>
                 <control type="radiobutton" id="602">
                     <label>13305</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(disable.rss)</onclick>
@@ -649,8 +649,8 @@
                 </control>
                 <control type="radiobutton" id="603">
                     <label>31188</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(rss.tvnextaired)</onclick>
@@ -661,8 +661,8 @@
                 </control>
                 <control type="radiobutton" id="604">
                     <label>31189</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
@@ -672,8 +672,8 @@
                 </control>
                 <control type="radiobutton" id="623">
                     <label>31177</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     
@@ -684,8 +684,8 @@
                 </control>
                 <control type="radiobutton" id="605">
                     <label>31184</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.autopop)</onclick>
@@ -696,8 +696,8 @@
                 
                  <control type="radiobutton" id="631">
                     <label>654</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
@@ -707,8 +707,8 @@
                 </control>
                 <control type="radiobutton" id="632">
                     <label>31137</label>
-                    <width>1030</width>
-                    <radioposx>944</radioposx>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(skin.init)</onclick>

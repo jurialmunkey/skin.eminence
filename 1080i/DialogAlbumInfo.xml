@@ -127,7 +127,7 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
+		        <posx>539</posx>
 		        <posy>210</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
@@ -218,7 +218,7 @@
                     <label>31101</label>
                 </control>
                 <control type="textbox">
-                    <width>917</width>
+                    <width>947</width>
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>

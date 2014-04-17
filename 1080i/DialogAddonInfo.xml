@@ -9,30 +9,30 @@
 	<controls>
 
 		<control type="group">
-		    <posx>233</posx>
+		    <posx>horzpad</posx>
 		    <posy>70</posy>
-		    <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
+		    <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
 		    <include>DialogVisibility</include>
 		    <include>DefDialogInfoSideLabel</include>
 		    <control type="group" description="Poster">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <control type="image">
-                    <width>467</width>
-                    <height>690</height>
+                    <width>bigposterwborder</width>
+                    <height>globalh</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>445</width>
-                    <height>445</height>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>bigposterw</width>
+                    <height>bigposterw</height>
                     <fadetime>200</fadetime>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>11</posx>
+                    <posx>10</posx>
                     <posy>456</posy>
                     <width>445</width>
                     <height>223</height>
@@ -117,8 +117,8 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>210</posy>
+		        <posx>539</posx>
+		        <posy>listy</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
                 <control type="label">
@@ -172,7 +172,7 @@
                     <label>31101</label>
                 </control>
                 <control type="textbox">
-                    <width>917</width>
+                    <width>947</width>
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>

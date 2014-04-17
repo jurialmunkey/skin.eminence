@@ -495,3 +495,15 @@ msgstr ""
 msgctxt "#31222"
 msgid " •   Customise widget item"
 msgstr ""
+
+msgctxt "#31223"
+msgid "Banner List"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Forecast"
+msgstr ""
+
+msgctxt "#31225"
+msgid "Info List"
+msgstr ""

@@ -40,13 +40,21 @@
             <include>DialogVisibility</include>
             <visible>!Control.HasFocus(9200)</visible>
         </control>
+
         <control type="group">
             <posy>70</posy>
-            <posx>233</posx>
+            <posx>horzpad</posx>
+            <control type="group">
+                <posx>0</posx>
+                <control type="label" description="Info Label">
+                    <include>DefSideLabelCoords</include>
+                    <label>33006</label>
+                </control>
+            </control>
             <control type="scrollbar" id="60">
-                <posx>1449</posx>
-                <posy>210</posy>
-                <height>690</height>
+                <posx>1454</posx>
+                <posy>listy</posy>
+                <height>globalh</height>
                 <onleft>9000</onleft>
                 <onright>9200</onright>
                 <texturesliderbarfocus colordiffuse="PanelFG-NF">common/white.png</texturesliderbarfocus>
@@ -56,10 +64,10 @@
             <include>Animation.FadeOut</include>
             <animation effect="slide" condition="Control.HasFocus(9200)" start="0" end="-1920" time="200">Conditional</animation>
             <control type="image">
-                <posx>18</posx>
-                <posy>210</posy>
-                <width>690</width>
-                <height>690</height>
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>globalh</width>
+                <height>globalh</height>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>   
             <control type="multiimage">
@@ -204,23 +212,23 @@
             
             <control type="list" id="9100">
                 <posx>720</posx>
-                <posy>210</posy>
-                <width>714</width>
+                <posy>listy</posy>
+                <width>724</width>
                 <height>702</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <pagecontrol>60</pagecontrol>
                 <orientation>vertical</orientation>
-                <itemlayout width="714" height="117">
+                <itemlayout width="724" height="117">
                     <control type="image">
-                        <width>714</width>
-                        <height>105</height>
+                        <width>724</width>
+                        <height>107</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
                         <width>300</width>
-                        <height>105</height>
+                        <height>107</height>
                         <font>Font-Weather</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -228,7 +236,7 @@
                         <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
-                        <posx>704</posx>
+                        <posx>15r</posx>
                         <width>300</width>
                         <height>110</height>
                         <font>Font-Weather</font>
@@ -248,7 +256,7 @@
                         <label>$INFO[ListItem.Property(outlook)]</label>
                     </control>
                     <control type="label">
-                        <posx>640</posx>
+                        <posx>85r</posx>
                         <width>500</width>
                         <height>105</height>
                         <align>right</align>
@@ -276,16 +284,16 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="444" height="117">
+                <focusedlayout width="724" height="117">
                     <control type="image">
-                        <width>714</width>
-                        <height>105</height>
+                        <width>724</width>
+                        <height>107</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
                         <width>300</width>
-                        <height>105</height>
+                        <height>107</height>
                         <font>Font-Weather</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -293,7 +301,7 @@
                         <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
-                        <posx>704</posx>
+                        <posx>15r</posx>
                         <width>300</width>
                         <height>110</height>
                         <font>Font-Weather</font>
@@ -313,7 +321,7 @@
                         <label>$INFO[ListItem.Property(outlook)]</label>
                     </control>
                     <control type="label">
-                        <posx>640</posx>
+                        <posx>85r</posx>
                         <width>500</width>
                         <height>105</height>
                         <align>right</align>
@@ -440,27 +448,36 @@
                 </content>
             </control>
             <control type="button" id="9200">
+                <posx>1920</posx>
+                <width>1920</width>
+                <height>1080</height>
                 <visible allowhiddenfocus="true">false</visible>
                 <onleft>60</onleft>
+            </control>
+            <control type="group">
+                <posx>1920</posx>
+                <control type="label" description="Info Label">
+                    <include>DefSideLabelCoords</include>
+                    <label>31224</label>
+                </control>
             </control>
             <control type="panel">
                 <posx>1938</posx>
                 <posy>210</posy>
-                <width>1430</width>
+                <width>1458</width>
                 <height>702</height>
-                <itemgap>12</itemgap>
                 <orientation>vertical</orientation>
-                <itemlayout width="286" height="351">
+                <itemlayout width="291" height="351">
                     <control type="group">
                         <control type="image">
-                            <width>274</width>
-                            <height>339</height>
+                            <width>281</width>
+                            <height>341</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>50</posy>
-                            <width>274</width>
+                            <width>281</width>
                             <align>center</align>
                             <font>Font-MediumWeather</font>
                             <aligny>center</aligny>
@@ -468,8 +485,8 @@
                         </control>
                         <control type="label">
                             <posy>160</posy>
-                            <posx>137</posx>
-                            <width>242</width>
+                            <posx>140</posx>
+                            <width>250</width>
                             <font>Font-ListInfo</font>
                             <wrapmultiline>true</wrapmultiline>
                             <aligny>top</aligny>
@@ -477,33 +494,33 @@
                             <label>$INFO[Listitem.Property(Outlook)]</label>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>230</posy>
-                            <width>274</width>
+                            <width>250</width>
                             <align>center</align>
                             <label>$INFO[ListItem.Property(LowTemperature)] • $INFO[ListItem.Property(HighTemperature)]</label>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>270</posy>
-                            <width>274</width>
+                            <width>250</width>
                             <align>center</align>
                             <font>Font-ListInfo</font>
                             <label>$INFO[ListItem.Property(LongDay)]</label>
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout width="286" height="351">
+                <focusedlayout width="291" height="351">
                     <control type="group">
                         <control type="image">
-                            <width>274</width>
-                            <height>339</height>
+                            <width>281</width>
+                            <height>341</height>
                             <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>50</posy>
-                            <width>274</width>
+                            <width>281</width>
                             <align>center</align>
                             <font>Font-MediumWeather</font>
                             <aligny>center</aligny>
@@ -511,8 +528,8 @@
                         </control>
                         <control type="label">
                             <posy>160</posy>
-                            <posx>137</posx>
-                            <width>242</width>
+                            <posx>140</posx>
+                            <width>250</width>
                             <font>Font-ListInfo</font>
                             <wrapmultiline>true</wrapmultiline>
                             <aligny>top</aligny>
@@ -520,16 +537,16 @@
                             <label>$INFO[Listitem.Property(Outlook)]</label>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>230</posy>
-                            <width>274</width>
+                            <width>250</width>
                             <align>center</align>
                             <label>$INFO[ListItem.Property(LowTemperature)] • $INFO[ListItem.Property(HighTemperature)]</label>
                         </control>
                         <control type="label">
-                            <posx>137</posx>
+                            <posx>140</posx>
                             <posy>270</posy>
-                            <width>274</width>
+                            <width>250</width>
                             <align>center</align>
                             <font>Font-ListInfo</font>
                             <label>$INFO[ListItem.Property(LongDay)]</label>
@@ -628,10 +645,10 @@
         <control type="group">   
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <animation effect="slide" start="0" end="-1920" time="200" condition="!Control.HasFocus(60) + !ControlGroup(9000).HasFocus()">Conditional</animation>
+            <animation effect="slide" start="0" end="-1920" time="200" condition="Control.HasFocus(9200)">Conditional</animation>
             <control type="grouplist" id="9000">
-                <posx>263</posx>
-                <posy>170</posy>
+                <posx>240</posx>
+                <posy>174</posy>
                 <ondown>60</ondown>
                 <orientation>horizontal</orientation>
                             
@@ -647,7 +664,7 @@
                 <control type="button" id="4">
                     <description>Settings</description>
                     <label>5</label>
-                    <width>890</width>
+                    <width>910</width>
                     <align>left</align>
                     <onclick>ActivateWindow(weathersettings)</onclick>
                     <include>DefContextMenuButton</include>

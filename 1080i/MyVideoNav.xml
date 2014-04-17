@@ -3,25 +3,25 @@
 <window id="6">
     <include condition="!IsEmpty(Window(home).Property(focushub)) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)] + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
     <include condition="IsEmpty(Window(home).Property(focushub)) | ![substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)] | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
-	<allowoverlay>yes</allowoverlay>
-	<background>0</background>
-	<views>50,51,52,53,54,55,56</views>
-	<include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-	<onload>ClearProperty(focushub,home)</onload>
-	<onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
-	<onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
-	<controls>
+    <allowoverlay>yes</allowoverlay>
+    <background>0</background>
+    <views>50,51,52,53,54,55,56,57,58</views>
+    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
+    <onload>ClearProperty(focushub,home)</onload>
+    <onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
+    <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
+    <controls>
         
-		<control type="radiobutton" id="19">
-			<description>Filter (hidden)</description>
-			<include>HiddenButton</include>
-		</control>
+        <control type="radiobutton" id="19">
+            <description>Filter (hidden)</description>
+            <include>HiddenButton</include>
+        </control>
 
-		<include>GlobalBackground</include>
+        <include>GlobalBackground</include>
         
         <control type="button">
             <posy>600</posy>
-            <posx>1770</posx>
+            <posx>1760</posx>
             <width>48</width>
             <height>48</height>
             <onclick>SetFocus(50)</onclick>
@@ -37,12 +37,12 @@
             <visible>[Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
         
         <control type="button">
             <posy>600</posy>
-            <posx>102</posx>
+            <posx>92</posx>
             <width>48</width>
             <height>48</height>
             <onclick>SetFocus(9500)</onclick>
@@ -55,68 +55,23 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
             <visible>![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
             <visible>[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
         
         <include>DefMyNavViews</include>
         
+        <include>DefFullScreenNav</include>
+        
         <control type="group">
-            <posx>0</posx>
-            <posy>70</posy>
-            <include>DialogVisibility</include>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-            <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
-            <control type="group">
-                <posx>18</posx>
-                <posy>210</posy>
-                <control type="image">
-                    
-                    <width>1416</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control> 
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture colordiffuse="Black">common/white.png</texture>
-                </control>
-                <control type="videowindow">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <visible>Player.HasVideo</visible>
-                </control>
-                <control type="visualisation">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <visible>Player.HasAudio</visible>
-                </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
-            </control>
-        </control>
-		
-		<control type="group">
-            <posx>233</posx>
+            <posx>horzpad</posx>
             <posy>70</posy>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="norzpadneg" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
             
             <control type="label">
@@ -130,41 +85,41 @@
             
             <control type="list" id="9500">
                 <posx>984</posx>
-                <posy>210</posy>
-                <width>450</width>
+                <posy>listy</posy>
+                <width>464</width>
                 <height>700</height>
                 <onright>50</onright>
                 <onleft>9501</onleft>                
                 <onup>9500</onup>
                 <ondown>9500</ondown>
                 <orientation>vertical</orientation>
-                <itemlayout width="450" height="140">
+                <itemlayout width="464" height="fivelinelist">
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -174,7 +129,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>
@@ -184,10 +139,10 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="450" height="140">
+                <focusedlayout width="464" height="fivelinelist">
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                         <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -195,32 +150,32 @@
                         
                     </control>
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -230,7 +185,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>
@@ -246,31 +201,31 @@
                 </content>
             </control>
             <control type="label">
-                <posx>18</posx>
+                <posx>listx</posx>
                 <posy>145</posy>
-                <width>690</width>
+                <width>globalh</width>
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[MovieWidgetLabel]</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <visible>substring(Container.FolderPath,movies)</visible>
             </control>
             <control type="label">
-                <posx>18</posx>
+                <posx>listx</posx>
                 <posy>145</posy>
-                <width>690</width>
+                <width>globalh</width>
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[TvShowWidgetLabel]</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <visible>substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)</visible>
             </control>
             <control type="group">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <control type="group">
                     <visible>!Control.HasFocus(9501)</visible>
                     <control type="image">
                         <width>955</width>
-                        <height>690</height>
+                        <height>globalh</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
@@ -302,15 +257,9 @@
                     <visible>Control.HasFocus(9501)</visible>
                     <control type="image">
                         <width>955</width>
-                        <height>690</height>
+                        <height>globalh</height>
                         <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
-                    <!--<control type="image">
-                        <posy>682</posy>
-                        <width>955</width>
-                        <height>8</height>
-                        <texture colordiffuse="Highlight" border="5">common/white.png</texture>
-                    </control>-->
                     <control type="label">
                         <posx>20</posx>
                         <posy>555</posy>
@@ -341,27 +290,27 @@
                     </control>
                 </control>
                 <control type="wraplist" id="9501">
-                    <posx>11</posx>
-                    <posy>11</posy>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
                     <onright>9500</onright>
-                    <width>933</width>
-                    <height>537</height>
+                    <width>935</width>
+                    <height>538</height>
                     <orientation>vertical</orientation>
                     <preloaditems>1</preloaditems>
                     <autoscroll time="7000">!Control.HasFocus(9501)</autoscroll>
                     <scrolltime tween="cubic">500</scrolltime>
-                    <itemlayout width="933" height="537">
+                    <itemlayout width="935" height="538">
                         <control type="image">
-                            <width>933</width>
-                            <height>537</height>
+                            <width>935</width>
+                            <height>538</height>
                             <texture>$VAR[WidgetFanart]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="933" height="537">
+                    <focusedlayout width="935" height="538">
                         <control type="image">
-                            <width>933</width>
-                            <height>537</height>
+                            <width>935</width>
+                            <height>538</height>
                             <texture>$VAR[WidgetFanart]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
@@ -374,15 +323,15 @@
                     <include condition="[substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)] + stringcompare(Skin.String(tvshow.widget),playlist)">ContentPlaylistEpisodesWidget</include>
                 </control>
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>933</width>
-                    <height>537</height>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>935</width>
+                    <height>538</height>
                     <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
                 </control>
             </control>
         </control>
-		
+        
         <include>GlobalTopBar</include>
         
         
@@ -408,8 +357,8 @@
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                     <label>584</label>
-					<altlabel>585</altlabel>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 
                 <control type="togglebutton" id="14">
@@ -483,18 +432,18 @@
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                 </control>
 
-				<control type="togglebutton" id="98">
-					<visible>Container.CanFilterAdvanced</visible>
-					<description>Filter</description>
-					<include>DefNavMenuButton</include>
-					<label>587</label>
-					<onclick>SetFocus(50)</onclick>
-					<onclick>Filter</onclick>
-					<altlabel>✓  $LOCALIZE[587]</altlabel>
+                <control type="togglebutton" id="98">
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>DefNavMenuButton</include>
+                    <label>587</label>
+                    <onclick>SetFocus(50)</onclick>
+                    <onclick>Filter</onclick>
+                    <altlabel>✓  $LOCALIZE[587]</altlabel>
                     <usealttexture>Container.Filtered</usealttexture>
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
-				</control>
+                </control>
                 
                 <control type="button" id="9002">
                     <description>Search</description>
@@ -544,6 +493,6 @@
             </control>
         </control>
 
-	</controls>
+    </controls>
 
 </window>

@@ -9,9 +9,9 @@
             <include>Animation.ViewChange</include>     
             <include>DefSideLabel</include>       
             <control type="panel" id="56">
-                <posx>18</posx>
-                <posy>210</posy>
-                <width>1434</width>
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>globalw</width>
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>9000</onright>
@@ -23,18 +23,18 @@
                 <scrolltime tween="quadratic">400</scrolltime>
                 <orientation>vertical</orientation>
 
-                <itemlayout width="1416" height="140">
+                <itemlayout width="globalw" height="fivelinelist">
 
                     <control type="image">
-                        <width>1416</width>
-                        <height>130</height>
+                        <width>globalw</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
@@ -42,10 +42,10 @@
 						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                     </control>
 					<control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>71</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>73</width>
+                        <height>fiveline</height>
                         <texture>$VAR[PosterImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
@@ -77,7 +77,7 @@
 						</control>
 					</control>	
                     <control type="label">
-                        <posx>1372</posx>
+                        <posx>30r</posx>
                         <height>130</height>
                         <width>1200</width>
                         <align>right</align>
@@ -89,18 +89,18 @@
 
                 </itemlayout>
 
-                <focusedlayout width="1416" height="140">
+                <focusedlayout width="globalw" height="fivelinelist">
 
                     <control type="image">
-                        <width>1416</width>
-                        <height>130</height>
+                        <width>globalw</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$VAR[SquareImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
@@ -108,10 +108,10 @@
 						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                     </control>
 					<control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>71</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>73</width>
+                        <height>fiveline</height>
                         <texture>$VAR[PosterImage]</texture>
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
@@ -141,7 +141,7 @@
 						</control>
 					</control>
                     <control type="label">
-                        <posx>1372</posx>
+                        <posx>30r</posx>
                         <height>130</height>
                         <width>1200</width>
                         <align>right</align>
@@ -155,9 +155,9 @@
 
             </control>
             <control type="scrollbar" id="60">
-                <posx>-11</posx>
-                <posy>210</posy>
-                <height>690</height>
+                <posx>-8</posx>
+                <posy>listy</posy>
+                <height>globalh</height>
                 <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>

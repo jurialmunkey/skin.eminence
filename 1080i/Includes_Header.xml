@@ -378,7 +378,10 @@
             <visible>!ControlGroup(9500).HasFocus()</visible>
             <include>Animation.VisibleFadeIn</include>
             <include>Animation.VisibleFadeOut</include>
-            <include>HeaderMainInfo</include>
+            <control type="group">
+                <posx>-10</posx>
+                <include>HeaderMainInfo</include>
+            </control>
             <control type="group">
                 <include>Animation.VisibleFadeIn</include>
                 <include>Animation.VisibleFadeOut</include>

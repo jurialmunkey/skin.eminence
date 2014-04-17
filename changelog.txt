@@ -1,3 +1,11 @@
+[B]0.9.37[/B]
+Standardised views to constants (still some work todo)
+Standardised spacing (10px)
+Fixed poster aspect issues
+Changed view spacing to 1448 x 690 px
+Added Info List viewtype (only videos atm)
+Added Banner List viewtype (only videos atm)
+
 [B]0.9.36[/B]
 Widget hub background to skin background (unless sunset on)
 Ability to change widget hub items

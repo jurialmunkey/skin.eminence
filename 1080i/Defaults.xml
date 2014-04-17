@@ -2,216 +2,268 @@
 <!-- Foundation -->
 <includes>
 
-	<default type="label">
-		<posx>0</posx>
-		<posy>0</posy>
-		<label>-</label>
-		<height>66</height>
-		<align>left</align>
-		<aligny>center</aligny>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<selectedcolor>PanelFG-NF</selectedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-	</default>
+    <constant name="globalpad">10</constant>
+    <constant name="globalh">690</constant>
+    <constant name="globalw">1448</constant>
+    
+    <constant name="lovefilmw">1428</constant>
+    
+    <constant name="bigposterh">670</constant>
+    <constant name="bigposterw">446</constant>
+    <constant name="bigposterwplot">426</constant>
+    <constant name="bigposterhfanart">251</constant>
+    <constant name="bigposterwborder">466</constant>
+    <constant name="bigposterhborder">690</constant>
+    <constant name="bigposterwlist">491</constant>
+    
+    
+    <constant name="wallposterh">320</constant>
+    <constant name="wallposterhborder">340</constant>
+    <constant name="wallposterhlist">350</constant>
+    <constant name="wallposterw">213</constant>
+    <constant name="wallposterwborder">233</constant>
+    <constant name="wallposterwlist">243</constant>
+    
+    <constant name="bannerh">129</constant>
+    <constant name="bannerhepisode">204</constant>
+    <constant name="bannerwepisode">363</constant>
+    <constant name="bannerhborder">224</constant>
+    <constant name="bannerhlist">233</constant>
+    <constant name="bannerwlist">729</constant>
+    <constant name="bannerwborder">719</constant>
+    <constant name="bannerw">699</constant>
+    
+    <constant name="fiveline">110</constant>
+    <constant name="fivelineborder">130</constant>
+    <constant name="fivelinelist">140</constant>
+        
+    <constant name="threecol">456</constant>
+    <constant name="threecolborder">476</constant>
+    <constant name="threecollist">486</constant>
+    <constant name="threecolfanart">257</constant>
+    <constant name="threecolplot">436</constant>
+    
+    <constant name="listh">69</constant>
+    <constant name="listw">972</constant>
+    
+    <constant name="listx">18</constant>
+    <constant name="listy">210</constant>
+    
+    <constant name="horzpad">216</constant>
+    <constant name="horznegpad">-216</constant>
+    <constant name="listpad">18</constant>
 
-	<default type="fadelabel">
-		<posx>0</posx>
-		<posy>0</posy>
-		<height>66</height>
-		<label>-</label>
-		<align>left</align>
-		<aligny>center</aligny>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<selectedcolor>PanelFG</selectedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<scrollout>false</scrollout>
-		<pauseatend>2000</pauseatend>
-	</default>
 
-	<default type="image">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>-</width>
-		<height>-</height>
-		<align>center</align>
-		<aligny>center</aligny>
-		<texture>-</texture>
-	</default>
+    <default type="label">
+        <posx>0</posx>
+        <posy>0</posy>
+        <label>-</label>
+        <height>66</height>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <selectedcolor>PanelFG-NF</selectedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+    </default>
 
-	<default type="button">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>450</width>
-		<height>66</height>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>Font-Button</font>
-		<label>-</label>
-		<textoffsetx>30</textoffsetx>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<pulseonselect>false</pulseonselect>
-	</default>
+    <default type="fadelabel">
+        <posx>0</posx>
+        <posy>0</posy>
+        <height>66</height>
+        <label>-</label>
+        <align>left</align>
+        <aligny>center</aligny>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <selectedcolor>PanelFG</selectedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <scrollout>false</scrollout>
+        <pauseatend>2000</pauseatend>
+    </default>
 
-	<default type="togglebutton">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>450</width>
-		<height>66</height>
-		<label>-</label>
-		<textoffsetx>30</textoffsetx>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<alttexturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</alttexturefocus>
-		<alttexturenofocus colordiffuse="PanelFG-NF">-</alttexturenofocus>
-		<align>center</align>
-		<aligny>center</aligny>
-		<pulseonselect>false</pulseonselect>
-	</default>
+    <default type="image">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>-</width>
+        <height>-</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <texture>-</texture>
+    </default>
 
-	<default type="radiobutton">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>450</width>
-		<height>66</height>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>Font-Button</font>
-		<label>-</label>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<radiowidth>48</radiowidth>
-		<radioheight>48</radioheight>
-		<textureradioonfocus colordiffuse="RadioFO">buttons/radio-on.png</textureradioonfocus>
-		<textureradioonnofocus colordiffuse="PanelFG-NF">buttons/radio-on.png</textureradioonnofocus>
-		<textureradioofffocus colordiffuse="RadioFO">buttons/radio-off.png</textureradioofffocus>
-		<textureradiooffnofocus colordiffuse="PanelFG-NF">buttons/radio-off.png</textureradiooffnofocus>
-		<textoffsetx>30</textoffsetx>
-		<pulseonselect>false</pulseonselect>
-	</default>
+    <default type="button">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>450</width>
+        <height>66</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>Font-Button</font>
+        <label>-</label>
+        <textoffsetx>30</textoffsetx>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
-	<default type="spincontrolex">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>450</width>
-		<height>66</height>
-		<label>-</label>
-		<font>Font-Button</font>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<spinwidth>48</spinwidth>
-		<spinheight>48</spinheight>
-		<textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
-		<texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
-		<textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
-		<texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<textoffsetx>30</textoffsetx>
-		<align>left</align>
-		<aligny>center</aligny>
-		<reverse>yes</reverse>
-		<pulseonselect>false</pulseonselect>
-	</default>
+    <default type="togglebutton">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>450</width>
+        <height>66</height>
+        <label>-</label>
+        <textoffsetx>30</textoffsetx>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <alttexturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</alttexturefocus>
+        <alttexturenofocus colordiffuse="PanelFG-NF">-</alttexturenofocus>
+        <align>center</align>
+        <aligny>center</aligny>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
-	<default type="spincontrol">
-		<posx>0</posx>
-		<posy>0</posy>
-		<height>23</height>
-		<width>23</width>
-		<spinwidth>48</spinwidth>
-		<spinheight>48</spinheight>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
-		<texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
-		<textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
-		<texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<textoffsetx>30</textoffsetx>
-		<align>left</align>
-		<aligny>center</aligny>
-		<reverse>yes</reverse>
-		<pulseonselect>false</pulseonselect>
-	</default>
+    <default type="radiobutton">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>450</width>
+        <height>66</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>Font-Button</font>
+        <label>-</label>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <radiowidth>48</radiowidth>
+        <radioheight>48</radioheight>
+        <textureradioonfocus colordiffuse="RadioFO">buttons/radio-on.png</textureradioonfocus>
+        <textureradioonnofocus colordiffuse="PanelFG-NF">buttons/radio-on.png</textureradioonnofocus>
+        <textureradioofffocus colordiffuse="RadioFO">buttons/radio-off.png</textureradioofffocus>
+        <textureradiooffnofocus colordiffuse="PanelFG-NF">buttons/radio-off.png</textureradiooffnofocus>
+        <textoffsetx>30</textoffsetx>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
-	<default type="sliderex">
-		<posx>0</posx>
-		<posy>0</posy>
-		<height>66</height>
-		<width>450</width>
-		<texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-		<texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-		<sliderwidth>230</sliderwidth>
-		<sliderheight>23</sliderheight>
-		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<focusedcolor>PanelFG</focusedcolor>
-		<disabledcolor>Disabled</disabledcolor>
-		<textoffsetx>30</textoffsetx>
-		<textoffsety>14</textoffsety>
-	</default>
+    <default type="spincontrolex">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>450</width>
+        <height>66</height>
+        <label>-</label>
+        <font>Font-Button</font>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <spinwidth>48</spinwidth>
+        <spinheight>48</spinheight>
+        <textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
+        <texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
+        <textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
+        <texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <textoffsetx>30</textoffsetx>
+        <align>left</align>
+        <aligny>center</aligny>
+        <reverse>yes</reverse>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
-	<default type="progress">
-		<texturebg colordiffuse="PanelFG-NF">osd/progress-bg.png</texturebg>
-		<lefttexture colordiffuse="Highlight">osd/progress-end.png</lefttexture>
-		<midtexture colordiffuse="Highlight">osd/progress-end.png</midtexture>
-		<righttexture>osd/progress-end.png</righttexture>
-		<overlaytexture>-</overlaytexture>
-	</default>
+    <default type="spincontrol">
+        <posx>0</posx>
+        <posy>0</posy>
+        <height>23</height>
+        <width>23</width>
+        <spinwidth>48</spinwidth>
+        <spinheight>48</spinheight>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
+        <texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
+        <textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
+        <texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <textoffsetx>30</textoffsetx>
+        <align>left</align>
+        <aligny>center</aligny>
+        <reverse>yes</reverse>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
-	<default type="slider">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>360</width>
-		<height>23</height>
-		<texturefocus>-</texturefocus>
-		<texturenofocus>-</texturenofocus>
-		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
-	</default>
+    <default type="sliderex">
+        <posx>0</posx>
+        <posy>0</posy>
+        <height>66</height>
+        <width>450</width>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <sliderwidth>230</sliderwidth>
+        <sliderheight>23</sliderheight>
+        <texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
+        <textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
+        <textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <textoffsetx>30</textoffsetx>
+        <textoffsety>14</textoffsety>
+    </default>
 
-	<default type="scrollbar">
-		<width>8</width>
-		<texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
-		<texturesliderbar colordiffuse="PanelFG-NF">common/white.png</texturesliderbar>
-		<texturesliderbarfocus colordiffuse="Highlight">common/white.png</texturesliderbarfocus>
-		<textureslidernib>-</textureslidernib>
-		<textureslidernibfocus>-</textureslidernibfocus>
-		<showonepage>true</showonepage>
-		<orientation>vertical</orientation>
-		
-	</default>
+    <default type="progress">
+        <texturebg colordiffuse="PanelFG-NF">osd/progress-bg.png</texturebg>
+        <lefttexture colordiffuse="Highlight">osd/progress-end.png</lefttexture>
+        <midtexture colordiffuse="Highlight">osd/progress-end.png</midtexture>
+        <righttexture>osd/progress-end.png</righttexture>
+        <overlaytexture>-</overlaytexture>
+    </default>
 
-	<default type="textbox">
-		<label>-</label>
-		<font>Font-Button</font>
-		<textcolor>PanelFG-NF</textcolor>
-		<shadowcolor>-</shadowcolor>
-		<pagecontrol>61</pagecontrol>
-		<autoscroll delay="6000" time="3000" repeat="10000"/>
-	</default>
+    <default type="slider">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>360</width>
+        <height>23</height>
+        <texturefocus>-</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
+        <textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
+        <textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+    </default>
+
+    <default type="scrollbar">
+        <width>8</width>
+        <texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
+        <texturesliderbar colordiffuse="PanelFG-NF">common/white.png</texturesliderbar>
+        <texturesliderbarfocus colordiffuse="Highlight">common/white.png</texturesliderbarfocus>
+        <textureslidernib>-</textureslidernib>
+        <textureslidernibfocus>-</textureslidernibfocus>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>
+        
+    </default>
+
+    <default type="textbox">
+        <label>-</label>
+        <font>Font-Button</font>
+        <textcolor>PanelFG-NF</textcolor>
+        <shadowcolor>-</shadowcolor>
+        <pagecontrol>61</pagecontrol>
+        <autoscroll delay="6000" time="3000" repeat="10000"/>
+    </default>
 
 </includes>

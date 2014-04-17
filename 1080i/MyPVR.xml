@@ -26,7 +26,7 @@
             <visible>Control.HasFocus(9500) | Control.HasFocus(9501)</visible>
             <visible>!Control.HasFocus(10)</visible>
             <visible>!Control.IsVisible(9001)</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
      
@@ -48,11 +48,11 @@
             <visible>!Control.HasFocus(9500) + !Control.HasFocus(9501)</visible>
             <visible>!Control.IsVisible(10)</visible>
             <visible>!Control.IsVisible(9001)</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
         <control type="button" id="9009">
-            <posx>262</posx>
+            <posx>244</posx>
             <posy>220</posy>
             <width>690</width>
             <onclick>SendClick(32)</onclick>
@@ -74,16 +74,18 @@
             <include>DialogVisibility</include>
             <textcolor>$VAR[PVRTopLabelColor]</textcolor>
             <visible>ControlGroup(50).HasFocus() | ![Control.HasFocus(9500) | Control.HasFocus(9501)]</visible>
-            <include>Animation.SlideOpen.Left</include>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <animation effect="slide" start="0" end="1920" time="200" condition="Control.HasFocus(9500) | Control.HasFocus(9501)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
         <control type="group">
-            <posx>233</posx>
+            <posx>horzpad</posx>
             <posy>70</posy>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
-            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
             
             <control type="label">
@@ -97,41 +99,41 @@
             
             <control type="list" id="9500">
                 <posx>984</posx>
-                <posy>210</posy>
-                <width>450</width>
+                <posy>listy</posy>
+                <width>464</width>
                 <height>700</height>
                 <onright>50</onright>
                 <onleft>9501</onleft>                
                 <onup>9500</onup>
                 <ondown>9500</ondown>
                 <orientation>vertical</orientation>
-                <itemlayout width="450" height="140">
+                <itemlayout  width="464" height="fivelinelist">
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -141,7 +143,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>
@@ -151,10 +153,10 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="450" height="140">
+                <focusedlayout width="464" height="fivelinelist">
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                         <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -162,32 +164,32 @@
                         
                     </control>
                     <control type="image">
-                        <width>450</width>
-                        <height>130</height>
+                        <width>464</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -197,7 +199,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>420</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>
@@ -395,13 +397,13 @@
                 </control>
             </control>
         </control>
-		
+        
         <control type="group">
             <posy>70</posy>
-            <posx>233</posx>
+            <posx>horzpad</posx>
             <visible allowhiddenfocus="true">![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502) | ControlGroup(300).HasFocus()]</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
-            <animation effect="slide" end="-234" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(9001) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(9001) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
             <control type="scrollbar" id="60">
                 <visible>!Control.IsVisible(10)</visible>
                 <visible>!Control.HasFocus(9001)</visible>
@@ -415,7 +417,7 @@
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
             </control>
             <include>DialogVisibility</include>
-			<include>Animation.SlideOpen.Left</include>
+            <include>Animation.SlideOpen.Left</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" end="-1950" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + Control.IsVisible(10)">Conditional</animation>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml) + !Control.IsVisible(10)">Conditional</animation>
@@ -432,52 +434,13 @@
                 <include description="id36-17">LiveTVSearchView</include>
             </control>
             <control type="label">
-                <posx>1475</posx>
-                <posy>174</posy>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
+                <include>DefSideLabelCoords</include>
                 <label>$VAR[PVRSideLabel]</label>
-                <angle>270</angle>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
                 <visible>!Control.IsVisible(10)</visible>
                 <visible>!ControlGroup(9000).HasFocus()</visible>
                 <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             </control>
-            <control type="group">
-                <posx>18</posx>
-                <posy>210</posy>
-                <visible>Control.HasFocus(9001)</visible>
-                <control type="image">
-                    
-                    <width>1416</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control> 
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture colordiffuse="Black">common/white.png</texture>
-                </control>
-                <control type="videowindow">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
-            </control>
+            <include>DefFullScreenNav</include>
             
             
         
@@ -487,20 +450,6 @@
         <include>GlobalTopBar</include>
         
         
-        
-        <!--<control type="group" description="Side menu">
-            <include>DefMyNavBar</include>  
-            <control type="grouplist" id="9000">
-                <include>DefMyNavBarGroupList</include>
-                <control type="button" id="9001" description="Fullscreen">
-                    <label>$LOCALIZE[31158]</label>
-                    <include>DefNavMenuButton</include>
-                    <onclick>Action(fullscreen)</onclick>
-                    <visible>Player.HasMedia</visible>
-                </control>
-                
-            </control>
-        </control>-->
         <control type="button" id="31" description="TV Guide">
             <label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
             <onfocus>SetFocus(9310)</onfocus>
@@ -554,15 +503,15 @@
         </control>
         
         <control type="label" id="29">
-			<description>Empty so we can pass the values up one level</description>
-			<visible>False</visible>
-		</control>
-		<control type="label" id="30">
-			<description>Empty so we can pass the values up one level</description>
-			<visible>False</visible>
-		</control>
-		
-		<control type="button" id="9131" description="Go Back">
+            <description>Empty so we can pass the values up one level</description>
+            <visible>False</visible>
+        </control>
+        <control type="label" id="30">
+            <description>Empty so we can pass the values up one level</description>
+            <visible>False</visible>
+        </control>
+        
+        <control type="button" id="9131" description="Go Back">
             <include>DefNavMenuButton</include>
             <visible allowhiddenfocus="true">false</visible>
             <onfocus>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onfocus>

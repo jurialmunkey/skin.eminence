@@ -63,64 +63,16 @@
 
 		<include>DefMyNavViews</include>
 		
-		<control type="group">
-            <posx>0</posx>
-            <posy>70</posy>
-            <include>DialogVisibility</include>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-            <visible allowhiddenfocus="true">Control.HasFocus(9001)</visible>
-            <control type="group">
-                <posx>18</posx>
-                <posy>210</posy>
-                <control type="image">
-                    
-                    <width>1416</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control> 
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture colordiffuse="Black">common/white.png</texture>
-                </control>
-                <control type="videowindow">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <visible>Player.HasVideo</visible>
-                </control>
-                <control type="visualisation">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <visible>Player.HasAudio</visible>
-                </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
-            </control>
-        </control>
+		<include>DefFullScreenNav</include>
 		
 		
 		<control type="group">
-            <posx>233</posx>
+            <posx>horzpad</posx>
             <posy>70</posy>
             <control type="label">
-                <posx>1475</posx>
-                <posy>174</posy>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
                 <label>2</label>
-                <angle>270</angle>
+                <include>DefSideLabelCoords</include>
+                <visible>!ControlGroup(9500).HasFocus()</visible>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
                 <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
                 <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
@@ -131,9 +83,9 @@
             <include>Animation.SlideOpen.Right</include>
             <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
             <control type="panel" id="9500">
-                <posx>18</posx>
-                <posy>210</posy>
-                <width>1434</width>
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>1458</width>
                 <height>700</height>
                 <onright>50</onright>
                 <onleft>CancelAlarm(Move9501,true)</onleft>
@@ -141,33 +93,33 @@
                 <onup>9500</onup>
                 <ondown>9500</ondown>
                 <orientation>vertical</orientation>
-                <itemlayout width="476" height="140">
+                <itemlayout width="threecollist" height="fivelinelist">
                     <control type="image">
-                        <width>464</width>
-                        <height>130</height>
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>434</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -177,7 +129,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>434</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>
@@ -187,40 +139,40 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="476" height="140">
+                <focusedlayout width="threecollist" height="fivelinelist">
                     <control type="image">
-                        <width>464</width>
-                        <height>130</height>
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
                         <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
-                        <width>464</width>
-                        <height>130</height>
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>IsEmpty(ListItem.Property(Color))</visible>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>  
-                        <width>107</width>
-                        <height>107</height>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio>scale</aspectratio>
                         <visible>!IsEmpty(ListItem.Property(Color))</visible>
                         <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>434</posx>
+                        <posx>30r</posx>
                         <posy>15</posy>
                         <width>270</width>
                         <align>right</align>
@@ -230,7 +182,7 @@
                         <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>434</posx>
+                        <posx>30r</posx>
                         <posy>48</posy>
                         <width>270</width>
                         <align>right</align>

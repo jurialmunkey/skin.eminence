@@ -3,28 +3,25 @@
 <includes>
 
     <include name="View_52_Wall_Content">
-        <itemlayout width="239" height="354" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)">
+        <itemlayout width="wallposterwlist" height="wallposterhlist" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>336</height>
-                    <width>221</width>
+                    <height>wallposterhborder</height>
+                    <width>wallposterwborder</width>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
  
             
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>314</height>
-                    <width>199</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>wallposterh</height>
+                    <width>wallposterw</width>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
                 </control>
                 <control type="image">
-                    <right>36</right>
+                    <right>28</right>
                     <bottom>28</bottom>
                     <height>32</height>
                     <width>32</width>
@@ -35,46 +32,40 @@
             </control>
 
         </itemlayout>
-        <itemlayout width="239" height="236" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(episodes)]">
+        <itemlayout width="wallposterwlist" height="bannerhlist" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(episodes)]">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>218</height>
-                    <width>221</width>
+                    <height>bannerhborder</height>
+                    <width>wallposterwborder</width>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
  
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>196</height>
-                    <width>199</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>bannerhepisode</height>
+                    <width>wallposterw</width>
                     <texture background="true">$VAR[PosterImage]</texture>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <aspectratio aligny="center">scale</aspectratio>
                 </control>
             </control>
         
         </itemlayout>
-        <itemlayout width="478" height="354" condition="Container.Content(episodes)">
+        <itemlayout width="threecollist" height="wallposterhlist" condition="Container.Content(episodes)">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>336</height>
-                    <width>460</width>
+                    <height>wallposterhborder</height>
+                    <width>threecolborder</width>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
  
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>314</height>
-                    <width>438</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>wallposterh</height>
+                    <width>threecol</width>
                     <texture background="true">$VAR[FanartImage]</texture>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <aspectratio aligny="center">scale</aspectratio>
                 </control>
                 <control type="image">
                     <right>36</right>
@@ -90,28 +81,25 @@
 
         </itemlayout>
         
-        <focusedlayout width="239" height="354" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)">
+        <focusedlayout width="wallposterwlist" height="wallposterhlist" condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets)">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>336</height>
-                    <width>221</width>
+                    <height>wallposterhborder</height>
+                    <width>wallposterwborder</width>
                     <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                 </control>
      
  
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>314</height>
-                    <width>199</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>wallposterh</height>
+                    <width>wallposterw</width>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
                 </control>
                 <control type="image">
-                    <right>36</right>
+                    <right>28</right>
                     <bottom>28</bottom>
                     <height>32</height>
                     <width>32</width>
@@ -122,46 +110,39 @@
             </control>
 
         </focusedlayout>
-        <focusedlayout width="239" height="236" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(episodes)]">
+        <focusedlayout width="wallposterwlist" height="bannerhlist" condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(episodes)]">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>218</height>
-                    <width>221</width>
+                    <height>bannerhborder</height>
+                    <width>wallposterwborder</width>
                     <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                 </control>
  
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>196</height>
-                    <width>199</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>bannerhepisode</height>
+                    <width>wallposterw</width>
                     <texture background="true">$VAR[PosterImage]</texture>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <aspectratio aligny="center">scale</aspectratio>
                 </control>
-            </control>
-            
+            </control>            
         </focusedlayout>
-        <focusedlayout width="478" height="354" condition="Container.Content(episodes)">
+        <focusedlayout width="threecollist" height="wallposterhlist" condition="Container.Content(episodes)">
             <control type="group">
-                <posy>9</posy>
                 <control type="image">
-                    <height>336</height>
-                    <width>460</width>
+                    <height>wallposterhborder</height>
+                    <width>threecolborder</width>
                     <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                 </control>
  
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <height>314</height>
-                    <width>438</width>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <height>wallposterh</height>
+                    <width>threecol</width>
                     <texture background="true">$VAR[FanartImage]</texture>
-                    <aspectratio aligny="top">scale</aspectratio>
-                    <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                    <bordersize>1</bordersize>
+                    <aspectratio aligny="center">scale</aspectratio>
                 </control>
                 <control type="image">
                     <right>36</right>
@@ -177,13 +158,14 @@
 
         </focusedlayout>
     </include>
+    <include name="52ListHeight699"><height>699</height></include>
+    <include name="52ListHeight700"><height>700</height></include>
     <include name="View_52_Wall_NoInfo">
         <control type="panel" id="52">
             <visible>!Container.Content(songs)</visible>
-            <posx>18</posx>
-            <posy>201</posy>
-            <width>1434</width>
-            <height>708</height>
+            <width>1458</width>
+            <include condition="![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight699</include>
+            <include condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight700</include>
             <onleft>60</onleft>
             <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
             <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
@@ -201,10 +183,9 @@
     <include name="View_52_Wall_Info">
         <control type="panel" id="52">
             <visible>!Container.Content(songs)</visible>
-            <posx>18</posx>
-            <posy>201</posy>
-            <width>956</width>
-            <height>708</height>
+            <width>972</width>
+            <include condition="![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight699</include>
+            <include condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight700</include>
             <onleft>60</onleft>
             <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
             <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
@@ -218,34 +199,32 @@
             <focusposition>1</focusposition>
             <include>View_52_Wall_Content</include>
         </control>
-        <control type="group">
-            <posx>974</posx>
-            <posy>210</posy>
+        <control type="group" description="FANART INFO">
+            <posx>972</posx>
             <visible>Container.Content(episodes) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)</visible>
             <control type="image">
-                <height>690</height>
-                <width>460</width>
+                <height>globalh</height>
+                <width>threecolborder</width>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
 
             <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <width>434</width>
-                <height>237</height>
+                <posx>globalpad</posx>
+                <posy>globalpad</posy>
+                <width>threecol</width>
+                <height>threecolfanart</height>
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
                 <visible>!stringcompare(ListItem.Label,..)</visible>
             </control>
             
             <control type="label">
-                <posx>22</posx>
-                <posy>254</posy>
-                <height>68</height>
-                <width>412</width>
+                <posx>20</posx>
+                <posy>threecolfanart</posy>
+                <height>100</height>
+                <aligny>center</aligny>
+                <width>threecolplot</width>
                 <textcolor>Selected</textcolor>
                 <align>left</align>
                 <font>Font-ListHeader</font>
@@ -253,135 +232,128 @@
                 <visible>Container.Content(episodes)</visible>
             </control>
             <control type="label">
-                <posx>22</posx>
-                <posy>254</posy>
-                <height>68</height>
-                <width>412</width>
+                <posx>20</posx>
+                <posy>threecolfanart</posy>
+                <height>100</height>
+                <width>threecolplot</width>
                 <textcolor>Selected</textcolor>
                 <align>left</align>
+                <aligny>center</aligny>
                 <font>Font-ListHeader</font>
                 <label>$INFO[ListItem.Label]</label>
                 <scroll>true</scroll>
                 <visible>!Container.Content(episodes)</visible>
             </control>
             <control type="textbox">
-                <posx>22</posx>
-                <posy>330</posy>
+                <posx>20</posx>
+                <posy>340</posy>
                 <height>270</height>
-                <width>412</width>
+                <width>threecolplot</width>
                 <textcolor>Selected</textcolor>
                 <align>justify</align>
                 <font>Font-ListInfo</font>
                 <label>$VAR[PlotBox]</label>
             </control>
             <control type="label">
-                <posx>22</posx>
-                <posy>618</posy>
-                <height>68</height>
-                <width>412</width>
+                <posx>20</posx>
+                <posy>615</posy>
+                <height>70</height>
+                <width>threecolplot</width>
                 <textcolor>Selected</textcolor>
                 <align>center</align>
                 <font>Font-ListInfo-Small</font>
                 <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
             </control>
             <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <width>434</width>
-                <height>668</height>
+                <posx>globalpad</posx>
+                <posy>globalpad</posy>
+                <width>threecol</width>
+                <height>bigposterh</height>
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
                 <visible>stringcompare(ListItem.Label,..)</visible>
             </control>
         </control>
-        <control type="group">
-            <posx>974</posx>
-            <posy>210</posy>
+        <control type="group" description="SQUARE">
+            <posx>972</posx>
             <visible>![Container.Content(episodes) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)]</visible>
             <control type="image">
-                <height>690</height>
-                <width>460</width>
+                <height>globalh</height>
+                <width>threecolborder</width>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
 
             <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <width>434</width>
-                <height>434</height>
+                <posx>globalpad</posx>
+                <posy>globalpad</posy>
+                <width>threecol</width>
+                <height>threecol</height>
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[FanartImage]</texture>
-                <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
+                <aspectratio aligny="center">scale</aspectratio>
                 <visible>!stringcompare(ListItem.Label,..)</visible>
             </control>
-        
-            <control type="label">
-                <posx>22</posx>
-                <posy>450</posy>
-                <height>68</height>
-                <width>412</width>
-                <textcolor>Selected</textcolor>
-                <align>left</align>
-                <font>Font-ListHeader</font>
-                <label>$INFO[ListItem.Label]</label>
-                <scroll>true</scroll>
-            </control>
-            <control type="textbox">
-                <posx>22</posx>
-                <posy>510</posy>
-                <height>120</height>
-                <width>412</width>
-                <textcolor>Selected</textcolor>
-                <align>justify</align>
-                <font>Font-ListInfo</font>
-                <label>$VAR[PlotBox]</label>
-            </control>
-            <control type="label">
-                <posx>22</posx>
-                <posy>618</posy>
-                <height>68</height>
-                <width>412</width>
-                <textcolor>Selected</textcolor>
-                <align>center</align>
-                <font>Font-ListInfo-Small</font>
-                <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
+            
+            <control type="grouplist">
+                <orientation>vertical</orientation>
+                <posx>globalpad</posx>
+                <posy>threecolborder</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <control type="label">
+                    <posx>globalpad</posx>
+                    <height>78</height>
+                    <width>threecolplot</width>
+                    <textcolor>Selected</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                    <scroll>true</scroll>
+                    <wrapmultiline>true</wrapmultiline>
+                </control>
+                <control type="textbox">
+                    <posx>globalpad</posx>
+                    <height>120</height>
+                    <width>threecolplot</width>
+                    <textcolor>Selected</textcolor>
+                    <align>center</align>
+                    <font>Font-ListInfo</font>
+                    <label>$VAR[PlotBox]$VAR[ExtraInfo,[CR],]$VAR[WatchedLabel,  ,]</label>
+                </control>
             </control>
             <control type="image">
-                <posx>11</posx>
-                <posy>11</posy>
-                <width>434</width>
-                <height>668</height>
+                <posx>globalpad</posx>
+                <posy>globalpad</posy>
+                <width>threecol</width>
+                <height>bigposterh</height>
                 <fadetime>350</fadetime>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="top">scale</aspectratio>
-                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                <bordersize>1</bordersize>
                 <visible>stringcompare(ListItem.Label,..)</visible>
             </control>
         </control>
     </include>
 	<include name="View_52_Wall">
-	
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
-            
             <include>Animation.ViewChange</include> 
-            <include>DefSideLabel</include>           
+            <include>DefSideLabel</include>  
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(52)</visible>
+            <posx>listx</posx>
+            <posy>listy</posy>
+            <include>Animation.ViewChange</include> 
             <include condition="!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>
             <include condition="Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
             <include condition="!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_NoInfo</include>
             <include condition="Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">View_52_Wall_Info</include>
             <control type="group">
-                <width>1452</width>
-                <posy>145</posy>
-
+                <width>globalw</width>
+                <posy>-60</posy>
+                
                 <control type="label">
-                    <left>22</left>
+                    <left>0</left>
                     <width>900</width>
                     <align>left</align>
                     <font>Font-WidgetCategory</font>
@@ -390,7 +362,7 @@
                     <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | Container.Content(episodes)</visible>
                 </control>
                 <control type="label">
-                    <right>22</right>
+                    <right>0</right>
                     <width>500</width>
                     <align>right</align>
                     <font>Font-WidgetCategory</font>
@@ -400,13 +372,12 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>-11</posx>
-                <posy>210</posy>
-                <height>690</height>
+                <posx>-18</posx>
+                <height>globalh</height>
                 <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
-
+                <visible>!ControlGroup(9000).HasFocus() + !Window.IsVisible(DialogContextMenu.xml)</visible>
             </control>
         </control>
 

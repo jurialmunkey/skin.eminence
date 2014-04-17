@@ -49,44 +49,42 @@
         </control>
         
 		<control type="group">
-		    <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+		    <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
 		    <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
-		    <posx>233</posx>
+		    <posx>horzpad</posx>
 		    <posy>70</posy>
 		    <animation effect="slide" start="0" end="-2000" time="200" condition="Control.HasFocus(50)">Conditional</animation>
 		    <include>DialogVisibility</include>
 		    <include>DefDialogInfoSideLabel</include>
-            <control type="label" description="Actors Label">
-                <posx>3475</posx>
-                <posy>174</posy>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
-                <label>344</label>
-                <angle>270</angle>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+            <control type="group">
+                <posx>1996</posx>
+                <control type="label" description="Actors Label">
+                    <label>344</label>
+                    <include>DefSideLabelCoords</include>
+                </control>
             </control>
 		    <control type="group" description="Poster">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <control type="image">
-                    <width>467</width>
-                    <height>690</height>
+                    <width>bigposterwborder</width>
+                    <height>globalh</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>445</width>
-                    <height>668</height>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>bigposterw</width>
+                    <height>bigposterh</height>
                     <fadetime>200</fadetime>
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
                 <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>445</width>
-                    <height>668</height>
+                    <posx>globalpad</posx>
+                    <posy>globalpad</posy>
+                    <width>bigposterw</width>
+                    <height>bigposterh</height>
                     <texture>common/playring.png</texture>
                     <aspectratio>center</aspectratio>
                     <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
@@ -98,7 +96,7 @@
             
             <control type="grouplist">
 		        <posx>509</posx>
-		        <posy>210</posy>
+		        <posy>listy</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
                 <control type="label">
@@ -168,8 +166,8 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>210</posy>
+		        <posx>539</posx>
+		        <posy>listy</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
                 <control type="label">
@@ -259,7 +257,7 @@
                     <label>207</label>
                 </control>
                 <control type="textbox">
-                    <width>917</width>
+                    <width>947</width>
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
@@ -303,9 +301,9 @@
             <control type="panel" id="50">
                 
                 <posx>2018</posx>
-                <posy>210</posy>
+                <posy>listy</posy>
                 <width>1534</width>
-                <height>708</height>
+                <height>700</height>
                 <onback>9000</onback>
                 <onleft>9000</onleft>
                 <onright>50</onright>
@@ -314,35 +312,35 @@
                 <viewtype label="Wall">list</viewtype>
                 <scrolltime>200</scrolltime>
                 <orientation>vertical</orientation>
-                <itemlayout width="287" height="354">
+                <itemlayout width="291" height="wallposterhlist">
 
                     <control type="image">
-                        <height>336</height>
-                        <width>269</width>
+                        <height>wallposterhborder</height>
+                        <width>281</width>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
          
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <height>314</height>
-                        <width>247</width>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>
+                        <height>wallposterh</height>
+                        <width>261</width>
                         <texture background="true">$VAR[PosterImage]</texture>
                         <aspectratio aligny="top">scale</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>252</posy>
+                        <posx>globalpad</posx>
+                        <bottom>20</bottom>
                         <height>73</height>
-                        <width>247</width>
+                        <width>261</width>
                         <texture colordiffuse="PanelBG">common/white.png</texture>
                         <aspectratio>scale</aspectratio>
                         <animation effect="fade" end="90" condition="true">Conditional</animation>
                     </control>
                     <control type="textbox">
-                        <posx>22</posx>
-                        <posy>252</posy>
-                        <width>225</width>
+                        <posx>20</posx>
+                        <bottom>20</bottom>
+                        <width>241</width>
                         <height>73</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
@@ -351,35 +349,35 @@
                     </control>
 
                 </itemlayout>
-                <focusedlayout width="287" height="354">
+                <focusedlayout width="291" height="wallposterhlist">
 
                     <control type="image">
-                        <height>336</height>
-                        <width>269</width>
+                        <height>wallposterhborder</height>
+                        <width>281</width>
                         <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
          
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <height>314</height>
-                        <width>247</width>
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>
+                        <height>wallposterh</height>
+                        <width>261</width>
                         <texture background="true">$VAR[PosterImage]</texture>
                         <aspectratio aligny="top">scale</aspectratio>
                     </control>
                     <control type="image">
-                        <posx>11</posx>
-                        <posy>252</posy>
+                        <posx>globalpad</posx>
+                        <bottom>20</bottom>
                         <height>73</height>
-                        <width>247</width>
+                        <width>261</width>
                         <texture colordiffuse="PanelBG">common/white.png</texture>
                         <aspectratio>scale</aspectratio>
                         <animation effect="fade" end="90" condition="true">Conditional</animation>
                     </control>
                     <control type="textbox">
-                        <posx>22</posx>
-                        <posy>252</posy>
-                        <width>225</width>
+                        <posx>20</posx>
+                        <bottom>20</bottom>
+                        <width>241</width>
                         <height>73</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>

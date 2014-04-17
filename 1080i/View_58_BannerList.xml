@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<includes>
+	<include name="View_58_BannerList">
+	
+		<description>Banner List View (id=58)</description>
+        <control type="group">
+            <visible>Control.IsVisible(58)</visible>
+            <include>Animation.ViewChange</include>     
+            <include>DefSideLabel</include> 
+              
+            <control type="group">
+                <posx>listx</posx>
+                <posy>listy</posy>
+
+                <control type="fixedlist" id="58">
+                    <width>1458</width>
+                    <height>700</height>
+                    <onright>60</onright>
+                    <include>DefScrollBarMove</include>
+                    
+                    <onup>58</onup>
+                    <ondown>58</ondown>
+                    <movement>2</movement>
+                    <focusposition>1</focusposition>
+                    <include>DefOnBack</include>
+                    <pagecontrol>60</pagecontrol>
+                    <viewtype label="31223">list</viewtype>
+                    <scrolltime tween="quadratic">400</scrolltime>
+
+                    <itemlayout width="1430" height="120">
+                        <control type="group">
+                            <posx>581</posx>
+                            <width>830</width>
+                            <animation effect="fade" start="100" end="75" condition="true">Conditional</animation>
+                            <posy>globalpad</posy>
+                            <control type="label">
+                                <width>830</width>
+                                <height>44</height>
+                                <aligny>top</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                                <font>Font-ListHeader</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                            <control type="label">
+                                <posy>52</posy>
+                                <width>830</width>
+                                <height>50</height>
+                                <aligny>top</aligny>
+                                <label>$VAR[VARLabel3]</label>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                            <control type="label">
+                                <posx>0r</posx>
+                                <posy>0</posy>
+                                <width>830</width>
+                                <align>right</align>
+                                <height>100</height>
+                                <aligny>center</aligny>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                        </control>
+                    </itemlayout>
+
+                    <focusedlayout width="1430" height="340">
+                        <control type="image">
+                            <width>1430</width>
+                            <height>330</height>
+                            <texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>Control.HasFocus(58)</visible>
+                        </control>
+                        <control type="image">
+                            <width>1430</width>
+                            <height>330</height>
+                            <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
+                            <aspectratio>stretch</aspectratio>
+                            <visible>!Control.HasFocus(58)</visible>
+                        </control>
+                        <control type="image">
+                            <posx>globalpad</posx>
+                            <posy>globalpad</posy>
+                            <width>551</width>
+                            <height>310</height>
+                            <texture>$VAR[FanartImage]</texture>
+                            <aspectratio>scale</aspectratio>
+                        </control>
+                        <control type="image">
+                            <right>16</right>
+                            <top>16</top>
+                            <height>32</height>
+                            <width>32</width>
+                            <colordiffuse>DFffffff</colordiffuse>
+                            <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
+                            <aspectratio aligny="top">keep</aspectratio>
+                        </control>
+                        <control type="group">
+                            <posx>581</posx>
+                            <width>830</width>
+                            <posy>globalpad</posy>
+                            <control type="label">
+                                <width>830</width>
+                                <height>44</height>
+                                <aligny>top</aligny>
+                                <label>$INFO[ListItem.Label]</label>
+                                <font>Font-ListHeader</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                            <control type="label">
+                                <posy>52</posy>
+                                <width>830</width>
+                                <height>50</height>
+                                <aligny>top</aligny>
+                                <label>$VAR[VARLabel3]</label>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                            <control type="label">
+                                <posx>0r</posx>
+                                <posy>60r</posy>
+                                <width>830</width>
+                                <align>right</align>
+                                <height>50</height>
+                                <aligny>top</aligny>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                            <control type="textbox">
+                                <posy>102</posy>
+                                <width>830</width>
+                                <height>160</height>
+                                <label>$INFO[ListItem.Plot]</label>
+                                <font>Font-ListInfo</font>
+                                <align>justify</align>
+                                <textcolor>Selected</textcolor>
+                            </control>
+                        </control>
+                        
+                    </focusedlayout>
+
+                </control>
+                <control type="scrollbar" id="60">
+                    <posx>1440</posx>
+                    <posy>0</posy>
+                    <height>globalh</height>
+                    <onleft>58</onleft>
+                    <onright>9000</onright>
+                    <animation effect="fade" start="100" end="25" time="100" condition="!Control.HasFocus(60)">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" condition="ControlGroup(9000).HasFocus()">Conditional</animation>
+                    <animation effect="fade" start="100" end="25" condition="[!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)]">Conditional</animation>
+                </control>    
+            </control>
+        </control>
+
+	</include>
+
+</includes>

@@ -138,7 +138,7 @@
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <align>left</align>
-            <radioposx>952</radioposx>
+            <radioposx>984</radioposx>
             <font>Font-ListInfo</font>
             <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
         </control>

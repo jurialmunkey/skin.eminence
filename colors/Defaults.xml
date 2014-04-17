@@ -30,7 +30,7 @@
 	<color name="TopBarDisabled">2fededed</color>
 	
 	<!-- Highlight Colors -->
-	<color name="PosterHighlight">bfa9a9a9</color>
+	<color name="PosterHighlight">bfbfbfbf</color>
 	<color name="Highlight-NF">AF33b5e5</color>
 	<color name="Highlight">FF33b5e5</color>
 	
@@ -43,6 +43,7 @@
 	<color name="Background">ff1f1f1f</color>
 	<color name="Silhouette">3f000000</color>
 	<color name="Selected">fff0f0f0</color>
+    <color name="PosterBanner">9e888888</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="PosterBorder-NF">1e888888</color>
 	<color name="BorderColor">7f181818</color>

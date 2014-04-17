@@ -16,14 +16,14 @@
 
             <control type="group">
                 <description>Left panel</description>
-                <posx>233</posx>
+                <posx>horzpad</posx>
                 <posy>70</posy>
                 <animation effect="fade" start="100" end="50" time="100" condition="!Control.HasFocus(20)">Conditional</animation>
 
 
                 <control type="label" id="101">
                     <description>Header Label</description>
-                    <posx>18</posx>
+                    <posx>listx</posx>
                     <posy>140</posy>
                     <width>780</width>
                     <font>Font-ListInfo-Small</font>                    
@@ -33,16 +33,16 @@
 
                 <control type="list" id="20">
                     <description>Left File List</description>
-                    <posx>18</posx>
-                    <posy>210</posy>
-                    <width>703</width>
+                    <posx>listx</posx>
+                    <posy>listy</posy>
+                    <width>bannerwborder</width>
                     <height>621</height>
                     <onleft>21</onleft>
                     <onright>21</onright>
                     <onup>20</onup>
                     <ondown>20</ondown>
 
-                    <itemlayout height="69" width="703">
+                    <itemlayout height="listh" width="bannerwborder">
 		
 					    <control type="label">
                             <posx>30</posx>
@@ -64,11 +64,11 @@
 				    
                     </itemlayout>
 
-                    <focusedlayout height="69" width="703">
+                    <focusedlayout height="listh" width="bannerwborder">
                         <control type="image">
                             <visible>Control.HasFocus(20)</visible>
-                            <height>69</height>
-                            <width>703</width>
+                            <height>listh</height>
+                            <width>bannerwborder</width>
                             <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
                             <animation condition="Container(20).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(20).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -76,8 +76,8 @@
                         
                         <control type="image">
                             <visible>!Control.HasFocus(20)</visible>
-                            <height>69</height>
-                            <width>703</width>
+                            <height>listh</height>
+                            <width>bannerwborder</width>
                             <texture border="12" flipx="false" colordiffuse="PosterBorder">common/border-inner.png</texture>
                             <animation condition="Container(20).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(20).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -107,7 +107,7 @@
 
                 <control type="label" id="12">
                     <description>Header Label</description>
-                    <posx>18</posx>
+                    <posx>listx</posx>
                     <posy>831</posy>
                     <width>480</width>
                     <align>left</align>
@@ -126,7 +126,7 @@
 
                 <control type="label" id="102">
                     <description>Header Label</description>
-                    <posx>18</posx>
+                    <posx>listx</posx>
                     <posy>140</posy>
                     <width>780</width>
                     <font>Font-ListInfo-Small</font>                    
@@ -136,19 +136,16 @@
 
                 <control type="list" id="21">
                     <description>Left File List</description>
-                    <posx>18</posx>
-                    <posy>210</posy>
-                    <width>703</width>
+                    <posx>listx</posx>
+                    <posy>listy</posy>
+                    <width>bannerwborder</width>
                     <height>621</height>
                     <onleft>20</onleft>
                     <onright>20</onright>
                     <onup>21</onup>
                     <ondown>21</ondown>
 
-                    <itemlayout height="69" width="703">
-
-      
-		
+                    <itemlayout height="listh" width="bannerwborder">
 					    <control type="label">
                             <posx>30</posx>
                             <width>643</width>
@@ -169,11 +166,11 @@
 				    
                     </itemlayout>
 
-                    <focusedlayout height="69" width="703">
+                    <focusedlayout height="listh" width="bannerwborder">
                         <control type="image">
                             <visible>Control.HasFocus(21)</visible>
-                            <height>69</height>
-                            <width>703</width>
+                            <height>listh</height>
+                            <width>bannerwborder</width>
                             <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
                             <animation condition="Container(21).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(21).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -181,8 +178,8 @@
                         
                         <control type="image">
                             <visible>!Control.HasFocus(21)</visible>
-                            <height>69</height>
-                            <width>703</width>
+                            <height>listh</height>
+                            <width>bannerwborder</width>
                             <texture border="12" flipx="false" colordiffuse="PosterBorder">common/border-inner.png</texture>
                             <animation condition="Container(21).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(21).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -212,7 +209,7 @@
 
                 <control type="label" id="13">
                     <description>Header Label</description>
-                    <posx>18</posx>
+                    <posx>listx</posx>
                     <posy>831</posy>
                     <width>480</width>
                     <align>left</align>

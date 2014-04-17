@@ -6,7 +6,7 @@
 
 	<controls>
 		<control type="group">
-			<posy>210</posy>
+			<posy>listy</posy>
 			<include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>

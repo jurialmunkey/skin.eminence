@@ -5,15 +5,15 @@
         <value>PanelFG</value>
     </variable>
     <include name="PVRRecordingLayout">
-        <itemlayout width="945" height="140">
+        <itemlayout width="945" height="fivelinelist">
             <control type="image">
                 <width>945</width>
-                <height>130</height>
+                <height>fivelineborder</height>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>    
             <include>PVRrecordinglayout</include>
         </itemlayout>
-        <focusedlayout width="945" height="140">
+        <focusedlayout width="945" height="fivelinelist">
 
             <control type="group"> 
                 
@@ -21,7 +21,7 @@
                 <visible>ControlGroup(50).HasFocus()</visible>                
                 <control type="image">
                     <width>945</width>
-                    <height>130</height>
+                    <height>fivelineborder</height>
                     <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                     
                 </control>
@@ -31,7 +31,7 @@
                 <visible>!ControlGroup(50).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
-                    <height>130</height>
+                    <height>fivelineborder</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>   
                 <include>PVRrecordinglayout</include>
@@ -41,28 +41,28 @@
     <include name="PVRInfoPanel">
         <control type="group">
             <posx>974</posx>
-            <posy>210</posy>
+            <posy>listy</posy>
             <control type="image">
-                <width>460</width>
-                <height>690</height>
+                <width>492</width>
+                <height>globalh</height>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>
             <control type="group">
-                <posx>11</posx>
-                <posy>11</posy>
+                <posx>globalpad</posx>
+                <posy>globalpad</posy>
                 <control type="image">
-                    <width>438</width>
-                    <height>258</height>
+                    <width>472</width>
+                    <height>265</height>
                     <texture fallback="special://skin/extras/pvrhub/background.jpg">$INFO[ListItem.Thumb]</texture>
                     <aspectratio align="center" aligny="top">keep</aspectratio>
                 </control>
             </control>
             <control type="group">
-                <posx>22</posx>
+                <posx>20</posx>
                 <posy>271</posy>
                 <control type="label">
                     <posy>10</posy>
-                    <width>423</width>
+                    <width>452</width>
                     <align>left</align>
                     <textcolor>PanelFG</textcolor>
                     <font>Font-PVRTitle</font>
@@ -70,8 +70,8 @@
                 </control>
                 <control type="label">
                     <posy>45</posy>
-                    <posx>423</posx>
-                    <width>423</width>
+                    <posx>452</posx>
+                    <width>452</width>
                     <align>right</align>
                     <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
@@ -87,9 +87,9 @@
                 </control>
                 <control type="textbox">
                     <posy>112</posy>
-                    <width>423</width>
+                    <width>452</width>
                     <height>230</height>
-                    <align>left</align>
+                    <align>justify</align>
                     <aligny>top</aligny>
                     <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo</font>
@@ -97,7 +97,7 @@
                 </control>
                 <control type="label">
                     <posy>348</posy>
-                    <width>423</width>
+                    <width>452</width>
                     <align>left</align>
                     <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
@@ -192,22 +192,22 @@
         <include>PVRlistlayout</include>
     </include>
     <include name="PVRitemlayout">
-        <itemlayout width="945" height="140">
+        <itemlayout width="945" height="fivelinelist">
             <control type="image">
                 <width>945</width>
-                <height>130</height>
+                <height>fivelineborder</height>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
             </control>        
             <include>PVRlistlayout</include>
         </itemlayout>
     </include>
     <include name="PVRfocusedlayout">
-        <focusedlayout width="945" height="140">
+        <focusedlayout width="945" height="fivelinelist">
             <control type="group">
                 <visible>ControlGroup(50).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
-                    <height>130</height>
+                    <height>fivelineborder</height>
                     <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                     
                 </control>
@@ -217,7 +217,7 @@
                 <visible>!ControlGroup(50).HasFocus()</visible>
                 <control type="image">
                     <width>945</width>
-                    <height>130</height>
+                    <height>fivelineborder</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 </control>
                 <include>PVRlistlayout</include>
@@ -232,8 +232,8 @@
             <visible>Control.IsVisible(11)</visible>  
             
             <control type="list" id="11" description="CHANNELS">     
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -257,8 +257,8 @@
             <visible>Control.IsVisible(12)</visible>
             
             <control type="list" id="12" description="RADIO">     
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -282,8 +282,8 @@
             <visible>Control.IsVisible(13)</visible>
             
             <control type="list" id="13" description="RADIO">     
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -305,7 +305,7 @@
         <control type="group">
             <visible>Control.IsVisible(10)</visible>
             <control type="epggrid" id="10">
-                <posx>-215</posx>
+                <posx>-198</posx>
                 <posy>70</posy>
                 <width>1884</width>
                 <height>637</height>
@@ -319,7 +319,7 @@
                 <onright>31</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
-                <rulerlayout height="140" width="250">
+                <rulerlayout height="fivelinelist" width="250">
                     <control type="label" id="2">
                         <posx>10</posx>
                         <posy>92</posy>
@@ -471,8 +471,8 @@
                 </focusedlayout>
             </control>
             <control type="image">
-                <posx>-215</posx>
-                <posy>210</posy>
+                <posx>-198</posx>
+                <posy>listy</posy>
                 <height>690</height>
                 <width>1884</width>
                 <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
@@ -480,7 +480,7 @@
 
 
             <control type="group">
-                <posx>-215</posx>
+                <posx>-198</posx>
                 <posy>711</posy>
 
                        
@@ -533,8 +533,8 @@
             
             
             <control type="list" id="14" description="TIMERS">     
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -556,8 +556,8 @@
             <visible>Control.IsVisible(17)</visible>
             
             <control type="list" id="17">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -579,8 +579,8 @@
             <visible>Control.IsVisible(15)</visible>
             
             <control type="list" id="15">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
@@ -605,8 +605,8 @@
             <visible>Control.IsVisible(16)</visible>
             
             <control type="list" id="16">
-                <posx>18</posx>
-                <posy>210</posy>
+                <posx>listx</posx>
+                <posy>listy</posy>
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
