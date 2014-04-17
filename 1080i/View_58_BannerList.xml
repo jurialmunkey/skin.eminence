@@ -69,7 +69,7 @@
                         <control type="image">
                             <width>1448</width>
                             <height>330</height>
-                            <texture border="12" flipx="true" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                            <texture border="12" flipx="true">common/border-inner-highlight.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
                         </control>
