@@ -255,7 +255,7 @@
                             <control type="textbox">
                                 <posy>90</posy>
                                 <posx>globalpad</posx>
-                                <height>280</height>
+                                <height>275</height>
                                 <width>bigposterwplot</width>
                                 <align>justify</align>
                                 <font>Font-ListInfo</font>

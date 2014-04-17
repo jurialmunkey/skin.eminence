@@ -34,7 +34,7 @@
                     <posx>20</posx>
                     <posy>80</posy>
                     <width>bigposterwplot</width>
-                    <height>280</height>
+                    <height>275</height>
                     <align>justify</align>
                     <font>Font-ListInfo</font>
                     <label>$VAR[PlotBox]</label>
@@ -279,7 +279,7 @@
                                     <posx>20</posx>
                                     <posy>80</posy>
                                     <width>bigposterwplot</width>
-                                    <height>280</height>
+                                    <height>275</height>
                                     <align>justify</align>
                                     <textcolor>Selected</textcolor>
                                     <font>Font-ListInfo</font>
