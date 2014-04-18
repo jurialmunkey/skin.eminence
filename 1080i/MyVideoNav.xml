@@ -423,6 +423,17 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 
+                <control type="togglebutton" id="9008">
+                    <include>DefNavMenuButton</include>
+                    <onclick>Skin.ToggleSetting(lovefilm.info)</onclick>
+                    <visible>Control.IsVisible(54)</visible>
+                    <label>31150</label>
+                    <altlabel>31151</altlabel>
+                    <usealttexture>Skin.HasSetting(lovefilm.info)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                
                 <control type="button" id="21">
                     <description>Activate Filter</description>
                     <include>DefNavMenuButton</include>

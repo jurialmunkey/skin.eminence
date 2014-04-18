@@ -1,5 +1,6 @@
 [B]0.9.38[/B]
 Watched indicator updates
+Lovefilm show info mode
 
 [B]0.9.37[/B]
 Standardised views to constants (still some work todo)

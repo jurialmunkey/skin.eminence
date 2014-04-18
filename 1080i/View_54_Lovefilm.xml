@@ -1,7 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <includes>
-
+    <constant name="lovefilmplot">438</constant>
+    <include name="LovefilmContent">
+        <control type="image">
+            <width>lovefilmw</width>
+            <height>bigposterh</height>
+            <texture background="true">$VAR[FanartImage]</texture>
+            <aspectratio aligny="center">scale</aspectratio>
+            <visible>!Skin.HasSetting(lovefilm.info)</visible>
+        </control>
+        <control type="group">
+            <visible>Skin.HasSetting(lovefilm.info)</visible>
+            <control type="image">
+                <width>lovefilmw</width>
+                <height>bigposterh</height>
+                <texture background="true" colordiffuse="PanelBG">common/white.png</texture>
+                <aspectratio aligny="center">scale</aspectratio>
+            </control>
+            <control type="image">
+                <right>0</right>
+                <width>950</width>
+                <height>bigposterh</height>
+                <texture background="true">$VAR[FanartImage]</texture>
+                <aspectratio aligny="center">scale</aspectratio>
+            </control>
+            <control type="group">
+                <posx>64r</posx>
+                <posy>10</posy>
+                <include>WatchedImage</include>
+            </control>
+            <control type="group">
+                <posx>20</posx>
+                <width>lovefilmplot</width>
+                <posy>globalpad</posy>
+                <control type="label">
+                    <width>lovefilmplot</width>
+                    <height>44</height>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label]</label>
+                    <font>Font-ListHeader</font>
+                    <textcolor>Selected</textcolor>
+                    <scroll>false</scroll>
+                </control>
+                <control type="label">
+                    <posy>52</posy>
+                    <width>lovefilmplot</width>
+                    <height>50</height>
+                    <aligny>top</aligny>
+                    <label>$VAR[VARLabel3]</label>
+                    <font>Font-ListInfo-Small</font>
+                    <textcolor>Selected</textcolor>
+                </control>
+                <control type="label">
+                    <posx>0r</posx>
+                    <posy>50r</posy>
+                    <width>lovefilmplot</width>
+                    <align>right</align>
+                    <height>50</height>
+                    <aligny>top</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <font>Font-ListInfo-Small</font>
+                    <textcolor>Selected</textcolor>
+                </control>
+                <control type="textbox">
+                    <posy>102</posy>
+                    <width>lovefilmplot</width>
+                    <height>500</height>
+                    <label>$INFO[ListItem.Plot]</label>
+                    <font>Font-ListInfo</font>
+                    <align>left</align>
+                    <textcolor>Selected</textcolor>
+                </control>
+            </control>
+        </control>
+    </include>
 	<include name="View_54_Lovefilm">
 	
         <control type="group">
@@ -36,26 +109,10 @@
                     <scrolltime tween="quadratic">400</scrolltime>
                     <orientation>horizontal</orientation>
                     <itemlayout width="1394" height="bigposterh">
-         
-                        <control type="image">
-                            <width>lovefilmw</width>
-                            <height>bigposterh</height>
-                            <texture background="true">$VAR[FanartImage]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        </control>
-                    
+                        <include>LovefilmContent</include>
                     </itemlayout>
-
                     <focusedlayout width="lovefilmw" height="bigposterh">
-
-                        <control type="image">
-                            <width>lovefilmw</width>
-                            <height>bigposterh</height>
-                            <texture background="true">$VAR[FanartImage]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        
-                        </control>
-
+                        <include>LovefilmContent</include>
                     </focusedlayout>
 
                 </control>
@@ -70,6 +127,7 @@
                 <control type="group">
                     <height>globalh</height>
                     <width>globalw</width>
+                    <visible>!Skin.HasSetting(lovefilm.info)</visible>
                     <control type="image">
                         <posx>globalpad</posx>
                         <bottom>globalpad</bottom>
@@ -102,6 +160,7 @@
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Label2]</label>
+                        
                     </control>
                     <control type="group">
                         <posx>64r</posx>
