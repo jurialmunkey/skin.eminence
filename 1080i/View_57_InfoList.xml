@@ -205,7 +205,7 @@
 
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>237</posx>
+                    <posx>infolistx</posx>
                     <posy>0</posy>
                     <height>345</height>
                     <include>DefScrollBarMove</include>
