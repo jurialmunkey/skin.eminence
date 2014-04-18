@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <includes>
-    <constant name="bannerlistplot">848</constant>
+    <constant name="bannerlistplot">838</constant>
 	<include name="View_58_BannerList">
 	
 		<description>Banner List View (id=58)</description>
@@ -46,18 +46,15 @@
                                 <aspectratio>scale</aspectratio>
                             </control>
                         </control>
-                        
-                        <control type="group">
-                            <posx>62r</posx>
-                            <posy>10</posy>
-                            <include>WatchedImage</include>
-                        </control>
-
+             
                         <control type="group">
                             <posx>581</posx>
                             <width>bannerlistplot</width>
                             <posy>globalpad</posy>
-                            
+                            <control type="group">
+                                <posx>44r</posx>
+                                <include>WatchedImage</include>
+                            </control>
                             <control type="label">
                                 <width>798</width>
                                 <height>44</height>
@@ -91,7 +88,7 @@
                         <control type="image">
                             <width>globalw</width>
                             <height>330</height>
-                            <texture border="12" flipx="true" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                            <texture border="12" flipx="true">common/border-inner-highlight.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
                         </control>
@@ -110,16 +107,16 @@
                             <texture>$VAR[FanartImage]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
-                        <control type="group">
-                            <posx>62r</posx>
-                            <posy>10</posy>
-                            <include>WatchedImage</include>
-                        </control>
+                        
                         
                         <control type="group">
                             <posx>581</posx>
                             <width>bannerlistplot</width>
                             <posy>globalpad</posy>
+                            <control type="group">
+                                <posx>44r</posx>
+                                <include>WatchedImage</include>
+                            </control>
                             <control type="label">
                                 <width>bannerlistplot</width>
                                 <height>44</height>
