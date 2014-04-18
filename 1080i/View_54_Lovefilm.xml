@@ -2,6 +2,7 @@
 <!-- Foundation -->
 <includes>
     <constant name="lovefilmplot">438</constant>
+    <constant name="lovefilmplotlist">478</constant>
     <include name="LovefilmContent">
         <control type="image">
             <width>lovefilmw</width>
@@ -13,9 +14,9 @@
         <control type="group">
             <visible>Skin.HasSetting(lovefilm.info)</visible>
             <control type="image">
-                <width>lovefilmw</width>
+                <width>lovefilmplotlist</width>
                 <height>bigposterh</height>
-                <texture background="true" colordiffuse="PanelBG">common/white.png</texture>
+                <texture background="true" colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                 <aspectratio aligny="center">scale</aspectratio>
             </control>
             <control type="image">
@@ -24,6 +25,12 @@
                 <height>bigposterh</height>
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="center">scale</aspectratio>
+            </control>
+            <control type="image">
+                <right>0</right>
+                <width>950</width>
+                <height>bigposterh</height>
+                <texture border="2" colordiffuse="PosterBorder">common/border.png</texture>
             </control>
             <control type="group">
                 <posx>64r</posx>
@@ -122,6 +129,7 @@
                     <width>lovefilmw</width>
                     <height>bigposterh</height>
                     <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
+                    <visible>!Skin.HasSetting(lovefilm.info)</visible>
                 </control>
 
                 <control type="group">
