@@ -95,7 +95,6 @@
 			</control>
 
             <control type="wraplist" id="9600">
-                <!--<visible>IsEmpty(Window(home).Property(bgwidget))</visible>-->
 			    <include>HomeBGWidgetContent</include>
 			    <content target="video">$VAR[GlobalWidget]</content>
             </control>
