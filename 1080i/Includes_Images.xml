@@ -48,6 +48,32 @@
         <value condition="!substring(Player.SeekOffset,-) + [Player.DisplayAfterSeek | Player.Seeking]">common/bignext.png</value>-->
 	    <value condition="Player.Paused">common/bigpause.png</value>
 	</variable>
+    
+    <variable name="WatchedImage">
+	    <value condition="ListItem.IsPlaying">overlay/OverlayPlaying.png</value>
+	    <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched.png</value>
+        <value condition="stringcompare(ListItem.Overlay,OverlayUnwatched.png) + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlay/OverlayEmpty.png</value>
+	</variable>
+    
+    <include name="WatchedImage">
+        <control type="image">
+            <posx>10</posx>
+            <posy>10</posy>
+            <height>32</height>
+            <width>32</width>
+            <colordiffuse>DFffffff</colordiffuse>
+            <texture background="true"  colordiffuse="PanelFG">$VAR[WatchedImage]</texture>
+            <aspectratio aligny="top">keep</aspectratio>
+            <visible>ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+        </control>
+        <control type="image">
+            <width>54</width>
+            <height>54</height>
+            <texture colordiffuse="PanelFG" diffuse="common/circle/mask.png">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+            <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+        </control>
+    </include>
+    
 	
 	
 	<variable name="SunsetTimerImage">

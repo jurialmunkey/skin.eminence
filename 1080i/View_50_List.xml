@@ -37,7 +37,11 @@
                     <control type="group">
                         <control type="group">
                             <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
-                            <include>DefWatchedProgress</include>
+                            <control type="group">
+                                <posx>10</posx>
+                                <posy>8</posy>
+                                <include>WatchedImage</include>
+                            </control>
                             <control type="label">
                                 <posx>64</posx>
                                 <width>900</width>
@@ -77,7 +81,11 @@
                             </control>
                             <control type="group">
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
-                                <include>DefWatchedProgress</include>
+                                <control type="group">
+                                <posx>10</posx>
+                                <posy>8</posy>
+                                <include>WatchedImage</include>
+                            </control>
                                 <control type="label">
                                     <posx>64</posx>
                                     <width>900</width>
@@ -107,7 +115,11 @@
                             <visible>!Control.HasFocus(50)</visible>
                             <control type="group">
                                 <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
-                                <include>DefWatchedProgress</include>
+                                <control type="group">
+                                    <posx>10</posx>
+                                    <posy>8</posy>
+                                    <include>WatchedImage</include>
+                                </control>
                                 <control type="label">
                                     <posx>64</posx>
                                     <width>900</width>

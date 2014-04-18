@@ -101,7 +101,12 @@
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo</font>
-                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                    <control type="group">
+                        <posx>64r</posx>
+                        <posy>10</posy>
+                        <include>WatchedImage</include>
                     </control>
                 </control>
                 <control type="scrollbar" id="60">

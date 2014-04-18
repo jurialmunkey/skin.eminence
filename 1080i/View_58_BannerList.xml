@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <includes>
+    <constant name="bannerlistplot">838</constant>
 	<include name="View_58_BannerList">
 	
 		<description>Banner List View (id=58)</description>
@@ -14,7 +15,7 @@
                 <posy>listy</posy>
 
                 <control type="fixedlist" id="58">
-                    <width>1458</width>
+                    <width>globalw</width>
                     <height>700</height>
                     <onright>9000</onright>
                     <onleft>60</onleft>
@@ -28,46 +29,67 @@
                     <viewtype label="31223">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
 
-                    <itemlayout width="1430" height="120">
+                    <itemlayout width="globalw" height="120">
+                        <control type="group">
+                            <visible>false</visible>
+                            <control type="image">
+                                <width>globalw</width>
+                                <height>110</height>
+                                <texture border="5" colordiffuse="PosterBorder-NF">common/border-inner.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>globalpad</posx>
+                                <posy>globalpad</posy>
+                                <width>551</width>
+                                <height>90</height>
+                                <texture>$VAR[FanartImage]</texture>
+                                <aspectratio>scale</aspectratio>
+                            </control>
+                        </control>
+                        
+                        <control type="group">
+                            <posx>72r</posx>
+                            <posy>10</posy>
+                            <include>WatchedImage</include>
+                        </control>
+
                         <control type="group">
                             <posx>581</posx>
-                            <width>838</width>
-                            <animation effect="fade" start="100" end="75" condition="true">Conditional</animation>
+                            <width>bannerlistplot</width>
                             <posy>globalpad</posy>
+                            
                             <control type="label">
-                                <width>838</width>
+                                <width>798</width>
                                 <height>44</height>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Label]</label>
                                 <font>Font-ListHeader</font>
-                                <textcolor>Selected</textcolor>
                             </control>
                             <control type="label">
+                                <posx>0</posx>
                                 <posy>52</posy>
-                                <width>838</width>
+                                <width>bannerlistplot</width>
                                 <height>50</height>
                                 <aligny>top</aligny>
                                 <label>$VAR[VARLabel3]</label>
                                 <font>Font-ListInfo-Small</font>
-                                <textcolor>Selected</textcolor>
                             </control>
                             <control type="label">
                                 <posx>0r</posx>
-                                <posy>0</posy>
-                                <width>838</width>
+                                <posy>52</posy>
+                                <width>bannerlistplot</width>
+                                <height>50</height>
+                                <aligny>top</aligny>
                                 <align>right</align>
-                                <height>100</height>
-                                <aligny>center</aligny>
                                 <label>$INFO[ListItem.Label2]</label>
                                 <font>Font-ListInfo-Small</font>
-                                <textcolor>Selected</textcolor>
                             </control>
                         </control>
                     </itemlayout>
 
-                    <focusedlayout width="1448" height="340">
+                    <focusedlayout width="globalw" height="340">
                         <control type="image">
-                            <width>1448</width>
+                            <width>globalw</width>
                             <height>330</height>
                             <texture border="12" flipx="true">common/border-inner-highlight.png</texture>
                             <aspectratio>stretch</aspectratio>
@@ -88,21 +110,18 @@
                             <texture>$VAR[FanartImage]</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
-                        <control type="image">
-                            <right>28</right>
-                            <top>18</top>
-                            <height>32</height>
-                            <width>32</width>
-                            <colordiffuse>DFffffff</colordiffuse>
-                            <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
-                            <aspectratio aligny="top">keep</aspectratio>
+                        <control type="group">
+                            <posx>72r</posx>
+                            <posy>10</posy>
+                            <include>WatchedImage</include>
                         </control>
+                        
                         <control type="group">
                             <posx>581</posx>
-                            <width>838</width>
+                            <width>bannerlistplot</width>
                             <posy>globalpad</posy>
                             <control type="label">
-                                <width>838</width>
+                                <width>bannerlistplot</width>
                                 <height>44</height>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Label]</label>
@@ -111,7 +130,7 @@
                             </control>
                             <control type="label">
                                 <posy>52</posy>
-                                <width>838</width>
+                                <width>bannerlistplot</width>
                                 <height>50</height>
                                 <aligny>top</aligny>
                                 <label>$VAR[VARLabel3]</label>
@@ -121,7 +140,7 @@
                             <control type="label">
                                 <posx>0r</posx>
                                 <posy>60r</posy>
-                                <width>838</width>
+                                <width>bannerlistplot</width>
                                 <align>right</align>
                                 <height>50</height>
                                 <aligny>top</aligny>
@@ -131,7 +150,7 @@
                             </control>
                             <control type="textbox">
                                 <posy>102</posy>
-                                <width>838</width>
+                                <width>bannerlistplot</width>
                                 <height>160</height>
                                 <label>$INFO[ListItem.Plot]</label>
                                 <font>Font-ListInfo</font>

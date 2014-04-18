@@ -64,7 +64,7 @@
         <font>Font-Button</font>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>PanelFG</focusedcolor>
-        <selectedcolor>PanelFG-NF</selectedcolor>
+        <selectedcolor>PanelFG</selectedcolor>
         <disabledcolor>Disabled</disabledcolor>
     </default>
 

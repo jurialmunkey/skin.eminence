@@ -20,14 +20,11 @@
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
-                <control type="image">
-                    <right>28</right>
-                    <bottom>28</bottom>
-                    <height>32</height>
-                    <width>32</width>
-                    <colordiffuse>DFffffff</colordiffuse>
-                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
+                <control type="group">
+                    <posx>70r</posx>
+                    <posy>70r</posy>
+                    <include>WatchedImage</include>
+                    <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                 </control>
             </control>
 
@@ -48,6 +45,7 @@
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="center">scale</aspectratio>
                 </control>
+                
             </control>
         
         </itemlayout>
@@ -67,14 +65,11 @@
                     <texture background="true">$VAR[FanartImage]</texture>
                     <aspectratio aligny="center">scale</aspectratio>
                 </control>
-                <control type="image">
-                    <right>36</right>
-                    <bottom>28</bottom>
-                    <height>32</height>
-                    <width>32</width>
-                    <colordiffuse>DFffffff</colordiffuse>
-                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
+                <control type="group">
+                    <posx>70r</posx>
+                    <posy>70r</posy>
+                    <include>WatchedImage</include>
+                    <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                 </control>
 
             </control>
@@ -98,14 +93,10 @@
                     <texture background="true">$VAR[PosterImage]</texture>
                     <aspectratio aligny="top">scale</aspectratio>
                 </control>
-                <control type="image">
-                    <right>28</right>
-                    <bottom>28</bottom>
-                    <height>32</height>
-                    <width>32</width>
-                    <colordiffuse>DFffffff</colordiffuse>
-                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
+                <control type="group">
+                    <posx>70r</posx>
+                    <posy>70r</posy>
+                    <include>WatchedImage</include>
                 </control>
             </control>
 
@@ -144,14 +135,10 @@
                     <texture background="true">$VAR[FanartImage]</texture>
                     <aspectratio aligny="center">scale</aspectratio>
                 </control>
-                <control type="image">
-                    <right>36</right>
-                    <bottom>28</bottom>
-                    <height>32</height>
-                    <width>32</width>
-                    <colordiffuse>DFffffff</colordiffuse>
-                    <texture background="true">$INFO[ListItem.Overlay,overlay/,]</texture>
-                    <aspectratio aligny="top">keep</aspectratio>
+                <control type="group">
+                    <posx>70r</posx>
+                    <posy>70r</posy>
+                    <include>WatchedImage</include>
                 </control>
 
             </control>
@@ -262,7 +249,7 @@
                 <textcolor>Selected</textcolor>
                 <align>center</align>
                 <font>Font-ListInfo-Small</font>
-                <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
+                <label>$VAR[ExtraInfo]</label>
             </control>
             <control type="image">
                 <posx>globalpad</posx>
@@ -318,7 +305,7 @@
                     <textcolor>Selected</textcolor>
                     <align>center</align>
                     <font>Font-ListInfo</font>
-                    <label>$VAR[PlotBox]$VAR[ExtraInfo,[CR],]$VAR[WatchedLabel,  ,]</label>
+                    <label>$VAR[PlotBox]$VAR[ExtraInfo,[CR],]</label>
                 </control>
             </control>
             <control type="image">
@@ -366,7 +353,7 @@
                     <width>500</width>
                     <align>right</align>
                     <font>Font-WidgetCategory</font>
-                    <label>$VAR[WatchedLabel,,  ]$VAR[ExtraInfo]</label>
+                    <label>$VAR[ExtraInfo]</label>
                     <animation effect="fade" start="100" end="33" condition="true">Conditional</animation>
                     <visible>[!Skin.HasSetting(wallview.info) + [Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]] | [!Skin.HasSetting(wallviewmusic.info) + ![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]]</visible>
                 </control>

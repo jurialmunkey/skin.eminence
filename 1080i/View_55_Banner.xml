@@ -72,16 +72,13 @@
                             <font>Font-ListInfo-Small</font>
                             <label>$VAR[VARLabel3]</label>
                         </control>
-                        <control type="label">
-                            <posx>30r</posx>
-                            <posy>177</posy>
-                            <width>660</width>
-                            <align>right</align>
-                            <aligny>top</aligny>
-                            <height>41</height>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$VAR[WatchedLabel]</label>
+                        <control type="group">
+                            <posx>72r</posx>
+                            <posy>62r</posy>
+                            <include>WatchedImage</include>
+                            <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
+
                     </control>
                     <control type="group">
                         <visible>Container.Content(episodes)</visible>
@@ -117,7 +114,13 @@
                             <align>right</align>
                             <width>310</width>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                        <control type="group">
+                            <posx>320</posx>
+                            <posy>68r</posy>
+                            <include>WatchedImage</include>
+                            <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
                     </control>
                     
@@ -174,16 +177,10 @@
                             <font>Font-ListInfo-Small</font>
                             <label>$VAR[VARLabel3]</label>
                         </control>
-                        <control type="label">
-                            <posx>30r</posx>
-                            <posy>177</posy>
-                            <width>660</width>
-                            <align>right</align>
-                            <aligny>top</aligny>
-                            <height>41</height>
-                            <textcolor>Selected</textcolor>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$VAR[WatchedLabel]</label>
+                        <control type="group">
+                            <posx>72r</posx>
+                            <posy>62r</posy>
+                            <include>WatchedImage</include>
                         </control>
                     </control>
                     
@@ -225,7 +222,12 @@
                             <width>310</width>
                             <textcolor>Selected</textcolor>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                            <label>$INFO[ListItem.Label2]</label>
+                        </control>
+                        <control type="group">
+                            <posx>320</posx>
+                            <posy>68r</posy>
+                            <include>WatchedImage</include>
                         </control>
                     </control>
                 </focusedlayout>
