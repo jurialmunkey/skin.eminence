@@ -2,318 +2,324 @@
 <includes>
     <include name="QuickNavMoviesHub">
         <item id="1">
-	        <label>31156</label>
+            <label>31156</label>
             <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
             <icon>special://skin/extras/icons/title.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    <item id="2">
-	        <label>31109</label>	        
+            <property name="Color">1</property>
+        </item>
+        <item id="2">
+            <label>31109</label>            
             <onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
             <icon>special://skin/extras/icons/timer.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    
-	    <item id="11">
-	        <label>$INFO[Skin.String(moviehub.1.Label)]</label>	        
+            <property name="Color">1</property>
+        </item>
+        
+        
+        <item id="11">
+            <label>$INFO[Skin.String(moviehub.1.Label)]</label>         
             <onclick>$INFO[Skin.String(moviehub.1.Path)]</onclick>
             <icon>$INFO[Skin.String(moviehub.1.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(moviehub.1.enabled)</visible>
-	    </item>
-	    <item id="12">
-	        <label>$INFO[Skin.String(moviehub.2.Label)]</label>	        
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(moviehub.1.enabled)</visible>
+        </item>
+        <item id="12">
+            <label>$INFO[Skin.String(moviehub.2.Label)]</label>         
             <onclick>$INFO[Skin.String(moviehub.2.Path)]</onclick>
             <icon>$INFO[Skin.String(moviehub.2.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(moviehub.2.enabled)</visible>
-	    </item>
-	    <item id="13">
-	        <label>$INFO[Skin.String(moviehub.3.Label)]</label>	        
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(moviehub.2.enabled)</visible>
+        </item>
+        <item id="13">
+            <label>$INFO[Skin.String(moviehub.3.Label)]</label>         
             <onclick>$INFO[Skin.String(moviehub.3.Path)]</onclick>
             <icon>$INFO[Skin.String(moviehub.3.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(moviehub.3.enabled)</visible>
-	    </item>
-	    
-	    
-	    <item id="3">
-	        <label>137</label>
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(moviehub.3.enabled)</visible>
+        </item>
+        
+        
+        <item id="3">
+            <label>137</label>
             <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
-	    </item>
-	    <item id="4">
+        </item>
+        <item id="4">
             <label>135</label>            
             <onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
             <icon>special://skin/extras/icons/genre.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="5">
             <label>20348</label>            
             <onclick>ActivateWindow(Videos,MovieDirectors,return)</onclick>
             <icon>special://skin/extras/icons/director.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="6">
             <label>344</label>
             <onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
             <icon>special://skin/extras/icons/actor.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="7">
             <label>20434</label>            
             <onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
             <icon>special://skin/extras/icons/year.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="8">
             <label>136</label>
             <onclick>ActivateWindow(videos,special://videoplaylists/,return)</onclick>
             <icon>special://skin/extras/icons/playlist.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="9">
             <label>1214</label>
             <onclick>ActivateWindow(Videos,Files,return)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="10">
             <label>653</label>
             <onclick>UpdateLibrary(video)</onclick>
             <icon>special://skin/extras/icons/update.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
     </include>
     
     <include name="QuickNavTvshowsHub">
         <item id="1">
-	        <label>31157</label>
+            <label>31157</label>
             <onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
             <icon>special://skin/extras/icons/title.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    <item id="2">
-	        <label>31109</label>	        
+            <property name="Color">1</property>
+        </item>
+        <item id="2">
+            <label>31109</label>            
             <onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
             <icon>special://skin/extras/icons/timer.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    <item id="11">
-	        <label>$INFO[Skin.String(tvshowhub.1.Label)]</label>	        
+            <property name="Color">1</property>
+        </item>
+        <item id="11">
+            <label>$INFO[Skin.String(tvshowhub.1.Label)]</label>            
             <onclick>$INFO[Skin.String(tvshowhub.1.Path)]</onclick>
             <icon>$INFO[Skin.String(tvshowhub.1.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(tvshowhub.1.enabled)</visible>
-	    </item>
-	    <item id="12">
-	        <label>$INFO[Skin.String(tvshowhub.2.Label)]</label>	        
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(tvshowhub.1.enabled)</visible>
+        </item>
+        <item id="12">
+            <label>$INFO[Skin.String(tvshowhub.2.Label)]</label>            
             <onclick>$INFO[Skin.String(tvshowhub.2.Path)]</onclick>
             <icon>$INFO[Skin.String(tvshowhub.2.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(tvshowhub.2.enabled)</visible>
-	    </item>
-	    <item id="13">
-	        <label>$INFO[Skin.String(tvshowhub.3.Label)]</label>	        
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(tvshowhub.2.enabled)</visible>
+        </item>
+        <item id="13">
+            <label>$INFO[Skin.String(tvshowhub.3.Label)]</label>            
             <onclick>$INFO[Skin.String(tvshowhub.3.Path)]</onclick>
             <icon>$INFO[Skin.String(tvshowhub.3.Icon)]</icon>
-	        <property name="Color">1</property>
-	        <visible>Skin.HasSetting(tvshowhub.3.enabled)</visible>
-	    </item>
-	    <item id="3">
-	        <label>137</label>
+            <property name="Color">1</property>
+            <visible>Skin.HasSetting(tvshowhub.3.enabled)</visible>
+        </item>
+        <item id="3">
+            <label>137</label>
             <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
-	    </item>
-	    <item id="4">
+        </item>
+        <item id="4">
             <label>135</label>            
             <onclick>ActivateWindow(Videos,TvShowGenres,return)</onclick>
             <icon>special://skin/extras/icons/genre.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="5">
             <label>20388</label>            
             <onclick>ActivateWindow(Videos,TvShowStudios,return)</onclick>
             <icon>special://skin/extras/icons/director.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="6">
             <label>344</label>
             <onclick>ActivateWindow(Videos,TvShowActors,return)</onclick>
             <icon>special://skin/extras/icons/actor.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="7">
             <label>652</label>            
             <onclick>ActivateWindow(Videos,TvShowYears,return)</onclick>
             <icon>special://skin/extras/icons/year.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="8">
             <label>136</label>
             <onclick>ActivateWindow(videos,special://videoplaylists/,return)</onclick>
             <icon>special://skin/extras/icons/playlist.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="9">
             <label>1214</label>
             <onclick>ActivateWindow(Videos,Files,return)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         <item id="10">
             <label>653</label>
             <onclick>UpdateLibrary(video)</onclick>
             <icon>special://skin/extras/icons/update.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
     </include>
     <include name="QuickNavMusicHub">
-	    <item id="1">
-	        <label>133</label>
+        <item id="1">
+            <label>133</label>
             <onclick>ActivateWindow(Music,Artists,return)</onclick>
             <icon>special://skin/extras/icons/artist.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="2">
-	        <label>132</label>
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="2">
+            <label>132</label>
             <onclick>ActivateWindow(Music,Albums,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="3">
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="3">
             <label>134</label>
             <onclick>ActivateWindow(Music,Songs,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
-	    
-	    <item id="4">
-	        <label>10505</label>
+        
+        <item id="4">
+            <label>10505</label>
             <onclick>ActivateWindow(Music,Top100Albums,return)</onclick>
             <icon>special://skin/extras/icons/top100.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="5">
-	        <label>31159</label>
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="5">
+            <label>31159</label>
             <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recent.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="6">
-	        <label>31109</label>
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="6">
+            <label>31109</label>
             <onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recentlyadded.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="7">
-	        <label>135</label>
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="7">
+            <label>135</label>
             <onclick>ActivateWindow(Music,Genres,return)</onclick>
             <icon>special://skin/extras/icons/audiogenre.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="8">
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="8">
             <label>652</label>
             <onclick>ActivateWindow(Music,Years,return)</onclick>
             <icon>special://skin/extras/icons/years.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         
-	    <item id="9">
-	        <label>137</label>
+        <item id="9">
+            <label>137</label>
             <onclick>RunScript(script.globalsearch,albums=true&artists=true&songs=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="10">
+        </item>
+        
+        <item id="10">
             <label>1050</label>
             <onclick>ActivateWindow(Music,Singles,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
-	    
-	    <item id="11">
-	        <label>20389</label>
+        
+        <item id="11">
+            <label>20389</label>
             <onclick>ActivateWindow(Music,videodb://musicvideos/titles/,return)</onclick>
             <icon>special://skin/extras/icons/musicvideo.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="12">
-	        <label>1038</label>
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="12">
+            <label>1038</label>
             <onclick>ActivateWindow(Music,addons://sources/audio/,return)</onclick>
             <icon>special://skin/extras/icons/addons.png</icon>
-	        <property name="Color">1</property>  
-	    </item>
-	    
-	    <item id="13">
-	        <label>136</label>
+            <property name="Color">1</property>  
+        </item>
+        
+        <item id="13">
+            <label>136</label>
             <onclick>ActivateWindow(Music,Playlists,return)</onclick>
             <icon>special://skin/extras/icons/playlist.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    
-	    <item id="14">
+            <property name="Color">1</property>
+        </item>
+        
+        <item id="14">
             <label>1214</label>
             <onclick>SendClick(502,5)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
         
         <item id="15">
             <label>653</label>
             <onclick>UpdateLibrary(music)</onclick>
             <icon>special://skin/extras/icons/update.png</icon>
-	        <property name="Color">1</property>
+            <property name="Color">1</property>
         </item>
-	</include>
+    </include>
     <include name="QuickNavPVRHub">
         <item id="1">
-	        <label>$LOCALIZE[19023]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
+            <label>$LOCALIZE[19023]</label>
             <onclick>SetFocus(32)</onclick>
             <icon>special://skin/extras/icons/livetv.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    <item id="2">
-	        <label>$LOCALIZE[31221]</label>
+            <property name="Color">1</property>
+        </item>
+        <item id="2">
+            <label>$LOCALIZE[31221]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(31)</onclick>
             <icon>special://skin/extras/icons/equalizer.png</icon>
-	        <property name="Color">1</property>
-	    </item>
-	    <item id="3">
-	        <label>$LOCALIZE[19024]</label>
+            <property name="Color">1</property>
+        </item>
+        <item id="3">
+            <label>$LOCALIZE[19024]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(33)</onclick>
             <icon>special://skin/extras/icons/radio.png</icon>
-	        <property name="Color">1</property>
-	    </item>
+            <property name="Color">1</property>
+        </item>
         <item id="4">
-	        <label>$LOCALIZE[19163]</label>
+            <label>$LOCALIZE[19163]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(34)</onclick>
             <icon>special://skin/extras/icons/database.png</icon>
-	        <property name="Color">1</property>
-	    </item>
+            <property name="Color">1</property>
+        </item>
         <item id="5">
-	        <label>$LOCALIZE[19040]</label>
+            <label>$LOCALIZE[19040]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(35)</onclick>
             <icon>special://skin/extras/icons/timer.png</icon>
-	        <property name="Color">1</property>
-	    </item>
+            <property name="Color">1</property>
+        </item>
         <item id="6">
-	        <label>$LOCALIZE[137]</label>
+            <label>$LOCALIZE[137]</label>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(36)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
-	        <property name="Color">1</property>
-	    </item>
+            <property name="Color">1</property>
+        </item>
     </include>
     
 </includes>

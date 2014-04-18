@@ -7,7 +7,7 @@
     <background>0</background>
     <views>50,51,52,53,54,55,56,57,58</views>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-    <onload>ClearProperty(focushub,home)</onload>
+    <onunload>ClearProperty(focushub,home)</onunload>
     <onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
     <controls>
@@ -24,6 +24,7 @@
             <posx>1760</posx>
             <width>48</width>
             <height>48</height>
+            <onclick>ClearProperty(focushub,home)</onclick>
             <onclick>SetFocus(50)</onclick>
             <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="false">common/right-arrow.png</texturefocus>
@@ -34,7 +35,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <visible>[Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
+            <visible>!IsEmpty(Window(home).Property(focushub))</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
@@ -45,6 +46,7 @@
             <posx>92</posx>
             <width>48</width>
             <height>48</height>
+            <onclick>SetProperty(focushub,1,home)</onclick>
             <onclick>SetFocus(9500)</onclick>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
@@ -56,7 +58,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
             <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
-            <visible>![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)]</visible>
+            <visible>IsEmpty(Window(home).Property(focushub))</visible>
             <visible>[substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/)]</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
@@ -72,7 +74,7 @@
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
             <animation effect="slide" end="norzpadneg" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
-            <visible allowhiddenfocus="true">Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502)</visible>
+            <visible allowhiddenfocus="true">!IsEmpty(Window(home).Property(focushub))</visible>
             
             <control type="label">
                 <posx>984</posx>
@@ -86,16 +88,17 @@
             <control type="list" id="9500">
                 <posx>984</posx>
                 <posy>listy</posy>
-                <width>464</width>
+                <width>widgethubrightw</width>
                 <height>700</height>
+                <onright>ClearProperty(focushub,home)</onright>
                 <onright>50</onright>
                 <onleft>9501</onleft>                
                 <onup>9500</onup>
                 <ondown>9500</ondown>
                 <orientation>vertical</orientation>
-                <itemlayout width="464" height="fivelinelist">
+                <itemlayout width="widgethubrightw" height="fivelinelist">
                     <control type="image">
-                        <width>464</width>
+                        <width>widgethubrightw</width>
                         <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
@@ -139,9 +142,9 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="464" height="fivelinelist">
+                <focusedlayout width="widgethubrightw" height="fivelinelist">
                     <control type="image">
-                        <width>464</width>
+                        <width>widgethubrightw</width>
                         <height>fivelineborder</height>
                         <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
@@ -150,7 +153,7 @@
                         
                     </control>
                     <control type="image">
-                        <width>464</width>
+                        <width>widgethubrightw</width>
                         <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                         <visible>!Control.HasFocus(9500)</visible>

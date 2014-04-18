@@ -4,7 +4,7 @@
 	<defaultcontrol allways="true">6</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<views>50</views>
-
+    <onload>ClearProperty(focushub,home)</onload>
 	<controls>
 
 		<include>GlobalBackground</include>

@@ -39,7 +39,7 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(episodes)">[COLOR=Highlight]$INFO[VideoPlayer.TvShowTitle]$INFO[VideoPlayer.Season, ,]$INFO[VideoPlayer.Episode,x,  ][/COLOR]</value>
         <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]</value>
         <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]</value>
-        <value condition="!IsEmpty(Container.NumItems) + !Control.HasFocus(9500) + !Control.HasFocus(9501)">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
+        <value condition="!IsEmpty(Container.NumItems) + IsEmpty(Window(home).Property(focushub))">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
         <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20360]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
     </variable>
     
@@ -166,7 +166,7 @@
                 </animation>
                 
             </control>
-            <control type="button" description="Click me to go home">
+            <control type="button" description="Click me to go home" id="9834">
                 <posy>10</posy>
                 <posx>30</posx>
                 <width>128</width>
