@@ -359,7 +359,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>-18</posx>
+                <posx>-26</posx>
                 <height>globalh</height>
                 <include>DefScrollBarMove</include>
                 <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>

@@ -237,7 +237,7 @@
             </control>
             
             <control type="scrollbar" id="60">
-                <posx>-10</posx>
+                <posx>-8</posx>
                 <posy>listy</posy>
                 <height>690</height>
                 <include>DefScrollBarMove</include>
