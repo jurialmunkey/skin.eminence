@@ -79,18 +79,11 @@
             <include>DefSideLabel</include>
             <control type="group">
                 <posx>listx</posx>
-                <posy>listy</posy>
-                <control type="image">
-                    <width>globalw</width>
-                    <height>globalh</height>
-                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
-                    <visible>Control.HasFocus(54)</visible>
-                </control>   
+                <posy>listy</posy>  
                 <control type="image">
                     <width>globalw</width>
                     <height>globalh</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    <visible>!Control.HasFocus(54)</visible>
                 </control>                    
                     
                 <control type="wraplist" id="54">
