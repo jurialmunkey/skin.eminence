@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <includes>
-    <constant name="lovefilmplot">438</constant>
+    <constant name="lovefilmplot">448</constant>
     <constant name="lovefilmplotlist">478</constant>
     <include name="LovefilmContent">
         <control type="image">
@@ -13,12 +13,7 @@
         </control>
         <control type="group">
             <visible>Skin.HasSetting(lovefilm.info)</visible>
-            <control type="image">
-                <width>lovefilmplotlist</width>
-                <height>bigposterh</height>
-                <texture background="true" colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                <aspectratio aligny="center">scale</aspectratio>
-            </control>
+
             <control type="image">
                 <right>0</right>
                 <width>950</width>
@@ -26,21 +21,15 @@
                 <texture background="true">$VAR[FanartImage]</texture>
                 <aspectratio aligny="center">scale</aspectratio>
             </control>
-            <control type="image">
-                <right>0</right>
-                <width>950</width>
-                <height>bigposterh</height>
-                <texture border="2" colordiffuse="PosterBorder">common/border.png</texture>
-            </control>
             <control type="group">
                 <posx>64r</posx>
                 <posy>10</posy>
                 <include>WatchedImage</include>
             </control>
             <control type="group">
-                <posx>20</posx>
+                <posx>globalpad</posx>
                 <width>lovefilmplot</width>
-                <posy>globalpad</posy>
+                <posy>0</posy>
                 <control type="label">
                     <width>lovefilmplot</width>
                     <height>44</height>
@@ -61,7 +50,7 @@
                 </control>
                 <control type="label">
                     <posx>0r</posx>
-                    <posy>50r</posy>
+                    <posy>40r</posy>
                     <width>lovefilmplot</width>
                     <align>right</align>
                     <height>50</height>
@@ -92,10 +81,16 @@
                 <posx>listx</posx>
                 <posy>listy</posy>
                 <control type="image">
-                    
+                    <width>globalw</width>
+                    <height>globalh</height>
+                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                    <visible>Control.HasFocus(54)</visible>
+                </control>   
+                <control type="image">
                     <width>globalw</width>
                     <height>globalh</height>
                     <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    <visible>!Control.HasFocus(54)</visible>
                 </control>                    
                     
                 <control type="wraplist" id="54">

@@ -29,6 +29,7 @@
                         <width>bannerwborder</width>
                         <height>bannerhborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        
                     </control>   
                     <control type="group">
                         <visible>!Container.Content(episodes)</visible>

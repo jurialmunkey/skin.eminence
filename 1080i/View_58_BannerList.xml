@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <includes>
-    <constant name="bannerlistplot">838</constant>
+    <constant name="bannerlistplot">848</constant>
 	<include name="View_58_BannerList">
 	
 		<description>Banner List View (id=58)</description>
@@ -48,7 +48,7 @@
                         </control>
                         
                         <control type="group">
-                            <posx>72r</posx>
+                            <posx>62r</posx>
                             <posy>10</posy>
                             <include>WatchedImage</include>
                         </control>
@@ -91,7 +91,7 @@
                         <control type="image">
                             <width>globalw</width>
                             <height>330</height>
-                            <texture border="12" flipx="true">common/border-inner-highlight.png</texture>
+                            <texture border="12" flipx="true" colordiffuse="PosterHighlight">common/border-inner.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
                         </control>
@@ -111,7 +111,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="group">
-                            <posx>72r</posx>
+                            <posx>62r</posx>
                             <posy>10</posy>
                             <include>WatchedImage</include>
                         </control>
