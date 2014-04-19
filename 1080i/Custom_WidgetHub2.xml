@@ -21,7 +21,7 @@
 	        <colordiffuse>Silhouette</colordiffuse>
 	        <include>Animation.FadeIn</include>
 	        <include>Animation.FadeOut</include>
-	    </control>-->
+	    </control>
 		<control type="grouplist" description="menu" id="9512">
 		    <include>Animation.DelayFadeIn</include>
 	        <posy>680</posy>
