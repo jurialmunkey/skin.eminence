@@ -2,6 +2,8 @@
 Watched indicator updates
 Lovefilm show info mode
 Fix some mouse issues for hubs etc
+Fix further hub issues
+Lists to list rather than focuslist
 
 [B]0.9.37[/B]
 Standardised views to constants (still some work todo)

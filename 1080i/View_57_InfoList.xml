@@ -130,7 +130,7 @@
                     <height>345</height>
                     <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                 </control>
-                <control type="fixedlist" id="57">
+                <control type="list" id="57">
                     <posx>infolistx</posx>
                     <posy>0</posy>
                     <width>infolistw</width>

@@ -349,7 +349,7 @@
             <include>DialogVisibility</include>
             <visible>!Window.IsVisible(DialogMediaSource.xml)</visible>
             <visible>!Window.IsVisible(DialogContentSettings.xml)</visible>
-            <visible allowhiddenfocus="true">[!substring(Container.FolderPath,videodb://) | IsEmpty(Window(home).Property(focushub))] + !ControlGroup(300).HasFocus()</visible>
+            <visible allowhiddenfocus="true">[[!substring(Container.FolderPath,videodb://) + Window.IsVisible(MyVideoNav.xml)] | IsEmpty(Window(home).Property(focushub))] + !ControlGroup(300).HasFocus()</visible>
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(movieinformation)">Conditional</animation>
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(musicinformation)">Conditional</animation>
             <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(addoninformation)">Conditional</animation>

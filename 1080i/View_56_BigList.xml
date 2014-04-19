@@ -2,8 +2,8 @@
 <!-- Foundation -->
 <includes>
 
-	<include name="View_56_BigList">
-	
+    <include name="View_56_BigList">
+    
         <control type="group">
             <visible>Control.IsVisible(56)</visible>
             <include>Animation.ViewChange</include>     
@@ -39,9 +39,9 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
+                        <visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                     </control>
-					<control type="image">
+                    <control type="image">
                         <posx>globalpad</posx>
                         <posy>globalpad</posy>  
                         <width>73</width>
@@ -50,34 +50,39 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
+                        <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                     </control>
-					
-					<control type="group">
-						<animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)">Conditional</animation>
-
-						<control type="label">
-							<posx>144</posx>
-							<posy>15</posy>
-							<width>1200</width>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>PanelFG</textcolor>
-							<label>$VAR[VARLabel]</label>
-						</control>
-						<control type="label">
-							<posx>144</posx>
-							<posy>48</posy>
-							<width>1200</width>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>PanelFG</textcolor>
-							<font>Font-ListInfo-Small</font>
-							<label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
-						</control>
-					</control>	
+                    
+                    <control type="group">
+                        <animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)">Conditional</animation>
+                        
+                        <control type="label">
+                            <posx>143</posx>
+                            <posy>15</posy>
+                            <width>1200</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>PanelFG</textcolor>
+                            <label>$VAR[VARLabel]</label>
+                        </control>
+                        <control type="label">
+                            <posx>143</posx>
+                            <posy>48</posy>
+                            <width>1200</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>PanelFG</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[VARLabel3]</label>
+                        </control>
+                    </control>  
+                    <control type="group">
+                        <posx>70r</posx>
+                        <posy>39</posy>
+                        <include>WatchedImage</include>
+                    </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <posx>90r</posx>
                         <height>130</height>
                         <width>1200</width>
                         <align>right</align>
@@ -86,6 +91,7 @@
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
+
 
                 </itemlayout>
 
@@ -105,9 +111,9 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
+                        <visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                     </control>
-					<control type="image">
+                    <control type="image">
                         <posx>globalpad</posx>
                         <posy>globalpad</posy>  
                         <width>73</width>
@@ -116,32 +122,37 @@
                         <aspectratio>scale</aspectratio>
                         <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
                         <bordersize>1</bordersize>
-						<visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
+                        <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                     </control>
-					<control type="group">
-					  <animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(sets)">Conditional</animation>
-						<control type="label">
-							<posx>144</posx>
-							<posy>15</posy>
-							<width>1200</width>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>Selected</textcolor>
-							<label>$VAR[VARLabel]</label>
-						</control>
-						<control type="label">
-							<posx>144</posx>
-							<posy>48</posy>
-							<width>1200</width>
-							<align>left</align>
-							<aligny>center</aligny>
-							<textcolor>Selected</textcolor>
-							<font>Font-ListInfo-Small</font>
-							<label>$VAR[WatchedLabel,,   ]$VAR[VARLabel3]</label>
-						</control>
-					</control>
+                    <control type="group">
+                      <animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(sets)">Conditional</animation>
+                        <control type="label">
+                            <posx>144</posx>
+                            <posy>15</posy>
+                            <width>1200</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>Selected</textcolor>
+                            <label>$VAR[VARLabel]</label>
+                        </control>
+                        <control type="label">
+                            <posx>144</posx>
+                            <posy>48</posy>
+                            <width>1200</width>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <textcolor>Selected</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <label>$VAR[VARLabel3]</label>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <posx>70r</posx>
+                        <posy>39</posy>
+                        <include>WatchedImage</include>
+                    </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <posx>90r</posx>
                         <height>130</height>
                         <width>1200</width>
                         <align>right</align>
@@ -164,6 +175,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>
