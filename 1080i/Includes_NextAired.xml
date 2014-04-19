@@ -5,6 +5,8 @@
         <posy>210</posy>
         <width>910</width>
         <height>690</height>
+        <focusposition>0</focusposition>
+        <movement>1</movement>
         <viewtype label="31152">list</viewtype>
         <scrolltime tween="quadratic">400</scrolltime>
         <orientation>horizontal</orientation>
@@ -280,6 +282,7 @@
                     <onup>201</onup>
                     <ondown>203</ondown>
                     <include>NextAiredList</include>
+                    <visible allowhiddenfocus="true">Control.HasFocus(202)</visible>
                 </control>
                 <control type="fixedlist" id="203">
                     <onup>202</onup>
