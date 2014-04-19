@@ -10,9 +10,15 @@
         <defaultcontrol always="true">9500</defaultcontrol>
     </include>
   
-        
     <include name="50Focus">
         <defaultcontrol always="true">50</defaultcontrol>
+    </include>
+    
+    <include name="OSDPauseFocus">
+        <defaultcontrol always="false">14</defaultcontrol>
+    </include>
+    <include name="OSDStopFocus">
+        <defaultcontrol always="true">15</defaultcontrol>
     </include>
     
     <include name="DefInformationNavLabel">
