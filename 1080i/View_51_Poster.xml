@@ -48,7 +48,7 @@
 
             <control type="label">
                 <posx>50%</posx>
-                <bottom>globalpad</bottom>
+                <bottom>70</bottom>
                 <width>bigposterwplot</width>
                 <height>58</height>
                 <aligny>center</aligny>
@@ -80,32 +80,27 @@
             <posy>10</posy>
             <include>WatchedImage</include>
         </control>
-        <control type="image">
-            <posx>globalpad</posx>
-            <bottom>globalpad</bottom>
-            <width>bigposterw</width>
-            <height>58</height>
-            <texture colordiffuse="PanelBG">common/white.png</texture>
-            <aspectratio>scale</aspectratio>
-            <animation effect="fade" start="100" end="66" condition="true">Conditional</animation>
-        </control>
-        <control type="label">
-            <posx>25</posx>
-            <bottom>globalpad</bottom>
-            <width>bigposterwplot</width>
-            <height>58</height>
-            <aligny>center</aligny>
-            <label>$INFO[ListItem.Label]</label>
-        </control>
-        <control type="label">
-            <posx>25r</posx>
-            <bottom>globalpad</bottom>
-            <width>bigposterwplot</width>
-            <height>58</height>
-            <aligny>center</aligny>
-            <align>right</align>
-            <font>Font-ListInfo-Small</font>
-            <label>$INFO[ListItem.Label2]</label>
+        <control type="group">
+            <visible>!Control.HasFocus(60)</visible>
+            <animation effect="fade" start="0" end="100" delay="400" time="400" reversible="false">Visible</animation>
+            <control type="label">
+                <posx>25</posx>
+                <bottom>globalpad</bottom>
+                <width>bigposterwplot</width>
+                <height>58</height>
+                <aligny>center</aligny>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>25r</posx>
+                <bottom>globalpad</bottom>
+                <width>bigposterwplot</width>
+                <height>58</height>
+                <aligny>center</aligny>
+                <align>right</align>
+                <font>Font-ListInfo-Small</font>
+                <label>$INFO[ListItem.Label2]</label>
+            </control>
         </control>
     </include>
     <include name="51ListSquareContent">
@@ -165,7 +160,7 @@
                 <posx>listpad</posx>
                 <posy>210</posy>
                 <width>1458</width>
-                <height>globalh</height>
+                <height>750</height>
                 <onleft>51</onleft>
                 <onright>51</onright>
                 <focusposition>1</focusposition>
@@ -178,7 +173,7 @@
                 <orientation>horizontal</orientation>
                 <focusposition>1</focusposition>
                 <movement>1</movement>
-                <itemlayout width="bigposterwlist" height="globalh" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
+                <itemlayout width="bigposterwlist" height="750" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <control type="group">
                         <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <include>51ListContent</include>
@@ -193,7 +188,7 @@
                         <include>51ListSquareContent</include>
                     </control>
                 </itemlayout>
-                <focusedlayout width="bigposterwlist" height="globalh" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
+                <focusedlayout width="bigposterwlist" height="750" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <control type="group">
                         <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
@@ -222,34 +217,29 @@
                                 <posy>10</posy>
                                 <include>WatchedImage</include>
                             </control>
-                            <control type="image">
-                                <posx>globalpad</posx>
-                                <bottom>globalpad</bottom>
-                                <width>bigposterw</width>
-                                <height>58</height>
-                                <texture colordiffuse="PanelBG">common/white.png</texture>
-                                <aspectratio>scale</aspectratio>
-                                <animation effect="fade" start="100" end="66" condition="true">Conditional</animation>
-                            </control>
-                            <control type="label">
-                                <posx>25</posx>
-                                <bottom>globalpad</bottom>
-                                <width>bigposterwplot</width>
-                                <height>58</height>
-                                <aligny>center</aligny>
-                                <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <posx>25r</posx>
-                                <bottom>globalpad</bottom>
-                                <width>bigposterwplot</width>
-                                <height>58</height>
-                                <aligny>center</aligny>
-                                <align>right</align>
-                                <font>Font-ListInfo-Small</font>
-                                <textcolor>Selected</textcolor>
-                                <label>$INFO[ListItem.Label2]</label>
+                            <control type="group">
+                                <visible>!Control.HasFocus(60)</visible>
+                                <animation effect="fade" start="0" end="100" reversible="false" delay="400" time="400">Visible</animation>
+                                <control type="label">
+                                    <posx>25</posx>
+                                    <bottom>globalpad</bottom>
+                                    <width>bigposterwplot</width>
+                                    <height>58</height>
+                                    <aligny>center</aligny>
+                                    <textcolor>Selected</textcolor>
+                                    <label>$INFO[ListItem.Label]</label>
+                                </control>
+                                <control type="label">
+                                    <posx>25r</posx>
+                                    <bottom>globalpad</bottom>
+                                    <width>bigposterwplot</width>
+                                    <height>58</height>
+                                    <aligny>center</aligny>
+                                    <align>right</align>
+                                    <font>Font-ListInfo-Small</font>
+                                    <textcolor>Selected</textcolor>
+                                    <label>$INFO[ListItem.Label2]</label>
+                                </control>
                             </control>
                         </control>
                     </control>
@@ -283,6 +273,7 @@
                             </control>
                             <control type="group">
                                 <posy>bigposterhfanart</posy>
+                                
                                 <control type="label">
                                     <posx>20</posx>
                                     <posy>25</posy>
@@ -307,7 +298,7 @@
 
                             <control type="label">
                                 <posx>50%</posx>
-                                <bottom>globalpad</bottom>
+                                <bottom>70</bottom>
                                 <width>bigposterwplot</width>
                                 <height>58</height>
                                 <aligny>center</aligny>
@@ -378,7 +369,8 @@
                 <onup>51</onup>
                 <ondown>9000</ondown>
                 <orientation>horizontal</orientation>
-                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
+                <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + ![[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)]">Conditional</animation>
+                <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + [[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)]">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
             </control>
         </control>
