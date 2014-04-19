@@ -44,18 +44,16 @@
 	<variable name="PlayerBigIcon">
         <value condition="Player.Rewinding">common/bigrw.png</value>
         <value condition="Player.Forwarding">common/bigff.png</value>
-        <!--<value condition="substring(Player.SeekOffset,-) + [Player.DisplayAfterSeek | Player.Seeking]">common/bigprevious.png</value>
-        <value condition="!substring(Player.SeekOffset,-) + [Player.DisplayAfterSeek | Player.Seeking]">common/bignext.png</value>-->
 	    <value condition="Player.Paused">common/bigpause.png</value>
 	</variable>
     
     <variable name="WatchedImage">
-        <value condition="ListItem.IsPlaying + [Control.IsVisible(50) | Control.IsVisible(57)]">overlay/OverlayPlaying-List.png</value>
+        <value condition="ListItem.IsPlaying + [Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57)]">overlay/OverlayPlaying-List.png</value>
 	    <value condition="ListItem.IsPlaying">overlay/OverlayPlaying.png</value>
-	    <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png) + [Control.IsVisible(50) | Control.IsVisible(57)]">overlay/OverlayWatched-List.png</value>
+	    <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png) + [Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57)]">overlay/OverlayWatched-List.png</value>
         <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched.png</value>
-        <value condition="stringcompare(ListItem.Overlay,OverlayUnwatched.png) + [Control.IsVisible(50) | Control.IsVisible(57)]">overlay/OverlayEmpty-List.png</value>
-        <value condition="stringcompare(ListItem.Overlay,OverlayUnwatched.png) + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlay/OverlayEmpty.png</value>
+        <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + [Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57)]">overlay/OverlayEmpty-List.png</value>
+        <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlay/OverlayEmpty.png</value>
 	</variable>
     
     <include name="WatchedImage">
@@ -67,7 +65,7 @@
             <colordiffuse>DFffffff</colordiffuse>
             <texture background="true" colordiffuse="PanelFG-NF">$VAR[WatchedImage]</texture>
             <aspectratio aligny="top">keep</aspectratio>
-            <visible>ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+            <visible>Container.Content(songs) | ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
         </control>
         <control type="image">
             <width>54</width>

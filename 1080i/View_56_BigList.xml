@@ -90,6 +90,7 @@
                         <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label2]</label>
+                        <animation effect="slide" start="0" end="60" condition="!Window.IsVisible(MyVideoNav.xml) + !Container.Content(songs)">Conditional</animation>
                     </control>
 
 
@@ -160,6 +161,7 @@
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label2]</label>
+                        <animation effect="slide" start="0" end="60" condition="!Window.IsVisible(MyVideoNav.xml) + !Container.Content(songs)">Conditional</animation>
                     </control>
 
                 </focusedlayout>
