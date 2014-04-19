@@ -14,7 +14,7 @@
                 <posx>listx</posx>
                 <posy>listy</posy>
 
-                <control type="list" id="58">
+                <control type="fixedlist" id="58">
                     <width>globalw</width>
                     <height>700</height>
                     <onright>9000</onright>
