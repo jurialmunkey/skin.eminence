@@ -2,14 +2,12 @@
 <includes>
 
     <variable name="TopBarMainLabel">
-        <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">PanelFG</value>
-        <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">MainLabel</value>
+        <value condition="Window.IsVisible(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)">MainLabel</value>
         <value>PanelFG</value>
     </variable>
     
     <variable name="TopBarSubLabel">
-        <value condition="Window.IsVisible(script-globalsearch-main.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)">PanelFG-NF</value>
-        <value condition="Window.IsVisible(home) | Window.IsVisible(VideoFullscreen.xml) | Window.IsVisible(visualisation)">SubLabel</value>
+        <value condition="Window.IsVisible(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation)">SubLabel</value>
         <value>PanelFG-NF</value>
     </variable>
     

@@ -195,16 +195,21 @@
                     <posy>20</posy>
                     <width>650</width>
                     <orientation>vertical</orientation>
+                    
                     <control type="label">
                         <label>$INFO[Window(Home).Property(bgwidget.type)]</label>
                         <aligny>top</aligny>
                         <height>35</height>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <visible>!IsEmpty(Window(Home).Property(bgwidget.type))</visible>
                     </control>
                     <control type="label">
                         <label>31112</label>
                         <aligny>top</aligny>
                         <height>35</height>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <visible>IsEmpty(Window(Home).Property(bgwidget.type))</visible>
                     </control>
                     <control type="label">
@@ -218,20 +223,26 @@
                         <label>$INFO[Container(9600).ListItem.Plot]$INFO[Container(9600).ListItem.Property(Album_Description)]</label>
                         <aligny>top</aligny>
                         <height>120</height>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <font>Font-ListInfo</font>
                     </control>
                     <control type="label">
                         <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
                         <aligny>center</aligny>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <visible>!IsEmpty(Container(9600).ListItem.Year)</visible>
                     </control>
                     <control type="label">
                         <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
                         <aligny>center</aligny>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <visible>IsEmpty(Container(9600).ListItem.Year)</visible>
                     </control>
                 </control>
@@ -266,6 +277,8 @@
                     <control type="label">
                         <label>$LOCALIZE[31112] / $LOCALIZE[31110]</label>
                         <aligny>top</aligny>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <height>35</height>
                     </control>
                     <control type="label">
@@ -279,11 +292,15 @@
                         <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
                         <aligny>top</aligny>
                         <height>120</height>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <font>Font-ListInfo</font>
                     </control>
                     <control type="label">
                         <label>$INFO[Container(9600).ListItem.Label2]</label>
                         <aligny>center</aligny>
+                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                        <textcolor>TopBarDarkIcon</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <height>65</height>
                     </control>

@@ -24,6 +24,7 @@
                 <width>128</width>
                 <height>128</height>
                 <texture>special://skin/extras/icons/livetv.png</texture>
+                <colordiffuse>PanelFG</colordiffuse>
             </control>
             <control type="label">
                 <posx>33</posx>
@@ -58,6 +59,7 @@
                         <aspectratio aligny="top">center</aspectratio>
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <visible>ListItem.IsPlaying</visible>
+                        <colordiffuse>PanelFG</colordiffuse>
                     </control>
                     <control type="image">
                         <posx>22</posx>
