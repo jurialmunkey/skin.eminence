@@ -5,6 +5,7 @@ Fix some mouse issues for hubs etc
 Fix further hub issues
 Lists to list rather than focuslist
 Option to show/hide poster labels
+Fix channel manager vis bugs
 
 [B]0.9.37[/B]
 Standardised views to constants (still some work todo)

@@ -45,6 +45,7 @@
 				<height>75</height>
 				<aligny>center</aligny>
 				<align>center</align>
+                <scroll>true</scroll>
 			</control>
 
 			<control type="image">

@@ -2,11 +2,16 @@
 <window>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-
+    <coordinates>
+        <posx>horzpad</posx>
+        <posy>70</posy>
+    </coordinates>
 	<controls>
 		<control type="group">
-			<left>251</left>
-			<top>280</top>
+            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+			<left>listx</left>
+			<top>listy</top>
 			<control type="scrollbar" id="60">
 				<posx>590</posx>
 				<height>690</height>
