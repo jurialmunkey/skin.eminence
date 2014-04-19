@@ -507,3 +507,11 @@ msgstr ""
 msgctxt "#31225"
 msgid "Info List"
 msgstr ""
+
+msgctxt "#31226"
+msgid "Show title"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Hide title"
+msgstr ""

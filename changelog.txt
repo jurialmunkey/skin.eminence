@@ -4,7 +4,7 @@ Lovefilm show info mode
 Fix some mouse issues for hubs etc
 Fix further hub issues
 Lists to list rather than focuslist
-Poster view with labels under
+Option to show/hide poster labels
 
 [B]0.9.37[/B]
 Standardised views to constants (still some work todo)

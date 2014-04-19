@@ -438,6 +438,18 @@
                     <alttexturenofocus>-</alttexturenofocus>
                 </control>
                 
+                <control type="togglebutton" id="9009">
+                    <include>DefNavMenuButton</include>
+                    <onclick>Skin.ToggleSetting(posterview.labels)</onclick>
+                    <visible>Control.IsVisible(51)</visible>
+                    <visible>![[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)]</visible>
+                    <label>31226</label>
+                    <altlabel>31227</altlabel>
+                    <usealttexture>Skin.HasSetting(posterview.labels)</usealttexture>
+                    <alttexturefocus>-</alttexturefocus>
+                    <alttexturenofocus>-</alttexturenofocus>
+                </control>
+                
                 <control type="button" id="21">
                     <description>Activate Filter</description>
                     <include>DefNavMenuButton</include>
