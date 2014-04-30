@@ -1,3 +1,6 @@
+[B]0.9.39[/B]
+Fix hub issues with playlists and empty hubs (afaik)
+
 [B]0.9.38[/B]
 Watched indicator updates
 Lovefilm show info mode

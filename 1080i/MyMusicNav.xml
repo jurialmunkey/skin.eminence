@@ -5,6 +5,7 @@
     <include condition="IsEmpty(Window(home).Property(focushub)) | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
 	<allowoverlay>yes</allowoverlay>
 	<background>0</background>
+    <onload condition="!substring(Container.FolderPath,musicdb://)">ClearProperty(focushub,home)</onload>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
 	<views>50,51,52,53,54,55,56</views>
 	<onunload>ClearProperty(focushub,home)</onunload>

@@ -6,7 +6,8 @@
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
     <views>50,51,52,53,54,55,56,57,58</views>
-    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
+    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>
+    <onload condition="!substring(Container.FolderPath,videodb://)">ClearProperty(focushub,home)</onload>
     <onunload>ClearProperty(focushub,home)</onunload>
     <onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
