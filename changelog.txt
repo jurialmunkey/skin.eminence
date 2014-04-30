@@ -1,5 +1,6 @@
 [B]0.9.39[/B]
 Fix hub issues with playlists and empty hubs (afaik)
+Fix Side menu radiobutton not being visible
 
 [B]0.9.38[/B]
 Watched indicator updates

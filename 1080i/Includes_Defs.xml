@@ -431,7 +431,7 @@
     </include>
     
     <include name="DefNavMenuButton">
-        <width>475</width>
+        <width>440</width>
         <height>90</height>
         <align>left</align>
         <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
