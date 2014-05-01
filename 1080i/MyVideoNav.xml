@@ -75,7 +75,7 @@
             <posy>70</posy>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
-            <animation effect="slide" end="norzpadneg" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible allowhiddenfocus="true">!IsEmpty(Window(home).Property(focushub)) + substring(Container.FolderPath,videodb://)</visible>
             
             <control type="label">
