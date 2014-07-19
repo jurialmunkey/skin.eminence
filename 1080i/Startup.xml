@@ -19,7 +19,7 @@
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
             <onfocus>Skin.SetString(home.301.bgcolor,ff555555)</onfocus>
             <onfocus>Skin.SetString(home.301.icon,special://skin/extras/icons/film.png)</onfocus>
-            <onfocus>Skin.SetString(home.301.path,ActivateWindow(Videos,MovieTitles,return))</onfocus>
+            <onfocus>Skin.SetString(home.301.path,ActivateWindow(3201))</onfocus>
             <onfocus>Skin.SetString(home.301.label,$LOCALIZE[20342])</onfocus>
             <onfocus>Skin.SetString(home.301.bgwidget.type,$LOCALIZE[31109])</onfocus>
             <onfocus>Skin.SetString(home.301.bgwidget,videodb://recentlyaddedmovies/)</onfocus>
@@ -28,7 +28,7 @@
             <onfocus>Skin.SetBool(home.302.enabled)</onfocus>
             <onfocus>Skin.SetString(home.302.bgcolor,ff555555)</onfocus>
             <onfocus>Skin.SetString(home.302.icon,special://skin/extras/icons/tv.png)</onfocus>
-            <onfocus>Skin.SetString(home.302.path,ActivateWindow(videos,TvShowTitles,return))</onfocus>
+            <onfocus>Skin.SetString(home.302.path,ActivateWindow(3202))</onfocus>
             <onfocus>Skin.SetString(home.302.label,$LOCALIZE[20343])</onfocus>
             <onfocus>Skin.SetString(home.302.bgwidget.type,$LOCALIZE[31109])</onfocus>
             <onfocus>Skin.SetString(home.302.bgwidget,videodb://recentlyaddedepisodes/)</onfocus>
@@ -37,7 +37,7 @@
             <onfocus>Skin.SetBool(home.303.enabled)</onfocus>
             <onfocus>Skin.SetString(home.303.bgcolor,ff555555)</onfocus>
             <onfocus>Skin.SetString(home.303.icon,special://skin/extras/icons/songs.png)</onfocus>
-            <onfocus>Skin.SetString(home.303.path,ActivateWindow(Music,Albums,return))</onfocus>
+            <onfocus>Skin.SetString(home.303.path,ActivateWindow(3203))</onfocus>
             <onfocus>Skin.SetString(home.303.label,$LOCALIZE[2])</onfocus>
             
             <!-- 304 Item -->

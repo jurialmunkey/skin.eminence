@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="502">
-	<include condition="!IsEmpty(Window(home).Property(focushub)) + IsEmpty(Window(home).Property(globalsearch))">9500Focus</include>
-    <include condition="IsEmpty(Window(home).Property(focushub)) | !IsEmpty(Window(home).Property(globalsearch))">50Focus</include>
+    <include>50Focus</include>
 	<allowoverlay>yes</allowoverlay>
 	<background>0</background>
-    <onload condition="!substring(Container.FolderPath,musicdb://)">ClearProperty(focushub,home)</onload>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
 	<views>50,51,52,53,54,55,56</views>
 	<onunload>ClearProperty(focushub,home)</onunload>
@@ -18,193 +16,14 @@
 		</control>
 
 		<include>GlobalBackground</include>
-		
-		<control type="button">
-            <posy>600</posy>
-            <posx>1770</posx>
-            <width>48</width>
-            <height>48</height>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>SetFocus(50)</onclick>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!IsEmpty(Window(home).Property(focushub))</visible>
-            <visible>!Window.IsActive(movieinformation)</visible>
-            <visible>!Window.IsActive(musicinformation)</visible>
-            <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
-        </control>
-        
-        <control type="button">
-            <posy>600</posy>
-            <posx>102</posx>
-            <width>48</width>
-            <height>48</height>
-            <onclick>SetProperty(focushub,1,home)</onclick>
-            <onclick>SetFocus(9500)</onclick>
-            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56)</visible>
-            <visible>IsEmpty(Window(home).Property(focushub))</visible>
-            <visible>[Container.Content(songs) | substring(Container.FolderPath,recentlyadded) | stringcompare(Container.FolderPath,videodb://movies/genres/) | stringcompare(Container.FolderPath,videodb://movies/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/titles/) | stringcompare(Container.FolderPath,videodb://tvshows/genres/) | stringcompare(Container.FolderPath,videodb://movies/years/) | stringcompare(Container.FolderPath,videodb://tvshows/years/) | stringcompare(Container.FolderPath,videodb://movies/actors/) | stringcompare(Container.FolderPath,videodb://tvshows/actors/) | stringcompare(Container.FolderPath,videodb://movies/directors/) | stringcompare(Container.FolderPath,videodb://movies/studios/) | stringcompare(Container.FolderPath,videodb://tvshows/studios/) | stringcompare(Container.FolderPath,videodb://movies/countries/) | stringcompare(Container.FolderPath,videodb://tvshows/countries/) | stringcompare(Container.FolderPath,videodb://movies/sets/) | stringcompare(Container.FolderPath,musicdb://artists/) | stringcompare(Container.FolderPath,musicdb://albums/) | stringcompare(Container.FolderPath,musicdb://genres/) | stringcompare(Container.FolderPath,musicdb://top100/albums/) | stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) | stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) | stringcompare(Container.FolderPath,special://musicplaylists/) | stringcompare(Container.FolderPath,videodb://musicvideos/titles/) | stringcompare(Container.FolderPath,addons://sources/audio/) | stringcompare(Container.FolderPath,musicdb://songs/) | stringcompare(Container.FolderPath,musicdb://singles/)]</visible>
-            <visible>!Window.IsActive(movieinformation)</visible>
-            <visible>!Window.IsActive(musicinformation)</visible>
-            <visible>!ControlGroup(9000).HasFocus()</visible>
-            <visible>!Window.IsVisible(DialogContextMenu.xml)</visible>
-        </control>
+
 
 		<include>DefMyNavViews</include>
 		
 		<include>DefFullScreenNav</include>
 		
 		
-		<control type="group">
-            <posx>horzpad</posx>
-            <posy>70</posy>
-            <control type="label">
-                <label>2</label>
-                <include>DefSideLabelCoords</include>
-                <visible>IsEmpty(Window(home).Property(focushub))</visible>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            </control>
-            <include>DialogVisibility</include>
-            <include>Animation.SlideOpen.Right</include>
-            <visible allowhiddenfocus="true">!IsEmpty(Window(home).Property(focushub))</visible>
-            <control type="panel" id="9500">
-                <posx>listx</posx>
-                <posy>listy</posy>
-                <width>1458</width>
-                <height>700</height>
-                <onright>ClearProperty(focushub,home)</onright>
-                <onright>50</onright>
-                <onleft>CancelAlarm(Move9501,true)</onleft>
-                <onleft>9501</onleft>                
-                <onup>9500</onup>
-                <ondown>9500</ondown>
-                <orientation>vertical</orientation>
-                <itemlayout width="threecollist" height="fivelinelist">
-                    <control type="image">
-                        <width>threecolborder</width>
-                        <height>fivelineborder</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>globalpad</posx>
-                        <posy>globalpad</posy>  
-                        <width>fiveline</width>
-                        <height>fiveline</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <visible>IsEmpty(ListItem.Property(Color))</visible>
-                    </control>
-                    <control type="image">
-                        <posx>globalpad</posx>
-                        <posy>globalpad</posy>  
-                        <width>fiveline</width>
-                        <height>fiveline</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                        <colordiffuse>PanelFG</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>30r</posx>
-                        <posy>15</posy>
-                        <width>270</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>PanelFG</textcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                        <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <posx>30r</posx>
-                        <posy>48</posy>
-                        <width>270</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>PanelFG</textcolor>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="threecollist" height="fivelinelist">
-                    <control type="image">
-                        <width>threecolborder</width>
-                        <height>fivelineborder</height>
-                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
-                        <visible>Control.HasFocus(9500)</visible>
-                    </control>
-                    <control type="image">
-                        <width>threecolborder</width>
-                        <height>fivelineborder</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        <visible>!Control.HasFocus(9500)</visible>
-                    </control>
-                    <control type="image">
-                        <posx>globalpad</posx>
-                        <posy>globalpad</posy>  
-                        <width>fiveline</width>
-                        <height>fiveline</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <visible>IsEmpty(ListItem.Property(Color))</visible>
-                    </control>
-                    <control type="image">
-                        <posx>globalpad</posx>
-                        <posy>globalpad</posy>  
-                        <width>fiveline</width>
-                        <height>fiveline</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                        <colordiffuse>PanelFG</colordiffuse>
-                    </control>
-                    <control type="label">
-                        <posx>30r</posx>
-                        <posy>15</posy>
-                        <width>270</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <label>$INFO[ListItem.Label]</label>
-                        <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <posx>30r</posx>
-                        <posy>48</posy>
-                        <width>270</width>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[ListItem.Label2]</label>
-                    </control>
-                </focusedlayout>
-                <content>
-                    <include>QuickNavMusicHub</include>
-                </content>
-            </control>
-            
-        </control>
-
+		
         <include>GlobalTopBar</include>
         
         

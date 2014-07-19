@@ -103,11 +103,11 @@
                     </focusedlayout>
                     <content>
                         <item id="0">
-                            <description>Movies</description>
+                            <description>Movies Hub</description>
                             <label>20342</label>
                             <icon>special://skin/extras/icons/film.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$LOCALIZE[20342])</onclick>
-                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(Videos,MovieTitles,return))</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(3201))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],special://skin/extras/icons/film.png)</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                             
@@ -115,11 +115,11 @@
                             
                         </item>
                         <item id="1">
-                            <description>Tv Shows</description>
+                            <description>Tv Shows Hub</description>
                             <label>20343</label>
                             <icon>special://skin/extras/icons/tv.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$LOCALIZE[20343])</onclick>
-                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(Videos,TvShowTitles,return))</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(3202))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],special://skin/extras/icons/tv.png)</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                             
@@ -127,11 +127,11 @@
                             
                         </item>
                         <item id="2">
-                            <description>Music</description>
+                            <description>Music Hub</description>
                             <label>2</label>
                             <icon>special://skin/extras/icons/songs.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$LOCALIZE[2])</onclick>
-                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(Music,Albums,return))</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(3203))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],special://skin/extras/icons/songs.png)</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                             

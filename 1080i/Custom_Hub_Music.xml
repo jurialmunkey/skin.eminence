@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Foundation -->
+<window type="window" id="3203">
+    <defaultcontrol always="true">9500</defaultcontrol>
+    <allowoverlay>false</allowoverlay>
+    <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,musicdb://artists/,home)</onload>
+    <controls>
+        <include>GlobalBackground</include>
+        <include>GlobalTopBar</include>
+        <control type="button" description="Mouse Button">
+            <posy>600</posy>
+            <posx>1760</posx>
+            <width>48</width>
+            <height>48</height>
+            <onclick condition="SubString(Window(home).Property(librarynode),musicdb)">ActivateWindow(Music,$INFO[Window(home).Property(librarynode)],return)</onclick>
+            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
+            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
+            <aspectratio>keep</aspectratio>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <include>DialogVisibility</include>
+        </control>
+        <control type="group">
+            <posx>horzpad</posx>
+            <posy>70</posy>
+            <control type="label">
+                <label>2</label>
+                <include>DefSideLabelCoords</include>
+                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            </control>
+            <include>DialogVisibility</include>
+            <include>Animation.SlideOpen.Right</include>
+            <control type="panel" id="9500">
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>1458</width>
+                <height>700</height>
+                <onright condition="SubString(Window(home).Property(librarynode),musicdb)">ActivateWindow(Music,$INFO[Window(home).Property(librarynode)],return)</onright>
+                <onleft>CancelAlarm(Move9501,true)</onleft>
+                <onleft>9501</onleft>                
+                <onup>9500</onup>
+                <ondown>9500</ondown>
+                <orientation>vertical</orientation>
+                <itemlayout width="threecollist" height="fivelinelist">
+                    <control type="image">
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>IsEmpty(ListItem.Property(Color))</visible>
+                    </control>
+                    <control type="image">
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!IsEmpty(ListItem.Property(Color))</visible>
+                        <colordiffuse>PanelFG</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>30r</posx>
+                        <posy>15</posy>
+                        <width>270</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>30r</posx>
+                        <posy>48</posy>
+                        <width>270</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="threecollist" height="fivelinelist">
+                    <control type="image">
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
+                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <visible>Control.HasFocus(9500)</visible>
+                    </control>
+                    <control type="image">
+                        <width>threecolborder</width>
+                        <height>fivelineborder</height>
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <visible>!Control.HasFocus(9500)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>IsEmpty(ListItem.Property(Color))</visible>
+                    </control>
+                    <control type="image">
+                        <posx>globalpad</posx>
+                        <posy>globalpad</posy>  
+                        <width>fiveline</width>
+                        <height>fiveline</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio>scale</aspectratio>
+                        <visible>!IsEmpty(ListItem.Property(Color))</visible>
+                        <colordiffuse>PanelFG</colordiffuse>
+                    </control>
+                    <control type="label">
+                        <posx>30r</posx>
+                        <posy>15</posy>
+                        <width>270</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                    </control>
+                    <control type="label">
+                        <posx>30r</posx>
+                        <posy>48</posy>
+                        <width>270</width>
+                        <align>right</align>
+                        <aligny>center</aligny>
+                        <textcolor>Selected</textcolor>
+                        <font>Font-ListInfo</font>
+                        <label>$INFO[ListItem.Label2]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <include>QuickNavMusicHub</include>
+                </content>
+            </control>
+            
+        </control>
+
+    </controls>
+    </window>

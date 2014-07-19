@@ -388,7 +388,7 @@
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                
+                <!--
                 <control type="radiobutton" id="306">
                     <label>31199</label>
                     <width>1063</width>
@@ -400,7 +400,7 @@
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                
+                -->
                 
                 
                 <!---------------->
@@ -469,6 +469,7 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <!--
                 <control type="radiobutton" id="506">
                     <label>31199</label>
                     <width>1063</width>
@@ -480,6 +481,7 @@
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                -->
                 
                 <!------------>
                 <!-- FANART -->
