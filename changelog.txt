@@ -1,5 +1,6 @@
 [B]0.9.40[/B]
 Fix music on-screen track listing item 12 not having new line
+Fix weather screen hourly alignment
 
 [B]0.9.39[/B]
 Fix hub issues with playlists and empty hubs (afaik)

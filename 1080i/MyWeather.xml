@@ -57,8 +57,8 @@
                 <height>globalh</height>
                 <onleft>9000</onleft>
                 <onright>9200</onright>
-                <texturesliderbarfocus colordiffuse="PanelFG-NF">common/white.png</texturesliderbarfocus>
-                <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
+                <!--<texturesliderbarfocus colordiffuse="PanelFG-NF">common/white.png</texturesliderbarfocus>-->
+                <animation effect="fade" start="100" end="25" time="200"condition="!Control.HasFocus(60)">Conditional</animation>
             </control>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
@@ -214,21 +214,21 @@
                 <posx>720</posx>
                 <posy>listy</posy>
                 <width>724</width>
-                <height>702</height>
+                <height>700</height>
                 <onleft>9000</onleft>
                 <onright>60</onright>
                 <pagecontrol>60</pagecontrol>
                 <orientation>vertical</orientation>
-                <itemlayout width="724" height="117">
+                <itemlayout width="724" height="fivelinelist">
                     <control type="image">
                         <width>724</width>
-                        <height>107</height>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
                         <width>300</width>
-                        <height>107</height>
+                        <height>fivelineborder</height>
                         <font>Font-Weather</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -238,7 +238,7 @@
                     <control type="label">
                         <posx>15r</posx>
                         <width>300</width>
-                        <height>110</height>
+                        <height>fivelinelist</height>
                         <font>Font-Weather</font>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -248,7 +248,7 @@
                     <control type="label">
                         <posx>280</posx>
                         <width>500</width>
-                        <height>105</height>
+                        <height>fivelineborder</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG-NF</textcolor>
@@ -258,7 +258,7 @@
                     <control type="label">
                         <posx>85r</posx>
                         <width>500</width>
-                        <height>105</height>
+                        <height>fivelineborder</height>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG-NF</textcolor>
@@ -267,6 +267,7 @@
                     </control>
                     <control type="label">
                         <posx>24</posx>
+                        <posy>9</posy>
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -275,7 +276,7 @@
                     </control>
                     <control type="label">
                         <posx>24</posx>
-                        <posy>40</posy>
+                        <posy>49</posy>
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -284,16 +285,16 @@
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </itemlayout>
-                <focusedlayout width="724" height="117">
+                <focusedlayout width="724" height="fivelinelist">
                     <control type="image">
                         <width>724</width>
-                        <height>107</height>
+                        <height>fivelineborder</height>
                         <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="label">
                         <posx>150</posx>
                         <width>300</width>
-                        <height>107</height>
+                        <height>fivelineborder</height>
                         <font>Font-Weather</font>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -303,7 +304,7 @@
                     <control type="label">
                         <posx>15r</posx>
                         <width>300</width>
-                        <height>110</height>
+                        <height>fivelinelist</height>
                         <font>Font-Weather</font>
                         <align>right</align>
                         <aligny>center</aligny>
@@ -313,7 +314,7 @@
                     <control type="label">
                         <posx>280</posx>
                         <width>500</width>
-                        <height>105</height>
+                        <height>fivelineborder</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG-NF</textcolor>
@@ -323,7 +324,7 @@
                     <control type="label">
                         <posx>85r</posx>
                         <width>500</width>
-                        <height>105</height>
+                        <height>fivelineborder</height>
                         <align>right</align>
                         <aligny>center</aligny>
                         <textcolor>PanelFG-NF</textcolor>
@@ -332,6 +333,7 @@
                     </control>
                     <control type="label">
                         <posx>24</posx>
+                        <posy>9</posy>
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -340,7 +342,7 @@
                     </control>
                     <control type="label">
                         <posx>24</posx>
-                        <posy>40</posy>
+                        <posy>49</posy>
                         <width>300</width>
                         <align>left</align>
                         <aligny>center</aligny>
@@ -675,8 +677,12 @@
                     <width>300</width>
                     <align>left</align>
                     <description>Location Select</description>
+                    <textureup colordiffuse="40ffffff" flipy="true">buttons/spin-down.png</textureup>
+                    <texturedown colordiffuse="40ffffff">buttons/spin-down.png</texturedown>
+                    <textcolor>40ffffff</textcolor>
                     <include>DefContextMenuButton</include>
-                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(3)">Conditional</animation>
+                    <!--<animation effect="fade" start="100" end="25" condition="!Control.HasFocus(3)">Conditional</animation>-->
+                    
                 </control>
                 
             </control>
