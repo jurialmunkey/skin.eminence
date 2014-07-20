@@ -1,6 +1,9 @@
 [B]0.9.40[/B]
 Fix music on-screen track listing item 12 not having new line
 Fix weather screen hourly alignment
+Fix left scrollbar navigation to go directly back to hub (rather than down level)
+Hubs moved to own window to speed loading and facilitate customisation options
+
 
 [B]0.9.39[/B]
 Fix hub issues with playlists and empty hubs (afaik)

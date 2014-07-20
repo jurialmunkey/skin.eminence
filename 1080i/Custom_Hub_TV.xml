@@ -4,6 +4,7 @@
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
     <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,videodb://tvshows/titles/,home)</onload>
+    <onload>SetProperty(previoushub,3202,home)</onload>
     <controls>
         <include>GlobalBackground</include>
         <include>GlobalTopBar</include>
