@@ -98,7 +98,7 @@
         </control>
     </include>
     
-    <include name="GoBackToHome"><previouswindow>playercontrols</previouswindow></include>
+    <include name="GoBackToHome"><!--<previouswindow>playercontrols</previouswindow>--></include>
     
     <include name="Short-Home-BG-Y">
         <posy>266r</posy>

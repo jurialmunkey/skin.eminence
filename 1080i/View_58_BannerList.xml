@@ -30,31 +30,26 @@
                     <scrolltime tween="quadratic">400</scrolltime>
 
                     <itemlayout width="globalw" height="120">
+              
                         <control type="group">
-                            <visible>false</visible>
-                            <control type="image">
-                                <width>globalw</width>
-                                <height>110</height>
-                                <texture border="5" colordiffuse="PosterBorder-NF">common/border-inner.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>globalpad</posx>
-                                <posy>globalpad</posy>
-                                <width>551</width>
-                                <height>90</height>
-                                <texture>$VAR[FanartImage]</texture>
-                                <aspectratio>scale</aspectratio>
-                            </control>
+                            <posx>54r</posx>
+                            <posy>34</posy>
+                            <include>WatchedImage</include>
                         </control>
-             
+                        <control type="label">
+                            <posx>80r</posx>
+                            <width>bannerlistplot</width>
+                            <height>120</height>
+                            <aligny>center</aligny>
+                            <align>right</align>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <font>Font-ListInfo-Small</font>
+                        </control>
                         <control type="group">
-                            <posx>581</posx>
+                            <posx>26</posx>
                             <width>bannerlistplot</width>
                             <posy>globalpad</posy>
-                            <control type="group">
-                                <posx>44r</posx>
-                                <include>WatchedImage</include>
-                            </control>
+                            
                             <control type="label">
                                 <width>798</width>
                                 <height>44</height>
@@ -71,24 +66,15 @@
                                 <label>$VAR[VARLabel3]</label>
                                 <font>Font-ListInfo-Small</font>
                             </control>
-                            <control type="label">
-                                <posx>0r</posx>
-                                <posy>52</posy>
-                                <width>bannerlistplot</width>
-                                <height>50</height>
-                                <aligny>top</aligny>
-                                <align>right</align>
-                                <label>$INFO[ListItem.Label2]</label>
-                                <font>Font-ListInfo-Small</font>
-                            </control>
+                            
                         </control>
                     </itemlayout>
-
-                    <focusedlayout width="globalw" height="340">
+                    
+                    <focusedlayout width="globalw" height="340" condition="Control.HasFocus(58)">
                         <control type="image">
                             <width>globalw</width>
                             <height>330</height>
-                            <texture border="12" flipx="true">common/border-inner-highlight.png</texture>
+                            <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
                         </control>
@@ -100,7 +86,7 @@
                             <visible>!Control.HasFocus(58)</visible>
                         </control>
                         <control type="image">
-                            <posx>globalpad</posx>
+                            <right>globalpad</right>
                             <posy>globalpad</posy>
                             <width>551</width>
                             <height>310</height>
@@ -110,7 +96,7 @@
                         
                         
                         <control type="group">
-                            <posx>581</posx>
+                            <posx>26</posx>
                             <width>bannerlistplot</width>
                             <posy>globalpad</posy>
                             <control type="group">
@@ -118,7 +104,8 @@
                                 <include>WatchedImage</include>
                             </control>
                             <control type="label">
-                                <width>bannerlistplot</width>
+                                <left>0</left>
+                                <right>60</right>
                                 <height>44</height>
                                 <aligny>top</aligny>
                                 <label>$INFO[ListItem.Label]</label>

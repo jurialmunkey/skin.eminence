@@ -1,3 +1,8 @@
+[B]0.9.41[/B]
+Altered banner list view to align to left and right sides
+Removed info list view as list with show info shows the same
+Added tv banners to big list view
+
 [B]0.9.40[/B]
 Fix music on-screen track listing item 12 not having new line
 Fix weather screen hourly alignment

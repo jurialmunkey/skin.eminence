@@ -36,6 +36,7 @@
     <constant name="bannerw">699</constant>
     
     <constant name="fiveline">110</constant>
+    <constant name="fivelinebanner">594</constant>
     <constant name="fivelineborder">130</constant>
     <constant name="fivelinelist">140</constant>
         

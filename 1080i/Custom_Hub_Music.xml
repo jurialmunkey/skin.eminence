@@ -4,6 +4,7 @@
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
     <onload>SetProperty(previoushub,3203,home)</onload>
+    <onunload>ClearProperty(librarynode,home)</onunload>
     <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,musicdb://artists/,home)</onload>
     <controls>
         <include>GlobalBackground</include>

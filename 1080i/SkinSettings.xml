@@ -684,7 +684,7 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="605">
+                <!--<control type="radiobutton" id="605">
                     <label>31184</label>
                     <width>1063</width>
                     <radioposx>984</radioposx>
@@ -694,7 +694,7 @@
                     <selected>Skin.HasSetting(home.autopop)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                </control>-->
                 
                  <control type="radiobutton" id="631">
                     <label>654</label>
