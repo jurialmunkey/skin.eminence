@@ -16,10 +16,10 @@
 			    <include>Animation.FadeOut</include>
 
                 <control type="list" id="9200">
-                    <posx>470r</posx>
-                    <posy>280</posy>
-                    <width>1904</width>
-                    <height>700</height>
+                    <posx>460r</posx>
+                    <width>470</width>
+                    <include>DefMyNavBarGroupList</include>
+              
                     <onleft>9200</onleft>
                     <onright>9200</onright>
                     <onup>9200</onup>
@@ -31,11 +31,6 @@
 
                     <itemlayout width="476" height="100">
 
-                        <control type="image">
-                            <width>464</width>
-                            <height>89</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>
                         <control type="image">
                             <width>89</width>
                             <height>89</height>
@@ -70,7 +65,7 @@
                         <control type="image">
                             <width>464</width>
                             <height>89</height>
-                            <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                            <texture border="12">common/border-inner-highlight.png</texture>
                         </control>
                         <control type="image">
                             <width>89</width>
@@ -105,7 +100,7 @@
                             <description>Custom Addon</description>
                             <label>31163</label>
                             <label2>24001</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/video-addons.png</icon>
                             <onclick>Skin.SetAddon(HomeAddon.Path,xbmc.addon.video)</onclick>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.Path],RunAddon($INFO[Skin.String(HomeAddon.Path)]))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.label],$INFO[System.AddonTitle($INFO[Skin.String(HomeAddon.Path)])])</onclick>
@@ -120,7 +115,7 @@
                             <description>Custom Video Playlist</description>
                             <label>31163</label>
                             <label2>20012</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/playlist.png</icon>
                             <onclick>Skin.SetFile(item.addon,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.Path],ActivateWindow(Videos,$INFO[Skin.String(item.addon)],return))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.label])</onclick>
@@ -128,12 +123,21 @@
                             <onclick>Skin.SetFile($INFO[Window(3067).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
                             <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
                         </item>
+                        
+                        <item id="33">
+                            <description>Custom Fav</description>
+                            <label>31163</label>
+                            <label2>1036</label2>
+                            <icon>special://skin/extras/icons/favourites.png</icon>
+                            <onclick>RunScript(script.favourites,property=$INFO[Window(3067).Property(item)])</onclick>
+                            <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
+                        </item>
 
                         <item id="15">
                             <description>Custom Path</description>
                             <label>31164</label>
                             <label2>748</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/files.png</icon>
                             <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.Path])</onclick>
                         </item>
@@ -142,7 +146,7 @@
                             <description>Custom Label</description>
                             <label>31164</label>
                             <label2>13334</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/keyboard.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.label])</onclick>
                         </item>
                         
@@ -150,7 +154,7 @@
                             <description>Custom Icon</description>
                             <label>31164</label>
                             <label2>31165</label2>
-                            <icon>special://skin/extras/icons/configure.png</icon>
+                            <icon>special://skin/extras/icons/rocket2.png</icon>
                             <onclick>SetProperty(showimages,1,home)</onclick>
                             <onclick>Skin.SetFile($INFO[Window(3067).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
                         </item>
