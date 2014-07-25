@@ -73,6 +73,16 @@
 				<textcolor>TopBarIcon</textcolor>
 			</control>
             
+            
+
+            <control type="image" id="400">
+                <posy>33</posy>
+                <posx>250</posx>
+                <width>128</width>
+                <height>128</height>	
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
 
         </control>
 	</controls>
