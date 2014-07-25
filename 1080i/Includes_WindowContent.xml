@@ -144,6 +144,14 @@
 		        <include condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">Animation.FadeIn</include>
 		        <visible>!Window.IsVisible(home) + !Window.IsVisible(visualisation) + !Window.IsVisible(fullscreenvideo)</visible>
 		    </control>
+            <control type="image">
+		        <include>Dimensions_Fullscreen</include>
+		        <fadetime>1000</fadetime>
+		        <texture colordiffuse="4f777777">$INFO[Skin.String(global.background)]</texture>
+		        <visible>!IsEmpty(Skin.String(global.background)) + !Skin.HasSetting(purplefade)</visible>
+		        <include condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">Animation.FadeIn</include>
+		        <visible>!Window.IsVisible(home) + !Window.IsVisible(visualisation) + !Window.IsVisible(fullscreenvideo)</visible>
+		    </control>
 		    <control type="image">
 		        <posx>0</posx>
 		        <posy>0</posy>

@@ -60,7 +60,7 @@
                         <width>fiveline</width>
                         <height>fiveline</height>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
-                        <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+                        <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="image">
                         <posx>globalpad</posx>
@@ -68,7 +68,7 @@
                         <width>fiveline</width>
                         <height>fiveline</height>
                         <texture>$INFO[Listitem.Icon]</texture>
-                        <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+                        <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
                         <posx>30r</posx>
@@ -106,7 +106,7 @@
                         <width>fiveline</width>
                         <height>fiveline</height>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
-                        <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+                        <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="image">
                         <posx>globalpad</posx>
@@ -114,7 +114,7 @@
                         <width>fiveline</width>
                         <height>fiveline</height>
                         <texture>$INFO[Listitem.Icon]</texture>
-                        <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/)</visible>
+                        <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
                         <posx>30r</posx>
@@ -150,7 +150,7 @@
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <posy>160</posy>
-            <posx>6</posx>      
+            <posx>20</posx>      
             <control type="grouplist" id="9100">
                 <onup>450</onup>
                 <include>DefSettingsOKCancelGroup</include>

@@ -103,12 +103,12 @@
     </variable>
     
     <variable name="HeaderColorBG">
-        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDark</value>
+        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade) | !IsEmpty(Skin.String(global.background))">TopBarDark</value>
         <value>TopBar</value>
     </variable>
     
     <variable name="HeaderColorFG">
-        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade)">TopBarDarkIcon</value>
+        <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade) | !IsEmpty(Skin.String(global.background))">TopBarDarkIcon</value>
         <value>TopBarIcon</value>
     </variable>
     

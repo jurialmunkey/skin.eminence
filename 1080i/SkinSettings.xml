@@ -546,6 +546,34 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="button" id="633">
+                    <label>31228</label>
+                    <width>1063</width>
+                    <align>left</align>
+                    <visible>IsEmpty(Skin.String(global.background))</visible>
+                    <font>Font-ListInfo</font>
+                    <label2>$INFO[Skin.String(global.background)]</label2>
+                    <enable>!Skin.HasSetting(purplefade)</enable>
+                    <onclick condition="IsEmpty(Skin.String(global.background))">SetProperty(showimages,1,home)</onclick>
+                    <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/sunset/)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
+                <control type="button" id="634">
+                    <label>31229</label>
+                    <width>1063</width>
+                    <align>left</align>
+                    <visible>!IsEmpty(Skin.String(global.background))</visible>
+                    <font>Font-ListInfo</font>
+                    <label2>$INFO[Skin.String(global.background)]</label2>
+                    <enable>!Skin.HasSetting(purplefade)</enable>
+                    <onclick condition="IsEmpty(Skin.String(global.background))">SetProperty(showimages,1,home)</onclick>
+                    <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/sunset/)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 <control type="button" id="801">
                     <label>31138</label>
                     <width>1063</width>
@@ -555,6 +583,7 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
                 
                 <!--------->
                 <!-- OSD -->
@@ -718,6 +747,8 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                
+                
                 
             </control>
         </control>

@@ -23,7 +23,7 @@
     <include file="View_54_Lovefilm.xml" />
     <include file="View_55_Banner.xml" />
     <include file="View_56_BigList.xml" />
-    <!--<include file="View_57_InfoList.xml" />-->
+    <include file="View_57_InfoList.xml" />
     <include file="View_58_BannerList.xml" />
     <include file="View_PVR.xml" />
 

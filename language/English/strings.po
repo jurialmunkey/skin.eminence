@@ -515,3 +515,11 @@ msgstr ""
 msgctxt "#31227"
 msgid "Hide title"
 msgstr ""
+
+msgctxt "#31228"
+msgid "Set background color"
+msgstr ""
+
+msgctxt "#31229"
+msgid "Background color (click to reset)"
+msgstr ""
