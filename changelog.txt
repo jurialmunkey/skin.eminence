@@ -1,6 +1,8 @@
 [B]0.9.42[/B]
 Fix Kaitoast
 Added Kaitoast icons for warning twitch etc. (thanks to StevenThuriot)
+Fix dialogselect background
+Fix dialogyesno spacing of lines
 
 [B]0.9.41[/B]
 Altered banner list view to align to left and right sides
