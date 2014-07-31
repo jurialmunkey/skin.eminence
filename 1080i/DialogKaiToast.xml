@@ -13,6 +13,14 @@
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DefContextMenuBackground</include>
+            <control type="image" id="400" description="default">
+                <posy>10</posy>
+                <posx>250</posx>
+                <width>128</width>
+                <height>128</height>	
+                <aspectratio>keep</aspectratio>
+                <colordiffuse>TopBarIcon</colordiffuse>
+            </control>
             <control type="image" id="403" description="info">
                 <posy>10</posy>
                 <posx>250</posx>
@@ -73,16 +81,6 @@
 				<textcolor>TopBarIcon</textcolor>
 			</control>
             
-            
-
-            <control type="image" id="400">
-                <posy>33</posy>
-                <posx>250</posx>
-                <width>128</width>
-                <height>128</height>	
-                <aspectratio>keep</aspectratio>
-                <colordiffuse>TopBarIcon</colordiffuse>
-            </control>
 
         </control>
 	</controls>

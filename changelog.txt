@@ -4,6 +4,7 @@ Added tv banners to big list view
 Added ability to add favourites to custom hub items
 Restored infolist
 Added option to set a static background color
+Fixed Kaitoast icon location
 
 [B]0.9.40[/B]
 Fix music on-screen track listing item 12 not having new line
