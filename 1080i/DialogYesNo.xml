@@ -68,6 +68,7 @@
                     <font>Font-ListInfo</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
+                    <animation effect="slide" end="0,-32" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
                 </control>					
             </control>
 

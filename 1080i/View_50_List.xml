@@ -15,6 +15,7 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Animation.ViewChange</include>     
             <control type="scrollbar" id="60">
+                <visible>!Skin.HasSetting(disable.scrollbars)</visible>
                 <posx>-26</posx>
                 <height>globalh</height>
                 <include>DefScrollBarMove</include>
@@ -24,7 +25,8 @@
             <control type="list" id="50">
                 <width>listw</width>
                 <height>globalh</height>
-                <onleft>60</onleft>
+                <include condition="Skin.HasSetting(disable.scrollbars)">DefScrollBarMove</include>
+                <onleft condition="!Skin.HasSetting(disable.scrollbars)">60</onleft>
                 <onright>9000</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>

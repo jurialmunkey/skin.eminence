@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="50">
-	<zorder>2</zorder>
+	<zorder>100</zorder>
 	<visible>!Window.IsVisible(startup)</visible>
 	<controls>
 
