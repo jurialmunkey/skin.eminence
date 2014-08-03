@@ -14,6 +14,7 @@
         <value condition="Skin.HasSetting(home.310.enabled)">SetFocus(310)</value>
     </variable>
     
+    
     <include name="Home-Highlight-DontMatchColor"><texture colordiffuse="Highlight-NF">common/white.png</texture></include>
     <include name="Home-Highlight-MatchColor"><texture>common/white.png</texture></include>
     <include name="Home-Highlight">
@@ -84,7 +85,7 @@
         <onup condition="!Player.HasVideo + Window.IsVisible(home)">SetFocus(9600)</onup>
         <onup condition="!Player.HasVideo + Window.IsVisible(home)">CancelAlarm(Move9600,true)</onup>
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
-        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown)">ActivateWindow(3101)</ondown>
+        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown)">SetFocus(9511)</ondown>
         <onback condition="Window.IsVisible(PlayerControls.xml) + Player.HasMedia + Skin.HasSetting(home.autopop)">Action(fullscreen)</onback>
         <aspectratio scalediffuse="false">center</aspectratio>
         <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-Menu-Button</include>

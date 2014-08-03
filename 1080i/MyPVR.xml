@@ -164,7 +164,7 @@
                     <control type="image">
                         <width>widgethubrightw</width>
                         <height>fivelineborder</height>
-                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                         <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -280,7 +280,7 @@
                     <control type="image">
                         <width>955</width>
                         <height>690</height>
-                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>20</posx>
@@ -354,7 +354,7 @@
                     <height>690</height>
                     <onright>9500</onright>
                     <onclick>Action(fullscreen)</onclick>
-                    <texturefocus colordiffuse="PosterHighlight" border="5">common/border-inner.png</texturefocus>
+                    <texturefocus colordiffuse="Highlight-NF" border="5">common/white.png</texturefocus>
                     <texturenofocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturenofocus>
                 </control>
                 <control type="group">

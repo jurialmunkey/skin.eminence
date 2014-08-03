@@ -102,7 +102,7 @@
                     <control type="image">
                         <width>widgethubrightw</width>
                         <height>fivelineborder</height>
-                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                         <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
@@ -206,7 +206,7 @@
                     <control type="image">
                         <width>955</width>
                         <height>globalh</height>
-                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF" border="5">common/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>20</posx>
@@ -267,13 +267,7 @@
                     <include condition="stringcompare(Skin.String(movie.widget),recommended)">ContentRecommendedMoviesWidget</include>
                     <include condition="stringcompare(Skin.String(movie.widget),playlist)">ContentPlaylistMoviesWidget</include>
                 </control>
-                <control type="image">
-                    <posx>globalpad</posx>
-                    <posy>globalpad</posy>
-                    <width>935</width>
-                    <height>538</height>
-                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
+      
             </control>
         </control>
         

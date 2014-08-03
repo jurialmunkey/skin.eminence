@@ -100,7 +100,7 @@
                     <control type="image">
                         <width>threecolborder</width>
                         <height>fivelineborder</height>
-                        <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                         <visible>Control.HasFocus(9500)</visible>
                     </control>
                     <control type="image">

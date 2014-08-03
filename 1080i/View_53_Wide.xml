@@ -67,7 +67,7 @@
                     <control type="image">
                         <width>threecolborder</width>
                         <height>fivelineborder</height>
-                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     </control>
                     <control type="image">
                         <posx>globalpad</posx>

@@ -209,7 +209,7 @@
                             <control type="image">
                                 <width>bigposterwborder</width>
                                 <height>globalh</height>
-                                <texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="image">
@@ -271,7 +271,7 @@
                             <control type="image">
                                 <width>bigposterwborder</width>
                                 <height>globalh</height>
-                                <texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="image">
@@ -336,7 +336,7 @@
                         <control type="image">
                             <width>bigposterwborder</width>
                             <height>bigposterhborder</height>
-                            <texture border="5" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="image">

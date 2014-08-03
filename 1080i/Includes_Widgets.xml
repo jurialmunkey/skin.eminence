@@ -395,14 +395,14 @@
     </variable>
     
     <variable name="WidgetHubLabel">
-        <value condition="stringcompare(Window(3101).Property(widget),episodes) + IsEmpty(Skin.String(home.502.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget.type)">$INFO[Skin.String(home.502.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),nextaired) + IsEmpty(Skin.String(home.503.bgwidget.type)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget.type)">$INFO[Skin.String(home.503.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),movies) + IsEmpty(Skin.String(home.501.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget.type)">$INFO[Skin.String(home.501.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),trailers) + IsEmpty(Skin.String(home.504.bgwidget.type)">$LOCALIZE[31193]</value>
-        <value condition="stringcompare(Window(3101).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget.type)">$INFO[Skin.String(home.504.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes) + IsEmpty(Skin.String(home.502.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget.type)">$INFO[Skin.String(home.502.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired) + IsEmpty(Skin.String(home.503.bgwidget.type)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget.type)">$INFO[Skin.String(home.503.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),movies) + IsEmpty(Skin.String(home.501.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
+        <value condition="stringcompare(Window(home).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget.type)">$INFO[Skin.String(home.501.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers) + IsEmpty(Skin.String(home.504.bgwidget.type)">$LOCALIZE[31193]</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget.type)">$INFO[Skin.String(home.504.bgwidget.type)]</value>
     </variable>
     
     <variable name="WidgetHubMoviesContent">
@@ -421,17 +421,25 @@
         <value condition="!IsEmpty(Skin.String(home.504.bgwidget))">$INFO[Skin.String(home.504.bgwidget)]</value>
         <value>plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</value>
     </variable>
+    <variable name="WidgetHubAllContent">
+        <value condition="stringcompare(Window(home).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget))">$INFO[Skin.String(home.501.bgwidget)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),movies)">videodb://recentlyaddedmovies/</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget))">$INFO[Skin.String(home.502.bgwidget)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes)">videodb://recentlyaddedepisodes/</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget))">$INFO[Skin.String(home.503.bgwidget)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired)">library://video/inprogressshows.xml/</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget))">$INFO[Skin.String(home.504.bgwidget)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers)">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</value>
+    </variable>
     <include name="WidgetHubListContent">
         <include>Animation.FadeIn</include>
         <posx>-115</posx>
         <posy>20</posy>
         <width>2120</width>
         <height>340</height>
-        <onup>Back</onup>
-        <ondown condition="stringcompare(Window(3101).Property(widget),trailers)">SetProperty(widget,movies,3101)</ondown>
-        <ondown condition="stringcompare(Window(3101).Property(widget),nextaired)">SetProperty(widget,trailers,3101)</ondown>
-        <ondown condition="stringcompare(Window(3101).Property(widget),episodes)">SetProperty(widget,nextaired,3101)</ondown>
-        <ondown condition="stringcompare(Window(3101).Property(widget),movies)">SetProperty(widget,episodes,3101)</ondown>
+        <onup>SetFocus(9512)</onup>
+        <onback>300</onback>
+        <ondown>300</ondown>
         <focusposition>2</focusposition>
         <scrolltime tween="quadratic">400</scrolltime>
         <orientation>horizontal</orientation>
@@ -453,4 +461,108 @@
             </control>
         </focusedlayout>
     </include>
+    <include name="WidgetDownList">
+        <control type="group">
+	        <posy>400</posy>
+            <visible allowhiddenfocus="true">Control.HasFocus(9511)</visible>
+	        <animation effect="fade" start="0" end="100" time="350" delay="150">Visible</animation>
+	        <control type="image">
+	            <posy>0</posy>
+	            <texture colordiffuse="TopBarDark">common/white.png</texture>
+	            <height>380</height>
+	            <width>1920</width>
+	        </control>
+            <control type="button" id="9512">
+                <visible allowhiddenfocus="true">false</visible>
+                
+                <onfocus condition="stringcompare(Window(home).Property(widget),trailers)">SetProperty(widget,movies,home)</onfocus>
+                <onfocus condition="stringcompare(Window(home).Property(widget),nextaired)">SetProperty(widget,trailers,home)</onfocus>
+                <onfocus condition="stringcompare(Window(home).Property(widget),episodes)">SetProperty(widget,nextaired,home)</onfocus>
+                <onfocus condition="stringcompare(Window(home).Property(widget),movies)">SetProperty(widget,episodes,home)</onfocus>
+                <onfocus>SetFocus(9511)</onfocus>
+            </control>
+            <!--<control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),movies)</visible>
+	            <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
+	        </control>
+            <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
+	            <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
+	        </control>
+	        <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
+	            <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
+	        </control>
+            <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
+                <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
+	        </control>-->
+            
+            <control type="wraplist" id="9511">
+	            <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubAllContent]</content>
+	        </control>
+	        <control type="group">
+                <visible>!IsEmpty(Container(9511).ListItem.Label)</visible>
+	            <posx>820</posx>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>820</width>
+                    <height>340</height>
+                    <texture colordiffuse="TopBarDark" border="100">home/tile-600x340.png</texture>                
+                </control>
+                <control type="grouplist">
+                    
+                    <posx>70</posx>
+                    <posy>40</posy>
+                    <width>670</width>
+                    <orientation>vertical</orientation>
+                    <control type="label">
+                        <label>$VAR[WidgetHubLabel]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <height>35</height>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Label]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <font>Font-WidgetInfoTitle</font>
+                        <height>70</height>
+                        <textcolor>Highlight</textcolor>
+                    </control>
+                    <control type="textbox">
+                        <label>$INFO[Container(9511).ListItem.Plot]$INFO[Container(9511).ListItem.Property(Album_Description)]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <height>120</height>
+                        <font>Font-ListInfo</font>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle,,  •  ]$INFO[Container(9511).ListItem.Year]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>!IsEmpty(Container(9511).ListItem.Year)</visible>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>IsEmpty(Container(9511).ListItem.Year)</visible>
+                    </control>
+                </control>
+            </control>
+	    </control>
+	    
+    </include>
+    
 </includes>

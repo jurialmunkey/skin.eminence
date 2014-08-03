@@ -1,3 +1,8 @@
+[B]0.9.43[/B]
+Down widget now on-screen rather than separate window
+Flat selection boxes
+Cyan theme now default (grey as separate)
+
 [B]0.9.42[/B]
 Fix Kaitoast
 Added Kaitoast icons for warning twitch etc. (thanks to StevenThuriot)

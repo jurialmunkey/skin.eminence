@@ -15,4 +15,8 @@
 	<color name="PosterHighlight">FFFFFFFF</color>
 	<color name="PosterBorder">be888888</color>
 	<color name="PosterBorder-NF">3e888888</color>
+    
+    <!-- Highlight Colors -->
+	<color name="Highlight-NF">AF666666</color>
+	<color name="Highlight">FF33b5e5</color>
 </colors>

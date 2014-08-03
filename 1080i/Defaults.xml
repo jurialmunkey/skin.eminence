@@ -252,7 +252,7 @@
         <width>8</width>
         <texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
         <texturesliderbar colordiffuse="PanelFG-NF">common/white.png</texturesliderbar>
-        <texturesliderbarfocus colordiffuse="Highlight">common/white.png</texturesliderbarfocus>
+        <texturesliderbarfocus colordiffuse="Highlight-NF">common/white.png</texturesliderbarfocus>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
         <showonepage>true</showonepage>

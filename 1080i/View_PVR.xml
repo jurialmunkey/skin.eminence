@@ -25,7 +25,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>fivelineborder</height>
-                    <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     
                 </control>
                 <include>PVRrecordinglayoutfocus</include>
@@ -215,7 +215,7 @@
                 <control type="image">
                     <width>945</width>
                     <height>fivelineborder</height>
-                    <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     
                 </control>
                 <include>PVRlistlayoutfocus</include>

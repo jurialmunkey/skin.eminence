@@ -41,8 +41,6 @@
                             <height>bannerh</height>
                             <texture background="true">$VAR[BannerImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
 
                         <control type="label">
@@ -90,8 +88,6 @@
                             <height>bannerhepisode</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>340r</posx>
@@ -131,7 +127,7 @@
                     <control type="image">
                         <width>bannerwborder</width>
                         <height>bannerhborder</height>
-                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     </control>   
                     <control type="group">
                         <visible>!Container.Content(episodes)</visible>
@@ -143,8 +139,6 @@
                             <height>bannerh</height>
                             <texture background="true">$VAR[BannerImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
 
                         <control type="label">
@@ -195,8 +189,6 @@
                             <height>bannerhepisode</height>
                             <texture background="true">$VAR[FanartImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
                         <control type="textbox">
                             <posx>340r</posx>

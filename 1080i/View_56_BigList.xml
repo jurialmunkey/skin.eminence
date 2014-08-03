@@ -39,8 +39,6 @@
                             <height>fiveline</height>
                             <texture background="true">$VAR[BannerImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
                         <control type="group">
                             <posx>fivelinebanner</posx>
@@ -84,8 +82,6 @@
                             <height>fiveline</height>
                             <texture>$VAR[SquareImage]</texture>
                             <aspectratio>scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                             <visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                         </control>
                         <control type="image">
@@ -95,8 +91,7 @@
                             <height>fiveline</height>
                             <texture>$VAR[PosterImage]</texture>
                             <aspectratio>scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
+                            
                             <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                         </control>
         
@@ -149,7 +144,7 @@
                     <control type="image">
                         <width>globalw</width>
                         <height>fivelineborder</height>
-                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
                     </control>
                     <control type="group">
                         <visible>Container.Content(tvshows)</visible>
@@ -160,8 +155,6 @@
                             <height>fiveline</height>
                             <texture background="true">$VAR[BannerImage]</texture>
                             <aspectratio aligny="center" align="center">scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                         </control>
                         <control type="group">
                             <posx>fivelinebanner</posx>
@@ -214,8 +207,6 @@
                             <height>fiveline</height>
                             <texture>$VAR[PosterImage]</texture>
                             <aspectratio>scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                             <visible>Container.Content(movies) | Container.Content(seasons) | Container.Content(sets) | Container.Content(tvshows)</visible>
                         </control>
                         <control type="group">
