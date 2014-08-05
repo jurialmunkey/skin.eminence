@@ -14,6 +14,8 @@
                         
             <onfocus>Skin.ResetSettings</onfocus>
             <onfocus>Skin.SetBool(home.showinfoonwidget)</onfocus>
+            <onfocus>Skin.SetBool(home.usemixedglobalwidget)</onfocus>
+            <onfocus>Skin.SetBool(home.monochromemode)</onfocus>
             
             <!-- 301 Item -->
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
@@ -21,8 +23,6 @@
             <onfocus>Skin.SetString(home.301.icon,special://skin/extras/icons/film.png)</onfocus>
             <onfocus>Skin.SetString(home.301.path,ActivateWindow(3201))</onfocus>
             <onfocus>Skin.SetString(home.301.label,$LOCALIZE[20342])</onfocus>
-            <onfocus>Skin.SetString(home.301.bgwidget.type,$LOCALIZE[31109])</onfocus>
-            <onfocus>Skin.SetString(home.301.bgwidget,videodb://recentlyaddedmovies/)</onfocus>
             
             <!-- 302 Item -->
             <onfocus>Skin.SetBool(home.302.enabled)</onfocus>
@@ -30,8 +30,6 @@
             <onfocus>Skin.SetString(home.302.icon,special://skin/extras/icons/tv.png)</onfocus>
             <onfocus>Skin.SetString(home.302.path,ActivateWindow(3202))</onfocus>
             <onfocus>Skin.SetString(home.302.label,$LOCALIZE[20343])</onfocus>
-            <onfocus>Skin.SetString(home.302.bgwidget.type,$LOCALIZE[31109])</onfocus>
-            <onfocus>Skin.SetString(home.302.bgwidget,videodb://recentlyaddedepisodes/)</onfocus>
             
             <!-- 303 Item -->
             <onfocus>Skin.SetBool(home.303.enabled)</onfocus>

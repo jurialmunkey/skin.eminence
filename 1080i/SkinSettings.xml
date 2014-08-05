@@ -257,6 +257,18 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="214">
+                    <label>31206</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.monochromemode)</onclick>
+                    <selected>Skin.HasSetting(home.monochromemode)</selected>
+                    <enable>!Skin.HasSetting(home.talltiles)</enable>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 <control type="radiobutton" id="213">
                     <label>31204</label>
@@ -284,18 +296,7 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="214">
-                    <label>31206</label>
-                    <width>1063</width>
-                    <radioposx>984</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.monochromemode)</onclick>
-                    <selected>Skin.HasSetting(home.monochromemode)</selected>
-                    <enable>!Skin.HasSetting(home.talltiles)</enable>
-                    <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                
                 
                 <control type="radiobutton" id="215">
                     <label>31217</label>
