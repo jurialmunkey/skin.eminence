@@ -2,7 +2,7 @@
 <colors>
 	<!-- Highlight Colors -->
     <color name="PosterHighlight">ffbfbfbf</color>
-	<color name="Highlight-NF">AFbfbfbf</color>
+	<color name="Highlight-NF">9fafafaf</color>
 	<color name="Highlight">FF33b5e5</color>
 	
 	<!-- Keyboard -->

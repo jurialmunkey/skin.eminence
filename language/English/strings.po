@@ -201,7 +201,7 @@ msgid "Views"
 msgstr ""
 
 msgctxt "#31149"
-msgid "Set global background"
+msgid "Set home background"
 msgstr ""
 
 msgctxt "#31150"
@@ -385,7 +385,7 @@ msgid "Loading..."
 msgstr ""
 
 msgctxt "#31195"
-msgid "Access recent/in-progress hub by pressing down"
+msgid "Press down to access additional homescreen widgets"
 msgstr ""
 
 msgctxt "#31196"
@@ -441,7 +441,7 @@ msgid "Home Tiles"
 msgstr ""
 
 msgctxt "#31209"
-msgid "Override background settings with mixed widget"
+msgid "Use global mixed widget (disable to set widgets for individual tiles)"
 msgstr ""
 
 msgctxt "#31210"

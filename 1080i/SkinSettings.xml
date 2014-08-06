@@ -388,20 +388,30 @@
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <!--
-                <control type="radiobutton" id="306">
-                    <label>31199</label>
+                
+                <control type="button" id="306">
+                    <label>$LOCALIZE[31186] 4</label>
+                    <label2>$INFO[Skin.String(moviehub.4.Label)]</label2>
+                    <onclick>SetProperty(item,moviehub.4,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
                     <width>1063</width>
-                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
-                    <selected>Skin.HasSetting(home.disablehubs)</selected>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                -->
-                
+               
+                <control type="button" id="307">
+                    <label>$LOCALIZE[31186] 5</label>
+                    <label2>$INFO[Skin.String(moviehub.5.Label)]</label2>
+                    <onclick>SetProperty(item,moviehub.5,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <width>1063</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 
                 <!---------------->
                 <!-- TVshow Hub -->
@@ -469,20 +479,29 @@
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <!--
-                <control type="radiobutton" id="506">
-                    <label>31199</label>
+                <control type="button" id="506">
+                    <label>$LOCALIZE[31186] 4</label>
+                    <label2>$INFO[Skin.String(tvshowhub.4.Label)]</label2>
+                    <onclick>SetProperty(item,tvshowhub.4,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
                     <width>1063</width>
-                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.disablehubs)</onclick>
-                    <selected>Skin.HasSetting(home.disablehubs)</selected>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                -->
                 
+                <control type="button" id="507">
+                    <label>$LOCALIZE[31186] 5</label>
+                    <label2>$INFO[Skin.String(tvshowhub.5.Label)]</label2>
+                    <onclick>SetProperty(item,tvshowhub.5,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <width>1063</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 <!------------>
                 <!-- FANART -->
                 <!------------>

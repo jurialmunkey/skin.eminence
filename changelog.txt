@@ -1,3 +1,7 @@
+[B]0.9.44[/B]
+Increased number of library node items on right side of hub to 7 (from 5)
+Increased number of custom hub items to 5 (from 3)
+
 [B]0.9.43[/B]
 Down widget now on-screen rather than separate window
 Flat selection boxes
