@@ -4,6 +4,7 @@ Flat selection boxes
 Cyan theme now default (grey as separate)
 Mixed widget default widget
 Match theme color for home tiles as default
+Settings background boxes
 
 [B]0.9.42[/B]
 Fix Kaitoast

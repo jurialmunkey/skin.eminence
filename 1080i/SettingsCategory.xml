@@ -49,8 +49,7 @@
             
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-
-            <include>DefSettingsSeparator</include>
+            <include>DefSettingsLines</include>
             
             
             <control type="grouplist" id="3">
@@ -101,8 +100,8 @@
 			<control type="textbox" id="6">
 			    <include>Animation.FadeIn</include>
 			    <include>Animation.FadeOut</include>
-			    <posx>285</posx>
-                <width>1376</width>
+			    <posx>235</posx>
+                <width>globalw</width>
                 <posy>685</posy>
                 <height>105</height>
 				<align>justify</align>

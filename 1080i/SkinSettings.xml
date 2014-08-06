@@ -50,9 +50,8 @@
             <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <include>DefSettingsSeparator</include>
             <visible>!Window.IsVisible(3065)</visible>
- 
+            <include>DefSettingsLines</include>
             <control type="grouplist" id="3">
                 <description>Control Area</description>
                 <onright>5</onright>
