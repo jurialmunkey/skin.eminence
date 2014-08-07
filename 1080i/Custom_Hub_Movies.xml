@@ -31,7 +31,7 @@
             <posy>70</posy>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Right</include>
-            
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             
             <control type="label">
                 <posx>984</posx>

@@ -4,6 +4,7 @@ Increased number of custom hub items to 5 (from 3)
 Animate fanart
 Silhouette only when option enabled
 Fixed some strings
+Fixed hub slide over for context menu
 
 [B]0.9.43[/B]
 Down widget now on-screen rather than separate window
