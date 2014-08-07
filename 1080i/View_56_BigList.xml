@@ -144,7 +144,7 @@
                     <control type="image">
                         <width>globalw</width>
                         <height>fivelineborder</height>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
                     </control>
                     <control type="group">
                         <visible>Container.Content(tvshows)</visible>

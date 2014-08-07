@@ -81,7 +81,7 @@
                 <control type="image">
                     <height>wallposterhborder</height>
                     <width>wallposterwborder</width>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
                 </control>
      
  
@@ -106,7 +106,7 @@
                 <control type="image">
                     <height>bannerhborder</height>
                     <width>wallposterwborder</width>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
                 </control>
  
                 <control type="image">
@@ -124,7 +124,7 @@
                 <control type="image">
                     <height>wallposterhborder</height>
                     <width>threecolborder</width>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
                 </control>
  
                 <control type="image">

@@ -3,7 +3,7 @@
 	<!-- Highlight Colors -->
 	<color name="Highlight-NF">AFe533b5</color>
 	<color name="Highlight">FFe533b5</color>
-	<color name="PosterHighlight">FFe533b5</color>
+	<color name="PosterHighlight">AFe533b5</color>
 	
 	<!-- Keyboard -->
 	<color name="Keyboard">FF33b5e5</color>

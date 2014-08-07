@@ -105,7 +105,7 @@
                     <control type="image">
                         <width>955</width>
                         <height>globalh</height>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
                     </control>
                     <control type="label">
                         <posx>20</posx>

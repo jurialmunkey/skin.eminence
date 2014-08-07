@@ -398,7 +398,7 @@
             <control type="image">
                 <width>widgethubrightw</width>
                 <height>90</height>
-                <texture colordiffuse="Highlight-NF">common/white.png</texture>
+                <texture colordiffuse="PosterHighlight">common/white.png</texture>
                 <visible>Control.HasFocus(9500)</visible>
                 <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                 <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>

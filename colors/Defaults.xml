@@ -33,7 +33,7 @@
     
     <!-- Highlight Colors -->
 	
-	<color name="PosterHighlight">FF33b5e5</color>
+	<color name="PosterHighlight">AF33b5e5</color>
 	<color name="Highlight-NF">AF33b5e5</color>
 	<color name="Highlight">FF33b5e5</color>
 	<!-- Keyboard -->
