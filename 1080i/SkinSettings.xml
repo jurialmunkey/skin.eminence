@@ -518,6 +518,17 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
+                <control type="radiobutton" id="827">
+                    <label>31230</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(Fanart.Animate)</onclick>
+                    <selected>Skin.HasSetting(Fanart.Animate)</selected>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                </control>
                 <control type="radiobutton" id="803">
                     <label>31185</label>
                     <width>1063</width>

@@ -345,7 +345,7 @@ msgid "Quick nav mode"
 msgstr ""
 
 msgctxt "#31185"
-msgid "Decrease the fade on background fanart"
+msgid "Decrease background fanart fade"
 msgstr ""
 
 msgctxt "#31186"
@@ -445,7 +445,7 @@ msgid "Use global mixed widget (disable to set widgets for individual tiles)"
 msgstr ""
 
 msgctxt "#31210"
-msgid "Show background silhouette throughout skin"
+msgid "Enable background silhouette"
 msgstr ""
 
 msgctxt "#31211"
@@ -517,9 +517,13 @@ msgid "Hide title"
 msgstr ""
 
 msgctxt "#31228"
-msgid "Set background color"
+msgid "Set background image"
 msgstr ""
 
 msgctxt "#31229"
-msgid "Background color (click to reset)"
+msgid "Background image (click to reset)"
+msgstr ""
+
+msgctxt "#31230"
+msgid "Animate fanart"
 msgstr ""
