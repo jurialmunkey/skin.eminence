@@ -107,7 +107,7 @@
                     <onclick>activatewindow(PicturesSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
-                    <onright>9106</onright>
+                    <onright>9105</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
                     <font>Font-Button</font>
