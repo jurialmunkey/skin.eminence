@@ -1,3 +1,8 @@
+[B]0.9.45[/B]
+Altered settings and various selection dialog styles
+Banner list no longer fixedlist and highlight in main colour full width
+Info list highlight main color full width
+
 [B]0.9.44[/B]
 Increased number of library node items on right side of hub to 7 (from 5)
 Increased number of custom hub items to 5 (from 3)

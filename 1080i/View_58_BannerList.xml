@@ -13,8 +13,8 @@
             <control type="group">
                 <posx>listx</posx>
                 <posy>listy</posy>
-
-                <control type="fixedlist" id="58">
+        
+                <control type="list" id="58">
                     <width>globalw</width>
                     <height>700</height>
                     <onright>9000</onright>
@@ -70,11 +70,12 @@
                         </control>
                     </itemlayout>
                     
-                    <focusedlayout width="globalw" height="340" condition="Control.HasFocus(58)">
+                    <focusedlayout width="globalw" height="340">
                         <control type="image">
                             <width>globalw</width>
                             <height>330</height>
-                            <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
+                            <!--<texture border="12" flipx="false">common/border-inner-highlight.png</texture>-->
+                            <texture colordiffuse="PosterHighlight" flipx="false">common/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
                         </control>

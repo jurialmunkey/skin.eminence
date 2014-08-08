@@ -98,7 +98,7 @@
                     <onup>9000</onup>
                     <include>DefOnBack</include>
                 
-                    <ondown>60</ondown>
+                    <ondown>9000</ondown>
                     <pagecontrol>60</pagecontrol>
                     <viewtype label="31155">list</viewtype>
                     <scrolltime tween="quadratic">400</scrolltime>
@@ -165,6 +165,7 @@
                     </control>
                 </control>
                 <control type="scrollbar" id="60">
+                    <texturesliderbar colordiffuse="Highlight-NF">common/white.png</texturesliderbar>
                     <posy>708</posy>
                     <width>globalw</width>
                     <height>8</height>
@@ -172,8 +173,7 @@
                     <onup>51</onup>
                     <orientation>horizontal</orientation>
                     
-                    <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
-                    <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" condition="!IntegerGreaterThan(Container.NumPages,1) | !Control.HasFocus(54)">Conditional</animation>
 
                 </control>
             </control>

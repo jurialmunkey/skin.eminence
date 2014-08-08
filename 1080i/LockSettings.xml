@@ -1,86 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="131">
-	<defaultcontrol always="true">5</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">5</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
 
-	<controls>
+    <controls>
 
-		<control type="group">
-			<posy>210</posy>
+        <control type="group">
+            <posy>160</posy>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            <include>DefSettingsLinesSettings</include>
+            <control type="group">
+                <include>DefSettingsLeftGroup</include>
+                <control type="image">
+                    <texture border="12">common/border-inner-highlight.png</texture>
+                    <height>66</height>
+                    <include>DefSettingsLeftGroupWidth</include>
+                </control>
+                <control type="label">
+                    <posx>30</posx>
+                    <description>Header</description>
+                    <include>DefSettingsLeftGroupWidth</include>
+                    <align>left</align>
+                    <label>20043</label>
+                    <textcolor>Selected</textcolor>
+                </control>
+                
+            </control>
             
-			<control type="label">
-				<description>Settings</description>
-				<posx>250</posx>
-				<posy>48</posy>
-				<width>870</width>
-				<align>left</align>
-				<label>20043</label>
-				<font>Font-DialogHeader</font>
-			</control>
+            <control type="grouplist" id="5">
+                <include>DefSettingsRightGroup</include>
+                <onleft>5</onleft>
+                <onright>28</onright>
+                <ondown>28</ondown>
+                <onup>5</onup>
+            </control>
 
-			<control type="grouplist" id="5">
-				<description>Control Area</description>
-				<posx>265</posx>
-				<posy>120</posy>
-				<width>920</width>
-				<height>549</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
-				<pagecontrol>60</pagecontrol>
-				<onright>28</onright>
-				<onup>5</onup>
-			</control>
+            <control type="button" id="7">
+                <description>Default Button</description>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
 
-			<control type="button" id="7">
-				<description>Default Button</description>
-				<align>left</align>
-			</control>
+            <control type="radiobutton" id="8">
+                <description>Default Radio Button</description>
+                <radioposx>975</radioposx>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
 
-			<control type="radiobutton" id="8">
-				<description>Default RadioButton</description>
-				<align>left</align>
-				<radioposx>840</radioposx>
-			</control>
-
-			<control type="spincontrolex" id="9">
-				<description>Default spincontrolex</description>
-				<align>left</align>
-				<reverse>yes</reverse>
-			</control>
-
-			<control type="sliderex" id="10">
-				<description>Default Slider</description>
-				<align>left</align>
-			</control>
+            <control type="spincontrolex" id="9">
+                <description>Default Spin Control</description>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+            
+            <control type="sliderex" id="10">
+                <description>Default Spin Control</description>
+                <align>left</align>
+                <font>Font-ListInfo</font>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+            
             <control type="grouplist">
-                <posx>1273</posx>
-				<posy>120</posy>
-				<width>450</width>
-				<height>552</height>
-				<itemgap>3</itemgap>
-				<orientation>vertical</orientation>
+                <posx>265</posx>
+                <posy>705</posy>
+                <width>1390</width>
+                <align>center</align>
+                <itemgap>128</itemgap>
+                <onup>5</onup>
+                <orientation>horizontal</orientation>
                 <control type="button" id="28">
                     <label>186</label>
-                    <align>left</align>
-                    <onleft>5</onleft>
-                    <ondown>29</ondown>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
-
+                
                 <control type="button" id="29">
                     <description>Cancel</description>
-                    <align>left</align>
                     <label>222</label>
-                    <onleft>5</onleft>
-                    <onup>28</onup>
+                    <include>DefSettingsOKCancelButton</include>
                 </control>
             </control>
-		</control>
-		
+            
+        </control>
+        
 
-	</controls>
+    </controls>
 
 </window>

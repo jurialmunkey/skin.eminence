@@ -70,7 +70,7 @@
     </include>
     
     <include name="DefSettingsLeftGroupWidth"><width>385</width></include>
-    <include name="DefSettingsRightGroupWidth"><width>1063</width></include>
+    <include name="DefSettingsRightGroupWidth"><width>1053</width></include>
     
     <include name="DefSettingsLeftGroup">
         <posx>233</posx>
@@ -83,7 +83,7 @@
     </include>
     
     <include name="DefSettingsRightGroup">
-        <posx>618</posx>
+        <posx>628</posx>
         <posy>120</posy>
         <include>DefSettingsRightGroupWidth</include>
         <height>549</height>
@@ -191,6 +191,99 @@
 
     </include>
     
+    <include name="DefSettingsLinesSettings">
+    
+        <control type="grouplist">
+            <include>DefSettingsLeftGroup</include>
+            <control type="image">
+                <include>DefSettingsLeftGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsLeftGroupWidth</include>
+                <height>480</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+        </control>
+        <control type="grouplist">
+            <include>DefSettingsRightGroup</include>
+            <visible>!Control.IsVisible(6) | !Window.IsVisible(DialogSelect.xml)</visible>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>66</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            
+        </control>
+        <control type="grouplist">
+            <include>DefSettingsRightGroup</include>
+            <visible>Control.IsVisible(6) + Window.IsVisible(DialogSelect.xml)</visible>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>135</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>135</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>135</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            <control type="image">
+                <include>DefSettingsRightGroupWidth</include>
+                <height>135</height>
+                <texture colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texture>
+            </control>
+            
+        </control>
+        <control type="image">
+            <width>8</width>
+            <height>549</height>
+            <include>DefSettingsRightGroup</include>
+            <texture colordiffuse="PosterBorder-NF">common/white.png</texture>
+        </control>
+
+    </include>
     
     
     <include name="DefSettingsSeparator">

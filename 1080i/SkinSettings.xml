@@ -67,14 +67,18 @@
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(37)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31208][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="32" description="Background">
                     <label>31202</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31202][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 
                 <control type="togglebutton" id="38" description="Fanart">
@@ -82,35 +86,45 @@
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(38)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[20445][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="33" description="Movies Hub">
                     <label>31179</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31179][/COLOR]</altlabel>
+                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="35" description="TV Hub">
                     <label>31180</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31180][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[478][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="36" description="Add-ons">
                     <label>24001</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
-                    <alttexturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</alttexturenofocus>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[24001][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
             </control>
             

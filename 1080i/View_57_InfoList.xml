@@ -161,7 +161,7 @@
                                 <control type="image">
                                     <height>69</height>
                                     <width>infolistw</width>
-                                    <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
+                                    <texture border="12" flipx="false" colordiffuse="PosterHighlight">common/white.png</texture>
                                 </control>
                                 <control type="group">
                                     <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>

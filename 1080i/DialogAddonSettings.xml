@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="10140">
-	<defaultcontrol always="true">2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<controls>
-	
-	    <control type="group">
-		    <posx>253</posx>
-		    <posy>70</posy>
-		    <include>Animation.SlideOpen.Left</include>
-		    <control type="label" description="Info Label">
+    <defaultcontrol always="true">2</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+    
+        <control type="group">
+            <posx>253</posx>
+            <posy>70</posy>
+            <include>Animation.SlideOpen.Left</include>
+            <control type="label" description="Info Label">
                 <include>DefSideLabelCoords</include>
                 <label>$INFO[ListItem.Label]</label>
             </control>
@@ -19,8 +19,8 @@
         </control>
         
         <control type="group">
-			<posy>160</posy>
-			<include>Animation.FadeIn</include>
+            <posy>160</posy>
+            <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog)</visible>
             <visible>!Window.IsVisible(FileBrowser)</visible>
@@ -36,24 +36,28 @@
                 <onup>10</onup>
             </control>
             
-            <control type="button" id="13">
+            <control type="togglebutton" id="13">
                 <description>Default Category Button</description>
-                <include>DefSettingsCategoryButton</include>	
+                <align>left</align>
+                <textcolor>Disabled</textcolor>
+                <width>393</width>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+
             </control>
             
             
             <!-- RIGHT LIST -->
-			<control type="grouplist" id="2">
-				<description>Control Area</description>
-				<pagecontrol>10</pagecontrol>
-				<include>DefSettingsRightGroup</include>
-				<onleft>9</onleft>
-				<onright>10</onright>
-				<onup>-</onup>
-				<ondown>-</ondown>
-			</control>
+            <control type="grouplist" id="2">
+                <description>Control Area</description>
+                <pagecontrol>10</pagecontrol>
+                <include>DefSettingsRightGroup</include>
+                <onleft>9</onleft>
+                <onright>10</onright>
+                <onup>-</onup>
+                <ondown>-</ondown>
+            </control>
 
-			<control type="button" id="3">
+            <control type="button" id="3">
                 <description>Default Button</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
@@ -115,7 +119,7 @@
                     <label>222</label>
 
                     <include>DefSettingsOKCancelButton</include>
-	
+    
                 </control>
                 
                 <control type="button" id="12">
@@ -126,10 +130,10 @@
 
                 </control>
             </control>
-			
-		</control>
+            
+        </control>
 
         
-	</controls>
+    </controls>
 
 </window>
