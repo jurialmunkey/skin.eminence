@@ -6,6 +6,8 @@
 	<controls>
 	    <include>GlobalOverlay</include>
 	    <control type="group">
+            <visible>!Window.IsActive(DialogKeyboard.xml)</visible>
+            <visible>!Window.IsActive(DialogNumeric.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>

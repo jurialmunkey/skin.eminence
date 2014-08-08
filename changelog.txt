@@ -5,6 +5,7 @@ Animate fanart
 Silhouette only when option enabled
 Fixed some strings
 Fixed hub slide over for context menu
+Fixed progress bar covering captchas
 
 [B]0.9.43[/B]
 Down widget now on-screen rather than separate window
