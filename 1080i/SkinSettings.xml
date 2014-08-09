@@ -96,7 +96,7 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31179][/COLOR]</altlabel>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                     <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="35" description="TV Hub">
@@ -594,7 +594,7 @@
                     <label>31228</label>
                     <width>1063</width>
                     <align>left</align>
-                    <visible>IsEmpty(Skin.String(global.background))</visible>
+                    <!--<visible>IsEmpty(Skin.String(global.background))</visible>-->
                     <font>Font-ListInfo</font>
                     <label2>$INFO[Skin.String(global.background)]</label2>
                     <enable>!Skin.HasSetting(purplefade)</enable>
@@ -604,7 +604,7 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="button" id="634">
+                <!--<control type="button" id="634">
                     <label>31229</label>
                     <width>1063</width>
                     <align>left</align>
@@ -617,7 +617,7 @@
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>
+                </control>-->
                 <control type="button" id="801">
                     <label>31138</label>
                     <width>1063</width>
