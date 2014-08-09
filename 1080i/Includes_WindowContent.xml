@@ -79,8 +79,8 @@
 				<randomize>true</randomize>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
 				<visible>!Player.HasVideo | [Skin.HasSetting(disable.bgvideo) + !Window.IsVisible(home)]</visible>
-                <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
-                <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+                <animation effect="zoom" start="110" end="120" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+                <animation effect="slide" start="-20,-20" end="20,20" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
                 <visible>Window.IsVisible(home)</visible>
 			</control>
 			<control type="multiimage" id="9238">
@@ -91,8 +91,8 @@
 				<timeperimage>12000</timeperimage>
 				<randomize>true</randomize>
 				<imagepath background="true">$VAR[GlobalFanart]</imagepath>
-                <animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
-                <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+                <animation effect="zoom" start="110" end="120" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
+                <animation effect="slide" start="-20,-20" end="20,20" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(Fanart.Animate)">Conditional</animation>
                 <colordiffuse>ff444444</colordiffuse>
                 <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
                 <visible>!Window.IsVisible(home)</visible>
