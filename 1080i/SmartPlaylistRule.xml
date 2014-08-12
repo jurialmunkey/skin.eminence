@@ -71,10 +71,10 @@
                 <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
             </control>
             <control type="button" id="17">
-                <height>66</height>
                 <posy>138</posy>
+                <height>66</height>
                 <description>Set Playlist type</description>
-                <align>left</align>
+                <align>right</align>
                 <onup>16</onup>
                 <onleft>20</onleft>
                 <onright>18</onright>
@@ -82,6 +82,15 @@
                 <font>Font-ListInfo</font>
                 <include>DefSettingsRightGroupWidth</include>
                 <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <height>66</height>
+                <posy>138</posy>
+                <align>left</align>
+                <label>31233</label>
+                <font>Font-ListInfo</font>
+                <include>DefSettingsRightGroupWidth</include>
             </control>
         </control>
         <control type="grouplist" id="9000">

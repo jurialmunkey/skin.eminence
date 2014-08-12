@@ -36,7 +36,7 @@
                 <control type="button" id="13">
                     <description>Add Rule Button</description>
                     <include>DefSettingsLeftGroupWidth</include>
-                    <label>15019</label>
+                    <label>$LOCALIZE[15019] $LOCALIZE[31232]</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
@@ -45,7 +45,7 @@
                 <control type="button" id="14">
                     <description>Remove Rule Button</description>
                     <include>DefSettingsLeftGroupWidth</include>
-                    <label>1210</label>
+                    <label>$LOCALIZE[1210] $LOCALIZE[31232]</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
@@ -54,7 +54,7 @@
                 <control type="button" id="15">
                     <description>Edit Rule Button</description>
                     <include>DefSettingsLeftGroupWidth</include>
-                    <label>21435</label>
+                    <label>$LOCALIZE[21435] $LOCALIZE[31232]</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
@@ -63,6 +63,7 @@
             
             <control type="grouplist" id="5">
                 <height>690</height>
+                <usecontrolcoords>true</usecontrolcoords>
                 <include>DefSettingsRightGroup</include>
                 <ondown>20</ondown>
                 <onleft>3</onleft>
@@ -152,6 +153,7 @@
                 </control>
                 
                 <control type="spincontrolex" id="16">
+                    <posy>-3</posy>
                     <label>21424</label>
                     <ondown>17</ondown>
                     <font>Font-ListInfo</font>

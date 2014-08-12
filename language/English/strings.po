@@ -531,3 +531,11 @@ msgstr ""
 msgctxt "#31231"
 msgid "Edit Playlist"
 msgstr ""
+
+msgctxt "#31232"
+msgid "Rule"
+msgstr ""
+
+msgctxt "#31233"
+msgid "Enter rule..."
+msgstr ""
