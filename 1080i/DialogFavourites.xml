@@ -16,9 +16,8 @@
                 <height>1080</height>
                 <texture colordiffuse="Background">common/white.png</texture>
             </control>
-			
 			<control type="group">
-                <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+                <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
 			    <posx>horzpad</posx>
 			    <posy>70</posy>
 			    <include>DefSideLabel</include>

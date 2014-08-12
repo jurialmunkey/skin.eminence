@@ -96,11 +96,11 @@
             <onfocus>Skin.SetString(home.311.label,$LOCALIZE[1214])</onfocus>
             
             <!-- 312 Item -->
-            <onfocus>Skin.SetBool(home.312.enabled)</onfocus>
+            <!--<onfocus>Skin.SetBool(home.312.enabled)</onfocus>
             <onfocus>Skin.SetString(home.312.bgcolor,ff555555)</onfocus>
             <onfocus>Skin.SetString(home.312.icon,special://skin/extras/icons/favourites.png)</onfocus>
             <onfocus>Skin.SetString(home.312.path,ActivateWindow(favourites))</onfocus>
-            <onfocus>Skin.SetString(home.312.label,$LOCALIZE[1036])</onfocus>
+            <onfocus>Skin.SetString(home.312.label,$LOCALIZE[1036])</onfocus>-->
             
             <!-- 313 Item -->
             <onfocus>Skin.SetBool(home.313.enabled)</onfocus>

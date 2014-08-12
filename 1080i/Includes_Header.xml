@@ -155,6 +155,8 @@
         <control type="group">
             <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [Window.IsVisible(mutebug) | Skin.HasSetting(disable.pvricon) | [!Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo)]]]</visible>
             <visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+            <visible>!Window.IsVisible(DialogProgress.xml)</visible>
+            <visible>!Window.IsVisible(DialogBusy.xml)</visible>
             <control type="image">
                 <posy>10</posy>
                 <posx>30</posx>

@@ -9,8 +9,8 @@
 	</coordinates>
 
 	<controls>
-	    <include condition="!Window.IsVisible(Home) + !Window.IsVisible(3101)">DefSideContextMenu</include>
-	    <include condition="Window.IsVisible(Home) | Window.IsVisible(3101)">DefTopContextMenu</include>
+	    <include condition="!Window.IsVisible(Home) + !Window.IsVisible(3101) | Window.IsVisible(DialogFavourites.xml)">DefSideContextMenu</include>
+	    <include condition="[Window.IsVisible(Home) + !Window.IsVisible(DialogFavourites.xml)] | Window.IsVisible(3101)">DefTopContextMenu</include>
         
         
 

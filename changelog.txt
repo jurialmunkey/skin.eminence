@@ -3,6 +3,7 @@ Altered settings and various selection dialog styles
 Banner list no longer fixedlist and highlight in main colour full width
 Info list highlight main color full width
 Glassify top bar stuff for video windows
+Fixes for glass
 
 [B]0.9.44[/B]
 Increased number of library node items on right side of hub to 7 (from 5)

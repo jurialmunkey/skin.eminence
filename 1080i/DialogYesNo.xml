@@ -15,24 +15,8 @@
         <control type="group">		
             <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
-            <control type="image">
-                <posy>18</posy>
-                <posx>198</posx>
-                <width>254</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
-                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>
-            <control type="image">
-                <posy>18</posy>
-                <posx>300</posx>
-                <width>1800</width>
-                <height>164</height>	
-                <texture>common/white.png</texture>
-                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-                <aspectratio>scale</aspectratio>
-            </control>	
+            <include>DefContextMenuBackground</include>		
+
             <control type="group">
                 <animation effect="slide" end="0,16" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
                 <animation effect="slide" end="0,16" condition="IsEmpty(Control.GetLabel(4))">Conditional</animation>
