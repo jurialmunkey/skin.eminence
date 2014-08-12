@@ -14,36 +14,42 @@
                 <width>300</width>
                 <height>164</height>	
                 <texture align="left">home/head-tile.png</texture>
-                <colordiffuse>TopBar</colordiffuse>
+                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
+                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+                <animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>
             </control>
-
-            <control type="image">
-                <posy>10</posy>
-                <posx>30</posx>
-                <width>128</width>
-                <height>128</height>	
-                <texture>special://skin/extras/icons/info.png</texture>
-                <aspectratio>keep</aspectratio>
-                <colordiffuse>TopBarIcon</colordiffuse>
-            </control>
-            
-            <control type="label">
-                <posx>0</posx>
-                <posy>115</posy>
-                <width>184</width>
-                <aligny>top</aligny>
-                <font>Font-Sublabel</font>
-                <align>center</align>
-                <textcolor>TopBarIcon</textcolor>
-                <label>31119</label>
+            <control type="group">
+                <visible>!Window.IsVisible(DialogVolumeBar.xml) + !Window.IsVisible(DialogButtonMenu.xml)</visible>
+                <control type="image">
+                    <posy>10</posy>
+                    <posx>30</posx>
+                    <width>128</width>
+                    <height>128</height>	
+                    <texture>special://skin/extras/icons/info.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <colordiffuse>TopBarIcon</colordiffuse>
+                </control>
+                
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>115</posy>
+                    <width>184</width>
+                    <aligny>top</aligny>
+                    <font>Font-Sublabel</font>
+                    <align>center</align>
+                    <textcolor>TopBarIcon</textcolor>
+                    <label>31119</label>
+                </control>
             </control>
         </control>
         
 		<control type="group">		
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
+            <visible>!Window.IsVisible(DialogButtonMenu.xml)</visible>
             <include>DefContextMenuBackground</include>
             <control type="grouplist" id="9000">
+                
                 <include>DefContextMenuGroupList</include>
 				<control type="button" id="95">
 					<description>General</description>
@@ -127,7 +133,10 @@
             <control type="image">
 				<width>1920</width>
 				<height>764</height>
-				<texture border="5" colordiffuse="TopBar">common/white.png</texture>
+				<texture border="5">common/white.png</texture>
+                <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
+                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+                <animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>
             </control>
             
             <control type="label">

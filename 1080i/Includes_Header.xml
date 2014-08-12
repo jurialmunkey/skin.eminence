@@ -97,12 +97,11 @@
     </variable>
     
     <variable name="HeaderTileTexture">
-        <value condition="Window.IsVisible(home) | Window.IsVisible(visualisation) | Window.IsVisible(fullscreenvideo)">home/head-tile.png</value>
         <value>home/head-tile.png</value>
-        <value>home/head-tile-glass.png</value>
     </variable>
     
     <variable name="HeaderColorBG">
+        <value condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">PosterBorder</value>
         <value condition="Window.IsActive(home) | Window.IsVisible(fullscreenvideo) | Window.IsVisible(visualisation) | Window.IsVisible(3101) | Skin.HasSetting(purplefade) | !IsEmpty(Skin.String(global.background))">TopBarDark</value>
         <value>TopBar</value>
     </variable>
@@ -121,7 +120,8 @@
             <height>164</height>    
             <texture align="left" border="75">$VAR[HeaderTileTexture]</texture>
             <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-            <animation effect="fade" start="100" end="90" condition="false">Conditional</animation>
+            <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+            <animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>
         </control>
     </include>
     
@@ -154,7 +154,7 @@
     <include name="HeaderLeftInfo">
         <control type="group">
             <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [Window.IsVisible(mutebug) | Skin.HasSetting(disable.pvricon) | [!Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo)]]]</visible>
-            
+            <visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
             <control type="image">
                 <posy>10</posy>
                 <posx>30</posx>

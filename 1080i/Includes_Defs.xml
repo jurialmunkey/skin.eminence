@@ -554,6 +554,8 @@
                 <height>164</height>    
                 <texture flipx="true" flipy="true" border="75">$VAR[HeaderTileTexture]</texture>
                 <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
+                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+            <animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>
             </control>
         </control>
     </include>
