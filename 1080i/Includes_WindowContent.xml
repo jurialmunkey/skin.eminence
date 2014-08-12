@@ -47,12 +47,12 @@
         </focusedlayout>
     </include>
 
-    <variable name="GlobalFanart">
-        <value condition="!IsEmpty(Container(9501).ListItem.Art(fanart)) + [Window.IsVisible(3201) | Window.IsVisible(3202)]">$INFO[Container(9501).ListItem.Art(fanart)]</value>
-        <value condition="IsEmpty(Container(9501).ListItem.Art(fanart)) + [Window.IsVisible(3201) | Window.IsVisible(3202)]">$INFO[Container(9501).ListItem.Icon]</value>
+    <variable name="GlobalFanart">        
         <value condition="Window.IsVisible(home) + Control.HasFocus(9511) + !IsEmpty(Container(9511).ListItem.Art(fanart))">$INFO[Container(9511).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(home) + Control.HasFocus(9511) + IsEmpty(Container(9511).ListItem.Art(fanart))">$INFO[Container(9511).ListItem.Icon]</value>
         <value condition="Skin.HasSetting(disable.fanart) + !Window.IsVisible(home)">noop</value>
+        <value condition="!IsEmpty(Container(9501).ListItem.Art(fanart)) + [Window.IsVisible(3201) | Window.IsVisible(3202)]">$INFO[Container(9501).ListItem.Art(fanart)]</value>
+        <value condition="IsEmpty(Container(9501).ListItem.Art(fanart)) + [Window.IsVisible(3201) | Window.IsVisible(3202)]">$INFO[Container(9501).ListItem.Icon]</value>
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
