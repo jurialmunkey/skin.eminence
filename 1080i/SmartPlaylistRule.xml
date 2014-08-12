@@ -6,250 +6,105 @@
 
 	<allowoverlay>no</allowoverlay>
 
-
-
-	<controls>
+<controls>
+    <control type="group">
+        <posx>horzpad</posx>
+        <posy>70</posy>
+        <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+        <include>Animation.SlideOpen.Left</include>
+        <control type="label" description="Info Label" id="2">
+            <include>DefSideLabelCoords</include>
+            <label>31231</label>
+        </control>
+   
+    </control>
+    <control type="group">
+        <posy>160</posy>
+        <include>Animation.FadeIn</include>
+        <include>Animation.FadeOut</include>
+        <include>DefSettingsLinesSettings</include>
+        <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+        
         <control type="group">
-            <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-		    <posx>360</posx>
-			<posy>210</posy>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-
-
-			<control type="label">
-				<description>header label</description>
-				<posx>30</posx>
-				<posy>27</posy>
-				<width>1140</width>
-				<align>center</align>
-				<font>Font-DialogHeader</font>
-				<textcolor>TopBarIcon</textcolor>
-				<label>21421</label>
-			</control>
-
-
-
-			<control type="label">
-
-				<description>Rule match label</description>
-
-				<posx>60</posx>
-
-				<posy>75</posy>
-
-				<width>1080</width>
-
-				<align>center</align>
-
-                <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-				<label>21422</label>
-
-			</control>
-
-
-
-			<control type="group" id="9001">
-
-
-
-				<control type="spincontrolex" id="15">
-
-					<description>Rule Field</description>
-
-					<posx>15</posx>
-
-					<posy>150</posy>
-
-					<width>563</width>
-
-					<font>-</font>
-
-					<onright>16</onright>
-
-					<onleft>16</onleft>
-
-					<onup>9000</onup>
-
-					<ondown>17</ondown>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-				</control>
-
-
-
-				<control type="label">
-
-					<description>Rule Field label</description>
-
-					<posx>30</posx>
-
-					<posy>150</posy>
-
-					<width>450</width>
-
-					<label>$INFO[Control.GetLabel(15)]</label>
-				</control>
-
-
-
-				<control type="spincontrolex" id="16">
-
-					<description>Rule operator</description>
-
-					<posx>623</posx>
-
-					<posy>150</posy>
-
-					<width>563</width>
-
-					<font>-</font>
-
-					<onright>15</onright>
-
-					<onleft>15</onleft>
-
-					<onup>9000</onup>
-
-					<ondown>17</ondown>
-                    <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
-                    <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
-                    <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
-                    <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
-				</control>
-
-
-
-				<control type="label">
-
-					<description>Rule Field label</description>
-
-					<posx>638</posx>
-
-					<posy>150</posy>
-
-					<width>300</width>
-
-					<label>$INFO[Control.GetLabel(16)]</label>
-				</control>
-
-
-
-			</control>
-
-
-
-			<control type="button" id="17">
-
-				<description>Value Button</description>
-
-				<posx>30</posx>
-
-				<posy>234</posy>
-
-				<width>878</width>
-
-				<label>-</label>
-
-				<onup>9001</onup>
-
-				<onleft>20</onleft>
-
-				<onright>20</onright>
-
-				<ondown>9000</ondown>
-			</control>
-
-
-
-			<control type="button" id="20">
-
-				<description>Browse Button</description>
-
-				<posx>915</posx>
-
-				<posy>234</posy>
-
-				<width>255</width>
-
-				<label>1024</label>
-
-				<onup>9001</onup>
-
-				<onleft>17</onleft>
-
-				<onright>17</onright>
-
-				<ondown>9000</ondown>
-			</control>
-
-
-
-			<control type="group" id="9000">
-
-
-
-				<control type="button" id="18">
-
-					<description>Ok Button</description>
-
-					<posx>278</posx>
-
-					<posy>338</posy>
-
-					<width>300</width>
-
-					<label>186</label>
-
-					<onup>17</onup>
-
-					<onleft>19</onleft>
-
-					<onright>19</onright>
-
-					<ondown>9001</ondown>
-
-				</control>
-
-
-
-				<control type="button" id="19">
-
-					<description>Cancel Button</description>
-
-					<posx>623</posx>
-
-					<posy>338</posy>
-
-					<width>300</width>
-
-					<label>222</label>
-
-					<onup>17</onup>
-
-					<onleft>18</onleft>
-
-					<onright>19</onright>
-
-					<ondown>9001</ondown>
-					
-				</control>
-
-
-
-			</control>
-
-
-
-		</control>
-
-	</controls>
-
+            <include>DefSettingsLeftGroup</include>
+            <control type="button" id="20">
+                <description>Browse</description>
+                <label>1024</label>
+                <align>left</align>
+                <onright>9001</onright>
+                <ondown>18</ondown>
+                <font>Font-ListInfo</font>
+                <include>DefSettingsLeftGroupWidth</include>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+           
+        </control>
+        <control type="group" id="9001">
+            <height>690</height>
+            <include>DefSettingsRightGroup</include>
+            <ondown>18</ondown>
+            <onup>18</onup>
+            <onright>18</onright>
+            <onleft>20</onleft>
+            <control type="spincontrolex" id="15">
+                <description>Set Playlist type</description>
+                <label>21422</label>
+                <reverse>yes</reverse>
+                <align>left</align>
+                <onup>18</onup>
+                <onleft>20</onleft>
+                <ondown>16</ondown>
+                <font>Font-ListInfo</font>
+                <include>DefSettingsRightGroupWidth</include>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+            <control type="spincontrolex" id="16">
+                <posy>69</posy>
+                <description>Set Playlist type</description>
+                <reverse>yes</reverse>
+                <align>left</align>
+                <ondown>17</ondown>
+                <onleft>20</onleft>
+                <onup>15</onup>
+                <font>Font-ListInfo</font>
+                <include>DefSettingsRightGroupWidth</include>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+            <control type="button" id="17">
+                <height>66</height>
+                <posy>138</posy>
+                <description>Set Playlist type</description>
+                <align>left</align>
+                <onup>16</onup>
+                <onleft>20</onleft>
+                <onright>18</onright>
+                <ondown>9000</ondown>
+                <font>Font-ListInfo</font>
+                <include>DefSettingsRightGroupWidth</include>
+                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            </control>
+        </control>
+        <control type="grouplist" id="9000">
+            <posx>265</posx>
+            <posy>705</posy>
+            <width>1390</width>
+            <align>center</align>
+            <itemgap>128</itemgap>
+            <onup>17</onup>
+            <orientation>horizontal</orientation>
+            <control type="button" id="18">
+                <label>186</label>
+                <include>DefSettingsOKCancelButton</include>
+            </control>
+            <control type="button" id="19">
+                <description>Cancel</description>
+                <label>222</label>
+                <include>DefSettingsOKCancelButton</include>
+            </control>
+            
+        </control>
+    </control>
+</controls>
 
 
 </window>

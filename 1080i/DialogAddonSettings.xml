@@ -6,7 +6,7 @@
     <controls>
     
         <control type="group">
-            <posx>253</posx>
+            <posx>horzpad</posx>
             <posy>70</posy>
             <include>Animation.SlideOpen.Left</include>
             <control type="label" description="Info Label">
