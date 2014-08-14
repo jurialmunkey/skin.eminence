@@ -24,9 +24,9 @@
         <control type="group" id="180"></control>
         
 		<control type="group">
-		    <posx>233</posx>
+		    <posx>horzpad</posx>
 		    <posy>70</posy>
-		    <animation effect="slide" end="-233" start="0" time="200" condition="[ControlGroup(9900).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+		    <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9900).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
 		    <control type="label" description="Info Label">
                 <include>DefSideLabelCoords</include>
                 <label>$INFO[Container(100).ListItem.Label]</label>
@@ -134,7 +134,7 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
+		        <posx>539</posx>
 		        <posy>210</posy>
 		        <usecontrolcoords>true</usecontrolcoords>
 		        <orientation>vertical</orientation>
