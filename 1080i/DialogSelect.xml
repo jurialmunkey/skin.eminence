@@ -31,17 +31,11 @@
             </control>
         </control>
         <control type="group">
-            <posx>253</posx>
+            <posx>horzpad</posx>
             <posy>70</posy>
             <include>Animation.SlideOpen.Left</include>
             <control type="label" id="1" description="Info Label">
-                <posx>1514</posx>
-                <posy>210</posy>
-                <aligny>top</aligny>
-                <width>690</width>
-                <font>Font-ViewCategory</font>
-                <animation effect="rotate" start="0" end="270" condition="true" center="1514,210">Conditional</animation>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <include>DefSideLabelCoords</include>
             </control>
         </control>
 
