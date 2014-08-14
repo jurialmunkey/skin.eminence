@@ -1,6 +1,7 @@
 [B]0.9.46[/B]
 PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
 Music playlist editor
+Ability to change home screen header text to custom label
 
 [B]0.9.45[/B]
 Altered settings and various selection dialog styles

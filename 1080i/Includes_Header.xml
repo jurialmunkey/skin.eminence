@@ -23,6 +23,7 @@
         <value condition="substring(Container.FolderPath,plugin://,left)">$LOCALIZE[24000]</value>
         <value condition="Window.IsVisible(MyPVR.xml)">$LOCALIZE[31175]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://)">$LOCALIZE[1214]</value>
+        <value condition="!IsEmpty(Skin.String(home.headertext)) + [Window.IsVisible(home) | IsEmpty(Container.NumItems) | Control.HasFocus(9500) | Control.HasFocus(9501)]">$INFO[Skin.String(home.headertext)]</value>
         <value condition="Window.IsVisible(home) | IsEmpty(Container.NumItems) | Control.HasFocus(9500) | Control.HasFocus(9501)">$LOCALIZE[31176]</value>
         <value>$LOCALIZE[15100]</value>
     </variable>

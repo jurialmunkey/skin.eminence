@@ -157,7 +157,7 @@ msgid "Changes"
 msgstr ""
 
 msgctxt "#31137"
-msgid "Re-initialise skin"
+msgid "Re-initialise skin - WARNING: Resets skin to defaults"
 msgstr ""
 
 msgctxt "#31138"
@@ -542,4 +542,12 @@ msgstr ""
 
 msgctxt "#31234"
 msgid "PVR goes to hub from home screen"
+msgstr ""
+
+msgctxt "#31235"
+msgid "Extras"
+msgstr ""
+
+msgctxt "#31236"
+msgid "Header text"
 msgstr ""
