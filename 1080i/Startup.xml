@@ -43,7 +43,7 @@
             <onfocus>Skin.SetBool(home.304.enabled)</onfocus>
             <onfocus>Skin.SetString(home.304.bgcolor,ff555555)</onfocus>
             <onfocus>Skin.SetString(home.304.icon,special://skin/extras/icons/livetv.png)</onfocus>
-            <onfocus>Skin.SetString(home.304.path,ActivateWindowAndFocus(MyPVR, 32,0, 11,0))</onfocus>
+            <onfocus>Skin.SetString(home.304.path,ActivateWindow(MyPVR))</onfocus>
             <onfocus>Skin.SetString(home.304.label,$LOCALIZE[31104])</onfocus>
             
             <!-- 305 Item -->

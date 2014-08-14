@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="MyPVRGoHub">
+        <defaultcontrol always="true">9500</defaultcontrol>
+        <onload>SetProperty(focushub,1,home)</onload>
+    </include>
+    <include name="MyPVRGoChannels">
+        <defaultcontrol always="true">50</defaultcontrol>
+        <onload>ClearProperty(focushub,home)</onload>
+    </include>
     <variable name="PVRTopLabelColor">
         <value condition="Control.HasFocus(9009)">Highlight</value>
         <value>PanelFG</value>

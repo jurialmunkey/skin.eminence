@@ -1,3 +1,6 @@
+[B]0.9.46[/B]
+PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
+
 [B]0.9.45[/B]
 Altered settings and various selection dialog styles
 Banner list no longer fixedlist and highlight in main colour full width
@@ -6,6 +9,7 @@ Glassify top bar stuff for video windows
 Fixes for glass
 Update smart playlist editor
 Fix hub showing fanart when fanart is disabled
+
 
 [B]0.9.44[/B]
 Increased number of library node items on right side of hub to 7 (from 5)

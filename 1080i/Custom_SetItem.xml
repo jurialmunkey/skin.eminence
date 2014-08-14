@@ -143,7 +143,7 @@
                             <label>31104</label>
                             <icon>special://skin/extras/icons/livetv.png</icon>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$LOCALIZE[31104])</onclick>
-                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindowAndFocus(MyPVR, 32,0, 11,0))</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(MyPVR))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],special://skin/extras/icons/livetv.png)</onclick>
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                             
