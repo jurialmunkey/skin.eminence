@@ -2,8 +2,8 @@
 <window>
     <allowoverlay>no</allowoverlay>
     <background>0</background>
-    <include condition="Window.Previous(home)">MyPVRGoHub</include>
-    <include condition="!Window.Previous(home)">MyPVRGoChannels</include>
+    <include condition="Window.Previous(home) + !Skin.HasSetting(home.pvrtohub)">MyPVRGoHub</include>
+    <include condition="!Window.Previous(home) | Skin.HasSetting(home.pvrtohub)">MyPVRGoChannels</include>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     <onunload>ClearProperty(focushub,home)</onunload>
     

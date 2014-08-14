@@ -757,17 +757,17 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <!--<control type="radiobutton" id="605">
-                    <label>31184</label>
+                <control type="radiobutton" id="605">
+                    <label>31234</label>
                     <width>1063</width>
                     <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.autopop)</onclick>
-                    <selected>Skin.HasSetting(home.autopop)</selected>
+                    <onclick>Skin.ToggleSetting(home.pvrtohub)</onclick>
+                    <selected>!Skin.HasSetting(home.pvrtohub)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>-->
+                </control>
                 
                  <control type="radiobutton" id="631">
                     <label>654</label>
