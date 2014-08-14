@@ -19,7 +19,7 @@
             <textcolor>PanelFG-NF</textcolor>
             <headlinecolor>PanelFG-NF</headlinecolor>
             <titlecolor>PanelFG</titlecolor>
-            <visible>!Skin.HasSetting(rss.tvnextaired) | ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+            <visible>[Window.IsVisible(3202) + IsEmpty(Window(home).Property(NextAired.1.Label))] | !Skin.HasSetting(rss.tvnextaired) | [!Window.IsVisible(3202) + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]]</visible>
         </control>
         
 

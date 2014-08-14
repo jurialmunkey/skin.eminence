@@ -2,6 +2,7 @@
 PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
 Music playlist editor
 Ability to change home screen header text to custom label
+Show next aired ticker for all shows in tv hub
 
 [B]0.9.45[/B]
 Altered settings and various selection dialog styles

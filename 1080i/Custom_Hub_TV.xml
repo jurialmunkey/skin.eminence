@@ -9,6 +9,7 @@
     <controls>
         <include>GlobalBackground</include>
         <include>GlobalTopBar</include>
+        <include>NextAiredRSS</include>
         <control type="button" description="Mouse Button">
             <posy>600</posy>
             <posx>1760</posx>
