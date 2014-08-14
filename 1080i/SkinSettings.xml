@@ -122,7 +122,7 @@
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
-                    <altlabel>[COLOR=Selected]$LOCALIZE[24001][/COLOR]</altlabel>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31235][/COLOR]</altlabel>
                     <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                     <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
