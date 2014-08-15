@@ -325,7 +325,8 @@
                 <height>700</height>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
-                
+                <scrolltime tween="quadratic">400</scrolltime>
+                <pagecontrol>60</pagecontrol>
                 <control type="button">
                     <height>90</height>
                     <width>494</width>
