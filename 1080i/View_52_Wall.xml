@@ -149,6 +149,7 @@
     <include name="52ListHeight700"><height>700</height></include>
     <include name="View_52_Wall_NoInfo">
         <control type="panel" id="52">
+            <preloaditems>2</preloaditems>
             <visible>!Container.Content(songs)</visible>
             <width>1458</width>
             <include condition="![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight699</include>
@@ -171,6 +172,7 @@
         <control type="panel" id="52">
             <visible>!Container.Content(songs)</visible>
             <width>972</width>
+            <preloaditems>2</preloaditems>
             <include condition="![Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight699</include>
             <include condition="[Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist)]">52ListHeight700</include>
             <onleft>60</onleft>

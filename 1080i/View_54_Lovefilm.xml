@@ -89,6 +89,7 @@
                 <control type="wraplist" id="54">
                     <visible>!Container.Content(songs)</visible>
                     <visible>!Container.Content(albums)</visible>
+                    <preloaditems>2</preloaditems>
                     <posx>globalpad</posx>
                     <posy>globalpad</posy>
                     <width>lovefilmw</width>

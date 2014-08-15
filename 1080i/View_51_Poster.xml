@@ -172,6 +172,7 @@
                 <onleft>51</onleft>
                 <onright>51</onright>
                 <focusposition>1</focusposition>
+                <preloaditems>2</preloaditems>
                 <onup>9000</onup>
                 <include>DefOnBack</include>
                 <ondown>60</ondown>
