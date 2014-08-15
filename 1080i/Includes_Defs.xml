@@ -338,12 +338,12 @@
     </include>
     
     <include name="DefSideLabelCoords">
-        <posx>1540</posx>
+        <posx>1542</posx>
         <posy>210</posy>
         <aligny>top</aligny>
         <width>690</width>
         <font>Font-ViewCategory</font>
-        <animation effect="rotate" start="0" end="270" condition="true" center="1540,210">Conditional</animation>
+        <animation effect="rotate" start="0" end="270" condition="true" center="1542,210">Conditional</animation>
         <animation effect="fade" end="25" condition="true">Conditional</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
