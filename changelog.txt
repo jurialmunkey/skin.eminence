@@ -4,6 +4,8 @@ Music playlist editor
 Ability to change home screen header text to custom label
 Show next aired ticker for all shows in tv hub
 Fix side label coords for dialog select plus move slightly closer
+Fix addon info launch button to close info and addon browser
+
 
 [B]0.9.45[/B]
 Altered settings and various selection dialog styles
