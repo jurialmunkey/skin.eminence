@@ -442,7 +442,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[14]</label>
+                    <label>$INFO[Window(home).Property(NextAired.203.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.203.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(203)</visible>
@@ -458,7 +458,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[14]</label>
+                    <label>$INFO[Window(home).Property(NextAired.203.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.203.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(203)</visible>
@@ -475,7 +475,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[15]</label>
+                    <label>$INFO[Window(home).Property(NextAired.204.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.204.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(204)</visible>
@@ -489,7 +489,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[15]</label>
+                    <label>$INFO[Window(home).Property(NextAired.204.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.204.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(204)</visible>
@@ -504,7 +504,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[16]</label>
+                    <label>$INFO[Window(home).Property(NextAired.205.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.205.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(205)</visible>
@@ -517,7 +517,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[16]</label>
+                    <label>$INFO[Window(home).Property(NextAired.205.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.205.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(205)</visible>
@@ -531,7 +531,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.206.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.206.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(206)</visible>
@@ -543,7 +543,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.206.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.206.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(206)</visible>
@@ -556,7 +556,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.207.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.207.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(207)</visible>
@@ -567,7 +567,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.207.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.207.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(207)</visible>
@@ -579,7 +579,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.208.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.208.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(208)</visible>
@@ -589,7 +589,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.208.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.208.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(208)</visible>
@@ -599,7 +599,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.209.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.209.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(209)</visible>
@@ -609,7 +609,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.209.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.209.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(209)</visible>
@@ -620,7 +620,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.210.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.210.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(210)</visible>
@@ -630,7 +630,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.210.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.210.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(210)</visible>
@@ -641,7 +641,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.211.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.211.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(211)</visible>
@@ -651,7 +651,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.211.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.211.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(211)</visible>
@@ -662,7 +662,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.212.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.212.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(212)</visible>
@@ -672,7 +672,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.212.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.212.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(212)</visible>
@@ -683,7 +683,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.213.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.213.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(213)</visible>
@@ -693,7 +693,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.213.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.213.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(213)</visible>
@@ -704,7 +704,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.214.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.214.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(214)</visible>
@@ -714,7 +714,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.214.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.214.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(214)</visible>
@@ -725,7 +725,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.215.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.215.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(215)</visible>
@@ -735,7 +735,7 @@
                     <width>494</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <label>$LOCALIZE[17]</label>
+                    <label>$INFO[Window(home).Property(NextAired.215.Weekday)]</label>
                     <label2>$INFO[Window(home).Property(NextAired.215.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(215)</visible>
