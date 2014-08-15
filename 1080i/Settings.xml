@@ -15,11 +15,6 @@
 		    <control type="label">
                 <include>DefSideLabelCoords</include>
                 <label>5</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-                <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-                <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             </control>
 		    <include>Animation.FadeIn</include>
             <control type="grouplist" id="9900">
