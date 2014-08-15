@@ -325,8 +325,7 @@
                 <height>700</height>
                 <itemgap>10</itemgap>
                 <orientation>vertical</orientation>
-                <scrolltime tween="quadratic">400</scrolltime>
-                <pagecontrol>60</pagecontrol>
+                
                 <control type="button">
                     <height>90</height>
                     <width>494</width>
@@ -336,7 +335,15 @@
                     <label2>$INFO[Window(home).Property(NextAired.200.Date)]</label2>
                     <texturenofocus colordiffuse="PosterBorder-NF" border="5">common/border-inner.png</texturenofocus>
                     <visible>!Control.HasFocus(200)</visible>
-                    
+                    <visible>!Control.HasFocus(207)</visible>
+                    <visible>!Control.HasFocus(208)</visible>
+                    <visible>!Control.HasFocus(209)</visible>
+                    <visible>!Control.HasFocus(210)</visible>
+                    <visible>!Control.HasFocus(211)</visible>
+                    <visible>!Control.HasFocus(212)</visible>
+                    <visible>!Control.HasFocus(213)</visible>
+                    <visible>!Control.HasFocus(214)</visible>
+                    <visible>!Control.HasFocus(215)</visible>
                 </control>
                 <control type="button">
                     <height>90</height>
@@ -347,7 +354,15 @@
                     <label2>$INFO[Window(home).Property(NextAired.200.Date)]</label2>
                     <texturenofocus border="12">common/border-inner-highlight.png</texturenofocus>
                     <visible>Control.HasFocus(200)</visible>
-                    
+                    <visible>!Control.HasFocus(207)</visible>
+                    <visible>!Control.HasFocus(208)</visible>
+                    <visible>!Control.HasFocus(209)</visible>
+                    <visible>!Control.HasFocus(210)</visible>
+                    <visible>!Control.HasFocus(211)</visible>
+                    <visible>!Control.HasFocus(212)</visible>
+                    <visible>!Control.HasFocus(213)</visible>
+                    <visible>!Control.HasFocus(214)</visible>
+                    <visible>!Control.HasFocus(215)</visible>
                 </control>
                 
                 <control type="button">
