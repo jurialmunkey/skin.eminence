@@ -9,13 +9,18 @@
     
         <include>GlobalBackground</include>
 
-        <control type="button">
+        <control type="button" description="MouseButton">
             <posy>600</posy>
             <posx>102</posx>
             <width>48</width>
             <height>48</height>
-            <onclick>SetProperty(focushub,1,home)</onclick>
-            <onclick>SetFocus(9500)</onclick>
+            <onclick condition="Control.IsVisible(10)">SetProperty(librarynode,PVR-31-10,home)</onclick>
+            <onclick condition="Control.IsVisible(11)">SetProperty(librarynode,PVR-32-11,home)</onclick>
+            <onclick condition="Control.IsVisible(12)">SetProperty(librarynode,PVR-33-12,home)</onclick>
+            <onclick condition="Control.IsVisible(13)">SetProperty(librarynode,PVR-34-13,home)</onclick>
+            <onclick condition="Control.IsVisible(14)">SetProperty(librarynode,PVR-35-14,home)</onclick>
+            <onclick condition="Control.IsVisible(17)">SetProperty(librarynode,PVR-36-15,home)</onclick>
+            <onclick>ActivateWindow($INFO[Window(home).Property(previoushub)])</onclick>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
             <aspectratio>keep</aspectratio>
@@ -53,10 +58,9 @@
             <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
             <include>DialogVisibility</include>
             <textcolor>$VAR[PVRTopLabelColor]</textcolor>
-            <visible>ControlGroup(50).HasFocus() | IsEmpty(Window(home).Property(focushub))</visible>
+            <visible>ControlGroup(50).HasFocus()</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <animation effect="slide" start="0" end="1920" time="200" condition="!IsEmpty(Window(home).Property(focushub))">Conditional</animation>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
@@ -64,7 +68,7 @@
         <control type="group">
             <posy>70</posy>
             <posx>horzpad</posx>
-            <visible allowhiddenfocus="true">IsEmpty(Window(home).Property(focushub)) + !ControlGroup(300).HasFocus()</visible>
+            <visible allowhiddenfocus="true">!ControlGroup(300).HasFocus()</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
             <animation effect="slide" end="horznegpad" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(9001) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
             <control type="scrollbar" id="60">
