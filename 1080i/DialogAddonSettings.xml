@@ -58,7 +58,7 @@
                 <onleft>9</onleft>
                 <onright>10</onright>
                 <onup>-</onup>
-                <ondown>-</ondown>
+                <ondown>10</ondown>
             </control>
 
             <control type="button" id="3">
