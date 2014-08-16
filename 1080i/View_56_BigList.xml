@@ -229,7 +229,7 @@
                                 <animation effect="slide" start="0" end="36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(sets)">Conditional</animation>
                             </control>
                             <control type="label">
-                                <posx>144</posx>
+                                <posx>143</posx>
                                 <posy>48</posy>
                                 <width>1200</width>
                                 <align>left</align>
