@@ -196,8 +196,6 @@
                             <height>fiveline</height>
                             <texture>$VAR[SquareImage]</texture>
                             <aspectratio>scale</aspectratio>
-                            <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                            <bordersize>1</bordersize>
                             <visible>!Container.Content(movies) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(tvshows)</visible>
                         </control>
                         <control type="image">
@@ -212,7 +210,7 @@
                         <control type="group">
                           <animation effect="slide" start="0" end="-36" condition="Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows) | Container.Content(sets)">Conditional</animation>
                             <control type="label">
-                                <posx>144</posx>
+                                <posx>143</posx>
                                 <posy>15</posy>
                                 <width>1200</width>
                                 <align>left</align>
