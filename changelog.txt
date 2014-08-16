@@ -1,3 +1,7 @@
+[B]0.9.47[/B]
+Separate PVR hub window - ActivateWindow(3204)
+Added "Advanced" skin settings (debug + reinit)
+
 [B]0.9.46[/B]
 PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
 Music playlist editor

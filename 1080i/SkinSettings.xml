@@ -120,6 +120,15 @@
                     <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
                     <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
                 </control>
+                <control type="togglebutton" id="39" description="Advanced">
+                    <label>31234</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(39)</usealttexture>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31234][/COLOR]</altlabel>
+                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
+                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                </control>
             </control>
             
             <control type="textbox">
@@ -765,20 +774,21 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="605">
-                    <label>31234</label>
+                
+                
+                <!-- ADVANCED -->
+                
+                <control type="radiobutton" id="631">
+                    <label>654</label>
                     <width>1063</width>
                     <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.pvrtohub)</onclick>
-                    <selected>!Skin.HasSetting(home.pvrtohub)</selected>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
+                    <selected>!Skin.HasSetting(HideDebugInfo)</selected>
+                    <visible>ControlGroup(3).HasFocus(39)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
-                
-                 
-                
                 
                 
                 <control type="button" id="632">
@@ -790,21 +800,11 @@
                     <onclick>Skin.ToggleSetting(skin.init)</onclick>
                     <onclick>ReplaceWindow(startup)</onclick>
                     <selected>!Skin.HasSetting(skin.init)</selected>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <visible>ControlGroup(3).HasFocus(39)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
                 </control>
                 
-                <!--<control type="radiobutton" id="631">
-                    <label>654</label>
-                    <width>1063</width>
-                    <radioposx>984</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
-                    <selected>!Skin.HasSetting(HideDebugInfo)</selected>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
-                </control>-->
+                
                 
             </control>
         </control>

@@ -252,8 +252,7 @@
                 <width>945</width>
                 <height>700</height>
                 <onleft>60</onleft>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-32-11,home)</onback>
                 <onright>9009</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
@@ -279,8 +278,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>12</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-33-12,home)</onback>
                 <onup>12</onup>
                 <ondown>12</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -305,8 +303,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>13</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-34-13,home)</onback>
                 <onup>13</onup>
                 <ondown>13</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -332,10 +329,8 @@
                 <scrolltime tween="quadratic">300</scrolltime>
                 <timeblocks>35</timeblocks>
                 <rulerunit>6</rulerunit>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
-                <onleft>SetProperty(focushub,1,home)</onleft>
-                <onleft>9500</onleft>
+                <onback>SetProperty(librarynode,PVR-31-10,home)</onback>
+                <onleft>SetProperty(librarynode,PVR-31-10,home)</onleft>
                 <onright>31</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
@@ -563,8 +558,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>14</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-35-14,home)</onback>
                 <onup>14</onup>
                 <ondown>14</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -587,8 +581,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>17</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-36-15,home)</onback>
                 <onup>17</onup>
                 <ondown>17</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -611,8 +604,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>15</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-36-15,home)</onback>
                 <onup>15</onup>
                 <ondown>15</ondown>
                 <pagecontrol>60</pagecontrol>
@@ -638,8 +630,7 @@
                 <height>700</height>
                 <onleft>60</onleft>
                 <onright>16</onright>
-                <onback>SetProperty(focushub,1,home)</onback>
-                <onback>9500</onback>
+                <onback>SetProperty(librarynode,PVR-37-16,home)</onback>
                 <onup>16</onup>
                 <ondown>16</ondown>
                 <pagecontrol>60</pagecontrol>

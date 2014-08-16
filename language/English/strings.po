@@ -541,7 +541,7 @@ msgid "Enter rule..."
 msgstr ""
 
 msgctxt "#31234"
-msgid "PVR goes to hub from home screen"
+msgid "Advanced"
 msgstr ""
 
 msgctxt "#31235"
