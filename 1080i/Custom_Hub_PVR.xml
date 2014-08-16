@@ -230,7 +230,15 @@
                         <label>$INFO[VideoPlayer.Plot,,  ]$INFO[Player.FinishTime,$LOCALIZE[31115] ,]</label>
                     </control>
                 </control>
-                
+                <control type="image">
+                    <posx>11</posx>
+                    <posy>11</posy>
+                    <width>933</width>
+                    <height>537</height>
+                    <texture colordiffuse="Black">common/white.png</texture>
+                    <aspectratio>scale</aspectratio>
+                    <visible>Player.HasVideo</visible>
+                </control>
                 <control type="videowindow">
                     <posx>11</posx>
                     <posy>11</posy>
