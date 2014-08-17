@@ -395,14 +395,14 @@
     </variable>
     
     <variable name="WidgetHubLabel">
-        <value condition="stringcompare(Window(home).Property(widget),episodes) + IsEmpty(Skin.String(home.502.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(home).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget.type)">$INFO[Skin.String(home.502.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(home).Property(widget),nextaired) + IsEmpty(Skin.String(home.503.bgwidget.type)">$LOCALIZE[31110] $LOCALIZE[20343]</value>
-        <value condition="stringcompare(Window(home).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget.type)">$INFO[Skin.String(home.503.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(home).Property(widget),movies) + IsEmpty(Skin.String(home.501.bgwidget.type)">$LOCALIZE[31109] $LOCALIZE[20342]</value>
-        <value condition="stringcompare(Window(home).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget.type)">$INFO[Skin.String(home.501.bgwidget.type)]</value>
-        <value condition="stringcompare(Window(home).Property(widget),trailers) + IsEmpty(Skin.String(home.504.bgwidget.type)">$LOCALIZE[31193]</value>
-        <value condition="stringcompare(Window(home).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget.type)">$INFO[Skin.String(home.504.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes) + IsEmpty(Skin.String(home.502.bgwidget.type))">$LOCALIZE[31109] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(home).Property(widget),episodes) + !IsEmpty(Skin.String(home.502.bgwidget.type))">$INFO[Skin.String(home.502.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired) + IsEmpty(Skin.String(home.503.bgwidget.type))">$LOCALIZE[31110] $LOCALIZE[20343]</value>
+        <value condition="stringcompare(Window(home).Property(widget),nextaired) + !IsEmpty(Skin.String(home.503.bgwidget.type))">$INFO[Skin.String(home.503.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),movies) + IsEmpty(Skin.String(home.501.bgwidget.type))">$LOCALIZE[31109] $LOCALIZE[20342]</value>
+        <value condition="stringcompare(Window(home).Property(widget),movies) + !IsEmpty(Skin.String(home.501.bgwidget.type))">$INFO[Skin.String(home.501.bgwidget.type)]</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers) + IsEmpty(Skin.String(home.504.bgwidget.type))">$LOCALIZE[31193]</value>
+        <value condition="stringcompare(Window(home).Property(widget),trailers) + !IsEmpty(Skin.String(home.504.bgwidget.type))">$INFO[Skin.String(home.504.bgwidget.type)]</value>
     </variable>
     
     <variable name="WidgetHubMoviesContent">
