@@ -251,7 +251,7 @@
                     <width>1063</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.50143065)</onclick>
+                    <onclick>SetProperty(item,home.504,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
