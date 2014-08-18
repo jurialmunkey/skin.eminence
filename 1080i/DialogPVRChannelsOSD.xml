@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window>
-	<defaultcontrol always="true">11</defaultcontrol>
-	
-	<controls>
-	
-	    <control type="group">
-	        <visible>!Window.IsActive(DialogPVRGuideInfo.xml)</visible>
+    <defaultcontrol always="true">11</defaultcontrol>
+    
+    <controls>
+    
+        <control type="group">
+            <visible>!Window.IsActive(DialogPVRGuideInfo.xml)</visible>
             <include>Animation.SlideOpen.Right</include>
             <control type="image">
                 <posx>-1</posx>
                 <posy>-1</posy>
-                <width>674</width>
+                <width>668</width>
                 <height>1082</height>
                 <texture colordiffuse="PanelBG" border="5">common/white.png</texture>
                 <bordertexture colordiffuse="PosterBorder" border="5">common/border-inner.png</bordertexture>
@@ -93,20 +93,20 @@
                         <colordiffuse>PanelFG-NF</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>530</posx>
+                        <posx>130</posx>
                         <posy>5</posy>
-                        <width>280</width>
-                        <align>right</align>
+                        <width>400</width>
+                        <align>left</align>
                         <textcolor>PanelFG-NF</textcolor>
                         <selectedcolor>PanelFG-NF</selectedcolor>
                         <font>Font-SettingsCategory</font>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
                     <control type="label">
-                        <posx>530</posx>
+                        <posx>130</posx>
                         <posy>40</posy>
-                        <width>380</width>
-                        <align>right</align>
+                        <width>400</width>
+                        <align>left</align>
                         <font>Font-ListInfo</font>
                         <textcolor>PanelFG-NF</textcolor>
                         <selectedcolor>PanelFG-NF</selectedcolor>
@@ -159,20 +159,20 @@
                         <colordiffuse>Selected</colordiffuse>
                     </control>
                     <control type="label">
-                        <posx>530</posx>
+                        <posx>130</posx>
                         <posy>5</posy>
-                        <width>280</width>
-                        <align>right</align>
+                        <width>400</width>
+                        <align>left</align>
                         <textcolor>Selected</textcolor>
                         <selectedcolor>Selected</selectedcolor>
                         <font>Font-SettingsCategory</font>
                         <label>$INFO[ListItem.ChannelName]</label>
                     </control>
                     <control type="label">
-                        <posx>530</posx>
+                        <posx>130</posx>
                         <posy>40</posy>
-                        <width>380</width>
-                        <align>right</align>
+                        <width>400</width>
+                        <align>left</align>
                         <font>Font-ListInfo</font>
                         <textcolor>Selected</textcolor>
                         <selectedcolor>Selected</selectedcolor>
@@ -182,6 +182,6 @@
             
             </control>
         </control>
-	</controls>
+    </controls>
 
 </window>

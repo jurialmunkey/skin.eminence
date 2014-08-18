@@ -4,6 +4,7 @@ Added "Advanced" skin settings (debug + reinit)
 Fix big list alignment issue for focused item
 Updated timers dialog
 Added search dialog PVR
+Woppie's fix for PVR Channel osd
 
 [B]0.9.46[/B]
 PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
