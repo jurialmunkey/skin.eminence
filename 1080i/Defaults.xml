@@ -114,6 +114,24 @@
         <texturenofocus>-</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
+    
+    <default type="edit">
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>450</width>
+        <height>66</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>Font-Button</font>
+        <label>-</label>
+        <textoffsetx>30</textoffsetx>
+        <textcolor>PanelFG-NF</textcolor>
+        <focusedcolor>PanelFG</focusedcolor>
+        <disabledcolor>Disabled</disabledcolor>
+        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
+        <texturenofocus>-</texturenofocus>
+        <pulseonselect>false</pulseonselect>
+    </default>
 
     <default type="togglebutton">
         <posx>0</posx>

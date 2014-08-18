@@ -37,6 +37,7 @@
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
         <control type="button" id="9009">
+            <visible>!Window.IsActive(DialogPVRGuideSearch.xml)</visible>
             <posx>244</posx>
             <posy>220</posy>
             <width>690</width>
@@ -68,6 +69,7 @@
         <control type="group">
             <posy>70</posy>
             <posx>horzpad</posx>
+            <visible>!Window.IsActive(DialogPVRGuideSearch.xml)</visible>
             <visible allowhiddenfocus="true">!ControlGroup(300).HasFocus()</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
             <animation effect="slide" end="horznegpad" start="0" time="0" condition="Control.IsVisible(10) + !Control.HasFocus(9001) + [ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
