@@ -5,6 +5,9 @@ Fix big list alignment issue for focused item
 Updated timers dialog
 Added search dialog PVR
 Woppie's fix for PVR Channel osd
+Fix channel group bug
+Fix Highlight colour for side highlight
+Fix fanart show/hide bug
 
 [B]0.9.46[/B]
 PVR goes to hub from home screen - reset home tile to ActivateWindow(MyPVR)
