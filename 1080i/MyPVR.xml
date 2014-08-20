@@ -59,7 +59,6 @@
             <animation effect="fade" start="100" end="0" condition="Control.IsVisible(10)">Conditional</animation>
             <include>DialogVisibility</include>
             <textcolor>$VAR[PVRTopLabelColor]</textcolor>
-            <visible>ControlGroup(50).HasFocus()</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>

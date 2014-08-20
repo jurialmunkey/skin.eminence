@@ -58,9 +58,6 @@
 
 
     <default type="label">
-        <posx>0</posx>
-        <posy>0</posy>
-        <label>-</label>
         <height>66</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -72,8 +69,6 @@
     </default>
 
     <default type="fadelabel">
-        <posx>0</posx>
-        <posy>0</posy>
         <height>66</height>
         <label>-</label>
         <align>left</align>
@@ -88,8 +83,8 @@
     </default>
 
     <default type="image">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>-</width>
         <height>-</height>
         <align>center</align>
@@ -98,8 +93,8 @@
     </default>
 
     <default type="button">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>450</width>
         <height>66</height>
         <align>center</align>
@@ -116,8 +111,8 @@
     </default>
     
     <default type="edit">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>450</width>
         <height>66</height>
         <align>center</align>
@@ -134,8 +129,8 @@
     </default>
 
     <default type="togglebutton">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>450</width>
         <height>66</height>
         <label>-</label>
@@ -154,8 +149,8 @@
     </default>
 
     <default type="radiobutton">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>450</width>
         <height>66</height>
         <align>center</align>
@@ -178,8 +173,8 @@
     </default>
 
     <default type="spincontrolex">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>450</width>
         <height>66</height>
         <label>-</label>
@@ -203,8 +198,8 @@
     </default>
 
     <default type="spincontrol">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <height>23</height>
         <width>23</width>
         <spinwidth>48</spinwidth>
@@ -227,8 +222,8 @@
     </default>
 
     <default type="sliderex">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <height>66</height>
         <width>450</width>
         <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
@@ -255,8 +250,8 @@
     </default>
 
     <default type="slider">
-        <posx>0</posx>
-        <posy>0</posy>
+        
+        
         <width>360</width>
         <height>23</height>
         <texturefocus>-</texturefocus>
