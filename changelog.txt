@@ -1,3 +1,7 @@
+[B]0.9.48[/B]
+Invert widget access
+Removed blue bg fade as default
+
 [B]0.9.47[/B]
 Separate PVR hub window - ActivateWindow(3204)
 Added "Advanced" skin settings (debug + reinit)

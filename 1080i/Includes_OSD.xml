@@ -19,8 +19,6 @@
 	    <onup condition="IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">SetProperty(fullscreeninfo,1,seekbar)</onup>
         <onup condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</onup>
         <ondown condition="Window.IsVisible(home) + !Skin.HasSetting(home.widgetdown)">SetProperty(closeosd,1,home)</ondown>
-        <ondown condition="Window.IsVisible(home) + !Skin.HasSetting(home.widgetdown)">ActivateWindow(3101)</ondown>
-
         <ondown condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</ondown>
         <ondown condition="[IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen] | !VideoPlayer.IsFullscreen">Close</ondown>
 	</include>

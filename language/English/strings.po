@@ -551,3 +551,7 @@ msgstr ""
 msgctxt "#31236"
 msgid "Header text"
 msgstr ""
+
+msgctxt "#31237"
+msgid "Invert widget access"
+msgstr ""

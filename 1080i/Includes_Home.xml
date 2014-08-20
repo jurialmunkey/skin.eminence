@@ -82,10 +82,14 @@
         <onclick condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onclick>
         <onup condition="Window.IsVisible(PlayerControls.xml)">Dialog.Close(PlayerControls.xml)</onup>
         <onup condition="Player.HasVideo + Window.IsVisible(home)">Action(fullscreen)</onup>
-        <onup condition="!Player.HasVideo + Window.IsVisible(home)">SetFocus(9600)</onup>
-        <onup condition="!Player.HasVideo + Window.IsVisible(home)">CancelAlarm(Move9600,true)</onup>
+        <onup condition="!Player.HasVideo + Window.IsVisible(home) + !Skin.HasSetting(home.invertwidgets)">SetFocus(9600)</onup>
+        <onup condition="!Player.HasVideo + Window.IsVisible(home) + !Skin.HasSetting(home.invertwidgets)">CancelAlarm(Move9600,true)</onup>
+        <onup condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + Skin.HasSetting(home.invertwidgets)">SetFocus(9511)</onup>
+
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
-        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown)">SetFocus(9511)</ondown>
+        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + !Skin.HasSetting(home.invertwidgets)">SetFocus(9511)</ondown>
+        <ondown condition="!Player.HasVideo + Window.IsVisible(home) + Skin.HasSetting(home.invertwidgets)">SetFocus(9600)</ondown>
+        <ondown condition="!Player.HasVideo + Window.IsVisible(home) + Skin.HasSetting(home.invertwidgets)">CancelAlarm(Move9600,true)</ondown>
         <onback condition="Window.IsVisible(PlayerControls.xml) + Player.HasMedia + Skin.HasSetting(home.autopop)">Action(fullscreen)</onback>
         <aspectratio scalediffuse="false">center</aspectratio>
         <include condition="!Skin.HasSetting(home.talltiles)">Short-Home-Menu-Button</include>
