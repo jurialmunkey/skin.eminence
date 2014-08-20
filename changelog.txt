@@ -1,3 +1,6 @@
+[B]0.9.48[/B]
+Remove blue fade on bg by default
+
 [B]0.9.47[/B]
 Separate PVR hub window - ActivateWindow(3204)
 Added "Advanced" skin settings (debug + reinit)

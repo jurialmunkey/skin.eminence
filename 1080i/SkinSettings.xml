@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">3</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<background>0</background>
-	<controls>
+    <defaultcontrol always="true">3</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <background>0</background>
+    <controls>
 
-		<include>GlobalBackground</include>
-		<control type="button">
+        <include>GlobalBackground</include>
+        <control type="button">
             <posy>540</posy>
             <posx>110</posx>
             <width>48</width>
@@ -25,22 +25,22 @@
         </control>
    
         <control type="group">
-		    <posx>horzpad</posx>
-		    <posy>70</posy>
+            <posx>horzpad</posx>
+            <posy>70</posy>
             <visible>!Window.IsVisible(3065)</visible>
-		    <include>DialogVisibility</include>
-		    <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
-		    <include>Animation.SlideOpen.Left</include>
-		    <control type="label" id="2" description="Info Label">
+            <include>DialogVisibility</include>
+            <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
+            <include>Animation.SlideOpen.Left</include>
+            <control type="label" id="2" description="Info Label">
                 <include>DefSideLabelCoords</include>
                 <label>$LOCALIZE[20077]</label>
             </control>
         </control>
 
-		<control type="group">
-			<posy>160</posy>
-			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-			<animation effect="slide" start="0" end="-233" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
+        <control type="group">
+            <posy>160</posy>
+            <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            <animation effect="slide" start="0" end="-233" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
             <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
@@ -49,13 +49,13 @@
             <control type="grouplist" id="3">
                 <description>Control Area</description>
                 <onright>5</onright>
-				
-				<onup>3</onup>
-				<ondown>3</ondown>
+                
+                <onup>3</onup>
+                <ondown>3</ondown>
                 <include>DefSettingsLeftGroup</include>
-				<onleft>SetProperty(movement,1,settings)</onleft>
-				<onleft>$VAR[DefSettingsOnLeft]</onleft>
-				
+                <onleft>SetProperty(movement,1,settings)</onleft>
+                <onleft>$VAR[DefSettingsOnLeft]</onleft>
+                
                 <control type="togglebutton" id="37" description="HomeTiles">
                     <label>31208</label>
                     <align>left</align>
@@ -132,26 +132,26 @@
             </control>
             
             <control type="textbox">
-			    <include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
-			    <posx>285</posx>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <posx>285</posx>
                 <width>1376</width>
                 <posy>685</posy>
                 <height>105</height>
-				<align>justify</align>
-				<font>Font-ListInfo-Small</font>
-				<textcolor>Disabled</textcolor>
-				<label>...</label>
-			</control>
+                <align>justify</align>
+                <font>Font-ListInfo-Small</font>
+                <textcolor>Disabled</textcolor>
+                <label>...</label>
+            </control>
 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
                 <include>DefSettingsRightGroup</include>
-				<onleft>3</onleft>
-				<onright>ClearProperty(movement,settings)</onright>
+                <onleft>3</onleft>
+                <onright>ClearProperty(movement,settings)</onright>
                 <onright>$VAR[DefSettingsOnRight]</onright>
-				<onup>5</onup>
-				<ondown>5</ondown>
+                <onup>5</onup>
+                <ondown>5</ondown>
                
                 
                 <!----------------------->
@@ -602,7 +602,7 @@
                     <label2>$INFO[Skin.String(global.background)]</label2>
                     <enable>!Skin.HasSetting(purplefade)</enable>
                     <onclick condition="IsEmpty(Skin.String(global.background))">SetProperty(showimages,1,home)</onclick>
-                    <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/sunset/)</onclick>
+                    <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/colours/)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
@@ -810,7 +810,7 @@
         </control>
         
         <!--<control type="scrollbar" id="60">
-		    <posx>650</posx>
+            <posx>650</posx>
             <posy>280</posy>
             <height>549</height>
             <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
@@ -823,9 +823,9 @@
             <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
         </control>-->
 
-		<include>GlobalTopBar</include>
+        <include>GlobalTopBar</include>
         
         
 
-	</controls>
+    </controls>
 </window>
