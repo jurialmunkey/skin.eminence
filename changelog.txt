@@ -1,6 +1,7 @@
 [B]0.9.48[/B]
 Invert widget access
 Removed blue bg fade as default
+Removed light theme (too many bugs)
 
 [B]0.9.47[/B]
 Separate PVR hub window - ActivateWindow(3204)
