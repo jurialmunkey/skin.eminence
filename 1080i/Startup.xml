@@ -16,8 +16,7 @@
             <onfocus>Skin.SetBool(home.showinfoonwidget)</onfocus>
             <onfocus>Skin.SetBool(home.usemixedglobalwidget)</onfocus>
             <onfocus>Skin.SetBool(home.monochromemode)</onfocus>
-            <onfocus>Skin.SetString(global.background,special://skin/extras/colours/blue.jpg)</onfocus>
-            
+
             <!-- 301 Item -->
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
             <onfocus>Skin.SetString(home.301.bgcolor,ff555555)</onfocus>
@@ -139,7 +138,6 @@
         </control>
         <control type="button" id="9315">
             <visible allowhiddenfocus="true">false</visible>
-            <onfocus condition="substring(Skin.String(global.background),extras/sunset/blue.jpg)">Skin.SetString(global.background,special://skin/extras/colours/blue.jpg)</onfocus>
             <onfocus condition="!Skin.HasSetting(skin.init)">SetFocus(9314)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
             <onfocus condition="Skin.HasSetting(skin.init)">AlarmClock(GoHome,ReplaceWindow(home),00:01,silent,false)</onfocus>
