@@ -97,7 +97,7 @@
                         <height>70</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Artist,,[CR]]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -133,7 +133,7 @@
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
                         <textcolor>Selected</textcolor>
-                        <label>$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Artist,,[CR]]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                 </control>
                 <control type="wraplist" id="9501">
