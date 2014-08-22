@@ -80,8 +80,7 @@
                         <posy>555</posy>
                         <width>825</width>
                         <align>left</align>
-                        <font>Font-ListInfo</font>
-                        <label>[B]$INFO[Container(9501).ListItem.Label][/B][CR]$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
@@ -98,7 +97,7 @@
                         <height>70</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
-                        <label>$VAR[WidgetPlot]</label>
+                        <label>$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                 </control>
                 <control type="group">
@@ -115,8 +114,7 @@
                         <align>left</align>
                         <textcolor>Selected</textcolor>
                         <scroll>true</scroll>
-                        <font>Font-ListInfo</font>
-                        <label>[B]$INFO[Container(9501).ListItem.Label][/B][CR]$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
@@ -135,7 +133,7 @@
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
                         <textcolor>Selected</textcolor>
-                        <label>$VAR[WidgetPlot]</label>
+                        <label>$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                 </control>
                 <control type="wraplist" id="9501">
