@@ -62,7 +62,7 @@
                 <posy>145</posy>
                 <width>globalh</width>
                 <font>Font-WidgetCategory</font>
-                <label>$VAR[MovieWidgetLabel]</label>
+                <label>10504</label>
                 <animation effect="fade" end="25" condition="true">Conditional</animation>
             </control>
             <control type="group">
@@ -80,7 +80,8 @@
                         <posy>555</posy>
                         <width>825</width>
                         <align>left</align>
-                        <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
+                        <font>Font-ListInfo</font>
+                        <label>[B]$INFO[Container(9501).ListItem.Label][/B][CR]$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
@@ -114,7 +115,8 @@
                         <align>left</align>
                         <textcolor>Selected</textcolor>
                         <scroll>true</scroll>
-                        <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
+                        <font>Font-ListInfo</font>
+                        <label>[B]$INFO[Container(9501).ListItem.Label][/B][CR]$INFO[Container(9501).ListItem.Artist,,  -  ]$INFO[Container(9501).ListItem.Album]$INFO[Container(9501).ListItem.Year,  (,)]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
