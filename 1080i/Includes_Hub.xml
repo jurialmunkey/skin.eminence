@@ -217,7 +217,7 @@
         <item id="3">
             <label>134</label>
             <onclick>ActivateWindow(Music,Songs,return)</onclick>
-            <icon>special://skin/extras/icons/songs.png</icon>
+            <icon>special://skin/extras/icons/song.png</icon>
             <property name="Color">1</property>
         </item>
         
