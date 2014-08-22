@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
-<window type="window" id="3203">
+<window type="window" id="3205">
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
     <onload>SetProperty(previoushub,3203,home)</onload>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
-<window type="window" id="3205">
+<window type="window" id="3203">
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
     <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,musicdb://albums/,home)</onload>
