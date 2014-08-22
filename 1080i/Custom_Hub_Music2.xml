@@ -162,7 +162,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                     </focusedlayout>
-                    <content target="music">musicdb://top100/albums/</content>
+                    <content target="music">musicdb://top100/songs/</content>
                 </control>
       
             </control>
