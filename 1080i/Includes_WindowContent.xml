@@ -60,6 +60,7 @@
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + !Control.HasFocus(9600)">$INFO[Container(9600).ListItem.Path]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + Control.HasFocus(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Icon]</value>
+        <value>common/null.png</value>
     </variable>
     
     <include name="GlobalBackground">
