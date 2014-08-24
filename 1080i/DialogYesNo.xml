@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <window id="100">
-	<defaultcontrol always="true">10</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<zorder>4</zorder>
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>4</zorder>
     <controls>
-	    <control type="image">
-	        <include>Dimensions_Fullscreen</include>
-	        <texture>common/white.png</texture>
-	        <colordiffuse>PanelBG</colordiffuse>
-	        <animation effect="fade" end="75" condition="true">Conditional</animation>
-	        <include>Animation.FadeIn</include>
-	    </control>
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <texture>common/white.png</texture>
+            <colordiffuse>PanelBG</colordiffuse>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <include>Animation.FadeIn</include>
+        </control>
         <include>GlobalLeftHeader</include>
-        <control type="group">		
+        <control type="group">      
             <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
-            <include>DefContextMenuBackground</include>		
+            <include>DefContextMenuBackground</include>     
 
             <control type="group">
                 <animation effect="slide" end="0,16" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
@@ -28,7 +28,7 @@
                     <font>Font-Button</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
-                </control>	
+                </control>  
                 <control type="label" id="2">
                     <posx>1100</posx>
                     <posy>50</posy>
@@ -44,7 +44,7 @@
                     <font>Font-ListInfo</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
-                </control>	
+                </control>  
                 <control type="label" id="4">
                     <posx>1100</posx>
                     <posy>114</posy>
@@ -53,7 +53,7 @@
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
                     <animation effect="slide" end="0,-32" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
-                </control>					
+                </control>                  
             </control>
 
             <control type="button" id="11">
@@ -79,6 +79,6 @@
             </control>
 
         </control>
-	</controls>
+    </controls>
 
 </window>

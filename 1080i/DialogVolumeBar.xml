@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="104">
-	<defaultcontrol always="true">-</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<zorder>20</zorder>
-	<controls>
-	    <control type="group" description="Left Side Header">
+    <defaultcontrol always="true">-</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>20</zorder>
+    <controls>
+        <control type="group" description="Left Side Header">
             <control type="image">
                 <posy>18</posy>
-                <posx>-66</posx>
+                <posx>-88</posx>
                 <width>300</width>
-                <height>164</height>	
-                <texture align="left">home/half-tile.png</texture>
+                <height>164</height>  
+                <texture flipx="true" flipy="true" border="75">$VAR[HeaderTileTexture]</texture>
                 <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
                 <aspectratio>scale</aspectratio>
                 <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-            <animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>
+                <!--<animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>-->
                 <visible>Window.IsVisible(DialogSeekBar.xml) + ![!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]]</visible>
             </control>
 
@@ -31,7 +31,7 @@
                 <posx>44</posx>
                 <posy>26</posy>
                 <width>100</width>
-                <height>100</height>	
+                <height>100</height>    
                 <texture>$INFO[Control.GetLabel(1),dialog/progress/p,.png]</texture>
                 <aspectratio align="center" aligny="center">keep</aspectratio>
             </control>
@@ -53,6 +53,6 @@
             </control>
         </control>
        
-	</controls>
+    </controls>
 
 </window>

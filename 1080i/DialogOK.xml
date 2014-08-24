@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2002">
-	<defaultcontrol always="true">10</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
     <zorder>10</zorder>
-	<controls>
-	    <include>GlobalOverlay</include>
+    <controls>
+        <include>GlobalOverlay</include>
         <include>GlobalLeftHeader</include>
-        <control type="group">		
+        <control type="group">      
             <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
             <include>DefContextMenuBackground</include>
@@ -22,7 +22,7 @@
                     <font>Font-Button</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
-                </control>	
+                </control>  
                 <control type="label" id="2">
                     <posx>1100</posx>
                     <posy>50</posy>
@@ -38,7 +38,7 @@
                     <font>Font-ListInfo</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
-                </control>	
+                </control>  
                 <control type="label" id="4">
                     <posx>1100</posx>
                     <posy>114</posy>
@@ -46,7 +46,7 @@
                     <font>Font-ListInfo</font>
                     <align>left</align>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
-                </control>					
+                </control>                  
             </control>
 
         
@@ -61,6 +61,6 @@
             </control>
 
         </control>
-	</controls>
+    </controls>
 
 </window>

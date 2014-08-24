@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="buttonMenu" id="111">
-	<defaultcontrol always="true">3110</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">3110</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
-	<controls>
-	    <include>GlobalOverlay</include>
+    <controls>
+        <include>GlobalOverlay</include>
         <include>GlobalLeftHeader</include>
         
-        <control type="group">		
+        <control type="group">      
             <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
             <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
-            <include>DefContextMenuBackground</include>		
+            <include>DefContextMenuBackground</include>     
             
             <control type="grouplist" id="3110">
                 <include>DefContextMenuGroupList</include>
@@ -95,6 +95,6 @@
 
             </control>
         </control>
-	</controls>
+    </controls>
 
 </window>
