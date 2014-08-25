@@ -3,6 +3,8 @@
 <window>
     <defaultcontrol always="true">9315</defaultcontrol>
     <onload>ClearProperty(homefocus,home)</onload>
+    <onunload>SetProperty(widget,movies,home)</onunload>
+
 	<controls>
 	    <control type="image">
             <include>Dimensions_Fullscreen</include>
