@@ -1,3 +1,6 @@
+[B]0.9.49[/B]
+Flat Themes + Tweaks + Colours
+
 [B]0.9.48[/B]
 Invert widget access
 Removed blue bg fade as default
