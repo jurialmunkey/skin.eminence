@@ -29,7 +29,7 @@
                 <texture border="12" flipx="false">common/white.png</texture>
                 <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <visible>stringcompare(Skin.CurrentTheme,Flat)</visible>
+                <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
             </control>
 
             <control type="list" id="50">
