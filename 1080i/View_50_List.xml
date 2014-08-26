@@ -22,6 +22,16 @@
                 <animation effect="fade" start="100" end="25" time="400" condition="!Control.HasFocus(60)">Conditional</animation>
                 <animation effect="fade" start="100" end="0" condition="[!IntegerGreaterThan(Container.NumPages,1) + !Control.HasFocus(60)] | ControlGroup(9000).HasFocus()">Conditional</animation>
             </control>      
+            <control type="image">
+                <height>globalh</height>
+                <width>listw</width>
+                <colordiffuse>PosterBorder</colordiffuse>
+                <texture border="12" flipx="false">common/white.png</texture>
+                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <visible>stringcompare(Skin.CurrentTheme,Flat)</visible>
+            </control>
+
             <control type="list" id="50">
                 <width>listw</width>
                 <height>globalh</height>
@@ -37,6 +47,7 @@
 
                 <itemlayout width="listw" height="listh">
                     <control type="group">
+                        
                         <control type="group">
                             <visible>Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)</visible>
                             <control type="group">
@@ -148,7 +159,6 @@
                 </focusedlayout>
 
             </control>
-            
             
             <control type="group" description="List Info">
                 <posx>listw</posx>

@@ -143,7 +143,7 @@
                         <height>64</height>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <label>$VAR[VARLabel]</label>
                     </control>
             
@@ -154,7 +154,7 @@
                         <height>64</height>
                         <align>right</align>
                         <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
+                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Label2]</label>
                         

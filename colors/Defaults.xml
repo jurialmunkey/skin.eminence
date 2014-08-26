@@ -21,15 +21,13 @@
 	<!-- Home Header And Panels -->
 	<color name="MainLabel">FFededed</color>
 	<color name="SubLabel">BFededed</color>
+    <color name="MainLabel2">FFededed</color>
+	<color name="SubLabel2">BFededed</color>
 	<color name="OSD-NF">6fededed</color>
 	<color name="TopBar">ff333333</color>
 	<color name="TopBarDark">ff181818</color>
-	<color name="TopBarCorner">ff333333</color>
-	<color name="TopBarDarkIcon">ffededed</color>
+    <color name="TopBarDarkIcon">ffededed</color>
 	<color name="TopBarIcon">ffededed</color>
-	<color name="TopBarDisabled">2fededed</color>
-	
-	
     
     <!-- Highlight Colors -->
 	
@@ -45,12 +43,12 @@
 	<color name="Background">ff1f1f1f</color>
 	<color name="Silhouette">3f000000</color>
 	<color name="Selected">fff0f0f0</color>
-    <color name="PosterBanner">9e888888</color>
+    <color name="Selected2">ffdddddd</color>
 	<color name="PosterBorder">3e888888</color>
 	<color name="PosterBorder-NF">1e888888</color>
 	<color name="BorderColor">7f181818</color>
 	<color name="PanelBG">ff181818</color>
-	<color name="RadioFO">ffffffff</color>
+    <color name="RadioFO">ffffffff</color>
 	<color name="PanelFG">ffdddddd</color>
 	<color name="PanelFG-NF">9fdddddd</color>
 	<color name="Disabled">3fededed</color>

@@ -356,102 +356,105 @@
             <property name="Color">1</property>
         </item>
     </include>
-    
+    <include name="HubCategoriesNF">
+        <control type="image">
+            <width>widgethubrightw</width>
+            <height>90</height>
+            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+        </control>
+        <control type="image">
+            <width>90</width>
+            <height>90</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <aspectratio>scale</aspectratio>
+            <visible>IsEmpty(ListItem.Property(Color))</visible>
+        </control>
+        <control type="image">
+            <width>90</width>
+            <height>90</height>
+            <texture>$INFO[ListItem.Icon]</texture>
+            <aspectratio>scale</aspectratio>
+            <visible>!IsEmpty(ListItem.Property(Color))</visible>
+            <colordiffuse>PanelFG-NF</colordiffuse>
+        </control>
+        <control type="label">
+            <posx>30r</posx>
+            <posy>-16</posy>
+            <width>270</width>
+            <height>90</height>
+            <align>right</align>
+            <aligny>center</aligny>
+            <textcolor>PanelFG-NF</textcolor>
+            <label>$INFO[ListItem.Label]</label>
+            <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+        </control>
+        <control type="label">
+            <posx>30r</posx>
+            <posy>48</posy>
+            <width>270</width>
+            <align>right</align>
+            <aligny>center</aligny>
+            <textcolor>PanelFG</textcolor>
+            <font>Font-ListInfo</font>
+            <label>$INFO[ListItem.Label2]</label>
+        </control>
+    </include>
     <include name="HubCategoriesLayout">
         <itemlayout width="widgethubrightw" height="100">
-            <control type="image">
-                <width>widgethubrightw</width>
-                <height>90</height>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
-            <control type="image">
-                <width>90</width>
-                <height>90</height>
-                <texture>$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
-                <visible>IsEmpty(ListItem.Property(Color))</visible>
-            </control>
-            <control type="image">
-                <width>90</width>
-                <height>90</height>
-                <texture>$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
-                <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                <colordiffuse>PanelFG</colordiffuse>
-            </control>
-            <control type="label">
-                <posx>30r</posx>
-                <posy>-16</posy>
-                <width>270</width>
-                <height>90</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <textcolor>PanelFG</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-                <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
-            </control>
-            <control type="label">
-                <posx>30r</posx>
-                <posy>48</posy>
-                <width>270</width>
-                <align>right</align>
-                <aligny>center</aligny>
-                <textcolor>PanelFG</textcolor>
-                <font>Font-ListInfo</font>
-                <label>$INFO[ListItem.Label2]</label>
-            </control>
+            <include>HubCategoriesNF</include>
         </itemlayout>
         <focusedlayout width="widgethubrightw" height="100">
-            <control type="image">
-                <width>widgethubrightw</width>
-                <height>90</height>
-                <texture colordiffuse="PosterHighlight">common/white.png</texture>
-                <visible>Control.HasFocus(9500)</visible>
-                <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                
-            </control>
-            <control type="image">
-                <width>widgethubrightw</width>
-                <height>90</height>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+            <control type="group">
                 <visible>!Control.HasFocus(9500)</visible>
+                <include>HubCategoriesNF</include>
             </control>
-            <control type="image">
-                <width>90</width>
-                <height>90</height>
-                <texture>$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
-                <visible>IsEmpty(ListItem.Property(Color))</visible>
-            </control>
-            <control type="image">
-                <width>90</width>
-                <height>90</height>
-                <texture>$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
-                <visible>!IsEmpty(ListItem.Property(Color))</visible>
-                <colordiffuse>PanelFG</colordiffuse>
-            </control>
-            <control type="label">
-                <posx>30r</posx>
-                <posy>-16</posy>
-                <width>270</width>
-                <height>90</height>
-                <align>right</align>
-                <aligny>center</aligny>
-                <textcolor>Selected</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-                <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
-            </control>
-            <control type="label">
-                <posx>30r</posx>
-                <posy>48</posy>
-                <width>270</width>
-                <align>right</align>
-                <aligny>center</aligny>
-                <textcolor>Selected</textcolor>
-                <font>Font-ListInfo</font>
-                <label>$INFO[ListItem.Label2]</label>
+            <control type="group">
+                <visible>Control.HasFocus(9500)</visible>
+                <control type="image">
+                    <width>widgethubrightw</width>
+                    <height>90</height>
+                    <texture colordiffuse="PosterHighlight">common/white.png</texture>
+                    
+                    <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                    <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                    
+                </control>
+                <control type="image">
+                    <width>90</width>
+                    <height>90</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <visible>IsEmpty(ListItem.Property(Color))</visible>
+                </control>
+                <control type="image">
+                    <width>90</width>
+                    <height>90</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <aspectratio>scale</aspectratio>
+                    <visible>!IsEmpty(ListItem.Property(Color))</visible>
+                    <colordiffuse>Selected</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>30r</posx>
+                    <posy>-16</posy>
+                    <width>270</width>
+                    <height>90</height>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <textcolor>Selected</textcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                    <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
+                </control>
+                <control type="label">
+                    <posx>30r</posx>
+                    <posy>48</posy>
+                    <width>270</width>
+                    <align>right</align>
+                    <aligny>center</aligny>
+                    <textcolor>Selected</textcolor>
+                    <font>Font-ListInfo</font>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
             </control>
         </focusedlayout>
         

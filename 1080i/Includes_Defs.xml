@@ -182,12 +182,6 @@
             </control>
             
         </control>
-        <control type="image">
-            <width>8</width>
-            <height>549</height>
-            <include>DefSettingsRightGroup</include>
-            <texture colordiffuse="PosterBorder-NF">common/white.png</texture>
-        </control>
 
     </include>
     
@@ -276,12 +270,6 @@
             </control>
             
         </control>
-        <control type="image">
-            <width>8</width>
-            <height>549</height>
-            <include>DefSettingsRightGroup</include>
-            <texture colordiffuse="PosterBorder-NF">common/white.png</texture>
-        </control>
 
     </include>
     
@@ -352,6 +340,17 @@
     <include name="DefSideContextMenu">
         <control type="group">  
             <include>Animation.SlideOpen.Left</include>
+            <control type="image">
+                <posx>438r</posx>
+                <posy>280</posy>
+                <width>440</width>
+                <height>690</height>
+                <colordiffuse>PosterBorder</colordiffuse>
+                <texture border="12" flipx="false">common/white.png</texture>
+                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <visible>stringcompare(Skin.CurrentTheme,Flat)</visible>
+            </control>
             <control type="grouplist" id="996">
                 <include>DefMyNavBarGroupList</include>
                 <control type="button" id="1000">
@@ -532,6 +531,18 @@
     </include>
     
     <include name="DefMyNavBar">
+        <control type="image">
+            <posx>438r</posx>
+            <posy>280</posy>
+            <width>440</width>
+            <height>690</height>
+            <colordiffuse>PosterBorder</colordiffuse>
+            <texture border="12" flipx="false">common/white.png</texture>
+            <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+            <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+            <visible>stringcompare(Skin.CurrentTheme,Flat)</visible>
+        </control>
+
         <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
         <include>Animation.SlideOpen.Left</include>
     </include>
@@ -552,8 +563,6 @@
                 <height>164</height>    
                 <texture flipx="true" flipy="true" border="75">$VAR[HeaderTileTexture]</texture>
                 <colordiffuse>$VAR[HeaderColorBG]</colordiffuse>
-                <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-                <!--<animation effect="fade" start="100" end="60" condition="!Window.IsVisible(Home) + !Window.IsVisible(DialogSeekBar.xml)">Conditional</animation>-->
             </control>
         </control>
     </include>

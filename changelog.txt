@@ -4,6 +4,7 @@ Removed blue bg fade as default
 Removed light theme (too many bugs)
 Music hub new style (3203) - Top 100 songs
 Fix fanart showing when it shouldn't
+Add flat theme
 
 [B]0.9.47[/B]
 Separate PVR hub window - ActivateWindow(3204)
