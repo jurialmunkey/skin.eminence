@@ -24,6 +24,7 @@
         
         <control type="group">
             <posy>160</posy>
+            <include>DefSettingsLines</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(SliderDialog)</visible>
@@ -103,7 +104,7 @@
             
             
             <!-- OK CANCEL DEFAULTS -->
-            <include>DefSettingsLines</include>
+            
             <control type="grouplist">
                 <posx>265</posx>
                 <posy>705</posy>
