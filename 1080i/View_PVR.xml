@@ -318,6 +318,13 @@
     </include>
     <include name="EPGTimelineView">
         <control type="group">
+            <control type="image">
+                <posx>-198</posx>
+                <posy>listy</posy>
+                <height>690</height>
+                <width>1884</width>
+                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+            </control>
             <visible>Control.IsVisible(10)</visible>
             <control type="epggrid" id="10">
                 <posx>-198</posx>
@@ -489,13 +496,7 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="image">
-                <posx>-198</posx>
-                <posy>listy</posy>
-                <height>690</height>
-                <width>1884</width>
-                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-            </control>
+            
 
 
             <control type="group">
