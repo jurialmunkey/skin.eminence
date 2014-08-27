@@ -140,7 +140,7 @@
                 <animation effect="fade" start="100" end="66" condition="![Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + !Skin.HasSetting(fanart.showmore) + substring(Skin.CurrentTheme,Flat,Left)">Conditional</animation>
                 <animation effect="fade" start="100" end="15" condition="![Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + Skin.HasSetting(fanart.showmore) + substring(Skin.CurrentTheme,Flat,Left)">Conditional</animation>
                 <animation effect="fade" start="100" end="92" condition="[Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + [!substring(Skin.CurrentTheme,Flat,Left) | !Skin.HasSetting(fanart.showmore)]">Conditional</animation>
-                <animation effect="fade" start="100" end="32" condition="[Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + substring(Skin.CurrentTheme,Flat,Left) + Skin.HasSetting(fanart.showmore)">Conditional</animation>
+                <animation effect="fade" start="100" end="50" condition="[Player.HasVideo + [!Skin.HasSetting(disable.bgvideo) | Window.IsVisible(home)]] + substring(Skin.CurrentTheme,Flat,Left) + Skin.HasSetting(fanart.showmore)">Conditional</animation>
                 <visible>!Window.IsVisible(home)</visible>
             </control>
             <control type="image">
