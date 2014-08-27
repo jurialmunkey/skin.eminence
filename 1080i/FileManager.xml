@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="3">
-	<defaultcontrol always="true">20</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
+    <defaultcontrol always="true">20</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
 
-	<controls>
+    <controls>
 
-		<include>GlobalBackground</include>
-		<control type="group">
-		    <include>Animation.FadeIn</include>
+        <include>GlobalBackground</include>
+        <control type="group">
+            <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(DialogMediaSource.xml)</visible>
             <animation effect="slide" end="-233" start="0" time="200" condition="Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
@@ -43,14 +43,14 @@
                     <ondown>20</ondown>
 
                     <itemlayout height="listh" width="bannerwborder">
-		
-					    <control type="label">
+        
+                        <control type="label">
                             <posx>30</posx>
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>PanelFG</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>11r</posx>
@@ -59,9 +59,9 @@
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
                             <textcolor>PanelFG</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
-				    
+                    
                     </itemlayout>
 
                     <focusedlayout height="listh" width="bannerwborder">
@@ -83,13 +83,13 @@
                             <animation condition="Container(20).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         </control>
 
-					    <control type="label">
+                        <control type="label">
                             <posx>30</posx>
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>Selected</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>11r</posx>
@@ -98,7 +98,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
                             <textcolor>Selected</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
 
                     </focusedlayout>
@@ -146,13 +146,13 @@
                     <ondown>21</ondown>
 
                     <itemlayout height="listh" width="bannerwborder">
-					    <control type="label">
+                        <control type="label">
                             <posx>30</posx>
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>PanelFG</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>11r</posx>
@@ -161,9 +161,9 @@
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
                             <textcolor>PanelFG</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
-				    
+                    
                     </itemlayout>
 
                     <focusedlayout height="listh" width="bannerwborder">
@@ -185,13 +185,13 @@
                             <animation condition="Container(21).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         </control>
 
-					    <control type="label">
+                        <control type="label">
                             <posx>30</posx>
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
                             <textcolor>Selected</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
                             <posx>11r</posx>
@@ -200,7 +200,7 @@
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
                             <textcolor>Selected</textcolor>
-                            <selectedcolor>Highlight</selectedcolor>
+                            <selectedcolor>Keyboard</selectedcolor>
                         </control>
 
                     </focusedlayout>
@@ -219,10 +219,10 @@
 
             </control>
             
-		</control>
-		<include>GlobalTopBar</include>
+        </control>
+        <include>GlobalTopBar</include>
         
 
-	</controls>
+    </controls>
 
 </window>
