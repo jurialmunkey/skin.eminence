@@ -186,6 +186,7 @@
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus() + !Window.IsVisible(DialogAddonSettings.xml)</visible>
             <include>Animation.SlideOpen.Left</include>
+            <include>DefSidePanel</include>  
             <control type="grouplist" id="9500">
                 <onback>9000</onback>
                 <ondown>9500</ondown>

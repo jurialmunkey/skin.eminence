@@ -203,6 +203,7 @@
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
+            <include>DefSidePanel</include>  
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>

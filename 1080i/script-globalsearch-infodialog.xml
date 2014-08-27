@@ -242,6 +242,7 @@
             <visible allowhiddenfocus="true">ControlGroup(9900).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DialogVisibility</include>
+            <include>DefSidePanel</include>  
             <control type="grouplist" id="9900">
                 
                 <onleft>9901</onleft>

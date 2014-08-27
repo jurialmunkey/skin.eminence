@@ -330,27 +330,29 @@
         <width>690</width>
         <font>Font-ViewCategory</font>
         <animation effect="rotate" start="0" end="270" condition="true" center="1542,210">Conditional</animation>
-        <animation effect="fade" end="25" condition="true">Conditional</animation>
+        <animation effect="fade" end="35" condition="true">Conditional</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
         <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
         <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
     </include>
     
+    <include name="DefSidePanel">
+        <control type="image">
+            <posx>438r</posx>
+            <posy>280</posy>
+            <width>440</width>
+            <height>690</height>
+            <colordiffuse>PosterBorder</colordiffuse>
+            <texture border="12" flipx="false">common/white.png</texture>
+            <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
+        </control>
+    </include>
+    
     <include name="DefSideContextMenu">
         <control type="group">  
             <include>Animation.SlideOpen.Left</include>
-            <control type="image">
-                <posx>438r</posx>
-                <posy>280</posy>
-                <width>440</width>
-                <height>690</height>
-                <colordiffuse>PosterBorder</colordiffuse>
-                <texture border="12" flipx="false">common/white.png</texture>
-                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
-            </control>
+            <include>DefSidePanel</include>
             <control type="grouplist" id="996">
                 <include>DefMyNavBarGroupList</include>
                 <control type="button" id="1000">
