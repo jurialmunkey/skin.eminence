@@ -203,6 +203,17 @@
         <control type="group">		
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
+            <control type="image">
+                <posx>438r</posx>
+                <posy>280</posy>
+                <width>440</width>
+                <height>690</height>
+                <colordiffuse>PosterBorder</colordiffuse>
+                <texture border="12" flipx="false">common/white.png</texture>
+                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
+                <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
+            </control>
             <control type="grouplist" id="9500">
                 <ondown>SetFocus(9000)</ondown>
                 <onback>9000</onback>
