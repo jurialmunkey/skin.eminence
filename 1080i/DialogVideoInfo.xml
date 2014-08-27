@@ -394,15 +394,6 @@
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DialogVisibility</include>
-            <control type="image">
-                <posx>438r</posx>
-                <posy>280</posy>
-                <width>440</width>
-                <height>690</height>
-                <colordiffuse>PosterBorder</colordiffuse>
-                <texture border="12" flipx="false">common/white.png</texture>
-                <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
-            </control>
             <control type="grouplist" id="9500">
                 <onback>9000</onback>
                 <ondown>9500</ondown>
