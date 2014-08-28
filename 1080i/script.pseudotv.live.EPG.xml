@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <allowoverlay>no</allowoverlay>
+    <background>0</background>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <include>Animation.FadeIn</include>
+    <include>Animation.FadeOut</include>
+    
+    <controls>
+        <!--focused text color-->
+        <control type="button" id="99">
+            <visible>false</visible>
+            <!--PanelFG-->
+            <label>0xffdddddd</label>
+        </control>
+        
+        <!--text color-->
+        <control type="button" id="100">
+            <visible>false</visible>
+            <!--PanelFG-NF-->
+            <label>0x9fdddddd</label>
+        </control>
+        
+        <!--text font-->
+        <control type="button" id="105">
+            <visible>false</visible>
+            <label>Font-Button</label>
+        </control>
+        
+        <include>GlobalBackground</include>
+
+        <!--"GlobalTopBar"-->
+        <control type="group">
+            <visible>!Window.IsVisible(DialogBusy.xml)</visible>
+            
+            <!--"GlobalLeftHeader"-->
+            <control type="group" description="Left Side Header">
+                <animation type="Visible">
+                    <effect type="fade" start="0" end="100" time="200"/>
+                </animation>
+                <animation type="Hidden">
+                    <effect type="fade" end="0" start="100" time="200"/>
+                </animation>
+                
+                <!-->HeaderLeftTile<-->
+                <control type="image">
+                    <posy>18</posy>
+                    <posx>-88</posx>
+                    <width>300</width>
+                    <height>164</height>    
+                    <texture align="left" border="75">$VAR[HeaderTileTexture]</texture>
+                    <colordiffuse>PosterBorder</colordiffuse>
+                    <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+                </control>
+                
+                <!--"HeaderLeftInfo"-->
+                <control type="group">
+                    <visible>!VideoPlayer.Content(livetv) | [VideoPlayer.Content(livetv) + [Window.IsVisible(mutebug) | Skin.HasSetting(disable.pvricon) | [!Window.IsVisible(home) + !Window.IsVisible(fullscreenvideo)]]]</visible>
+                    <visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+                    <visible>!Window.IsVisible(DialogProgress.xml)</visible>
+                    <visible>!Window.IsVisible(DialogBusy.xml)</visible>
+                    <control type="image">
+                        <posy>10</posy>
+                        <posx>30</posx>
+                        <width>128</width>
+                        <height>128</height>    
+                        <texture>special://skin/extras/icons/pseudotv-live.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>$VAR[HeaderColorFG]</colordiffuse>
+                        <visible>!Container.Scrolling</visible>
+                        <animation type="Visible">
+                            <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" delay="2000" />
+                            <effect type="slide" start="0,-10" end="0,0" time="350" tween="sine" easing="out" delay="2000" />
+                        </animation>
+                        <animation type="Hidden">
+                            <effect type="fade" start="100" end="0" time="250" tween="sine" easing="out" />
+                            <effect type="slide" start="0,0" end="0,-10" time="300" tween="sine" easing="out"/>
+                        </animation>
+                    </control>
+                    <control type="button" description="Click me to go home" id="9834">
+                        <posy>10</posy>
+                        <posx>30</posx>
+                        <width>128</width>
+                        <height>128</height>
+                        <texturefocus>noop</texturefocus>
+                        <texturenofocus>noop</texturenofocus>
+                        <onclick condition="!Window.IsVisible(home) | Window.IsVisible(3101)">ActivateWindow(home)</onclick>
+                        <onclick condition="Window.IsVisible(home) + !Window.IsVisible(3101)">ActivateWindow(3101)</onclick>
+                    </control>
+                    <include>HeaderSortLetter</include>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>115</posy>
+                        <width>184</width>
+                        <aligny>top</aligny>
+                        <font>Font-Sublabel</font>
+                        <align>center</align>
+                        <textcolor>$VAR[HeaderColorFG]</textcolor>
+                        <label>PTVL</label>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>VideoPlayer.Content(livetv) + [Window.IsVisible(fullscreenvideo) | Window.IsVisible(home)] + !Window.IsVisible(mutebug) + !Skin.HasSetting(disable.pvricon)</visible>
+                    <control type="image">
+                        <posy>40</posy>
+                        <posx>40</posx>
+                        <width>120</width>
+                        <height>120</height>    
+                        <texture>$INFO[Player.Art(thumb)]</texture>
+                        <aspectratio>keep</aspectratio>
+                    </control>
+                </control>
+                
+            </control>
+        </control>
+        <control type="group" description="Main Header">
+            <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
+            <visible>!Window.IsActive(DialogOK.xml)</visible>
+            <visible>!Window.IsActive(DialogProgress.xml)</visible>
+            <visible>!Window.IsActive(DialogYesNo.xml)</visible>
+            <visible>!ControlGroup(9500).HasFocus()</visible>
+            <include>Animation.VisibleFadeIn</include>
+            <include>Animation.VisibleFadeOut</include>
+            <control type="group">
+                <posx>-10</posx>
+                
+                <!--"HeaderMainInfo"--> 
+                <control type="label">
+                    <posx>245</posx>
+                    <posy>25</posy>
+                    <width>1200</width>
+                    <height>100</height>
+                    <font>Font-Header</font>
+                    <label>$INFO[Player.Title]</label>
+                    <aligny>top</aligny>
+                    <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                </control>
+                <control type="grouplist">
+                    <posx>245</posx>
+                    <posy>115</posy>
+                    <width>1200</width>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <visible>!IsEmpty(Player.Duration) + Player.HasVideo</visible>
+                    <control type="label">
+                        <width max="550">auto</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>[COLOR=Highlight]$INFO[VideoPlayer.Director,, ]$INFO[VideoPlayer.Artist,, ]$INFO[VideoPlayer.TVShowTitle,, ]$INFO[VideoPlayer.Season]$INFO[VideoPlayer.Episode,x, ][/COLOR]</label>
+                    </control>
+                    <control type="label">
+                        <width>auto</width>
+                        <font>Font-Sublabel</font>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>$INFO[Player.FinishTime,Finishes at ,]</label>
+                    </control>
+                    <control type="label">
+                        <width>330</width>
+                        <font>Font-Sublabel</font>
+                        <align>right</align>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>$INFO[Player.Time(hh:mm:ss),  •  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <posx>245</posx>
+                    <posy>115</posy>
+                    <width>1200</width>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <visible>!IsEmpty(Player.Duration) + !Player.HasVideo</visible>
+                    <control type="label">
+                        <width max="880">auto</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>$VAR[MainHeaderSubLabel]</label>
+                    </control>
+                    <control type="label">
+                        <width>320</width>
+                        <font>Font-Sublabel</font>
+                        <align>left</align>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>$INFO[Player.Time(hh:mm:ss), • ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <posx>245</posx>
+                    <posy>115</posy>
+                    <width>1200</width>
+                    <orientation>horizontal</orientation>
+                    <visible>IsEmpty(Player.Duration)</visible>
+                    <control type="label">
+                        <width>1200</width>
+                        <font>Font-Sublabel</font>
+                        <aligny>top</aligny>
+                        <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                        <label>$VAR[MainHeaderSubLabel]</label>
+                    </control>
+                </control>
+                
+            </control>
+            <control type="group">
+                <include>Animation.VisibleFadeIn</include>
+                <include>Animation.VisibleFadeOut</include>
+                <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
+                <include>HeaderRightInfo</include>
+            </control>
+        </control>
+        
+        
+        <control type="group">
+            <posy>70</posy>
+            <posx>horzpad</posx>
+            <control type="group">
+                <control type="image">
+                    <posx>-198</posx>
+                    <posy>listy</posy>
+                    <height>619</height>
+                    <width>1884</width>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>
+                <control type="group">
+                    <posx>-198</posx>
+                    <posy>70</posy>
+                    <width>1884</width>
+                    <height>637</height>
+                    
+                    <!--Date-->
+                    <control type="group" height="fivelinelist" width="500">
+                        <control type="label" id="104">
+                            <posx>10</posx>
+                            <posy>92</posy>
+                            <width>500</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>Font-WidgetCategory</font>
+                            <textcolor>Disabled</textcolor>
+                        </control>
+                    </control>
+                    
+                    <control type="group" height="fivelinelist" width="250">
+                        <control type="label" id="101">
+                            <posx>574</posx>
+                            <posy>92</posy>
+                            <width>200</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>Font-WidgetCategory</font>
+                            <textcolor>Disabled</textcolor>
+                        </control>
+                    </control>
+                    
+                    <control type="group" height="fivelinelist" width="250">
+                        <control type="label" id="102">
+                            <posx>1016</posx>
+                            <posy>92</posy>
+                            <width>200</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>Font-WidgetCategory</font>
+                            <textcolor>Disabled</textcolor>
+                        </control>
+                    </control>
+                    
+                    <control type="group" height="fivelinelist" width="250">
+                        <control type="label" id="103">
+                            <posx>1458</posx>
+                            <posy>92</posy>
+                            <width>200</width>
+                            <align>left</align>
+                            <aligny>top</aligny>
+                            <font>Font-WidgetCategory</font>
+                            <textcolor>Disabled</textcolor>
+                        </control>
+                    </control>
+                    
+                    
+                    <control type="grouplist">
+                        <posy>fivelinelist</posy>
+                        <itemgap>71</itemgap>
+                        <orientation>vertical</orientation>
+                        
+                        <!--Channel 1-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="311">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="301">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="321">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                        <!--Channel 2-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="312">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="302">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="322">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                        <!--Channel 3-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="313">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="303">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="323">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                        <!--Channel 4-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="314">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="304">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="324">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                        <!--Channel 5-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="315">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="305">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="325">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                        <!--Channel 6-->
+                        <control type="group">
+                            <width>554</width>
+                            <control type="image">
+                                <width>554</width>
+                                <height>67</height>
+                                <texture border="12">common/border-inner.png</texture>
+                                <colordiffuse>PosterBorder-NF</colordiffuse>
+                            </control>   
+                            <control type="label" id="316">
+                                <posx>0</posx>
+                                <width>90</width>
+                                <align>center</align>
+                                <height>67</height>
+                            </control>
+                            <control type="label" id="306">
+                                <posx>90</posx>
+                                <width>340</width>
+                                <height>67</height>
+                            </control>
+                            <control type="image" id="326">
+                                <right>22</right>
+                                <posy>8</posy>
+                                <width>72</width>
+                                <height>51</height>
+                                <aspectratio>keep</aspectratio>
+                            </control> 
+                        </control>
+                    </control>        
+                </control>
+                
+                
+                <control type="group">
+                    <posx>-198</posx>
+                    <posy>640</posy>
+                    <!--Channel Icon-->    
+                    <!--306x152-->
+                    <control type="group" id="513"> 
+                        <control type="image" id="503">
+                            <right>30</right>
+                            <posy>17</posy>
+                            <width>270</width>
+                            <height>152</height>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                        </control>
+                    </control>
+                    
+                    <!--Dynamic art--> 
+                    <control type="group"> 
+                        <control type="button" id="507">
+                            <description>Dynamic art</description>
+                            <label>landscape</label>
+                            <visible>false</visible>
+                        </control>
+                        <control type="image" id="508">
+                            <description>Dynamic art</description>
+                            <colordiffuse>FFFFFFFF</colordiffuse>                            
+                            <right>30</right>
+                            <posy>17</posy>
+                            <width>270</width>
+                            <height>152</height>
+                            <align>center</align>
+                            <aspectratio>keep</aspectratio>
+                        </control> 
+                    </control> 
+                    
+                    <control type="group">
+                        <posx>30</posx>
+                        <posy>2</posy>
+                        <control type="label" id="500">
+                            <width>1196</width>
+                            <align>left</align>
+                            <textcolor>PanelFG</textcolor>
+                            <font>Font-PVRTitle</font>
+                        </control>
+                        <control type="label" id="501">
+                            <posy>38</posy>
+                            <width>1196</width>
+                            <align>left</align>
+                            <textcolor>PanelFG</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                        </control>
+                        <control type="label" id="502">
+                            <posy>90</posy>
+                            <width>1510</width>
+                            <height>53</height>
+                            <wrapmultiline>true</wrapmultiline>
+                            <align>justify</align>
+                            <aligny>top</aligny>
+                            <textcolor>PanelFG</textcolor>
+                            <font>Font-ListInfo</font>
+                        </control>
+                    </control>
+                   
+                </control>
+            </control>
+        </control>
+        
+        <!--Show Listings-->
+        <control type="group">
+            <control type="group" id="111">
+                <posy>280</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+            <control type="group" id="112">
+                <posy>351</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+            <control type="group" id="113">
+                <posy>422</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+            <control type="group" id="114">
+                <posy>493</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+            <control type="group" id="115">
+                <posy>564</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+            <control type="group" id="116">
+                <posy>635</posy>
+                <posx>574</posx>
+                <width>1328</width>
+                <height>67</height>
+            </control>
+        </control>
+
+        <control type="image" id="120">
+            <posx>574</posx>
+            <posy>280</posy>
+            <width>20</width>
+            <height>426</height>
+            <aspectratio>scale</aspectratio>
+        </control>
+        
+    </controls>
+</window>
