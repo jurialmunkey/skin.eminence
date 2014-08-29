@@ -47,7 +47,7 @@
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
                 <control type="image">
-                    <texture border="12">common/border-inner-highlight.png</texture>
+                    <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -103,7 +103,7 @@
                         <control type="image">
                             <include>DefSettingsRightGroupWidth</include>
                             <height>66</height>
-                            <texture border="12">common/border-inner-highlight.png</texture>
+                            <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>30</posx>
@@ -193,7 +193,7 @@
                         <control type="image">
                             <width>1053</width>
                             <height>135</height>
-                            <texture border="12">common/border-inner-highlight.png</texture>
+                            <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                         </control>
                         <control type="label">
                             <posx>160</posx>

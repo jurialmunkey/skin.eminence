@@ -26,10 +26,7 @@
                 <height>globalh</height>
                 <width>listw</width>
                 <colordiffuse>PosterBorder</colordiffuse>
-                <texture border="12" flipx="false">common/white.png</texture>
-                <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                <visible>substring(Skin.CurrentTheme,Flat,Left)</visible>
+                <texture border="12" flipx="false">common/border-inner.png</texture>
             </control>
 
             <control type="list" id="50">
@@ -88,7 +85,7 @@
                             <control type="image">
                                 <height>listh</height>
                                 <width>listw</width>
-                                <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
+                                <texture border="12" flipx="false"colordiffuse="PosterHighlight">common/white.png</texture>
                                 <animation condition="Container(50).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                                 <animation condition="Container(50).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             </control>

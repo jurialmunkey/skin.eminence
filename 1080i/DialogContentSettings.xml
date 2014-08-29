@@ -115,7 +115,7 @@
 				<radioposx>950</radioposx>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
 			</control>
 
 			<control type="radiobutton" id="8">
@@ -123,7 +123,7 @@
 				<radioposx>950</radioposx>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
 			</control>
 		
             <control type="grouplist" id="9101">

@@ -51,7 +51,7 @@
                     <onleft>9100</onleft>
                     <ondown>10</ondown>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
             
                 <control type="label">
@@ -92,7 +92,7 @@
 				    <control type="image">
 				        <height>66</height>
                         <include>DefSettingsRightGroupWidth</include>
-                        <texture border="12">common/border-inner-highlight.png</texture>
+                        <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                         <visible>Control.HasFocus(10)</visible>
                     </control>
 

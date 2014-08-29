@@ -14,7 +14,7 @@
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
                 <control type="image">
-                    <texture border="12">common/border-inner-highlight.png</texture>
+                    <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                     <height>66</height>
                     <width>DefSettingsLeftGroupWidth</width>
                 </control>
@@ -31,7 +31,7 @@
                 <include>DefSettingsRightGroup</include>
                 <ondown>2</ondown>
                 <control type="radiobutton" id="4">
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
 
                     <description>Enable Login Screen</description>
                     <radioposx>980</radioposx>
@@ -44,7 +44,7 @@
                     <ondown>5</ondown>
                 </control>
                 <control type="button" id="5">
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <description>Auto login</description>
                     <include>DefSettingsRightGroupWidth</include>
                     <label>$LOCALIZE[31120]</label>
@@ -92,7 +92,7 @@
                             <control type="image">
                                 <height>66</height>
                                 <include>DefSettingsRightGroupWidth</include>
-                                <texture border="12">common/border-inner-highlight.png</texture>
+                                <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
                             </control>
                             <control type="label">
                                 <posx>30</posx>

@@ -62,8 +62,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(37)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31208][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="32" description="Background">
                     <label>31202</label>
@@ -71,8 +71,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31202][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 
                 <control type="togglebutton" id="38" description="Fanart">
@@ -81,8 +81,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(38)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[20445][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="33" description="Movies Hub">
                     <label>31179</label>
@@ -90,8 +90,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31179][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="35" description="TV Hub">
                     <label>31180</label>
@@ -99,8 +99,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31180][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
@@ -108,8 +108,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[478][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="36" description="Extras">
                     <label>31235</label>
@@ -117,8 +117,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31235][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="39" description="Advanced">
                     <label>31234</label>
@@ -126,8 +126,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(39)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31234][/COLOR]</altlabel>
-                    <alttexturefocus border="12">common/border-inner-highlight.png</alttexturefocus>
-                    <alttexturenofocus border="12">common/border-inner-highlight.png</alttexturenofocus>
+                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
             </control>
             
@@ -166,7 +166,7 @@
                     <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
                     <selected>Skin.HasSetting(home.showinfoonwidget)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="216">
                     <label>31209</label>
@@ -177,7 +177,7 @@
                     <onclick>Skin.ToggleSetting(home.usemixedglobalwidget)</onclick>
                     <selected>Skin.HasSetting(home.usemixedglobalwidget)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="button" id="206">
                     <label>31149</label>
@@ -188,7 +188,7 @@
                     <onclick>Skin.SetPath(home.fanart)</onclick>
                     <enable>!Skin.HasSetting(home.usemixedglobalwidget)</enable>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="button" id="210">
                     <label>31203</label>
@@ -198,7 +198,7 @@
                     <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
                     <onclick>Skin.Reset(home.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="208">
@@ -210,7 +210,7 @@
                     <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
                     <selected>!Skin.HasSetting(home.widgetdown)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="268">
@@ -222,7 +222,7 @@
                     <onclick>Skin.ToggleSetting(home.invertwidgets)</onclick>
                     <selected>Skin.HasSetting(home.invertwidgets)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="241">
@@ -233,7 +233,7 @@
                     <onclick>SetProperty(item,home.501,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="242">
@@ -244,7 +244,7 @@
                     <onclick>SetProperty(item,home.502,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="243">
@@ -255,7 +255,7 @@
                     <onclick>SetProperty(item,home.503,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="244">
@@ -266,7 +266,7 @@
                     <onclick>SetProperty(item,home.504,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -282,7 +282,7 @@
                     <font>Font-ListInfo</font>
                     <onclick>ActivateWindow(3063)</onclick>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="214">
@@ -295,7 +295,7 @@
                     <selected>Skin.HasSetting(home.monochromemode)</selected>
                     <enable>!Skin.HasSetting(home.talltiles)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="213">
@@ -308,7 +308,7 @@
                     <selected>Skin.HasSetting(home.matchcolor)</selected>
                     <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="212">
@@ -321,7 +321,7 @@
                     <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <selected>Skin.HasSetting(home.dontfade)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -335,7 +335,7 @@
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
                     <selected>Skin.HasSetting(home.314.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="202">
@@ -349,7 +349,7 @@
                     <onclick>Skin.Reset(home.matchcolor)</onclick>
                     <selected>Skin.HasSetting(home.talltiles)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -367,7 +367,7 @@
                     <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetString(movie.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="302">
@@ -379,7 +379,7 @@
                     <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <enable>stringcompare(Skin.String(movie.widget),playlist)</enable>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="303">
@@ -391,7 +391,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="304">
@@ -403,7 +403,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="305">
@@ -415,7 +415,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="306">
@@ -427,7 +427,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                
                 <control type="button" id="307">
@@ -439,7 +439,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <!---------------->
@@ -457,7 +457,7 @@
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
                     
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="502">
@@ -469,7 +469,7 @@
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <enable>stringcompare(Skin.String(tvshow.widget),playlist)</enable>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="503">
@@ -481,7 +481,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="504">
@@ -493,7 +493,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="505">
@@ -505,7 +505,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="506">
@@ -517,7 +517,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="507">
@@ -529,7 +529,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <!------------>
                 <!-- FANART -->
@@ -545,7 +545,7 @@
                     <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
                     <selected>!Skin.HasSetting(disable.fanart)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="827">
                     <label>31230</label>
@@ -556,7 +556,7 @@
                     <onclick>Skin.ToggleSetting(Fanart.Animate)</onclick>
                     <selected>Skin.HasSetting(Fanart.Animate)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="803">
                     <label>31185</label>
@@ -567,7 +567,7 @@
                     <onclick>Skin.ToggleSetting(fanart.showmore)</onclick>
                     <selected>Skin.HasSetting(fanart.showmore)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="832">
                     <label>31145</label>
@@ -579,7 +579,7 @@
                     <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
                     <selected>!Skin.HasSetting(disable.bgvideo)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="805">
                     <label>31210</label>
@@ -590,7 +590,7 @@
                     <onclick>Skin.ToggleSetting(show.silhouette)</onclick>
                     <selected>Skin.HasSetting(show.silhouette)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -603,7 +603,7 @@
                     <onclick>Skin.ToggleSetting(purplefade)</onclick>
                     <selected>Skin.HasSetting(purplefade)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="button" id="633">
                     <label>31228</label>
@@ -617,7 +617,7 @@
                     <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/colours/)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <!--<control type="button" id="634">
@@ -632,7 +632,7 @@
                     <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/sunset/)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>-->
                 <control type="button" id="801">
                     <label>31138</label>
@@ -641,7 +641,7 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -658,7 +658,7 @@
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="402">
                     <label>$LOCALIZE[31140]</label>
@@ -672,7 +672,7 @@
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
                     <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(402)">Conditional</animation>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="403">
                     <label>31161</label>
@@ -684,7 +684,7 @@
                     <onclick>Skin.ToggleSetting(disable.pvricon)</onclick>
                     <selected>!Skin.HasSetting(disable.pvricon)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="404">
@@ -697,7 +697,7 @@
                     <onclick>Skin.ToggleSetting(showdetailedosdinfo)</onclick>
                     <selected>Skin.HasSetting(showdetailedosdinfo)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="405">
@@ -710,7 +710,7 @@
                     <onclick>Skin.ToggleSetting(hide.clearartosd)</onclick>
                     <selected>!Skin.HasSetting(hide.clearartosd)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <!------------>
@@ -726,7 +726,7 @@
                     <onclick condition="IsEmpty(Skin.String(home.headertext))">Skin.SetString(home.headertext)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(home.headertext))">Skin.Reset(home.headertext)</onclick>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="601">
@@ -738,7 +738,7 @@
                     <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
                     <selected>Skin.HasSetting(ActivateTvTunes)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="602">
                     <label>13305</label>
@@ -749,7 +749,7 @@
                     <onclick>Skin.ToggleSetting(disable.rss)</onclick>
                     <selected>!Skin.HasSetting(disable.rss)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="603">
                     <label>31188</label>
@@ -761,7 +761,7 @@
                     <selected>Skin.HasSetting(rss.tvnextaired)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <enable>!Skin.HasSetting(disable.rss)</enable>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="604">
                     <label>31189</label>
@@ -772,7 +772,7 @@
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
                     <selected>Skin.HasSetting(NextAired.Update)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 <control type="radiobutton" id="623">
                     <label>31177</label>
@@ -784,7 +784,7 @@
                     <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
                     <selected>!Skin.HasSetting(disable.weatherheader)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -799,7 +799,7 @@
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
                     <selected>!Skin.HasSetting(HideDebugInfo)</selected>
                     <visible>ControlGroup(3).HasFocus(39)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
@@ -813,7 +813,7 @@
                     <onclick>ReplaceWindow(startup)</onclick>
                     <selected>!Skin.HasSetting(skin.init)</selected>
                     <visible>ControlGroup(3).HasFocus(39)</visible>
-                    <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 

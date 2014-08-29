@@ -69,7 +69,7 @@
                             <visible>Control.HasFocus(20)</visible>
                             <height>listh</height>
                             <width>bannerwborder</width>
-                            <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
+                            <texture border="12" flipx="false"colordiffuse="PosterHighlight">common/white.png</texture>
                             <animation condition="Container(20).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(20).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         </control>
@@ -171,7 +171,7 @@
                             <visible>Control.HasFocus(21)</visible>
                             <height>listh</height>
                             <width>bannerwborder</width>
-                            <texture border="12" flipx="false">common/border-inner-highlight.png</texture>
+                            <texture border="12" flipx="false"colordiffuse="PosterHighlight">common/white.png</texture>
                             <animation condition="Container(21).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                             <animation condition="Container(21).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
                         </control>

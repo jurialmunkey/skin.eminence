@@ -119,7 +119,7 @@
             <align>left</align>
             <textcolor>Disabled</textcolor>
             <width>393</width>
-            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
 
         </control>
         
@@ -127,7 +127,7 @@
             <description>Default Button</description>
             <align>left</align>
             <font>Font-ListInfo</font>
-            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
 
         <control type="radiobutton" id="8">
@@ -135,7 +135,7 @@
             <align>left</align>
             <radioposx>984</radioposx>
             <font>Font-ListInfo</font>
-            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
 
         <control type="spincontrolex" id="9">
@@ -143,7 +143,7 @@
             <align>left</align>
             <reverse>yes</reverse>
             <font>Font-ListInfo</font>
-            <texturefocus border="12">common/border-inner-highlight.png</texturefocus>
+            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
     </controls>
 
