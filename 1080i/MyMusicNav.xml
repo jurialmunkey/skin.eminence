@@ -2,28 +2,28 @@
 <!-- Foundation -->
 <window id="502">
     <include>50Focus</include>
-	<allowoverlay>yes</allowoverlay>
-	<background>0</background>
+    <allowoverlay>yes</allowoverlay>
+    <background>0</background>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-	<views>50,51,52,53,54,55,56</views>
-	<onunload>ClearProperty(focushub,home)</onunload>
+    <views>50,51,500,53,54,55,56</views>
+    <onunload>ClearProperty(focushub,home)</onunload>
 
-	<controls>
+    <controls>
 
-		<control type="radiobutton" id="19">
-			<description>Filter (hidden)</description>
-			<include>HiddenButton</include>
-		</control>
+        <control type="radiobutton" id="19">
+            <description>Filter (hidden)</description>
+            <include>HiddenButton</include>
+        </control>
 
-		<include>GlobalBackground</include>
+        <include>GlobalBackground</include>
 
 
-		<include>DefMyNavViews</include>
-		
-		<include>DefFullScreenNav</include>
-		
-		
-		
+        <include>DefMyNavViews</include>
+        
+        <include>DefFullScreenNav</include>
+        
+        
+        
         <include>GlobalTopBar</include>
         
         
@@ -48,8 +48,8 @@
                     <alttexturefocus>-</alttexturefocus>
                     <alttexturenofocus>-</alttexturenofocus>
                     <label>584</label>
-					<altlabel>585</altlabel>
-					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <altlabel>585</altlabel>
+                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 
                 <control type="togglebutton" id="9007">
@@ -145,6 +145,6 @@
             <content target="music">$VAR[9360Content]</content>
 
         </control>
-	</controls>
+    </controls>
 
 </window>

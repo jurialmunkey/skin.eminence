@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="20">
-	<defaultcontrol always="true">50</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<background>0</background>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <views>50,51,500,53,54,55,56,57,58</views>
+    <allowoverlay>yes</allowoverlay>
+    <background>0</background>
 
-	<controls>
+    <controls>
 
-		<include>GlobalBackground</include>
-		
-		<include>DefMyNavViews</include>
-		
-		<include>GlobalTopBar</include>
+        <include>GlobalBackground</include>
+        
+        <include>DefMyNavViews</include>
+        
+        <include>GlobalTopBar</include>
         
         
-		
-		<control type="group">   
+        
+        <control type="group">   
             <include>DefMyNavBar</include>    
             <control type="grouplist" id="9000">
                 <include>DefMyNavBarGroupList</include>
@@ -50,6 +51,6 @@
             </control>
         </control>
 
-	</controls>
+    </controls>
 
 </window>

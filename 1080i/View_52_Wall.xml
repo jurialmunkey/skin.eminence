@@ -148,7 +148,7 @@
     <include name="52ListHeight699"><height>699</height></include>
     <include name="52ListHeight700"><height>700</height></include>
     <include name="View_52_Wall_NoInfo">
-        <control type="panel" id="52">
+        <control type="panel" id="500">
             <preloaditems>2</preloaditems>
             <visible>!Container.Content(songs)</visible>
             <width>1458</width>
@@ -157,8 +157,8 @@
             <onleft>60</onleft>
             <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
             <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
-            <onup>52</onup>
-            <ondown>52</ondown>
+            <onup>500</onup>
+            <ondown>500</ondown>
             <include>DefOnBack</include>
             <pagecontrol>60</pagecontrol>
             <viewtype label="31153">list</viewtype>
@@ -169,7 +169,7 @@
         </control>
     </include>
     <include name="View_52_Wall_Info">
-        <control type="panel" id="52">
+        <control type="panel" id="500">
             <visible>!Container.Content(songs)</visible>
             <width>972</width>
             <preloaditems>2</preloaditems>
@@ -178,8 +178,8 @@
             <onleft>60</onleft>
             <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
             <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>
-            <onup>52</onup>
-            <ondown>52</ondown>
+            <onup>500</onup>
+            <ondown>500</ondown>
             <include>DefOnBack</include>
             <pagecontrol>60</pagecontrol>
             <viewtype label="31153">list</viewtype>
@@ -324,12 +324,12 @@
     </include>
 	<include name="View_52_Wall">
         <control type="group">
-            <visible>Control.IsVisible(52)</visible>
+            <visible>Control.IsVisible(500)</visible>
             <include>Animation.ViewChange</include> 
             <include>DefSideLabel</include>  
         </control>
         <control type="group">
-            <visible>Control.IsVisible(52)</visible>
+            <visible>Control.IsVisible(500)</visible>
             <posx>listx</posx>
             <posy>listy</posy>
             <include>Animation.ViewChange</include> 

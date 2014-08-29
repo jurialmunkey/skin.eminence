@@ -60,7 +60,7 @@
         <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">special://skin/extras/icons/film.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">special://skin/extras/icons/tv.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">special://skin/extras/icons/video-addons.png</value>
-        <value condition="Window.IsVisible(MyPVR.xml)">special://skin/extras/icons/livetv.png</value>
+        <value condition="Window.IsVisible(MyPVR.xml) | Window.IsVisible(3204)">special://skin/extras/icons/livetv.png</value>
         <value condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">special://skin/extras/icons/songs.png</value>
         <value condition="Window.IsVisible(MyPics.xml)">special://skin/extras/icons/pictures.png</value>
         <value condition="Window.IsVisible(MyPrograms.xml) | Window.IsVisible(AddonBrowser.xml)">special://skin/extras/icons/addons.png</value>
@@ -85,7 +85,7 @@
         <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">$LOCALIZE[20343]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">$LOCALIZE[3]</value>
-        <value condition="Window.IsVisible(MyPVR.xml)">$LOCALIZE[31104]</value>
+        <value condition="Window.IsVisible(MyPVR.xml) | Window.IsVisible(3204)">$LOCALIZE[31104]</value>
         <value condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">$LOCALIZE[2]</value>
         <value condition="Window.IsVisible(SettingsCategory.xml) | Window.IsVisible(settings) | Window.IsVisible(SkinSettings.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsVisible(weather)">$LOCALIZE[8]</value>

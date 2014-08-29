@@ -4,7 +4,7 @@
 	<defaultcontrol always="true">56</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
     <onload>ClearProperty(focushub,home)</onload>
-	<views>50,51,52,53,54,55,56</views>
+	<views>50,51,500,53,54,55,56</views>
 	<background>0</background>
 	
 

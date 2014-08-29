@@ -1,5 +1,8 @@
 [B]0.9.49[/B]
 Flat Themes + Tweaks + Colours
+Wall to id500 for thumb view defaults in Youtube etc
+Fix PVR hub icon issue
+Fix Music Hub not returning
 
 [B]0.9.48[/B]
 Invert widget access
