@@ -49,6 +49,7 @@
                 <textcolor>TopBarIcon</textcolor>
                 <align>left</align>
                 <aligny>center</aligny>
+                <scroll>true</scroll>
             </control>
             
             <control type="image" id="403">

@@ -3,6 +3,9 @@ Streamline themes to be default/flat
 Colour schemes now go with either theme
 Removed sidebar texture in place of flat selection
 Added panel behind sidemenu and list
+Scrolling dialogs text
+fix id500 show info bug
+fix return home onleft bug
 
 [B]0.9.49[/B]
 Flat Themes + Tweaks + Colours

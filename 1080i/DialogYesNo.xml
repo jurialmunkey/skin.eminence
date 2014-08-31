@@ -27,6 +27,7 @@
                     <align>left</align>
                     <font>Font-Button</font>
                     <align>left</align>
+                    
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>  
                 <control type="label" id="2">
@@ -35,6 +36,7 @@
                     <width>700</width>
                     <align>left</align>
                     <font>Font-ListInfo</font>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>
                 <control type="label" id="3">
@@ -43,6 +45,7 @@
                     <width>700</width>
                     <font>Font-ListInfo</font>
                     <align>left</align>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
                 </control>  
                 <control type="label" id="4">
@@ -51,6 +54,7 @@
                     <width>700</width>
                     <font>Font-ListInfo</font>
                     <align>left</align>
+                    <scroll>true</scroll>
                     <textcolor>$VAR[HeaderColorFG]</textcolor>
                     <animation effect="slide" end="0,-32" condition="IsEmpty(Control.GetLabel(3))">Conditional</animation>
                 </control>                  
