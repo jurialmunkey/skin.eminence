@@ -295,7 +295,7 @@
                         
                         <item id="25">
                             <description>Widget / Background</description>
-                            <label>31202</label>
+                            <label>31181</label>
                             <icon>special://skin/extras/icons/eye.png</icon>
                             <onclick>SetProperty(item,$INFO[Window(3061).Property(item)],3065)</onclick>
                             <onclick>ActivateWindow(3065)</onclick>
