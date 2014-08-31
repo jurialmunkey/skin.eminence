@@ -385,7 +385,7 @@ msgid "Loading..."
 msgstr ""
 
 msgctxt "#31195"
-msgid "Access additional widget carousel on down"
+msgid "Enable widget carousel access on down"
 msgstr ""
 
 msgctxt "#31196"
