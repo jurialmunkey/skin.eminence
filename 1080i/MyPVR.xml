@@ -3,7 +3,6 @@
     <allowoverlay>no</allowoverlay>
     <background>0</background>
     <include>MyPVRGoChannels</include>
-    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     
     <controls>
     
@@ -35,6 +34,7 @@
             <visible>!Control.IsVisible(9001)</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <visible>!Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
+            <visible>!stringcompare(Window(home).Property(previoushub),home)</visible>
         </control>
         <control type="button" id="9009">
             <visible>!Window.IsActive(DialogPVRGuideSearch.xml)</visible>
