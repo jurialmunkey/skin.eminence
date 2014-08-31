@@ -385,7 +385,7 @@ msgid "Loading..."
 msgstr ""
 
 msgctxt "#31195"
-msgid "Press down to access additional homescreen widgets"
+msgid "Access additional widget carousel on down"
 msgstr ""
 
 msgctxt "#31196"
@@ -413,7 +413,7 @@ msgid "Set Colour"
 msgstr ""
 
 msgctxt "#31202"
-msgid "Background Widgets"
+msgid "Widget Carousel"
 msgstr ""
 
 msgctxt "#31203"
@@ -437,7 +437,7 @@ msgid "Movie Set"
 msgstr ""
 
 msgctxt "#31208"
-msgid "Home Tiles"
+msgid "Home Screen"
 msgstr ""
 
 msgctxt "#31209"

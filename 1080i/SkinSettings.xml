@@ -157,49 +157,8 @@
                 <!----------------------->
                 <!-- Background Window -->
                 <!----------------------->
-                <control type="radiobutton" id="209">
-                    <label>31198</label>
-                    <width>1063</width>
-                    <radioposx>984</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
-                    <selected>Skin.HasSetting(home.showinfoonwidget)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                <control type="radiobutton" id="216">
-                    <label>31209</label>
-                    <width>1063</width>
-                    <radioposx>984</radioposx>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.usemixedglobalwidget)</onclick>
-                    <selected>Skin.HasSetting(home.usemixedglobalwidget)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                <control type="button" id="206">
-                    <label>31149</label>
-                    <width>1063</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <label2>$INFO[Skin.String(home.fanart)]</label2>
-                    <onclick>Skin.SetPath(home.fanart)</onclick>
-                    <enable>!Skin.HasSetting(home.usemixedglobalwidget)</enable>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                <control type="button" id="210">
-                    <label>31203</label>
-                    <width>1063</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
-                    <onclick>Skin.Reset(home.fanart)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
+                
+                
                 
                 <control type="radiobutton" id="208">
                     <label>31195</label>
@@ -285,6 +244,32 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="216">
+                    <label>31209</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.usemixedglobalwidget)</onclick>
+                    <selected>Skin.HasSetting(home.usemixedglobalwidget)</selected>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="209">
+                    <label>31198</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
+                    <selected>Skin.HasSetting(home.showinfoonwidget)</selected>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                
+                
                 <control type="radiobutton" id="214">
                     <label>31206</label>
                     <width>1063</width>
@@ -338,19 +323,29 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="202">
-                    <label>31178</label>
+                <control type="button" id="206">
+                    <label>31149</label>
                     <width>1063</width>
-                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
-                    <onclick>Skin.Reset(home.dontfade)</onclick>
-                    <onclick>Skin.Reset(home.matchcolor)</onclick>
-                    <selected>Skin.HasSetting(home.talltiles)</selected>
+                    <label2>$INFO[Skin.String(home.fanart)]</label2>
+                    <onclick>Skin.SetPath(home.fanart)</onclick>
+                    <enable>!Skin.HasSetting(home.usemixedglobalwidget)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+                <!--<control type="button" id="210">
+                    <label>31203</label>
+                    <width>1063</width>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
+                    <onclick>Skin.Reset(home.fanart)</onclick>
+                    <visible>ControlGroup(3).HasFocus(37)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>-->
+                
+                
                 
                 
                
@@ -786,6 +781,22 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+                
+                <control type="radiobutton" id="202">
+                    <label>31178</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
+                    <onclick>Skin.Reset(home.dontfade)</onclick>
+                    <onclick>Skin.Reset(home.matchcolor)</onclick>
+                    <selected>Skin.HasSetting(home.talltiles)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                
                 
                 
                 <!-- ADVANCED -->
