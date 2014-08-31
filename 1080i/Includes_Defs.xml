@@ -316,10 +316,8 @@
     </variable>
     
     <include name="DefScrollBarMove">
-        <onleft>SetProperty(librarynode,$INFO[Container.FolderPath],home)</onleft>
-        <onleft>ActivateWindow($INFO[Window(home).Property(previoushub)])</onleft>
-        <!--<onleft condition="!IsEmpty(Container(9500).ListItem.Label) + [[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetProperty(focushub,1,home)</onleft>
-        <onleft condition="!IsEmpty(Container(9500).ListItem.Label) + [[Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes) | substring(Container.FolderPath,movies)]] | Window.IsVisible(MyMusicNav.xml)]">SetFocus(9500)</onleft>-->
+        <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">SetProperty(librarynode,$INFO[Container.FolderPath],home)</onleft>
+        <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">ActivateWindow($INFO[Window(home).Property(previoushub)])</onleft>
         <onright>50</onright>
     </include>
     

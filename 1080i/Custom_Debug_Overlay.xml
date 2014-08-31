@@ -24,7 +24,11 @@
 			<visible>!Skin.HasSetting(HideDebugInfo)</visible>
 
 			<!-- Window labels -->
-
+            <control type="label">
+				<include>WindowID</include>
+				<label>Return to $INFO[Window(home).Property(previoushub)]</label>
+			</control>
+            
 			<control type="label">
 				<include>WindowID</include>
 				<label>AddonBrowser.xml</label>
