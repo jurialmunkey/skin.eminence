@@ -6,6 +6,7 @@ Added panel behind sidemenu and list
 Scrolling dialogs text
 fix id500 show info bug
 fix return home onleft bug
+fix epg pvr highlight
 
 [B]0.9.49[/B]
 Flat Themes + Tweaks + Colours

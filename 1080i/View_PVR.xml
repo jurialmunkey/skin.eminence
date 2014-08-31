@@ -403,6 +403,7 @@
                         <width>340</width>
                         <height>67</height>
                         <label>$INFO[ListItem.ChannelName]</label>
+                        <textcolor>Selected</textcolor>
                     </control>
                     <control type="label">
                         <posx>45</posx>
@@ -410,6 +411,7 @@
                         <align>center</align>
                         <height>67</height>
                         <label>$INFO[ListItem.ChannelNumber]</label>
+                        <textcolor>Selected</textcolor>
                     </control>
                 </focusedchannellayout>    
                 <itemlayout height="71" width="250">
@@ -462,7 +464,7 @@
                     <control type="image" id="2">
                         <width>246</width>
                         <height>67</height>
-                        <texture border="5">common/border-inner.png</texture>
+                        <texture border="5">common/white.png</texture>
                         <colordiffuse>Highlight</colordiffuse>
                     </control>
 
