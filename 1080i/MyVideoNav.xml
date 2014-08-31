@@ -34,7 +34,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+            <visible>Control.IsVisible(50) | Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
@@ -105,7 +105,7 @@
                     <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(wallview.info)</onclick>
                     <onclick>ReloadSkin()</onclick>
-                    <visible>Control.IsVisible(52)</visible>
+                    <visible>Control.IsVisible(500)</visible>
                     <label>31150</label>
                     <altlabel>31151</altlabel>
                     <usealttexture>Skin.HasSetting(wallview.info)</usealttexture>
