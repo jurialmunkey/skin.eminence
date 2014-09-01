@@ -379,8 +379,13 @@
 	<include name="ContentRandomMoviesWidget"><content target="video">special://skin/extras/playlists/RandomMovies.xsp</content></include>	
 	<include name="ContentRandomEpisodesWidget"><content target="video">special://skin/extras/playlists/RandomEpisodes.xsp</content></include>
 	
-	<include name="ContentMixedWidget"><content target="video"><include>MixedWidget</include></content></include>
-	
+	<include name="ContentMixedWidget">
+        <include condition="!IsEmpty(Skin.String(global.widget.path))">ContentGlobalWidgetPath</include>
+        <include condition="IsEmpty(Skin.String(global.widget.path))">ContentMixedWidgetPath</include>
+    </include>
+    <include name="ContentMixedWidgetPath"><content target="video"><include>MixedWidget</include></content></include>
+	<include name="ContentGlobalWidgetPath"><content target="video">$INFO[Skin.String(global.widget.path)]</content></include>
+    
 	<include name="ContentYoutubeTrailers"><content target="video">plugin://plugin.video.youtube/?contact=trailers&amp;external=true&amp;feed=uploads&amp;login=false&amp;path=%2froot%2fexplore%2ftrailers</content></include>
 	
     <include name="ContentLibraryRecentMoviesWidget"><content target="video">videodb://recentlyaddedmovies/</content></include>

@@ -55,7 +55,7 @@
         <value condition="Window.IsVisible(weather)">$INFO[Skin.String(weather.fanart)]$INFO[Window(Weather).Property(Current.FanartCode)]/</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="![Control.HasFocus(9500) | Control.HasFocus(9502) | Control.HasFocus(9501)] + !IsEmpty(ListItem.Property(Fanart_Image))">$INFO[ListItem.Property(Fanart_Image)]</value>
-        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + Skin.HasSetting(home.usemixedglobalwidget)">$INFO[Container(9600).ListItem.Icon]</value>
+        <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + Skin.HasSetting(home.usemixedglobalwidget) + IsEmpty(Skin.String(global.widget.path))">$INFO[Container(9600).ListItem.Icon]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + !IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Art(fanart)]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + !Control.HasFocus(9600)">$INFO[Container(9600).ListItem.Path]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + Control.HasFocus(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
@@ -292,7 +292,7 @@
                     <width>650</width>
                     <orientation>vertical</orientation>
                     <control type="label">
-                        <label>$LOCALIZE[31112] / $LOCALIZE[31110]</label>
+                        <label>$VAR[GlobalWidget.InfoLabel]</label>
                         <aligny>top</aligny>
                         <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
                         <textcolor>TopBarDarkIcon</textcolor>
@@ -305,21 +305,53 @@
                         <height>70</height>
                         <textcolor>Highlight</textcolor>
                     </control>
-                    <control type="textbox">
-                        <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
-                        <aligny>top</aligny>
-                        <height>120</height>
-                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
-                        <textcolor>TopBarDarkIcon</textcolor>
-                        <font>Font-ListInfo</font>
+                    <control type="grouplist">
+                        <visible>IsEmpty(Skin.String(global.widget.path))</visible>
+                        <control type="textbox">
+                            <label>$INFO[Container(9600).ListItem.Property(Plot)]</label>
+                            <aligny>top</aligny>
+                            <height>120</height>
+                            <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                            <textcolor>TopBarDarkIcon</textcolor>
+                            <font>Font-ListInfo</font>
+                        </control>
+                        <control type="label">
+                            <label>$INFO[Container(9600).ListItem.Label2]</label>
+                            <aligny>center</aligny>
+                            <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                            <textcolor>TopBarDarkIcon</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <height>65</height>
+                        </control>
                     </control>
-                    <control type="label">
-                        <label>$INFO[Container(9600).ListItem.Label2]</label>
-                        <aligny>center</aligny>
-                        <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
-                        <textcolor>TopBarDarkIcon</textcolor>
-                        <font>Font-ListInfo-Small</font>
-                        <height>65</height>
+                    <control type="grouplist">
+                        <visible>!IsEmpty(Skin.String(global.widget.path))</visible>
+                        <control type="textbox">
+                            <label>$INFO[Container(9600).ListItem.Plot]$INFO[Container(9600).ListItem.Property(Album_Description)]</label>
+                            <aligny>top</aligny>
+                            <height>120</height>
+                            <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                            <textcolor>TopBarDarkIcon</textcolor>
+                            <font>Font-ListInfo</font>
+                        </control>
+                        <control type="label">
+                            <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle,,  •  ]$INFO[Container(9600).ListItem.Year]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
+                            <aligny>center</aligny>
+                            <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                            <font>Font-ListInfo-Small</font>
+                            <height>65</height>
+                            <textcolor>TopBarDarkIcon</textcolor>
+                            <visible>!IsEmpty(Container(9600).ListItem.Year)</visible>
+                        </control>
+                        <control type="label">
+                            <label>$INFO[Container(9600).ListItem.Artist,,  •  ]$INFO[Container(9600).ListItem.TvShowTitle]$INFO[Container(9600).ListItem.RatingAndVotes,  •  ,]</label>
+                            <aligny>center</aligny>
+                            <animation effect="fade" start="100" end="70" condition="true">Conditional</animation>
+                            <font>Font-ListInfo-Small</font>
+                            <height>65</height>
+                            <textcolor>TopBarDarkIcon</textcolor>
+                            <visible>IsEmpty(Container(9600).ListItem.Year)</visible>
+                        </control>
                     </control>
                 </control>
             </control>

@@ -441,7 +441,7 @@ msgid "Home Screen"
 msgstr ""
 
 msgctxt "#31209"
-msgid "Use global mixed widget (disable to set widgets for individual tiles)"
+msgid "Set global background widget"
 msgstr ""
 
 msgctxt "#31210"

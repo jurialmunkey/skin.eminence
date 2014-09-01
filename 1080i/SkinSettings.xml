@@ -11,7 +11,7 @@
             <posx>110</posx>
             <width>48</width>
             <height>48</height>
-            <visible>!Window.IsVisible(3065)</visible>
+            <visible>!Window.IsVisible(3065) + !Window.IsVisible(3078)</visible>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
             <aspectratio>keep</aspectratio>
@@ -27,7 +27,7 @@
         <control type="group">
             <posx>horzpad</posx>
             <posy>70</posy>
-            <visible>!Window.IsVisible(3065)</visible>
+            <visible>!Window.IsVisible(3065) + !Window.IsVisible(3078)</visible>
             <include>DialogVisibility</include>
             <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
             <include>Animation.SlideOpen.Left</include>
@@ -44,7 +44,7 @@
             <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
-            <visible>!Window.IsVisible(3065)</visible>
+            <visible>!Window.IsVisible(3065) + !Window.IsVisible(3078)</visible>
             <include>DefSettingsLines</include>
             <control type="grouplist" id="3">
                 <description>Control Area</description>
@@ -244,14 +244,14 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="216">
+                <control type="button" id="216">
                     <label>31209</label>
                     <width>1063</width>
-                    <radioposx>984</radioposx>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.usemixedglobalwidget)</onclick>
-                    <selected>Skin.HasSetting(home.usemixedglobalwidget)</selected>
+                    <onclick>Skin.SetBool(home.usemixedglobalwidget)</onclick>
+                    <onclick>ActivateWindow(3078)</onclick>
+                    <label2>$VAR[SkinSettings.MixedWidget]</label2>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>

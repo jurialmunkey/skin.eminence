@@ -43,6 +43,17 @@
 	    <value condition="[Control.IsVisible(50) | Control.IsVisible(57)] + !Window.IsVisible(MyPVR.xml)">•</value>
 	</variable>
 	
+    <variable name="GlobalWidget.InfoLabel">
+        <value condition="!IsEmpty(Skin.String(global.widget.path.type)) + !IsEmpty(Skin.String(global.widget.path))">$INFO[Skin.String(global.widget.path.type)]</value>
+        <value>$LOCALIZE[31112] / $LOCALIZE[31110]</value>
+    </variable>
+    
+    <variable name="SkinSettings.MixedWidget">
+        <value condition="!Skin.HasSetting(home.usemixedglobalwidget)">$LOCALIZE[1223]</value>
+        <value condition="!IsEmpty(Skin.String(global.widget.path))">$INFO[Skin.String(global.widget.path)]</value>
+        <value condition="IsEmpty(Skin.String(global.widget.path))">$LOCALIZE[31112] / $LOCALIZE[31110]</value>
+    </variable>
+    
 	<variable name="ExtraInfo">
 	    <value condition="Container.Content(Sets) | substring(ListItem.Path,videodb://movies/sets,left)">$LOCALIZE[31207]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31107]  •  ]$VAR[HDSD]$INFO[ListItem.VideoResolution, ,  •  ]$INFO[ListItem.Rating]</value>
