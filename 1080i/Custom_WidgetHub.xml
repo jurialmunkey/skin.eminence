@@ -1,605 +1,196 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
-<window type="window" id="3102">
-	<defaultcontrol always="true">9500</defaultcontrol>
+<window type="window" id="3101">
+	<defaultcontrol always="true">9511</defaultcontrol>
 	<allowoverlay>false</allowoverlay>
+	<onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>
 	<controls>
-	    <control type="image">
-            <include>Dimensions_Fullscreen</include>
-            <texture colordiffuse="Background">common/white.png</texture>
-        </control>
-        <control type="button">
-            <posy>600</posy>
-            <posx>102</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>Control.HasFocus(9705)</visible>
-        </control>
-        
-        <control type="button">
-            <posy>600</posy>
-            <posx>102</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="true">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>[[Control.HasFocus(9501) | Control.HasFocus(9500)] + !IsEmpty(Container(9700).ListItem.Label)] | Control.HasFocus(9701)</visible>
-        </control>
-        
-        
-        
-        <control type="button">
-            <posy>600</posy>
-            <posx>1770</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>Control.HasFocus(9700)</visible>
-        </control>
-        
-        <control type="button">
-            <posy>600</posy>
-            <posx>1770</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>[Control.HasFocus(9501) | Control.HasFocus(9500)]</visible>
-        </control>
-        
-        <control type="button">
-            <posy>600</posy>
-            <posx>1770</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
-            <visible>Control.HasFocus(9705)  + !IsEmpty(Container(9701).ListItem.Label)</visible>
-        </control>
-        
+        <include>GlobalBackground</include>
+
+		<control type="grouplist" description="menu" id="9512">
+		    <include>Animation.DelayFadeIn</include>
+	        <posy>680</posy>
+	        <orientation>horizontal</orientation>
+	        <align>center</align>
+	        <width>1920</width>
+	        <itemgap>64</itemgap>
+	        <control type="button" id="1">
+			    <width>128</width>
+			    <height>128</height>
+			    <texturenofocus colordiffuse="7F000000">widget/movie.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
+                <onclick>SetProperty(widget,movies,home)</onclick>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <visible>!stringcompare(Window(home).Property(widget),movies)</visible>
+		    </control>
+		    <control type="button" id="2">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="3fffffff">widget/movie.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
+                <onclick>SetProperty(widget,movies,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),movies)</visible>
+		    </control>
+		    <control type="button" id="3">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="7F000000">widget/tv.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
+                <onclick>SetProperty(widget,episodes,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),episodes)</visible>
+		    </control>
+		    <control type="button" id="4">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="3Fffffff">widget/tv.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
+                <onclick>SetProperty(widget,episodes,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
+		    </control>
+		    <control type="button" id="5">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="7F000000">widget/livetv.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
+                <onclick>SetProperty(widget,nextaired,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),nextaired)</visible>
+		    </control>
+		    <control type="button" id="6">
+			    <width>128</width>
+			    <height>128</height>
+			    <onup>9511</onup>
+                <ondown>9511</ondown>
+                <texturenofocus colordiffuse="3Fffffff">widget/livetv.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
+                <onclick>SetProperty(widget,nextaired,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
+		    </control>
+		    <control type="button" id="7">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="7F000000">widget/trailer.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
+                <onclick>SetProperty(widget,trailers,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),trailers)</visible>
+		    </control>
+		    <control type="button" id="8">
+			    <width>128</width>
+			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <texturenofocus colordiffuse="3Fffffff">widget/trailer.png</texturenofocus>
+                <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
+                <onclick>SetProperty(widget,trailers,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
+		    </control>
+		</control>
 	    <control type="group">
+	        <posy>240</posy>
+	        <include>Animation.SlideOpen.Up</include>
+	        <control type="image">
+	            <posy>0</posy>
+	            <texture colordiffuse="TopBarDark">common/white.png</texture>
+	            <height>380</height>
+	            <width>1920</width>
+	        </control>
+        
+            <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),movies)</visible>
+                <onup>9512</onup>
+                <ondown>9512</ondown>
+	            <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
+	        </control>
+            <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
+	            <onup>9512</onup>
+                <ondown>9512</ondown>
+                <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
+	        </control>
+	        <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
+	            <onup>9512</onup>
+                <ondown>9512</ondown>
+                <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
+	        </control>
+            <control type="wraplist" id="9511">
+                <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
+                <onup>9512</onup>
+                <ondown>9512</ondown>
+                <include>WidgetHubListContent</include>
+	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
+	        </control>
             
-            <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
-	        <animation effect="slide" start="0" end="1920" time="200" condition="Control.HasFocus(9700)">Conditional</animation>
-	        <animation effect="slide" start="0" end="-1920" time="200" condition="Control.HasFocus(9705)">Conditional</animation>
-	        <animation effect="slide" start="0" end="-3840" time="200" condition="Control.HasFocus(9701)">Conditional</animation>
 	        <control type="group">
-                <posx>-1669</posx>
-                <posy>280</posy>
+                <visible>!IsEmpty(Container(9511).ListItem.Label)</visible>
+	            <posx>820</posx>
                 <control type="image">
+                    <posx>0</posx>
+                    <posy>20</posy>
+                    <width>820</width>
+                    <height>340</height>
+                    <texture colordiffuse="TopBarDark" border="100">home/tile-600x340.png</texture>                
+                </control>
+                <control type="grouplist">
                     
-                    <width>1416</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control>     
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>-65</posy>
-                    <width>690</width>
-                    <font>Font-WidgetCategory</font>
-                    <label>31110</label>
-                    <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>               
-                    
-                <control type="wraplist" id="9700">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <onleft>Control.Move(9700,1)</onleft>
-                    <onup>9700</onup>
-                    <ondown>9700</ondown>
-                    <onright>9500</onright>
-                    <onback>9500</onback>
-                    <viewtype label="31155">list</viewtype>
-                    <scrolltime tween="quadratic">400</scrolltime>
+                    <posx>70</posx>
+                    <posy>40</posy>
+                    <width>670</width>
                     <orientation>vertical</orientation>
-                    <itemlayout width="1394" height="668">
-         
-                        <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        </control>
-                    
-                    </itemlayout>
-
-                    <focusedlayout width="1394" height="668">
-
-                        <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        
-                        </control>
-
-                    </focusedlayout>
-                    <include>ContentRecommendedEpisodesWidget</include>
-
-                </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
-
-                <control type="group">
-                    <control type="image">
-                        <posx>11</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <texture colordiffuse="PanelBG">common/white.png</texture>
-                        <aspectratio>scale</aspectratio>
-                        <animation effect="fade" end="50" condition="true">Conditional</animation>
-                    </control>
-                
-            
                     <control type="label">
-                        <posx>31</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <label>$INFO[Container(9700).ListItem.Label]</label>
-                    </control>
-            
-                    <control type="label">
-                        <posx>1385</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[Container(9700).ListItem.Label2]</label>
-                    </control>
-                </control>
-            </control>
-            <control type="group">
-                <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
-                <posx>233</posx>
-                <posy>70</posy>
-                <include>DialogVisibility</include>
-    
-                <control type="list" id="9500">
-                    <posx>984</posx>
-                    <posy>210</posy>
-                    <width>450</width>
-                    <height>700</height>
-                    <onright>9705</onright>
-                    <onleft>9700</onleft>                
-                    <onup>9500</onup>
-                    <ondown>9500</ondown>
-                    <orientation>vertical</orientation>
-                    <itemlayout width="450" height="100">
-                        <control type="image">
-                            <width>450</width>
-                            <height>90</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>
-              
-                        <control type="label">
-                            <posx>30</posx>
-                            <posy>-2</posy>
-                            <width>390</width>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <textcolor>PanelFG</textcolor>
-                            <label>$INFO[ListItem.TvShowTitle]</label>
-                        </control>
-                        <control type="label">
-                            <posx>30</posx>
-                            <posy>30</posy>
-                            <width>390</width>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <textcolor>PanelFG</textcolor>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout width="450" height="100">
-                        <control type="image">
-                            <width>450</width>
-                            <height>90</height>
-                            <texture border="12" colordiffuse="PosterHighlight">common/border-inner.png</texture>
-                            <visible>Control.HasFocus(9500)</visible>
-                            <animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                            <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                
-                        </control>
-                        <control type="image">
-                            <width>450</width>
-                            <height>90</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                            <visible>!Control.HasFocus(9500)</visible>
-                        </control>
-                        <control type="label">
-                            <posx>30</posx>
-                            <posy>-2</posy>
-                            <width>390</width>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <textcolor>Selected</textcolor>
-                            <label>$INFO[ListItem.TvShowTitle]</label>
-                        </control>
-                        <control type="label">
-                            <posx>30</posx>
-                            <posy>30</posy>
-                            <width>390</width>
-                            <align>left</align>
-                            <aligny>center</aligny>
-                            <textcolor>Selected</textcolor>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                    </focusedlayout>
-                    <include>ContentRecentEpisodesWidget</include>
-
-                </control>
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>145</posy>
-                    <width>690</width>
-                    <font>Font-WidgetCategory</font>
-                    <label>$LOCALIZE[31109] $LOCALIZE[20343]</label>
-                    <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>
-                <control type="group">
-                    <posx>18</posx>
-                    <posy>210</posy>
-                    <control type="group">
-                        <control type="image">
-                            <width>955</width>
-                            <height>690</height>
-                            <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                        </control>
-                       <!-- <control type="image">
-                            <posy>682</posy>
-                            <width>955</width>
-                            <height>8</height>
-                            <texture colordiffuse="Highlight" border="5">common/white.png</texture>
-                        </control>-->
-                        <control type="label">
-                            <posx>20</posx>
-                            <posy>555</posy>
-                            <width>825</width>
-                            <align>left</align>
-                            <label>$INFO[Container(9500).ListItem.TvShowTitle]</label>
-                        </control>
-                        <control type="label">
-                            <posx>935</posx>
-                            <posy>555</posy>
-                            <width>915</width>
-                            <align>right</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[Container(9500).ListItem.Label]$INFO[Container(9500).ListItem.Premiered,  •  ,]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>20</posx>
-                            <posy>606</posy>
-                            <width>915</width>
-                            <height>70</height>
-                            <align>left</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[Container(9500).ListItem.Plot]</label>
-                        </control>
-                        <control type="image">
-                            <posx>11</posx>
-                            <posy>11</posy>
-                            <width>933</width>
-                            <height>537</height>
-                            <texture background="true">$INFO[Container(9500).ListItem.Icon]</texture>
-                            <aspectratio>scale</aspectratio>
-                            <fadetime>250</fadetime>
-                            </control>
-                    </control>
-                   
-                    <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <width>933</width>
-                        <height>537</height>
-                        <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <width>933</width>
-                        <height>537</height>
-                        <texture>common/white.png</texture>
-                        <aspectratio>scale</aspectratio>
-                        <colordiffuse>Black</colordiffuse>
-                        <visible>Player.HasVideo</visible>
-                    </control>
-                    <control type="videowindow">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <width>933</width>
-                        <height>537</height>
-                    </control>
-                </control>
-            </control>
-            <control type="group">
-                <posx>2153</posx>
-                <posy>70</posy>
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>145</posy>
-                    <width>690</width>
-                    <font>Font-WidgetCategory</font>
-                    <label>$LOCALIZE[31109] $LOCALIZE[20342]</label>
-                    <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>
-                <control type="panel" id="9705">
-                    <posx>18</posx>
-                    <posy>201</posy>
-                    <width>956</width>
-                    <height>708</height>
-                    <onright>9701</onright>
-                    <onleft>9500</onleft>
-                    <onback>9500</onback>
-                    <onup>52</onup>
-                    <ondown>52</ondown>
-                    <viewtype label="31153">list</viewtype>
-                    <scrolltime tween="quadratic">350</scrolltime>
-                    <orientation>vertical</orientation>
-                    <itemlayout width="239" height="354">
-                        <control type="group">
-                            <posy>9</posy>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                            </control>
- 
-            
-                            <control type="image">
-                                <posx>11</posx>
-                                <posy>11</posy>
-                                <height>314</height>
-                                <width>199</width>
-                                <texture background="true">$VAR[PosterImage]</texture>
-                                <aspectratio aligny="top">scale</aspectratio>
-                                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                                <bordersize>1</bordersize>
-                            </control>
-                        </control>
-
-                    </itemlayout>
-                    <focusedlayout width="239" height="354">
-                        <control type="group">
-                            <posy>9</posy>
-                            <control type="image">
-                                <height>336</height>
-                                <width>221</width>
-                                <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
-                            </control>
- 
-            
-                            <control type="image">
-                                <posx>11</posx>
-                                <posy>11</posy>
-                                <height>314</height>
-                                <width>199</width>
-                                <texture background="true">$VAR[PosterImage]</texture>
-                                <aspectratio aligny="top">scale</aspectratio>
-                                <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                                <bordersize>1</bordersize>
-                            </control>
-                        </control>
-
-                    </focusedlayout>
-                    <include>ContentLibraryRecentMoviesWidget</include>
-                </control>
-                <control type="group">
-                    <posx>974</posx>
-                    <posy>210</posy>
-                    <control type="image">
-                        <height>690</height>
-                        <width>460</width>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                    </control>
-
-                    <control type="image">
-                        <posx>11</posx>
-                        <posy>11</posy>
-                        <width>434</width>
-                        <height>237</height>
-                        <fadetime>350</fadetime>
-                        <texture background="true">$INFO[Container(9705).ListItem.Art(fanart)]</texture>
-                        <aspectratio aligny="top">scale</aspectratio>
-                        <bordertexture border="1" colordiffuse="BorderColor">common/border.png</bordertexture>
-                        <bordersize>1</bordersize>
+                        <label>$VAR[WidgetHubLabel]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <height>35</height>
                     </control>
                     <control type="label">
-                        <posx>22</posx>
-                        <posy>254</posy>
-                        <height>68</height>
-                        <width>412</width>
-                        <textcolor>Selected</textcolor>
-                        <align>left</align>
-                        <font>Font-ListHeader</font>
-                        <label>$INFO[Container(9705).ListItem.Label]</label>
-                        <scroll>true</scroll>
+                        <label>$INFO[Container(9511).ListItem.Label]</label>
+                        <aligny>top</aligny>
+                        <align>center</align>
+                        <font>Font-WidgetInfoTitle</font>
+                        <height>70</height>
+                        <textcolor>Highlight</textcolor>
                     </control>
                     <control type="textbox">
-                        <posx>22</posx>
-                        <posy>330</posy>
-                        <height>270</height>
-                        <width>412</width>
-                        <textcolor>Selected</textcolor>
-                        <align>justify</align>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[Container(9705).ListItem.Plot]</label>
-                    </control>
-                    <control type="label">
-                        <posx>22</posx>
-                        <posy>618</posy>
-                        <height>68</height>
-                        <width>412</width>
-                        <textcolor>Selected</textcolor>
+                        <label>$INFO[Container(9511).ListItem.Plot]$INFO[Container(9511).ListItem.Property(Album_Description)]</label>
+                        <aligny>top</aligny>
                         <align>center</align>
+                        <height>120</height>
                         <font>Font-ListInfo</font>
-                        <label>$INFO[Container(9705).ListItem.Year]$INFO[Container(9705).ListItem.Rating,  •  ,]</label>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle,,  •  ]$INFO[Container(9511).ListItem.Year]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>!IsEmpty(Container(9511).ListItem.Year)</visible>
+                    </control>
+                    <control type="label">
+                        <label>$INFO[Container(9511).ListItem.Artist,,  •  ]$INFO[Container(9511).ListItem.TvShowTitle]$INFO[Container(9511).ListItem.RatingAndVotes,  •  ,]</label>
+                        <aligny>center</aligny>
+                        <align>center</align>
+                        <font>Font-ListInfo-Small</font>
+                        <height>65</height>
+                        <visible>IsEmpty(Container(9511).ListItem.Year)</visible>
                     </control>
                 </control>
             </control>
-            <control type="group">
-                <posx>4091</posx>
-                <posy>280</posy>
-                <control type="image">
-                    
-                    <width>1416</width>
-                    <height>690</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control>     
-                <control type="label">
-                    <posx>18</posx>
-                    <posy>-65</posy>
-                    <width>690</width>
-                    <font>Font-WidgetCategory</font>
-                    <label>31193</label>
-                    <animation effect="fade" end="25" condition="true">Conditional</animation>
-                </control>               
-                    
-                <control type="wraplist" id="9701">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <onright>Control.Move(9701,1)</onright>
-                    <onup>9701</onup>
-                    <ondown>9701</ondown>
-                    <onleft>9705</onleft>
-                    <onback>9705</onback>
-                    <viewtype label="31155">list</viewtype>
-                    <scrolltime tween="quadratic">400</scrolltime>
-                    <orientation>vertical</orientation>
-                    <itemlayout width="1394" height="668">
-         
-                        <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        </control>
-                    
-                    </itemlayout>
-
-                    <focusedlayout width="1394" height="668">
-
-                        <control type="image">
-                            <width>1394</width>
-                            <height>668</height>
-                            <texture background="true">$INFO[ListItem.Icon]</texture>
-                            <aspectratio aligny="center">scale</aspectratio>
-                        
-                        </control>
-
-                    </focusedlayout>
-                    <include>ContentYoutubeTrailers</include>
-
-                </control>
-                <control type="image">
-                    <posx>11</posx>
-                    <posy>11</posy>
-                    <width>1394</width>
-                    <height>668</height>
-                    <texture border="1" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
-
-                <control type="group">
-                    <control type="image">
-                        <posx>11</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <texture colordiffuse="PanelBG">common/white.png</texture>
-                        <aspectratio>scale</aspectratio>
-                        <animation effect="fade" end="50" condition="true">Conditional</animation>
-                    </control>
-                
-            
-                    <control type="label">
-                        <posx>31</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <label>$INFO[Container(9701).ListItem.Label]</label>
-                    </control>
-            
-                    <control type="label">
-                        <posx>1385</posx>
-                        <posy>615</posy>
-                        <width>1394</width>
-                        <height>64</height>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <textcolor>Selected</textcolor>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[Container(9701).ListItem.Label2]</label>
-                    </control>
-                </control>
-            </control>
-            
-            
-        </control>
+	    </control>
+	    
         <include>GlobalTopBar</include>
 		
 	    
