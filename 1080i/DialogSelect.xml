@@ -70,6 +70,7 @@
             </control>
         
             <control type="list" id="3">
+                <height>552</height>
                 <include>DefSettingsRightGroup</include>
                 <onleft>60</onleft>
                 <onright>5</onright>
@@ -152,6 +153,7 @@
             
             <control type="list" id="6">
                 <height>552</height>
+                
                 <include>DefSettingsRightGroup</include>
                 
                 
