@@ -555,3 +555,7 @@ msgstr ""
 msgctxt "#31237"
 msgid "Invert widget access"
 msgstr ""
+
+msgctxt "#31238"
+msgid "Open carousel in own window"
+msgstr ""

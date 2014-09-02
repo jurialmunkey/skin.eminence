@@ -2,6 +2,7 @@
 Added ability to customise global widget type
 Fix silhouette not showing
 Fix widget window 3101
+Widget carousel as own window option
 
 [B]0.9.50[/B]
 Streamline themes to be default/flat

@@ -154,9 +154,9 @@
                 <ondown>5</ondown>
                
                 
-                <!----------------------->
-                <!-- Background Window -->
-                <!----------------------->
+                <!---------------------->
+                <!-- Carousel Widgets -->
+                <!---------------------->
                 
                 
                 
@@ -168,6 +168,18 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
                     <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="267">
+                    <label>31238</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(widget.window)</onclick>
+                    <selected>Skin.HasSetting(widget.window)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
@@ -334,19 +346,6 @@
                     <visible>ControlGroup(3).HasFocus(37)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <!--<control type="button" id="210">
-                    <label>31203</label>
-                    <width>1063</width>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <enable>!IsEmpty(Skin.String(home.fanart)) + !Skin.HasSetting(home.usemixedglobalwidget)</enable>
-                    <onclick>Skin.Reset(home.fanart)</onclick>
-                    <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>-->
-                
-                
-                
                 
                
                 <!---------------->
@@ -604,7 +603,6 @@
                     <label>31228</label>
                     <width>1063</width>
                     <align>left</align>
-                    <!--<visible>IsEmpty(Skin.String(global.background))</visible>-->
                     <font>Font-ListInfo</font>
                     <label2>$INFO[Skin.String(global.background)]</label2>
                     <enable>!Skin.HasSetting(purplefade)</enable>
@@ -614,21 +612,7 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                
-                <!--<control type="button" id="634">
-                    <label>31229</label>
-                    <width>1063</width>
-                    <align>left</align>
-                    <visible>!IsEmpty(Skin.String(global.background))</visible>
-                    <font>Font-ListInfo</font>
-                    <label2>$INFO[Skin.String(global.background)]</label2>
-                    <enable>!Skin.HasSetting(purplefade)</enable>
-                    <onclick condition="IsEmpty(Skin.String(global.background))">SetProperty(showimages,1,home)</onclick>
-                    <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/sunset/)</onclick>
-                    <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
-                    <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>-->
+
                 <control type="button" id="801">
                     <label>31138</label>
                     <width>1063</width>
@@ -832,20 +816,6 @@
             </control>
         </control>
         
-        <!--<control type="scrollbar" id="60">
-            <posx>650</posx>
-            <posy>280</posy>
-            <height>549</height>
-            <texturesliderbar colordiffuse="PosterBorder">common/white.png</texturesliderbar>
-            <onleft>3</onleft>
-            <include>DialogVisibility</include>
-            <onright>ClearProperty(movement,settings)</onright>
-            <onright>$VAR[DefSettingsOnRight]</onright>
-            <include>Animation.SlideOpen.Left</include>
-            <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
-            <animation effect="fade" start="100" end="20" time="300" condition="!Control.HasFocus(60)">Conditional</animation>
-        </control>-->
-
         <include>GlobalTopBar</include>
         
         

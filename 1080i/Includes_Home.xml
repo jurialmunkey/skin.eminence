@@ -84,10 +84,12 @@
         <onup condition="Player.HasVideo + Window.IsVisible(home)">Action(fullscreen)</onup>
         <onup condition="!Player.HasVideo + Window.IsVisible(home) + !Skin.HasSetting(home.invertwidgets)">SetFocus(9600)</onup>
         <onup condition="!Player.HasVideo + Window.IsVisible(home) + !Skin.HasSetting(home.invertwidgets)">CancelAlarm(Move9600,true)</onup>
-        <onup condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + Skin.HasSetting(home.invertwidgets)">SetFocus(9511)</onup>
+        <onup condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + Skin.HasSetting(home.invertwidgets) + !Skin.HasSetting(widget.window)">SetFocus(9511)</onup>
+        <onup condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + Skin.HasSetting(home.invertwidgets) + Skin.HasSetting(widget.window)">ActivateWindow(3101)</onup>
 
         <ondown condition="Player.HasMedia">ActivateWindow(videoosd)</ondown>
-        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + !Skin.HasSetting(home.invertwidgets)">SetFocus(9511)</ondown>
+        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + !Skin.HasSetting(home.invertwidgets) + !Skin.HasSetting(widget.window)">SetFocus(9511)</ondown>
+        <ondown condition="!Player.HasMedia + !Skin.HasSetting(home.widgetdown) + !Skin.HasSetting(home.invertwidgets) + Skin.HasSetting(widget.window)">ActivateWindow(3101)</ondown>
         <ondown condition="!Player.HasVideo + Window.IsVisible(home) + Skin.HasSetting(home.invertwidgets)">SetFocus(9600)</ondown>
         <ondown condition="!Player.HasVideo + Window.IsVisible(home) + Skin.HasSetting(home.invertwidgets)">CancelAlarm(Move9600,true)</ondown>
         <onback condition="Window.IsVisible(PlayerControls.xml) + Player.HasMedia + Skin.HasSetting(home.autopop)">Action(fullscreen)</onback>
