@@ -170,7 +170,7 @@
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
                 <visible>!Window.IsVisible(home)</visible>
-                <visible>IsEmpty(Control.GetLabel(9238))</visible>
+                <visible>stringcompare(Control.GetLabel(9238),common/null.png)</visible>
                 <visible>Skin.HasSetting(show.silhouette)</visible>
             </control>
             <control type="group">      
