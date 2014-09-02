@@ -1,91 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="103">
-	<defaultcontrol always="true">300</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<zorder>10</zorder>
+    <defaultcontrol always="true">300</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>10</zorder>
 
-	<coordinates>
-		<origin x="0" y="0" />
-	</coordinates>
+    <coordinates>
+        <origin x="0" y="0" />
+    </coordinates>
 
-	<controls>
+    <controls>
         <control type="image">
-	        <include>Dimensions_Fullscreen</include>
-	        <texture>common/white.png</texture>
-	        <colordiffuse>PanelBG</colordiffuse>
-	        <animation effect="fade" end="85" condition="true">Conditional</animation>
-	        <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
-	    </control>
-		<control type="group">
-			<visible>!Window.IsVisible(numericinput)</visible>
+            <include>Dimensions_Fullscreen</include>
+            <texture>common/white.png</texture>
+            <colordiffuse>PanelBG</colordiffuse>
+            <animation effect="fade" end="85" condition="true">Conditional</animation>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+        </control>
+        <control type="group">
+            <visible>!Window.IsVisible(numericinput)</visible>
 
-			<posy>520r</posy>
+            <posy>520r</posy>
             <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
             <include>Animation.FadeOut</include>
             
             <control type="image">
-				<width>1920</width>
-				<height>764</height>
-				<texture border="5" colordiffuse="Keyboard-BG">common/white.png</texture>
+                <width>1920</width>
+                <height>764</height>
+                <texture border="5" colordiffuse="Keyboard-BG">common/white.png</texture>
             </control>
             <control type="image">
                 <posx>-10</posx>
-				<width>1940</width>
-				<height>764</height>
-				<texture border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texture>
+                <width>1940</width>
+                <height>764</height>
+                <texture border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texture>
             </control>
 
-			<control type="label" id="311">
-				<description>Heading</description>
-				<posy>16</posy>
-				<posx>11</posx>
-				<width>428</width>
-				<height>75</height>
-				<aligny>center</aligny>
-				<align>center</align>
+            <control type="label" id="311">
+                <description>Heading</description>
+                <posy>16</posy>
+                <posx>11</posx>
+                <width>428</width>
+                <height>75</height>
+                <aligny>center</aligny>
+                <align>center</align>
                 <scroll>true</scroll>
-			</control>
+            </control>
 
-			<control type="image">
-				<posx>449</posx>
-				<posy>11</posy>
-				<width>1460</width>
-				<height>75</height>
-				<aspectratio>stretch</aspectratio>
-				<texture border="20" colordiffuse="Keyboard-Keys">common/border-inner.png</texture>
-			</control>
+            <control type="image">
+                <posx>449</posx>
+                <posy>11</posy>
+                <width>1460</width>
+                <height>75</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="20" colordiffuse="Keyboard-Keys">common/border-inner.png</texture>
+            </control>
 
-			<control type="label" id="310">
-				<description>Edit Text</description>
-				<posx>464</posx>
-				<posy>11</posy>
-				<width>1445</width>
-				<height>75</height>
-				<align>left</align>
-			</control>
+            <control type="label" id="310">
+                <description>Edit Text</description>
+                <posx>464</posx>
+                <posy>11</posy>
+                <width>1445</width>
+                <height>75</height>
+                <align>left</align>
+            </control>
 
-			<control type="group">
-				<posx>11</posx>
-				<posy>97</posy>
+            <control type="group">
+                <posx>11</posx>
+                <posy>97</posy>
 
-				<control type="button" id="300">
-					<description>DONE button</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>428</width>
-					<height>75</height>
-					<label>20177</label>
-					<onleft>57</onleft>
-					<onright>48</onright>
-					<onup>307</onup>
-					<ondown>302</ondown>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<textoffsetx>0</textoffsetx>
-					<focusedcolor>ffffffff</focusedcolor>
-				</control>
+                <control type="button" id="300">
+                    <description>DONE button</description>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>428</width>
+                    <height>75</height>
+                    <label>20177</label>
+                    <onleft>57</onleft>
+                    <onright>48</onright>
+                    <onup>307</onup>
+                    <ondown>302</ondown>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <textoffsetx>0</textoffsetx>
+                    <focusedcolor>ffffffff</focusedcolor>
+                </control>
                 <control type="grouplist">
                     <orientation>horizontal</orientation>
                     <posx>438</posx>
@@ -102,7 +102,7 @@
                         <onup>32</onup>
                         <ondown>65</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -118,7 +118,7 @@
                         <onup>32</onup>
                         <ondown>66</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -134,7 +134,7 @@
                         <onup>32</onup>
                         <ondown>67</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -150,7 +150,7 @@
                         <onup>32</onup>
                         <ondown>68</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -166,7 +166,7 @@
                         <onup>32</onup>
                         <ondown>69</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -182,7 +182,7 @@
                         <onup>32</onup>
                         <ondown>70</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -198,7 +198,7 @@
                         <onup>305</onup>
                         <ondown>71</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -214,7 +214,7 @@
                         <onup>305</onup>
                         <ondown>72</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -230,7 +230,7 @@
                         <onup>306</onup>
                         <ondown>73</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -246,29 +246,29 @@
                         <onup>306</onup>
                         <ondown>74</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
-				</control>
+                </control>
 
-				<control type="radiobutton" id="302">
-					<description>SHIFT button</description>
-					<posx>0</posx>
-					<posy>85</posy>
-					<width>428</width>
-					<height>75</height>
-					<label>20178</label>
-					<onleft>74</onleft>
-					<onright>65</onright>
-					<onup>300</onup>
-					<ondown>303</ondown>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<radioposy>12</radioposy>
-					<textoffsetx>0</textoffsetx>
-					<focusedcolor>ffffffff</focusedcolor>
-				</control>
+                <control type="radiobutton" id="302">
+                    <description>SHIFT button</description>
+                    <posx>0</posx>
+                    <posy>85</posy>
+                    <width>428</width>
+                    <height>75</height>
+                    <label>20178</label>
+                    <onleft>74</onleft>
+                    <onright>65</onright>
+                    <onup>300</onup>
+                    <ondown>303</ondown>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <radioposy>12</radioposy>
+                    <textoffsetx>0</textoffsetx>
+                    <focusedcolor>ffffffff</focusedcolor>
+                </control>
                 <control type="grouplist">
                     <orientation>horizontal</orientation>
                     <posx>438</posx>
@@ -286,7 +286,7 @@
                         <onup>48</onup>
                         <ondown>75</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -302,7 +302,7 @@
                         <onup>49</onup>
                         <ondown>76</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -318,7 +318,7 @@
                         <onup>50</onup>
                         <ondown>77</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -334,7 +334,7 @@
                         <onup>51</onup>
                         <ondown>78</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -350,7 +350,7 @@
                         <onup>52</onup>
                         <ondown>79</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -366,7 +366,7 @@
                         <onup>53</onup>
                         <ondown>80</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -382,7 +382,7 @@
                         <onup>54</onup>
                         <ondown>81</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -398,7 +398,7 @@
                         <onup>55</onup>
                         <ondown>82</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -414,7 +414,7 @@
                         <onup>56</onup>
                         <ondown>83</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -430,29 +430,29 @@
                         <onup>57</onup>
                         <ondown>84</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
                 </control>
 
-				<control type="radiobutton" id="303">
-					<description>CAPS LOCK button</description>
-					<posx>0</posx>
-					<posy>170</posy>
-					<width>428</width>
-					<height>75</height>
-					<label>20179</label>
-					<onleft>84</onleft>
-					<onright>75</onright>
-					<onup>302</onup>
-					<ondown>304</ondown>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<radioposy>12</radioposy>
-					<textoffsetx>0</textoffsetx>
-					<focusedcolor>ffffffff</focusedcolor>
-				</control>
+                <control type="radiobutton" id="303">
+                    <description>CAPS LOCK button</description>
+                    <posx>0</posx>
+                    <posy>170</posy>
+                    <width>428</width>
+                    <height>75</height>
+                    <label>20179</label>
+                    <onleft>84</onleft>
+                    <onright>75</onright>
+                    <onup>302</onup>
+                    <ondown>304</ondown>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <radioposy>12</radioposy>
+                    <textoffsetx>0</textoffsetx>
+                    <focusedcolor>ffffffff</focusedcolor>
+                </control>
                 <control type="grouplist">
                     <orientation>horizontal</orientation>
                     <posx>438</posx>
@@ -470,7 +470,7 @@
                         <onup>65</onup>
                         <ondown>85</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -486,7 +486,7 @@
                         <onup>66</onup>
                         <ondown>86</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -502,7 +502,7 @@
                         <onup>67</onup>
                         <ondown>87</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -518,7 +518,7 @@
                         <onup>68</onup>
                         <ondown>88</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -534,7 +534,7 @@
                         <onup>69</onup>
                         <ondown>89</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -550,7 +550,7 @@
                         <onup>70</onup>
                         <ondown>90</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -566,7 +566,7 @@
                         <onup>71</onup>
                         <ondown>8</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -582,7 +582,7 @@
                         <onup>72</onup>
                         <ondown>8</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -598,7 +598,7 @@
                         <onup>73</onup>
                         <ondown>8</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -614,29 +614,29 @@
                         <onup>74</onup>
                         <ondown>8</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
                 </control>
 
-				<control type="radiobutton" id="304">
-					<description>Symbols button</description>
-					<posx>0</posx>
-					<posy>255</posy>
-					<width>428</width>
-					<height>75</height>
-					<label>20180</label>
-					<onleft>8</onleft>
-					<onright>85</onright>
-					<onup>303</onup>
-					<ondown>307</ondown>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<radioposy>12</radioposy>
-					<textoffsetx>0</textoffsetx>
-					<focusedcolor>ffffffff</focusedcolor>
-				</control>
+                <control type="radiobutton" id="304">
+                    <description>Symbols button</description>
+                    <posx>0</posx>
+                    <posy>255</posy>
+                    <width>428</width>
+                    <height>75</height>
+                    <label>20180</label>
+                    <onleft>8</onleft>
+                    <onright>85</onright>
+                    <onup>303</onup>
+                    <ondown>307</ondown>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <radioposy>12</radioposy>
+                    <textoffsetx>0</textoffsetx>
+                    <focusedcolor>ffffffff</focusedcolor>
+                </control>
                 <control type="grouplist">
                     <orientation>horizontal</orientation>
                     <posx>438</posx>
@@ -654,7 +654,7 @@
                         <onup>75</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -670,7 +670,7 @@
                         <onup>76</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -686,7 +686,7 @@
                         <onup>77</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -702,7 +702,7 @@
                         <onup>78</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -718,7 +718,7 @@
                         <onup>79</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -734,7 +734,7 @@
                         <onup>80</onup>
                         <ondown>32</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
@@ -751,81 +751,81 @@
                         <onup>81</onup>
                         <ondown>305</ondown>
                         <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
+                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
                         <textoffsetx>0</textoffsetx>
                         <focusedcolor>ffffffff</focusedcolor>
                     </control>
                 </control>
-				<control type="button" id="307">
-					<description>IP Input button</description>
-					<posx>0</posx>
-					<posy>340</posy>
-					<width>428</width>
-					<height>75</height>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<label>1006</label>
-					<textoffsetx>0</textoffsetx>
-					<onleft>306</onleft>
-					<onright>32</onright>
-					<onup>304</onup>
-					<ondown>300</ondown>
-					<focusedcolor>ffffffff</focusedcolor>
-				</control>
+                <control type="button" id="307">
+                    <description>IP Input button</description>
+                    <posx>0</posx>
+                    <posy>340</posy>
+                    <width>428</width>
+                    <height>75</height>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <label>1006</label>
+                    <textoffsetx>0</textoffsetx>
+                    <onleft>306</onleft>
+                    <onright>32</onright>
+                    <onup>304</onup>
+                    <ondown>300</ondown>
+                    <focusedcolor>ffffffff</focusedcolor>
+                </control>
                 
-				<control type="button" id="32">
-					<description>SPACE button</description>
-					<posx>438</posx>
-					<posy>340</posy>
-					<width>872</width>
-					<height>75</height>
-					<label>20182</label>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<textoffsetx>0</textoffsetx>
-					<focusedcolor>ffffffff</focusedcolor>
-					<onleft>307</onleft>
-					<onright>305</onright>
-					<onup>85</onup>
-					<ondown>48</ondown>
-				</control>
+                <control type="button" id="32">
+                    <description>SPACE button</description>
+                    <posx>438</posx>
+                    <posy>340</posy>
+                    <width>872</width>
+                    <height>75</height>
+                    <label>20182</label>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <textoffsetx>0</textoffsetx>
+                    <focusedcolor>ffffffff</focusedcolor>
+                    <onleft>307</onleft>
+                    <onright>305</onright>
+                    <onup>85</onup>
+                    <ondown>48</ondown>
+                </control>
 
-				<control type="button" id="305">
-					<description>previous button</description>
-					<posx>1320</posx>
-					<posy>340</posy>
-					<width>137</width>
-					<height>75</height>
-					<label>&lt;</label>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-					<texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<focusedcolor>ffffffff</focusedcolor>
-					<onleft>32</onleft>
-					<onright>306</onright>
-					<onup>8</onup>
-					<ondown>54</ondown>
-				</control>
+                <control type="button" id="305">
+                    <description>previous button</description>
+                    <posx>1320</posx>
+                    <posy>340</posy>
+                    <width>137</width>
+                    <height>75</height>
+                    <label>&lt;</label>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <focusedcolor>ffffffff</focusedcolor>
+                    <onleft>32</onleft>
+                    <onright>306</onright>
+                    <onup>8</onup>
+                    <ondown>54</ondown>
+                </control>
 
-				<control type="button" id="306">
-					<description>next button</description>
-					<posx>1467</posx>
-					<posy>340</posy>
-					<width>137</width>
-					<height>75</height>
-					<label>&gt;</label>
-					<texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/border-inner.png</texturefocus>
-					<focusedcolor>ffffffff</focusedcolor>
-					<onleft>305</onleft>
-					<onright>307</onright>
-					<onup>8</onup>
-					<ondown>56</ondown>
-				</control>
+                <control type="button" id="306">
+                    <description>next button</description>
+                    <posx>1467</posx>
+                    <posy>340</posy>
+                    <width>137</width>
+                    <height>75</height>
+                    <label>&gt;</label>
+                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <focusedcolor>ffffffff</focusedcolor>
+                    <onleft>305</onleft>
+                    <onright>307</onright>
+                    <onup>8</onup>
+                    <ondown>56</ondown>
+                </control>
 
-			</control>
+            </control>
 
-		</control>
+        </control>
 
-	</controls>
+    </controls>
 
 </window>
