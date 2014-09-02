@@ -4,6 +4,7 @@ Fix silhouette not showing
 Fix widget window 3101
 Widget carousel as own window option
 Fixes to smartplaylist editor and filter
+Add record button
 
 [B]0.9.50[/B]
 Streamline themes to be default/flat
