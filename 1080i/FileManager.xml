@@ -3,8 +3,7 @@
 <window id="3">
     <defaultcontrol always="true">20</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-
+    
     <controls>
 
         <include>GlobalBackground</include>
@@ -12,7 +11,7 @@
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <visible>!Window.IsVisible(DialogMediaSource.xml)</visible>
-            <animation effect="slide" end="-233" start="0" time="200" condition="Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
 
             <control type="group">
                 <description>Left panel</description>
