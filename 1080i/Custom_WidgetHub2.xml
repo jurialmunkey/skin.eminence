@@ -3,25 +3,10 @@
 <window type="window" id="3101">
 	<defaultcontrol always="true">9511</defaultcontrol>
 	<allowoverlay>false</allowoverlay>
-	<onload condition="IsEmpty(Window(3101).Property(widget))">SetProperty(widget,movies,3101)</onload>
+	<onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>
 	<controls>
-	    <!--<control type="image">
-            <include>Dimensions_Fullscreen</include>
-            <texture fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
-            <include>Animation.FadeIn</include>
-            <colordiffuse>ffbbbbbb</colordiffuse>
-        </control>-->
         <include>GlobalBackground</include>
-        <control type="image">
-	        <posx>0</posx>
-	        <posy>0</posy>
-	        <width>1920</width>
-	        <height>1080</height>
-	        <texture>special://skin/extras/border/silhouette.png</texture>
-	        <colordiffuse>Silhouette</colordiffuse>
-	        <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
-	    </control>
+
 		<control type="grouplist" description="menu" id="9512">
 		    <include>Animation.DelayFadeIn</include>
 	        <posy>680</posy>
@@ -34,65 +19,80 @@
 			    <height>128</height>
 			    <texturenofocus colordiffuse="7F000000">widget/movie.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
-                <onclick>SetProperty(widget,movies,3101)</onclick>
-			    <visible>!stringcompare(Window(3101).Property(widget),movies)</visible>
+                <onclick>SetProperty(widget,movies,home)</onclick>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
+			    <visible>!stringcompare(Window(home).Property(widget),movies)</visible>
 		    </control>
 		    <control type="button" id="2">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="3fffffff">widget/movie.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
-                <onclick>SetProperty(widget,movies,3101)</onclick>
-			    <visible>stringcompare(Window(3101).Property(widget),movies)</visible>
+                <onclick>SetProperty(widget,movies,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),movies)</visible>
 		    </control>
 		    <control type="button" id="3">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="7F000000">widget/tv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
-                <onclick>SetProperty(widget,episodes,3101)</onclick>
-			    <visible>!stringcompare(Window(3101).Property(widget),episodes)</visible>
+                <onclick>SetProperty(widget,episodes,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),episodes)</visible>
 		    </control>
 		    <control type="button" id="4">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="3Fffffff">widget/tv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
-                <onclick>SetProperty(widget,episodes,3101)</onclick>
-			    <visible>stringcompare(Window(3101).Property(widget),episodes)</visible>
+                <onclick>SetProperty(widget,episodes,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
 		    </control>
 		    <control type="button" id="5">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="7F000000">widget/livetv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
-                <onclick>SetProperty(widget,nextaired,3101)</onclick>
-			    <visible>!stringcompare(Window(3101).Property(widget),nextaired)</visible>
+                <onclick>SetProperty(widget,nextaired,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),nextaired)</visible>
 		    </control>
 		    <control type="button" id="6">
 			    <width>128</width>
 			    <height>128</height>
-			    
+			    <onup>9511</onup>
+                <ondown>9511</ondown>
                 <texturenofocus colordiffuse="3Fffffff">widget/livetv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
-                <onclick>SetProperty(widget,nextaired,3101)</onclick>
-			    <visible>stringcompare(Window(3101).Property(widget),nextaired)</visible>
+                <onclick>SetProperty(widget,nextaired,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
 		    </control>
 		    <control type="button" id="7">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="7F000000">widget/trailer.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
-                <onclick>SetProperty(widget,trailers,3101)</onclick>
-			    <visible>!stringcompare(Window(3101).Property(widget),trailers)</visible>
+                <onclick>SetProperty(widget,trailers,home)</onclick>
+			    <visible>!stringcompare(Window(home).Property(widget),trailers)</visible>
 		    </control>
 		    <control type="button" id="8">
 			    <width>128</width>
 			    <height>128</height>
+                <onup>9511</onup>
+                <ondown>9511</ondown>
 			    <texturenofocus colordiffuse="3Fffffff">widget/trailer.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
-                <onclick>SetProperty(widget,trailers,3101)</onclick>
-			    <visible>stringcompare(Window(3101).Property(widget),trailers)</visible>
+                <onclick>SetProperty(widget,trailers,home)</onclick>
+			    <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
 		    </control>
 		</control>
 	    <control type="group">
@@ -106,22 +106,30 @@
 	        </control>
         
             <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(3101).Property(widget),movies)</visible>
+                <visible>stringcompare(Window(home).Property(widget),movies)</visible>
+                <onup>9512</onup>
+                <ondown>9512</ondown>
 	            <include>WidgetHubListContent</include>
 	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
 	        </control>
             <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(3101).Property(widget),episodes)</visible>
-	            <include>WidgetHubListContent</include>
+                <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
+	            <onup>9512</onup>
+                <ondown>9512</ondown>
+                <include>WidgetHubListContent</include>
 	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
 	        </control>
 	        <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(3101).Property(widget),nextaired)</visible>
-	            <include>WidgetHubListContent</include>
+                <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
+	            <onup>9512</onup>
+                <ondown>9512</ondown>
+                <include>WidgetHubListContent</include>
 	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
 	        </control>
             <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(3101).Property(widget),trailers)</visible>
+                <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
+                <onup>9512</onup>
+                <ondown>9512</ondown>
                 <include>WidgetHubListContent</include>
 	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
 	        </control>
