@@ -82,16 +82,7 @@
                     <height>66</height>
                     <onup>22</onup>
                     <ondown>10</ondown>
-                    <control type="label">
-                        <posx>30</posx>
-                        <description>Name Label</description>
-                        <label>21433</label>
-                        <font>Font-ListInfo</font>
-                        <include>DefSettingsRightGroupWidth</include>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-
-                    </control>
-                    <control type="button" id="12">
+                    <control type="edit" id="12">
                         <align>right</align>
                         <description>Name Button</description>
                         <height>66</height>
@@ -102,6 +93,26 @@
                         <include>DefSettingsRightGroupWidth</include>
                         <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     </control>
+                    <control type="label">
+                        <posx>30</posx>
+                        <description>Name Label</description>
+                        <label>21433</label>
+                        <font>Font-ListInfo</font>
+                        <include>DefSettingsRightGroupWidth</include>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <visible>!Control.HasFocus(12)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>30</posx>
+                        <description>Name Label</description>
+                        <label>21433</label>
+                        <font>Font-ListInfo</font>
+                        <textcolor>Selected</textcolor>
+                        <include>DefSettingsRightGroupWidth</include>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <visible>Control.HasFocus(12)</visible>
+                    </control>
+                    
                 </control>
                 
                 
@@ -137,6 +148,7 @@
                             <width>780</width>
                             <font>Font-ListInfo</font>
                             <info>ListItem.Label</info>
+                            <textcolor>Selected</textcolor>
                             <visible>Control.HasFocus(10)</visible>
                         </control>
                         <control type="label">
@@ -145,7 +157,6 @@
                             <width>780</width>
                             <font>Font-ListInfo</font>
                             <info>ListItem.Label</info>
-                            <textcolor>TopBarIcon</textcolor>
                             <selectedcolor>Highlight</selectedcolor>
                             <visible>!Control.HasFocus(10)</visible>
                         </control>

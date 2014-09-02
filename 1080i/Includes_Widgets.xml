@@ -486,27 +486,7 @@
                 <onfocus condition="stringcompare(Window(home).Property(widget),movies)">SetProperty(widget,episodes,home)</onfocus>
                 <onfocus>SetFocus(9511)</onfocus>
             </control>
-            <!--<control type="wraplist" id="9511">
-                <visible>stringcompare(Window(home).Property(widget),movies)</visible>
-	            <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
-	        </control>
-            <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
-	            <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
-	        </control>
-	        <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
-	            <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
-	        </control>
-            <control type="wraplist" id="9511">
-                <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
-                <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
-	        </control>-->
-            
+
             <control type="wraplist" id="9511">
 	            <include>WidgetHubListContent</include>
 	            <content target="video">$VAR[WidgetHubAllContent]</content>
