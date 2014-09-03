@@ -68,7 +68,7 @@
             </control>
             
             <control type="button" id="21">
-                <posx>650</posx>
+                <posx>662</posx>
                 <posy>51</posy>
                 <width>1020</width>
                 <height>66</height>
