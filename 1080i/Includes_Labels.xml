@@ -26,6 +26,7 @@
 	    <value condition="Container.Content(episodes) + !stringcompare(Container.SortMethod,Date)">$INFO[ListItem.Premiered,$LOCALIZE[20416] ,]</value>
 	    <value condition="Container.Content(episodes) + stringcompare(Container.SortMethod,Date)">$INFO[ListItem.Season,$LOCALIZE[20373] ,  ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
 	    <value condition="!IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre]</value>
+        <value condition="!IsEmpty(ListItem.TvShowTitle)">$INFO[ListItem.TvShowTitle]</value>
 	    <value>$LOCALIZE[31122]</value>
 	</variable>
 	
@@ -56,7 +57,7 @@
     
 	<variable name="ExtraInfo">
 	    <value condition="Container.Content(Sets) | substring(ListItem.Path,videodb://movies/sets,left)">$LOCALIZE[31207]</value>
-        <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31107]  •  ]$VAR[HDSD]$INFO[ListItem.VideoResolution, ,  •  ]$INFO[ListItem.Rating]</value>
+        <value condition="Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31107]  •  ]$VAR[HDSD]$INFO[ListItem.VideoResolution, ,  •  ]$INFO[ListItem.Rating]</value>
 	    <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Genre)]</value>
 	    <value condition="Container.Content(Tvshows)">$INFO[ListItem.Studio]</value>
 	    <value condition="Container.Content(episodes) | Container.Content(seasons)">$INFO[ListItem.Studio]$INFO[ListItem.Label2,  •  ,]</value>

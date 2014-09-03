@@ -5,7 +5,7 @@
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
     <onload>ClearProperty(focushub,home)</onload>
-    <views>50,51,500,53,54,55,56</views>
+    <views>50,51,500,53,54,55,56,57,58</views>
 
     <controls>
 
@@ -13,6 +13,8 @@
         <include>GlobalBackground</include>
 
         <include>DefMyNavViews</include>
+        
+        <include>DefFullScreenNav</include>
 
         <include>GlobalTopBar</include>
         
@@ -28,7 +30,7 @@
                     <include>DefNavMenuButton</include>
                 </control>
 
-                <control type="button" id="3">
+                <!--<control type="button" id="3">
                     <description>Sort</description>
                     <include>DefNavMenuButton</include>
                 </control>
@@ -38,12 +40,17 @@
                     <include>DefNavMenuButton</include>
                     <label>584</label>
                     <altlabel>585</altlabel>
-                </control>
-
+                </control>-->
+                
                 <control type="radiobutton" id="20">
                     <description>Shuffle</description>
                     <include>DefNavMenuButton</include>
                     <label>191</label>
+                </control>
+                
+                <control type="button" id="26">
+                    <description>Repeat</description>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="21">

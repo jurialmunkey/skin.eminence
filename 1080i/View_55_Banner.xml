@@ -14,6 +14,7 @@
                 <posy>listy</posy>
                 <width>1458</width>
                 <height>699</height>
+                <visible>!Window.IsVisible(MyVideoPlaylist.xml)</visible>
                 <onleft>60</onleft>
                 <onright condition="Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)">Back</onright>
                 <onright condition="![Container.Content(songs) + !Window.IsVisible(MyMusicNav.xml)]">9000</onright>

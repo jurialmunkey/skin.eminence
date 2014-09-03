@@ -18,9 +18,11 @@
         <include>GlobalBackground</include>
 
         <include>DefMyNavViews</include>
+        
+        <include>DefFullScreenNav</include>
 
         <include>GlobalTopBar</include>
-        s
+        
         <control type="group">   
             <include>DefMyNavBar</include>  
             <control type="grouplist" id="9000">
@@ -33,11 +35,15 @@
         
 
                 <control type="radiobutton" id="20">
-                    <description>PartyMode</description>
+                    <description>Shuffle</description>
                     <include>DefNavMenuButton</include>
                     <label>191</label>
                     <selected>Playlist.IsRandom</selected>
-                    <radioposx>370</radioposx>
+                </control>
+                
+                <control type="button" id="26">
+                    <description>Repeat</description>
+                    <include>DefNavMenuButton</include>
                 </control>
 
                 <control type="button" id="21">

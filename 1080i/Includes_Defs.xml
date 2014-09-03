@@ -462,8 +462,8 @@
             <include>View_54_Lovefilm</include>
             <include>View_55_Banner</include>            
             <include>View_56_BigList</include>
-            <include condition="Window.IsVisible(MyVideoNav.xml)">View_57_InfoList</include>
-            <include condition="Window.IsVisible(MyVideoNav.xml)">View_58_BannerList</include>
+            <include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)">View_57_InfoList</include>
+            <include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)">View_58_BannerList</include>
         </control>
         <include>NextAiredRSS</include>
 
@@ -526,6 +526,7 @@
         <width>440</width>
         <height>90</height>
         <align>left</align>
+        <radioposx>370</radioposx>
         <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
     </include>

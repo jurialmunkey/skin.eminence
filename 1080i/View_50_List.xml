@@ -167,7 +167,7 @@
                         <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                     </control>
                     <control type="group" description="SQUARE">
-                        <visible>!Container.Content(seasons) + !Container.Content(sets) + !Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>!Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(seasons) + !Container.Content(sets) + !Container.Content(movies) + !Container.Content(episodes) + !Container.Content(tvshows) + !stringcompare(ListItem.Label,..)</visible>
                         <posx>globalpad</posx>
                         <control type="image">
                             <posy>globalpad</posy>
@@ -241,7 +241,7 @@
                         </control>
                     </control>
                     <control type="group" description="INFO">
-                        <visible>[Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>[Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(episodes) | [Skin.HasSetting(listview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(listview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <posx>globalpad</posx>
                         <height>bigposterhborder</height>
                         <control type="image">

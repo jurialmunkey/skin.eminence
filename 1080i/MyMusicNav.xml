@@ -30,6 +30,7 @@
         <control type="group">   
             <include>DefMyNavBar</include>  
             <control type="grouplist" id="9000">
+                <visible>!Skin.HasSetting(kioskmode)</visible>
                 <include>DefMyNavBarGroupList</include>
 
                 <control type="button" id="2">
@@ -104,7 +105,7 @@
                     <include>DefNavMenuButton</include>
                     <label>589</label>
                     <selected>MusicPartyMode.Enabled</selected>
-                    <radioposx>370</radioposx>
+                    
                     <visible>!Container.Content(musicvideos)</visible>
                 </control>
                 
@@ -114,7 +115,7 @@
                     <onclick>PlayerControl(Partymode(video))</onclick>
                     <label>589</label>
                     <selected>MusicPartyMode.Enabled</selected>
-                    <radioposx>370</radioposx>
+                    
                     <visible>Container.Content(musicvideos)</visible>
                 </control>
                 

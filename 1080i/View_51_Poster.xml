@@ -182,24 +182,24 @@
                 <orientation>horizontal</orientation>
                 <focusposition>1</focusposition>
                 <movement>1</movement>
-                <itemlayout width="bigposterwlist" height="globalh" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
+                <itemlayout width="bigposterwlist" height="globalh" condition="[Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <control type="group">
-                        <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
+                        <visible>[!Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <include>51ListContent</include>
                     </control>
                     <control type="group">
-                        <visible>[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>[Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <include>51ListEpisodeContent</include>
                     </control>
                 </itemlayout>
-                <itemlayout width="bigposterwlist" height="globalh" condition="![Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
+                <itemlayout width="bigposterwlist" height="globalh" condition="![Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <control type="group">
                         <include>51ListSquareContent</include>
                     </control>
                 </itemlayout>
-                <focusedlayout width="bigposterwlist" height="globalh" condition="[Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
+                <focusedlayout width="bigposterwlist" height="globalh" condition="[Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(sets) | Container.Content(movies) | Container.Content(artists)]">
                     <control type="group">
-                        <visible>[!Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
+                        <visible>[!Window.IsVisible(MyVideoPlaylist.xml) + !Container.Content(artists) + !Container.Content(episodes) + ![[Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]]] | stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>!Control.HasFocus(51)</visible>
                             <include>51ListContent</include>
@@ -261,7 +261,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <visible>[Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
+                        <visible>[Window.IsVisible(MyVideoPlaylist.xml) | Container.Content(artists) | Container.Content(episodes) | [Skin.HasSetting(posterview.tvinfo) + Container.Content(tvshows)] | [Skin.HasSetting(posterview.info) + Container.Content(movies)]] + !stringcompare(ListItem.Label,..)</visible>
                         <control type="group">
                             <visible>!Control.HasFocus(51)</visible>
                             <include>51ListEpisodeContent</include>

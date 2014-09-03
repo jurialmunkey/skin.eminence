@@ -53,6 +53,7 @@
         <control type="group">   
             <include>DefMyNavBar</include>  
             <control type="grouplist" id="9000">
+                <visible>!Skin.HasSetting(kioskmode)</visible>
                 <include>DefMyNavBarGroupList</include>
                 
                 <control type="button" id="2">
@@ -154,7 +155,7 @@
                     <include>DefNavMenuButton</include>
                     <label>20367</label>
                     <selected>System.Setting(hidewatched)</selected>
-                    <radioposx>370</radioposx>
+                    
                 </control>
                 
                 
@@ -176,7 +177,7 @@
                     <onclick>SetFocus(50)</onclick>
                     <onclick>Filter</onclick>
                     <selected>Container.Filtered</selected>
-                    <radioposx>370</radioposx>
+                    
                 </control>
                 
                 <control type="button" id="9002">
@@ -208,7 +209,7 @@
                     <visible>system.haslocks</visible>
                     <include>DefNavMenuButton</include>
                     <label>20336</label>
-                    <radioposx>370</radioposx>
+                    
                     <selected>system.ismaster</selected>
                 </control>
                 

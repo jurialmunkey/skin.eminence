@@ -561,5 +561,6 @@ msgid "Open carousel in own window"
 msgstr ""
 
 msgctxt "#31239"
-msgid "Header tile matches home in library views"
+msgid "Kiosk mode"
 msgstr ""
+
