@@ -187,6 +187,13 @@
                     <label>137</label>
                 </control>
                 
+                <control type="togglebutton" id="20" description="Update library">
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                    <include>DefNavMenuButton</include>
+                </control>
+                
                 <control type="button" id="99">
                     <description>Open Home Jumplist</description>
                     <include>DefNavMenuButton</include>
@@ -201,11 +208,11 @@
                     <visible>system.haslocks</visible>
                     <include>DefNavMenuButton</include>
                     <label>20336</label>
-                    <altlabel>✓  $LOCALIZE[20336]</altlabel>
-                    <usealttexture>system.ismaster</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <radioposx>370</radioposx>
+                    <selected>system.ismaster</selected>
                 </control>
+                
+                
                 
                 <control type="button" id="9091">
                     <description>Video Playlist</description>

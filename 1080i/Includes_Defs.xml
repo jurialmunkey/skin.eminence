@@ -352,6 +352,14 @@
             <include>DefSidePanel</include>
             <control type="grouplist" id="996">
                 <include>DefMyNavBarGroupList</include>
+                <control type="button" id="11001">
+                    <description>Trailer</description>
+                    <label>20410</label>
+                    <onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+                    <include>DefNavMenuButton</include>
+                    <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    <ondown>1000</ondown>
+                </control>
                 <control type="button" id="1000">
                     <description>Buttons</description>
                     <include>DefNavMenuButton</include>

@@ -85,6 +85,13 @@
                     <label>137</label>
                 </control>
                 
+                <control type="togglebutton" id="20" description="Update library">
+                    <label>653</label>
+                    <altlabel>13353</altlabel>
+                    <usealttexture>library.isscanningvideo</usealttexture>
+                    <include>DefNavMenuButton</include>
+                </control>
+                
                 <control type="button" id="98">
                     <description>Open Home Jumplist</description>
                     <include>DefNavMenuButton</include>
