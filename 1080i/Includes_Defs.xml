@@ -411,13 +411,6 @@
                     <height>bigposterh</height>
                     <visible>Player.HasAudio</visible>
                 </control>
-                <control type="image">
-                    <posx>globalpad</posx>
-                    <posy>globalpad</posy>
-                    <width>lovefilmw</width>
-                    <height>bigposterh</height>
-                    <texture border="2" colordiffuse="BorderColor">common/border.png</texture>
-                </control>
             </control>
         </control>
     </include>
