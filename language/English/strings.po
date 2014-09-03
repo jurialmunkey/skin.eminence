@@ -559,3 +559,7 @@ msgstr ""
 msgctxt "#31238"
 msgid "Open carousel in own window"
 msgstr ""
+
+msgctxt "#31239"
+msgid "Header tile matches home in library views"
+msgstr ""

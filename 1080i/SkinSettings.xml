@@ -765,7 +765,17 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                
+                <control type="radiobutton" id="643">
+                    <label>31239</label>
+                    <width>1063</width>
+                    <radioposx>984</radioposx>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(header.flatdark)</onclick>
+                    <selected>Skin.HasSetting(header.flatdark)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
                 <control type="radiobutton" id="202">
                     <label>31178</label>
                     <width>1063</width>
