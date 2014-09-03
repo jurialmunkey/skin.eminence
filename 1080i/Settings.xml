@@ -30,6 +30,7 @@
                     <onclick>activatewindow(AppearanceSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onright>9101</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -47,6 +48,7 @@
                     <label>3</label>
                     <onclick>activatewindow(VideosSettings)</onclick>
                     <width>bannerwborder</width>
+                    <radioposx>590</radioposx>
                     <height>106</height>
                     <onright>9102</onright>
                     <font>Font-Button</font>
@@ -66,6 +68,7 @@
                     <onclick>activatewindow(MusicSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onright>9103</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -84,6 +87,7 @@
                     <onclick>activatewindow(AddonBrowser)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onright>9104</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -102,6 +106,7 @@
                     <onclick>activatewindow(PicturesSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onright>9105</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -120,6 +125,7 @@
                     <onclick>activatewindow(WeatherSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onright>9106</onright>
                     <radiowidth>128</radiowidth>
                     <radioheight>128</radioheight>
@@ -145,6 +151,7 @@
                     <onclick>activatewindow(NetworkSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9001</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -163,6 +170,7 @@
                     <onclick>activatewindow(SystemSettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9002</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -181,6 +189,7 @@
                     <onclick>activatewindow(Profiles)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9003</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -199,6 +208,7 @@
                     <onclick>activatewindow(7)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9004</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -217,6 +227,7 @@
                     <onclick>activatewindow(pvrsettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9005</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>
@@ -236,6 +247,7 @@
                     <onclick>activatewindow(skinsettings)</onclick>
                     <width>bannerwborder</width>
                     <height>106</height>
+                    <radioposx>590</radioposx>
                     <onleft>9006</onleft>
                     <selected>false</selected>
                     <radiowidth>128</radiowidth>

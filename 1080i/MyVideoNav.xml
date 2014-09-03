@@ -150,13 +150,11 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 
-                <control type="togglebutton" id="14">
+                <control type="radiobutton" id="14">
                     <include>DefNavMenuButton</include>
                     <label>20367</label>
-                    <altlabel>✓  $LOCALIZE[20367]</altlabel>
-                    <usealttexture>System.Setting(hidewatched)</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <selected>System.Setting(hidewatched)</selected>
+                    <radioposx>370</radioposx>
                 </control>
                 
                 
@@ -170,17 +168,15 @@
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
                 </control>
 
-                <control type="togglebutton" id="98">
+                <control type="radiobutton" id="98">
                     <visible>Container.CanFilterAdvanced</visible>
                     <description>Filter</description>
                     <include>DefNavMenuButton</include>
                     <label>587</label>
                     <onclick>SetFocus(50)</onclick>
                     <onclick>Filter</onclick>
-                    <altlabel>✓  $LOCALIZE[587]</altlabel>
-                    <usealttexture>Container.Filtered</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <selected>Container.Filtered</selected>
+                    <radioposx>370</radioposx>
                 </control>
                 
                 <control type="button" id="9002">

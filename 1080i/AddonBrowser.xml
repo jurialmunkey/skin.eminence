@@ -40,12 +40,15 @@
                 <control type="radiobutton" id="5">
                     <description>Enable auto-updates</description>
                     <label>24063</label>
+                    <radioposx>370</radioposx>
                     <include>DefNavMenuButton</include>
+                    
                 </control>
 
                 <control type="radiobutton" id="6">
                     <description>No notifications</description>
                     <label>25000</label>
+                    <radioposx>370</radioposx>
                     <include>DefNavMenuButton</include>
                 </control>
             </control>

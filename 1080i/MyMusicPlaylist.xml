@@ -1,45 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="500">
-	<defaultcontrol always="true">56</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">56</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
     <onload>ClearProperty(focushub,home)</onload>
-	<views>50,51,500,53,54,55,56</views>
-	<background>0</background>
-	
+    <views>50,51,500,53,54,55,56</views>
+    <background>0</background>
+    
 
-	<controls>
+    <controls>
 
-		<control type="radiobutton" id="19">
-			<description>Filter (hidden)</description>
-			<include>HiddenButton</include>
-		</control>
+        <control type="radiobutton" id="19">
+            <description>Filter (hidden)</description>
+            <include>HiddenButton</include>
+        </control>
 
-		<include>GlobalBackground</include>
-     <!--  <control type="button">
-            <posy>600</posy>
-            <posx>1770</posx>
-            <width>48</width>
-            <height>48</height>
-            <texturenofocus flipx="false">common/right-arrow.png</texturenofocus>
-            <texturefocus flipx="false">common/right-arrow.png</texturefocus>
-            <aspectratio>keep</aspectratio>
-            <animation effect="fade" end="75" condition="true">Conditional</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
-            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
-            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
-            <include>DialogVisibility</include>
-            <visible>!Window.IsActive(movieinformation)</visible>
-            <visible>!Window.IsActive(musicinformation)</visible>
-        </control>-->
+        <include>GlobalBackground</include>
 
         <include>DefMyNavViews</include>
 
         <include>GlobalTopBar</include>
-        
-        
-        
+        s
         <control type="group">   
             <include>DefMyNavBar</include>  
             <control type="grouplist" id="9000">
@@ -49,26 +30,14 @@
                     <description>View</description>
                     <include>DefNavMenuButton</include>
                 </control>
-                <!--<control type="button" id="3">
-                    <description>Sort</description>
-                    <include>DefNavMenuButton</include>
-                </control>
+        
 
-                <control type="togglebutton" id="4">
-                    <description>Ascending</description>
-                    <include>DefNavMenuButton</include>
-                    <label>584</label>
-                    <altlabel>585</altlabel>
-                </control>-->
-
-                <control type="togglebutton" id="20">
+                <control type="radiobutton" id="20">
                     <description>PartyMode</description>
                     <include>DefNavMenuButton</include>
                     <label>191</label>
-                    <altlabel>✓  $LOCALIZE[191]</altlabel>
-                    <usealttexture>Playlist.IsRandom</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <selected>Playlist.IsRandom</selected>
+                    <radioposx>370</radioposx>
                 </control>
 
                 <control type="button" id="21">
@@ -99,8 +68,8 @@
 
             </control>
 
-		</control>
+        </control>
 
-	</controls>
+    </controls>
 
 </window>

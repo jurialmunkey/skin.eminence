@@ -82,26 +82,13 @@
         <pauseatend>2000</pauseatend>
     </default>
 
-    <default type="image">
-        
-        
-        <width>-</width>
-        <height>-</height>
-        <align>center</align>
-        <aligny>center</aligny>
-        <texture>-</texture>
-    </default>
-
     <default type="button">
-        
-        
-        <width>450</width>
         <height>66</height>
         <align>center</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
         <label>-</label>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
@@ -111,15 +98,12 @@
     </default>
     
     <default type="edit">
-        
-        
-        <width>450</width>
         <height>66</height>
         <align>center</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
         <label>-</label>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
@@ -129,12 +113,9 @@
     </default>
 
     <default type="togglebutton">
-        
-        
-        <width>450</width>
         <height>66</height>
         <label>-</label>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
         <font>Font-Button</font>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
@@ -149,9 +130,6 @@
     </default>
 
     <default type="radiobutton">
-        
-        
-        <width>450</width>
         <height>66</height>
         <align>center</align>
         <aligny>center</aligny>
@@ -168,14 +146,12 @@
         <textureradioonnofocus colordiffuse="PanelFG-NF">buttons/radio-on.png</textureradioonnofocus>
         <textureradioofffocus colordiffuse="RadioFO">buttons/radio-off.png</textureradioofffocus>
         <textureradiooffnofocus colordiffuse="PanelFG-NF">buttons/radio-off.png</textureradiooffnofocus>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
+        <radioposx>981</radioposx>
         <pulseonselect>false</pulseonselect>
     </default>
 
     <default type="spincontrolex">
-        
-        
-        <width>450</width>
         <height>66</height>
         <label>-</label>
         <font>Font-Button</font>
@@ -190,42 +166,16 @@
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
         <align>left</align>
         <aligny>center</aligny>
         <reverse>yes</reverse>
         <pulseonselect>false</pulseonselect>
     </default>
 
-    <default type="spincontrol">
-        
-        
-        <height>23</height>
-        <width>23</width>
-        <spinwidth>48</spinwidth>
-        <spinheight>48</spinheight>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-        <textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
-        <texturedown colordiffuse="PanelFG-NF">buttons/spin-down.png</texturedown>
-        <textureupfocus colordiffuse="RadioFO" flipy="true">buttons/spin-down.png</textureupfocus>
-        <texturedownfocus colordiffuse="RadioFO">buttons/spin-down.png</texturedownfocus>
-        <font>Font-Button</font>
-        <textcolor>PanelFG-NF</textcolor>
-        <focusedcolor>Selected2</focusedcolor>
-        <disabledcolor>Disabled</disabledcolor>
-        <textoffsetx>30</textoffsetx>
-        <align>left</align>
-        <aligny>center</aligny>
-        <reverse>yes</reverse>
-        <pulseonselect>false</pulseonselect>
-    </default>
 
     <default type="sliderex">
-        
-        
         <height>66</height>
-        <width>450</width>
         <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
         <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
         <sliderwidth>230</sliderwidth>
@@ -237,7 +187,7 @@
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <textoffsetx>30</textoffsetx>
+        <textoffsetx>25</textoffsetx>
         <textoffsety>14</textoffsety>
     </default>
 
@@ -250,8 +200,6 @@
     </default>
 
     <default type="slider">
-        
-        
         <width>360</width>
         <height>23</height>
         <texturefocus>-</texturefocus>

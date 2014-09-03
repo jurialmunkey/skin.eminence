@@ -90,7 +90,7 @@
                 </control>
                 <control type="label">
                     <posy>45</posy>
-                    <width>275</width>
+                    <width>205</width>
                     <align>left</align>
                     <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>

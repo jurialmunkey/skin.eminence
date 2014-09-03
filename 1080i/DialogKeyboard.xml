@@ -265,6 +265,7 @@
                     <ondown>303</ondown>
                     <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
                     <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+                    <radioposx>365</radioposx>
                     <radioposy>12</radioposy>
                     <textoffsetx>0</textoffsetx>
                     <focusedcolor>ffffffff</focusedcolor>
@@ -443,6 +444,7 @@
                     <width>428</width>
                     <height>75</height>
                     <label>20179</label>
+                    <radioposx>365</radioposx>
                     <onleft>84</onleft>
                     <onright>75</onright>
                     <onup>302</onup>
@@ -623,6 +625,7 @@
                 <control type="radiobutton" id="304">
                     <description>Symbols button</description>
                     <posx>0</posx>
+                    <radioposx>365</radioposx>
                     <posy>255</posy>
                     <width>428</width>
                     <height>75</height>

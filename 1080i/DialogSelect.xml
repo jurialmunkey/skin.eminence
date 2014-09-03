@@ -180,7 +180,7 @@
                         <textcolor>PanelFG-NF</textcolor>
                     </control>
                     <control type="label">
-                        <posx>990</posx>
+                        <posx>1020</posx>
                         <width>600</width>
                         <height>135</height>
                         <align>right</align>
@@ -206,7 +206,7 @@
                             <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
-                            <posx>990</posx>
+                            <posx>1020</posx>
                             <width>600</width>
                             <height>135</height>
                             <align>right</align>
@@ -226,7 +226,7 @@
                             <textcolor>PanelFG</textcolor>
                         </control>
                         <control type="label">
-                            <posx>990</posx>
+                            <posx>1020</posx>
                             <width>600</width>
                             <height>135</height>
                             <align>right</align>
@@ -256,7 +256,7 @@
                 <posx>235</posx>
                 <width>globalw</width>
                 <posy>685</posy>
-                <height>105</height>
+                <height>100</height>
                 <align>justify</align>
                 <font>Font-ListInfo-Small</font>
                 <textcolor>Disabled</textcolor>

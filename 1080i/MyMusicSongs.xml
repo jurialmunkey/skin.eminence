@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="501">
-	<defaultcontrol always="true">50</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<views>50,51,500,53,54,55,56</views>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <views>50,51,500,53,54,55,56</views>
     <background>0</background>
     <onload>ClearProperty(focushub,home)</onload>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-	<controls>
+    <controls>
 
-		<control type="radiobutton" id="19">
-			<description>Filter (hidden)</description>
-			<include>HiddenButton</include>
-		</control>
+        <control type="radiobutton" id="19">
+            <description>Filter (hidden)</description>
+            <include>HiddenButton</include>
+        </control>
 
-		<include>GlobalBackground</include>
+        <include>GlobalBackground</include>
 
-		<include>DefMyNavViews</include>
-		
-		<control type="group">
+        <include>DefMyNavViews</include>
+        
+        <control type="group">
             <posx>0</posx>
             <posy>70</posy>
             <include>DialogVisibility</include>
@@ -130,8 +130,8 @@
 
 
             </control>
-		</control>
+        </control>
 
-	</controls>
+    </controls>
 
 </window>

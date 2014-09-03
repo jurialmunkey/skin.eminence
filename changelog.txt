@@ -5,6 +5,10 @@ Fix widget window 3101
 Widget carousel as own window option
 Fixes to smartplaylist editor and filter
 Add record button
+Update to new version of Roboto font
+Fix alignment issues with radiobuttons
+Fix various radiobutton issues in side menus
+
 
 [B]0.9.50[/B]
 Streamline themes to be default/flat

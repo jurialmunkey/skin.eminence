@@ -4,7 +4,6 @@
     <include>50Focus</include>
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
-    <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     <views>50,51,500,53,54,55,56</views>
     <onunload>ClearProperty(focushub,home)</onunload>
 
@@ -93,26 +92,22 @@
                     <onclick>ActivateWindow(playercontrols)</onclick>
                 </control>
 
-                <control type="togglebutton" id="16">
+                <control type="radiobutton" id="16">
                     <description>PartyMode</description>
                     <include>DefNavMenuButton</include>
                     <label>589</label>
-                    <altlabel>✓  $LOCALIZE[589]</altlabel>
-                    <usealttexture>MusicPartyMode.Enabled</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <selected>MusicPartyMode.Enabled</selected>
+                    <radioposx>370</radioposx>
                     <visible>!Container.Content(musicvideos)</visible>
                 </control>
                 
-                <control type="togglebutton" id="9023">
+                <control type="radiobutton" id="9023">
                     <description>PartyMode</description>
                     <include>DefNavMenuButton</include>
                     <onclick>PlayerControl(Partymode(video))</onclick>
                     <label>589</label>
-                    <altlabel>✓  $LOCALIZE[589]</altlabel>
-                    <usealttexture>MusicPartyMode.Enabled</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <selected>MusicPartyMode.Enabled</selected>
+                    <radioposx>370</radioposx>
                     <visible>Container.Content(musicvideos)</visible>
                 </control>
                 

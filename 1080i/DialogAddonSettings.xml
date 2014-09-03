@@ -71,7 +71,6 @@
 
             <control type="radiobutton" id="4">
                 <description>Default Radio Button</description>
-                <radioposx>950</radioposx>
                 <align>left</align>
                 <font>Font-ListInfo</font>
                 <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
@@ -106,13 +105,9 @@
             <!-- OK CANCEL DEFAULTS -->
             
             <control type="grouplist">
-                <posx>265</posx>
-                <posy>705</posy>
-                <width>1390</width>
-                <align>center</align>
                 <itemgap>32</itemgap>
                 <onup>2</onup>
-                <orientation>horizontal</orientation>
+                <include>DefSettingsOKCancelGroup</include>
                 <control type="button" id="10">
                     <label>186</label>
                     <include>DefSettingsOKCancelButton</include>

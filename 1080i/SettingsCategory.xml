@@ -97,7 +97,7 @@
                 <posx>235</posx>
                 <width>globalw</width>
                 <posy>685</posy>
-                <height>105</height>
+                <height>100</height>
                 <align>justify</align>
                 <font>Font-ListInfo-Small</font>
                 <textcolor>Disabled</textcolor>
@@ -133,7 +133,6 @@
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <align>left</align>
-            <radioposx>984</radioposx>
             <font>Font-ListInfo</font>
             <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
