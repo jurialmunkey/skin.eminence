@@ -143,7 +143,12 @@
             <align>left</align>
             <font>Font-ListInfo-Small</font>
             <textcolor>PanelFG</textcolor>
-            <label>$VAR[WatchedLabel,,  ]$INFO[ListItem.StartDate]$INFO[ListItem.StartTime,$COMMA  ,]$INFO[ListItem.ChannelName,  $LOCALIZE[31173]  ,]</label>
+            <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime,$COMMA  ,]$INFO[ListItem.ChannelName,  $LOCALIZE[31173]  ,]</label>
+        </control>
+        <control type="group">
+            <posx>64r</posx>
+            <posy>40</posy>
+            <include>WatchedImage</include>
         </control>
     </include>
     <include name="PVRrecordinglayoutfocus">

@@ -5,6 +5,9 @@
         <control type="group">
             <posx>400r</posx>
             <visible>!Window.IsVisible(DialogProgress.xml)</visible>
+            <visible>!Window.IsVisible(DialogKaiToast.xml)</visible>
+            <visible>!Window.IsVisible(DialogOK.xml)</visible>
+            <visible>!Window.IsVisible(DialogYesNo.xml)</visible>
             <visible>!Window.IsVisible(fullscreenvideo)</visible>
             <visible>!Window.IsVisible(visualisation)</visible>
             <control type="group">
