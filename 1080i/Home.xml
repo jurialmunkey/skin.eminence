@@ -8,7 +8,6 @@
 	<onunload>ClearProperty(bgwidget.type,home)</onunload>
 	<onunload>ClearProperty(closeosd,home)</onunload>
     <onload>SetProperty(previoushub,home,home)</onload>
-    <onload>ClearProperty(focushub,home)</onload>
 	<onload>ClearProperty(globalsearch,home)</onload>
     <onload>ClearProperty(librarynode,home)</onload>
     <onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>

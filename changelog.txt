@@ -3,6 +3,7 @@ Added trailer button to context menu
 Added update library button to nav menu
 Kiosk mode
 Fixes to side menu for playlist
+Match header tile colour to theme colour in skin extras
 
 [B]0.9.51[/B]
 Added ability to customise global widget type

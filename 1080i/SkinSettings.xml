@@ -707,6 +707,16 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="638" description="Match highlight in header">
+                    <label>31240</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(header.matchhighlight)</onclick>
+                    <selected>Skin.HasSetting(header.matchhighlight)</selected>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
                 <control type="radiobutton" id="637" description="Kiosk mode">
                     <label>31239</label>
                     <align>left</align>
@@ -716,6 +726,8 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+                
+                
                 
                 <control type="radiobutton" id="601">
                     <label>31144</label>

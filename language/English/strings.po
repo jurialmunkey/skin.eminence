@@ -564,3 +564,7 @@ msgctxt "#31239"
 msgid "Kiosk mode"
 msgstr ""
 
+msgctxt "#31240"
+msgid "Use theme colour for header"
+msgstr ""
+
