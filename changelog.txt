@@ -4,6 +4,7 @@ Added update library button to nav menu
 Kiosk mode
 Fixes to side menu for playlist
 Match header tile colour to theme colour in skin extras
+3d Mode selection in osd
 
 [B]0.9.51[/B]
 Added ability to customise global widget type

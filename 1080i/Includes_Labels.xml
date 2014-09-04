@@ -10,6 +10,11 @@
 	    <value condition="IntegerGreaterThan(ListItem.VideoResolution,719)">HD</value>
 	    <value condition="!IsEmpty(ListItem.VideoResolution)">SD</value>
 	</variable>
+    
+    <variable name="DialogSelectHeader">
+        <value condition="stringcompare(Control.GetLabel(1),$LOCALIZE[36528]) | stringcompare(Control.GetLabel(1),$LOCALIZE[36527])">$LOCALIZE[31241]</value>
+        <value>$INFO[Control.GetLabel(1)]</value>
+    </variable>
 	
 	<variable name="VARLabel">
 	    <value condition="Container.Content(songs) + Control.IsVisible(52) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$INFO[ListItem.Duration,  ,]</value>

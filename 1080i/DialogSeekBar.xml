@@ -7,6 +7,14 @@
     <zorder>2</zorder>
     <controls>
     
+        <control type="image">
+            <include>Dimensions_Fullscreen</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <texture colordiffuse="Background">common/white.png</texture>
+            <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
+            <visible>Window.IsVisible(DialogSelect.xml)</visible>
+        </control>
         <control type="group">
             <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
             <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)]</visible>

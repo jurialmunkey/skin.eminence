@@ -68,6 +68,32 @@
         </control>
     </include>
     
+    <include name="StereoscopicOSD">
+        <control type="button" id="4">
+            <label>31241</label>
+            <include>DefOSDControls</include>
+            <include>DefOSDUpDown</include>
+            <onclick>StereoMode</onclick>
+        </control>
+        
+        <control type="button" id="5">
+            <description>Info</description>
+            <label>31119</label>
+            <include>DefOSDControls</include>
+            <include>DefOSDUpDown</include>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
+        </control>
+        
+        <control type="button" id="6">
+            <description>Bookmarks</description>
+            <label>298</label>
+            <include>DefOSDControls</include>
+            <include>DefOSDUpDown</include>
+            <onclick>ActivateWindow(125)</onclick>
+        </control>
+    </include>
+    
     <include name="LiveTVOSDRight">
         <control type="button" id="4">
             <description>Channels</description>

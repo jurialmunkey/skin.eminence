@@ -178,9 +178,10 @@
                 <onup>-</onup>
                 <ondown>-</ondown>
 
-                <include condition="VideoPlayer.Content(LiveTV)">LiveTVOSDRight</include>
-                <include condition="!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(MusicVideos)">VideoOSDRight</include>
-                <include condition="!VideoPlayer.Content(LiveTV) + VideoPlayer.Content(MusicVideos)">VideoMusicOSDRight</include>
+                <include condition="!VideoPlayer.IsStereoscopic + VideoPlayer.Content(LiveTV)">LiveTVOSDRight</include>
+                <include condition="!VideoPlayer.IsStereoscopic + !VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(MusicVideos)">VideoOSDRight</include>
+                <include condition="!VideoPlayer.IsStereoscopic + !VideoPlayer.Content(LiveTV) + VideoPlayer.Content(MusicVideos)">VideoMusicOSDRight</include>
+                <include condition="VideoPlayer.IsStereoscopic">StereoscopicOSD</include>
             </control>
             
 		</control>

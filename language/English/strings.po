@@ -568,3 +568,7 @@ msgctxt "#31240"
 msgid "Use theme colour for header"
 msgstr ""
 
+msgctxt "#31241"
+msgid "3D Mode"
+msgstr ""
+
