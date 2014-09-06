@@ -49,7 +49,7 @@
                             <height>404</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[PosterImage]</texture>
-                            <fadetime>250</fadetime>
+                            <fadetime>150</fadetime>
                         </control>
                         
                         <control type="image">
@@ -59,7 +59,7 @@
                             <height>404</height>
                             <aspectratio>scale</aspectratio>
                             <texture background="true">$VAR[FanartImage]</texture>
-                            <fadetime>250</fadetime>
+                            <fadetime>150</fadetime>
                         </control>
                         
                         <control type="grouplist">
