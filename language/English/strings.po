@@ -572,3 +572,7 @@ msgctxt "#31241"
 msgid "3D Mode"
 msgstr ""
 
+msgctxt "#31242"
+msgid "Media Info"
+msgstr ""
+

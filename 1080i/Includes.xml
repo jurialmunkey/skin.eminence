@@ -25,6 +25,7 @@
     <include file="View_56_BigList.xml" />
     <include file="View_57_InfoList.xml" />
     <include file="View_58_BannerList.xml" />
+    <include file="View_59_MediaInfo3.xml" />
     <include file="View_PVR.xml" />
 
     <include name="HiddenButton">
