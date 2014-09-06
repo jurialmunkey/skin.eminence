@@ -86,7 +86,7 @@
                             </control>
                             <control type="textbox">
                                 <width>915</width>
-                                <height>135</height>
+                                <height>130</height>
                                 <align>justify</align>
                                 <font>Font-ListInfo-Small</font>
                                 <label>$VAR[PlotBox]</label>
