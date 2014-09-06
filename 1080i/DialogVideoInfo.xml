@@ -341,7 +341,7 @@
                         <posx>20</posx>
                         <bottom>20</bottom>
                         <width>241</width>
-                        <height>73</height>
+                        <height>68</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label]</label>
@@ -378,7 +378,7 @@
                         <posx>20</posx>
                         <bottom>20</bottom>
                         <width>241</width>
-                        <height>73</height>
+                        <height>68</height>
                         <align>left</align>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.Label]</label>
