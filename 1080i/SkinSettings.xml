@@ -541,10 +541,23 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+                
+                <control type="button" id="803">
+                    <label>31185</label>
+                    <label2>$VAR[FanartFadeLabel]</label2>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick condition="!Skin.HasSetting(fanart.showmore)">Skin.SetBool(fanart.showmore)</onclick>
+                    <onclick condition="Skin.HasSetting(fanart.showmore) + !Skin.HasSetting(fanart.showall)">Skin.SetBool(fanart.showall)</onclick>
+                    <onclick condition="Skin.HasSetting(fanart.showall)">Skin.Reset(fanart.showmore)</onclick>
+                    <onclick condition="Skin.HasSetting(fanart.showall)">Skin.Reset(fanart.showall)</onclick>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <enable>!Skin.HasSetting(disable.fanart)</enable>
+                </control>
+                
                 <control type="radiobutton" id="827">
                     <label>31230</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(Fanart.Animate)</onclick>
@@ -552,24 +565,11 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="803">
-                    <label>31185</label>
-                    
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(fanart.showmore)</onclick>
-                    <selected>Skin.HasSetting(fanart.showmore)</selected>
-                    <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
+                
                 <control type="radiobutton" id="832">
-                    <label>31145</label>
-                    
-                    
+                    <label>31145</label>                   
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
                     <selected>!Skin.HasSetting(disable.bgvideo)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
@@ -577,8 +577,6 @@
                 </control>
                 <control type="radiobutton" id="805">
                     <label>31210</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(show.silhouette)</onclick>
@@ -590,8 +588,6 @@
                 
                 <control type="radiobutton" id="825">
                     <label>31218</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(purplefade)</onclick>
@@ -601,7 +597,6 @@
                 </control>
                 <control type="button" id="633">
                     <label>31228</label>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <label2>$INFO[Skin.String(global.background)]</label2>

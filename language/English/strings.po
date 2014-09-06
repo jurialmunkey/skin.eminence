@@ -345,7 +345,7 @@ msgid "Quick nav mode"
 msgstr ""
 
 msgctxt "#31185"
-msgid "Decrease background fanart fade"
+msgid "Fanart fade amount"
 msgstr ""
 
 msgctxt "#31186"
@@ -576,3 +576,14 @@ msgctxt "#31242"
 msgid "Media Info"
 msgstr ""
 
+msgctxt "#31243"
+msgid "Most"
+msgstr ""
+
+msgctxt "#31244"
+msgid "Moderate"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Least"
+msgstr ""

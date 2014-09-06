@@ -1,5 +1,6 @@
 [B]0.9.53[/B]
 Media Info view for Movies/TvShows
+Fanart fade amount option
 
 [B]0.9.52[/B]
 Added trailer button to context menu
