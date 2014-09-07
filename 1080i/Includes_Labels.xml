@@ -325,4 +325,40 @@
         <value>$LOCALIZE[31129]</value>
     </variable>
     
+    <variable name="SkinSettingsDescription">
+        <value condition="ControlGroup(3).HasFocus()">$LOCALIZE[31246]</value>
+        <value condition="ControlGroup(5).HasFocus(201)">$LOCALIZE[31247]</value>
+        <value condition="ControlGroup(5).HasFocus(202)">$LOCALIZE[31248]</value>
+        <value condition="ControlGroup(5).HasFocus(203)">$LOCALIZE[31249]</value>
+        <value condition="ControlGroup(5).HasFocus(204)">$LOCALIZE[31250]</value>
+        <value condition="ControlGroup(5).HasFocus(205)">$LOCALIZE[31251]</value>
+        <value condition="ControlGroup(5).HasFocus(208)">$LOCALIZE[31252]</value>
+        <value condition="ControlGroup(5).HasFocus(301)">$LOCALIZE[31253]</value>
+        <value condition="ControlGroup(5).HasFocus(302)">$LOCALIZE[31254]</value>
+        <value condition="ControlGroup(5).HasFocus(303)">$LOCALIZE[31255]</value>
+        <value condition="ControlGroup(5).HasFocus(601)">$LOCALIZE[31256]</value>
+        <value condition="ControlGroup(5).HasFocus(602)">$LOCALIZE[31257]</value>
+        <value condition="ControlGroup(5).HasFocus(603)">$LOCALIZE[31258]</value>
+        <value condition="ControlGroup(5).HasFocus(605)">$LOCALIZE[31259]</value>
+        <value condition="ControlGroup(5).HasFocus(606)">$LOCALIZE[31260]</value>
+        <value condition="ControlGroup(5).HasFocus(607)">$LOCALIZE[31261]</value>
+        <value condition="ControlGroup(5).HasFocus(608)">$LOCALIZE[31262]</value>
+        <value condition="ControlGroup(5).HasFocus(401)">$LOCALIZE[31263]</value>
+        <value condition="ControlGroup(5).HasFocus(402)">$LOCALIZE[31264]</value>
+        <value condition="ControlGroup(5).HasFocus(403) | ControlGroup(5).HasFocus(404) | ControlGroup(5).HasFocus(405) | ControlGroup(5).HasFocus(406) | ControlGroup(5).HasFocus(407) | ControlGroup(5).HasFocus(503) | ControlGroup(5).HasFocus(504) | ControlGroup(5).HasFocus(505) | ControlGroup(5).HasFocus(506) | ControlGroup(5).HasFocus(507)">$LOCALIZE[31265]</value>
+        <value condition="ControlGroup(5).HasFocus(501)">$LOCALIZE[31266]</value>
+        <value condition="ControlGroup(5).HasFocus(502)">$LOCALIZE[31267]</value>
+        <value condition="ControlGroup(5).HasFocus(701)">$LOCALIZE[31268]</value>
+        <value condition="ControlGroup(5).HasFocus(704)">$LOCALIZE[31269]</value>
+        <value condition="ControlGroup(5).HasFocus(705)">$LOCALIZE[31270]</value>
+        <value condition="ControlGroup(5).HasFocus(801)">$LOCALIZE[31271]</value>
+        <value condition="ControlGroup(5).HasFocus(802)">$LOCALIZE[31272]</value>
+        <value condition="ControlGroup(5).HasFocus(803)">$LOCALIZE[31273]</value>
+        <value condition="ControlGroup(5).HasFocus(804)">$LOCALIZE[31274]</value>
+        <value condition="ControlGroup(5).HasFocus(805)">$LOCALIZE[31275]</value>
+        <value condition="ControlGroup(5).HasFocus(806)">$LOCALIZE[31276]</value>
+        <value condition="ControlGroup(5).HasFocus(902)">$LOCALIZE[31277]</value>
+        <value>$LOCALIZE[31246]</value>
+    </variable>
+    
 </includes>

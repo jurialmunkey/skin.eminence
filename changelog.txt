@@ -1,3 +1,6 @@
+[B]0.9.54[/B]
+Skin Settings descriptions
+
 [B]0.9.53[/B]
 Media Info view for Movies/TvShows
 Fanart fade amount option

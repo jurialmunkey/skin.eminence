@@ -134,14 +134,14 @@
             <control type="textbox">
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
-                <posx>285</posx>
-                <width>1376</width>
+                <posx>235</posx>
+                <width>globalw</width>
                 <posy>685</posy>
-                <height>105</height>
+                <height>100</height>
                 <align>justify</align>
                 <font>Font-ListInfo-Small</font>
                 <textcolor>Disabled</textcolor>
-                <label>...</label>
+                <label>$VAR[SkinSettingsDescription]</label>
             </control>
 
             <control type="grouplist" id="5">
@@ -153,102 +153,12 @@
                 <onup>5</onup>
                 <ondown>5</ondown>
                
-                
-                <!---------------------->
-                <!-- Carousel Widgets -->
-                <!---------------------->
-                
-                
-                
-                <control type="radiobutton" id="208">
-                    <label>31195</label>
-                    
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
-                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="radiobutton" id="267">
-                    <label>31238</label>
-                    
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(widget.window)</onclick>
-                    <selected>Skin.HasSetting(widget.window)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="radiobutton" id="268">
-                    <label>31237</label>
-                    
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(home.invertwidgets)</onclick>
-                    <selected>Skin.HasSetting(home.invertwidgets)</selected>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="button" id="241">
-                    <label>$LOCALIZE[31222] $NUMBER[1]</label>
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.501,3065)</onclick>
-                    <onclick>ActivateWindow(3065)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="button" id="242">
-                    <label>$LOCALIZE[31222] $NUMBER[2]</label>
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.502,3065)</onclick>
-                    <onclick>ActivateWindow(3065)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="button" id="243">
-                    <label>$LOCALIZE[31222] $NUMBER[3]</label>
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.503,3065)</onclick>
-                    <onclick>ActivateWindow(3065)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="button" id="244">
-                    <label>$LOCALIZE[31222] $NUMBER[4]</label>
-                    
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>SetProperty(item,home.504,3065)</onclick>
-                    <onclick>ActivateWindow(3065)</onclick>
-                    <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                
-                
                 <!---------------->
                 <!-- Home Tiles -->
                 <!---------------->
                 
-                <control type="button" id="201">
+                <control type="button" id="201" description="Customise Home">
                     <label>31164</label>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>ActivateWindow(3063)</onclick>
@@ -256,9 +166,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="216">
+                <control type="button" id="202" description="Global Widget">
                     <label>31209</label>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetBool(home.usemixedglobalwidget)</onclick>
@@ -268,10 +177,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="209">
+                <control type="radiobutton" id="203" description="Show Widget Info">
                     <label>31198</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
@@ -280,12 +187,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                
-                <control type="radiobutton" id="214">
+                <control type="radiobutton" id="204" description="Tiles Match Theme">
                     <label>31206</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.monochromemode)</onclick>
@@ -295,10 +198,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="213">
+                <control type="radiobutton" id="205" description="Highlight Match Tile">
                     <label>31204</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.matchcolor)</onclick>
@@ -308,10 +209,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="212">
+                <control type="radiobutton" id="206" description="Fade Tiles">
                     <label>31205</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.dontfade)</onclick>
@@ -321,12 +220,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                
-                <control type="radiobutton" id="215">
+                <control type="radiobutton" id="207" description="Show Power">
                     <label>31217</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
@@ -335,9 +230,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="206">
+                <control type="button" id="208" description="Home Background">
                     <label>31149</label>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <label2>$INFO[Skin.String(home.fanart)]</label2>
@@ -347,14 +241,87 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                
+                <!---------------------->
+                <!-- Carousel Widgets -->
+                <!---------------------->
+
+                <control type="radiobutton" id="301" description="Enable carousel">
+                    <label>31195</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
+                    <selected>!Skin.HasSetting(home.widgetdown)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="302" description="Carousel in own window">
+                    <label>31238</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(widget.window)</onclick>
+                    <selected>Skin.HasSetting(widget.window)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="radiobutton" id="303" description="Invert access to widgets">
+                    <label>31237</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(home.invertwidgets)</onclick>
+                    <selected>Skin.HasSetting(home.invertwidgets)</selected>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="304" description="Widget Carousel Item">
+                    <label>$LOCALIZE[31222] $NUMBER[1]</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.501,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="305" description="Widget Carousel Item">
+                    <label>$LOCALIZE[31222] $NUMBER[2]</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.502,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="306" description="Widget Carousel Item">
+                    <label>$LOCALIZE[31222] $NUMBER[3]</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.503,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="307" description="Widget Carousel Item">
+                    <label>$LOCALIZE[31222] $NUMBER[4]</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>SetProperty(item,home.504,3065)</onclick>
+                    <onclick>ActivateWindow(3065)</onclick>
+                    <visible>ControlGroup(3).HasFocus(32)</visible>
+                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
                
                 <!---------------->
                 <!-- Movies Hub -->
                 <!---------------->
-                <control type="button" id="301">
+                <control type="button" id="401" description="Movie Hub Widget">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick condition="!stringcompare(Skin.String(movie.widget),playlist) + !stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,recommended)</onclick>
@@ -364,10 +331,9 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="302">
+                <control type="button" id="402" description="Movie Hub Playlist">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(movie.widget.playlist)]</label2>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
@@ -376,60 +342,55 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="303">
+                <control type="button" id="403">
                     <label>$LOCALIZE[31186] 1</label>
                     <label2>$INFO[Skin.String(moviehub.1.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.1,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="304">
+                <control type="button" id="404">
                     <label>$LOCALIZE[31186] 2</label>
                     <label2>$INFO[Skin.String(moviehub.2.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.2,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="305">
+                <control type="button" id="405">
                     <label>$LOCALIZE[31186] 3</label>
                     <label2>$INFO[Skin.String(moviehub.3.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.3,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="306">
+                <control type="button" id="406">
                     <label>$LOCALIZE[31186] 4</label>
                     <label2>$INFO[Skin.String(moviehub.4.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.4,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                
-                <control type="button" id="307">
+                <control type="button" id="407">
                     <label>$LOCALIZE[31186] 5</label>
                     <label2>$INFO[Skin.String(moviehub.5.Label)]</label2>
                     <onclick>SetProperty(item,moviehub.5,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
@@ -443,13 +404,11 @@
                 <control type="button" id="501">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick condition="!stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
-                    
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
@@ -457,7 +416,6 @@
                 <control type="button" id="502">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
@@ -471,7 +429,6 @@
                     <label2>$INFO[Skin.String(tvshowhub.1.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.1,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -483,7 +440,6 @@
                     <label2>$INFO[Skin.String(tvshowhub.2.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.2,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -495,7 +451,6 @@
                     <label2>$INFO[Skin.String(tvshowhub.3.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.3,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -507,7 +462,6 @@
                     <label2>$INFO[Skin.String(tvshowhub.4.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.4,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
@@ -519,30 +473,27 @@
                     <label2>$INFO[Skin.String(tvshowhub.5.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.5,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+                
+                
                 <!------------>
                 <!-- FANART -->
                 <!------------>
-                
-                <control type="radiobutton" id="802">
+                <control type="radiobutton" id="601" description="Show Fanart">
                     <label>31146</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
                     <selected>!Skin.HasSetting(disable.fanart)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="803">
+                <control type="button" id="602" description="Fanart Fade">
                     <label>31185</label>
                     <label2>$VAR[FanartFadeLabel]</label2>
                     <align>left</align>
@@ -556,7 +507,7 @@
                     <enable>!Skin.HasSetting(disable.fanart)</enable>
                 </control>
                 
-                <control type="radiobutton" id="827">
+                <control type="radiobutton" id="603" description="Fanart Animate">
                     <label>31230</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -566,7 +517,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="832">
+                <control type="radiobutton" id="604" description="Show Video">
                     <label>31145</label>                   
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -575,7 +526,8 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="805">
+                
+                <control type="radiobutton" id="605" description="Show Silhouette">
                     <label>31210</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -585,8 +537,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                <control type="radiobutton" id="825">
+                <control type="radiobutton" id="606" description="Time Based Colour Background">
                     <label>31218</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -595,7 +546,8 @@
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="button" id="633">
+                
+                <control type="button" id="607" description="Background Image">
                     <label>31228</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -608,9 +560,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
 
-                <control type="button" id="801">
+                <control type="button" id="608" description="Weather Fanart">
                     <label>31138</label>
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
@@ -622,22 +573,18 @@
                 <!--------->
                 <!-- OSD -->
                 <!--------->
-                <control type="radiobutton" id="401">
+                <control type="radiobutton" id="701" description="Artist Slideshow">
                     <label>31139</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="402">
+                
+                <control type="radiobutton" id="702" description="Show Vis Behind">
                     <label>$LOCALIZE[31140]</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <disabledcolor>PanelFG-NF</disabledcolor>
@@ -645,42 +592,34 @@
                     <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
-                    <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(402)">Conditional</animation>
+                    <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(702)">Conditional</animation>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="403">
+                
+                <control type="radiobutton" id="703" description="Pvr Icon">
                     <label>31161</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(disable.pvricon)</onclick>
                     <selected>!Skin.HasSetting(disable.pvricon)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="404">
+                <control type="radiobutton" id="704" description="Show Info">
                     <label>31162</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(showdetailedosdinfo)</onclick>
                     <selected>Skin.HasSetting(showdetailedosdinfo)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="405">
+                <control type="radiobutton" id="705" description="Show Clearart">
                     <label>31216</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(hide.clearartosd)</onclick>
                     <selected>!Skin.HasSetting(hide.clearartosd)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
@@ -690,8 +629,7 @@
                 <!------------>
                 <!-- ADDONS -->
                 <!------------>
-                
-                <control type="button" id="634">
+                <control type="button" id="801" description="Change Header Default Text">
                     <label>31236</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -702,7 +640,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="638" description="Match highlight in header">
+                <control type="radiobutton" id="802" description="Header to Theme Colour">
                     <label>31240</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -712,7 +650,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="637" description="Kiosk mode">
+                <control type="radiobutton" id="803" description="Kiosk mode">
                     <label>31239</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -722,9 +660,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                
-                <control type="radiobutton" id="601">
+                <control type="radiobutton" id="804" description="Tv Tunes">
                     <label>31144</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -734,7 +670,7 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="602">
+                <control type="radiobutton" id="805" description="Rss Feed">
                     <label>13305</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -744,10 +680,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="603">
+                <control type="radiobutton" id="806" description="Rss Next Aired">
                     <label>31188</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(rss.tvnextaired)</onclick>
@@ -756,10 +690,9 @@
                     <enable>!Skin.HasSetting(disable.rss)</enable>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="604">
+                
+                <control type="radiobutton" id="807" description="Next Aired Update">
                     <label>31189</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
@@ -767,23 +700,19 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="radiobutton" id="623">
+                
+                <control type="radiobutton" id="808" description="Disable Weather in Clock">
                     <label>31177</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    
                     <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
                     <selected>!Skin.HasSetting(disable.weatherheader)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="202">
+                <control type="radiobutton" id="809">
                     <label>31178</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(home.talltiles)</onclick>
@@ -795,14 +724,11 @@
                 </control>
                 
                 
-                
-                
+                <!-------------->
                 <!-- ADVANCED -->
-                
-                <control type="radiobutton" id="631">
+                <!-------------->
+                <control type="radiobutton" id="901" description="Debug Info">
                     <label>654</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
@@ -811,11 +737,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                <control type="button" id="632">
+                <control type="button" id="902" description="Skin Reinit">
                     <label>31137</label>
-                    
-                    
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(skin.init)</onclick>
@@ -825,14 +748,8 @@
                     <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                
-                
             </control>
         </control>
-        
         <include>GlobalTopBar</include>
-        
-        
-
     </controls>
 </window>
