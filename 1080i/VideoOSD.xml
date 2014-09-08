@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2901">
-	<include condition="Player.PauseEnabled">OSDPauseFocus</include>
+    <include condition="Player.PauseEnabled">OSDPauseFocus</include>
     <include condition="!Player.PauseEnabled">OSDStopFocus</include>
-	<allowoverlay>yes</allowoverlay>
+    <allowoverlay>yes</allowoverlay>
     <zorder>5</zorder>
     
     <onunload>ClearProperty(fullscreeninfo,seekbar)</onunload>
     
-	<controls>
-	    <control type="group">
-	        <posy>8</posy>
-	        
-	        <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
-	        <animation type="WindowOpen" reversible="false">
-	            <effect type="slide" start="0,64" end="0" time="200"/>
+    <controls>
+        <control type="group">
+            <posy>8</posy>
+            
+            <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
+            <animation type="WindowOpen" reversible="false">
+                <effect type="slide" start="0,64" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" delay="150" time="200"/>
             </animation>
             <animation type="Visible">
@@ -184,7 +184,7 @@
                 <include condition="VideoPlayer.IsStereoscopic">StereoscopicOSD</include>
             </control>
             
-		</control>
-	</controls>
+        </control>
+    </controls>
 
 </window>

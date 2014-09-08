@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-    <defaultcontrol always="true">20</defaultcontrol>
+    <defaultcontrol always="true">9002</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
         <control type="group">
@@ -201,7 +201,7 @@
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
-                    <control type="button" id="8">
+                    <control type="edit" id="8">
                         <description>Channel name</description>
                         <label>19201</label>
                         <align>left</align>

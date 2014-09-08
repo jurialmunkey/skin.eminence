@@ -198,7 +198,7 @@
                             <label>$VAR[PlotBox]</label>
                         </control>
                         <control type="group">
-                            <visible>IsEmpty(Control.GetLabel(21001)</visible>
+                            <visible>IsEmpty(Control.GetLabel(21001))</visible>
                             <control type="textbox">
                                 <posx>globalpad</posx>
                                 <posy>480</posy>
