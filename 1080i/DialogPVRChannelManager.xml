@@ -1,399 +1,346 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol always="true">20</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-    <coordinates>
-        <posx>horzpad</posx>
-        <posy>70</posy>
-    </coordinates>
-	<controls>
-		<control type="group">
-            <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+    <defaultcontrol always="true">20</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control type="group">
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <visible>!Window.IsVisible(SliderDialog)</visible>
+            <visible>!Window.IsVisible(FileBrowser)</visible>
+            <visible>!Window.IsVisible(LockSettings.xml)</visible>
             <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-			<left>listx</left>
-			<top>listy</top>
-			<control type="scrollbar" id="60">
-				<posx>590</posx>
-				<height>690</height>
-				<onleft>20</onleft>
-				<onright>9002</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			<control type="list" id="20">
-				<width>570</width>
-				<height>690</height>
-				<onup>20</onup>
-				<ondown>20</ondown>
-				<onleft>9002</onleft>
-				<onright>60</onright>
-				<pagecontrol>60</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<itemlayout height="59" width="630">
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<width>36</width>
-						<height>36</height>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<width>36</width>
-						<height>36</height>
-						<colordiffuse>77FFFFFF</colordiffuse>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>60</left>
-						<top>0</top>
-						<width>335</width>
-						<height>56</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>60</left>
-						<top>0</top>
-						<width>335</width>
-						<height>56</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>390</left>
-						<top>10</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>ListItem.Property(Changed)</visible>
-					</control>
-				</itemlayout>
-				<focusedlayout height="100" width="630">
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<width>570</width>
-						<height>99</height>
-						<texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
-						<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
-					</control>
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<width>36</width>
-						<height>36</height>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>10</left>
-						<top>10</top>
-						<width>36</width>
-						<height>36</height>
-						<colordiffuse>77FFFFFF</colordiffuse>
-						<texture>$INFO[ListItem.Property(Icon)]</texture>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>60</left>
-						<top>0</top>
-						<width>335</width>
-						<height>56</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="label">
-						<left>60</left>
-						<top>0</top>
-						<width>335</width>
-						<height>56</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
-						<visible>!ListItem.Property(ActiveChannel)</visible>
-					</control>
-					<control type="image">
-						<left>390</left>
-						<top>10</top>
-						<width>20</width>
-						<height>20</height>
-						<texture>OverlayWatched.png</texture>
-						<visible>ListItem.Property(Changed)</visible>
-					</control>
-					<control type="label">
-						<left>10</left>
-						<top>59</top>
-						<width>410</width>
-						<height>30</height>
-						<font>Font-ListInfo-Small</font>
-						<align>left</align>
-						<aligny>center</aligny>
-						<label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
-					</control>
-				</focusedlayout>
-			</control>
-            <control type="group" id="9002">
-                <control type="grouplist" id="9003">
-                    <left>620</left>
-                    <width>630</width>
-                    <itemgap>3</itemgap>
-                    <ondown>30</ondown>
-                    <usecontrolcoords>true</usecontrolcoords>
+            <control type="group">
+                <posx>horzpad</posx>
+                <posy>70</posy>
+                <include>Animation.SlideOpen.Left</include>
+                <control type="label" description="Info Label">
+                    <include>DefSideLabelCoords</include>
+                    <label>31278</label>
+                </control>
+            </control>
+            
+            <control type="group">
+                <posy>70</posy>
+                <posx>horzpad</posx>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
+                <visible>!Window.IsVisible(SliderDialog)</visible>
+                <visible>!Window.IsVisible(FileBrowser)</visible>
+                <visible>!Window.IsVisible(LockSettings.xml)</visible>
+                <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+                <control type="image">
+                    <posx>listpad</posx>
+                    <posy>listy</posy>
+                    <width>bannerwborder</width>
+                    <height>549</height>
+                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                </control>
+                <control type="list" id="20">
+                    <posx>listpad</posx>
+                    <posy>listy</posy>
+                    <width>bannerwborder</width>
+                    <height>552</height>
                     <orientation>vertical</orientation>
-                    <control type="label">
-                        <description>channel options Header</description>
-						<width>630</width>
-						<height>56</height>
-						<align>left</align>
-						<aligny>center</aligny>
-                        <label>31196</label>
-                        <textcolor>Highlight</textcolor>
+                    <onright>9002</onright>
+                    <ondown>9003</ondown>
+                    <include>Animation.SlideOpen.Right</include>
+                    <itemlayout height="69" width="bannerwborder">
+                        
+                        <control type="label">
+                            <left>25</left>
+                            <top>0</top>
+                            <right>100</right>
+                            <height>69</height>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        </control>
+                        <control type="image">
+                            <left>69r</left>
+                            <top>globalpad</top>
+                            <width>49</width>
+                            <height>49</height>
+                            <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        </control>
+                        <control type="image">
+                            <left>390</left>
+                            <top>10</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>OverlayWatched.png</texture>
+                            <visible>ListItem.Property(Changed)</visible>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="138" width="bannerwborder">
+                        <control type="image">
+                            <left>0</left>
+                            <top>0</top>
+                            <right>0</right>
+                            <bottom>3</bottom>
+                            <texture border="5" colordiffuse="PosterHighlight">common/white.png</texture>
+                        </control>
+                        <control type="label">
+                            <left>25</left>
+                            <top>0</top>
+                            <right>100</right>
+                            <height>69</height>
+                            <textcolor>Selected</textcolor>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>$INFO[ListItem.Property(Number),(,) - ]$INFO[ListItem.Property(Name)]</label>
+                        </control>
+                        <control type="image">
+                            <left>69r</left>
+                            <top>globalpad</top>
+                            <width>49</width>
+                            <height>49</height>
+                            <texture>$INFO[ListItem.Property(Icon)]</texture>
+                        </control>
+                        <control type="image">
+                            <left>390</left>
+                            <top>10</top>
+                            <width>20</width>
+                            <height>20</height>
+                            <texture>OverlayWatched.png</texture>
+                            <visible>ListItem.Property(Changed)</visible>
+                        </control>
+                        <control type="label">
+                            <left>25</left>
+                            <top>69</top>
+                            <right>25</right>
+                            <height>49</height>
+                            <textcolor>Selected</textcolor>
+                            <font>Font-ListInfo-Small</font>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
+                        </control>
+                    </focusedlayout>
+                </control>
+                
+            </control>
+            <control type="group">
+                <posx>946</posx>
+                <posy>70</posy>
+                
+                <control type="grouplist">
+                    <posx>listpad</posx>
+                    <posy>listy</posy>
+                    <width>bannerwborder</width>
+                    <height>549</height>
+                    <itemgap>3</itemgap>
+                    <orientation>vertical</orientation>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
                     </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                    <control type="image">
+                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <height>66</height>
+                        <left>0</left>
+                        <right>0</right>
+                    </control>
+                </control>
+                <control type="grouplist" id="9002">
+                    <posx>listpad</posx>
+                    <posy>listy</posy>
+                    <onleft>20</onleft>
+                    <ondown>9003</ondown>
+                    <onright>9003</onright>
+                    <width>bannerwborder</width>
+                    <height>549</height>
+                    <itemgap>3</itemgap>
+                    <orientation>vertical</orientation>
+                    <include>Animation.SlideOpen.Left</include>
                     <control type="radiobutton" id="7">
                         <description>Channel activated</description>
-                        <width>630</width>
-                        <height>56</height>
+                        <label>19074</label>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <label>19074</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>33</onup>
-                        <ondown>8</ondown>
-                        <radioposx>552</radioposx>
+                        <radioposx>647</radioposx>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="button" id="8">
                         <description>Channel name</description>
-                        <width>630</width>
-                        <height>56</height>
                         <label>19201</label>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <onright>60</onright>
-                        <onleft>20</onleft>
-                        <onup>7</onup>
-                        <ondown>9</ondown>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
-                    <control type="button" id="9">
-                        <description>Channel logo Button</description>
-                        <width>630</width>
-                        <height>56</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>19202</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>8</onup>
-                        <ondown>12</ondown>
-                    </control>
-                    <control type="image" id="10">
-                        <description>Current Channel Icon</description>
-                        <posy>-49</posy>
-                        <right>10</right>
-                        <width>36</width>
-                        <height>36</height>
-                        <aspectratio>keep</aspectratio>
-                        <info>ListItem.Property(Icon)</info>
+                    <control type="group" id="9004">
+                        <height>66</height>
+                        <control type="button" id="9">
+                            <description>Channel logo Button</description>
+                            <onup>8</onup>
+                            <ondown>12</ondown>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <label>19202</label>
+                            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                            <font>Font-ListInfo</font>
+                            <height>66</height>
+                        </control>
+                        <control type="image" id="10">
+                            <posx>69r</posx>
+                            <posy>10</posy>
+                            <width>49</width>
+                            <height>49</height>
+                            <aspectratio>keep</aspectratio>
+                            <info>ListItem.Property(Icon)</info>
+                        </control> 
                     </control>
                     <control type="radiobutton" id="12">
                         <description>EPG activated</description>
-                        <posy>10</posy>
-                        <width>630</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19206</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>9</onup>
-                        <ondown>13</ondown>
-                        <radioposx>552</radioposx>
+                        <radioposx>647</radioposx>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="spincontrolex" id="13">
                         <description>EPG source</description>
-                        <width>630</width>
-                        <height>56</height>
                         <label>19200</label>
-                        <onright>9000</onright>
-                        <onleft>20</onleft>
-                        <onup>12</onup>
-                        <ondown>14</ondown>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="radiobutton" id="14">
                         <description>Parental locked</description>
-                        <width>630</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19267</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>13</onup>
-                        <ondown>30</ondown>
-                        <radioposx>552</radioposx>
+                        <radioposx>647</radioposx>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
-                </control>
-                <control type="group">
-                    <left>620</left>
-                    <posy>454</posy>
-                    <width>630</width>
-                    <control type="label">
-                        <description>channel options Header</description>
-                        <width>630</width>
-                        <height>56</height>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>31197</label>
-                        <textcolor>Highlight</textcolor>
-                    </control>
-                    <control type="button" id="30">
+                    <!--<control type="button" id="30">
                         <description>Group Manager Button</description>
-                        <posy>59</posy>
-                        <width>315</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19205</label>
-                        <onleft>20</onleft>
-                        <onright>31</onright>
-                        <onup>14</onup>
-                        <ondown>32</ondown>
-                    </control>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
+                    </control-->
                     <control type="button" id="31">
                         <description>Edit channel Button</description>
-                        <posy>59</posy>
-                        <posx>315</posx>
-                        <width>315</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19203</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>14</onup>
-                        <ondown>32</ondown>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="button" id="32">
                         <description>Delete channel Button</description>
-                        <posy>118</posy>
-                        <width>315</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19211</label>
-                        <onleft>20</onleft>
-                        <onright>33</onright>
-                        <onup>31</onup>
-                        <ondown>34</ondown>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="button" id="33">
                         <description>New channel Button</description>
-                        <posy>118</posy>
-                        <posx>315</posx>
-                        <width>315</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19204</label>
-                        <onleft>20</onleft>
-                        <onright>9000</onright>
-                        <onup>31</onup>
-                        <ondown>34</ondown>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="button" id="34">
                         <description>TV/Radio Button</description>
-                        <posy>177</posy>
-                        <width>630</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <visible>IsEmpty(Window.Property(IsRadio))</visible>
                         <label>19024</label>
-                        <onleft>30</onleft>
-                        <onright>9000</onright>
-                        <onup>32</onup>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
                     </control>
                     <control type="button" id="34">
                         <description>TV/Radio Button</description>
-                        <posy>177</posy>
-                        <width>630</width>
-                        <height>56</height>
                         <align>left</align>
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Window.Property(IsRadio))</visible>
                         <label>19023</label>
-                        <onleft>30</onleft>
-                        <onright>9000</onright>
-                        <onup>32</onup>
+                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <font>Font-ListInfo</font>
+                        <height>66</height>
+                    </control>
+                </control>
+            </control>
+            <control type="group">
+                <posy>160</posy>
+                <control type="grouplist" id="9003">
+                    <itemgap>32</itemgap>
+                    <onup>9002</onup>
+                    <include>DefSettingsOKCancelGroup</include>
+                    <control type="button" id="4">
+                        <label>186</label>
+                        <include>DefSettingsOKCancelButton</include>
+                    </control>
+
+                    <control type="button" id="5">
+                        <description>Cancel</description>
+                        <label>14070</label>
+                        <include>DefSettingsOKCancelButton</include>
                     </control>
                     
+                    <control type="button" id="6">
+                        <description>Defaults Button</description>
+                        <label>222</label>
+                        <include>DefSettingsOKCancelButton</include>
+                    </control>
                 </control>
             </control>
-            <control type="group" id="9000">
-                <left>1270</left>
-                <posy>59</posy>
-                <control type="button" id="4">
-                    <description>OK Button</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>400</width>
-                    <height>56</height>
-                    <label>186</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <onleft>9002</onleft>
-                    <onright>20</onright>
-                    <onup>6</onup>
-                    <ondown>5</ondown>
-                </control>
-                <control type="button" id="5">
-                    <description>Apply changes Button</description>
-                    <left>0</left>
-                    <top>59</top>
-                    <width>400</width>
-                    <height>56</height>
-                    <label>14070</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <onleft>9002</onleft>
-                    <onright>20</onright>
-                    <onup>4</onup>
-                    <ondown>6</ondown>
-                </control>
-                <control type="button" id="6">
-                    <description>Cancel Button</description>
-                    <left>0</left>
-                    <top>118</top>
-                    <width>400</width>
-                    <height>56</height>
-                    <label>222</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <onleft>9002</onleft>
-                    <onright>20</onright>
-                    <onup>5</onup>
-                    <ondown>4</ondown>
-                </control>
-                <control type="image">
-                    <left>5</left>
-                    <top>200</top>
-                    <width>250</width>
-                    <height>250</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true">$INFO[Container(20).ListItem.Icon]</texture>
-                </control> 
-
-            </control>
-		</control>
-	</controls>
+        </control>
+    </controls>
 </window>

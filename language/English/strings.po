@@ -715,3 +715,7 @@ msgstr ""
 msgctxt "#31277"
 msgid "Resets the skin back to default settings. WARNING: this will wipe all your skin settings. All custom tiles and widgets will be reset to defaults."
 msgstr ""
+
+msgctxt "#31278"
+msgid "PVR Manager"
+msgstr ""

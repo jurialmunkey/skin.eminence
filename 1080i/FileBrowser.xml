@@ -153,6 +153,7 @@
             <posx>20</posx>      
             <control type="grouplist" id="9100">
                 <onup>450</onup>
+                <itemgap>32</itemgap>
                 <include>DefSettingsOKCancelGroup</include>
                 <control type="button" id="413">
                     <description>Ok</description>
