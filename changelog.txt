@@ -1,3 +1,11 @@
+[B]0.9.55[/B]
+Preparation for repository inclusion
+Removal of script into own addon
+script.eminencefunctions now referenced rather than directly
+Change to flat theme as default
+Old theme become Glass
+script.eminencefunctions now a dependency
+
 [B]0.9.54[/B]
 Skin Settings descriptions
 

@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-	id="skin.eminence"
-	version="0.9.54"
-	name="Eminence"
-	provider-name="jurialmunkey">
-	<requires>
-		<import addon="xbmc.gui" version="5.0.0"/>
-		<import addon="service.skin.widgets" version="0.0.25"/>
-		<import addon="script.globalsearch" version="1.1.1"/>
-		<import addon="script.artistslideshow" version="1.5.0"/>
-		<import addon="script.tvtunes" version="3.0.6"/>
-	</requires>
-	<extension
+    id="skin.eminence"
+    version="0.9.55"
+    name="Eminence"
+    provider-name="jurialmunkey">
+    <requires>
+        <import addon="xbmc.gui" version="5.0.0"/>
+        <import addon="service.skin.widgets" version="0.0.25"/>
+        <import addon="script.globalsearch" version="1.1.1"/>
+        <import addon="script.artistslideshow" version="1.5.0"/>
+        <import addon="script.eminencefunctions" version="0.0.1"/>
+        <import addon="script.tvtunes" version="3.0.6"/>
+    </requires>
+    <extension
     point="xbmc.gui.skin"
     defaultthemename="textures.xbt"
     debugging="false"
     effectslowdown="1">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>Created by jurialmunkey</summary>
-		<description>Eminence is a skin that seeks simplicity, functionality, and elegance with a modern look</description>
-	</extension>
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Created by jurialmunkey</summary>
+        <description>Eminence is a skin that seeks simplicity, functionality, and elegance with a modern look</description>
+    </extension>
 </addon>

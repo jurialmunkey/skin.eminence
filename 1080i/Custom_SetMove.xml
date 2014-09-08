@@ -179,7 +179,7 @@
                     <control type="button" id="9301">
                         <include>Home-Menu-Button</include>
                         <visible>Skin.HasSetting(home.301.enabled)</visible>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.301)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.301)</onclick>
                         <onclick>Close</onclick>
                         
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>
@@ -204,7 +204,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9302">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.302)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.302)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.302.bgcolor)]</colordiffuse>
                         <onleft>9301</onleft>
@@ -228,7 +228,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9303">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.303)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.303)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.303.bgcolor)]</colordiffuse>
                         <onleft>9302</onleft>
@@ -252,7 +252,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9304">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.304)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.304)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.304.bgcolor)]</colordiffuse>
                         <onleft>9303</onleft>
@@ -276,7 +276,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9305">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.305)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.305)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.305.bgcolor)]</colordiffuse>
                         <onleft>9304</onleft>
@@ -300,7 +300,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9306">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.306)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.306)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.306.bgcolor)]</colordiffuse>
                         <onleft>9305</onleft>
@@ -324,7 +324,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9307">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.307)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.307)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.307.bgcolor)]</colordiffuse>
                         <onleft>9306</onleft>
@@ -348,7 +348,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9308">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.308)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.308)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.308.bgcolor)]</colordiffuse>
                         <onleft>9307</onleft>
@@ -372,7 +372,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9309">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.309)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.309)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.309.bgcolor)]</colordiffuse>
                         <onleft>9308</onleft>
@@ -396,7 +396,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9310">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.310)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.310)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.310.bgcolor)]</colordiffuse>
                         <onleft>9309</onleft>
@@ -420,7 +420,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9311">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.311)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.311)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.311.bgcolor)]</colordiffuse>
                         <onleft>9310</onleft>
@@ -444,7 +444,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9312">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.312)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.312)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.312.bgcolor)]</colordiffuse>
                         <onleft>9311</onleft>
@@ -468,7 +468,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9320">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.320)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.320)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.320.bgcolor)]</colordiffuse>
                         <onleft>9312</onleft>
@@ -493,7 +493,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9321">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.321)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.321)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.321.bgcolor)]</colordiffuse>
                         <onleft>9320</onleft>
@@ -518,7 +518,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9322">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.322)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.322)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.322.bgcolor)]</colordiffuse>
                         <onleft>9321</onleft>
@@ -542,7 +542,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9323">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.323)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.323)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.323.bgcolor)]</colordiffuse>
                         <onleft>9322</onleft>
@@ -566,7 +566,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9324">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.324)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.324)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.324.bgcolor)]</colordiffuse>
                         <onleft>9323</onleft>
@@ -590,7 +590,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9325">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.325)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.325)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.325.bgcolor)]</colordiffuse>
                         <onleft>9324</onleft>
@@ -614,7 +614,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9326">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.326)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.326)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.326.bgcolor)]</colordiffuse>
                         <onleft>9325</onleft>
@@ -638,7 +638,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9327">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.327)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.327)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.327.bgcolor)]</colordiffuse>
                         <onleft>9326</onleft>
@@ -662,7 +662,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9328">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.328)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.328)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.328.bgcolor)]</colordiffuse>
                         <onleft>9327</onleft>
@@ -686,7 +686,7 @@
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="9329">
                         <include>Home-Menu-Button</include>
-                        <onclick>RunScript(special://skin/extras/scripts/eminence_functions.py,swapitem,$INFO[Window(3064).Property(item)],home.329)</onclick>
+                        <onclick>RunScript(script.eminencefunctions,swapitem,$INFO[Window(3064).Property(item)],home.329)</onclick>
                         <onclick>Close</onclick>
                         <colordiffuse>$INFO[Skin.String(home.329.bgcolor)]</colordiffuse>
                         <onleft>9328</onleft>

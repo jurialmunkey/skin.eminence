@@ -468,7 +468,8 @@
     </include>
     <include name="WidgetDownList">
         <control type="group">
-	        <posy>400</posy>
+	        <posy>-1200</posy>
+            <animation effect="slide" start="0" end="0,1600" time="0" condition="Control.HasFocus(9511)">Conditional</animation>
             <visible allowhiddenfocus="true">Control.HasFocus(9511)</visible>
 	        <animation effect="fade" start="0" end="100" time="350" delay="150">Visible</animation>
 	        <control type="image">
