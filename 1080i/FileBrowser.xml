@@ -88,7 +88,7 @@
                         <aligny>center</aligny>
                         <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                     </control>
 
                 </itemlayout>
@@ -134,7 +134,7 @@
                         <aligny>center</aligny>
                         <textcolor>Selected</textcolor>
                         <font>Font-ListInfo-Small</font>
-                        <label>$INFO[ListItem.Label2]$VAR[WatchedLabel,   ,]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                     </control>
 
                 </focusedlayout>

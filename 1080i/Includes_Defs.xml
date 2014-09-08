@@ -496,17 +496,6 @@
             <texture colordiffuse="PanelFG-NF">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
             <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
         </control>
-        <control type="label">
-            <posx>32</posx>
-            <posy>9</posy>
-            <width>48</width>
-            <height>48</height>
-            <align>center</align>
-            <aligny>center</aligny>
-            <font>Font-Button</font>
-            <label>$VAR[WatchedLabel]</label>
-            <visible>ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
-        </control>
     </include>
     
     <include name="DefMyNavBarGroupList">
