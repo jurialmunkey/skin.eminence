@@ -40,7 +40,7 @@
 	<color name="Keyboard-Keys">9f000000</color>
 	
 	<!-- Main Colors -->
-	<color name="Background">ff1f1f1f</color>
+	<color name="Background">ff1e1e1e</color>
 	<color name="Silhouette">3f000000</color>
 	<color name="Selected">fff0f0f0</color>
     <color name="Selected2">ffdddddd</color>

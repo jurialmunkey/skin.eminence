@@ -5,6 +5,7 @@ script.eminencefunctions now referenced rather than directly
 Change to flat theme as default
 Old theme become Glass
 script.eminencefunctions now a dependency
+Clean up of fanart fade settings
 
 [B]0.9.54[/B]
 Skin Settings descriptions
