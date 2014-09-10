@@ -86,6 +86,7 @@
                 <onleft condition="Control.IsVisible(14)">SetProperty(librarynode,PVR-35-14,home)</onleft>
                 <onleft condition="Control.IsVisible(17)">SetProperty(librarynode,PVR-36-15,home)</onleft>
                 <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">ActivateWindow($INFO[Window(home).Property(previoushub)])</onleft>
+                <onleft condition="stringcompare(Window(home).Property(previoushub),home)">ActivateWindow(3204)</onleft>
                 
                 <onright>50</onright>
                 <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>

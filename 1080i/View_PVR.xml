@@ -415,6 +415,9 @@
                 <rulerunit>6</rulerunit>
                 <onback>SetProperty(librarynode,PVR-31-10,home)</onback>
                 <onleft>SetProperty(librarynode,PVR-31-10,home)</onleft>
+                <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">ActivateWindow($INFO[Window(home).Property(previoushub)])</onleft>
+                <onleft condition="stringcompare(Window(home).Property(previoushub),home)">ActivateWindow(3204)</onleft>
+                
                 <onright>31</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
