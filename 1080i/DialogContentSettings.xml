@@ -10,8 +10,8 @@
             <posx>horzpad</posx>
             <posy>70</posy>
             <visible>!Window.IsVisible(addonsettings)</visible>
-            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
-            <include>Animation.SlideOpen.Left</include>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
             <control type="label" description="Info Label" id="20">
                 <include>DefSideLabelCoords</include>
                 <label>20333</label>
@@ -37,6 +37,7 @@
                 <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
                 <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
                 <texturefocus>noop</texturefocus>
+                <include>Animation.SlideOpen.Left</include>
             </control>
             
             <control type="list" id="4">
