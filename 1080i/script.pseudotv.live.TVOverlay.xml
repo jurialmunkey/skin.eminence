@@ -1,0 +1,177 @@
+<window>
+    <allowoverlay>yes</allowoverlay>
+    <allowoverlay>yes</allowoverlay>
+	<visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)]</visible>
+    <zorder>2</zorder>
+    <background>0</background>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <include>Animation.FadeIn.Up</include>
+    <include>Animation.FadeOut</include>
+    <controls>
+
+        <control type="image" id="101">
+        </control>
+        
+        <control type="image" id="103">
+            <description>Channel Bug</description>
+            <posx>225r</posx>
+            <posy>188r</posy>
+            <width>150</width>
+            <height>150</height>
+            <aspectratio>keep</aspectratio>
+            <texture></texture>
+            <animation effect="fade" start="40" end="40" condition="True">Conditional</animation>
+        </control>
+        
+        <control type="button" id="520">
+            <description>Channel num color</description>
+            <label>0xFF33b5e5</label>
+            <visible>false</visible>
+        </control>
+        
+        <!--Info Window -->
+        <control type="group" id="102">
+            <animation effect="fade" time="500">VisibleChange</animation>
+            <posy>70</posy>
+            <posx>horzpad</posx>
+            
+            <control type="group">
+                <posx>-198</posx>
+                <posy>775</posy>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <height>217</height>
+                    <width>1884</width>
+                    <aspectratio>scale</aspectratio>
+                    <texture colordiffuse="PanelBG">common/white.png</texture>
+                </control>            
+                
+                <!--Channel Icon-->
+                <control type="image" id="506">
+                    <right>30</right>
+                    <posy>17</posy>
+                    <height>152</height>
+                    <width>306</width>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                </control>
+                
+                <control type="group">
+                    <posx>30</posx>
+                    <posy>2</posy>
+                    <control type="label" id="503">
+                        <width>1196</width>
+                        <align>left</align>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-PVRTitle</font>
+                    </control>
+                    <control type="label" id="504">
+                        <posy>38</posy>
+                        <width>1196</width>
+                        <align>left</align>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo-Small</font>
+                    </control>
+                    <control type="label" id="505">
+                        <posy>90</posy>
+                        <width>1510</width>
+                        <height>53</height>
+                        <wrapmultiline>true</wrapmultiline>
+                        <align>justify</align>
+                        <aligny>top</aligny>
+                        <textcolor>PanelFG</textcolor>
+                        <font>Font-ListInfo</font>
+                    </control>
+                </control>
+                
+                <control type="group" id="515">  
+                    <visible></visible>
+                    <control type="progress">
+                        <posx>30</posx>
+                        <posy>187</posy>
+                        <width>1824</width>
+                        <height>16</height>
+                        <texturebg colordiffuse="PanelFG-NF">osd/progress-bg.png</texturebg>
+                        <lefttexture colordiffuse="Highlight">osd/progress-end.png</lefttexture>
+                        <midtexture colordiffuse="Highlight">osd/progress-end.png</midtexture>
+                        <righttexture>osd/progress-end.png</righttexture>
+                        <info>Player.Progress</info>
+                    </control> 
+                </control>
+            <animation effect="fade" end="90" condition="true">Conditional</animation>
+            </control>
+            
+        </control>
+    <!-- Overlay Coming Up Next Popup -->
+        <control type="group" id="120">
+            <control type="image">
+                <description>Info Background Image</description>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <texture>pstvlPopupWindow.png</texture>
+            </control>
+            <control type="group">       
+            <control type="button" id="121">
+                <description>Notification art type</description>
+                <label>landscape</label>
+                <visible>false</visible>
+            </control>
+            <control type="image" id="122">
+                <description>Notification artwork</description>
+                <posx>1391</posx>
+                <posy>738</posy>   
+                <width>450</width>
+                <height>188</height>
+                <align>center</align>
+                <aspectratio>keep</aspectratio>
+            </control>
+            <control type="fadelabel">
+                <description>Popup fadelabel</description>
+                <posx>1455</posx>
+                <posy>947</posy>  
+                <width>323</width>
+                <height>60</height>
+                <visible>true</visible>
+                <pauseatend>2666</pauseatend>
+                <label></label>
+                <info>Control.GetLabel(123)</info>
+                <info>Control.GetLabel(124)</info>
+                <info>Control.GetLabel(125)</info>
+                <font>font16</font>
+                <scroll>false</scroll>
+                <scrollout>false</scrollout>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>center</align>
+                <autoscroll time="1000" delay="1000" repeat="2000">Skin.HasSetting(AutoScroll)</autoscroll>
+            </control>
+            <control type="label" id="123">
+                <description>Notification Title</description>
+                <font>font16</font>
+                <align>center</align>
+                <textcolor>FFFFFFFF</textcolor>
+                <visible>false</visible>
+            </control>                  
+            <control type="label" id="124">
+                <description>Notification Show</description>
+                <font>font12</font>
+                <align>center</align>
+                <textcolor>FFFFFFFF</textcolor>
+                <visible>false</visible>
+            </control>              
+            <control type="label" id="125">
+                <description>Notification Episode</description>
+                <font>font12</font>
+                <align>center</align>
+                <textcolor>FFFFFFFF</textcolor>
+                <visible>false</visible>
+            </control>  
+        </control>
+        </control>
+    </controls>      
+</window>
