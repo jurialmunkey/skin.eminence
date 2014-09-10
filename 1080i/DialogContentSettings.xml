@@ -37,7 +37,6 @@
                 <textureupfocus colordiffuse="Highlight" flipy="true">buttons/spin-down.png</textureupfocus>
                 <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
                 <texturefocus>noop</texturefocus>
-                <include>Animation.SlideOpen.Left</include>
             </control>
             
             <control type="list" id="4">
