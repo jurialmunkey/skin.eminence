@@ -1,7 +1,7 @@
 <window>
     <allowoverlay>yes</allowoverlay>
     <allowoverlay>yes</allowoverlay>
-	<visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)]</visible>
+    <visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)]</visible>
     <zorder>2</zorder>
     <background>0</background>
     <coordinates>
