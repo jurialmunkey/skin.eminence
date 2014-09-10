@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="104">
-    <defaultcontrol always="true">-</defaultcontrol>
+    <defaultcontrol always="true">noop</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <zorder>20</zorder>
     <controls>

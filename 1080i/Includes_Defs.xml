@@ -568,7 +568,7 @@
     <include name="DefContextMenuButton">
         <width>417</width>
         <height>142</height>
-        <texturefocus>-</texturefocus>
+        <texturefocus>noop</texturefocus>
         <textcolor>$VAR[HeaderColorFG]</textcolor>
         <focusedcolor>Highlight</focusedcolor>
         <textoffsetx>0</textoffsetx>

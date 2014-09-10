@@ -32,8 +32,6 @@
             <visible>!Window.IsVisible(LockSettings.xml)</visible>
             <visible>!Window.IsVisible(DialogSelect.xml)</visible>
 
-
-            <!-- LEFT LIST -->
             <control type="grouplist" id="9">
                 <include>DefSettingsLeftGroup</include>
                 <onright>2</onright>
@@ -47,18 +45,15 @@
                 <textcolor>Disabled</textcolor>
                 <width>393</width>
                 <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-
             </control>
             
-            
-            <!-- RIGHT LIST -->
             <control type="grouplist" id="2">
                 <description>Control Area</description>
                 <pagecontrol>10</pagecontrol>
                 <include>DefSettingsRightGroup</include>
                 <onleft>9</onleft>
                 <onright>10</onright>
-                <onup>-</onup>
+                <onup>noop</onup>
                 <ondown>10</ondown>
             </control>
 
@@ -85,14 +80,13 @@
 
             <control type="label" id="7">
                 <textoffsetx>30</textoffsetx>
-                <label>-</label>
                 <textcolor>Highlight-NF</textcolor>
             </control>
 
             <control type="image" id="6">
                 <description>Default Seperator</description>
                 <height>-3</height>
-                <texture>-</texture>
+                <texture>noop</texture>
             </control>
 
             <control type="sliderex" id="8">
@@ -101,9 +95,6 @@
                 <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
-            
-            <!-- OK CANCEL DEFAULTS -->
-            
             <control type="grouplist">
                 <itemgap>32</itemgap>
                 <onup>2</onup>
@@ -111,23 +102,18 @@
                 <control type="button" id="10">
                     <label>186</label>
                     <include>DefSettingsOKCancelButton</include>
-
                 </control>
 
                 <control type="button" id="11">
                     <description>Cancel</description>
                     <label>222</label>
-
                     <include>DefSettingsOKCancelButton</include>
-    
                 </control>
                 
                 <control type="button" id="12">
                     <description>Defaults Button</description>
                     <label>409</label>
-
                     <include>DefSettingsOKCancelButton</include>
-
                 </control>
             </control>
             

@@ -217,7 +217,6 @@
                 <control type="button" id="6">
                     <description>Record</description>
                     <include>DefNavMenuButton</include>
-                    <label>-</label>
                 </control>
                 <control type="button" id="7">
                     <description>OK</description>

@@ -15,8 +15,8 @@
             
             <control type="grouplist" id="3110">
                 <include>DefContextMenuGroupList</include>
-                <onleft>-</onleft>
-                <onright>-</onright>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
                 <onup>1</onup>
                 <ondown>1</ondown>
 

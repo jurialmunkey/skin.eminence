@@ -1,3 +1,19 @@
+[B]0.9.56[/B]
+REPOSITORY INCLUSION FIXES
+xbmc.gui bumped to 5.0.1
+lang="en" in description and summary 
+remove TODO
+change case of Defaults.xml to defaults.xml
+remove executable bit on font files
+fixes to dialogcontentsettings
+fixes to weather font colours
+fixes to list info font colours
+fixes to pvr lists font colours
+fixes to file manager
+replace "-" by "noop"
+remove <label>-</label> references
+
+
 [B]0.9.55[/B]
 Preparation for repository inclusion
 Removal of script into own addon

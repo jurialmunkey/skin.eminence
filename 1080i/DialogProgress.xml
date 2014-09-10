@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="101">
-	<defaultcontrol always="true">10</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<controls>
-	    <include>GlobalOverlay</include>
-	    <control type="group">
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <include>GlobalOverlay</include>
+        <control type="group">
             <visible>!Window.IsActive(DialogKeyboard.xml)</visible>
             <visible>!Window.IsActive(DialogNumeric.xml)</visible>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
@@ -19,7 +19,7 @@
                     <posy>42</posy>
                     <posx>62</posx>
                     <width>64</width>
-                    <height>64</height>	
+                    <height>64</height> 
                     <texture>buttons/busy.gif</texture>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
                 </control>
@@ -32,12 +32,12 @@
                     <font>Font-Sublabel</font>
                     <align>center</align>
                     <textoffsetx>0</textoffsetx>
-                    <texturefocus>-</texturefocus>
+                    <texturefocus>noop</texturefocus>
                     <textcolor>TopBarIcon</textcolor>
                     <focusedcolor>TopBarIcon</focusedcolor>
                 </control>
             </control>
-            <control type="group">		
+            <control type="group">
                 <animation effect="slide" start="1920" end="0" delay="0" time="200">WindowOpen</animation>
                 <animation effect="slide" start="1920" end="0" delay="0" time="200">Visible</animation>
                 <include>DefContextMenuBackground</include>
@@ -101,7 +101,7 @@
 
             </control>
         </control>
-	</controls>
+    </controls>
 
 
 </window>

@@ -275,7 +275,7 @@
                 <onright>3</onright>
                 <onleft>3</onleft>
                 
-                <texturefocus>-</texturefocus>
+                <texturefocus>noop</texturefocus>
                 <focusedcolor>Highlight</focusedcolor>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>

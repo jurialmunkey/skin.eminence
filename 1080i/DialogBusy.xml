@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="136">
-	<defaultcontrol always="true">-</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">noop</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
 
-	<controls>
+    <controls>
 
         <include>HeaderLeftTile</include>
         
@@ -12,7 +12,7 @@
             <posy>42</posy>
             <posx>62</posx>
             <width>64</width>
-            <height>64</height>	
+            <height>64</height> 
             <texture>buttons/busy.gif</texture>
             <aspectratio align="center" aligny="center">keep</aspectratio>
         </control>
@@ -27,6 +27,6 @@
             <textcolor>$VAR[HeaderColorFG]</textcolor>
             <label>20186</label>
         </control>
-	</controls>
+    </controls>
 
 </window>

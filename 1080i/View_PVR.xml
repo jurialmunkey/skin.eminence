@@ -27,14 +27,11 @@
                 <onfocus>ClearProperty(focushub,home)</onfocus>
             </control>
             <control type="group"> 
-                
-                
                 <visible>ControlGroup(50).HasFocus()</visible>                
                 <control type="image">
                     <width>945</width>
                     <height>fivelineborder</height>
-                        <texture colordiffuse="Highlight-NF">common/white.png</texture>
-                    
+                    <texture colordiffuse="PosterHighlight">common/white.png</texture>
                 </control>
                 <include>PVRrecordinglayoutfocus</include>
             </control>
@@ -64,8 +61,16 @@
                 <control type="image">
                     <width>472</width>
                     <height>265</height>
-                    <texture fallback="special://skin/extras/pvrhub/background.jpg">$INFO[ListItem.Thumb]</texture>
-                    <aspectratio align="center" aligny="top">keep</aspectratio>
+                    <texture>special://skin/extras/pvrhub/background.jpg</texture>
+                    <aspectratio align="center" aligny="center">scale</aspectratio>
+                    <visible>IsEmpty(ListItem.Thumb)</visible>
+                </control>
+                <control type="image">
+                    <width>472</width>
+                    <height>265</height>
+                    <texture>$INFO[ListItem.Thumb]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <visible>!IsEmpty(ListItem.Thumb)</visible>
                 </control>
             </control>
             <control type="group">
@@ -75,7 +80,6 @@
                     <posy>10</posy>
                     <width>452</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <font>Font-PVRTitle</font>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
@@ -84,7 +88,6 @@
                     <posx>452</posx>
                     <width>452</width>
                     <align>right</align>
-                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
                     <label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
                 </control>
@@ -92,7 +95,6 @@
                     <posy>45</posy>
                     <width>205</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
                     <label>$INFO[ListItem.ChannelName]</label>
                 </control>
@@ -102,7 +104,6 @@
                     <height>230</height>
                     <align>justify</align>
                     <aligny>top</aligny>
-                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo</font>
                     <label>$INFO[ListItem.Plot]</label>
                 </control>
@@ -110,7 +111,6 @@
                     <posy>348</posy>
                     <width>452</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <font>Font-ListInfo-Small</font>
                     <label>$INFO[ListItem.NextTitle,[B]$LOCALIZE[209]...[/B] ,]</label>
                 </control>
@@ -132,7 +132,6 @@
             <posy>15</posy>
             <width>650</width>
             <align>left</align>
-            <textcolor>PanelFG</textcolor>
             <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.Label]</label>
         </control>
@@ -142,7 +141,6 @@
             <width>720</width>
             <align>left</align>
             <font>Font-ListInfo-Small</font>
-            <textcolor>PanelFG</textcolor>
             <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime,$COMMA  ,]$INFO[ListItem.ChannelName,  $LOCALIZE[31173]  ,]</label>
         </control>
         <control type="group">
@@ -152,7 +150,37 @@
         </control>
     </include>
     <include name="PVRrecordinglayoutfocus">
-        <include>PVRrecordinglayout</include>
+        <control type="image">
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
+            <texture>$VAR[PVRIcon]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="label">
+            <posx>140</posx>
+            <posy>15</posy>
+            <width>650</width>
+            <align>left</align>
+            <font>Font-PVRTitle</font>
+            <textcolor>Selected</textcolor>
+            <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="label">
+            <posx>140</posx>
+            <posy>50</posy>
+            <width>720</width>
+            <align>left</align>
+            <font>Font-ListInfo-Small</font>
+            <textcolor>Selected</textcolor>
+            <label>$INFO[ListItem.StartDate]$INFO[ListItem.StartTime,$COMMA  ,]$INFO[ListItem.ChannelName,  $LOCALIZE[31173]  ,]</label>
+        </control>
+        <control type="group">
+            <posx>64r</posx>
+            <posy>40</posy>
+            <include>WatchedImage</include>
+        </control>
     </include>
     <include name="PVRlistlayout">
         <control type="image">
@@ -168,7 +196,6 @@
             <posy>15</posy>
             <width>70</width>
             <align>right</align>
-            <textcolor>PanelFG</textcolor>
             <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelNumber]</label>
         </control>
@@ -183,14 +210,13 @@
             <midtexture>windows/pvr/progress-mid.png</midtexture>
             <righttexture>windows/pvr/progress-leftright.png</righttexture>
             <info>ListItem.Progress</info>
-            <colordiffuse>PanelFG</colordiffuse>
+            <colordiffuse>PanelFG-NF</colordiffuse>
         </control>
         <control type="label">
             <posx>230</posx>
             <posy>15</posy>
             <width>650</width>
             <align>left</align>
-            <textcolor>PanelFG</textcolor>
             <font>Font-PVRTitle</font>
             <label>$INFO[ListItem.ChannelName]</label>
         </control>
@@ -200,12 +226,58 @@
             <width>650</width>
             <align>left</align>
             <font>Font-ListInfo</font>
-            <textcolor>PanelFG</textcolor>
             <label>$INFO[ListItem.Title]</label>
         </control>
     </include>
     <include name="PVRlistlayoutfocus">
-        <include>PVRlistlayout</include>
+        <control type="image">
+            <posx>22</posx>
+            <posy>22</posy>  
+            <width>85</width>
+            <height>85</height>
+            <texture>$VAR[PVRIcon]</texture>
+            <aspectratio>keep</aspectratio>
+        </control>
+        <control type="label">
+            <posx>207</posx>
+            <posy>15</posy>
+            <width>70</width>
+            <align>right</align>
+            <font>Font-PVRTitle</font>
+            <label>$INFO[ListItem.ChannelNumber]</label>
+            <textcolor>Selected</textcolor>
+        </control>
+        <control type="progress">
+            <posx>140</posx>
+            <posy>75</posy>
+            <width>67</width>
+            <height>19</height>
+            <reveal>true</reveal>
+            <texturebg>windows/pvr/progress-back.png</texturebg>
+            <lefttexture>windows/pvr/progress-leftright.png</lefttexture>
+            <midtexture>windows/pvr/progress-mid.png</midtexture>
+            <righttexture>windows/pvr/progress-leftright.png</righttexture>
+            <info>ListItem.Progress</info>
+            <colordiffuse>Selected</colordiffuse>
+        </control>
+        <control type="label">
+            <posx>230</posx>
+            <posy>15</posy>
+            <width>650</width>
+            <align>left</align>
+            <font>Font-PVRTitle</font>
+            <label>$INFO[ListItem.ChannelName]</label>
+            <textcolor>Selected</textcolor>
+        </control>
+        <control type="label">
+            <posx>230</posx>
+            <posy>50</posy>
+            <width>650</width>
+            <align>left</align>
+            <font>Font-ListInfo</font>
+            <textcolor>Selected</textcolor>
+            <label>$INFO[ListItem.Title]</label>
+        </control>
     </include>
     <include name="PVRitemlayout">
         <itemlayout width="945" height="fivelinelist">
@@ -527,7 +599,6 @@
                     <control type="label">
                         <width>1196</width>
                         <align>left</align>
-                        <textcolor>PanelFG</textcolor>
                         <font>Font-PVRTitle</font>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
@@ -535,7 +606,6 @@
                         <posy>38</posy>
                         <width>1196</width>
                         <align>left</align>
-                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo-Small</font>
                         <label>$INFO[ListItem.ChannelName]   $INFO[ListItem.StartTime]$INFO[ListItem.EndTime, • ,]</label>
                     </control>
@@ -545,7 +615,6 @@
                         <height>80</height>
                         <align>justify</align>
                         <aligny>top</aligny>
-                        <textcolor>PanelFG</textcolor>
                         <font>Font-ListInfo</font>
                         <label>$INFO[ListItem.Plot]</label>
                     </control>

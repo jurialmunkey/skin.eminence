@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2600">
-	<defaultcontrol always="true">60</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<background>0</background>
+    <defaultcontrol always="true">60</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <background>0</background>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
-	<controls>
+    <controls>
 
-		<include>GlobalBackground</include>
-		<control type="button">
+        <include>GlobalBackground</include>
+        <control type="button">
             <posy>600</posy>
             <posx>102</posx>
             <width>48</width>
@@ -57,7 +57,6 @@
                 <height>globalh</height>
                 <onleft>9000</onleft>
                 <onright>9200</onright>
-                <!--<texturesliderbarfocus colordiffuse="PanelFG-NF">common/white.png</texturesliderbarfocus>-->
                 <animation effect="fade" start="100" end="25" time="200"condition="!Control.HasFocus(60)">Conditional</animation>
             </control>
             <include>Animation.FadeIn</include>
@@ -88,7 +87,6 @@
                 <height>378</height>
                 <font>Font-HugeWeather</font>
                 <align>center</align>
-                <textcolor>PanelFG</textcolor>
                 <aligny>center</aligny>
                 <label> [B]$VAR[WeatherLabel][/B] </label>
                 <visible>IsEmpty(Skin.String(weather.fanart))</visible>
@@ -101,7 +99,6 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-BigWeather</font>
-                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label>k</label>
@@ -112,7 +109,6 @@
                     <width>300</width>
                     <align>left</align>
                     <font>Font-WeatherTemp</font>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="label">
@@ -122,7 +118,6 @@
                     <align>left</align>
                     <scroll>true</scroll>
                     <scrollsuffix>  •  </scrollsuffix>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Condition),,$COMMA  ]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,]$INFO[System.TemperatureUnits]</label>
                 </control>
             </control>
@@ -134,7 +129,6 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]j[/B]</label>
@@ -143,7 +137,6 @@
                     <posx>130</posx>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.Humidity)]</label>
                 </control>
                 <control type="label">
@@ -152,7 +145,6 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]n[/B]</label>
@@ -162,7 +154,6 @@
                     <posy>50</posy>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Current.WindSpeed)]$INFO[Window(Weather).Property(Current.WindDirection),$COMMA  ,]</label>
                 </control>
             </control>
@@ -175,7 +166,6 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]f[/B]</label>
@@ -184,7 +174,6 @@
                     <posx>130</posx>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Today.Sunrise)]</label>
                 </control>
                 <control type="label">
@@ -193,7 +182,6 @@
                     <width>400</width>
                     <height>400</height>
                     <font>Font-Weather</font>
-                    <textcolor>PanelFG</textcolor>
                     <align>left</align>
                     <aligny>top</aligny>
                     <label> [B]g[/B]</label>
@@ -203,7 +191,6 @@
                     <posy>50</posy>
                     <width>500</width>
                     <align>left</align>
-                    <textcolor>PanelFG</textcolor>
                     <label>$INFO[Window(Weather).Property(Today.Sunset)]</label>
                 </control>
                 
@@ -639,7 +626,7 @@
                     </item>
                 </content>
             </control>
-		</control>
+        </control>
         <include>GlobalTopBar</include>
         
         
@@ -687,6 +674,6 @@
                 
             </control>
         </control>
-	</controls>
+    </controls>
 
 </window>

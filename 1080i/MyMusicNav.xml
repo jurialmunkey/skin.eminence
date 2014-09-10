@@ -45,8 +45,8 @@
                 
                 <control type="togglebutton" id="4">
                     <include>DefNavMenuButton</include>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <alttexturefocus>noop</alttexturefocus>
+                    <alttexturenofocus>noop</alttexturenofocus>
                     <label>584</label>
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
@@ -60,8 +60,8 @@
                     <label>31150</label>
                     <altlabel>31151</altlabel>
                     <usealttexture>Skin.HasSetting(wallviewmusic.info)</usealttexture>
-                    <alttexturefocus>-</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
+                    <alttexturefocus>noop</alttexturefocus>
+                    <alttexturenofocus>noop</alttexturenofocus>
                 </control>
                 
                 <control type="button" id="5">

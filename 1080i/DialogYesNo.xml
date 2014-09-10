@@ -66,7 +66,7 @@
                 <width>334</width>
                 <height>142</height>
                 <onright>10</onright>
-                <texturefocus>-</texturefocus>
+                <texturefocus>noop</texturefocus>
                 <textcolor>$VAR[HeaderColorFG]</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
             </control>
@@ -77,7 +77,7 @@
                 <width>334</width>
                 <height>142</height>
                 <onleft>11</onleft>
-                <texturefocus>-</texturefocus>
+                <texturefocus>noop</texturefocus>
                 <textcolor>$VAR[HeaderColorFG]</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
             </control>

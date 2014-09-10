@@ -2,8 +2,8 @@
 <!-- Foundation -->
 <includes>
 
-	<include name="View_50_List">
-		<description>List View (id=50)</description>
+    <include name="View_50_List">
+        <description>List View (id=50)</description>
         <control type="group" description="SideLabel">
             <visible>Control.IsVisible(50)</visible>
             <include>Animation.ViewChange</include>     
@@ -101,7 +101,7 @@
                                     <width>900</width>
                                     <font>Font-Button</font>
                                     <label>$VAR[VARLabel]</label>
-                                    <textcolor>PanelFG</textcolor>
+                                    <textcolor>Selected</textcolor>
                                 </control>
                             </control>
                             <control type="label">
@@ -109,7 +109,7 @@
                                 <width>900</width>
                                 <font>Font-Button</font>
                                 <label>$VAR[VARLabel]</label>
-                                <textcolor>PanelFG</textcolor>
+                                <textcolor>Selected</textcolor>
                                 <visible>![Container.Content(movies) | Container.Content(episodes) | Container.Content(songs) | Container.Content(seasons) | Container.Content(tvshows)]</visible>
                             </control>
                             <control type="label">
@@ -118,7 +118,7 @@
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
                                 <label>$INFO[ListItem.Label2]</label>
-                                <textcolor>PanelFG</textcolor>
+                                <textcolor>Selected</textcolor>
                             </control>
                         </control>
                         <control type="group">
@@ -181,7 +181,6 @@
                             <posy>470</posy>
                             <height>200</height>
                             <width>bigposterwplot</width>
-                            <textcolor>Selected</textcolor>
                             <align>justify</align>
                             <font>Font-ListInfo</font>
                             <label>$VAR[PlotBox]</label>
@@ -192,7 +191,6 @@
                             <posy>0</posy>
                             <height>1</height>
                             <width>1</width>
-                            <textcolor>Selected</textcolor>
                             <align>justify</align>
                             <font>Font-ListInfo</font>
                             <label>$VAR[PlotBox]</label>
@@ -206,7 +204,6 @@
                                 <width>bigposterwplot</width>
                                 <align>center</align>
                                 <font>Font-Button</font>
-                                <textcolor>Selected</textcolor>
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="textbox">
@@ -216,7 +213,6 @@
                                 <width>bigposterwplot</width>
                                 <align>center</align>
                                 <font>Font-ListInfo</font>
-                                <textcolor>Selected</textcolor>
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                         </control>
@@ -297,6 +293,6 @@
             
         </control>
 
-	</include>
+    </include>
 
 </includes>

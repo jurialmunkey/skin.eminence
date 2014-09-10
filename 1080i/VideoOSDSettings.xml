@@ -51,8 +51,8 @@
             <control type="button" id="7">
                 <description>Default Button</description>
                 <align>left</align>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus>noop</texturefocus>
+                <texturenofocus>noop</texturenofocus>
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>
@@ -63,8 +63,8 @@
                 <description>Default RadioButton</description>
                 <align>left</align>
                 <radioposx>1318</radioposx>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus>noop</texturefocus>
+                <texturenofocus>noop</texturenofocus>
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>
@@ -79,8 +79,8 @@
                 <description>Default spincontrolex</description>
                 <align>left</align>
                 <reverse>yes</reverse>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus>noop</texturefocus>
+                <texturenofocus>noop</texturenofocus>
                 <disabledcolor>TopBarDisabled</disabledcolor>
                 <textureup colordiffuse="TopBarIcon" flipy="true">buttons/spin-down.png</textureup>
                 <texturedown colordiffuse="TopBarIcon">buttons/spin-down.png</texturedown>
@@ -94,8 +94,8 @@
             <control type="sliderex" id="10">
                 <description>Default Slider</description>
                 <align>left</align>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus>noop</texturefocus>
+                <texturenofocus>noop</texturenofocus>
                 <textcolor>TopBarIcon</textcolor>
                 <focusedcolor>Highlight</focusedcolor>
                 <disabledcolor>TopBarDisabled</disabledcolor>

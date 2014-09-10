@@ -33,9 +33,8 @@
         <posy>-20</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <texturenofocus>noop</texturenofocus>
+        <texturefocus>noop</texturefocus>
     </include>
 
     <include name="Dimensions_Fullscreen">

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2006">
-	<defaultcontrol always="true">-</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+    <defaultcontrol always="true">noop</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
     <onload>RunScript(script.artistslideshow)</onload>
-	<controls>
+    <controls>
 
-		<control type="visualisation" id="2">
-			<description>visualisation</description>
-			<include>Dimensions_Fullscreen</include>
-		</control>
-		<control type="multiimage">
+        <control type="visualisation" id="2">
+            <description>visualisation</description>
+            <include>Dimensions_Fullscreen</include>
+        </control>
+        <control type="multiimage">
             <aspectratio>scale</aspectratio>
             <include>Dimensions_Fullscreen</include>
             <timeperimage>10000</timeperimage>
@@ -24,6 +24,6 @@
             <animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(ArtistSlideshow.Animate)">Conditional</animation>
         </control>
         
-	</controls>
+    </controls>
 
 </window>

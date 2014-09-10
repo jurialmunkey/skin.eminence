@@ -63,7 +63,7 @@
                 <onright>$VAR[DefSettingsOnRight]</onright>
                 <onleft>3</onleft>
                 <onup>21</onup>
-                <ondown>-</ondown>
+                <ondown>noop</ondown>
                 
             </control>
             
@@ -76,8 +76,7 @@
                 <label>$INFO[Control.GetLabel(20),,  $LOCALIZE[5]]</label>
                 <onclick>SettingsLevelChange</onclick>
                 <ondown>5</ondown>
-                
-                <texturefocus>-</texturefocus>
+                <texturefocus>noop</texturefocus>
                 <focusedcolor>Highlight</focusedcolor>
                 <include>Animation.SlideOpen.Left</include>
             </control>
@@ -118,23 +117,19 @@
             <description>Default Category Button</description>
             <align>left</align>
             <textcolor>Disabled</textcolor>
-            <width>393</width>
-            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-
+            <width>385</width>
         </control>
         
         <control type="button" id="7">
             <description>Default Button</description>
             <align>left</align>
             <font>Font-ListInfo</font>
-            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
 
         <control type="radiobutton" id="8">
             <description>Default RadioButton</description>
             <align>left</align>
             <font>Font-ListInfo</font>
-            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
 
         <control type="spincontrolex" id="9">
@@ -142,7 +137,6 @@
             <align>left</align>
             <reverse>yes</reverse>
             <font>Font-ListInfo</font>
-            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
     </controls>
 

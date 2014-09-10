@@ -40,7 +40,7 @@
                 <onup>2</onup>
                 <scrolltime>200</scrolltime>
                 <viewtype label="536">icon</viewtype>
-                <pagecontrol>-</pagecontrol>
+                <pagecontrol>noop</pagecontrol>
                 <orientation>horizontal</orientation>
 
                 <itemlayout height="225" width="467">

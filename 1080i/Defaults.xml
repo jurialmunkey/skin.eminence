@@ -70,7 +70,6 @@
 
     <default type="fadelabel">
         <height>66</height>
-        <label>-</label>
         <align>left</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
@@ -87,13 +86,12 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
-        <label>-</label>
         <textoffsetx>25</textoffsetx>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus>noop</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
     
@@ -102,28 +100,26 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
-        <label>-</label>
         <textoffsetx>25</textoffsetx>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus>noop</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
 
     <default type="togglebutton">
         <height>66</height>
-        <label>-</label>
         <textoffsetx>25</textoffsetx>
         <font>Font-Button</font>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
-        <alttexturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</alttexturefocus>
-        <alttexturenofocus colordiffuse="PanelFG-NF">-</alttexturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">noop</texturenofocus>
+        <alttexturefocus colordiffuse="PosterHighlight" border="5">common/white.png</alttexturefocus>
+        <alttexturenofocus colordiffuse="PanelFG-NF">noop</alttexturenofocus>
         <align>center</align>
         <aligny>center</aligny>
         <pulseonselect>false</pulseonselect>
@@ -134,12 +130,11 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>Font-Button</font>
-        <label>-</label>
         <textcolor>PanelFG-NF</textcolor>
         <focusedcolor>Selected2</focusedcolor>
         <disabledcolor>Disabled</disabledcolor>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">noop</texturenofocus>
         <radiowidth>48</radiowidth>
         <radioheight>48</radioheight>
         <textureradioonfocus colordiffuse="RadioFO">buttons/radio-on.png</textureradioonfocus>
@@ -153,10 +148,9 @@
 
     <default type="spincontrolex">
         <height>66</height>
-        <label>-</label>
         <font>Font-Button</font>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">noop</texturenofocus>
         <spinwidth>48</spinwidth>
         <spinheight>48</spinheight>
         <textureup colordiffuse="PanelFG-NF" flipy="true">buttons/spin-down.png</textureup>
@@ -176,8 +170,8 @@
 
     <default type="sliderex">
         <height>66</height>
-        <texturefocus colordiffuse="PosterBorder" border="5">common/border-inner.png</texturefocus>
-        <texturenofocus colordiffuse="PanelFG-NF">-</texturenofocus>
+        <texturefocus colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <texturenofocus colordiffuse="PanelFG-NF">noop</texturenofocus>
         <sliderwidth>230</sliderwidth>
         <sliderheight>23</sliderheight>
         <texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
@@ -196,14 +190,14 @@
         <lefttexture colordiffuse="Highlight">osd/progress-end.png</lefttexture>
         <midtexture colordiffuse="Highlight">osd/progress-end.png</midtexture>
         <righttexture>osd/progress-end.png</righttexture>
-        <overlaytexture>-</overlaytexture>
+        <overlaytexture>noop</overlaytexture>
     </default>
 
     <default type="slider">
         <width>360</width>
         <height>23</height>
-        <texturefocus>-</texturefocus>
-        <texturenofocus>-</texturenofocus>
+        <texturefocus>noop</texturefocus>
+        <texturenofocus>noop</texturenofocus>
         <texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
         <textureslidernib border="5" colordiffuse="TopBarIcon">other_textures/OSD/SliderNibNF.png</textureslidernib>
         <textureslidernibfocus border="5" colordiffuse="Highlight">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
@@ -214,18 +208,17 @@
         <texturesliderbackground colordiffuse="PosterBorder">common/white.png</texturesliderbackground>
         <texturesliderbar colordiffuse="PanelFG-NF">common/white.png</texturesliderbar>
         <texturesliderbarfocus colordiffuse="Highlight-NF">common/white.png</texturesliderbarfocus>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib>noop</textureslidernib>
+        <textureslidernibfocus>noop</textureslidernibfocus>
         <showonepage>true</showonepage>
         <orientation>vertical</orientation>
         
     </default>
 
     <default type="textbox">
-        <label>-</label>
         <font>Font-Button</font>
         <textcolor>PanelFG-NF</textcolor>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor>noop</shadowcolor>
         <pagecontrol>61</pagecontrol>
         <autoscroll delay="6000" time="3000" repeat="10000"/>
     </default>

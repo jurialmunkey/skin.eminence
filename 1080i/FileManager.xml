@@ -27,7 +27,6 @@
                     <width>780</width>
                     <font>Font-ListInfo-Small</font>                    
                     <align>left</align>
-                    <label>-</label>
                 </control>
 
                 <control type="list" id="20">
@@ -48,7 +47,6 @@
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <textcolor>PanelFG</textcolor>
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
@@ -57,7 +55,6 @@
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
-                            <textcolor>PanelFG</textcolor>
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                     
@@ -110,7 +107,6 @@
                     <posy>831</posy>
                     <width>480</width>
                     <align>left</align>
-                    <label>-</label>
                     <font>Font-ListInfo-Small</font>
                 </control>
 
@@ -130,7 +126,6 @@
                     <width>780</width>
                     <font>Font-ListInfo-Small</font>                    
                     <align>left</align>
-                    <label>-</label>
                 </control>
 
                 <control type="list" id="21">
@@ -150,7 +145,6 @@
                             <width>643</width>
                             <font>Font-Button</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <textcolor>PanelFG</textcolor>
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
@@ -159,7 +153,6 @@
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
                             <label>$INFO[ListItem.Label2]</label>
-                            <textcolor>PanelFG</textcolor>
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                     
@@ -212,7 +205,6 @@
                     <posy>831</posy>
                     <width>480</width>
                     <align>left</align>
-                    <label>-</label>
                     <font>Font-ListInfo-Small</font>
                 </control>
 
