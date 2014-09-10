@@ -153,8 +153,8 @@
             </control>
         </control>
     </include>
-	<include name="View_51_Poster">
-	
+    <include name="View_51_Poster">
+    
         <control type="group">
             <visible>Control.IsVisible(51)</visible>
             <include>Animation.ViewChange</include>
@@ -390,6 +390,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

@@ -12,7 +12,13 @@ fixes to pvr lists font colours
 fixes to file manager
 replace "-" by "noop"
 remove <label>-</label> references
-
+resize _screenshots to 1280x720
+replace & with &amp;
+fix missing space before colordiffuse tags
+remove additional "-" in comment lines
+replace tabs with spaces
+remove BOMs
+change LICENSE files EOLs from CR/LF (win) to LF (unix)
 
 [B]0.9.55[/B]
 Preparation for repository inclusion

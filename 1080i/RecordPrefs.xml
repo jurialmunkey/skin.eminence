@@ -21,7 +21,7 @@
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
                 <control type="image">
-                    <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
+                    <texture border="12" colordiffuse="PosterHighlight">common/white.png</texture>
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -46,7 +46,7 @@
                     <radioposx>890</radioposx>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30101]</label>
                 </control>
                 <control type="radiobutton" id="11">
@@ -54,7 +54,7 @@
                     <radioposx>890</radioposx>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30102]</label>
                 </control>
                 <control type="spincontrolex" id="12">
@@ -63,7 +63,7 @@
                     <reverse>yes</reverse>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30103]</label>
                 </control>
                 <control type="spincontrolex" id="13">
@@ -72,7 +72,7 @@
                     <reverse>yes</reverse>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30107]</label>
                 </control>
                 <control type="spincontrolex" id="14">
@@ -81,7 +81,7 @@
                     <reverse>yes</reverse>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30110]</label>
                 </control>
             </control>

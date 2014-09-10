@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-    <!------------------->
-    <!-- OSD / Seekbar -->
-    <!------------------->
-    
+
     <include name="DefOSDControls">
         <width>230</width>
         <height>48</height>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="109">
-	<defaultcontrol always="true">21</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<zorder>10</zorder>
+    <defaultcontrol always="true">21</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <zorder>10</zorder>
 
-	<coordinates>
-		<origin x="750" y="270" />
-	</coordinates>
+    <coordinates>
+        <origin x="750" y="270" />
+    </coordinates>
 
-	<controls>
+    <controls>
         <control type="group">
             <include>Animation.FadeIn</include>
-	        <include>Animation.FadeOut</include>
+            <include>Animation.FadeOut</include>
             <control type="image">
                 <posx>-750</posx>
                 <posy>-270</posy>
@@ -338,6 +338,6 @@
 
             </control>
         </control>
-	</controls>
+    </controls>
 
 </window>

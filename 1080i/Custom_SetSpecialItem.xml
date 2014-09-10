@@ -1,20 +1,20 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3068">
-	<defaultcontrol always="true">9200</defaultcontrol>
-	<onunload>ClearProperty(item,3068)</onunload>
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <defaultcontrol always="true">9200</defaultcontrol>
+    <onunload>ClearProperty(item,3068)</onunload>
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
             
-			
-			<control type="group">
-			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
-			    <visible>!Window.IsVisible(3062)</visible>
-			    <visible>!Window.IsVisible(3065)</visible>
-			    <include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
+            
+            <control type="group">
+                <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+                <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+                <visible>!Window.IsVisible(3062)</visible>
+                <visible>!Window.IsVisible(3065)</visible>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
 
                 <control type="panel" id="9200">
                     <posx>14</posx>
@@ -124,22 +124,22 @@
                             <description>Done</description>
                             <label>186</label>
                             <icon>special://skin/extras/icons/close.png</icon>
-                            <onclick>Close</onclick>					
+                            <onclick>Close</onclick>                    
                         </item>
                         
                         
                         
                         
 
-					</content>
+                    </content>
 
                 </control>
 
             </control>
 
-		</control>
-		
-		
-	    
-	</controls>
+        </control>
+        
+        
+        
+    </controls>
 </window>

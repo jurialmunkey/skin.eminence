@@ -71,8 +71,8 @@
             </control>
         </control>
     </include>
-	<include name="View_54_Lovefilm">
-	
+    <include name="View_54_Lovefilm">
+    
         <control type="group">
             <visible>Control.IsVisible(54)</visible>
             <include>Animation.ViewChange</include>
@@ -181,6 +181,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog">
-	<defaultcontrol always="true">1004</defaultcontrol>
-	<controls>
-        <control type="group">		
+    <defaultcontrol always="true">1004</defaultcontrol>
+    <controls>
+        <control type="group">      
             <include>Animation.SlideOpen.Left</include>
             
             <control type="grouplist" id="1006">
@@ -47,6 +47,6 @@
             <visible>false</visible>
             <onfocus>1004</onfocus>
         </control>
-	</controls>
+    </controls>
 
 </window>

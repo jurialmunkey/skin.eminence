@@ -35,9 +35,9 @@
             <label>$INFO[ListItem.Label2]</label>
         </control>
     </include>
-	<include name="View_57_InfoList">
-	
-		<description>List View (id=57)</description>
+    <include name="View_57_InfoList">
+    
+        <description>List View (id=57)</description>
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Animation.ViewChange</include>     
@@ -215,6 +215,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

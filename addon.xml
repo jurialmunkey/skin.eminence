@@ -22,6 +22,6 @@
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
         <summary lang="en">Created by jurialmunkey</summary>
-        <description lang="en">Eminence is a skin that seeks simplicity, functionality, and elegance with a modern look</description>
+        <description lang="en">Eminence is a skin that seeks simplicity, functionality, and customisability with a modern look</description>
     </extension>
 </addon>

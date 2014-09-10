@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="146">
-	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<onunload>ClearProperty(9000Focus,home)</onunload>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <onunload>ClearProperty(9000Focus,home)</onunload>
 
-	<include>Animation.SlideOpen.Left</include>
-	<controls>
+    <include>Animation.SlideOpen.Left</include>
+    <controls>
 
-		<control type="group">
-		    <posx>horzpad</posx>
-		    <posy>70</posy>
-		    <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
-		    <include>DialogVisibility</include>
-		    <include>DefDialogInfoSideLabel</include>
-		    <control type="group" description="Poster">
+        <control type="group">
+            <posx>horzpad</posx>
+            <posy>70</posy>
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
+            <include>DialogVisibility</include>
+            <include>DefDialogInfoSideLabel</include>
+            <control type="group" description="Poster">
                 <posx>listx</posx>
                 <posy>listy</posy>
                 <control type="image">
@@ -46,10 +46,10 @@
                 <include>DefInformationNavLabel</include>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>210</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>509</posx>
+                <posy>210</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <width>600</width>
                     <height>32</height>
@@ -117,10 +117,10 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>539</posx>
-		        <posy>listy</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>539</posx>
+                <posy>listy</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <posx>917</posx>
                     <width>300</width>
@@ -159,11 +159,11 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>630</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
-		        <control type="label">
+                <posx>509</posx>
+                <posy>630</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
+                <control type="label">
                     <width>448</width>
                     <align>left</align>
                     <aligny>top</aligny>
@@ -183,7 +183,7 @@
             </control>
         </control>
         
-        <control type="group">		
+        <control type="group">      
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus() + !Window.IsVisible(DialogAddonSettings.xml)</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DefSidePanel</include>  
@@ -215,7 +215,7 @@
                 <control type="button" id="7">
                     <description>Enable/Disable Addon button</description>
                     <include>DefNavMenuButton</include>
-                    <label>24021</label>	
+                    <label>24021</label>    
                 </control>
 
                 <control type="button" id="9">
@@ -245,6 +245,6 @@
             <onup>SetFocus(9500)</onup>
             <ondown>SetFocus(9500)</ondown>
         </control>
-	</controls>
+    </controls>
 
 </window>

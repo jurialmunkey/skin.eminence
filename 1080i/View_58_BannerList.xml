@@ -2,9 +2,9 @@
 <!-- Foundation -->
 <includes>
     <constant name="bannerlistplot">838</constant>
-	<include name="View_58_BannerList">
-	
-		<description>Banner List View (id=58)</description>
+    <include name="View_58_BannerList">
+    
+        <description>Banner List View (id=58)</description>
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Animation.ViewChange</include>     
@@ -74,7 +74,7 @@
                         <control type="image">
                             <width>globalw</width>
                             <height>330</height>
-                            <!--<texture border="12" flipx="false"colordiffuse="PosterHighlight">common/white.png</texture>-->
+                            <!--<texture border="12" flipx="false" colordiffuse="PosterHighlight">common/white.png</texture>-->
                             <texture colordiffuse="PosterHighlight" flipx="false">common/white.png</texture>
                             <aspectratio>stretch</aspectratio>
                             <visible>Control.HasFocus(58)</visible>
@@ -159,6 +159,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

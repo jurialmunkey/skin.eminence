@@ -40,7 +40,7 @@
                     <align>left</align>
                     <height>66</height>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19128</label>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -48,7 +48,7 @@
                     <description>Start time</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsLeftGroupWidth</include>
                     <label>19126</label>
                 </control>
@@ -57,7 +57,7 @@
                     <align>left</align>
                     <height>66</height>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19129</label>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -66,7 +66,7 @@
                     <description>Stop time</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsLeftGroupWidth</include>
                     <label>19127</label>
                 </control>
@@ -79,14 +79,14 @@
                 <control type="edit" id="9">
                     <description>Search string</description>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                 </control>
                 <control type="spincontrolex" id="18">
                     <description>Genre</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>515</label>
                     <include>DefSettingsRightGroupWidth</include>
                 </control>
@@ -94,7 +94,7 @@
                     <description>Min Duration</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19130</label>
                     <include>DefSettingsRightGroupWidth</include>
                 </control>
@@ -102,7 +102,7 @@
                     <description>Max Duration</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19131</label>
                     <include>DefSettingsRightGroupWidth</include>
                 </control>
@@ -111,7 +111,7 @@
                 <control type="spincontrolex" id="21">
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                     <label>19141</label>
                 </control>
@@ -119,14 +119,14 @@
                     <description>Channels</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                     <label>19148</label>
                 </control>
                 <control type="radiobutton" id="10">
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19134</label>
                     <include>DefSettingsRightGroupWidth</include>
                     <radioposx>975</radioposx>
@@ -136,7 +136,7 @@
                     <label>19135</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                     <radioposx>975</radioposx>
                 </control>
@@ -145,7 +145,7 @@
                     <description>Include unknown Genres</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19132</label>
                     <include>DefSettingsRightGroupWidth</include>
                     <radioposx>975</radioposx>
@@ -154,7 +154,7 @@
                     <description>FTA only</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19123</label>
                     <include>DefSettingsRightGroupWidth</include>
                     <radioposx>975</radioposx>
@@ -163,7 +163,7 @@
                     <description>Ignore Timers</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>19124</label>
                     <include>DefSettingsRightGroupWidth</include>
                     <radioposx>975</radioposx>
@@ -172,7 +172,7 @@
                     <description>avoid repeats</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                     <label>19121</label>
                     <radioposx>975</radioposx>
@@ -181,7 +181,7 @@
                     <description>Ignore Recordings</description>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <include>DefSettingsRightGroupWidth</include>
                     <label>19125</label>
                     <radioposx>975</radioposx>

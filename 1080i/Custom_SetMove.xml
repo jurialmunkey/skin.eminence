@@ -1,134 +1,134 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3064">
-	<defaultcontrol>9301</defaultcontrol>
-	
-	<onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.301.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.301.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.301.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.301.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.302.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.302.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.302.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.302.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.303.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.303.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.303.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.303.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.304.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.304.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.304.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.304.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.305.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.305.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.305.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.305.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.306.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.306.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.306.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.306.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.307.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.307.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.307.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.307.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.308.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.308.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.308.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.308.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.309.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.309.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.309.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.309.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.310.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.310.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.310.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.310.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.311.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.311.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.311.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.311.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.312.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.312.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.312.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.312.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.313.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.313.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.313.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.313.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.314.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.314.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.314.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.314.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.315.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.315.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.315.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.315.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.316.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.316.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.316.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.316.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.317.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.317.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.317.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.317.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.318.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.318.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.318.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.318.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.319.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.319.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.319.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.319.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.320.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.320.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.320.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.320.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.321.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.321.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.321.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.321.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.322.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.322.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.322.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.322.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.323.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.323.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.323.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.323.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.324.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.324.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.324.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.324.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.325.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.325.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.325.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.325.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.326.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.326.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.326.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.326.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.327.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.327.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.327.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.327.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.328.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.328.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.328.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.328.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.329.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.329.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.329.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.329.bgcolor)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.330.label)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.330.icon)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.330.path)],3064)</onload>
-	<onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.330.bgcolor)],3064)</onload>
-	
+    <defaultcontrol>9301</defaultcontrol>
+    
+    <onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.301.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.301.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.301.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.301)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.301.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.302.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.302.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.302.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.302)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.302.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.303.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.303.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.303.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.303)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.303.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.304.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.304.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.304.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.304)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.304.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.305.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.305.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.305.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.305)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.305.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.306.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.306.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.306.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.306)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.306.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.307.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.307.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.307.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.307)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.307.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.308.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.308.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.308.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.308)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.308.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.309.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.309.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.309.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.309)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.309.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.310.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.310.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.310.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.310)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.310.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.311.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.311.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.311.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.311)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.311.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.312.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.312.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.312.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.312)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.312.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.313.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.313.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.313.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.313)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.313.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.314.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.314.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.314.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.314)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.314.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.315.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.315.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.315.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.315)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.315.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.316.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.316.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.316.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.316)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.316.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.317.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.317.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.317.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.317)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.317.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.318.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.318.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.318.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.318)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.318.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.319.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.319.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.319.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.319)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.319.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.320.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.320.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.320.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.320)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.320.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.321.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.321.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.321.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.321)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.321.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.322.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.322.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.322.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.322)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.322.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.323.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.323.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.323.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.323)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.323.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.324.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.324.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.324.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.324)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.324.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.325.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.325.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.325.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.325)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.325.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.326.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.326.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.326.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.326)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.326.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.327.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.327.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.327.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.327)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.327.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.328.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.328.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.328.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.328)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.328.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.329.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.329.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.329.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.329)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.329.bgcolor)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Label,$INFO[Skin.String(home.330.label)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Icon,$INFO[Skin.String(home.330.icon)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.Path,$INFO[Skin.String(home.330.path)],3064)</onload>
+    <onload condition="stringcompare(Window(3064).Property(item),home.330)">SetProperty(MoveItem.BgColor,$INFO[Skin.String(home.330.bgcolor)],3064)</onload>
+    
                           
-	<onunload>ClearProperty(item,3064)</onunload>
-		
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <onunload>ClearProperty(item,3064)</onunload>
+        
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
             <visible>!Window.IsVisible(DialogSelect.xml)</visible>
             <visible>!Window.IsVisible(FileBrowser.xml)</visible>
@@ -709,8 +709,8 @@
                
             </control>
         </control>
-		
-		<include>GlobalTopBar</include>
-	    
-	</controls>
+        
+        <include>GlobalTopBar</include>
+        
+    </controls>
 </window>

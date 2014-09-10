@@ -1,142 +1,142 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="window" id="3101">
-	<defaultcontrol always="true">9511</defaultcontrol>
-	<allowoverlay>false</allowoverlay>
-	<onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>
-	<controls>
+    <defaultcontrol always="true">9511</defaultcontrol>
+    <allowoverlay>false</allowoverlay>
+    <onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>
+    <controls>
         <include>GlobalBackground</include>
 
-		<control type="grouplist" description="menu" id="9512">
-		    <include>Animation.DelayFadeIn</include>
-	        <posy>680</posy>
-	        <orientation>horizontal</orientation>
-	        <align>center</align>
-	        <width>1920</width>
-	        <itemgap>64</itemgap>
-	        <control type="button" id="1">
-			    <width>128</width>
-			    <height>128</height>
-			    <texturenofocus colordiffuse="7F000000">widget/movie.png</texturenofocus>
+        <control type="grouplist" description="menu" id="9512">
+            <include>Animation.DelayFadeIn</include>
+            <posy>680</posy>
+            <orientation>horizontal</orientation>
+            <align>center</align>
+            <width>1920</width>
+            <itemgap>64</itemgap>
+            <control type="button" id="1">
+                <width>128</width>
+                <height>128</height>
+                <texturenofocus colordiffuse="7F000000">widget/movie.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
                 <onclick>SetProperty(widget,movies,home)</onclick>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <visible>!stringcompare(Window(home).Property(widget),movies)</visible>
-		    </control>
-		    <control type="button" id="2">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>!stringcompare(Window(home).Property(widget),movies)</visible>
+            </control>
+            <control type="button" id="2">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="3fffffff">widget/movie.png</texturenofocus>
+                <texturenofocus colordiffuse="3fffffff">widget/movie.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/movie.png</texturefocus>
                 <onclick>SetProperty(widget,movies,home)</onclick>
-			    <visible>stringcompare(Window(home).Property(widget),movies)</visible>
-		    </control>
-		    <control type="button" id="3">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>stringcompare(Window(home).Property(widget),movies)</visible>
+            </control>
+            <control type="button" id="3">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="7F000000">widget/tv.png</texturenofocus>
+                <texturenofocus colordiffuse="7F000000">widget/tv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
                 <onclick>SetProperty(widget,episodes,home)</onclick>
-			    <visible>!stringcompare(Window(home).Property(widget),episodes)</visible>
-		    </control>
-		    <control type="button" id="4">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>!stringcompare(Window(home).Property(widget),episodes)</visible>
+            </control>
+            <control type="button" id="4">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="3Fffffff">widget/tv.png</texturenofocus>
+                <texturenofocus colordiffuse="3Fffffff">widget/tv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/tv.png</texturefocus>
                 <onclick>SetProperty(widget,episodes,home)</onclick>
-			    <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
-		    </control>
-		    <control type="button" id="5">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
+            </control>
+            <control type="button" id="5">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="7F000000">widget/livetv.png</texturenofocus>
+                <texturenofocus colordiffuse="7F000000">widget/livetv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
                 <onclick>SetProperty(widget,nextaired,home)</onclick>
-			    <visible>!stringcompare(Window(home).Property(widget),nextaired)</visible>
-		    </control>
-		    <control type="button" id="6">
-			    <width>128</width>
-			    <height>128</height>
-			    <onup>9511</onup>
+                <visible>!stringcompare(Window(home).Property(widget),nextaired)</visible>
+            </control>
+            <control type="button" id="6">
+                <width>128</width>
+                <height>128</height>
+                <onup>9511</onup>
                 <ondown>9511</ondown>
                 <texturenofocus colordiffuse="3Fffffff">widget/livetv.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/livetv.png</texturefocus>
                 <onclick>SetProperty(widget,nextaired,home)</onclick>
-			    <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
-		    </control>
-		    <control type="button" id="7">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
+            </control>
+            <control type="button" id="7">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="7F000000">widget/trailer.png</texturenofocus>
+                <texturenofocus colordiffuse="7F000000">widget/trailer.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
                 <onclick>SetProperty(widget,trailers,home)</onclick>
-			    <visible>!stringcompare(Window(home).Property(widget),trailers)</visible>
-		    </control>
-		    <control type="button" id="8">
-			    <width>128</width>
-			    <height>128</height>
+                <visible>!stringcompare(Window(home).Property(widget),trailers)</visible>
+            </control>
+            <control type="button" id="8">
+                <width>128</width>
+                <height>128</height>
                 <onup>9511</onup>
                 <ondown>9511</ondown>
-			    <texturenofocus colordiffuse="3Fffffff">widget/trailer.png</texturenofocus>
+                <texturenofocus colordiffuse="3Fffffff">widget/trailer.png</texturenofocus>
                 <texturefocus colordiffuse="Highlight-NF">widget/trailer.png</texturefocus>
                 <onclick>SetProperty(widget,trailers,home)</onclick>
-			    <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
-		    </control>
-		</control>
-	    <control type="group">
-	        <posy>240</posy>
-	        <include>Animation.SlideOpen.Up</include>
-	        <control type="image">
-	            <posy>0</posy>
-	            <texture colordiffuse="TopBarDark">common/white.png</texture>
-	            <height>380</height>
-	            <width>1920</width>
-	        </control>
+                <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
+            </control>
+        </control>
+        <control type="group">
+            <posy>240</posy>
+            <include>Animation.SlideOpen.Up</include>
+            <control type="image">
+                <posy>0</posy>
+                <texture colordiffuse="TopBarDark">common/white.png</texture>
+                <height>380</height>
+                <width>1920</width>
+            </control>
         
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(home).Property(widget),movies)</visible>
                 <onup>9512</onup>
                 <ondown>9512</ondown>
-	            <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubMoviesContent]</content>
-	        </control>
+                <include>WidgetHubListContent</include>
+                <content target="video">$VAR[WidgetHubMoviesContent]</content>
+            </control>
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(home).Property(widget),episodes)</visible>
-	            <onup>9512</onup>
+                <onup>9512</onup>
                 <ondown>9512</ondown>
                 <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubEpisodesContent]</content>
-	        </control>
-	        <control type="wraplist" id="9511">
+                <content target="video">$VAR[WidgetHubEpisodesContent]</content>
+            </control>
+            <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(home).Property(widget),nextaired)</visible>
-	            <onup>9512</onup>
+                <onup>9512</onup>
                 <ondown>9512</ondown>
                 <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubNextAiredContent]</content>
-	        </control>
+                <content target="video">$VAR[WidgetHubNextAiredContent]</content>
+            </control>
             <control type="wraplist" id="9511">
                 <visible>stringcompare(Window(home).Property(widget),trailers)</visible>
                 <onup>9512</onup>
                 <ondown>9512</ondown>
                 <include>WidgetHubListContent</include>
-	            <content target="video">$VAR[WidgetHubTrailersContent]</content>
-	        </control>
+                <content target="video">$VAR[WidgetHubTrailersContent]</content>
+            </control>
             
-	        <control type="group">
+            <control type="group">
                 <visible>!IsEmpty(Container(9511).ListItem.Label)</visible>
-	            <posx>820</posx>
+                <posx>820</posx>
                 <control type="image">
                     <posx>0</posx>
                     <posy>20</posy>
@@ -189,10 +189,10 @@
                     </control>
                 </control>
             </control>
-	    </control>
-	    
+        </control>
+        
         <include>GlobalTopBar</include>
-		
-	    
-	</controls>
+        
+        
+    </controls>
 </window>

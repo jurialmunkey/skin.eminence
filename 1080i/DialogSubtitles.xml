@@ -1,4 +1,4 @@
-﻿<window type="dialog">
+<window type="dialog">
     <zorder>5</zorder>
     <defaultcontrol always="true">120</defaultcontrol>
     <controls>

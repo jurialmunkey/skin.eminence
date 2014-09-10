@@ -54,7 +54,7 @@
         
         <item id="3">
             <label>137</label>
-            <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
+            <onclick>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;movies=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
         </item>
@@ -152,7 +152,7 @@
         </item>
         <item id="3">
             <label>137</label>
-            <onclick>RunScript(script.globalsearch,tvshows=true&episodes=true&movies=true)</onclick>
+            <onclick>RunScript(script.globalsearch,tvshows=true&amp;episodes=true&amp;movies=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
         </item>
@@ -258,7 +258,7 @@
         
         <item id="9">
             <label>137</label>
-            <onclick>RunScript(script.globalsearch,albums=true&artists=true&songs=true)</onclick>
+            <onclick>RunScript(script.globalsearch,albums=true&amp;artists=true&amp;songs=true)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
         </item>

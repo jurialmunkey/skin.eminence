@@ -197,7 +197,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <radioposx>647</radioposx>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -206,7 +206,7 @@
                         <label>19201</label>
                         <align>left</align>
                         <aligny>center</aligny>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -219,7 +219,7 @@
                             <align>left</align>
                             <aligny>center</aligny>
                             <label>19202</label>
-                            <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                            <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                             <font>Font-ListInfo</font>
                             <height>66</height>
                         </control>
@@ -238,14 +238,14 @@
                         <aligny>center</aligny>
                         <label>19206</label>
                         <radioposx>647</radioposx>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
                     <control type="spincontrolex" id="13">
                         <description>EPG source</description>
                         <label>19200</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -255,7 +255,7 @@
                         <aligny>center</aligny>
                         <label>19267</label>
                         <radioposx>647</radioposx>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -264,7 +264,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19205</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control-->
@@ -273,7 +273,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19203</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -282,7 +282,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19211</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -291,7 +291,7 @@
                         <align>left</align>
                         <aligny>center</aligny>
                         <label>19204</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -301,7 +301,7 @@
                         <aligny>center</aligny>
                         <visible>IsEmpty(Window.Property(IsRadio))</visible>
                         <label>19024</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>
@@ -311,7 +311,7 @@
                         <aligny>center</aligny>
                         <visible>!IsEmpty(Window.Property(IsRadio))</visible>
                         <label>19023</label>
-                        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                         <font>Font-ListInfo</font>
                         <height>66</height>
                     </control>

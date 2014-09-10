@@ -21,7 +21,7 @@
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
                 <control type="image">
-                    <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
+                    <texture border="12" colordiffuse="PosterHighlight">common/white.png</texture>
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -46,7 +46,7 @@
                     <radioposx>890</radioposx>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30121]</label>
                 </control>
                 <control type="radiobutton" id="11">
@@ -54,7 +54,7 @@
                     <radioposx>890</radioposx>
                     <font>Font-ListInfo</font>
                     <include>DefSettingsRightGroupWidth</include>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <label>$ADDON[pvr.wmc 30122]</label>
                 </control>
             </control>

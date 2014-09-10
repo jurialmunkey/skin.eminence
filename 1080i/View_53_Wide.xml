@@ -2,8 +2,8 @@
 <!-- Foundation -->
 <includes>
 
-	<include name="View_53_Wide">
-	
+    <include name="View_53_Wide">
+    
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
             <include>Animation.ViewChange</include>     
@@ -113,6 +113,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

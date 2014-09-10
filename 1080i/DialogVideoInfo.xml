@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2003">
-	<defaultcontrol always="true">9850</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">9850</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
     <onunload>ClearProperty(9000Focus,home)</onunload>
     
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
-	<controls>
+    <controls>
 
         <control type="button">
             <posy>600</posy>
@@ -48,14 +48,14 @@
 
         </control>
         
-		<control type="group">
-		    <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
-		    <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
-		    <posx>horzpad</posx>
-		    <posy>70</posy>
-		    <animation effect="slide" start="0" end="-2000" time="200" condition="Control.HasFocus(50)">Conditional</animation>
-		    <include>DialogVisibility</include>
-		    <include>DefDialogInfoSideLabel</include>
+        <control type="group">
+            <animation effect="slide" end="horznegpad" start="0" time="200" condition="[ControlGroup(9500).HasFocus() | Window.IsActive(DialogContextMenu.xml)]">Conditional</animation>
+            <visible>!Window.IsVisible(fullscreenvideo) + !Window.IsVisible(visualisation)</visible>
+            <posx>horzpad</posx>
+            <posy>70</posy>
+            <animation effect="slide" start="0" end="-2000" time="200" condition="Control.HasFocus(50)">Conditional</animation>
+            <include>DialogVisibility</include>
+            <include>DefDialogInfoSideLabel</include>
             <control type="group">
                 <posx>1996</posx>
                 <control type="label" description="Actors Label">
@@ -63,7 +63,7 @@
                     <include>DefSideLabelCoords</include>
                 </control>
             </control>
-		    <control type="group" description="Poster">
+            <control type="group" description="Poster">
                 <posx>listx</posx>
                 <posy>listy</posy>
                 <control type="image">
@@ -95,10 +95,10 @@
             </control>
             
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>listy</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>509</posx>
+                <posy>listy</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <width>600</width>
                     <height>32</height>
@@ -166,10 +166,10 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>539</posx>
-		        <posy>listy</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>539</posx>
+                <posy>listy</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <posx>917</posx>
                     <width>300</width>
@@ -244,11 +244,11 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>630</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
-		        <control type="label">
+                <posx>509</posx>
+                <posy>630</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
+                <control type="label">
                     <width>448</width>
                     <align>left</align>
                     <aligny>top</aligny>
@@ -390,7 +390,7 @@
             </control>
         </control>
         
-        <control type="group">		
+        <control type="group">      
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DialogVisibility</include>
@@ -459,6 +459,6 @@
             <ondown>SetFocus(9500)</ondown>
         </control>
 
-	</controls>
+    </controls>
 
 </window>

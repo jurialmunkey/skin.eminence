@@ -324,7 +324,7 @@
             </control>
         </control>
     </include>
-	<include name="View_52_Wall">
+    <include name="View_52_Wall">
         <control type="group">
             <visible>Control.IsVisible(500)</visible>
             <include>Animation.ViewChange</include> 
@@ -372,6 +372,6 @@
             </control>
         </control>
 
-	</include>
+    </include>
 
 </includes>

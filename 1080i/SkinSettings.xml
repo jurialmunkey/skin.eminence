@@ -62,8 +62,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(37)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31208][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="32" description="Background">
                     <label>31202</label>
@@ -71,8 +71,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31202][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 
                 <control type="togglebutton" id="38" description="Fanart">
@@ -81,8 +81,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(38)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[20445][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="33" description="Movies Hub">
                     <label>31179</label>
@@ -90,8 +90,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31179][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="35" description="TV Hub">
                     <label>31180</label>
@@ -99,8 +99,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31180][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
@@ -108,8 +108,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(34)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[478][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="36" description="Extras">
                     <label>31235</label>
@@ -117,8 +117,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31235][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
                 <control type="togglebutton" id="39" description="Advanced">
                     <label>31234</label>
@@ -126,8 +126,8 @@
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(39)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31234][/COLOR]</altlabel>
-                    <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
             </control>
             
@@ -153,17 +153,14 @@
                 <onup>5</onup>
                 <ondown>5</ondown>
                
-                <!---------------->
                 <!-- Home Tiles -->
-                <!---------------->
-                
                 <control type="button" id="201" description="Customise Home">
                     <label>31164</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>ActivateWindow(3063)</onclick>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="202" description="Global Widget">
@@ -174,7 +171,7 @@
                     <onclick>ActivateWindow(3078)</onclick>
                     <label2>$VAR[SkinSettings.MixedWidget]</label2>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="203" description="Show Widget Info">
@@ -184,7 +181,7 @@
                     <onclick>Skin.ToggleSetting(home.showinfoonwidget)</onclick>
                     <selected>Skin.HasSetting(home.showinfoonwidget)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="204" description="Tiles Match Theme">
@@ -195,7 +192,7 @@
                     <selected>Skin.HasSetting(home.monochromemode)</selected>
                     <enable>!Skin.HasSetting(home.talltiles)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="205" description="Highlight Match Tile">
@@ -206,7 +203,7 @@
                     <selected>Skin.HasSetting(home.matchcolor)</selected>
                     <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="206" description="Fade Tiles">
@@ -217,7 +214,7 @@
                     <enable>!Skin.HasSetting(home.talltiles) + !Skin.HasSetting(home.monochromemode)</enable>
                     <selected>Skin.HasSetting(home.dontfade)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="207" description="Show Power">
@@ -227,7 +224,7 @@
                     <onclick>Skin.ToggleSetting(home.314.enabled)</onclick>
                     <selected>Skin.HasSetting(home.314.enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="208" description="Home Background">
@@ -238,13 +235,11 @@
                     <onclick>Skin.SetPath(home.fanart)</onclick>
                     <enable>!Skin.HasSetting(home.usemixedglobalwidget)</enable>
                     <visible>ControlGroup(3).HasFocus(37)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
-                <!---------------------->
                 <!-- Carousel Widgets -->
-                <!---------------------->
 
                 <control type="radiobutton" id="301" description="Enable carousel">
                     <label>31195</label>
@@ -253,7 +248,7 @@
                     <onclick>Skin.ToggleSetting(home.widgetdown)</onclick>
                     <selected>!Skin.HasSetting(home.widgetdown)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="302" description="Carousel in own window">
@@ -263,7 +258,7 @@
                     <onclick>Skin.ToggleSetting(widget.window)</onclick>
                     <selected>Skin.HasSetting(widget.window)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="303" description="Invert access to widgets">
@@ -273,7 +268,7 @@
                     <onclick>Skin.ToggleSetting(home.invertwidgets)</onclick>
                     <selected>Skin.HasSetting(home.invertwidgets)</selected>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="304" description="Widget Carousel Item">
@@ -283,7 +278,7 @@
                     <onclick>SetProperty(item,home.501,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="305" description="Widget Carousel Item">
@@ -293,7 +288,7 @@
                     <onclick>SetProperty(item,home.502,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="306" description="Widget Carousel Item">
@@ -303,7 +298,7 @@
                     <onclick>SetProperty(item,home.503,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="307" description="Widget Carousel Item">
@@ -313,12 +308,10 @@
                     <onclick>SetProperty(item,home.504,3065)</onclick>
                     <onclick>ActivateWindow(3065)</onclick>
                     <visible>ControlGroup(3).HasFocus(32)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                
-                <!---------------->
                 <!-- Movies Hub -->
-                <!---------------->
                 <control type="button" id="401" description="Movie Hub Widget">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
@@ -328,7 +321,7 @@
                     <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetString(movie.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="402" description="Movie Hub Playlist">
@@ -339,7 +332,7 @@
                     <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <enable>stringcompare(Skin.String(movie.widget),playlist)</enable>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="403">
@@ -350,7 +343,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="404">
@@ -361,7 +354,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="405">
@@ -372,7 +365,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="406">
@@ -383,7 +376,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                
                 <control type="button" id="407">
@@ -394,13 +387,10 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <!---------------->
                 <!-- TVshow Hub -->
-                <!---------------->
-                
                 <control type="button" id="501">
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
@@ -410,7 +400,7 @@
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="502">
@@ -421,7 +411,7 @@
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
                     <enable>stringcompare(Skin.String(tvshow.widget),playlist)</enable>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="503">
@@ -432,7 +422,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="504">
@@ -443,7 +433,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="505">
@@ -454,7 +444,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="506">
@@ -465,7 +455,7 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="507">
@@ -476,13 +466,11 @@
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
-                <!------------>
                 <!-- FANART -->
-                <!------------>
                 <control type="radiobutton" id="601" description="Show Fanart">
                     <label>31146</label>
                     <align>left</align>
@@ -490,7 +478,7 @@
                     <onclick>Skin.ToggleSetting(disable.fanart)</onclick>
                     <selected>!Skin.HasSetting(disable.fanart)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="602" description="Fanart Fade">
@@ -503,7 +491,7 @@
                     <onclick condition="Skin.HasSetting(fanart.showall)">Skin.Reset(fanart.showmore)</onclick>
                     <onclick condition="Skin.HasSetting(fanart.showall)">Skin.Reset(fanart.showall)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                     <enable>!Skin.HasSetting(disable.fanart)</enable>
                 </control>
                 
@@ -514,7 +502,7 @@
                     <onclick>Skin.ToggleSetting(Fanart.Animate)</onclick>
                     <selected>Skin.HasSetting(Fanart.Animate)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="604" description="Show Video">
@@ -524,7 +512,7 @@
                     <onclick>Skin.ToggleSetting(disable.bgvideo)</onclick>
                     <selected>!Skin.HasSetting(disable.bgvideo)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="605" description="Show Silhouette">
@@ -534,7 +522,7 @@
                     <onclick>Skin.ToggleSetting(show.silhouette)</onclick>
                     <selected>Skin.HasSetting(show.silhouette)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="606" description="Time Based Colour Background">
@@ -544,7 +532,7 @@
                     <onclick>Skin.ToggleSetting(purplefade)</onclick>
                     <selected>Skin.HasSetting(purplefade)</selected>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="607" description="Background Image">
@@ -557,7 +545,7 @@
                     <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/colours/)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
 
                 <control type="button" id="608" description="Weather Fanart">
@@ -566,13 +554,10 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetPath(weather.fanart)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                
-                
-                <!--------->
+                                
                 <!-- OSD -->
-                <!--------->
                 <control type="radiobutton" id="701" description="Artist Slideshow">
                     <label>31139</label>
                     <align>left</align>
@@ -580,7 +565,7 @@
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="702" description="Show Vis Behind">
@@ -593,7 +578,7 @@
                     <visible>ControlGroup(3).HasFocus(34)</visible>
                     <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
                     <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(702)">Conditional</animation>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="703" description="Pvr Icon">
@@ -603,7 +588,7 @@
                     <onclick>Skin.ToggleSetting(disable.pvricon)</onclick>
                     <selected>!Skin.HasSetting(disable.pvricon)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="704" description="Show Info">
@@ -613,7 +598,7 @@
                     <onclick>Skin.ToggleSetting(showdetailedosdinfo)</onclick>
                     <selected>Skin.HasSetting(showdetailedosdinfo)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="705" description="Show Clearart">
@@ -623,12 +608,10 @@
                     <onclick>Skin.ToggleSetting(hide.clearartosd)</onclick>
                     <selected>!Skin.HasSetting(hide.clearartosd)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <!------------>
                 <!-- ADDONS -->
-                <!------------>
                 <control type="button" id="801" description="Change Header Default Text">
                     <label>31236</label>
                     <align>left</align>
@@ -637,7 +620,7 @@
                     <onclick condition="IsEmpty(Skin.String(home.headertext))">Skin.SetString(home.headertext)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(home.headertext))">Skin.Reset(home.headertext)</onclick>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="802" description="Header to Theme Colour">
@@ -647,7 +630,7 @@
                     <onclick>Skin.ToggleSetting(header.matchhighlight)</onclick>
                     <selected>Skin.HasSetting(header.matchhighlight)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="803" description="Kiosk mode">
@@ -657,7 +640,7 @@
                     <onclick>Skin.ToggleSetting(kioskmode)</onclick>
                     <selected>Skin.HasSetting(kioskmode)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="804" description="Tv Tunes">
@@ -667,7 +650,7 @@
                     <onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
                     <selected>Skin.HasSetting(ActivateTvTunes)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="805" description="Rss Feed">
@@ -677,7 +660,7 @@
                     <onclick>Skin.ToggleSetting(disable.rss)</onclick>
                     <selected>!Skin.HasSetting(disable.rss)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="806" description="Rss Next Aired">
@@ -688,7 +671,7 @@
                     <selected>Skin.HasSetting(rss.tvnextaired)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <enable>!Skin.HasSetting(disable.rss)</enable>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="807" description="Next Aired Update">
@@ -698,7 +681,7 @@
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
                     <selected>Skin.HasSetting(NextAired.Update)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="808" description="Disable Weather in Clock">
@@ -708,7 +691,7 @@
                     <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
                     <selected>!Skin.HasSetting(disable.weatherheader)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="radiobutton" id="809">
@@ -720,13 +703,11 @@
                     <onclick>Skin.Reset(home.matchcolor)</onclick>
                     <selected>Skin.HasSetting(home.talltiles)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 
-                <!-------------->
                 <!-- ADVANCED -->
-                <!-------------->
                 <control type="radiobutton" id="901" description="Debug Info">
                     <label>654</label>
                     <align>left</align>
@@ -734,7 +715,7 @@
                     <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
                     <selected>!Skin.HasSetting(HideDebugInfo)</selected>
                     <visible>ControlGroup(3).HasFocus(39)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="902" description="Skin Reinit">
@@ -745,7 +726,7 @@
                     <onclick>ReplaceWindow(startup)</onclick>
                     <selected>!Skin.HasSetting(skin.init)</selected>
                     <visible>ControlGroup(3).HasFocus(39)</visible>
-                    <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
             </control>

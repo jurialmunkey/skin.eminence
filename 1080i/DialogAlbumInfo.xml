@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2001">
-	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
     <onunload>ClearProperty(9000Focus,home)</onunload>
-	<controls>
+    <controls>
 
-		<control type="group">
-		    <posx>233</posx>
-		    <posy>70</posy>
-		    <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
-		    <include>DialogVisibility</include>
-		    <control type="label" description="Info Label">
+        <control type="group">
+            <posx>233</posx>
+            <posy>70</posy>
+            <animation effect="slide" end="-233" start="0" time="200" condition="ControlGroup(9500).HasFocus()">Conditional</animation>
+            <include>DialogVisibility</include>
+            <control type="label" description="Info Label">
                 <include>DefSideLabelCoords</include>
                 <label>$INFO[ListItem.Artist]</label>
                 <visible>!Container.Content(albums)</visible>
@@ -24,7 +24,7 @@
                 <visible>Container.Content(albums)</visible>
                 <visible>!ControlGroup(9500).HasFocus()</visible>
             </control>
-		    <control type="group" description="Poster">
+            <control type="group" description="Poster">
                 <posx>18</posx>
                 <posy>210</posy>
                 <control type="image">
@@ -56,10 +56,10 @@
                 <include>DefInformationNavLabel</include>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>210</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>509</posx>
+                <posy>210</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <width>600</width>
                     <height>32</height>
@@ -127,10 +127,10 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>539</posx>
-		        <posy>210</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
+                <posx>539</posx>
+                <posy>210</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
                 <control type="label">
                     <posx>917</posx>
                     <width>300</width>
@@ -205,11 +205,11 @@
                 </control>
             </control>
             <control type="grouplist">
-		        <posx>509</posx>
-		        <posy>630</posy>
-		        <usecontrolcoords>true</usecontrolcoords>
-		        <orientation>vertical</orientation>
-		        <control type="label">
+                <posx>509</posx>
+                <posy>630</posy>
+                <usecontrolcoords>true</usecontrolcoords>
+                <orientation>vertical</orientation>
+                <control type="label">
                     <width>448</width>
                     <align>left</align>
                     <aligny>top</aligny>
@@ -229,7 +229,7 @@
             </control>
         </control>
 
-        <control type="group">		
+        <control type="group">      
             <visible allowhiddenfocus="true">ControlGroup(9500).HasFocus()</visible>
             <include>Animation.SlideOpen.Left</include>
             <include>DefSidePanel</include>  
@@ -262,6 +262,6 @@
             <onup>SetFocus(9500)</onup>
             <ondown>SetFocus(9500)</ondown>
         </control>
-	</controls>
+    </controls>
 
 </window>

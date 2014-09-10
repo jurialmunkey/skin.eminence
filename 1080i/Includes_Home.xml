@@ -64,14 +64,14 @@
     <include name="Short-Home-Menu-Button">
         <posy>96</posy>
         <width>196</width>
-        <height>170</height>	
+        <height>170</height>    
         <include condition="!Skin.HasSetting(home.monochromemode)">Short-Home-Menu-Button-Default</include>
         <include condition="Skin.HasSetting(home.monochromemode)">Short-Home-Menu-Button-Match</include>
     </include>
     
     <include name="Tall-Home-Menu-Button">
         <width>220</width>
-        <height>340</height>	
+        <height>340</height>    
         <texturefocus>home/half-tile.png</texturefocus>
         <texturenofocus>home/half-tile.png</texturenofocus>
     </include>

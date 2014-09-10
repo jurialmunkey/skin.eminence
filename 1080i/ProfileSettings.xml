@@ -14,7 +14,7 @@
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
                 <control type="image">
-                    <texture border="12"colordiffuse="PosterHighlight">common/white.png</texture>
+                    <texture border="12" colordiffuse="PosterHighlight">common/white.png</texture>
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
@@ -63,7 +63,7 @@
                 <description>Default Button</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
 
             <control type="radiobutton" id="8">
@@ -71,14 +71,14 @@
                 <radioposx>950</radioposx>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
 
             <control type="spincontrolex" id="9">
                 <description>Default Spin Control</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
             <control type="grouplist">

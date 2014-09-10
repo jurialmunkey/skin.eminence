@@ -44,7 +44,7 @@
                 <align>left</align>
                 <textcolor>Disabled</textcolor>
                 <width>393</width>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
             <control type="grouplist" id="2">
@@ -61,21 +61,21 @@
                 <description>Default Button</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
 
             <control type="radiobutton" id="4">
                 <description>Default Radio Button</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
 
             <control type="spincontrolex" id="5">
                 <description>Default Spin Control</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
 
             <control type="label" id="7">
@@ -92,7 +92,7 @@
             <control type="sliderex" id="8">
                 <description>Default Slider</description>
                 <font>Font-ListInfo</font>
-                <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
             <control type="grouplist">

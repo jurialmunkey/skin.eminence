@@ -517,8 +517,8 @@
         <height>90</height>
         <align>left</align>
         <radioposx>370</radioposx>
-        <texturefocus border="12"colordiffuse="PosterHighlight">common/white.png</texturefocus>
-        <alttexturefocus border="12"colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+        <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
     </include>
     
     <include name="DefMyNavBar">
@@ -534,13 +534,6 @@
         <visible allowhiddenfocus="true">ControlGroup(9000).HasFocus()</visible>
         <include>Animation.SlideOpen.Left</include>
     </include>
-    
-    
-    
-    <!------------------>
-    <!-- Context Menu -->
-    <!------------------>
-    
     
     <include name="DefContextMenuBackground">
         <control type="group">
@@ -585,9 +578,6 @@
         <texturedownfocus colordiffuse="Highlight">buttons/spin-down.png</texturedownfocus>
     </include>
     
-    <!------------------->
-    <!-- Global Search -->
-    <!------------------->
     <include name="DefGlobalSearchListNF">
         <control type="image">
             <height>336</height>

@@ -1,12 +1,12 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window>
     <defaultcontrol always="true">9315</defaultcontrol>
     <onload>ClearProperty(homefocus,home)</onload>
     <onunload>SetProperty(widget,movies,home)</onunload>
 
-	<controls>
-	    <control type="image">
+    <controls>
+        <control type="image">
             <include>Dimensions_Fullscreen</include>
             <texture colordiffuse="Background">common/white.png</texture>
         </control>
