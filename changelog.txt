@@ -1,5 +1,6 @@
 [B]0.9.57[/B]
-Pseudotv skin by redhalo added
+fix osd button labels showing
+fix onleft for pvr to always goto hub
 
 [B]0.9.56[/B]
 REPOSITORY INCLUSION FIXES

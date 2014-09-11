@@ -54,7 +54,7 @@
                     <description>Record</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>210</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/record.png</texturefocus>
@@ -72,7 +72,7 @@
                     <description>Skip Back</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>210</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/next.png</texturefocus>
@@ -84,7 +84,7 @@
                     <description>Rewind</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>31036</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight" flipx="true">osd/ff.png</texturefocus>
@@ -98,8 +98,8 @@
                     <description>Play/Pause</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>31037</label>
-                    <altlabel>208</altlabel>
+                    <label></label>
+                    <altlabel></altlabel>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/pause.png</texturefocus>
@@ -116,7 +116,7 @@
                     <description>Stop</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>31038</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/stop.png</texturefocus>
@@ -128,7 +128,7 @@
                     <description>Fast Forward</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>31039</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/ff.png</texturefocus>
@@ -142,7 +142,7 @@
                     <description>Next</description>
                     <width>48</width>
                     <height>48</height>
-                    <label>209</label>
+                    <label></label>
                     <font>noop</font>
                     <include>DefOSDUpDown</include>
                     <texturefocus colordiffuse="Highlight">osd/next.png</texturefocus>
