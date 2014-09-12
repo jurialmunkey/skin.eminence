@@ -126,7 +126,7 @@
                             <label2>31110</label2>
                             <icon>special://skin/extras/icons/film.png</icon>
                             <onclick>Skin.SetString(global.widget.path.type,$LOCALIZE[31110])</onclick>
-                            <onclick>Skin.SetString(global.widget.path,plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)])</onclick>
+                            <onclick>Skin.SetString(global.widget.path,plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)])</onclick>
                             <onclick>Close</onclick>
                         </item>
                         
@@ -166,7 +166,7 @@
                             <label2>31110</label2>
                             <icon>special://skin/extras/icons/tv.png</icon>
                             <onclick>Skin.SetString(global.widget.path.type,$LOCALIZE[31110])</onclick>
-                            <onclick>Skin.SetString(global.widget.path,plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)])</onclick>
+                            <onclick>Skin.SetString(global.widget.path,plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)])</onclick>
                             <onclick>Close</onclick>
                         </item>
                     

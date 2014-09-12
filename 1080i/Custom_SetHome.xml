@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3063">
-	<defaultcontrol>9301</defaultcontrol>
-	<onunload>ClearProperty(item,3061)</onunload>
-	<onunload>ClearProperty(item,3062)</onunload>
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <defaultcontrol>9301</defaultcontrol>
+    <onunload>ClearProperty(item,3061)</onunload>
+    <onunload>ClearProperty(item,3062)</onunload>
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
             <visible>!Window.IsVisible(DialogSelect.xml)</visible>
             <visible>!Window.IsVisible(FileBrowser.xml)</visible>
@@ -632,8 +632,8 @@
                
             </control>
         </control>
-		
-		<include>GlobalTopBar</include>
-	    
-	</controls>
+        
+        <include>GlobalTopBar</include>
+        
+    </controls>
 </window>

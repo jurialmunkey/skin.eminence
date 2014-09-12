@@ -5,10 +5,6 @@
         <value condition="Container.Content(artists)">$INFO[ListItem.DBID,musicdb://artists/,]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.DBID,musicdb://albums/,]</value>
     </variable>
-    
-    <include name="9500Focus">
-        <defaultcontrol always="true">9500</defaultcontrol>
-    </include>
   
     <include name="50Focus">
         <defaultcontrol always="true">50</defaultcontrol>
@@ -272,20 +268,6 @@
         </control>
 
     </include>
-    
-    
-    <include name="DefSettingsSeparator">
-
-        <control type="image">
-            <posx>618</posx>
-            <posy>120</posy>
-            <height>549</height>
-            <width>8</width>
-            <texture colordiffuse="PosterBorder">common/white.png</texture>
-            <include>Animation.SlideOpen.Left</include>
-            <animation effect="fade" start="100" end="65" condition="true">Conditional</animation>
-        </control>
-    </include>
         
     <include name="DefOnBack">
         <onback>SetProperty(librarynode,$INFO[Container.FolderPath],home)</onback>
@@ -467,24 +449,6 @@
             <include condition="Window.IsVisible(MyVideoNav.xml)">View_59_MediaInfo3</include>
         </control>
         <include>NextAiredRSS</include>
-
-    </include>
-    
-    <include name="DefMyNavViews.Right">
-        <control type="group">
-            <posy>70</posy>
-            <posx>horzpad</posx>
-            <include>DialogVisibility</include>
-            <visible allowhiddenfocus="true">![Control.HasFocus(9500) | Control.HasFocus(9501) | Control.HasFocus(9502) | ControlGroup(300).HasFocus()]</visible>
-            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(movieinformation)">Conditional</animation>
-            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(musicinformation)">Conditional</animation>
-            <animation effect="slide" end="-1920" start="0" delay="0" time="200" condition="Window.IsActive(addoninformation)">Conditional</animation>
-            <include>Animation.SlideOpen.Right</include>
-            <include>Animation.FadeOut</include>
-            <include>View_50_List</include>
-            <include>View_56_BigList</include>  
-            <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>          
-        </control>
     </include>
     
     <include name="DefWatchedProgress">
@@ -639,8 +603,4 @@
             <label>$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Rating)]</label>
         </control>
     </include>
-    
-    
-    
-    
 </includes>

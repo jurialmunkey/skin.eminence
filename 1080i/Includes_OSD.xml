@@ -13,11 +13,11 @@
     
     <include name="DefOSDUpDown">
         <onup condition="!VideoPlayer.IsFullscreen">Close</onup>
-        <onup condition="IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">SetProperty(fullscreeninfo,1,seekbar)</onup>
-        <onup condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</onup>
+        <onup condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)) + VideoPlayer.IsFullscreen">SetProperty(fullscreeninfo,1,seekbar)</onup>
+        <onup condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</onup>
         <ondown condition="Window.IsVisible(home) + !Skin.HasSetting(home.widgetdown)">SetProperty(closeosd,1,home)</ondown>
-        <ondown condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</ondown>
-        <ondown condition="[IsEmpty(Window(seekbar).Property(fullscreeninfo) + VideoPlayer.IsFullscreen] | !VideoPlayer.IsFullscreen">Close</ondown>
+        <ondown condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + VideoPlayer.IsFullscreen">ClearProperty(fullscreeninfo,seekbar)</ondown>
+        <ondown condition="[IsEmpty(Window(seekbar).Property(fullscreeninfo)) + VideoPlayer.IsFullscreen] | !VideoPlayer.IsFullscreen">Close</ondown>
     </include>
     
     <include name="VideoOSDFullscreen">
@@ -52,8 +52,8 @@
             <label>31119</label>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
-            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
-            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo))">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo))">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
         
         <control type="button" id="6">
@@ -78,8 +78,8 @@
             <label>31119</label>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
-            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
-            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo))">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo))">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
         
         <control type="button" id="6">
@@ -115,8 +115,8 @@
             <label>31119</label>
             <include>DefOSDControls</include>
             <include>DefOSDUpDown</include>
-            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo)">SetProperty(fullscreeninfo,1,seekbar)</onclick>
-            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)">ClearProperty(fullscreeninfo,seekbar)</onclick>
+            <onclick condition="IsEmpty(Window(seekbar).Property(fullscreeninfo))">SetProperty(fullscreeninfo,1,seekbar)</onclick>
+            <onclick condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo))">ClearProperty(fullscreeninfo,seekbar)</onclick>
         </control>
     </include>
     

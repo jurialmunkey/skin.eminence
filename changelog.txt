@@ -1,3 +1,11 @@
+[B]0.9.58[/B]
+remove Defaults.xml
+add DialogSongInfo.xml and VideoOverlay.xml
+fix ampersand
+fix unmatch paras
+fix undefined ids
+tidy some unused includes
+
 [B]0.9.57[/B]
 fix osd button labels showing
 fix onleft for pvr to always goto hub
