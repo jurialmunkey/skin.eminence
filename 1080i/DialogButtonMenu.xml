@@ -89,7 +89,7 @@
                 <control type="button" id="3121">
                     <description>Reload Skin</description>
                     <include>DefContextMenuButton</include>
-                    <label>Reload Skin</label>
+                    <label>20183</label>
                     <onclick>ReloadSkin()</onclick>
                 </control>
 

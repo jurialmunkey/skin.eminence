@@ -515,16 +515,6 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="radiobutton" id="605" description="Show Silhouette">
-                    <label>31210</label>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(show.silhouette)</onclick>
-                    <selected>Skin.HasSetting(show.silhouette)</selected>
-                    <visible>ControlGroup(3).HasFocus(38)</visible>
-                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
                 <control type="radiobutton" id="606" description="Time Based Colour Background">
                     <label>31218</label>
                     <align>left</align>
@@ -535,7 +525,7 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="607" description="Background Image">
+                <control type="button" id="607" description="Background Overlay">
                     <label>31228</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
@@ -544,6 +534,18 @@
                     <onclick condition="IsEmpty(Skin.String(global.background))">SetProperty(showimages,1,home)</onclick>
                     <onclick condition="IsEmpty(Skin.String(global.background))">Skin.SetFile(global.background,.jpg|.png|.bmp|.gif,special://skin/extras/colours/)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(global.background))">Skin.Reset(global.background)</onclick>
+                    <visible>ControlGroup(3).HasFocus(38)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="605" description="Background Image">
+                    <label>31210</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label2>$INFO[Skin.String(global.background2)]</label2>
+                    <onclick condition="IsEmpty(Skin.String(global.background2))">SetProperty(showimages,1,home)</onclick>
+                    <onclick condition="IsEmpty(Skin.String(global.background2))">Skin.SetFile(global.background2,.jpg|.png|.bmp|.gif,special://skin/extras/backgrounds/)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(global.background2))">Skin.Reset(global.background2)</onclick>
                     <visible>ControlGroup(3).HasFocus(38)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>

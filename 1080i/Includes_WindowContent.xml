@@ -60,6 +60,7 @@
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + !Control.HasFocus(9600)">$INFO[Container(9600).ListItem.Path]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + [stringcompare(Window(home).Property(bgwidget.type),$LOCALIZE[108]) | IsEmpty(Window(home).Property(bgwidget))] + Control.HasFocus(9600)">$INFO[Container(9600).ListItem.FileNameAndPath]</value>
         <value condition="Window.IsVisible(home) + Control.IsVisible(9600) + IsEmpty(Container(9600).ListItem.Art(fanart))">$INFO[Container(9600).ListItem.Icon]</value>
+        <value condition="!IsEmpty(Skin.String(global.background2))">$INFO[Skin.String(global.background2)]</value>
         <value>common/null.png</value>
     </variable>
     
@@ -143,7 +144,7 @@
             <control type="image">
                 <include>Dimensions_Fullscreen</include>
                 <fadetime>1000</fadetime>
-                <texture colordiffuse="4f777777" fallback="special://skin/extras/border/sunset.png">$VAR[SunsetTimerImage]</texture>
+                <texture colordiffuse="4f777777">$VAR[SunsetTimerImage]</texture>
                 <visible>Skin.HasSetting(purplefade)</visible>
                 <animation effect="fade" end="100" start="0" time="250" condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">WindowOpen</animation>
                 <animation effect="fade" end="0" start="100" time="250" condition="Window.Next(home)">WindowClose</animation>
@@ -157,20 +158,6 @@
                 <animation effect="fade" end="100" start="0" time="250" condition="Window.Previous(home) | Window.Previous(visualisation) | Window.Previous(fullscreenvideo)">WindowOpen</animation>
                 <animation effect="fade" end="0" start="100" time="250" condition="Window.Next(home)">WindowClose</animation>
                 <visible>!Window.IsVisible(home) + !Window.IsVisible(visualisation)</visible>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>1920</width>
-                <height>1080</height>
-                <texture>special://skin/extras/border/silhouette.png</texture>
-                <visible>!Player.HasVideo | Skin.HasSetting(disable.bgvideo)</visible>
-                <colordiffuse>Silhouette</colordiffuse>
-                <include>Animation.FadeIn</include>
-                <include>Animation.FadeOut</include>
-                <visible>!Window.IsVisible(home)</visible>
-                <visible>stringcompare(Control.GetLabel(9238),common/null.png)</visible>
-                <visible>Skin.HasSetting(show.silhouette)</visible>
             </control>
             <control type="group">      
                 <visible>Window.IsVisible(home)</visible>

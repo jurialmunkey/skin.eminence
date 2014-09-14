@@ -445,7 +445,7 @@ msgid "Set global background widget"
 msgstr ""
 
 msgctxt "#31210"
-msgid "Enable background silhouette"
+msgid "Set background image"
 msgstr ""
 
 msgctxt "#31211"
@@ -517,7 +517,7 @@ msgid "Hide title"
 msgstr ""
 
 msgctxt "#31228"
-msgid "Set background image"
+msgid "Set background overlay"
 msgstr ""
 
 msgctxt "#31229"
@@ -641,7 +641,7 @@ msgid "Animate background fanart with a Ken Burns type effect."
 msgstr ""
 
 msgctxt "#31259"
-msgid "Enable a background silhouette that is displayed when no fanart is available. The silhouette can be modified in skin.eminence/extras/border/silhouette.png"
+msgid "Set the backgroud image that is displayed when no fanart is available. Click once to clear the current path and again to select a new path."
 msgstr ""
 
 msgctxt "#31260"
