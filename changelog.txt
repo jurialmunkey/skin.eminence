@@ -5,7 +5,7 @@ big list play fix in song files
 button menu localise reload skin (oops!)
 add background image skin setting replacing silhouette
  - now can set both a fallback fanart and an overlay background
-
+make script.favourites a dep
 
 [B]0.9.58[/B]
 remove Defaults.xml
