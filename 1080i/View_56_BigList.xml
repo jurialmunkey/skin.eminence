@@ -133,6 +133,7 @@
                         <posx>70r</posx>
                         <posy>39</posy>
                         <include>WatchedImage</include>
+                        <visible>Window.IsVisible(MyVideoNav.xml) | Container.Content(songs)</visible>
                     </control>
                     
 
@@ -244,6 +245,7 @@
                         <posx>70r</posx>
                         <posy>39</posy>
                         <include>WatchedImage</include>
+                        <visible>Window.IsVisible(MyVideoNav.xml) | Container.Content(songs)</visible>
                     </control>
                     
 

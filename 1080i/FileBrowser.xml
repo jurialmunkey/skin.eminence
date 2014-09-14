@@ -7,6 +7,7 @@
     <controls>
 
         <control type="group">
+            <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
             <posx>horzpad</posx>
             <posy>70</posy>
             <include>Animation.SlideOpen.Left</include>
@@ -18,6 +19,7 @@
         <control type="group">
             <posx>horzpad</posx>
             <posy>listy</posy>
+            <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             
@@ -149,6 +151,7 @@
         <control type="group">      
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
+            <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
             <posy>160</posy>
             <posx>20</posx>      
             <control type="grouplist" id="9100">

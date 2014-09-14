@@ -1,3 +1,8 @@
+[B]0.9.59[/B]
+DialogSongInfo functional
+fix Network Add
+big list play fix in song files
+
 [B]0.9.58[/B]
 remove Defaults.xml
 add DialogSongInfo.xml and VideoOverlay.xml
