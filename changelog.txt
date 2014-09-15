@@ -1,3 +1,6 @@
+[B]1.0.0[/B]
+fix livetv record not focusing onright
+
 [B]0.9.59[/B]
 DialogSongInfo functional
 fix Network Add

@@ -209,7 +209,8 @@
             <orientation>horizontal</orientation>
             <align>left</align>
             <onleft>6</onleft>
-            <onright>12</onright>
+            <onright condition="!Player.CanRecord | !VideoPlayer.Content(LiveTV)">12</onright>
+            <onright condition="Player.CanRecord + VideoPlayer.Content(LiveTV)">9003</onright>
             <onup>noop</onup>
             <ondown>noop</ondown>
             <usecontrolcoords>true</usecontrolcoords>
