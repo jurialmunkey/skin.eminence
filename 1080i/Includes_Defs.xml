@@ -449,6 +449,8 @@
             <include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)">View_57_InfoList</include>
             <include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)">View_58_BannerList</include>
             <include condition="Window.IsVisible(MyVideoNav.xml)">View_59_MediaInfo3</include>
+            <include condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyVideoPlaylist.xml)">View_577_InfoList</include>
+            <include condition="Window.IsVisible(MyVideoNav.xml)">View_599_MediaInfo3</include>
         </control>
         <include>NextAiredRSS</include>
     </include>

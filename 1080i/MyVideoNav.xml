@@ -4,7 +4,7 @@
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
     <defaultcontrol always="true">50</defaultcontrol>
-    <views>50,51,500,53,54,55,56,57,58,59</views>
+    <views>50,51,500,53,54,55,56,57,577,58,59,599</views>
     <onload condition="Skin.HasSetting(rss.tvnextaired)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
     <controls>
@@ -22,7 +22,7 @@
             <posx>92</posx>
             <width>48</width>
             <height>48</height>
-            <onclick>SetProperty(librarynode,$INFO[Container.FolderPath],home)z</onclick>
+            <onclick>SetProperty(librarynode,$INFO[Container.FolderPath],home)</onclick>
             <onclick>Back</onclick>
             <texturenofocus flipx="true">common/right-arrow.png</texturenofocus>
             <texturefocus flipx="true">common/right-arrow.png</texturefocus>
@@ -35,7 +35,7 @@
             <include>DialogVisibility</include>
             <visible>!Window.IsActive(DialogContentSettings.xml)</visible>
             <visible>!stringcompare(Window(home).Property(previoushub),home)</visible>
-            <visible>Control.IsVisible(59) | Control.IsVisible(50) | Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58)</visible>
+            <visible>Control.IsVisible(59) | Control.IsVisible(50) | Control.IsVisible(500) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(56) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(61) | Control.IsVisible(62)</visible>
             <visible>!Window.IsActive(movieinformation)</visible>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
         </control>
@@ -141,7 +141,7 @@
                 <control type="radiobutton" id="9010">
                     <include>DefNavMenuButton</include>
                     <onclick>Skin.ToggleSetting(list.highlight)</onclick>
-                    <visible>Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)</visible>
+                    <visible>Control.IsVisible(50) | Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59) | Control.IsVisible(577) | Control.IsVisible(599)</visible>
                     <label>31279</label>
                     <selected>Skin.HasSetting(list.highlight)</selected>
                 </control>
