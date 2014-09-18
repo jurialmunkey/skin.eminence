@@ -1,8 +1,12 @@
 [B]1.0.1[/B]
-New info list style as Media Info 3 fills spot better
-Option for 'Alt style' in side blade for old list style
-Header tile colour takes from TopBar
-Fix dialogfilestacking
+new info list style as Media Info 3 fills spot better
+option for 'Alt style' in side blade for old list style
+header tile colour takes from TopBar
+fix dialogfilestacking
+fix set background image disabled when fanart disabled
+change to no default overlay
+tweak fade levels
+remove Highlight-NF
 
 [B]1.0.0[/B]
 fix livetv record not focusing onright

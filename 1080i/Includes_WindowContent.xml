@@ -147,8 +147,8 @@
                 <include>Dimensions_Fullscreen</include>
                 <texture colordiffuse="Background">common/white.png</texture>
                 <animation effect="fade" start="100" end="90" condition="!Skin.HasSetting(fanart.showall) + !Skin.HasSetting(fanart.showmore)">Conditional</animation>
-                <animation effect="fade" start="100" end="70" condition="!Skin.HasSetting(fanart.showall) + Skin.HasSetting(fanart.showmore)">Conditional</animation>
-                <animation effect="fade" start="100" end="50" condition="Skin.HasSetting(fanart.showall)">Conditional</animation>
+                <animation effect="fade" start="100" end="75" condition="!Skin.HasSetting(fanart.showall) + Skin.HasSetting(fanart.showmore)">Conditional</animation>
+                <animation effect="fade" start="100" end="60" condition="Skin.HasSetting(fanart.showall)">Conditional</animation>
                 <visible>!Window.IsVisible(home)</visible>
             </control>
             <control type="image" description="Sunset Timer Colour">

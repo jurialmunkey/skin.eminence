@@ -542,6 +542,7 @@
                     <label>31210</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
+                    <enable>!Skin.HasSetting(disable.fanart)</enable>
                     <label2>$INFO[Skin.String(global.background2)]</label2>
                     <onclick condition="IsEmpty(Skin.String(global.background2))">SetProperty(showimages,1,home)</onclick>
                     <onclick condition="IsEmpty(Skin.String(global.background2))">Skin.SetFile(global.background2,.jpg|.png|.bmp|.gif,special://skin/extras/backgrounds/)</onclick>
