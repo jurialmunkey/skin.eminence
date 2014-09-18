@@ -82,7 +82,7 @@
                             <width>830</width>
                             <height>46</height>
                             <aligny>top</aligny>
-                            <label>$VAR[ExtraInfo]</label>
+                            <label>$VAR[VARLabel3]</label>
                             <font>Font-ListInfo-Small</font>
                         </control>
                         <control type="textbox">
