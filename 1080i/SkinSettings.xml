@@ -634,7 +634,7 @@
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                
+         
                 <control type="radiobutton" id="803" description="Kiosk mode">
                     <label>31239</label>
                     <align>left</align>

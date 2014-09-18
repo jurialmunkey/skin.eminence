@@ -20,4 +20,5 @@
     <color name="MainLabel2">FFededed</color>
 	<color name="SubLabel2">BFededed</color>
 	<color name="TopBarIcon">fFededed</color>
+    <color name="TopBar">ff181818</color>
 </colors>
