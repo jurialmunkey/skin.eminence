@@ -7,6 +7,8 @@ fix set background image disabled when fanart disabled
 change to no default overlay
 tweak fade levels
 remove Highlight-NF
+subtitles sync and cc flags
+subtitles file name for comparison
 
 [B]1.0.0[/B]
 fix livetv record not focusing onright
