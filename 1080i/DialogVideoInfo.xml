@@ -113,7 +113,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
-                    <label fallback="416">$INFO[ListItem.Director]</label>
+                    <label fallback="416">$INFO[ListItem.Director]$INFO[ListItem.Year, (,)]</label>
                 </control>
                 <control type="label">
                     <width>600</width>
@@ -235,7 +235,7 @@
                 </control>
                 <control type="label">
                     <posx>917</posx>
-                    <width>300</width>
+                    <width>350</width>
                     <height>64</height>
                     <align>right</align>
                     <aligny>top</aligny>

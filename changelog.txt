@@ -1,3 +1,6 @@
+[B]1.0.2[/B]
+fix video and year labels in vid info
+
 [B]1.0.1[/B]
 new info list style as Media Info 3 fills spot better
 option for 'Alt style' in side blade for old list style
