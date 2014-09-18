@@ -1,5 +1,6 @@
 [B]1.0.2[/B]
 fix video and year labels in vid info
+fix not being able to set favourites as widgets
 
 [B]1.0.1[/B]
 new info list style as Media Info 3 fills spot better
