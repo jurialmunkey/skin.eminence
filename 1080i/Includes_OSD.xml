@@ -217,7 +217,7 @@
             
             <control type="button" id="9001">
                 <description>Subs Download</description>
-                <label>33003</label>
+                <label></label>
                 <posy>8</posy>
                 <width>32</width>
                 <height>32</height>
