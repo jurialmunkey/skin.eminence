@@ -366,7 +366,7 @@
     <include name="DefFullScreenNav">
         <control type="group">
             <posx>0</posx>
-            <posy>70</posy>
+            <posy>topoffset</posy>
             <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
@@ -417,7 +417,6 @@
         <control type="label">
             <include>DefSideLabelCoords</include>
             <label>$VAR[NavSideLabel]</label>
-            <visible>!Container(51).OnScrollNext + !Container(51).OnScrollPrevious</visible>
             <visible>!ControlGroup(9000).HasFocus()</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <visible>!Window.IsActive(DialogSongInfo.xml)</visible>
@@ -427,7 +426,7 @@
     
     <include name="DefMyNavViews">
         <control type="group">
-            <posy>70</posy>
+            <posy>topoffset</posy>
             <posx>horzpad</posx>
             <include>DialogVisibility</include>
             <visible>!Window.IsVisible(DialogMediaSource.xml)</visible>

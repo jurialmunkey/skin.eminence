@@ -19,7 +19,7 @@
             <control type="group">
                 <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
                 <posx>horzpad</posx>
-                <posy>70</posy>
+                <posy>topoffset</posy>
                 <include>DefSideLabel</include>
                 <control type="panel" id="450">
                     <posx>listx</posx>

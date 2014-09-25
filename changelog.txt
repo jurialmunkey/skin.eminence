@@ -1,5 +1,8 @@
 [B]1.0.3[/B]
 fix overlapping list labels
+center home list
+HomeBarBG colour def
+add labels to wall view episodes
 
 [B]1.0.2[/B]
 fix video and year labels in vid info

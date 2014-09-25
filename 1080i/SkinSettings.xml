@@ -26,7 +26,7 @@
    
         <control type="group">
             <posx>horzpad</posx>
-            <posy>70</posy>
+            <posy>topoffset</posy>
             <visible>!Window.IsVisible(3065) + !Window.IsVisible(3078)</visible>
             <include>DialogVisibility</include>
             <animation effect="slide" start="0" end="0,130" time="200" condition="Window.IsVisible(3067)">Conditional</animation>

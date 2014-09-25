@@ -98,7 +98,7 @@
     <include name="NextAiredWindow">
         <control type="group">
             <posx>233</posx>
-            <posy>70</posy>
+            <posy>topoffset</posy>
             
             <control type="grouplist" id="9500">
                 <posx>18</posx>
@@ -314,7 +314,7 @@
     <include name="NextAiredWindow2">
         <control type="group">
             <posx>233</posx>
-            <posy>70</posy>
+            <posy>topoffset</posy>
             
             <control type="grouplist" id="9500">
                 <posx>18</posx>
