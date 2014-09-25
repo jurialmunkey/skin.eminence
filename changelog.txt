@@ -3,6 +3,7 @@ fix overlapping list labels
 center home list
 HomeBarBG colour def
 add labels to wall view episodes
+added burnt orange, emerald and lilac
 
 [B]1.0.2[/B]
 fix video and year labels in vid info
