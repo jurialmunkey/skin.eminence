@@ -23,8 +23,7 @@
     </variable>
     
     <variable name="VARLabel">
-        <value condition="Container.Content(songs) + Control.IsVisible(52) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]$INFO[ListItem.Duration,  ,]</value>
-        <value condition="Container.Content(songs) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>
+        <!--<value condition="Container.Content(songs) + !stringcompare(ListItem.Label,..)">$INFO[ListItem.TrackNumber,,. ]$INFO[ListItem.Title]</value>-->
         <value>$INFO[ListItem.Label]</value>
     </variable>
     

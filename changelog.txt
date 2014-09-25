@@ -4,6 +4,9 @@ center home list
 HomeBarBG colour def
 add labels to wall view episodes
 added burnt orange, emerald and lilac
+change VARLabel to use ListItem.Label for songs as well
+ - songs view now inherits track naming template 
+ - Settings > Music > File Lists > Track Naming Template
 
 [B]1.0.2[/B]
 fix video and year labels in vid info
