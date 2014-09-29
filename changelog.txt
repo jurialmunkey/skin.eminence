@@ -3,6 +3,8 @@ fix mumusicnav not having side arrow
 consolidate side arrows into one def
 fix weather arrows not changing view
 fix weather not holding second view on mouse move
+rudimentary script.skin.info.service support for set extendedplot
+fixes to nextaired
 
 [B]1.0.3[/B]
 fix overlapping list labels

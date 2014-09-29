@@ -761,6 +761,7 @@
                 <control type="fixedlist" id="202">
                     <onup>201</onup>
                     <ondown>203</ondown>
+                    <visible allowhiddenfocus="true">Control.HasFocus(202)</visible>
                     <include>NextAiredList</include>
                 </control>
                 <control type="fixedlist" id="203">
@@ -821,6 +822,7 @@
                     <onup>211</onup>
                     <ondown>213</ondown>
                     <include>NextAiredList</include>
+                    <visible allowhiddenfocus="true">Control.HasFocus(212)</visible>
                 </control>
                 <control type="fixedlist" id="213">
                     <onup>212</onup>
