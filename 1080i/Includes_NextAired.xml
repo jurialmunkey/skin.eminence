@@ -66,7 +66,7 @@
                 <control type="image">
                     <height>340</height>
                     <width>100%</width>
-                    <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                    <texture colordiffuse="PosterHighlight" border="5">common/white.png</texture>
                 </control>
                 <control type="image">
                     <posx>globalpad</posx>
@@ -150,7 +150,7 @@
                     </itemlayout>
                     <focusedlayout height="100" width="widgethubrightw">
                         <control type="image">
-                            <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
+                            <texture colordiffuse="PosterHighlight" border="5">common/white.png</texture>
                             <left>0</left>
                             <right>0</right>
                             <height>90</height>
