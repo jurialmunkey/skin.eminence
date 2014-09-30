@@ -264,6 +264,12 @@
                             <onclick>SetFocus(214)</onclick>
                             <visible>!IsEmpty(Window(home).Property(NextAired.214.Weekday))</visible>
                         </item>
+                        <item id="16">
+                            <label>$INFO[Window(home).Property(NextAired.215.Weekday)]</label>
+                            <label2>$INFO[Window(home).Property(NextAired.215.Date)]</label2>
+                            <onclick>SetFocus(215)</onclick>
+                            <visible>!IsEmpty(Window(home).Property(NextAired.215.Weekday))</visible>
+                        </item>
                     </content>
                 </control>
                 
@@ -332,7 +338,7 @@
                         <include>NextAiredList</include>
                     </control>
                     <control type="fixedlist" id="215">
-                        <visible allowhiddenfocus="false">Container(9500).HasFocus(1)</visible>
+                        <visible allowhiddenfocus="false">Container(9500).HasFocus(16)</visible>
                         <include>NextAiredList</include>
                     </control>
                 </control>
