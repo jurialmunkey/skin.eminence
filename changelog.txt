@@ -1,3 +1,6 @@
+[B]1.0.5[/B]
+updates to next aired window
+
 [B]1.0.4[/B]
 fix mumusicnav not having side arrow
 consolidate side arrows into one def
