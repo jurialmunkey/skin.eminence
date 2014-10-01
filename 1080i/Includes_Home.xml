@@ -206,14 +206,12 @@
                 <control type="group">
                     <include>Home-Button-Group-Width</include>
                     <include>Home-Menu-Visibility</include>
-                    <visible>Skin.HasSetting(home.301.enabled)</visible>
                     
                     <include>Home-Menu-Button-BG</include>
                     <control type="button" id="301">
                         <include>Home-Menu-Button</include>
                         <onfocus>SetProperty(bgwidget.type,$INFO[Skin.String(home.301.bgwidget.type)],home)</onfocus>
                         <onfocus>SetProperty(bgwidget,$INFO[Skin.String(home.301.bgwidget)],home)</onfocus>
-                        <visible>Skin.HasSetting(home.301.enabled)</visible>
                         <onclick>SetProperty(homefocus,301,home)</onclick>
                         <onclick>$INFO[Skin.String(home.301.Path)]</onclick>
                         <colordiffuse>$INFO[Skin.String(home.301.bgcolor)]</colordiffuse>

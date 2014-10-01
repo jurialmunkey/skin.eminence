@@ -1,3 +1,6 @@
+[B]1.0.6[/B]
+remove ability to delete first tile (301) to prevent lock out
+
 [B]1.0.5[/B]
 updates to next aired window
 updates to global search addon
