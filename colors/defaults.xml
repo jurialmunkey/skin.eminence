@@ -52,4 +52,5 @@
     <color name="PanelFG">ffdddddd</color>
     <color name="PanelFG-NF">9fdddddd</color>
     <color name="Disabled">3fededed</color>
+    <color name="TileDefault">ff2a2a2a</color>
 </colors>
