@@ -45,12 +45,16 @@
     <color name="PosterBorder">3e888888</color>
     <color name="PosterBorder-NF">1e888888</color>
     <color name="BorderColor">7f181818</color>
-    <color name="HomeBarBG">ff181818</color>
     <color name="PanelBG">ff181818</color>
     <color name="PanelBG2">ff333333</color>
     <color name="RadioFO">ffffffff</color>
     <color name="PanelFG">ffdddddd</color>
     <color name="PanelFG-NF">9fdddddd</color>
     <color name="Disabled">3fededed</color>
+    
+    
+    <!-- Home Bar -->
+    <color name="HomeBarBG">ff181818</color>
+    <color name="HomeBarSide">ff181818</color>
     <color name="TileDefault">ff2a2a2a</color>
 </colors>
