@@ -6,6 +6,7 @@ fix side arrow for song info
 transparent home colour scheme
 specific info for tvshows and episodes
 bump context menu zorder
+fix big list overlap in tvshows
 
 [B]1.0.5[/B]
 updates to next aired window
