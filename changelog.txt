@@ -1,6 +1,9 @@
 [B]1.0.7[/B]
 move right hub consolidation
 fix header sub label overlap
+fix alignment of labels on home
+tweak opaque colours
+separate out homebarfg colour
 
 [B]1.0.6[/B]
 remove ability to delete first tile (301) to prevent lock out

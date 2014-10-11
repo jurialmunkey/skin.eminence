@@ -29,11 +29,11 @@
     
     <include name="Short-Home-Menu-Label">
         <posy>290</posy>
-        <width>180</width>
+        <width>170</width>
         <align>center</align>
         <aligny>top</aligny>
         <font>Font-HomeMenu</font>
-        <textcolor>TopBarDarkIcon</textcolor>
+        <textcolor>HomeBarFG</textcolor>
     </include>
     
     <include name="Tall-Home-Menu-Label">
