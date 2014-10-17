@@ -38,7 +38,7 @@
                 <control type="button" id="4">
                     <description>Settings</description>
                     <label>5</label>
-                    <width>910</width>
+                    <width>710</width>
                     <align>left</align>
                     <onclick>ActivateWindow(weathersettings)</onclick>
                     <include>DefContextMenuButton</include>
@@ -46,7 +46,7 @@
                 </control>
 
                 <control type="spincontrolex" id="3">
-                    <width>300</width>
+                    <width>500</width>
                     <align>left</align>
                     <description>Location Select</description>
                     <textureup colordiffuse="40ffffff" flipy="true">buttons/spin-down.png</textureup>
@@ -66,18 +66,18 @@
                     <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                 </control>
                 <control type="label">
-                    <posx>-75</posx>
+                    <posx>0</posx>
                     <posy>0</posy>
-                    <width>668</width>
-                    <height>320</height>
-                    <font>Font-HugeWeather</font>
-                    <align>left</align>
+                    <width>340</width>
+                    <height>340</height>
+                    <font>Font-BigWeather</font>
+                    <align>center</align>
                     <aligny>center</aligny>
                     <label> [B]$VAR[WeatherLabel][/B] </label>
                 </control>
                 <control type="group">
-                    <posy>80</posy>
-                    <posx>370</posx>
+                    <posy>75</posy>
+                    <posx>325</posx>
                     <control type="label">
                         <posx>10</posx>
                         <posy>0</posy>
@@ -217,7 +217,7 @@
                             <autoscroll>false</autoscroll>
                             <align>center</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]] • $INFO[ListItem.Property(LowTemperature)]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout width="243" height="340">
@@ -251,10 +251,18 @@
                             <autoscroll>false</autoscroll>
                             <align>center</align>
                             <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]] • $INFO[ListItem.Property(LowTemperature)]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
                         </control>
                     </focusedlayout>
                     <content>
+                        <item id="0">
+                            <onclick>noop</onclick>
+                            <property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
+                            <property name="LongDay">$INFO[Window(Weather).Property(Day0.Title)]</property>
+                            <property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
+                            <property name="LowTemperature">$INFO[Window(Weather).Property(Day0.LowTemp)]</property>
+                            <property name="Outlook">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
+                        </item>
                         <item id="1">
                             <onclick>noop</onclick>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
