@@ -1,3 +1,6 @@
+[B]1.0.8[/B]
+weather changes
+
 [B]1.0.7[/B]
 move right hub consolidation
 fix header sub label overlap
