@@ -9,725 +9,701 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Lithuanian (http://www.transifex.com/projects/p/xbmc-skins/language/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 msgctxt "#31101"
 msgid "Information"
-msgstr ""
+msgstr "Informacija"
 
 msgctxt "#31102"
 msgid "Youtube"
-msgstr ""
+msgstr "Youtube"
 
 msgctxt "#31103"
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 msgctxt "#31104"
 msgid "Live TV"
-msgstr ""
+msgstr "Televizija"
 
 msgctxt "#31105"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV gidas"
 
 msgctxt "#31106"
 msgid "Fullscreen"
-msgstr ""
+msgstr "Visame ekrane"
 
 msgctxt "#31107"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31108"
 msgid "Quick Nav"
-msgstr ""
+msgstr "Greitoji navigacija"
 
 msgctxt "#31109"
 msgid "Recently Added"
-msgstr ""
+msgstr "Vėliausiai pridėti"
 
 msgctxt "#31110"
 msgid "In Progress"
-msgstr ""
+msgstr "Nebaigti žiūrėti"
 
 msgctxt "#31111"
 msgid "Type"
-msgstr ""
+msgstr "Tipas"
 
 msgctxt "#31112"
 msgid "Spotlight"
-msgstr ""
+msgstr "Apžvalga"
 
 msgctxt "#31113"
 msgid "items"
-msgstr ""
+msgstr "elementai"
 
 msgctxt "#31114"
 msgid "Channels"
-msgstr ""
+msgstr "Kanalai"
 
 msgctxt "#31115"
 msgid "Finishes at"
-msgstr ""
+msgstr "Baigiasi"
 
 msgctxt "#31116"
 msgid "Close"
-msgstr ""
-
-#empty string with id 31117
+msgstr "Uždaryti"
 
 msgctxt "#31118"
 msgid "Playing"
-msgstr ""
+msgstr "Atkuriama"
 
 msgctxt "#31119"
 msgid "Info"
-msgstr ""
+msgstr "Informacija"
 
 msgctxt "#31120"
 msgid "Auto-Login"
-msgstr ""
+msgstr "Automatinis prisijungimas"
 
 msgctxt "#31121"
 msgid "Used Memory"
-msgstr ""
+msgstr "Naudojama atminties"
 
 msgctxt "#31122"
 msgid "No info available..."
-msgstr ""
+msgstr "Nėra informacijos..."
 
 msgctxt "#31123"
 msgid "Channel"
-msgstr ""
+msgstr "Kanalas"
 
 msgctxt "#31124"
 msgid "Airing"
-msgstr ""
+msgstr "Transliuojama"
 
 msgctxt "#31125"
 msgid "End Time"
-msgstr ""
+msgstr "Pabaigos laikas"
 
 msgctxt "#31126"
 msgid "Channel Group"
-msgstr ""
+msgstr "Kanalo grupė"
 
 msgctxt "#31127"
 msgid "Recording"
-msgstr ""
+msgstr "Įrašymas"
 
 msgctxt "#31128"
 msgid "Scheduled"
-msgstr ""
+msgstr "Suplanuotas"
 
 msgctxt "#31129"
 msgid "Not Scheduled"
-msgstr ""
+msgstr "Ne suplanuotas"
 
 msgctxt "#31130"
 msgid "Shutdown Timer"
-msgstr ""
+msgstr "Išjungimo laikmatis"
 
 msgctxt "#31131"
 msgid "Master Mode: On"
-msgstr ""
+msgstr "Valdytojo režimas: įjungta"
 
 msgctxt "#31132"
 msgid "Master Mode: Off"
-msgstr ""
+msgstr "Valdytojo režimas: išjungta"
 
 msgctxt "#31133"
 msgid "Cancel Timer"
-msgstr ""
+msgstr "Atšaukti laikmatį"
 
 msgctxt "#31134"
 msgid "Mute"
-msgstr ""
+msgstr "Išjungti garsą"
 
 msgctxt "#31135"
 msgid "Artwork"
-msgstr ""
+msgstr "Iliustracijos"
 
 msgctxt "#31136"
 msgid "Changes"
-msgstr ""
+msgstr "Pakeitimai"
 
 msgctxt "#31137"
 msgid "Re-initialise skin - WARNING: Resets skin to defaults"
-msgstr ""
+msgstr "Atstatyti teminę išvaizdą - ĮSPĖJIMAS: Bus atstatytos visų teminės išvaizdos nustatymų numatytosios reikšmės"
 
 msgctxt "#31138"
 msgid "Set weather fanart"
-msgstr ""
+msgstr "Nustatyti orų Fanart"
 
 msgctxt "#31139"
 msgid "Artist slideshow"
-msgstr ""
+msgstr "\"Artist slideshow\""
 
 msgctxt "#31140"
 msgid "Show visualisation behind slideshow"
-msgstr ""
+msgstr "Rodyti vizualizaciją už skaidrių"
 
 msgctxt "#31141"
 msgid "Movies Widget"
-msgstr ""
+msgstr "Filmų valdiklis"
 
 msgctxt "#31142"
 msgid "Tv Shows Widget"
-msgstr ""
+msgstr "TV laidų valdiklis"
 
 msgctxt "#31143"
 msgid "Disc Menu"
-msgstr ""
+msgstr "Disko meniu"
 
 msgctxt "#31144"
 msgid "Enable TV Tunes"
-msgstr ""
+msgstr "Įjungti TV Tunes"
 
 msgctxt "#31145"
 msgid "Show now playing video in background"
-msgstr ""
+msgstr "Rodyti šiuo metu atkuriamą vaizdo įrašą fone"
 
 msgctxt "#31146"
 msgid "Show fanart"
-msgstr ""
+msgstr "Rodyti Fanart"
 
 msgctxt "#31147"
 msgid "Views"
-msgstr ""
-
-#empty string with id 31148
+msgstr "Rodiniai"
 
 msgctxt "#31149"
 msgid "Set home background"
-msgstr ""
+msgstr "Nustatyti pradinio ekrano foną"
 
 msgctxt "#31150"
 msgid "Show info"
-msgstr ""
+msgstr "Rodyti informaciją"
 
 msgctxt "#31151"
 msgid "Hide info"
-msgstr ""
+msgstr "Slėpti informaciją"
 
 msgctxt "#31152"
 msgid "Posters"
-msgstr ""
+msgstr "Plakatai"
 
 msgctxt "#31153"
 msgid "Wall"
-msgstr ""
+msgstr "Siena"
 
 msgctxt "#31154"
 msgid "Banner"
-msgstr ""
+msgstr "Reklamjuostė"
 
 msgctxt "#31155"
 msgid "Lovefilm"
-msgstr ""
+msgstr "Lovefilm"
 
 msgctxt "#31156"
 msgid "All Movies"
-msgstr ""
+msgstr "Visi filmai"
 
 msgctxt "#31157"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Visos TV laidos"
 
 msgctxt "#31158"
 msgid "Fullscreen"
-msgstr ""
+msgstr "Visame ekrane"
 
 msgctxt "#31159"
 msgid "Recently Played"
-msgstr ""
+msgstr "Neseniai atkurta"
 
 msgctxt "#31160"
 msgid "Press down for options..."
-msgstr ""
+msgstr "Paspauskite žemyn, norėdami atidaryti parinktis..."
 
 msgctxt "#31161"
 msgid "Show PVR channel icon in header"
-msgstr ""
+msgstr "Rodyti PVR kanalo piktogramą antraštėje"
 
 msgctxt "#31162"
 msgid "Show extended details when pressing info"
-msgstr ""
+msgstr "Rodyti išsamią informaciją paspaudus \"Informacija\""
 
 msgctxt "#31163"
 msgid "Custom"
-msgstr ""
+msgstr "Savas"
 
 msgctxt "#31164"
 msgid "Customise"
-msgstr ""
+msgstr "Tinkinti"
 
 msgctxt "#31165"
 msgid "Edit icon"
-msgstr ""
+msgstr "Keisti piktogramą"
 
 msgctxt "#31166"
 msgid "Items"
-msgstr ""
+msgstr "Elementai"
 
 msgctxt "#31167"
 msgid "Pages"
-msgstr ""
+msgstr "Puslapiai"
 
 msgctxt "#31168"
 msgid "Home"
-msgstr ""
+msgstr "Pradinis ekranas"
 
 msgctxt "#31169"
 msgid "Add item"
-msgstr ""
+msgstr "Pridėti elementą"
 
 msgctxt "#31170"
 msgid "Now playing"
-msgstr ""
+msgstr "Dabar atkuriama"
 
 msgctxt "#31171"
 msgid "the items on your home menu"
-msgstr ""
+msgstr "elementai pradiniame meniu"
 
 msgctxt "#31172"
 msgid "Edit"
-msgstr ""
+msgstr "Keisti"
 
 msgctxt "#31173"
 msgid "on"
-msgstr ""
+msgstr "per"
 
 msgctxt "#31174"
 msgid "Cinema Experience"
-msgstr ""
+msgstr "Cinema Experience"
 
 msgctxt "#31175"
 msgid "Television"
-msgstr ""
+msgstr "Televizija"
 
 msgctxt "#31176"
 msgid "Media Center"
-msgstr ""
+msgstr "Media centras"
 
 msgctxt "#31177"
 msgid "Show weather with clock"
-msgstr ""
+msgstr "Rodyti orus su laikrodžiu"
 
 msgctxt "#31178"
 msgid "Use taller tiles"
-msgstr ""
+msgstr "Naudoti aukštesnes plyteles"
 
 msgctxt "#31179"
 msgid "Movies Hub"
-msgstr ""
+msgstr "Filmų šakotuvas"
 
 msgctxt "#31180"
 msgid "Tv Shows Hub"
-msgstr ""
+msgstr "TV laidų šakotuvas"
 
 msgctxt "#31181"
 msgid "Widget"
-msgstr ""
+msgstr "Valdiklis"
 
 msgctxt "#31182"
 msgid "Home background widget (press up to access)"
-msgstr ""
+msgstr "Pradinio ekrano fono valdiklis (spauskite aukštyn, norėdami atidaryti)"
 
 msgctxt "#31183"
 msgid "Mix of in-progress tv-shows and random movies"
-msgstr ""
+msgstr "Sumaišyti nebaigtas žiūrėti TV laidas ir atsitiktinius filmus"
 
 msgctxt "#31184"
 msgid "Quick nav mode"
-msgstr ""
+msgstr "Greitos navigacijos režimas"
 
 msgctxt "#31185"
 msgid "Fanart fade amount"
-msgstr ""
+msgstr "Fanart išblukimo lygis"
 
 msgctxt "#31186"
 msgid "Custom Item"
-msgstr ""
+msgstr "Individualus elementas"
 
 msgctxt "#31187"
 msgid "Next Aired"
-msgstr ""
+msgstr "Kita transliacija"
 
 msgctxt "#31188"
 msgid "Show next aired in RSS feed"
-msgstr ""
+msgstr "Rodyti kitą transliaciją RSS sklaidos kanale"
 
 msgctxt "#31189"
 msgid "Update next aired data on startup"
-msgstr ""
+msgstr "Atnaujinti kitos transliacijos duomenis paleidimo metu"
 
 msgctxt "#31190"
 msgid "Login"
-msgstr ""
+msgstr "Prisijungti"
 
 msgctxt "#31191"
 msgid "User login"
-msgstr ""
+msgstr "Vartotojo prisijungimas"
 
 msgctxt "#31192"
 msgid "Select a profile"
-msgstr ""
+msgstr "Pasirinkite profilį"
 
 msgctxt "#31193"
 msgid "Trailers"
-msgstr ""
+msgstr "Anonsai"
 
 msgctxt "#31194"
 msgid "Loading..."
-msgstr ""
+msgstr "Įkeliama..."
 
 msgctxt "#31195"
 msgid "Enable widget carousel access on down"
-msgstr ""
+msgstr "Įjungti valdiklių karuselės atidarymą paspaudus žemyn"
 
 msgctxt "#31196"
 msgid "Channel Options"
-msgstr ""
+msgstr "Kanalo parinktys"
 
 msgctxt "#31197"
 msgid "General Options"
-msgstr ""
+msgstr "Bendros parinktys"
 
 msgctxt "#31198"
 msgid "Show widget info panel"
-msgstr ""
+msgstr "Rodyti valdiklio informacinį skydelį"
 
 msgctxt "#31199"
 msgid "Skip hubs and go straight to library"
-msgstr ""
+msgstr "Praleisti šakotuvus ir eiti tiesiai į biblioteką"
 
 msgctxt "#31200"
 msgid "Manual search..."
-msgstr ""
+msgstr "Rankinė paieška..."
 
 msgctxt "#31201"
 msgid "Set Colour"
-msgstr ""
+msgstr "Nustatyti spalvą"
 
 msgctxt "#31202"
 msgid "Widget Carousel"
-msgstr ""
+msgstr "Valdiklių karuselė"
 
 msgctxt "#31203"
 msgid "Reset global background path to default"
-msgstr ""
-
-msgctxt "#31204"
-msgid "Match highlight to tile color"
-msgstr ""
-
-msgctxt "#31205"
-msgid "Don't fade unfocused tiles"
-msgstr ""
+msgstr "Atstatyti globalaus fono kelio numatytąją reikšmę"
 
 msgctxt "#31206"
 msgid "Use theme colour for focused tiles"
-msgstr ""
+msgstr "Naudoti temos spalvą pasirinktai plytelei"
 
 msgctxt "#31207"
 msgid "Movie Set"
-msgstr ""
+msgstr "Filmų rinkinys"
 
 msgctxt "#31208"
 msgid "Home Screen"
-msgstr ""
+msgstr "Pradinis ekranas"
 
 msgctxt "#31209"
 msgid "Set global background widget"
-msgstr ""
+msgstr "Nustatyti globalų fono valdiklį"
 
 msgctxt "#31210"
 msgid "Set background image"
-msgstr ""
+msgstr "Nustatyti fono atvaizdą"
 
 msgctxt "#31211"
 msgid "Move item"
-msgstr ""
+msgstr "Perkelti elementą"
 
 msgctxt "#31212"
 msgid "Swap with another tile"
-msgstr ""
+msgstr "Sukeisti vietomis su kita plytele"
 
 msgctxt "#31213"
 msgid "Click on a tile to see the available customisation options. Either select a preset tile option or modify an existing tile's name, colour, icon, path and background widget. You can also swap the position of tiles."
-msgstr ""
+msgstr "Paspauskite ant plytelės, norėdami pamatyti galimas tinkinimo parinktis. Pasirinkite arba iš anksto nustatytą plytelės parinktį, arba keiskite esamą plytelės vardą, spalvą, piktogramą, kelią ir fono valdiklį. Taip pat galite sukeisti plytelių pozicijas."
 
 msgctxt "#31214"
 msgid "Customise your home menu tiles"
-msgstr ""
+msgstr "Tinkinkite pagrindinio meniu plyteles"
 
 msgctxt "#31215"
 msgid "Choose a tile to swap with this one"
-msgstr ""
+msgstr "Pasirinkite plytelę, kurią norite sukeisti vietomis su šia"
 
 msgctxt "#31216"
 msgid "Show clearart/logo with osd"
-msgstr ""
+msgstr "Rodyti clearart/logotipą osd lange"
 
 msgctxt "#31217"
 msgid "Show power button"
-msgstr ""
+msgstr "Rodyti išjungimo mygtuką"
 
 msgctxt "#31218"
 msgid "Change background colour based on time of day"
-msgstr ""
+msgstr "Keisti fono spalvą priklausomai nuo paros laiko"
 
 msgctxt "#31219"
 msgid "Insert item"
-msgstr ""
+msgstr "Įterpti elementą"
 
 msgctxt "#31220"
 msgid "Experimental"
-msgstr ""
+msgstr "Eksperimentinis"
 
 msgctxt "#31221"
 msgid "EPG Timeline"
-msgstr ""
+msgstr "EPG laiko juosta"
 
 msgctxt "#31222"
 msgid " •   Customise widget item"
-msgstr ""
+msgstr " •   Tinkinti valdiklio elementą"
 
 msgctxt "#31223"
 msgid "Banner List"
-msgstr ""
+msgstr "Reklamjuosčių sąrašas"
 
 msgctxt "#31224"
 msgid "Forecast"
-msgstr ""
+msgstr "Prognozė"
 
 msgctxt "#31225"
 msgid "Info List"
-msgstr ""
+msgstr "Informacijos sąrašas"
 
 msgctxt "#31226"
 msgid "Show title"
-msgstr ""
+msgstr "Rodyti pavadinimą"
 
 msgctxt "#31227"
 msgid "Hide title"
-msgstr ""
+msgstr "Slėpti pavadinimą"
 
 msgctxt "#31228"
 msgid "Set background overlay"
-msgstr ""
+msgstr "Nustatyti fono perdangą"
 
 msgctxt "#31229"
 msgid "Background image (click to reset)"
-msgstr ""
+msgstr "Fono atvaizdas (paspauskite norėdami atstatyti)"
 
 msgctxt "#31230"
 msgid "Animate fanart"
-msgstr ""
+msgstr "Animuoti Fanart"
 
 msgctxt "#31231"
 msgid "Edit Playlist"
-msgstr ""
+msgstr "Keisti grojaraštį"
 
 msgctxt "#31232"
 msgid "Rule"
-msgstr ""
+msgstr "Taisyklė"
 
 msgctxt "#31233"
 msgid "Enter rule..."
-msgstr ""
+msgstr "Įvesti taisyklę..."
 
 msgctxt "#31234"
 msgid "Advanced"
-msgstr ""
+msgstr "Išplėstiniai"
 
 msgctxt "#31235"
 msgid "Extras"
-msgstr ""
+msgstr "Priedai"
 
 msgctxt "#31236"
 msgid "Header text"
-msgstr ""
+msgstr "Antraštės tekstas"
 
 msgctxt "#31237"
 msgid "Invert widget access"
-msgstr ""
+msgstr "Sukeisti valdiklių prieigą"
 
 msgctxt "#31238"
 msgid "Open carousel in own window"
-msgstr ""
+msgstr "Atidaryti karuselę savame lange"
 
 msgctxt "#31239"
 msgid "Kiosk mode"
-msgstr ""
+msgstr "Kiosko režimas"
 
 msgctxt "#31240"
 msgid "Use theme colour for header"
-msgstr ""
+msgstr "Naudoti temos spalvą antraštėje"
 
 msgctxt "#31241"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D režimas"
 
 msgctxt "#31242"
 msgid "Media Info"
-msgstr ""
+msgstr "Media informacija"
 
 msgctxt "#31243"
 msgid "Most"
-msgstr ""
+msgstr "Didžiausias"
 
 msgctxt "#31244"
 msgid "Moderate"
-msgstr ""
+msgstr "Vidutinis"
 
 msgctxt "#31245"
 msgid "Least"
-msgstr ""
+msgstr "Mažiausias"
 
 msgctxt "#31246"
 msgid "No description available"
-msgstr ""
+msgstr "Nėra aprašymo"
 
 msgctxt "#31247"
 msgid "Customise home screen tiles. From here you can create new tiles, modify existing tiles, insert tiles, delete tiles, swap tiles and set individual background widgets. To set individual background widgets you must first disable the Global Widget. To set colours for individual tiles you must first disable the Use Theme Colour For Focused Tiles option."
-msgstr ""
+msgstr "Tinkinti pradinio ekrano plyteles. Čia galite sukurti naujas plyteles, modifikuoti esamas, įterpti ar pašalinti jas, sukeisti plyteles vietomis ir nustatyti individualius fono valdiklius. Norint nustatyti individualius fono valdiklius pirmiau reikia išjungti globalų valdiklį. Norint nustatyti individualią plytelių spalvą, pirmiau reikia išjungti 'Naudoti temos spalvą pasirinktai plytelei' parinktį."
 
 msgctxt "#31248"
 msgid "Sets the background widget for the home screen that can be accessed by pressing up. Disabling this option allows individual widgets to be set for tiles in the customisation screen."
-msgstr ""
+msgstr "Nustato pradinio ekrano fono valdiklį, kuris gali būti atidarytas paspaudus aukštyn. Šios parinkties išjungimas leidžia nustatyti plytelėms individualius valdiklius tinkinimo ekrane."
 
 msgctxt "#31249"
 msgid "Show the information panel for background widgets."
-msgstr ""
+msgstr "Rodyti fono valdiklių informacinį skydelį."
 
 msgctxt "#31250"
 msgid "Focused tiles on home screen match the theme's highlight colour. Unfocused tiles are set to grey. This overrides individual tile colour settings."
-msgstr ""
+msgstr "Pasirinkta plytelės spalva pradiniame ekrane sutaps su temos pažymėjimo spalva. Kitos plytelės bus pilkos spalvos. Ši parinktis perrašys individualios plytelių spalvos nustatymus."
 
 msgctxt "#31251"
 msgid "Match the colour of the focused tile's text underline to the colour of the tile."
-msgstr ""
+msgstr "Pasirinktos plytelės teksto pabraukimo spalva atitiks plytelės spalvą."
 
 msgctxt "#31252"
 msgid "Sets the path to the background slideshow that is shown when the focused tile does not have a background widget set."
-msgstr ""
+msgstr "Nustatyti fono skaidrių kelią, kurios bus rodomos, kai pasirinkta plytelė neturi nustatyto fono valdiklio."
 
 msgctxt "#31253"
 msgid "Enables an additional widget carousel that is accessed by pressing down. Once open, pressing up will cycle through the widgets."
-msgstr ""
+msgstr "Įjungti papildomą valdiklių karuselę, kurią galima atidaryti paspaudus žemyn. Kai atidaryta, spaudžiant aukštyn galima perjunginėti valdiklius."
 
 msgctxt "#31254"
 msgid "Open the widget carousel in its own window rather than above the home screen tiles."
-msgstr ""
+msgstr "Atidaryti valdiklių karuselę atskirame lange, o ne virš pradinio ekrano plytelių."
 
 msgctxt "#31255"
 msgid "Invert access to widgets so that up opens the carousel and down accesses the background widget."
-msgstr ""
+msgstr "Sukeisti valdiklių prieigą vietomis taip, kad paspaudus aukštyn būtų atidaryta karuselė, o paspaudus žemyn - fono valdiklis."
 
 msgctxt "#31256"
 msgid "Show fanart in the background of library views."
-msgstr ""
+msgstr "Rodyti Fanart bibliotekos rodinių fone."
 
 msgctxt "#31257"
 msgid "Sets how much the background fanart is faded. There are three settings: Most, Moderate and Least."
-msgstr ""
+msgstr "Nustatyti kiek turi būti išblukęs fono Fanart. Yra trys galimi lygio pasirinkimai: didžiausias, vidutinis ir mažiausias."
 
 msgctxt "#31258"
 msgid "Animate background fanart with a Ken Burns type effect."
-msgstr ""
+msgstr "Animuoti fono Fanart naudojant Ken Burns tipo efektą."
 
 msgctxt "#31259"
 msgid "Set the backgroud image that is displayed when no fanart is available. Click once to clear the current path and again to select a new path."
-msgstr ""
+msgstr "Nustatyti fono atvaizdą, kuris bus rodomas , kai nėra Fanart. Paspauskite kartą, norėdami išvalyti dabartinį kelią ir dar kartą, norėdami parinkti naują."
 
 msgctxt "#31260"
 msgid "Changes the background colour based upon the time of day. This overrides the background image setting. The images for the background colour overlay can be modified in skin.eminence/extras/sunset - the number of the image matches the hour it is displayed at in 24 hour time."
-msgstr ""
+msgstr "Keisti fono spalvą priklausomai nuo paros laiko. Ši parinktis perrašo fono atvaizdo nustatymą. Fono spalvos perdangos atvaizdai gali būti pakeisti skin.eminence/extras/sunset aplanke. Atvaizdo numeris atitinka 24 valandų laiko formato valandas."
 
 msgctxt "#31261"
 msgid "Sets the image used as a background overlay. Click once to clear the current path and again to select a new path."
-msgstr ""
+msgstr "Nustatyti atvaizdą, kuris bus naudojamas kaip fono perdanga. Paspauskite kartą, norėdami išvalyti dabartinį kelią ir dar kartą, norėdami parinkti naują."
 
 msgctxt "#31262"
 msgid "Sets the path to weather fanart used in the weather screen."
-msgstr ""
+msgstr "Nustatyti kelią iki orų Fanart, kurie bus naudojami orų ekrane."
 
 msgctxt "#31263"
 msgid "Select the widget shown in the movies hub. Can choose spotlight, in progress or smart playlist."
-msgstr ""
+msgstr "Pasirinkti valdiklį, kuris bus rodomas filmų šakotuve. Galima pasirinkti apžvalgą, nebaigtus žiūrėti filmus ar išmanųjį grojaraštį."
 
 msgctxt "#31264"
 msgid "Set the smart playlist used in the movie hub widget. Smart playlists can be created by going to the movies hub and scrolling down in the right pane to the playlists option."
-msgstr ""
+msgstr "Nustatyti išmanųjį grojaraštį, kuris bus naudojamas filmų šakotuvo valdiklyje. Išmanusis grojaraštis gali būti sukurtas atsidarius filmų šakotuvą ir pasirinkus grojaraščių parinktį skydelyje dešinėje."
 
 msgctxt "#31265"
 msgid "Sets a custom item to be shown in the right pane of the hub underneath recently added."
-msgstr ""
+msgstr "Nustatyti individualų elementą, kuris bus rodomas šakotuvo skydelyje dešinėje, žemiau neseniai įkeltų elementų parinkties."
 
 msgctxt "#31266"
 msgid "Select the widget shown in the tv shows hub. Can choose spotlight, in progress or smart playlist."
-msgstr ""
+msgstr "Pasirinkti valdiklį, kuris bus rodomas TV laidų šakotuve. Galima pasirinkti apžvalgą, nebaigtas žiūrėti TV laidas ar išmanųjį grojaraštį."
 
 msgctxt "#31267"
 msgid "Set the smart playlist used in the tv show hub widget. Smart playlists can be created by going to the tv show hub and scrolling down in the right pane to the playlists option."
-msgstr ""
+msgstr "Nustatyti išmanųjį grojaraštį, kuris bus naudojamas TV laidų šakotuvo valdiklyje. Išmanusis grojaraštis gali būti sukurtas atsidarius TV laidų šakotuvą ir pasirinkus grojaraščių parinktį skydelyje dešinėje."
 
 msgctxt "#31268"
 msgid "Use the Artist Slideshow addon to show a slideshow of artist images as the music visualisation."
-msgstr ""
+msgstr "Naudoti 'Artist Slideshow' priedą, kad atlikėjo atvaizdai būtų rodomi kaip muzikos vizualizacija."
 
 msgctxt "#31269"
 msgid "Shows the extend info panel on pressing info with fullscreen video or music."
-msgstr ""
+msgstr "Rodyti išsamios informacijos skydelį paspaudus 'Informacija', kai visame ekrane atkuriamas vaizdo ar garso įrašas."
 
 msgctxt "#31270"
 msgid "Show clearart or clearlogo in the bottom right of screen whenever the seekbar displays on fullscreen video."
-msgstr ""
+msgstr "Rodyti Clearart ar Clearlogo ekrano dešiniame apatiniame kampe, kai rodoma progreso juosta atkuriant vaizdo įrašą visame ekrane."
 
 msgctxt "#31271"
 msgid "Modify the default 'Media Center' text shown in the header."
-msgstr ""
-
-msgctxt "#31272"
-msgid "Matches the colour of the header tile to the theme's highlight colour."
-msgstr ""
-
-msgctxt "#31273"
-msgid "Prevents the side view menu from being accessed in library views."
-msgstr ""
+msgstr "Pakeisti numatytąjį tekstą \"Media centras\", kuris rodomas antraštėje."
 
 msgctxt "#31274"
 msgid "Enables the TV Tunes addon in library views. Plays the tv theme song when viewing the seasons or episodes of a tv show."
-msgstr ""
+msgstr "Įjungti 'TV Tunes' priedą bibliotekos rodiniuose. Kai įjungta, pasirinkus TV laidos sezoną ar epizodą, bus atkuriama TV temos daina."
 
 msgctxt "#31275"
 msgid "Show the RSS feed at the bottom of the screen"
-msgstr ""
-
-msgctxt "#31276"
-msgid "Show next aired information for tv shows at the bottom of the screen. Also shows an RSS feed of upcoming tv show airdates in the tv show hub. In the Next Aired addon configuration enable the 'Show All Tv Shows for homescreen' option for best effect."
-msgstr ""
+msgstr "Rodyti RSS sklaidos kanalą ekrano apažioje"
 
 msgctxt "#31277"
 msgid "Resets the skin back to default settings. WARNING: this will wipe all your skin settings. All custom tiles and widgets will be reset to defaults."
-msgstr ""
+msgstr "Atstatyti teminės išvaizdos nustatymų numatytąsias reikšmes. ĮSPĖJIMAS: tai ištrins visus dabartinius teminės išvaizdos nustatymus. Visos individualios plytelės ir valdikliai bus atstatyti į numatytąją būseną."
 
 msgctxt "#31278"
 msgid "PVR Manager"
-msgstr ""
+msgstr "PVR tvarkyklė"
 
 msgctxt "#31279"
 msgid "Alt style"
-msgstr ""
+msgstr "Alternatyvus stilius"
 
 msgctxt "#31280"
 msgid "Automatically start artwork downloader after library update"
-msgstr ""
+msgstr "Automatiškai paleisti 'Artwork downloader' po bibliotekos atnaujinimo"

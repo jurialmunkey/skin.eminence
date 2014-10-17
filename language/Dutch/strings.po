@@ -9,725 +9,721 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/xbmc-skins/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#31101"
 msgid "Information"
-msgstr ""
+msgstr "Informatie"
 
 msgctxt "#31102"
 msgid "Youtube"
-msgstr ""
+msgstr "You-tube"
 
 msgctxt "#31103"
 msgid "Vimeo"
-msgstr ""
+msgstr "Vimeo"
 
 msgctxt "#31104"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#31105"
 msgid "TV Guide"
-msgstr ""
+msgstr "TV gids"
 
 msgctxt "#31106"
 msgid "Fullscreen"
-msgstr ""
+msgstr "Volledig Scherm"
 
 msgctxt "#31107"
 msgid "min"
-msgstr ""
+msgstr "min"
 
 msgctxt "#31108"
 msgid "Quick Nav"
-msgstr ""
+msgstr "Snelle navigatie"
 
 msgctxt "#31109"
 msgid "Recently Added"
-msgstr ""
+msgstr "Recent toegevoegd"
 
 msgctxt "#31110"
 msgid "In Progress"
-msgstr ""
+msgstr "Bezig"
 
 msgctxt "#31111"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 msgctxt "#31112"
 msgid "Spotlight"
-msgstr ""
+msgstr "Spotlight"
 
 msgctxt "#31113"
 msgid "items"
-msgstr ""
+msgstr "Items"
 
 msgctxt "#31114"
 msgid "Channels"
-msgstr ""
+msgstr "Kanalen"
 
 msgctxt "#31115"
 msgid "Finishes at"
-msgstr ""
+msgstr "afgelopen om"
 
 msgctxt "#31116"
 msgid "Close"
-msgstr ""
-
-#empty string with id 31117
+msgstr "Sluiten"
 
 msgctxt "#31118"
 msgid "Playing"
-msgstr ""
+msgstr "Afspelend"
 
 msgctxt "#31119"
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 msgctxt "#31120"
 msgid "Auto-Login"
-msgstr ""
+msgstr "Automatisch inloggen"
 
 msgctxt "#31121"
 msgid "Used Memory"
-msgstr ""
+msgstr "Gebruikt geheugen"
 
 msgctxt "#31122"
 msgid "No info available..."
-msgstr ""
+msgstr "Geen info beschikbaar..."
 
 msgctxt "#31123"
 msgid "Channel"
-msgstr ""
+msgstr "Kanaal"
 
 msgctxt "#31124"
 msgid "Airing"
-msgstr ""
+msgstr "Uitzending"
 
 msgctxt "#31125"
 msgid "End Time"
-msgstr ""
+msgstr "Eindtijd"
 
 msgctxt "#31126"
 msgid "Channel Group"
-msgstr ""
+msgstr "Kanaalgroep"
 
 msgctxt "#31127"
 msgid "Recording"
-msgstr ""
+msgstr "Recording"
 
 msgctxt "#31128"
 msgid "Scheduled"
-msgstr ""
+msgstr "Gepland"
 
 msgctxt "#31129"
 msgid "Not Scheduled"
-msgstr ""
+msgstr "Niet gepland"
 
 msgctxt "#31130"
 msgid "Shutdown Timer"
-msgstr ""
+msgstr "Uitschakelingstimer "
 
 msgctxt "#31131"
 msgid "Master Mode: On"
-msgstr ""
+msgstr "Expert mode: Aan"
 
 msgctxt "#31132"
 msgid "Master Mode: Off"
-msgstr ""
+msgstr "Expert mode: Uit"
 
 msgctxt "#31133"
 msgid "Cancel Timer"
-msgstr ""
+msgstr "Afbreken timer"
 
 msgctxt "#31134"
 msgid "Mute"
-msgstr ""
+msgstr "Mute"
 
 msgctxt "#31135"
 msgid "Artwork"
-msgstr ""
+msgstr "Artwork"
 
 msgctxt "#31136"
 msgid "Changes"
-msgstr ""
+msgstr "Veranderingen"
 
 msgctxt "#31137"
 msgid "Re-initialise skin - WARNING: Resets skin to defaults"
-msgstr ""
+msgstr "Re-initialiseer skin - WAARSCHUWING: Herstel skin naar haar standaardwaarden"
 
 msgctxt "#31138"
 msgid "Set weather fanart"
-msgstr ""
+msgstr "Instellen fan-art weer"
 
 msgctxt "#31139"
 msgid "Artist slideshow"
-msgstr ""
+msgstr "Diavoorstelling artiesten"
 
 msgctxt "#31140"
 msgid "Show visualisation behind slideshow"
-msgstr ""
+msgstr "Toon visualisatie achter Diavoorstelling"
 
 msgctxt "#31141"
 msgid "Movies Widget"
-msgstr ""
+msgstr "Films Widget"
 
 msgctxt "#31142"
 msgid "Tv Shows Widget"
-msgstr ""
+msgstr "TV-series Widget"
 
 msgctxt "#31143"
 msgid "Disc Menu"
-msgstr ""
+msgstr "Menu disks"
 
 msgctxt "#31144"
 msgid "Enable TV Tunes"
-msgstr ""
+msgstr "Activeer TV Tunes"
 
 msgctxt "#31145"
 msgid "Show now playing video in background"
-msgstr ""
+msgstr "Toon huidige video op de achtergrond"
 
 msgctxt "#31146"
 msgid "Show fanart"
-msgstr ""
+msgstr "Fanart uitzetten"
 
 msgctxt "#31147"
 msgid "Views"
-msgstr ""
-
-#empty string with id 31148
+msgstr "Weergaves"
 
 msgctxt "#31149"
 msgid "Set home background"
-msgstr ""
+msgstr "Instellen begin achtergrond"
 
 msgctxt "#31150"
 msgid "Show info"
-msgstr ""
+msgstr "Info weergeven"
 
 msgctxt "#31151"
 msgid "Hide info"
-msgstr ""
+msgstr "Verberg info"
 
 msgctxt "#31152"
 msgid "Posters"
-msgstr ""
+msgstr "Posters"
 
 msgctxt "#31153"
 msgid "Wall"
-msgstr ""
+msgstr "Muur"
 
 msgctxt "#31154"
 msgid "Banner"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#31155"
 msgid "Lovefilm"
-msgstr ""
+msgstr "Liefdesfilm"
 
 msgctxt "#31156"
 msgid "All Movies"
-msgstr ""
+msgstr "Alle Films"
 
 msgctxt "#31157"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Alle TV-Series"
 
 msgctxt "#31158"
 msgid "Fullscreen"
-msgstr ""
+msgstr "Volledig Scherm"
 
 msgctxt "#31159"
 msgid "Recently Played"
-msgstr ""
+msgstr "Onlangs afgespeeld"
 
 msgctxt "#31160"
 msgid "Press down for options..."
-msgstr ""
+msgstr "Druk omlaag voor opties..."
 
 msgctxt "#31161"
 msgid "Show PVR channel icon in header"
-msgstr ""
+msgstr "Toon PVR kanaalicoon bovenaan."
 
 msgctxt "#31162"
 msgid "Show extended details when pressing info"
-msgstr ""
+msgstr "Toon uitgebreide details bij aanklikken info"
 
 msgctxt "#31163"
 msgid "Custom"
-msgstr ""
+msgstr "Custom"
 
 msgctxt "#31164"
 msgid "Customise"
-msgstr ""
+msgstr "Aanpassen"
 
 msgctxt "#31165"
 msgid "Edit icon"
-msgstr ""
+msgstr "Wijzig icoon"
 
 msgctxt "#31166"
 msgid "Items"
-msgstr ""
+msgstr "Items"
 
 msgctxt "#31167"
 msgid "Pages"
-msgstr ""
+msgstr "Pagina`s"
 
 msgctxt "#31168"
 msgid "Home"
-msgstr ""
+msgstr "Beginscherm"
 
 msgctxt "#31169"
 msgid "Add item"
-msgstr ""
+msgstr "voeg item toe"
 
 msgctxt "#31170"
 msgid "Now playing"
-msgstr ""
+msgstr "Wordt afgespeeld"
 
 msgctxt "#31171"
 msgid "the items on your home menu"
-msgstr ""
+msgstr "De items op jouw startmenu"
 
 msgctxt "#31172"
 msgid "Edit"
-msgstr ""
+msgstr "Wijzigen"
 
 msgctxt "#31173"
 msgid "on"
-msgstr ""
+msgstr "op"
 
 msgctxt "#31174"
 msgid "Cinema Experience"
-msgstr ""
+msgstr "Bioscoop-ervaring"
 
 msgctxt "#31175"
 msgid "Television"
-msgstr ""
+msgstr "Televisie"
 
 msgctxt "#31176"
 msgid "Media Center"
-msgstr ""
+msgstr "Media Center"
 
 msgctxt "#31177"
 msgid "Show weather with clock"
-msgstr ""
+msgstr "Toon Weer met klok"
 
 msgctxt "#31178"
 msgid "Use taller tiles"
-msgstr ""
+msgstr "Gebruik langere tegels"
 
 msgctxt "#31179"
 msgid "Movies Hub"
-msgstr ""
+msgstr "Films Hub"
 
 msgctxt "#31180"
 msgid "Tv Shows Hub"
-msgstr ""
+msgstr "TV-series Hub"
 
 msgctxt "#31181"
 msgid "Widget"
-msgstr ""
+msgstr "Widget"
 
 msgctxt "#31182"
 msgid "Home background widget (press up to access)"
-msgstr ""
+msgstr "Toon achtergrond widget (druk omhoog voor toegang)"
 
 msgctxt "#31183"
 msgid "Mix of in-progress tv-shows and random movies"
-msgstr ""
+msgstr "Mix van lopende TV-series en willekeurige films"
 
 msgctxt "#31184"
 msgid "Quick nav mode"
-msgstr ""
+msgstr "Snelle navigatie modus"
 
 msgctxt "#31185"
 msgid "Fanart fade amount"
-msgstr ""
+msgstr "Fanart Fade hoeveelheid"
 
 msgctxt "#31186"
 msgid "Custom Item"
-msgstr ""
+msgstr "Aangepast Item"
 
 msgctxt "#31187"
 msgid "Next Aired"
-msgstr ""
+msgstr "Next Aired"
 
 msgctxt "#31188"
 msgid "Show next aired in RSS feed"
-msgstr ""
+msgstr "Toon volgende uitzending in RSS feed"
 
 msgctxt "#31189"
 msgid "Update next aired data on startup"
-msgstr ""
+msgstr "Update next aired data tijdens  opstarten"
 
 msgctxt "#31190"
 msgid "Login"
-msgstr ""
+msgstr "Inloggen"
 
 msgctxt "#31191"
 msgid "User login"
-msgstr ""
+msgstr "Gebruikerslogin"
 
 msgctxt "#31192"
 msgid "Select a profile"
-msgstr ""
+msgstr "Selecteer een profiel"
 
 msgctxt "#31193"
 msgid "Trailers"
-msgstr ""
+msgstr "Trailers"
 
 msgctxt "#31194"
 msgid "Loading..."
-msgstr ""
+msgstr "Aan het laden..."
 
 msgctxt "#31195"
 msgid "Enable widget carousel access on down"
-msgstr ""
+msgstr "Activeer widget carrousel toegang bij omlaag"
 
 msgctxt "#31196"
 msgid "Channel Options"
-msgstr ""
+msgstr "Kanaalopties"
 
 msgctxt "#31197"
 msgid "General Options"
-msgstr ""
+msgstr "Algemene instellingen"
 
 msgctxt "#31198"
 msgid "Show widget info panel"
-msgstr ""
+msgstr "Toon widget info paneel"
 
 msgctxt "#31199"
 msgid "Skip hubs and go straight to library"
-msgstr ""
+msgstr "Skip hubs en ga rechtstreeks naar bibliotheek"
 
 msgctxt "#31200"
 msgid "Manual search..."
-msgstr ""
+msgstr "Manueel zoeken..."
 
 msgctxt "#31201"
 msgid "Set Colour"
-msgstr ""
+msgstr "Instellen kleur"
 
 msgctxt "#31202"
 msgid "Widget Carousel"
-msgstr ""
+msgstr "Widget carrousel"
 
 msgctxt "#31203"
 msgid "Reset global background path to default"
-msgstr ""
+msgstr "Hertel globale achtergrond locatie naar standaard"
 
 msgctxt "#31204"
 msgid "Match highlight to tile color"
-msgstr ""
+msgstr "Match highlight naar tegel kleur"
 
 msgctxt "#31205"
 msgid "Don't fade unfocused tiles"
-msgstr ""
+msgstr "Niet-gefocuste tegels niet vervagen"
 
 msgctxt "#31206"
 msgid "Use theme colour for focused tiles"
-msgstr ""
+msgstr "Gebruik themakleur voor gefocuste tegels"
 
 msgctxt "#31207"
 msgid "Movie Set"
-msgstr ""
+msgstr "Speelfilmcollectie"
 
 msgctxt "#31208"
 msgid "Home Screen"
-msgstr ""
+msgstr "Beginscherm"
 
 msgctxt "#31209"
 msgid "Set global background widget"
-msgstr ""
+msgstr "Instellen globale achtergrond widget"
 
 msgctxt "#31210"
 msgid "Set background image"
-msgstr ""
+msgstr "Achtergrond instellen"
 
 msgctxt "#31211"
 msgid "Move item"
-msgstr ""
+msgstr "Verplaats item"
 
 msgctxt "#31212"
 msgid "Swap with another tile"
-msgstr ""
+msgstr "Verwissel met een andere tegel"
 
 msgctxt "#31213"
 msgid "Click on a tile to see the available customisation options. Either select a preset tile option or modify an existing tile's name, colour, icon, path and background widget. You can also swap the position of tiles."
-msgstr ""
+msgstr "Klik op een tegel om de beschikbare aanpassingsopties te zien. ofwel selecteer een voorinstelling tegel optie of modificeer een bestaande tegel`s naam, kleur, icoon, locatie of achtergrond widget. Je kan eveneens de positie van de tegels verwisselen."
 
 msgctxt "#31214"
 msgid "Customise your home menu tiles"
-msgstr ""
+msgstr "Pas jouw startmenu tegels aan"
 
 msgctxt "#31215"
 msgid "Choose a tile to swap with this one"
-msgstr ""
+msgstr "Kies een tegel om te verwisselen met deze"
 
 msgctxt "#31216"
 msgid "Show clearart/logo with osd"
-msgstr ""
+msgstr "Toon clearart/log met OSD"
 
 msgctxt "#31217"
 msgid "Show power button"
-msgstr ""
+msgstr "Toon powerknop"
 
 msgctxt "#31218"
 msgid "Change background colour based on time of day"
-msgstr ""
+msgstr "Verander achtergrondkleur gebaseerd op de tijd van de dag"
 
 msgctxt "#31219"
 msgid "Insert item"
-msgstr ""
+msgstr "Invoegen item"
 
 msgctxt "#31220"
 msgid "Experimental"
-msgstr ""
+msgstr "Experimenteel"
 
 msgctxt "#31221"
 msgid "EPG Timeline"
-msgstr ""
+msgstr "EPG tijdlijn"
 
 msgctxt "#31222"
 msgid " •   Customise widget item"
-msgstr ""
+msgstr "• aanpassen widget item"
 
 msgctxt "#31223"
 msgid "Banner List"
-msgstr ""
+msgstr "Bannerlijst"
 
 msgctxt "#31224"
 msgid "Forecast"
-msgstr ""
+msgstr "Verwachting"
 
 msgctxt "#31225"
 msgid "Info List"
-msgstr ""
+msgstr "Infolijst"
 
 msgctxt "#31226"
 msgid "Show title"
-msgstr ""
+msgstr "Toon titel"
 
 msgctxt "#31227"
 msgid "Hide title"
-msgstr ""
+msgstr "Verberg titel"
 
 msgctxt "#31228"
 msgid "Set background overlay"
-msgstr ""
+msgstr "Instellen achtergrond overlay"
 
 msgctxt "#31229"
 msgid "Background image (click to reset)"
-msgstr ""
+msgstr "Achtergrond afbeelding (klik om te herstellen)"
 
 msgctxt "#31230"
 msgid "Animate fanart"
-msgstr ""
+msgstr "Animeer fanart"
 
 msgctxt "#31231"
 msgid "Edit Playlist"
-msgstr ""
+msgstr "Verander afspeellijst"
 
 msgctxt "#31232"
 msgid "Rule"
-msgstr ""
+msgstr "Regel"
 
 msgctxt "#31233"
 msgid "Enter rule..."
-msgstr ""
+msgstr "Voeg regel..."
 
 msgctxt "#31234"
 msgid "Advanced"
-msgstr ""
+msgstr "Geavanceerd"
 
 msgctxt "#31235"
 msgid "Extras"
-msgstr ""
+msgstr "Extra's"
 
 msgctxt "#31236"
 msgid "Header text"
-msgstr ""
+msgstr "Koptekst"
 
 msgctxt "#31237"
 msgid "Invert widget access"
-msgstr ""
+msgstr "omkeren widget toegang"
 
 msgctxt "#31238"
 msgid "Open carousel in own window"
-msgstr ""
+msgstr "Open carrousel in eigen scherm"
 
 msgctxt "#31239"
 msgid "Kiosk mode"
-msgstr ""
+msgstr "Kioskmode"
 
 msgctxt "#31240"
 msgid "Use theme colour for header"
-msgstr ""
+msgstr "Gebruik themakleur voor header"
 
 msgctxt "#31241"
 msgid "3D Mode"
-msgstr ""
+msgstr "3D Modus"
 
 msgctxt "#31242"
 msgid "Media Info"
-msgstr ""
+msgstr "Media-info"
 
 msgctxt "#31243"
 msgid "Most"
-msgstr ""
+msgstr "Meeste"
 
 msgctxt "#31244"
 msgid "Moderate"
-msgstr ""
+msgstr "Matig"
 
 msgctxt "#31245"
 msgid "Least"
-msgstr ""
+msgstr "Minste"
 
 msgctxt "#31246"
 msgid "No description available"
-msgstr ""
+msgstr "Geen beschrijving beschikbaar"
 
 msgctxt "#31247"
 msgid "Customise home screen tiles. From here you can create new tiles, modify existing tiles, insert tiles, delete tiles, swap tiles and set individual background widgets. To set individual background widgets you must first disable the Global Widget. To set colours for individual tiles you must first disable the Use Theme Colour For Focused Tiles option."
-msgstr ""
+msgstr "Aanpassen beginscherm tegels. Vanuit hier kan je nieuwe tegels creëren, bestaande tegels modificeren, tegels invoegen, tegels verwijderen, tegels verwisselen en individuele achtergrond widgets instellen. om de individuele achtergrond widgets, moet je eerst de globale widget uitschakelen. om kleuren in te stellen voor individuele tegels met je eerst de gebruik themakleur voor gefocuste tegels optie uitschakelen."
 
 msgctxt "#31248"
 msgid "Sets the background widget for the home screen that can be accessed by pressing up. Disabling this option allows individual widgets to be set for tiles in the customisation screen."
-msgstr ""
+msgstr "Stelt de achtergrond widget voor het beginscherm in die toegankelijk is door omhoog te drukken. Deactiveren van deze optie staat individuele widgets te worden ingesteld voor tegels in het aanpassingsscherm."
 
 msgctxt "#31249"
 msgid "Show the information panel for background widgets."
-msgstr ""
+msgstr "Toon het informatiepaneel voor de achtergrond widgets."
 
 msgctxt "#31250"
 msgid "Focused tiles on home screen match the theme's highlight colour. Unfocused tiles are set to grey. This overrides individual tile colour settings."
-msgstr ""
+msgstr "Gefocuste tegels op het beginscherm komen overeen met de thema`s gekenmerkte kleur. Niet gefocuste tegels zijn ingesteld op grijs. dit overschrijft de individuele tegelkleurinstellingen."
 
 msgctxt "#31251"
 msgid "Match the colour of the focused tile's text underline to the colour of the tile."
-msgstr ""
+msgstr "Maak de tegeltekstkleur in focus gelijk aan de tegelkleur"
 
 msgctxt "#31252"
 msgid "Sets the path to the background slideshow that is shown when the focused tile does not have a background widget set."
-msgstr ""
+msgstr "Stelt het pad naar de achtergronddiashow in, die wordt getoond wanneer de gefocuste tegel geen achtergrondwidget heeft ingesteld."
 
 msgctxt "#31253"
 msgid "Enables an additional widget carousel that is accessed by pressing down. Once open, pressing up will cycle through the widgets."
-msgstr ""
+msgstr "Activeert een bijkomende widgetcarrousel die start door omlaag te drukken. Wanneer geopend, Door omhoog te drukken doorloop je de widgets."
 
 msgctxt "#31254"
 msgid "Open the widget carousel in its own window rather than above the home screen tiles."
-msgstr ""
+msgstr "Open de widgetcarousel in z'n eigen scherm in plaats van boven de beginscherm tegels."
 
 msgctxt "#31255"
 msgid "Invert access to widgets so that up opens the carousel and down accesses the background widget."
-msgstr ""
+msgstr "Omkeren toegang tot widgets dus dat Omhoog de carrousel opent en omlaag toegang geeft tot de achtergrond widget."
 
 msgctxt "#31256"
 msgid "Show fanart in the background of library views."
-msgstr ""
+msgstr "Toon fanart in de achtergrond van bibliotheekvertoningen."
 
 msgctxt "#31257"
 msgid "Sets how much the background fanart is faded. There are three settings: Most, Moderate and Least."
-msgstr ""
+msgstr "Stelt in in hoeverre de achtergrondfanart vervaagd. Er zijn drie waarden: Meeste, Matig en Minste."
 
 msgctxt "#31258"
 msgid "Animate background fanart with a Ken Burns type effect."
-msgstr ""
+msgstr "Animeer de achtergrondfanart met een Ken Burns type effect."
 
 msgctxt "#31259"
 msgid "Set the backgroud image that is displayed when no fanart is available. Click once to clear the current path and again to select a new path."
-msgstr ""
+msgstr "Stel de achtergrondafbeelding in die wordt getoond wanneer er geen fanart beschikbaar is. Klik eenmaal om het huidige pad te wissen, en nogmaals om een nieuw pad te kiezen."
 
 msgctxt "#31260"
 msgid "Changes the background colour based upon the time of day. This overrides the background image setting. The images for the background colour overlay can be modified in skin.eminence/extras/sunset - the number of the image matches the hour it is displayed at in 24 hour time."
-msgstr ""
+msgstr "Veranderd de achtergrondkleur gebaseerd op de tijd van de dag. dit overschrijft de achtergrond afbeeldingsinstelling. De afbeeldingen voor de achtergrondkleur overlapping kan worden gemodificeerd in skin.eminence/extra`s/sunset - het nummer van de afbeelding dat overeenkomt met het uur wordt getoond in 24 uurs tijd."
 
 msgctxt "#31261"
 msgid "Sets the image used as a background overlay. Click once to clear the current path and again to select a new path."
-msgstr ""
+msgstr "Stelt de afbeelding in die gebruikt wordt als een achtergrond overlapping. klik eenmaal om het huidig pad te wissen en nogmaals om een nieuw pad te kiezen."
 
 msgctxt "#31262"
 msgid "Sets the path to weather fanart used in the weather screen."
-msgstr ""
+msgstr "Stelt de locatie in waarnaar weer fanart wordt gebruikt in het weer scherm."
 
 msgctxt "#31263"
 msgid "Select the widget shown in the movies hub. Can choose spotlight, in progress or smart playlist."
-msgstr ""
+msgstr "Selecteer de widget die wordt getoond in de films hub. je kan kiezen voor spotlight, lopend of slimme afspeellijst."
 
 msgctxt "#31264"
 msgid "Set the smart playlist used in the movie hub widget. Smart playlists can be created by going to the movies hub and scrolling down in the right pane to the playlists option."
-msgstr ""
+msgstr "Stel de slimme afspeellijst in gebruikt in de film hub widget. slimme afspeellijsten kunnen worden gecreëerd door naar de films hub te gaan en omlaag te scrollen naar het juiste paneel naar de afspeellijsten opties."
 
 msgctxt "#31265"
 msgid "Sets a custom item to be shown in the right pane of the hub underneath recently added."
-msgstr ""
+msgstr "Stelt en aangepast item in die moet worden getoond in het juiste paneel van de hub, onder recent toegevoegd. "
 
 msgctxt "#31266"
 msgid "Select the widget shown in the tv shows hub. Can choose spotlight, in progress or smart playlist."
-msgstr ""
+msgstr "Selecteer de widget die wordt getoond in de TV-series jub. Je kan kiezen voor spotlight, lopend of slimme afspeellijst"
 
 msgctxt "#31267"
 msgid "Set the smart playlist used in the tv show hub widget. Smart playlists can be created by going to the tv show hub and scrolling down in the right pane to the playlists option."
-msgstr ""
+msgstr "Stel de slimme afspeellijst in gebruikt in de film TV-serie widget. slimme afspeellijsten kunnen worden gecreëerd door naar de films hub te gaan en omlaag te scrollen naar het juiste paneel naar de afspeellijsten opties."
 
 msgctxt "#31268"
 msgid "Use the Artist Slideshow addon to show a slideshow of artist images as the music visualisation."
-msgstr ""
+msgstr "Gebruikt de artiesten diavoorstelling add-on om een diavoorstelling te tonen van een artiestenafbeeldingen al de muziekvisualisatie"
 
 msgctxt "#31269"
 msgid "Shows the extend info panel on pressing info with fullscreen video or music."
-msgstr ""
+msgstr "Toont het uitgebreide info paneel bij het drukken van info met volledig scherm video of muziek."
 
 msgctxt "#31270"
 msgid "Show clearart or clearlogo in the bottom right of screen whenever the seekbar displays on fullscreen video."
-msgstr ""
+msgstr "Toon clearart of clearlogo rechtsonder in het scherm wanneer de zoekbalk wordt vertoond bij volledig scherm video."
 
 msgctxt "#31271"
 msgid "Modify the default 'Media Center' text shown in the header."
-msgstr ""
+msgstr "Verander de standaard 'Media Center' tekst in de top."
 
 msgctxt "#31272"
 msgid "Matches the colour of the header tile to the theme's highlight colour."
-msgstr ""
+msgstr "Maakt de kleur van de koptegel overeenkomstig met de thema`s steunkleur"
 
 msgctxt "#31273"
 msgid "Prevents the side view menu from being accessed in library views."
-msgstr ""
+msgstr "Voorkomt het zijaanzicht menu te worden geopend in de bibliotheek vertoningen."
 
 msgctxt "#31274"
 msgid "Enables the TV Tunes addon in library views. Plays the tv theme song when viewing the seasons or episodes of a tv show."
-msgstr ""
+msgstr "Activeert de TV Tunes add-on in de bibliotheek weergaven. speelt het tv themanummer wanneer de seizoenen of afleveringen van een tv serie worden bekeken."
 
 msgctxt "#31275"
 msgid "Show the RSS feed at the bottom of the screen"
-msgstr ""
+msgstr "Toon de RSS feed onderaan het scherm."
 
 msgctxt "#31276"
 msgid "Show next aired information for tv shows at the bottom of the screen. Also shows an RSS feed of upcoming tv show airdates in the tv show hub. In the Next Aired addon configuration enable the 'Show All Tv Shows for homescreen' option for best effect."
-msgstr ""
+msgstr "Toon volgende uitzending informatie voor tv series onderaan het scherm. Toont eveneens een RSS feed van de komende tv serie uitzenddatum in de tv serie hub. in de Next Aired addon configuratie activeren van de 'toon alle tv series voor beginscherm' optie voor het beste effect."
 
 msgctxt "#31277"
 msgid "Resets the skin back to default settings. WARNING: this will wipe all your skin settings. All custom tiles and widgets will be reset to defaults."
-msgstr ""
+msgstr "Herstelt de skin terug naar zijn standaardinstellingen. WAARSCHUWING: dit zal alle skin instellingen wissen. alle aangepaste tegels en widgets worden gereset naar hun standaardinstellingen."
 
 msgctxt "#31278"
 msgid "PVR Manager"
-msgstr ""
+msgstr "PVR beherder"
 
 msgctxt "#31279"
 msgid "Alt style"
-msgstr ""
+msgstr "Oude stijl"
 
 msgctxt "#31280"
 msgid "Automatically start artwork downloader after library update"
-msgstr ""
+msgstr "Automatisch Artwork downloader starten na bibliotheekupdate"
