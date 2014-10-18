@@ -192,32 +192,47 @@
                             <height>340</height>
                             <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                         </control>
-                        <control type="label">
-                            <posx>116</posx>
-                            <height>315</height>
-                            <width>233</width>
-                            <align>center</align>
-                            <font>Font-MediumWeather</font>
-                            <aligny>center</aligny>
-                            <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                        <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
+                            <control type="label">
+                                <posx>116</posx>
+                                <height>315</height>
+                                <width>233</width>
+                                <align>center</align>
+                                <font>Font-MediumWeather</font>
+                                <aligny>center</aligny>
+                                <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                            </control>
+                            <control type="label">
+                                <posx>116</posx>
+                                <posy>15</posy>
+                                <width>213</width>
+                                <align>center</align>
+                                <font>Font-ListInfo</font>
+                                <label fallback="161">$INFO[ListItem.Property(LongDay)]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>10</posx>
+                                <posy>250</posy>
+                                <width>213</width>
+                                <height>65</height>
+                                <autoscroll>false</autoscroll>
+                                <align>center</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                            </control>
                         </control>
-                        <control type="label">
-                            <posx>116</posx>
-                            <posy>15</posy>
-                            <width>213</width>
-                            <align>center</align>
-                            <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Property(LongDay)]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>10</posx>
-                            <posy>250</posy>
-                            <width>213</width>
-                            <height>65</height>
-                            <autoscroll>false</autoscroll>
-                            <align>center</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                        <control type="group">
+                            <visible>IsEmpty(ListItem.Property(LongDay))</visible>
+                            <control type="label">
+                                <posx>116</posx>
+                                <width>213</width>
+                                <height>310</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>Font-WidgetInfoTitle</font>
+                                <label>N/A</label>
+                            </control>
                         </control>
                     </itemlayout>
                     <focusedlayout width="243" height="340">
@@ -226,39 +241,54 @@
                             <height>340</height>
                             <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                         </control>
-                        <control type="label">
-                            <posx>116</posx>
-                            <height>315</height>
-                            <width>233</width>
-                            <align>center</align>
-                            <font>Font-MediumWeather</font>
-                            <aligny>center</aligny>
-                            <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                        <control type="group">
+                            <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
+                            <control type="label">
+                                <posx>116</posx>
+                                <height>315</height>
+                                <width>233</width>
+                                <align>center</align>
+                                <font>Font-MediumWeather</font>
+                                <aligny>center</aligny>
+                                <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                            </control>
+                            <control type="label">
+                                <posx>116</posx>
+                                <posy>15</posy>
+                                <width>213</width>
+                                <align>center</align>
+                                <font>Font-ListInfo</font>
+                                <label fallback="161">$INFO[ListItem.Property(LongDay)]</label>
+                            </control>
+                            <control type="textbox">
+                                <posx>10</posx>
+                                <posy>250</posy>
+                                <width>213</width>
+                                <height>65</height>
+                                <autoscroll>false</autoscroll>
+                                <align>center</align>
+                                <font>Font-ListInfo-Small</font>
+                                <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                            </control>
                         </control>
-                        <control type="label">
-                            <posx>116</posx>
-                            <posy>15</posy>
-                            <width>213</width>
-                            <align>center</align>
-                            <font>Font-ListInfo</font>
-                            <label>$INFO[ListItem.Property(LongDay)]</label>
-                        </control>
-                        <control type="textbox">
-                            <posx>10</posx>
-                            <posy>250</posy>
-                            <width>213</width>
-                            <height>65</height>
-                            <autoscroll>false</autoscroll>
-                            <align>center</align>
-                            <font>Font-ListInfo-Small</font>
-                            <label>$INFO[ListItem.Property(HighTemperature),[B],[/B]°  ]$INFO[ListItem.Property(LowTemperature),,°]$INFO[ListItem.Property(Outlook),[CR],]</label>
+                        <control type="group">
+                            <visible>IsEmpty(ListItem.Property(LongDay))</visible>
+                            <control type="label">
+                                <posx>116</posx>
+                                <width>213</width>
+                                <height>310</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <font>Font-WidgetInfoTitle</font>
+                                <label>N/A</label>
+                            </control>
                         </control>
                     </focusedlayout>
                     <content>
                         <item id="0">
                             <onclick>noop</onclick>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
-                            <property name="LongDay">$INFO[Window(Weather).Property(Day0.Title)]</property>
+                            <property name="LongDay">$LOCALIZE[33006]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
                             <property name="LowTemperature">$INFO[Window(Weather).Property(Day0.LowTemp)]</property>
                             <property name="Outlook">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
@@ -266,7 +296,7 @@
                         <item id="1">
                             <onclick>noop</onclick>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
-                            <property name="LongDay">$INFO[Window(Weather).Property(Day1.Title)]</property>
+                            <property name="LongDay">$LOCALIZE[33007]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
                             <property name="LowTemperature">$INFO[Window(Weather).Property(Day1.LowTemp)]</property>
                             <property name="Outlook">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
