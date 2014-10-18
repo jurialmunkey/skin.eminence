@@ -13,6 +13,7 @@
         <control type="group">
             <posy>topoffset</posy>
             <posx>horzpad</posx>
+            <include>Animation.SlideOpen.Right</include>
             <control type="group">
                 <posx>0</posx>
                 <control type="label" description="Info Label">
