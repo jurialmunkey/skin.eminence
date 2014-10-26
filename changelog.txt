@@ -1,3 +1,6 @@
+[B]1.0.9[/B]
+Fix undefined id
+
 [B]1.0.8[/B]
 weather changes
 transifex update
