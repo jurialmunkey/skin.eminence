@@ -1,5 +1,6 @@
 [B]1.0.8[/B]
 weather changes
+transifex update
 
 [B]1.0.7[/B]
 move right hub consolidation
