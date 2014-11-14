@@ -1,5 +1,7 @@
 [B]1.0.10[/B]
 Update transifex
+New Ok and YESNO Dialog
+Fix FileManager header length
 
 [B]1.0.9[/B]
 Fix undefined id
