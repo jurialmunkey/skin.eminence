@@ -27,3 +27,7 @@ msgstr "Custom"
 msgctxt "#31168"
 msgid "Home"
 msgstr "Hejmo"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Movi Item"
