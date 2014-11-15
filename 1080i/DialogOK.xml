@@ -5,14 +5,7 @@
     <allowoverlay>yes</allowoverlay>
     <zorder>10</zorder>
     <controls>
-        <control type="image">
-            <include>Dimensions_Fullscreen</include>
-            <texture>common/white.png</texture>
-            <colordiffuse>Black</colordiffuse>
-            <animation effect="fade" end="85" condition="true">Conditional</animation>
-            <include>Animation.FadeIn</include>
-            <include>Animation.FadeOut</include>
-        </control>
+        <include>GlobalOverlay</include>
         <control type="group">
 
             <posy>280r</posy>
@@ -51,7 +44,7 @@
             <control type="button" id="10">
                 <top>161</top>
                 <left>390r</left>
-                <width>220</width>
+                <width>270</width>
                 <onleft>11</onleft>
                 <onright>11</onright>
                 <include>DefSettingsOKCancelButton</include>
