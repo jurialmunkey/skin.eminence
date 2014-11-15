@@ -50,7 +50,7 @@
             
             <control type="button" id="10">
                 <top>161</top>
-                <left>340r</left>
+                <left>390r</left>
                 <width>220</width>
                 <onleft>11</onleft>
                 <onright>11</onright>
