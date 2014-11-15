@@ -2,6 +2,7 @@
 Update transifex
 New Ok and YESNO Dialog
 Fix FileManager header length
+Match Sidelabel to posterborder color
 
 [B]1.0.9[/B]
 Fix undefined id
