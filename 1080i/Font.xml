@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <fonts>
-    <fontset id="Default" unicode="true">
+    <fontset id="Default">
 
         <!-- Required for system -->
         <font>
@@ -156,7 +156,7 @@
             <size>280</size>
         </font>
     </fontset>
-    <fontset id="SourceSansPro" unicode="true">
+    <fontset id="SourceSansPro">
 
         <!-- Required for system -->
         <font>
@@ -289,7 +289,7 @@
             <size>42</size>
         </font>
     </fontset>
-    <fontset id="Homizio" unicode="true">
+    <fontset id="Homizio">
 
         <!-- Required for system -->
         <font>

@@ -38,7 +38,7 @@
                 <control type="label" id="12">
                     <description>row 3 label</description>
                     <width>auto</width>
-                    <height>75</height>
+                    <height>225</height>
                     <align>left</align>
                     <aligny>top</aligny>
                     

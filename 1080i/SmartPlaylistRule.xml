@@ -72,7 +72,7 @@
                     <include>DefSettingsRightGroupWidth</include>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-                <control type="button" id="17">
+                <control type="edit" id="17">
                     <posy>138</posy>
                     <height>66</height>
                     <description>Set Playlist type</description>

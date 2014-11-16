@@ -44,7 +44,7 @@
             <!-- RIGHT LIST -->
             <control type="group">
                 <include>DefSettingsRightGroup</include>
-                <control type="button" id="12">
+                <control type="edit" id="12">
                     <description>Content Picker label</description>
                     <include>DefSettingsRightGroupWidth</include>
                     <align>right</align>

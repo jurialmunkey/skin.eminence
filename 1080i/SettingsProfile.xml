@@ -7,6 +7,17 @@
     <controls>
         <include>GlobalBackground</include>
         <control type="group">
+            <posx>horzpad</posx>
+            <posy>topoffset</posy>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(ProfileSettings.xml) + !Window.IsVisible(LockSettings.xml) + !Window.IsVisible(DialogSelect.xml)</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <control type="label" description="Info Label">
+                <include>DefSideLabelCoords</include>
+                <label>13200</label>
+            </control>
+        </control>
+        <control type="group">
             <posy>160</posy>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>

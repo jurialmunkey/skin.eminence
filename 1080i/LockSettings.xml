@@ -20,7 +20,7 @@
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
-                <control type="label">
+                <control type="label" id="2">
                     <posx>30</posx>
                     <description>Header</description>
                     <include>DefSettingsLeftGroupWidth</include>
@@ -61,7 +61,7 @@
                 <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
-            <control type="sliderex" id="10">
+            <control type="sliderex" id="13">
                 <description>Default Spin Control</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>

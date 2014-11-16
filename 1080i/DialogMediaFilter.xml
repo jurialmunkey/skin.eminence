@@ -77,7 +77,7 @@
                 <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
-            <control type="sliderex" id="10">
+            <control type="sliderex" id="13">
                 <description>Default spincontrolex</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>
