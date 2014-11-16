@@ -50,7 +50,7 @@
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>11r</posx>
+                            <right>30</right>
                             <width>643</width>
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
@@ -88,7 +88,7 @@
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>11r</posx>
+                            <right>30</right>
                             <width>643</width>
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
@@ -148,7 +148,7 @@
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>11r</posx>
+                            <right>30</right>
                             <width>643</width>
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>
@@ -186,7 +186,7 @@
                             <selectedcolor>Keyboard</selectedcolor>
                         </control>
                         <control type="label">
-                            <posx>11r</posx>
+                            <right>30</right>
                             <width>643</width>
                             <font>Font-ListInfo-Small</font>
                             <align>right</align>

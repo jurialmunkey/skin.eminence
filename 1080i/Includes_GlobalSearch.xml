@@ -46,7 +46,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>
@@ -91,7 +91,7 @@
                     <visible>ControlGroup(9500).HasFocus(149) | Control.IsVisible(141)</visible>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>
@@ -121,7 +121,7 @@
                     <visible>ControlGroup(9500).HasFocus(189) | Control.IsVisible(181)</visible>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>
@@ -172,7 +172,7 @@
                     <textcolor>Selected</textcolor>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>
@@ -221,7 +221,7 @@
                     <visible>ControlGroup(9500).HasFocus(149) | Control.IsVisible(141)</visible>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>
@@ -252,7 +252,7 @@
                     <visible>ControlGroup(9500).HasFocus(189) | Control.IsVisible(181)</visible>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <width>100%</width>
                     <bottom>0</bottom>
                     <aligny>top</aligny>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3062">
-	<defaultcontrol always="true">9200</defaultcontrol>
-	<onunload>ClearProperty(item,3062)</onunload>
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <defaultcontrol always="true">9200</defaultcontrol>
+    <onunload>ClearProperty(item,3062)</onunload>
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
-			
-			<control type="group">
-			    <posx>233</posx>
-			    <posy>40</posy>
-			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
-			    <include>DefSideLabel</include>
+            
+            <control type="group">
+                <posx>233</posx>
+                <posy>40</posy>
+                <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+                <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+                <include>DefSideLabel</include>
                 <control type="panel" id="9200">
                     <posx>18</posx>
                     <posy>210</posy>
@@ -116,7 +116,7 @@
                             <visible>stringcompare(ListItem.Label2,HomeCustom8)</visible>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>33</posy>
                             <width>300</width>
                             <align>right</align>
@@ -214,7 +214,7 @@
                             <visible>stringcompare(ListItem.Label2,HomeCustom8)</visible>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>33</posy>
                             <width>300</width>
                             <align>right</align>
@@ -288,14 +288,14 @@
                         </item>
                         
 
-					</content>
+                    </content>
 
                 </control>
 
             </control>
 
-		</control>
-		
-	    
-	</controls>
+        </control>
+        
+        
+    </controls>
 </window>

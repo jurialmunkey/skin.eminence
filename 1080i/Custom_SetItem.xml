@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window type="dialog" id="3061">
-	<defaultcontrol always="true">9200</defaultcontrol>
-	<onunload>ClearProperty(item,3061)</onunload>
-	<allowoverlay>true</allowoverlay>
-	<controls>
+    <defaultcontrol always="true">9200</defaultcontrol>
+    <onunload>ClearProperty(item,3061)</onunload>
+    <allowoverlay>true</allowoverlay>
+    <controls>
         <control type="group">
             
-			
-			<control type="group">
-			    <visible>!Window.IsVisible(DialogSelect.xml)</visible>
-			    <visible>!Window.IsVisible(FileBrowser.xml)</visible>
-			    <visible>!Window.IsVisible(3062)</visible>
-			    <visible>!Window.IsVisible(3065)</visible>
-			    <include>Animation.FadeIn</include>
-			    <include>Animation.FadeOut</include>
+            
+            <control type="group">
+                <visible>!Window.IsVisible(DialogSelect.xml)</visible>
+                <visible>!Window.IsVisible(FileBrowser.xml)</visible>
+                <visible>!Window.IsVisible(3062)</visible>
+                <visible>!Window.IsVisible(3065)</visible>
+                <include>Animation.FadeIn</include>
+                <include>Animation.FadeOut</include>
 
                 <control type="panel" id="9200">
                     <posx>14</posx>
@@ -44,7 +44,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>-5</posy>
                             <width>300</width>
                             <align>right</align>
@@ -54,7 +54,7 @@
                             <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>28</posy>
                             <width>300</width>
                             <align>right</align>
@@ -80,7 +80,7 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>-5</posy>
                             <width>300</width>
                             <align>right</align>
@@ -90,7 +90,7 @@
                             <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                         </control>
                         <control type="label">
-                            <posx>437</posx>
+                            <right>30</right>
                             <posy>28</posy>
                             <width>300</width>
                             <align>right</align>
@@ -245,7 +245,7 @@
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(Videos,$INFO[Skin.String(item.addon)],return))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
                             <onclick>SetProperty(showimages,1,home)</onclick>
-                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
+                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>                      
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                         </item>
                         
@@ -258,7 +258,7 @@
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(MusicLibrary,$INFO[Skin.String(item.addon)],return))</onclick>
                             <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label])</onclick>
                             <onclick>SetProperty(showimages,1,home)</onclick>
-                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
+                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>                      
                             <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
                             
                             
@@ -288,7 +288,7 @@
                             <label2>31165</label2>
                             <icon>special://skin/extras/icons/rocket2.png</icon>
                             <onclick>SetProperty(showimages,1,home)</onclick>
-                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>						
+                            <onclick>Skin.SetFile($INFO[Window(3061).Property(item),,.icon],.png|.jpg|.gif,special://skin/extras/icons/)</onclick>                      
                             
                             
                         </item>
@@ -334,7 +334,7 @@
                             <icon>special://skin/extras/icons/forbidden.png</icon>
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.label])</onclick>
                             <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.icon])</onclick>
-                            <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.enabled])</onclick>	
+                            <onclick>Skin.Reset($INFO[Window(3061).Property(item),,.enabled])</onclick> 
                             <onclick>Close</onclick>
                             <visible>!substring(Window(3061).Property(item),301)</visible>
                         </item>
@@ -344,22 +344,22 @@
                             <label>186</label>
                             <icon>special://skin/extras/icons/close.png</icon>
                             <onclick>Close</onclick>
-                            					
+                                                
                         </item>
                         
                         
                         
                         
 
-					</content>
+                    </content>
 
                 </control>
 
             </control>
 
-		</control>
-		
-		
-	    
-	</controls>
+        </control>
+        
+        
+        
+    </controls>
 </window>

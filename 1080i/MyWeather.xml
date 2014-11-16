@@ -196,7 +196,7 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
                                 <align>center</align>
@@ -205,7 +205,7 @@
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
                             </control>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -226,7 +226,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>
@@ -245,7 +245,7 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
                                 <align>center</align>
@@ -254,7 +254,7 @@
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
                             </control>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -275,7 +275,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>

@@ -243,7 +243,7 @@
                     <label>207</label>
                 </control>
                 <control type="textbox">
-                    <width>917</width>
+                    <width>947</width>
                     <align>justify</align>
                     <aligny>top</aligny>
                     <font>Font-ListInfo</font>
