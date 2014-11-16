@@ -616,6 +616,17 @@
         </itemlayout>
     </include>
     
+    <include name="DefKeyboardKeys">
+        <width>110</width>
+        <height>75</height>
+        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
+        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
+        <textoffsetx>0</textoffsetx>
+        <focusedcolor>Selected</focusedcolor>
+        <radioposx>400</radioposx>
+        <radioposy>14</radioposy>
+    </include>
+    
     <include name="DefGlobalSearchListEnd">
         <control type="image">
             <posx>11</posx>

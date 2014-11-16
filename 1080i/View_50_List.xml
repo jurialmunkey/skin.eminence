@@ -61,7 +61,7 @@
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="label">
-                                <posx>30r</posx>
+                                <right>30</right>
                                 <width>900</width>
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
@@ -77,7 +77,7 @@
                                 <label>$VAR[VARLabel]</label>                                
                             </control>
                             <control type="label">
-                                <posx>30r</posx>
+                                <right>30</right>
                                 <width>900</width>
                                 <font>Font-ListInfo-Small</font>
                                 <align>right</align>
@@ -131,7 +131,7 @@
                                     <textcolor>Selected</textcolor>
                                 </control>
                                 <control type="label">
-                                    <posx>30r</posx>
+                                    <right>30</right>
                                     <width>900</width>
                                     <font>Font-ListInfo-Small</font>
                                     <align>right</align>
@@ -150,7 +150,7 @@
                                     
                                 </control>
                                 <control type="label">
-                                    <posx>30r</posx>
+                                    <right>30</right>
                                     <width>900</width>
                                     <font>Font-ListInfo-Small</font>
                                     <align>right</align>
@@ -175,7 +175,7 @@
                                     <label>$VAR[VARLabel]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>30r</posx>
+                                    <right>30</right>
                                     <width>900</width>
                                     <font>Font-ListInfo-Small</font>
                                     <align>right</align>
@@ -191,7 +191,7 @@
                                     <label>$VAR[VARLabel]</label>                                
                                 </control>
                                 <control type="label">
-                                    <posx>30r</posx>
+                                    <right>30</right>
                                     <width>900</width>
                                     <font>Font-ListInfo-Small</font>
                                     <align>right</align>

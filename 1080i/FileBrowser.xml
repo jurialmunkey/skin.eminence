@@ -73,7 +73,7 @@
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>300</width>
                         <align>right</align>
@@ -83,7 +83,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>300</width>
                         <align>right</align>
@@ -119,7 +119,7 @@
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>300</width>
                         <align>right</align>
@@ -129,7 +129,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>300</width>
                         <align>right</align>

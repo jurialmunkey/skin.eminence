@@ -378,7 +378,7 @@
             <colordiffuse>PanelFG-NF</colordiffuse>
         </control>
         <control type="label">
-            <posx>30r</posx>
+            <right>30</right>
             <posy>-16</posy>
             <width>270</width>
             <height>90</height>
@@ -389,7 +389,7 @@
             <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
         </control>
         <control type="label">
-            <posx>30r</posx>
+            <right>30</right>
             <posy>48</posy>
             <width>270</width>
             <align>right</align>
@@ -414,10 +414,6 @@
                     <width>widgethubrightw</width>
                     <height>90</height>
                     <texture colordiffuse="PosterHighlight">common/white.png</texture>
-                        
-                    <!--<animation condition="Container(9500).OnNext" reversible="false" effect="slide" start="0,-33" end="0,0" time="300" tween="back" easing="out">Focus</animation>
-                    <animation condition="Container(9500).OnPrevious" reversible="false" effect="slide" start="0,33" end="0,0" time="300" tween="back" easing="out">Focus</animation>-->
-                    
                 </control>
                 <control type="image">
                     <width>90</width>
@@ -435,7 +431,7 @@
                     <colordiffuse>Selected</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>30r</posx>
+                    <right>30</right>
                     <posy>-16</posy>
                     <width>270</width>
                     <height>90</height>
@@ -446,7 +442,7 @@
                     <animation effect="slide" end="0,16" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                 </control>
                 <control type="label">
-                    <posx>30r</posx>
+                    <right>30</right>
                     <posy>48</posy>
                     <width>270</width>
                     <align>right</align>

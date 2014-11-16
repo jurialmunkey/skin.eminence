@@ -47,7 +47,7 @@
             </control>
 
             <control type="label">
-                <posx>50%</posx>
+                <centerleft>50%</centerleft>
                 <bottom>globalpad</bottom>
                 <width>bigposterwplot</width>
                 <height>58</height>
@@ -100,7 +100,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <posx>25r</posx>
+                <right>25</right>
                 <bottom>globalpad</bottom>
                 <width>bigposterwplot</width>
                 <height>58</height>
@@ -247,7 +247,7 @@
                                     <label>$INFO[ListItem.Label]</label>
                                 </control>
                                 <control type="label">
-                                    <posx>25r</posx>
+                                    <right>25</right>
                                     <bottom>globalpad</bottom>
                                     <width>bigposterwplot</width>
                                     <height>58</height>
@@ -272,7 +272,7 @@
                             <control type="image">
                                 <width>bigposterwborder</width>
                                 <height>globalh</height>
-                        <texture colordiffuse="PosterHighlight">common/white.png</texture>
+                                <texture colordiffuse="PosterHighlight">common/white.png</texture>
                                 <aspectratio>scale</aspectratio>
                             </control>
                             <control type="image">
@@ -313,7 +313,7 @@
                             </control>
 
                             <control type="label">
-                                <posx>50%</posx>
+                                <centerleft>50%</centerleft>
                                 <bottom>globalpad</bottom>
                                 <width>bigposterwplot</width>
                                 <height>58</height>

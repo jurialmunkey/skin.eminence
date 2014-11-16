@@ -15,10 +15,10 @@
             <visible allowhiddenfocus="true">false</visible>
                         
             <onfocus>Skin.ResetSettings</onfocus>
+            <onfocus>Skin.SetBool(home.widgetdown)</onfocus>
             <onfocus>Skin.SetBool(home.showinfoonwidget)</onfocus>
             <onfocus>Skin.SetBool(home.usemixedglobalwidget)</onfocus>
             <onfocus>Skin.SetBool(home.monochromemode)</onfocus>
-            <!--<onfocus>Skin.SetString(global.background,special://skin/extras/colours/wood.jpg)</onfocus>-->
 
             <!-- 301 Item -->
             <onfocus>Skin.SetBool(home.301.enabled)</onfocus>
@@ -96,13 +96,6 @@
             <onfocus>Skin.SetString(home.311.icon,special://skin/extras/icons/database.png)</onfocus>
             <onfocus>Skin.SetString(home.311.path,ActivateWindow(3))</onfocus>
             <onfocus>Skin.SetString(home.311.label,$LOCALIZE[1214])</onfocus>
-            
-            <!-- 312 Item -->
-            <!--<onfocus>Skin.SetBool(home.312.enabled)</onfocus>
-            <onfocus>Skin.SetString(home.312.bgcolor,ff555555)</onfocus>
-            <onfocus>Skin.SetString(home.312.icon,special://skin/extras/icons/favourites.png)</onfocus>
-            <onfocus>Skin.SetString(home.312.path,ActivateWindow(favourites))</onfocus>
-            <onfocus>Skin.SetString(home.312.label,$LOCALIZE[1036])</onfocus>-->
             
             <!-- 313 Item -->
             <onfocus>Skin.SetBool(home.313.enabled)</onfocus>

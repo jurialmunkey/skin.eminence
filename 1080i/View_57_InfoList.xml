@@ -28,7 +28,7 @@
             <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
         </control>
         <control type="label">
-            <posx>30r</posx>
+            <right>30</right>
             <width>900</width>
             <font>Font-ListInfo-Small</font>
             <align>right</align>
@@ -177,7 +177,7 @@
                                         <visible>!Container.Content(movies) + !Container.Content(episodes) + !Container.Content(songs) + !Container.Content(seasons) + !Container.Content(tvshows)</visible>
                                     </control>
                                     <control type="label">
-                                        <posx>30r</posx>
+                                        <right>30</right>
                                         <width>900</width>
                                         <textcolor>Selected</textcolor>
                                         <font>Font-ListInfo-Small</font>

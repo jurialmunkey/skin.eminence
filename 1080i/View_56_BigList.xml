@@ -51,7 +51,7 @@
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="label">
-                                <posx>90r</posx>
+                                <right>90</right>
                                 <posy>32</posy>
                                 <width>500</width>
                                 <align>right</align>
@@ -105,7 +105,7 @@
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="label">
-                                <posx>90r</posx>
+                                <right>90</right>
                                 <posy>32</posy>
                                 <width>500</width>
                                 <align>right</align>
@@ -167,7 +167,7 @@
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="label">
-                                <posx>90r</posx>
+                                <right>90</right>
                                 <posy>32</posy>
                                 <width>500</width>
                                 <align>right</align>
@@ -218,7 +218,7 @@
                                 <label>$VAR[VARLabel]</label>
                             </control>
                             <control type="label">
-                                <posx>90r</posx>
+                                <right>90</right>
                                 <posy>32</posy>
                                 <width>500</width>
                                 <align>right</align>

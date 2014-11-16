@@ -37,7 +37,7 @@
                             <include>WatchedImage</include>
                         </control>
                         <control type="label">
-                            <posx>80r</posx>
+                            <right>80</right>
                             <width>bannerlistplot</width>
                             <height>120</height>
                             <aligny>center</aligny>
@@ -142,7 +142,7 @@
                                 <textcolor>Selected</textcolor>
                             </control>
                             <control type="label">
-                                <posx>0r</posx>
+                                <right>0</right>
                                 <posy>60r</posy>
                                 <width>bannerlistplot</width>
                                 <align>right</align>

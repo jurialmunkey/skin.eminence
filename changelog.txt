@@ -1,3 +1,18 @@
+[B]1.1.0[/B]
+Helix/Kodi work begins
+AddonBrowser
+DialogAddonBrowser
+DialogContentSettings
+Keyboard Updates
+Fix List View alignment
+Fix Wide View alignment
+Fix Poster View alignment
+Fix Lovefilm View alignment
+Fix Banner View alignment
+Fix BigList alignment
+Fix Infolist alignment
+Fix Bannerlist alignment
+
 [B]1.0.11[/B]
 Dialog progress
 Fixes to side header

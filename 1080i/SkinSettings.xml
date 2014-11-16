@@ -565,6 +565,8 @@
                     <label>31139</label>
                     <align>left</align>
                     <font>Font-ListInfo</font>
+                    <enable>System.HasAddon(script.artistslideshow)</enable>
+                    <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(701)">Conditional</animation>
                     <onclick>Skin.ToggleSetting(ArtistSlideShow.Enabled)</onclick>
                     <selected>Skin.HasSetting(ArtistSlideShow.Enabled)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
@@ -579,7 +581,7 @@
                     <onclick>Skin.ToggleSetting(OSDVisualisation.ShowFanart)</onclick>
                     <selected>Skin.HasSetting(OSDVisualisation.ShowFanart)</selected>
                     <visible>ControlGroup(3).HasFocus(34)</visible>
-                    <enable>Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
+                    <enable>System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistSlideShow.Enabled)</enable>
                     <animation effect="fade" start="100" end="25" time="150" condition="!Control.IsEnabled(702)">Conditional</animation>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>

@@ -33,8 +33,8 @@
             <control type="label" id="311">
                 <description>Heading</description>
                 <posy>16</posy>
-                <posx>11</posx>
-                <width>428</width>
+                <posx>10</posx>
+                <width>460</width>
                 <height>75</height>
                 <aligny>center</aligny>
                 <align>center</align>
@@ -42,784 +42,422 @@
             </control>
 
             <control type="image">
-                <posx>449</posx>
+                <posx>480</posx>
                 <posy>11</posy>
-                <width>1460</width>
+                <width>1430</width>
                 <height>75</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="20" colordiffuse="Keyboard-Keys">common/border-inner.png</texture>
             </control>
 
-            <control type="label" id="310">
+            <control type="edit" id="312">
                 <description>Edit Text</description>
-                <posx>464</posx>
+                <posx>480</posx>
                 <posy>11</posy>
-                <width>1445</width>
+                <width>1430</width>
                 <height>75</height>
                 <align>left</align>
             </control>
 
             <control type="group">
-                <posx>11</posx>
-                <posy>97</posy>
-
-                <control type="button" id="300">
-                    <description>DONE button</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>428</width>
-                    <height>75</height>
-                    <label>20177</label>
-                    <onleft>57</onleft>
-                    <onright>48</onright>
-                    <onup>307</onup>
-                    <ondown>302</ondown>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <textoffsetx>0</textoffsetx>
-                    <focusedcolor>ffffffff</focusedcolor>
+                <posx>10</posx>
+                <posy>96</posy>
+                <control type="grouplist" description="toprow">
+                    <orientation>horizontal</orientation>
+                    <itemgap>10</itemgap>
+                    <control type="button" id="309">
+                        <description>Layout</description>
+                        <onup>300</onup>
+                        <ondown>302</ondown>
+                        <width>460</width>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="button" id="100">
+                        <onup>32</onup>
+                        <ondown>120</ondown>
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="button" id="101">
+                        <onup>32</onup>
+                        <ondown>121</ondown>
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="button" id="102">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>122</ondown>
+                    </control>
+                    <control type="button" id="103">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>123</ondown>
+                    </control>
+                    <control type="button" id="104">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>124</ondown>
+                    </control>
+                    <control type="button" id="105">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>125</ondown>
+                    </control>
+                    <control type="button" id="106">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>126</ondown>
+                    </control>
+                    <control type="button" id="107">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>127</ondown>
+                    </control>
+                    <control type="button" id="108">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>128</ondown>
+                    </control>
+                    <control type="button" id="109">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>129</ondown>
+                    </control>
+                    <control type="button" id="110">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>130</ondown>
+                    </control>
+                    <control type="button" id="111">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>32</onup>
+                        <ondown>131</ondown>
+                    </control>
                 </control>
                 <control type="grouplist">
-                    <orientation>horizontal</orientation>
-                    <posx>438</posx>
-                    <itemgap>10</itemgap>
-                    <onleft>300</onleft>
-                    <control type="button" id="48">
-                        <description>'0' button</description>
-                        <posx>400</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>300</onleft>
-                        <onright>49</onright>
-                        <onup>32</onup>
-                        <ondown>65</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="49">
-                        <description>'1' button</description>
-                        <posx>486</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>48</onleft>
-                        <onright>50</onright>
-                        <onup>32</onup>
-                        <ondown>66</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="50">
-                        <description>'2' button</description>
-                        <posx>572</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>49</onleft>
-                        <onright>51</onright>
-                        <onup>32</onup>
-                        <ondown>67</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="51">
-                        <description>'3' button</description>
-                        <posx>572</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>50</onleft>
-                        <onright>52</onright>
-                        <onup>32</onup>
-                        <ondown>68</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="52">
-                        <description>'4' button</description>
-                        <posx>600</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>51</onleft>
-                        <onright>53</onright>
-                        <onup>32</onup>
-                        <ondown>69</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="53">
-                        <description>'5' button</description>
-                        <posx>675</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>52</onleft>
-                        <onright>54</onright>
-                        <onup>32</onup>
-                        <ondown>70</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="54">
-                        <description>'6' button</description>
-                        <posx>750</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>53</onleft>
-                        <onright>55</onright>
-                        <onup>305</onup>
-                        <ondown>71</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="55">
-                        <description>'7' button</description>
-                        <posx>825</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>54</onleft>
-                        <onright>56</onright>
-                        <onup>305</onup>
-                        <ondown>72</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="56">
-                        <description>'8' button</description>
-                        <posx>900</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>55</onleft>
-                        <onright>57</onright>
-                        <onup>306</onup>
-                        <ondown>73</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="57">
-                        <description>'9' button</description>
-                        <posx>975</posx>
-                        <posy>0</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>56</onleft>
-                        <onright>300</onright>
-                        <onup>306</onup>
-                        <ondown>74</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-                </control>
-
-                <control type="radiobutton" id="302">
-                    <description>SHIFT button</description>
-                    <posx>0</posx>
                     <posy>85</posy>
-                    <width>428</width>
-                    <height>75</height>
-                    <label>20178</label>
-                    <onleft>74</onleft>
-                    <onright>65</onright>
-                    <onup>300</onup>
-                    <ondown>303</ondown>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <radioposx>365</radioposx>
-                    <radioposy>12</radioposy>
-                    <textoffsetx>0</textoffsetx>
-                    <focusedcolor>ffffffff</focusedcolor>
+                    <orientation>horizontal</orientation>
+                    <itemgap>10</itemgap>
+                    <control type="radiobutton" id="302">
+                        <description>Shift</description>
+                        <width>460</width>
+                        <label>20178</label>
+                        <include>DefKeyboardKeys</include>
+                        <onup>309</onup>
+                        <ondown>303</ondown>
+                    </control>
+                    <control type="button" id="120">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>100</onup>
+                        <ondown>140</ondown>
+                    </control>
+                    <control type="button" id="121">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>101</onup>
+                        <ondown>141</ondown>
+                    </control>
+                    <control type="button" id="122">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>102</onup>
+                        <ondown>142</ondown>
+                    </control>
+                    <control type="button" id="123">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>103</onup>
+                        <ondown>143</ondown>
+                    </control>
+                    <control type="button" id="124">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>104</onup>
+                        <ondown>144</ondown>
+                    </control>
+                    <control type="button" id="125">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>105</onup>
+                        <ondown>145</ondown>
+                    </control>
+                    <control type="button" id="126">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>106</onup>
+                        <ondown>146</ondown>
+                    </control>
+                    <control type="button" id="127">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>107</onup>
+                        <ondown>147</ondown>
+                    </control>
+                    <control type="button" id="128">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>108</onup>
+                        <ondown>148</ondown>
+                    </control>
+                    <control type="button" id="129">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>109</onup>
+                        <ondown>149</ondown>
+                    </control>
+                    <control type="button" id="130">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>110</onup>
+                        <ondown>150</ondown>
+                    </control>
+                    <control type="button" id="131">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>111</onup>
+                        <ondown>151</ondown>
+                    </control>
                 </control>
                 <control type="grouplist">
-                    <orientation>horizontal</orientation>
-                    <posx>438</posx>
-                    <posy>85</posy>
-                    <itemgap>10</itemgap>
-                    <onleft>302</onleft>
-                    <control type="button" id="65">
-                        <description>'A' button</description>
-                        <posx>300</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>302</onleft>
-                        <onright>66</onright>
-                        <onup>48</onup>
-                        <ondown>75</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="66">
-                        <description>'B' button</description>
-                        <posx>375</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>65</onleft>
-                        <onright>67</onright>
-                        <onup>49</onup>
-                        <ondown>76</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="67">
-                        <description>'C' button</description>
-                        <posx>450</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>66</onleft>
-                        <onright>68</onright>
-                        <onup>50</onup>
-                        <ondown>77</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="68">
-                        <description>'D' button</description>
-                        <posx>525</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>67</onleft>
-                        <onright>69</onright>
-                        <onup>51</onup>
-                        <ondown>78</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="69">
-                        <description>'E' button</description>
-                        <posx>600</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>68</onleft>
-                        <onright>70</onright>
-                        <onup>52</onup>
-                        <ondown>79</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="70">
-                        <description>'F' button</description>
-                        <posx>675</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>69</onleft>
-                        <onright>71</onright>
-                        <onup>53</onup>
-                        <ondown>80</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="71">
-                        <description>'G' button</description>
-                        <posx>750</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>70</onleft>
-                        <onright>72</onright>
-                        <onup>54</onup>
-                        <ondown>81</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="72">
-                        <description>'H' button</description>
-                        <posx>825</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>71</onleft>
-                        <onright>73</onright>
-                        <onup>55</onup>
-                        <ondown>82</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="73">
-                        <description>'I' button</description>
-                        <posx>900</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>72</onleft>
-                        <onright>74</onright>
-                        <onup>56</onup>
-                        <ondown>83</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="74">
-                        <description>'J' button</description>
-                        <posx>975</posx>
-                        <posy>75</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>73</onleft>
-                        <onright>302</onright>
-                        <onup>57</onup>
-                        <ondown>84</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-                </control>
-
-                <control type="radiobutton" id="303">
-                    <description>CAPS LOCK button</description>
-                    <posx>0</posx>
                     <posy>170</posy>
-                    <width>428</width>
-                    <height>75</height>
-                    <label>20179</label>
-                    <radioposx>365</radioposx>
-                    <onleft>84</onleft>
-                    <onright>75</onright>
-                    <onup>302</onup>
-                    <ondown>304</ondown>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <radioposy>12</radioposy>
-                    <textoffsetx>0</textoffsetx>
-                    <focusedcolor>ffffffff</focusedcolor>
+                    <orientation>horizontal</orientation>
+                    <itemgap>10</itemgap>
+                    <control type="radiobutton" id="303">
+                        <description>Caps</description>
+                        <width>460</width>
+                        <label>20179</label>
+                        <include>DefKeyboardKeys</include>
+                        <onup>302</onup>
+                        <ondown>307</ondown>
+                    </control>
+                    <control type="button" id="140">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>120</onup>
+                        <ondown>160</ondown>
+                    </control>
+                    <control type="button" id="141">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>121</onup>
+                        <ondown>161</ondown>
+                    </control>
+                    <control type="button" id="142">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>122</onup>
+                        <ondown>162</ondown>
+                    </control>
+                    <control type="button" id="143">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>123</onup>
+                        <ondown>163</ondown>
+                    </control>
+                    <control type="button" id="144">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>124</onup>
+                        <ondown>164</ondown>
+                    </control>
+                    <control type="button" id="145">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>125</onup>
+                        <ondown>165</ondown>
+                    </control>
+                    <control type="button" id="146">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>126</onup>
+                        <ondown>166</ondown>
+                    </control>
+                    <control type="button" id="147">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>127</onup>
+                        <ondown>167</ondown>
+                    </control>
+                    <control type="button" id="148">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>128</onup>
+                        <ondown>168</ondown>
+                    </control>
+                    <control type="button" id="149">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>129</onup>
+                        <ondown>169</ondown>
+                    </control>
+                    <control type="button" id="150">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>130</onup>
+                        <ondown>170</ondown>
+                    </control>
+                    <control type="button" id="151">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>131</onup>
+                        <ondown>171</ondown>
+                    </control>
                 </control>
                 <control type="grouplist">
-                    <orientation>horizontal</orientation>
-                    <posx>438</posx>
-                    <posy>170</posy>
-                    <itemgap>10</itemgap>
-                    <onleft>303</onleft>
-                    <control type="button" id="75">
-                        <description>'K' button</description>
-                        <posx>300</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>303</onleft>
-                        <onright>76</onright>
-                        <onup>65</onup>
-                        <ondown>85</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="76">
-                        <description>'L' button</description>
-                        <posx>375</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>75</onleft>
-                        <onright>77</onright>
-                        <onup>66</onup>
-                        <ondown>86</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="77">
-                        <description>'M' button</description>
-                        <posx>450</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>76</onleft>
-                        <onright>78</onright>
-                        <onup>67</onup>
-                        <ondown>87</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="78">
-                        <description>'N' button</description>
-                        <posx>525</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>77</onleft>
-                        <onright>79</onright>
-                        <onup>68</onup>
-                        <ondown>88</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="79">
-                        <description>'O' button</description>
-                        <posx>600</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>78</onleft>
-                        <onright>80</onright>
-                        <onup>69</onup>
-                        <ondown>89</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="80">
-                        <description>'P' button</description>
-                        <posx>675</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>79</onleft>
-                        <onright>81</onright>
-                        <onup>70</onup>
-                        <ondown>90</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="81">
-                        <description>'Q' button</description>
-                        <posx>750</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>80</onleft>
-                        <onright>82</onright>
-                        <onup>71</onup>
-                        <ondown>8</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="82">
-                        <description>'R' button</description>
-                        <posx>825</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>81</onleft>
-                        <onright>83</onright>
-                        <onup>72</onup>
-                        <ondown>8</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="83">
-                        <description>'S' button</description>
-                        <posx>900</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>82</onleft>
-                        <onright>84</onright>
-                        <onup>73</onup>
-                        <ondown>8</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="84">
-                        <description>'T' button</description>
-                        <posx>975</posx>
-                        <posy>150</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>83</onleft>
-                        <onright>303</onright>
-                        <onup>74</onup>
-                        <ondown>8</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-                </control>
-
-                <control type="radiobutton" id="304">
-                    <description>Symbols button</description>
-                    <posx>0</posx>
-                    <radioposx>365</radioposx>
                     <posy>255</posy>
-                    <width>428</width>
-                    <height>75</height>
-                    <label>20180</label>
-                    <onleft>8</onleft>
-                    <onright>85</onright>
-                    <onup>303</onup>
-                    <ondown>307</ondown>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <radioposy>12</radioposy>
-                    <textoffsetx>0</textoffsetx>
-                    <focusedcolor>ffffffff</focusedcolor>
+                    <orientation>horizontal</orientation>
+                    <itemgap>10</itemgap>
+                    <control type="button" id="307">
+                        <description>IP</description>
+                        <width>225</width>
+                        <label>IP</label>
+                        <onup>303</onup>
+                        <ondown>300</ondown>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="radiobutton" id="304">
+                        <description>Symbols</description>
+                        <width>225</width>
+                        <label>@#!*</label>
+                        <onup>303</onup>
+                        <ondown>300</ondown>
+                        <textureradioofffocus>noop</textureradioofffocus>
+                        <textureradiooffnofocus>noop</textureradiooffnofocus>
+                        <textureradioonfocus>noop</textureradioonfocus>
+                        <textureradioonnofocus>noop</textureradioonnofocus>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="button" id="160">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>140</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="161">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>141</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="162">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>142</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="163">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>143</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="164">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>144</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="165">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>145</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="166">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>146</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="167">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>147</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="168">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>148</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="169">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>149</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="170">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>150</onup>
+                        <ondown>32</ondown>
+                    </control>
+                    <control type="button" id="171">
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>151</onup>
+                        <ondown>32</ondown>
+                    </control>
                 </control>
                 <control type="grouplist">
+                    <posy>340</posy>
                     <orientation>horizontal</orientation>
-                    <posx>438</posx>
-                    <posy>255</posy>
                     <itemgap>10</itemgap>
-                    <onleft>304</onleft>
-                    <control type="button" id="85">
-                        <description>'U' button</description>
-                        <posx>300</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>304</onleft>
-                        <onright>86</onright>
-                        <onup>75</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
+                    <control type="button" id="300">
+                        <description>Done</description>
+                        <width>460</width>
+                        <label>20177</label>
+                        <onup>307</onup>
+                        <ondown>309</ondown>
+                        <include>DefKeyboardKeys</include>
                     </control>
-
-                    <control type="button" id="86">
-                        <description>'V' button</description>
-                        <posx>375</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>85</onleft>
-                        <onright>87</onright>
-                        <onup>76</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
+                    
+                    <control type="button" id="32">
+                        <description>Layout</description>
+                        <width>950</width>
+                        <label>20182</label>
+                        <onup>160</onup>
+                        <ondown>100</ondown>
+                        <include>DefKeyboardKeys</include>
                     </control>
-
-                    <control type="button" id="87">
-                        <description>'W' button</description>
-                        <posx>450</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>86</onleft>
-                        <onright>88</onright>
-                        <onup>77</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="88">
-                        <description>'X' button</description>
-                        <posx>525</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>87</onleft>
-                        <onright>89</onright>
-                        <onup>78</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="89">
-                        <description>'Y' button</description>
-                        <posx>600</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>88</onleft>
-                        <onright>90</onright>
-                        <onup>79</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
-                    <control type="button" id="90">
-                        <description>'Z' button</description>
-                        <posx>675</posx>
-                        <posy>225</posy>
-                        <width>137</width>
-                        <height>75</height>
-                        <onleft>89</onleft>
-                        <onright>8</onright>
-                        <onup>80</onup>
-                        <ondown>32</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
-                    </control>
-
                     <control type="button" id="8">
-                        <description>BACKSPACE button</description>
-                        <posx>750</posx>
-                        <posy>225</posy>
-                        <width>284</width>
-                        <height>75</height>
+                        <description>Backspace</description>
+                        <width>230</width>
                         <label>20181</label>
-                        <onleft>90</onleft>
-                        <onright>304</onright>
-                        <onup>81</onup>
-                        <ondown>305</ondown>
-                        <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                        <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                        <textoffsetx>0</textoffsetx>
-                        <focusedcolor>ffffffff</focusedcolor>
+                        <onup>169</onup>
+                        <ondown>109</ondown>
+                        <include>DefKeyboardKeys</include>
+                    </control>
+                    <control type="button" id="305">
+                        <label>&lt;</label>
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>170</onup>
+                        <ondown>110</ondown>
+                    </control>
+                    <control type="button" id="306">
+                        <label>&gt;</label>
+                        <description>Layout</description>
+                        <include>DefKeyboardKeys</include>
+                        <onup>171</onup>
+                        <ondown>111</ondown>
                     </control>
                 </control>
-                <control type="button" id="307">
-                    <description>IP Input button</description>
-                    <posx>0</posx>
-                    <posy>340</posy>
-                    <width>428</width>
-                    <height>75</height>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <label>1006</label>
-                    <textoffsetx>0</textoffsetx>
-                    <onleft>306</onleft>
-                    <onright>32</onright>
-                    <onup>304</onup>
-                    <ondown>300</ondown>
-                    <focusedcolor>ffffffff</focusedcolor>
-                </control>
-                
-                <control type="button" id="32">
-                    <description>SPACE button</description>
-                    <posx>438</posx>
-                    <posy>340</posy>
-                    <width>872</width>
-                    <height>75</height>
-                    <label>20182</label>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <textoffsetx>0</textoffsetx>
-                    <focusedcolor>ffffffff</focusedcolor>
-                    <onleft>307</onleft>
-                    <onright>305</onright>
-                    <onup>85</onup>
-                    <ondown>48</ondown>
-                </control>
-
-                <control type="button" id="305">
-                    <description>previous button</description>
-                    <posx>1320</posx>
-                    <posy>340</posy>
-                    <width>137</width>
-                    <height>75</height>
-                    <label>&lt;</label>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <focusedcolor>ffffffff</focusedcolor>
-                    <onleft>32</onleft>
-                    <onright>306</onright>
-                    <onup>8</onup>
-                    <ondown>54</ondown>
-                </control>
-
-                <control type="button" id="306">
-                    <description>next button</description>
-                    <posx>1467</posx>
-                    <posy>340</posy>
-                    <width>137</width>
-                    <height>75</height>
-                    <label>&gt;</label>
-                    <texturenofocus border="5" colordiffuse="Keyboard-Keys">common/border-inner.png</texturenofocus>
-                    <texturefocus border="5" colordiffuse="Keyboard">common/white.png</texturefocus>
-                    <focusedcolor>ffffffff</focusedcolor>
-                    <onleft>305</onleft>
-                    <onright>307</onright>
-                    <onup>8</onup>
-                    <ondown>56</ondown>
-                </control>
-
+            
             </control>
-
         </control>
 
     </controls>
