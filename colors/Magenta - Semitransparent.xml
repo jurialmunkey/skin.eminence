@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<colors>
+    <!-- Highlight Colors -->
+    <color name="Highlight">FFe533b5</color>
+    <color name="PosterHighlight">AFe533b5</color>
+    
+    <!-- Keyboard -->
+    <color name="Keyboard">FF33b5e5</color>
+     <!-- Home Bar -->
+	<color name="HomeBarBG">B2000000</color>
+	<color name="HomeBarFG">FFCCCCCC</color>
+	<color name="TileDefault">50000000</color>
+</colors>
