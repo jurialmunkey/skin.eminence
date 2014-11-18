@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+    <include name="DefOSDInfoContent">
+        <control type="label">
+            <height>50</height>
+            <left>0</left>
+            <right>32</right>
+            <align>left</align>
+            <aligny>top</aligny>
+            <height>32</height>
+            <font>Font-Button</font>
+            <label>$INFO[VideoPlayer.Tagline]</label>
+        </control>
+        <control type="textbox">
+            <left>0</left>
+            <right>32</right>
+            <align>justify</align>
+            <aligny>top</aligny>
+            <font>Font-ListInfo</font>
+            <height>120</height>
+            <label fallback="416">$INFO[VideoPlayer.Plot]</label>
+            <wrapmultiline>true</wrapmultiline>
+        </control>        
+        <control type="label">
+            <left>0</left>
+            <right>32</right>
+            <align>left</align>
+            <font>Font-ListInfo-Small</font>
+            <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
+        </control>
+    </include>
+    
     <include name="50Focus">
         <defaultcontrol always="true">50</defaultcontrol>
     </include>
@@ -356,7 +386,7 @@
         <aligny>top</aligny>
         <width>690</width>
         <font>Font-ViewCategory</font>
-        <textcolor>PosterBorder</textcolor>
+        <textcolor>SideLabel</textcolor>
         <animation effect="rotate" start="0" end="270" condition="true" center="1542,210">Conditional</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
         <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
@@ -384,7 +414,7 @@
                 <control type="button" id="11001">
                     <description>Trailer</description>
                     <label>20410</label>
-                    <onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+                    <onclick>PlayMedia($INFO[ListItem.Trailer])</onclick>
                     <include>DefNavMenuButton</include>
                     <visible>!IsEmpty(ListItem.Trailer)</visible>
                     <ondown>1000</ondown>

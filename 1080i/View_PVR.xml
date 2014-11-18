@@ -10,7 +10,7 @@
     </include>
     <variable name="PVRTopLabelColor">
         <value condition="Control.HasFocus(9009)">Highlight</value>
-        <value>PanelFG</value>
+        <value>SideLabel</value>
     </variable>
     <include name="PVRRecordingLayout">
         <itemlayout width="945" height="fivelinelist">
@@ -430,7 +430,7 @@
                         <aligny>top</aligny>
                         <font>Font-WidgetCategory</font>
                         <label>$INFO[ListItem.Label]</label>
-                        <animation effect="fade" start="100" end="25" condition="true">Conditional</animation>
+                        <textcolor>SideLabel</textcolor>
                     </control>
                 </rulerlayout>
                 <channellayout height="71" width="554">

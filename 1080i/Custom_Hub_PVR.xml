@@ -25,7 +25,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>15100</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             
             <control type="list" id="9500">
@@ -50,7 +50,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>19163</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
                 <visible>!Player.HasVideo</visible>
             </control>
             <control type="label">
@@ -59,7 +59,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>31170</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
                 <visible>Player.HasVideo</visible>
             </control>
             <control type="group">

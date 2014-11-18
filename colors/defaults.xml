@@ -16,18 +16,23 @@
     <color name="HomeCustom7">ff666666</color>
     <color name="HomeCustom8">ff777777</color>
     
-    <!-- Home Header And Panels -->
+    <!-- Home/Video Header -->
     <color name="MainLabel">FFededed</color>
     <color name="SubLabel">BFededed</color>
+    
+    <!-- Library View Header -->
     <color name="MainLabel2">FFededed</color>
     <color name="SubLabel2">BFededed</color>
+    
     <color name="OSD-NF">6fededed</color>
     
-    <!-- Top Bar -->
+    <!-- Top Bar in Library-->
     <color name="TopBar">3e888888</color>
+    <color name="TopBarIcon">ffededed</color>
+    
+    <!-- Top Bar Home -->
     <color name="TopBarDark">ff181818</color>
     <color name="TopBarDarkIcon">ffededed</color>
-    <color name="TopBarIcon">ffededed</color>
     
     <!-- Highlight Colors -->
     <color name="PosterHighlight">AF33b5e5</color>
@@ -38,10 +43,15 @@
     <color name="Keyboard-BG">ff474747</color>
     <color name="Keyboard-Keys">9f000000</color>
     
-    <!-- Main Colors -->
+    <!-- Background Colour -->
     <color name="Background">ff181818</color>
+    
+    <!-- Selected Text Colour -->
     <color name="Selected">fff0f0f0</color>
     <color name="Selected2">ffdddddd</color>
+    
+    <!-- Main Colours -->
+    <color name="SideLabel">3e888888</color>
     <color name="PosterBorder">3e888888</color>
     <color name="PosterBorder-NF">1e888888</color>
     <color name="BorderColor">7f181818</color>

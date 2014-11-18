@@ -87,6 +87,7 @@
         </control>
         
         <control type="group" description="Fullscreeninfo">
+            <visible>false</visible>
             <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
             <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
@@ -433,14 +434,85 @@
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
             <posy>1080</posy>
             <animation effect="slide" start="0" end="0,-80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            
+            <animation effect="slide" end="0,-280" time="200" condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
             <control type="image">
                 <width>1920</width>
                 <height>364</height>    
                 <texture colordiffuse="PanelBG">common/white.png</texture>
                 <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
-
+            <control type="group" description="InfoBottom">
+                <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+                <include>Animation.DelayFadeIn</include>
+                <control type="group">
+                    <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.Content(musicvideos)</visible>
+                    <control type="image">
+                        <top>16</top>
+                        <left>16</left>
+                        <height>248</height>
+                        <width>165</width>
+                        <texture background="true">$INFO[Player.Art(tvshow.poster)]</texture>
+                        <aspectratio aligny="top" align="center">scale</aspectratio>
+                        <visible>!IsEmpty(Player.Art(tvshow.poster))</visible>
+                    </control>
+                
+                    <control type="image">
+                        <top>16</top>
+                        <left>16</left>
+                        <height>248</height>
+                        <width>165</width>
+                        <texture background="true">$INFO[Player.Art(poster)]</texture>
+                        <aspectratio aligny="top" align="center">scale</aspectratio>
+                        <visible>!IsEmpty(Player.Art(poster))</visible>
+                    </control>
+                
+                    <control type="image">
+                        <top>16</top>
+                        <left>16</left>
+                        <height>248</height>
+                        <width>441</width>
+                        <texture background="true">$INFO[Player.Art(thumb)]</texture>
+                        <aspectratio aligny="center" align="center">scale</aspectratio>
+                        <visible>IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))</visible>
+                    </control>
+                </control>
+                
+                <control type="image">
+                    <top>16</top>
+                    <left>16</left>
+                    <height>248</height>
+                    <width>248</width>
+                    <texture background="true">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">keep</aspectratio>
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                </control>
+                
+                <control type="grouplist">
+                    <visible>!VideoPlayer.Content(livetv) + [!IsEmpty(Player.Art(poster)) | !IsEmpty(Player.Art(tvshow.poster))]</visible>
+                    <orientation>vertical</orientation>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>204</left>
+                    <include>DefOSDInfoContent</include>
+                </control>
+                <control type="grouplist">
+                    <visible>!VideoPlayer.Content(livetv) + IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))</visible>
+                    <orientation>vertical</orientation>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>480</left>
+                    <include>DefOSDInfoContent</include>
+                </control>
+                <control type="grouplist">
+                    <visible>VideoPlayer.Content(livetv)</visible>
+                    <orientation>vertical</orientation>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>287</left>
+                    <include>DefOSDInfoContent</include>
+                </control>
+            </control>
+            
             <control type="progress" id="23">
                 <description>Progress Bar</description>
                 <posy>-16</posy>
