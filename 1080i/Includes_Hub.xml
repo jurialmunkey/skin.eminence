@@ -374,7 +374,7 @@
         <control type="label">
             <right>30</right>
             <posy>-16</posy>
-            <left>120</left>
+            <left>100</left>
             <height>90</height>
             <align>right</align>
             <aligny>center</aligny>
@@ -385,7 +385,7 @@
         <control type="label">
             <right>30</right>
             <posy>48</posy>
-            <left>120</left>
+            <left>100</left>
             <align>right</align>
             <aligny>center</aligny>
             <textcolor>PanelFG</textcolor>
@@ -427,7 +427,7 @@
                 <control type="label">
                     <right>30</right>
                     <posy>-16</posy>
-                    <left>120</left>
+                    <left>100</left>
                     <height>90</height>
                     <align>right</align>
                     <aligny>center</aligny>
@@ -438,7 +438,7 @@
                 <control type="label">
                     <right>30</right>
                     <posy>48</posy>
-                    <left>120</left>
+                    <left>100</left>
                     <align>right</align>
                     <aligny>center</aligny>
                     <textcolor>Selected</textcolor>
