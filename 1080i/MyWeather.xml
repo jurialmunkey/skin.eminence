@@ -72,11 +72,10 @@
                     <width>300</width>
                     <height>300</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
-                    <visible>Skin.HasSetting(weather.useicons)</visible>
+                    <visible>!Skin.HasSetting(weather.useicons)</visible>
+                    <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/,.png]</texture>
                 </control>
                 <control type="label">
-                    <visible>!Skin.HasSetting(weather.useicons)</visible>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>340</width>
@@ -84,6 +83,7 @@
                     <font>Font-BigWeather</font>
                     <align>center</align>
                     <aligny>center</aligny>
+                    <visible>Skin.HasSetting(weather.useicons)</visible>
                     <label> [B]$VAR[WeatherLabel][/B] </label>
                 </control>
                 <control type="group">
@@ -206,7 +206,6 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <visible>!Skin.HasSetting(weather.useicons)</visible>
                                 <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
@@ -214,17 +213,18 @@
                                 <font>Font-MediumWeather</font>
                                 <aligny>center</aligny>
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                                <visible>Skin.HasSetting(weather.useicons)</visible>
                             </control>
                             <control type="image">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <height>315</height>
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(Icon)]</texture>
-                                <visible>Skin.HasSetting(weather.useicons)</visible>
+                                <texture>$INFO[ListItem.Property(Fanartcode),weather/,.png]</texture>
+                                <visible>!Skin.HasSetting(weather.useicons)</visible>
                             </control>
                             <control type="label">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -245,7 +245,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>
@@ -264,7 +264,7 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <visible>!Skin.HasSetting(weather.useicons)</visible>
+                                <visible>Skin.HasSetting(weather.useicons)</visible>
                                 <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
@@ -274,15 +274,15 @@
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
                             </control>
                             <control type="image">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <height>315</height>
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(Icon)]</texture>
-                                <visible>Skin.HasSetting(weather.useicons)</visible>
+                                <texture>$INFO[ListItem.Property(Fanartcode),weather/,.png]</texture>
+                                <visible>!Skin.HasSetting(weather.useicons)</visible>
                             </control>
                             <control type="label">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -303,7 +303,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <centerleft>50%</centerleft>
+                                <centerleft>116</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>

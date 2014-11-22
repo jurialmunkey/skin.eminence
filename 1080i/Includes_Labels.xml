@@ -218,14 +218,12 @@
     
     <variable name="PVRSideLabel">
         <value condition="Control.HasFocus(37)">$LOCALIZE[31170]</value>
-        <value condition="Control.IsVisible(10)">$LOCALIZE[19222]</value>
-        <value condition="Control.IsVisible(11)">$LOCALIZE[19019]</value>
-        <value condition="Control.IsVisible(12)">$LOCALIZE[19021]</value>
-        <value condition="Control.IsVisible(13)">$LOCALIZE[19043]</value>
-        <value condition="Control.IsVisible(14)">$LOCALIZE[19040]</value>
-        <value condition="Control.IsVisible(15)">$LOCALIZE[22020]</value>
-        <value condition="Control.IsVisible(16)">$LOCALIZE[19030] / $LOCALIZE[19031]</value>
-        <value condition="Control.IsVisible(17)">$LOCALIZE[137]</value>     
+        <value condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">$LOCALIZE[19222]</value>
+        <value condition="Window.IsVisible(TVChannels)">$LOCALIZE[19023]</value>
+        <value condition="Window.IsVisible(RadioChannels)">$LOCALIZE[19021]</value>
+        <value condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)">$LOCALIZE[137]</value>
+        <value condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">$LOCALIZE[19017]</value>
+        <value condition="Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">$LOCALIZE[19040]</value>
     </variable>
     
     <variable name="PVRTopLabel">

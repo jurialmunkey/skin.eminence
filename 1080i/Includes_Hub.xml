@@ -307,44 +307,38 @@
     </include>
     <include name="QuickNavPVRHub">
         <item id="1">
-            <onclick>ClearProperty(focushub,home)</onclick>
             <label>$LOCALIZE[19023]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
+            <onclick>ActivateWindow(TVChannels,,return)</onclick>
             <icon>special://skin/extras/icons/livetv.png</icon>
             <property name="Color">1</property>
         </item>
         <item id="2">
             <label>$LOCALIZE[31221]</label>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+            <onclick>ActivateWindow(TVGuide,,return)</onclick>
             <icon>special://skin/extras/icons/equalizer.png</icon>
             <property name="Color">1</property>
         </item>
         <item id="3">
             <label>$LOCALIZE[19024]</label>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
+            <onclick>ActivateWindow(RadioChannels,,return)</onclick>
             <icon>special://skin/extras/icons/radio.png</icon>
             <property name="Color">1</property>
         </item>
         <item id="4">
             <label>$LOCALIZE[19163]</label>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
+            <onclick>ActivateWindow(TVRecordings,,return)</onclick>
             <icon>special://skin/extras/icons/database.png</icon>
             <property name="Color">1</property>
         </item>
         <item id="5">
             <label>$LOCALIZE[19040]</label>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
+            <onclick>ActivateWindow(TVTimers)</onclick>
             <icon>special://skin/extras/icons/timer.png</icon>
             <property name="Color">1</property>
         </item>
         <item id="6">
             <label>$LOCALIZE[137]</label>
-            <onclick>ClearProperty(focushub,home)</onclick>
-            <onclick>ActivateWindowAndFocus(MyPVR, 36,0, 15,0)</onclick>
+            <onclick>ActivateWindow(TVSearch,,return)</onclick>
             <icon>special://skin/extras/icons/search.png</icon>
             <property name="Color">1</property>
         </item>
