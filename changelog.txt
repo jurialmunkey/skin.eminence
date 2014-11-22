@@ -1,6 +1,7 @@
 [B]1.1.4[/B]
 Preliminary PVR setup
 New weather icons
+Fix hub label width
 
 [B]1.1.3[/B]
 Fix Trailers not opening fullscreen
