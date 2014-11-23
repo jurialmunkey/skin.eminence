@@ -3,7 +3,7 @@
 
     <include name="DefOSDInfoContent">
         <control type="group">
-            <visible>!VideoPlayer.Content(livetv)</visible>
+            <visible>VideoPlayer.Content(livetv)</visible>
             <control type="label">
                 <height>50</height>
                 <left>0</left>
@@ -33,7 +33,7 @@
             </control>
         </control>
         <control type="group">
-            <visible>VideoPlayer.Content(livetv)</visible>
+            <visible>!VideoPlayer.Content(livetv)</visible>
             <control type="label">
                 <height>50</height>
                 <left>0</left>
