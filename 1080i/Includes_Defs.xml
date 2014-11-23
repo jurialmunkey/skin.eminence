@@ -2,32 +2,65 @@
 <includes>
 
     <include name="DefOSDInfoContent">
-        <control type="label">
-            <height>50</height>
-            <left>0</left>
-            <right>32</right>
-            <align>left</align>
-            <aligny>top</aligny>
-            <height>32</height>
-            <font>Font-Button</font>
-            <label>$INFO[VideoPlayer.Tagline]</label>
+        <control type="group">
+            <visible>!VideoPlayer.Content(livetv)</visible>
+            <control type="label">
+                <height>50</height>
+                <left>0</left>
+                <right>32</right>
+                <align>left</align>
+                <aligny>top</aligny>
+                <height>32</height>
+                <font>Font-Button</font>
+                <label>$INFO[VideoPlayer.Genre]</label>
+            </control>
+            <control type="textbox">
+                <left>0</left>
+                <right>32</right>
+                <align>justify</align>
+                <aligny>top</aligny>
+                <font>Font-ListInfo</font>
+                <height>120</height>
+                <label fallback="416">$INFO[VideoPlayer.Plot]</label>
+                <wrapmultiline>true</wrapmultiline>
+            </control>        
+            <control type="label">
+                <left>0</left>
+                <right>32</right>
+                <align>left</align>
+                <font>Font-ListInfo-Small</font>
+                <label>[B]$LOCALIZE[209]...  [/B]$INFO[VideoPlayer.NextTitle]$INFO[VideoPlayer.NextStartTime,  ,]</label>
+            </control>
         </control>
-        <control type="textbox">
-            <left>0</left>
-            <right>32</right>
-            <align>justify</align>
-            <aligny>top</aligny>
-            <font>Font-ListInfo</font>
-            <height>120</height>
-            <label fallback="416">$INFO[VideoPlayer.Plot]</label>
-            <wrapmultiline>true</wrapmultiline>
-        </control>        
-        <control type="label">
-            <left>0</left>
-            <right>32</right>
-            <align>left</align>
-            <font>Font-ListInfo-Small</font>
-            <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
+        <control type="group">
+            <visible>VideoPlayer.Content(livetv)</visible>
+            <control type="label">
+                <height>50</height>
+                <left>0</left>
+                <right>32</right>
+                <align>left</align>
+                <aligny>top</aligny>
+                <height>32</height>
+                <font>Font-Button</font>
+                <label>$INFO[VideoPlayer.Tagline]</label>
+            </control>
+            <control type="textbox">
+                <left>0</left>
+                <right>32</right>
+                <align>justify</align>
+                <aligny>top</aligny>
+                <font>Font-ListInfo</font>
+                <height>120</height>
+                <label fallback="416">$INFO[VideoPlayer.Plot]</label>
+                <wrapmultiline>true</wrapmultiline>
+            </control>        
+            <control type="label">
+                <left>0</left>
+                <right>32</right>
+                <align>left</align>
+                <font>Font-ListInfo-Small</font>
+                <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>
+            </control>
         </control>
     </include>
     
