@@ -202,56 +202,56 @@
     <include name="QuickNavMusicHub">
         <item id="1">
             <label>133</label>
-            <onclick>ActivateWindow(Music,Artists,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
             <icon>special://skin/extras/icons/artist.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="2">
             <label>132</label>
-            <onclick>ActivateWindow(Music,Albums,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="3">
             <label>134</label>
-            <onclick>ActivateWindow(Music,Songs,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
             <icon>special://skin/extras/icons/song.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="4">
             <label>10505</label>
-            <onclick>ActivateWindow(Music,Top100Albums,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Top100Albums,return)</onclick>
             <icon>special://skin/extras/icons/top100.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="5">
             <label>31159</label>
-            <onclick>ActivateWindow(Music,RecentlyPlayedAlbums,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,RecentlyPlayedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recent.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="6">
             <label>31109</label>
-            <onclick>ActivateWindow(Music,RecentlyAddedAlbums,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,RecentlyAddedAlbums,return)</onclick>
             <icon>special://skin/extras/icons/recentlyadded.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="7">
             <label>135</label>
-            <onclick>ActivateWindow(Music,Genres,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Genres,return)</onclick>
             <icon>special://skin/extras/icons/audiogenre.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="8">
             <label>652</label>
-            <onclick>ActivateWindow(Music,Years,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Years,return)</onclick>
             <icon>special://skin/extras/icons/years.png</icon>
             <property name="Color">1</property>
         </item>
@@ -265,35 +265,35 @@
         
         <item id="10">
             <label>1050</label>
-            <onclick>ActivateWindow(Music,Singles,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Singles,return)</onclick>
             <icon>special://skin/extras/icons/songs.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="11">
             <label>20389</label>
-            <onclick>ActivateWindow(Music,videodb://musicvideos/titles/,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,videodb://musicvideos/titles/,return)</onclick>
             <icon>special://skin/extras/icons/musicvideo.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="12">
             <label>1038</label>
-            <onclick>ActivateWindow(Music,addons://sources/audio/,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,addons://sources/audio/,return)</onclick>
             <icon>special://skin/extras/icons/addons.png</icon>
             <property name="Color">1</property>  
         </item>
         
         <item id="13">
             <label>136</label>
-            <onclick>ActivateWindow(Music,Playlists,return)</onclick>
+            <onclick>ActivateWindow(MusicLibrary,Playlists,return)</onclick>
             <icon>special://skin/extras/icons/playlist.png</icon>
             <property name="Color">1</property>
         </item>
         
         <item id="14">
             <label>1214</label>
-            <onclick>ActivateWindow(Music,Files,return)</onclick>
+            <onclick>ActivateWindow(MusicFiles)</onclick>
             <icon>special://skin/extras/icons/files.png</icon>
             <property name="Color">1</property>
         </item>

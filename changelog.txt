@@ -2,6 +2,7 @@
 Weather Icon selection option
 Skin init now after yes no dialog
 Remove debug window
+Fix music files hub issue
 
 [B]1.1.4[/B]
 Preliminary PVR setup
