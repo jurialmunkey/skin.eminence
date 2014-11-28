@@ -702,16 +702,7 @@
                 </control>
                 
                 <!-- ADVANCED -->
-                <control type="radiobutton" id="901" description="Debug Info">
-                    <label>654</label>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
-                    <selected>!Skin.HasSetting(HideDebugInfo)</selected>
-                    <visible>ControlGroup(3).HasFocus(39)</visible>
-                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
+        
                 <control type="radiobutton" id="803" description="Kiosk mode">
                     <label>31239</label>
                     <align>left</align>

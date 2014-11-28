@@ -4,6 +4,7 @@
     <defaultcontrol always="true">3</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
+    <onload condition="IsEmpty(Skin.String(weather.useicons))">Skin.SetString(weather.useicons,Flat)</onload>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     <controls>
 
@@ -30,7 +31,7 @@
                 <control type="button" id="2">
                     <description>Refresh</description>
                     <label>184</label>
-                    <width>200</width>
+                    <width>180</width>
                     <align>left</align>
                     <include>DefContextMenuButton</include>
                     <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(2)">Conditional</animation>
@@ -39,11 +40,27 @@
                 <control type="button" id="4">
                     <description>Settings</description>
                     <label>5</label>
-                    <width>710</width>
+                    <width>180</width>
                     <align>left</align>
                     <onclick>ActivateWindow(weathersettings)</onclick>
                     <include>DefContextMenuButton</include>
                     <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(4)">Conditional</animation>
+                </control>
+                
+                <control type="button" id="9001">
+                    <description>Icons</description>
+                    <label>Icons</label>
+                    <width>550</width>
+                    <align>left</align>
+                    
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Popped)">Skin.SetString(weather.useicons,Confluence)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Flat)">Skin.SetString(weather.useicons,Popped)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Monochrome)">Skin.SetString(weather.useicons,Flat)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
+                    
+                    <include>DefContextMenuButton</include>
+                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(9001)">Conditional</animation>
                 </control>
 
                 <control type="spincontrolex" id="3">
@@ -72,8 +89,26 @@
                     <width>300</width>
                     <height>300</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <visible>!Skin.HasSetting(weather.useicons)</visible>
-                    <texture>$INFO[Window(Weather).Property(Current.ConditionIcon)]</texture>
+                    <visible>stringcompare(Skin.String(weather.useicons),Flat) | IsEmpty(Skin.String(weather.useicons))</visible>
+                    <texture>$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>
+                </control>
+                <control type="image">
+                    <posx>20</posx>
+                    <posy>20</posy>
+                    <width>300</width>
+                    <height>300</height>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
+                    <texture>$INFO[Window(weather).Property(Current.FanartCode),weather2/,.png]</texture>
+                </control>
+                <control type="image">
+                    <posx>20</posx>
+                    <posy>20</posy>
+                    <width>300</width>
+                    <height>300</height>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
+                    <texture>$INFO[Window(weather).Property(Current.ConditionIcon)]</texture>
                 </control>
                 <control type="label">
                     <posx>0</posx>
@@ -83,7 +118,7 @@
                     <font>Font-BigWeather</font>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <visible>Skin.HasSetting(weather.useicons)</visible>
+                    <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
                     <label> [B]$VAR[WeatherLabel][/B] </label>
                 </control>
                 <control type="group">
@@ -213,7 +248,23 @@
                                 <font>Font-MediumWeather</font>
                                 <aligny>center</aligny>
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
-                                <visible>Skin.HasSetting(weather.useicons)</visible>
+                                <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather2/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
                             </control>
                             <control type="image">
                                 <centerleft>116</centerleft>
@@ -221,7 +272,7 @@
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture>$INFO[ListItem.Property(Icon)]</texture>
-                                <visible>!Skin.HasSetting(weather.useicons)</visible>
+                                <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
                                 <centerleft>116</centerleft>
@@ -264,7 +315,6 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <visible>Skin.HasSetting(weather.useicons)</visible>
                                 <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
@@ -272,6 +322,23 @@
                                 <font>Font-MediumWeather</font>
                                 <aligny>center</aligny>
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                                <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather2/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
                             </control>
                             <control type="image">
                                 <centerleft>116</centerleft>
@@ -279,7 +346,7 @@
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture>$INFO[ListItem.Property(Icon)]</texture>
-                                <visible>!Skin.HasSetting(weather.useicons)</visible>
+                                <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
                                 <centerleft>116</centerleft>

@@ -1,3 +1,8 @@
+[B]1.1.5[/B]
+Weather Icon selection option
+Skin init now after yes no dialog
+Remove debug window
+
 [B]1.1.4[/B]
 Preliminary PVR setup
 New weather icons
