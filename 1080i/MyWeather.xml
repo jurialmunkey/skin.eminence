@@ -271,7 +271,7 @@
                                 <height>315</height>
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                                <texture>$INFO[ListItem.Icon]</texture>
                                 <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
@@ -345,7 +345,7 @@
                                 <height>315</height>
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                                <texture>$INFO[ListItem.Icon]</texture>
                                 <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
@@ -383,7 +383,7 @@
                     <content>
                         <item id="0">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day0.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
                             <property name="LongDay">$LOCALIZE[33006]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
@@ -392,7 +392,7 @@
                         </item>
                         <item id="1">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day1.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
                             <property name="LongDay">$LOCALIZE[33007]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
@@ -401,7 +401,7 @@
                         </item>
                         <item id="2">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day2.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day2.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day2.HighTemp)]</property>
@@ -410,7 +410,7 @@
                         </item>
                         <item id="3">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day3.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day3.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day3.HighTemp)]</property>
@@ -419,7 +419,7 @@
                         </item>
                         <item id="4">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day4.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day4.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day4.HighTemp)]</property>
@@ -428,7 +428,7 @@
                         </item>
                         <item id="5">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day5.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day5.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day5.HighTemp)]</property>
@@ -437,7 +437,7 @@
                         </item>
                         <item id="6">
                             <onclick>noop</onclick>
-                            <property name="Icon">$INFO[Window(Weather).Property(Day6.OutlookIcon)]</property>
+                            <icon>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day6.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day6.HighTemp)]</property>
