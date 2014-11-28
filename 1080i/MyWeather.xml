@@ -54,8 +54,7 @@
                     <align>left</align>
                     
                     <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
-                    <onclick condition="stringcompare(Skin.String(weather.useicons),Popped)">Skin.SetString(weather.useicons,Confluence)</onclick>
-                    <onclick condition="stringcompare(Skin.String(weather.useicons),Flat)">Skin.SetString(weather.useicons,Popped)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Flat)">Skin.SetString(weather.useicons,Confluence)</onclick>
                     <onclick condition="stringcompare(Skin.String(weather.useicons),Monochrome)">Skin.SetString(weather.useicons,Flat)</onclick>
                     <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
                     
@@ -89,17 +88,8 @@
                     <width>300</width>
                     <height>300</height>
                     <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <visible>stringcompare(Skin.String(weather.useicons),Flat) | IsEmpty(Skin.String(weather.useicons))</visible>
+                    <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
                     <texture>$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>
-                </control>
-                <control type="image">
-                    <posx>20</posx>
-                    <posy>20</posy>
-                    <width>300</width>
-                    <height>300</height>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
-                    <texture>$INFO[Window(weather).Property(Current.FanartCode),weather2/,.png]</texture>
                 </control>
                 <control type="image">
                     <posx>20</posx>
@@ -263,14 +253,6 @@
                                 <height>315</height>
                                 <width>153</width>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(FanartCode),weather2/,.png]</texture>
-                                <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
-                            </control>
-                            <control type="image">
-                                <centerleft>116</centerleft>
-                                <height>315</height>
-                                <width>153</width>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture>$INFO[ListItem.Icon]</texture>
                                 <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
@@ -331,14 +313,6 @@
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <texture>$INFO[ListItem.Property(FanartCode),weather/,.png]</texture>
                                 <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
-                            </control>
-                            <control type="image">
-                                <centerleft>116</centerleft>
-                                <height>315</height>
-                                <width>153</width>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture>$INFO[ListItem.Property(FanartCode),weather2/,.png]</texture>
-                                <visible>stringcompare(Skin.String(weather.useicons),Popped)</visible>
                             </control>
                             <control type="image">
                                 <centerleft>116</centerleft>
