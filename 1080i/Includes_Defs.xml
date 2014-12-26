@@ -8,7 +8,7 @@
         <control type="label">
             <height>50</height>
             <left>0</left>
-            <right>500</right>
+            <right>550</right>
             <align>left</align>
             <aligny>center</aligny>
             <font>Font-Button</font>
@@ -18,7 +18,7 @@
         <control type="label">
             <height>50</height>
             <posy>-60</posy>
-            <left>450r</left>
+            <left>500r</left>
             <right>32</right>
             <align>right</align>
             <aligny>center</aligny>

@@ -473,7 +473,7 @@
                     <left>16</left>
                     <height>248</height>
                     <width>248</width>
-                    <texture background="true">$INFO[Player.Art(thumb)]</texture>
+                    <texture background="true" fallback="special://skin/extras/icons/film.png">$INFO[Player.Art(thumb)]</texture>
                     <aspectratio aligny="center" align="center">keep</aspectratio>
                     <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
                 </control>
