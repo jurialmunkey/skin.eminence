@@ -262,6 +262,15 @@
                 <aligny>top</aligny>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <label>$VAR[MainHeaderSubLabel]</label>
+                <visible>!VideoPlayer.Content(livetv)</visible>
+            </control>
+            <control type="label">
+                <width max="730">auto</width>
+                <font>Font-Sublabel</font>
+                <aligny>top</aligny>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <label>$VAR[MainHeaderSubLabel]</label>
+                <visible>VideoPlayer.Content(livetv)</visible>
             </control>
             <control type="label">
                 <width>auto</width>
