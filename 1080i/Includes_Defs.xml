@@ -19,16 +19,16 @@
             <height>50</height>
             <posy>-60</posy>
             <left>500r</left>
-            <right>32</right>
+            <right>16</right>
             <align>right</align>
             <aligny>center</aligny>
             <font>Font-ListInfo-Small</font>
-            <label>$INFO[VideoPlayer.AudioCodec]$VAR[AudioChannelsOSD,  •  ,]$INFO[VideoPlayer.VideoResolution,  •  ,]$INFO[VideoPlayer.VideoCodec,  •  ,]$INFO[VideoPlayer.VideoAspect,  •  ,]</label>
+            <label>$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect]</label>
         </control>
         
         <control type="textbox">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>justify</align>
             <aligny>top</aligny>
             <font>Font-ListInfo</font>
@@ -38,7 +38,7 @@
         </control>        
         <control type="label">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>left</align>
             <font>Font-ListInfo-Small</font>
             <visible>VideoPlayer.Content(livetv)</visible>
@@ -46,7 +46,7 @@
         </control>
         <control type="label">
             <left>0</left>
-            <right>32</right>
+            <right>16</right>
             <align>left</align>
             <font>Font-ListInfo-Small</font>
             <label>[B]$INFO[VideoPlayer.Premiered]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.MPAA,  •  ,]$INFO[VideoPlayer.Studio,  •  ,]$INFO[VideoPlayer.Rating,  •  ,][/B]</label>

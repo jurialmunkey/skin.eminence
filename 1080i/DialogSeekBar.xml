@@ -518,6 +518,8 @@
                 <aspectratio align="right" aligny="bottom">keep</aspectratio>
                 <include>Animation.FadeIn</include>
                 <include>Animation.FadeOut</include>
+                <visible>!Skin.HasSetting(hide.clearartosd)</visible>
+                <visible>!Window.IsVisible(DialogSubtitles.xml) + !Window.IsVisible(VideoOSDBookmarks.xml) + !Window.IsVisible(VideoOSDSettings.xml) + !VideoPlayer.Content(livetv) + IsEmpty(Window(seekbar).Property(fullscreeninfo))</visible>
             </control>
         </control>
         
