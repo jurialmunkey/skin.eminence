@@ -32,7 +32,7 @@
         <value condition="Window.IsVisible(LoginScreen.xml)">[COLOR=Highlight]$LOCALIZE[31191][/COLOR]  $LOCALIZE[31192]</value>
         <value condition="Window.IsVisible(3064)">[COLOR=Highlight]$LOCALIZE[31211][/COLOR] $LOCALIZE[31212]</value>
         <value condition="Window.IsVisible(3063)">[COLOR=Highlight]$LOCALIZE[31172][/COLOR] $LOCALIZE[31171]</value>
-        <value condition="Control.IsVisible(199) + Window.IsVisible(script-globalsearch-main.xml)">[COLOR=Highlight]No results found...[/COLOR]</value>
+        <value condition="Control.IsVisible(199) + Window.IsVisible(script-globalsearch-main.xml)">[COLOR=Highlight]$LOCALIZE[284]...[/COLOR]</value>
         <value condition="Window.IsVisible(script-globalsearch-main.xml)">$INFO[Control.GetLabel(110),[COLOR=Highlight],[/COLOR] $LOCALIZE[20342]    ]$INFO[Control.GetLabel(120),[COLOR=Highlight],[/COLOR] $LOCALIZE[20343]    ]$INFO[Control.GetLabel(130),[COLOR=Highlight],[/COLOR] $LOCALIZE[33054]    ]$INFO[Control.GetLabel(140),[COLOR=Highlight],[/COLOR] $LOCALIZE[20360]    ]$INFO[Control.GetLabel(150),[COLOR=Highlight],[/COLOR] $LOCALIZE[203489]    ]$INFO[Control.GetLabel(160),[COLOR=Highlight],[/COLOR] $LOCALIZE[133]    ]$INFO[Control.GetLabel(170),[COLOR=Highlight],[/COLOR] $LOCALIZE[132]    ]$INFO[Control.GetLabel(180),[COLOR=Highlight],[/COLOR] $LOCALIZE[134]    ]</value>
         <value condition="Player.HasAudio + IsEmpty(Window(10025).Property(TvTunesIsAlive))">[COLOR=Highlight]$INFO[MusicPlayer.Artist,,  ][/COLOR]</value>
         <value condition="VideoPlayer.Content(musicvideos)">[COLOR=Highlight]$INFO[VideoPlayer.Artist,,  ][/COLOR]</value>
@@ -40,6 +40,8 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]</value>
         <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]</value>
         <value condition="!IsEmpty(Container.NumItems) + ![Window.IsVisible(3201) | Window.IsVisible(3202) | Window.IsVisible(3203)]">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
+        <value condition="Pvr.IsRecording">$INFO[Pvr.NowRecordingTitle,$LOCALIZE[19158]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NowRecordingChannel,  ,]</value>
+        <value condition="Pvr.HasTimer">$INFO[Pvr.NextRecordingTitle,$LOCALIZE[19157]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
         <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20360]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
     </variable>
     

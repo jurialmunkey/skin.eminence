@@ -3,6 +3,8 @@ Transifex update
 Fix some seekbar / info issues
 Fix DialogSelect and FileBrowser need aspectratio keep
 Add codec info to extendinfo
+Fix back button in pvr
+Add next and now recording info in header
 
 [B]1.1.5[/B]
 Weather Icon selection option
