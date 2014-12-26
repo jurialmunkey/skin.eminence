@@ -5,6 +5,7 @@ Fix DialogSelect and FileBrowser need aspectratio keep
 Add codec info to extendinfo
 Fix back button in pvr
 Add next and now recording info in header
+Remove time info on osd for livetv (only finishes at)
 
 [B]1.1.5[/B]
 Weather Icon selection option

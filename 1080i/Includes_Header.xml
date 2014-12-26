@@ -276,6 +276,7 @@
                 <font>Font-Sublabel</font>
                 <align>right</align>
                 <aligny>top</aligny>
+                <visible>!VideoPlayer.Content(livetv)</visible>
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <label>$INFO[Player.Time(hh:mm:ss),  •  ,]$INFO[Player.Duration(hh:mm:ss), / ,]</label>
             </control>
