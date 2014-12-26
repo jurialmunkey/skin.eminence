@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Information"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "Youtube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -100,6 +104,18 @@ msgctxt "#31127"
 msgid "Recording"
 msgstr "Spelar in"
 
+msgctxt "#31128"
+msgid "Scheduled"
+msgstr "Schemalagd"
+
+msgctxt "#31129"
+msgid "Not Scheduled"
+msgstr "Inte schemalagd"
+
+msgctxt "#31130"
+msgid "Shutdown Timer"
+msgstr "Avstängningstimer"
+
 msgctxt "#31133"
 msgid "Cancel Timer"
 msgstr "Avbryt timer"
@@ -111,6 +127,10 @@ msgstr "Tysta"
 msgctxt "#31135"
 msgid "Artwork"
 msgstr "Grafik"
+
+msgctxt "#31136"
+msgid "Changes"
+msgstr "Förändringar"
 
 msgctxt "#31144"
 msgid "Enable TV Tunes"
@@ -131,6 +151,10 @@ msgstr "Vyer"
 msgctxt "#31150"
 msgid "Show info"
 msgstr "Visa info"
+
+msgctxt "#31151"
+msgid "Hide info"
+msgstr "Dölj information"
 
 msgctxt "#31152"
 msgid "Posters"
@@ -163,6 +187,10 @@ msgstr "Helskärm"
 msgctxt "#31159"
 msgid "Recently Played"
 msgstr "Nyligen spelat"
+
+msgctxt "#31160"
+msgid "Press down for options..."
+msgstr "Tryck nedpil för alternativ..."
 
 msgctxt "#31163"
 msgid "Custom"

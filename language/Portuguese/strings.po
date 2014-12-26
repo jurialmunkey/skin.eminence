@@ -228,6 +228,10 @@ msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Conjunto de Filmes"
 
+msgctxt "#31208"
+msgid "Home Screen"
+msgstr "Ecrã inicial"
+
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Mover item"

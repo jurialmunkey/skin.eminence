@@ -61,6 +61,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
                         <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
@@ -69,6 +70,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
@@ -107,6 +109,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
                         <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
@@ -115,6 +118,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>

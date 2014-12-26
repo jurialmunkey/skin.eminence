@@ -161,6 +161,7 @@
                         <posy>12</posy>
                         <width>111</width>
                         <height>111</height>
+                        <aspectratio>keep</aspectratio>
                         <texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
                     </control>
                     <control type="label">
@@ -233,6 +234,7 @@
                         <posy>12</posy>
                         <width>111</width>
                         <height>111</height>
+                        <aspectratio>keep</aspectratio>
                         <texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
                     </control>
 

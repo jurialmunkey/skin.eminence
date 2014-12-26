@@ -72,6 +72,10 @@ msgctxt "#31123"
 msgid "Channel"
 msgstr "Kanal"
 
+msgctxt "#31124"
+msgid "Airing"
+msgstr "Yayınlanan"
+
 msgctxt "#31125"
 msgid "End Time"
 msgstr "Bitiş Zamanı"
@@ -103,6 +107,14 @@ msgstr "Duvar"
 msgctxt "#31154"
 msgid "Banner"
 msgstr "Afişler"
+
+msgctxt "#31156"
+msgid "All Movies"
+msgstr "Bütün Filmler"
+
+msgctxt "#31157"
+msgid "All TV Shows"
+msgstr "Bütün TV Programları"
 
 msgctxt "#31158"
 msgid "Fullscreen"
@@ -144,6 +156,10 @@ msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Kanal Seçenekleri"
 
+msgctxt "#31197"
+msgid "General Options"
+msgstr "Genel seçenekler"
+
 msgctxt "#31210"
 msgid "Set background image"
 msgstr "Arka plan resmini belirle"
@@ -151,6 +167,10 @@ msgstr "Arka plan resmini belirle"
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Taşı"
+
+msgctxt "#31223"
+msgid "Banner List"
+msgstr "Afiş Listesi"
 
 msgctxt "#31224"
 msgid "Forecast"
@@ -167,6 +187,10 @@ msgstr "Gelişmiş"
 msgctxt "#31235"
 msgid "Extras"
 msgstr "Ekstralar"
+
+msgctxt "#31239"
+msgid "Kiosk mode"
+msgstr "Kiosk modu"
 
 msgctxt "#31244"
 msgid "Moderate"

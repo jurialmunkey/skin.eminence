@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Πληροφορίες"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "Youtube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -68,6 +72,10 @@ msgctxt "#31114"
 msgid "Channels"
 msgstr "Κανάλια"
 
+msgctxt "#31115"
+msgid "Finishes at"
+msgstr "Τελειώνει στις"
+
 msgctxt "#31116"
 msgid "Close"
 msgstr "Κλείσιμο"
@@ -79,6 +87,10 @@ msgstr "Αναπαραγωγή"
 msgctxt "#31119"
 msgid "Info"
 msgstr "Πληροφορίες"
+
+msgctxt "#31120"
+msgid "Auto-Login"
+msgstr "Αυτόματη-Σύνδεση"
 
 msgctxt "#31122"
 msgid "No info available..."
@@ -104,6 +116,14 @@ msgctxt "#31127"
 msgid "Recording"
 msgstr "Γίνεται εγγραφή"
 
+msgctxt "#31128"
+msgid "Scheduled"
+msgstr "Προγραμματισμένο"
+
+msgctxt "#31129"
+msgid "Not Scheduled"
+msgstr "Μη Προγραμματισμένο"
+
 msgctxt "#31133"
 msgid "Cancel Timer"
 msgstr "Ακύρωση Χρονοδιακόπτη"
@@ -115,6 +135,14 @@ msgstr "Σίγαση"
 msgctxt "#31135"
 msgid "Artwork"
 msgstr "Εικόνες"
+
+msgctxt "#31136"
+msgid "Changes"
+msgstr "Αλλαγές"
+
+msgctxt "#31141"
+msgid "Movies Widget"
+msgstr "Widget Ταινιών"
 
 msgctxt "#31143"
 msgid "Disc Menu"
@@ -220,6 +248,10 @@ msgctxt "#31174"
 msgid "Cinema Experience"
 msgstr "Cinema Experience"
 
+msgctxt "#31175"
+msgid "Television"
+msgstr "Τηλεόραση"
+
 msgctxt "#31181"
 msgid "Widget"
 msgstr "Widget"
@@ -240,6 +272,14 @@ msgctxt "#31190"
 msgid "Login"
 msgstr "Σύνδεση"
 
+msgctxt "#31191"
+msgid "User login"
+msgstr "Σύνδεση χρήστη"
+
+msgctxt "#31192"
+msgid "Select a profile"
+msgstr "Επιλογή προφίλ"
+
 msgctxt "#31193"
 msgid "Trailers"
 msgstr "Διαφημιστικά"
@@ -255,6 +295,10 @@ msgstr "Επιλογές Καναλιού"
 msgctxt "#31197"
 msgid "General Options"
 msgstr "Γενικές Επιλογές"
+
+msgctxt "#31200"
+msgid "Manual search..."
+msgstr "Χειροκίνητη αναζήτηση..."
 
 msgctxt "#31201"
 msgid "Set Colour"
@@ -280,17 +324,25 @@ msgctxt "#31219"
 msgid "Insert item"
 msgstr "Εισαγωγή αντικειμένου"
 
+msgctxt "#31220"
+msgid "Experimental"
+msgstr "Πειραματικό"
+
 msgctxt "#31223"
 msgid "Banner List"
 msgstr "Λίστα Πανό"
 
 msgctxt "#31224"
 msgid "Forecast"
-msgstr "Πρόβλεψη"
+msgstr "Πρόγνωση"
 
 msgctxt "#31225"
 msgid "Info List"
 msgstr "Λίστα Πληροφοριών"
+
+msgctxt "#31226"
+msgid "Show title"
+msgstr "Εμφάνιση τίτλου"
 
 msgctxt "#31227"
 msgid "Hide title"
@@ -299,6 +351,18 @@ msgstr "Απόκρυψη τίτλου"
 msgctxt "#31230"
 msgid "Animate fanart"
 msgstr "Κινούμενα fanart"
+
+msgctxt "#31231"
+msgid "Edit Playlist"
+msgstr "Επεξεργασία Λίστας Αναπ/γής"
+
+msgctxt "#31232"
+msgid "Rule"
+msgstr "Κανόνας"
+
+msgctxt "#31233"
+msgid "Enter rule..."
+msgstr "Εισαγωγή κανόνα..."
 
 msgctxt "#31234"
 msgid "Advanced"

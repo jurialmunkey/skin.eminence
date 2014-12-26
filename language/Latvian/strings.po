@@ -80,6 +80,10 @@ msgctxt "#31135"
 msgid "Artwork"
 msgstr "Māksla"
 
+msgctxt "#31150"
+msgid "Show info"
+msgstr "Rādīt informāciju"
+
 msgctxt "#31152"
 msgid "Posters"
 msgstr "Plakāts"
@@ -91,6 +95,10 @@ msgstr "Ikonas"
 msgctxt "#31154"
 msgid "Banner"
 msgstr "Plakātu-karuselis"
+
+msgctxt "#31156"
+msgid "All Movies"
+msgstr "Visas filmas"
 
 msgctxt "#31158"
 msgid "Fullscreen"
@@ -123,6 +131,10 @@ msgstr "PIeteikšanās"
 msgctxt "#31193"
 msgid "Trailers"
 msgstr "Rullīši"
+
+msgctxt "#31194"
+msgid "Loading..."
+msgstr "Ielādē..."
 
 msgctxt "#31196"
 msgid "Channel Options"

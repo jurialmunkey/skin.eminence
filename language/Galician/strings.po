@@ -152,6 +152,10 @@ msgctxt "#31136"
 msgid "Changes"
 msgstr "Cambios"
 
+msgctxt "#31143"
+msgid "Disc Menu"
+msgstr "Menú do Disco"
+
 msgctxt "#31144"
 msgid "Enable TV Tunes"
 msgstr "Activar Emisións de TV"
@@ -171,6 +175,10 @@ msgstr "Vistas"
 msgctxt "#31150"
 msgid "Show info"
 msgstr "Amosar info."
+
+msgctxt "#31151"
+msgid "Hide info"
+msgstr "Agochar Info."
 
 msgctxt "#31152"
 msgid "Posters"
@@ -199,6 +207,14 @@ msgstr "Pantalla completa"
 msgctxt "#31159"
 msgid "Recently Played"
 msgstr "Reproducidos Recentemente"
+
+msgctxt "#31160"
+msgid "Press down for options..."
+msgstr "Premer abaixo para opcións..."
+
+msgctxt "#31161"
+msgid "Show PVR channel icon in header"
+msgstr "Amosar na cabeceira a icona da canle do PVR"
 
 msgctxt "#31163"
 msgid "Custom"
@@ -324,6 +340,10 @@ msgctxt "#31211"
 msgid "Move item"
 msgstr "Mover elemento"
 
+msgctxt "#31217"
+msgid "Show power button"
+msgstr "Amosar  botón de acendido"
+
 msgctxt "#31219"
 msgid "Insert item"
 msgstr "Inserir elemento"
@@ -352,6 +372,14 @@ msgctxt "#31227"
 msgid "Hide title"
 msgstr "Agochar título"
 
+msgctxt "#31229"
+msgid "Background image (click to reset)"
+msgstr "Imaxe de fondo (clic para restabelecer)"
+
+msgctxt "#31231"
+msgid "Edit Playlist"
+msgstr "Editar Lista de Reprodución"
+
 msgctxt "#31232"
 msgid "Rule"
 msgstr "Regra"
@@ -368,9 +396,17 @@ msgctxt "#31235"
 msgid "Extras"
 msgstr "Extras"
 
+msgctxt "#31236"
+msgid "Header text"
+msgstr "Texto da cabeceira"
+
 msgctxt "#31239"
 msgid "Kiosk mode"
 msgstr "Modo Quiosco"
+
+msgctxt "#31241"
+msgid "3D Mode"
+msgstr "Modo 3D"
 
 msgctxt "#31242"
 msgid "Media Info"

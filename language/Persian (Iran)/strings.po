@@ -24,6 +24,10 @@ msgctxt "#31106"
 msgid "Fullscreen"
 msgstr "تمام صفحه"
 
+msgctxt "#31109"
+msgid "Recently Added"
+msgstr "اخیراً افزوده شده"
+
 msgctxt "#31111"
 msgid "Type"
 msgstr "نوع"
@@ -31,6 +35,22 @@ msgstr "نوع"
 msgctxt "#31113"
 msgid "items"
 msgstr "موضوعات"
+
+msgctxt "#31118"
+msgid "Playing"
+msgstr "در حال پخش"
+
+msgctxt "#31119"
+msgid "Info"
+msgstr "اطلاعات"
+
+msgctxt "#31125"
+msgid "End Time"
+msgstr "زمان اتمام"
+
+msgctxt "#31126"
+msgid "Channel Group"
+msgstr "گروه کانال ها"
 
 msgctxt "#31152"
 msgid "Posters"
@@ -60,9 +80,21 @@ msgctxt "#31168"
 msgid "Home"
 msgstr "خانه"
 
+msgctxt "#31190"
+msgid "Login"
+msgstr "ورود"
+
+msgctxt "#31196"
+msgid "Channel Options"
+msgstr "گزینه های کانال"
+
 msgctxt "#31211"
 msgid "Move item"
 msgstr "انتقال موضوع"
+
+msgctxt "#31224"
+msgid "Forecast"
+msgstr "پیش بینی"
 
 msgctxt "#31244"
 msgid "Moderate"

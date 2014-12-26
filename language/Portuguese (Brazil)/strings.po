@@ -318,7 +318,7 @@ msgstr "Exibir clima com relógio"
 
 msgctxt "#31178"
 msgid "Use taller tiles"
-msgstr "Usar títulos de trailers"
+msgstr "Usar quadros maiores"
 
 msgctxt "#31179"
 msgid "Movies Hub"
@@ -416,6 +416,14 @@ msgctxt "#31203"
 msgid "Reset global background path to default"
 msgstr "Redefinir caminho global de fundos para o padrão"
 
+msgctxt "#31204"
+msgid "Match highlight to tile color"
+msgstr "Combinar destaque com o titulo"
+
+msgctxt "#31206"
+msgid "Use theme colour for focused tiles"
+msgstr "Usar a cor do tema para títulos em foco"
+
 msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Coletânea"
@@ -424,6 +432,10 @@ msgctxt "#31208"
 msgid "Home Screen"
 msgstr "Tela Inicial"
 
+msgctxt "#31209"
+msgid "Set global background widget"
+msgstr "Definir o widget de fundo global"
+
 msgctxt "#31210"
 msgid "Set background image"
 msgstr "Definir imagem de fundo"
@@ -431,6 +443,14 @@ msgstr "Definir imagem de fundo"
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Mover item"
+
+msgctxt "#31212"
+msgid "Swap with another tile"
+msgstr "Trocar com outro título"
+
+msgctxt "#31213"
+msgid "Click on a tile to see the available customisation options. Either select a preset tile option or modify an existing tile's name, colour, icon, path and background widget. You can also swap the position of tiles."
+msgstr "Clique num quadro para ver as opções de customização disponíveis. Selecione algum pré-configurado ou modifique um existente. Você pode também trocar a posição dos quadros."
 
 msgctxt "#31223"
 msgid "Banner List"

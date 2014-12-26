@@ -44,6 +44,10 @@ msgctxt "#31111"
 msgid "Type"
 msgstr "Vrsta"
 
+msgctxt "#31112"
+msgid "Spotlight"
+msgstr "Spotlight"
+
 msgctxt "#31113"
 msgid "items"
 msgstr "Stavki"

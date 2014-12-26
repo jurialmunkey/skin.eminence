@@ -36,6 +36,10 @@ msgctxt "#31106"
 msgid "Fullscreen"
 msgstr "На целия екран"
 
+msgctxt "#31107"
+msgid "min"
+msgstr "мин"
+
 msgctxt "#31108"
 msgid "Quick Nav"
 msgstr "Бърза навигация"
@@ -180,6 +184,10 @@ msgctxt "#31193"
 msgid "Trailers"
 msgstr "Трейлъри"
 
+msgctxt "#31194"
+msgid "Loading..."
+msgstr "Зареждане..."
+
 msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Настройки на канала"
@@ -207,6 +215,10 @@ msgstr "Инфо лист"
 msgctxt "#31234"
 msgid "Advanced"
 msgstr "Допълнителни"
+
+msgctxt "#31235"
+msgid "Extras"
+msgstr "Екстри"
 
 msgctxt "#31239"
 msgid "Kiosk mode"

@@ -124,6 +124,10 @@ msgctxt "#31181"
 msgid "Widget"
 msgstr "Widget"
 
+msgctxt "#31190"
+msgid "Login"
+msgstr "Iniciar sesión"
+
 msgctxt "#31193"
 msgid "Trailers"
 msgstr "Trailers"
