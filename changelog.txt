@@ -1,3 +1,7 @@
+[B]1.1.7[/B]
+Fully Customisable Hubs for Movies, TvShows and Music (resets previous customisations)
+
+
 [B]1.1.6[/B]
 Transifex update
 Fix some seekbar / info issues

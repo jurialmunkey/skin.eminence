@@ -3,7 +3,7 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <zorder>20</zorder>
-    <onunload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onunload>
+    <onunload condition="!Skin.HasSetting(skin.init) | !Skin.HasSetting(skin.init2)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onunload>
     <controls>
         <include>GlobalOverlay</include>
         <control type="group">

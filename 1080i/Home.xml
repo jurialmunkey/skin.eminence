@@ -11,7 +11,7 @@
     <onload>ClearProperty(globalsearch,home)</onload>
     <onload>ClearProperty(librarynode,home)</onload>
     <onload condition="IsEmpty(Window(home).Property(widget))">SetProperty(widget,movies,home)</onload>
-    <onload condition="!Skin.HasSetting(skin.init)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
+    <onload condition="!Skin.HasSetting(skin.init) | !Skin.HasSetting(skin.init2)">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
     <controls>
         <include>GlobalBackground</include>
         

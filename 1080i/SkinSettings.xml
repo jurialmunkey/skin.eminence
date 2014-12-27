@@ -65,15 +65,25 @@
                     <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
                     <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
-                <control type="togglebutton" id="32" description="Background">
-                    <label>31202</label>
+                <control type="togglebutton" id="35" description="Header">
+                    <label>31282</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
-                    <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
-                    <altlabel>[COLOR=Selected]$LOCALIZE[31202][/COLOR]</altlabel>
+                    <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31282][/COLOR]</altlabel>
                     <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
                     <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
+                <control type="togglebutton" id="33" description="Hubs">
+                    <label>31281</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31281][/COLOR]</altlabel>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                </control>
+                
                 
                 <control type="togglebutton" id="38" description="Fanart">
                     <label>$LOCALIZE[20445]</label>
@@ -84,24 +94,8 @@
                     <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
                     <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
-                <control type="togglebutton" id="33" description="Movies Hub">
-                    <label>31179</label>
-                    <align>left</align>
-                    <textcolor>Disabled</textcolor>
-                    <usealttexture>ControlGroup(3).HasFocus(33)</usealttexture>
-                    <altlabel>[COLOR=Selected]$LOCALIZE[31179][/COLOR]</altlabel>
-                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
-                </control>
-                <control type="togglebutton" id="35" description="TV Hub">
-                    <label>31180</label>
-                    <align>left</align>
-                    <textcolor>Disabled</textcolor>
-                    <usealttexture>ControlGroup(3).HasFocus(35)</usealttexture>
-                    <altlabel>[COLOR=Selected]$LOCALIZE[31180][/COLOR]</altlabel>
-                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
-                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
-                </control>
+                
+                
                 <control type="togglebutton" id="34" description="OSD">
                     <label>478</label>
                     <align>left</align>
@@ -111,12 +105,25 @@
                     <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
                     <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
+                
+                
+                
+                
                 <control type="togglebutton" id="36" description="Extras">
                     <label>31235</label>
                     <align>left</align>
                     <textcolor>Disabled</textcolor>
                     <usealttexture>ControlGroup(3).HasFocus(36)</usealttexture>
                     <altlabel>[COLOR=Selected]$LOCALIZE[31235][/COLOR]</altlabel>
+                    <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
+                    <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
+                </control>
+                <control type="togglebutton" id="32" description="Carousel">
+                    <label>31202</label>
+                    <align>left</align>
+                    <textcolor>Disabled</textcolor>
+                    <usealttexture>ControlGroup(3).HasFocus(32)</usealttexture>
+                    <altlabel>[COLOR=Selected]$LOCALIZE[31202][/COLOR]</altlabel>
                     <alttexturefocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturefocus>
                     <alttexturenofocus border="12" colordiffuse="PosterHighlight">common/white.png</alttexturenofocus>
                 </control>
@@ -145,6 +152,7 @@
             </control>
 
             <control type="grouplist" id="5">
+                <usecontrolcoords>true</usecontrolcoords>
                 <description>Control Area</description>
                 <include>DefSettingsRightGroup</include>
                 <onleft>3</onleft>
@@ -312,6 +320,15 @@
                 </control>
                
                 <!-- Movies Hub -->
+                <control type="label" id="400">
+                    <posx>25</posx>
+                    <label>20342</label>
+                    <align>left</align>
+                    <textcolor>Highlight</textcolor>
+                    <font>Font-Button</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                </control>
+                
                 <control type="button" id="401" description="Movie Hub Widget">
                     <label>31141</label>
                     <label2>$VAR[MovieWidgetLabel]</label2>
@@ -390,8 +407,42 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="button" id="408">
+                    <label>$LOCALIZE[31186] 6</label>
+                    <label2>$INFO[Skin.String(moviehub.6.Label)]</label2>
+                    <onclick>SetProperty(item,moviehub.6,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="409">
+                    <ondown>411</ondown>
+                    <label>$LOCALIZE[31186] 7</label>
+                    <label2>$INFO[Skin.String(moviehub.7.Label)]</label2>
+                    <onclick>SetProperty(item,moviehub.7,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                
                 <!-- TVshow Hub -->
-                <control type="button" id="501">
+                <control type="label" id="410">
+                    <posx>25</posx>
+                    <label>20343</label>
+                    <align>left</align>
+                    <textcolor>Highlight</textcolor>
+                    <font>Font-Button</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                </control>
+                
+                <control type="button" id="411">
+                    <onup>409</onup>
                     <label>31142</label>
                     <label2>$VAR[TvShowWidgetLabel]</label2>
                     <align>left</align>
@@ -399,76 +450,188 @@
                     <onclick condition="!stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="502">
+                <control type="button" id="412">
                     <label>  -  $LOCALIZE[559]</label>
                     <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
                     <align>left</align>
                     <font>Font-ListInfo</font>
                     <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <enable>stringcompare(Skin.String(tvshow.widget),playlist)</enable>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="503">
+                <control type="button" id="413">
                     <label>$LOCALIZE[31186] 1</label>
                     <label2>$INFO[Skin.String(tvshowhub.1.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.1,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="504">
+                <control type="button" id="414">
                     <label>$LOCALIZE[31186] 2</label>
                     <label2>$INFO[Skin.String(tvshowhub.2.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.2,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="505">
+                <control type="button" id="415">
                     <label>$LOCALIZE[31186] 3</label>
                     <label2>$INFO[Skin.String(tvshowhub.3.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.3,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="506">
+                <control type="button" id="416">
                     <label>$LOCALIZE[31186] 4</label>
                     <label2>$INFO[Skin.String(tvshowhub.4.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.4,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <control type="button" id="507">
+                <control type="button" id="417">
                     <label>$LOCALIZE[31186] 5</label>
                     <label2>$INFO[Skin.String(tvshowhub.5.Label)]</label2>
                     <onclick>SetProperty(item,tvshowhub.5,3067)</onclick>
                     <onclick>ActivateWindow(3067)</onclick>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="button" id="418">
+                    <label>$LOCALIZE[31186] 6</label>
+                    <label2>$INFO[Skin.String(tvshowhub.6.Label)]</label2>
+                    <onclick>SetProperty(item,tvshowhub.6,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="419">
+                    <ondown>423</ondown>
+                    <label>$LOCALIZE[31186] 7</label>
+                    <label2>$INFO[Skin.String(tvshowhub.7.Label)]</label2>
+                    <onclick>SetProperty(item,tvshowhub.7,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                
+                <!-- Music Hub -->
+                <control type="label" id="420">
+                    <posx>25</posx>
+                    <label>2</label>
+                    <align>left</align>
+                    <textcolor>Highlight</textcolor>
+                    <font>Font-Button</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                </control>
+                
+                <control type="button" id="423">
+                    <onup>419</onup>
+                    <label>$LOCALIZE[31186] 1</label>
+                    <label2>$INFO[Skin.String(musichub.1.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.1,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="424">
+                    <label>$LOCALIZE[31186] 2</label>
+                    <label2>$INFO[Skin.String(musichub.2.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.2,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="425">
+                    <label>$LOCALIZE[31186] 3</label>
+                    <label2>$INFO[Skin.String(musichub.3.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.3,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="426">
+                    <label>$LOCALIZE[31186] 4</label>
+                    <label2>$INFO[Skin.String(musichub.4.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.4,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="427">
+                    <label>$LOCALIZE[31186] 5</label>
+                    <label2>$INFO[Skin.String(musichub.5.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.5,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="428">
+                    <label>$LOCALIZE[31186] 6</label>
+                    <label2>$INFO[Skin.String(musichub.6.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.6,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
+                <control type="button" id="429">
+                    <ondown>401</ondown>
+                    <label>$LOCALIZE[31186] 7</label>
+                    <label2>$INFO[Skin.String(musichub.7.Label)]</label2>
+                    <onclick>SetProperty(item,musichub.7,3067)</onclick>
+                    <onclick>ActivateWindow(3067)</onclick>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <visible>ControlGroup(3).HasFocus(33)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
                 
                 <!-- FANART -->
                 <control type="radiobutton" id="601" description="Show Fanart">
@@ -616,7 +779,7 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
-                <!-- ADDONS -->
+                <!-- HEADER OPTIONS -->
                 <control type="button" id="801" description="Change Header Default Text">
                     <label>31236</label>
                     <align>left</align>
@@ -624,7 +787,7 @@
                     <label2>$INFO[Skin.String(home.headertext)]</label2>
                     <onclick condition="IsEmpty(Skin.String(home.headertext))">Skin.SetString(home.headertext)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(home.headertext))">Skin.Reset(home.headertext)</onclick>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
@@ -634,12 +797,21 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(header.matchhighlight)</onclick>
                     <selected>Skin.HasSetting(header.matchhighlight)</selected>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
-         
                 
+                <control type="radiobutton" id="808" description="Disable Weather in Clock">
+                    <label>31177</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
+                    <selected>!Skin.HasSetting(disable.weatherheader)</selected>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
                 
+                <!-- ADDONS -->
                 <control type="radiobutton" id="804" description="Tv Tunes">
                     <label>31144</label>
                     <align>left</align>
@@ -677,16 +849,6 @@
                     <font>Font-ListInfo</font>
                     <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
                     <selected>Skin.HasSetting(NextAired.Update)</selected>
-                    <visible>ControlGroup(3).HasFocus(36)</visible>
-                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
-                </control>
-                
-                <control type="radiobutton" id="808" description="Disable Weather in Clock">
-                    <label>31177</label>
-                    <align>left</align>
-                    <font>Font-ListInfo</font>
-                    <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
-                    <selected>!Skin.HasSetting(disable.weatherheader)</selected>
                     <visible>ControlGroup(3).HasFocus(36)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>

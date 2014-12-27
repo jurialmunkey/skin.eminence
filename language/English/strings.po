@@ -731,3 +731,11 @@ msgstr ""
 msgctxt "#31280"
 msgid "Automatically start artwork downloader after library update"
 msgstr ""
+
+msgctxt "#31281"
+msgid "Hubs"
+msgstr ""
+
+msgctxt "#31282"
+msgid "Header"
+msgstr ""
