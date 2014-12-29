@@ -148,9 +148,9 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                     </focusedlayout>
-                    <include condition="!stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">ContentRandomEpisodesWidget</include>
+                    <include condition="!stringcompare(Skin.String(tvshow.widget),path) + !stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">ContentRandomEpisodesWidget</include>
                     <include condition="stringcompare(Skin.String(tvshow.widget),recommended)">ContentRecommendedEpisodesWidget</include>
-                    <include condition="stringcompare(Skin.String(tvshow.widget),playlist)">ContentPlaylistEpisodesWidget</include>
+                    <include condition="stringcompare(Skin.String(tvshow.widget),playlist) | stringcompare(Skin.String(tvshow.widget),path)">ContentPlaylistEpisodesWidget</include>
                 </control>
 
             </control>

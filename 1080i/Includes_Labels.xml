@@ -235,12 +235,14 @@
     <variable name="MovieWidgetLabel">
         <value condition="stringcompare(Skin.String(movie.widget),recommended)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Skin.String(movie.widget),playlist)">$LOCALIZE[559]</value>
+        <value condition="stringcompare(Skin.String(movie.widget),path)">$LOCALIZE[573]</value>
         <value>$LOCALIZE[31112]</value>
     </variable>
     
     <variable name="TvShowWidgetLabel">
         <value condition="stringcompare(Skin.String(tvshow.widget),recommended)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Skin.String(tvshow.widget),playlist)">$LOCALIZE[559]</value>
+        <value condition="stringcompare(Skin.String(tvshow.widget),path)">$LOCALIZE[573]</value>
         <value>$LOCALIZE[31112]</value>
     </variable>
     

@@ -334,21 +334,24 @@
                     <label2>$VAR[MovieWidgetLabel]</label2>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick condition="!stringcompare(Skin.String(movie.widget),playlist) + !stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,recommended)</onclick>
-                    <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetString(movie.widget,random)</onclick>
+                    <onclick condition="!stringcompare(Skin.String(movie.widget),path) + !stringcompare(Skin.String(movie.widget),playlist) + !stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,recommended)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),path)">Skin.SetString(movie.widget,random)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetString(movie.widget,path)</onclick>
                     <onclick condition="stringcompare(Skin.String(movie.widget),recommended)">Skin.SetString(movie.widget,playlist)</onclick>
+                    
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="402" description="Movie Hub Playlist">
-                    <label>  -  $LOCALIZE[559]</label>
+                    <label>  -  $LOCALIZE[31283]</label>
                     <label2>$INFO[Skin.String(movie.widget.playlist)]</label2>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),playlist)">Skin.SetFile(movie.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <onclick condition="stringcompare(Skin.String(movie.widget),path)">Skin.SetString(movie.widget.playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <enable>stringcompare(Skin.String(movie.widget),playlist)</enable>
+                    <enable>stringcompare(Skin.String(movie.widget),playlist) | stringcompare(Skin.String(movie.widget),path)</enable>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
@@ -447,21 +450,24 @@
                     <label2>$VAR[TvShowWidgetLabel]</label2>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick condition="!stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
-                    <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,random)</onclick>
+                    <onclick condition="!stringcompare(Skin.String(tvshow.widget),path) + !stringcompare(Skin.String(tvshow.widget),playlist) + !stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,recommended)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),path)">Skin.SetString(tvshow.widget,random)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetString(tvshow.widget,path)</onclick>
                     <onclick condition="stringcompare(Skin.String(tvshow.widget),recommended)">Skin.SetString(tvshow.widget,playlist)</onclick>
+                    
                     <visible>ControlGroup(3).HasFocus(33)</visible>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
                 <control type="button" id="412">
-                    <label>  -  $LOCALIZE[559]</label>
+                    <label>  -  $LOCALIZE[31283]</label>
                     <label2>$INFO[Skin.String(tvshow.widget.playlist)]</label2>
                     <align>left</align>
                     <font>Font-ListInfo</font>
-                    <onclick>Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),playlist)">Skin.SetFile(tvshow.widget.playlist,.xsp|.m3u,special://profile/playlists/video/)</onclick>
+                    <onclick condition="stringcompare(Skin.String(tvshow.widget),path)">Skin.SetString(tvshow.widget.playlist)</onclick>
                     <visible>ControlGroup(3).HasFocus(33)</visible>
-                    <enable>stringcompare(Skin.String(tvshow.widget),playlist)</enable>
+                    <enable>stringcompare(Skin.String(tvshow.widget),playlist) | stringcompare(Skin.String(tvshow.widget),path)</enable>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 

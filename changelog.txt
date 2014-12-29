@@ -1,6 +1,6 @@
 [B]1.1.7[/B]
 Fully Customisable Hubs for Movies, TvShows and Music (resets previous customisations)
-
+Ability to change path for movies and tvshow hubs spotlight
 
 [B]1.1.6[/B]
 Transifex update

@@ -369,7 +369,7 @@
     
     <include name="ContentPlaylistMoviesWidget"><content target="video">$INFO[Skin.String(movie.widget.playlist)]</content></include>
     <include name="ContentPlaylistEpisodesWidget"><content target="video">$INFO[Skin.String(tvshow.widget.playlist)]</content></include>
-
+    
     <include name="ContentRecommendedMoviesWidget"><content target="video"><include>RecommendedMoviesWidget</include></content></include>
     <include name="ContentRecommendedEpisodesWidget"><content target="video"><include>RecommendedEpisodesWidget</include></content></include>
     

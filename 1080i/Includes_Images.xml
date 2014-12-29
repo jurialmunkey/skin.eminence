@@ -38,7 +38,8 @@
     
     <variable name="WidgetFanart">
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-        <value>$INFO[ListItem.Icon]</value>
+        <value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Thumb]</value>
     </variable>
     
     <variable name="PlayerBigIcon">
