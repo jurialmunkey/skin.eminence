@@ -12,7 +12,7 @@
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
             <control type="image" id="400">
                 <description>avatar</description>
-                <top>67</top>
+                <top>75</top>
                 <left>302</left>
                 <width>64</width>
                 <height>64</height>
@@ -44,7 +44,7 @@
             <control type="image" id="403">
                 <description>avatar</description>
                 <visible>false</visible>
-                <top>67</top>
+                <top>75</top>
                 <left>302</left>
                 <width>64</width>
                 <height>64</height>
@@ -55,7 +55,7 @@
             <control type="image" id="404">
                 <description>avatar</description>
                 <visible>false</visible>
-                <top>67</top>
+                <top>75</top>
                 <left>302</left>
                 <width>64</width>
                 <height>64</height>
@@ -66,7 +66,7 @@
             <control type="image" id="405">
                 <description>avatar</description>
                 <visible>false</visible>
-                <top>67</top>
+                <top>75</top>
                 <left>302</left>
                 <width>64</width>
                 <height>64</height>
