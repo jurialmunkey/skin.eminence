@@ -21,7 +21,7 @@
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
             <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
             <include>DialogVisibility</include>
-            <animation effect="slide" start="0" end="0,130" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
+            <visible>!Window.IsVisible(3067)</visible>
         </control>
    
         <control type="group">
@@ -29,7 +29,7 @@
             <posy>topoffset</posy>
             <visible>!Window.IsVisible(3065) + !Window.IsVisible(3078)</visible>
             <include>DialogVisibility</include>
-            <animation effect="slide" start="0" end="0,130" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
+            <visible>!Window.IsVisible(3067)</visible>
             <include>Animation.SlideOpen.Left</include>
             <control type="label" id="2" description="Info Label">
                 <include>DefSideLabelCoords</include>
@@ -40,7 +40,7 @@
         <control type="group">
             <posy>160</posy>
             <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-            <animation effect="slide" start="0" end="0,130" time="200" condition="Window.IsVisible(3067)">Conditional</animation>
+            <visible>!Window.IsVisible(3067)</visible>
             <include>DialogVisibility</include>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>

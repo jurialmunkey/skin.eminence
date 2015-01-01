@@ -26,7 +26,7 @@
             <posx>251</posx>
             <posy>280</posy>
             <animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-XBMC_Lyrics-main.xml)]</visible>
+            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
             <include>Animation.SlideOpen.LeftToRight</include>
             <control type="image">
                 <width>1416</width>
@@ -73,7 +73,7 @@
                 <align>justify</align>
                 <font>Font-ListInfo</font>
                 <label>$VAR[MusicOSDPlot]</label>
-                <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
+                <visible>!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
             </control>
             
             <control type="label">

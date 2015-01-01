@@ -101,7 +101,74 @@
 
                     </focusedlayout>
                     <content>
-                        <item id="10">
+                        <item id="1">
+                            <description>All Movies</description>
+                            <label>31156</label>
+                            <icon>special://skin/extras/icons/title.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[31156])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/title.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,ActivateWindow(Videos,MovieTitles,return))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="2">
+                            <description>Recent Movies</description>
+                            <label>31109</label>
+                            <label2>20342</label2>
+                            <icon>special://skin/extras/icons/timer.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[31109])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/timer.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,ActivateWindow(Videos,RecentlyAddedMovies,return))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="3">
+                            <description>Genre Movies</description>
+                            <label>135</label>
+                            <label2>20342</label2>
+                            <icon>special://skin/extras/icons/genre.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[135])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/genre.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,ActivateWindow(Videos,MovieGenres,return))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="90">
+                            <description>Files Videos</description>
+                            <label>1214</label>
+                            <label2>10025</label2>
+                            <icon>special://skin/extras/icons/files.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[1214])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/files.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,ActivateWindow(videos,Files,return))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        
+                        <item id="91">
+                            <description>Playlists Videos</description>
+                            <label>136</label>
+                            <label2>10025</label2>
+                            <icon>special://skin/extras/icons/playlist.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[136])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/playlist.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,ActivateWindow(videos,special://videoplaylists/,return))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        <item id="92">
+                            <description>Update Videos</description>
+                            <label>653</label>
+                            <label2>10025</label2>
+                            <icon>special://skin/extras/icons/update.png</icon>
+                            <onclick>Skin.SetString(moviehub.1.Label,$LOCALIZE[653])</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Icon,special://skin/extras/icons/update.png)</onclick>
+                            <onclick>Skin.SetString(moviehub.1.Path,UpdateLibrary(video))</onclick>
+                            <onclick>Close</onclick>
+                        </item>
+                        
+                        
+                        <item id="93">
                             <description>Custom Addon</description>
                             <label>31163</label>
                             <label2>24001</label2>
@@ -116,7 +183,7 @@
                             <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
                         </item>
                         
-                        <item id="13">
+                        <item id="94">
                             <description>Custom Video Playlist</description>
                             <label>31163</label>
                             <label2>20012</label2>
@@ -129,7 +196,7 @@
                             <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
                         </item>
                         
-                        <item id="33">
+                        <item id="95">
                             <description>Custom Fav</description>
                             <label>31163</label>
                             <label2>1036</label2>
@@ -138,7 +205,10 @@
                             <onclick>Skin.SetBool($INFO[Window(3067).Property(item),,.enabled])</onclick>
                         </item>
 
-                        <item id="15">
+
+
+
+                        <item id="96">
                             <description>Custom Path</description>
                             <label>31164</label>
                             <label2>748</label2>
@@ -147,7 +217,7 @@
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.Path])</onclick>
                         </item>
                         
-                        <item id="16">
+                        <item id="97">
                             <description>Custom Label</description>
                             <label>31164</label>
                             <label2>13334</label2>
@@ -155,7 +225,7 @@
                             <onclick>Skin.SetString($INFO[Window(3067).Property(item),,.label])</onclick>
                         </item>
                         
-                        <item id="18">
+                        <item id="98">
                             <description>Custom Icon</description>
                             <label>31164</label>
                             <label2>31165</label2>
@@ -165,18 +235,7 @@
                         </item>
 
                         
-                        <item id="17">
-                            <description>Remove</description>
-                            <label>117</label>
-                            <icon>special://skin/extras/icons/forbidden.png</icon>
-                            <onclick>Skin.Reset($INFO[Window(3067).Property(item),,.label])</onclick>
-                            <onclick>Skin.Reset($INFO[Window(3067).Property(item),,.icon])</onclick>
-                            <onclick>Skin.Reset($INFO[Window(3067).Property(item),,.enabled])</onclick> 
-                            <onclick>Close</onclick>
-                                                
-                        </item>
-                        
-                        <item id="18">
+                        <item id="99">
                             <description>Done</description>
                             <label>186</label>
                             <icon>special://skin/extras/icons/close.png</icon>
