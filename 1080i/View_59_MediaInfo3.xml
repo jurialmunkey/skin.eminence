@@ -11,7 +11,7 @@
         <control type="group">
             <posx>56r</posx>
             <posy>8</posy>
-            <include>WatchedImage</include>
+            <include>WatchedImageList</include>
         </control>
     </include>
     <include name="View_59_MediaInfo3">
@@ -154,7 +154,7 @@
                                 <control type="group">
                                     <posx>56r</posx>
                                     <posy>8</posy>
-                                    <include>WatchedImage</include>
+                                    <include>WatchedImageList</include>
                                 </control>
                             </control>
                             <control type="group">

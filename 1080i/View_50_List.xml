@@ -52,7 +52,7 @@
                             <control type="group">
                                 <posx>10</posx>
                                 <posy>8</posy>
-                                <include>WatchedImage</include>
+                                <include>WatchedImageList</include>
                             </control>
                             <control type="label">
                                 <posx>64</posx>
@@ -121,7 +121,7 @@
                                 <control type="group">
                                     <posx>10</posx>
                                     <posy>8</posy>
-                                    <include>WatchedImage</include>
+                                    <include>WatchedImageList</include>
                                 </control>
                                 <control type="label">
                                     <posx>64</posx>
@@ -166,7 +166,7 @@
                                 <control type="group">
                                     <posx>10</posx>
                                     <posy>8</posy>
-                                    <include>WatchedImage</include>
+                                    <include>WatchedImageList</include>
                                 </control>
                                 <control type="label">
                                     <posx>64</posx>

@@ -75,7 +75,7 @@
                         <control type="group">
                             <posx>72r</posx>
                             <posy>62r</posy>
-                            <include>WatchedImage</include>
+                            <include>WatchedImageList</include>
                             <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
 
@@ -117,7 +117,7 @@
                         <control type="group">
                             <posx>320</posx>
                             <posy>68r</posy>
-                            <include>WatchedImage</include>
+                            <include>WatchedImageList</include>
                             <animation effect="fade" start="100" end="50" condition="true">Conditional</animation>
                         </control>
                     </control>
@@ -176,7 +176,7 @@
                         <control type="group">
                             <posx>72r</posx>
                             <posy>62r</posy>
-                            <include>WatchedImage</include>
+                            <include>WatchedImageList</include>
                         </control>
                     </control>
                     
@@ -221,7 +221,7 @@
                         <control type="group">
                             <posx>320</posx>
                             <posy>68r</posy>
-                            <include>WatchedImage</include>
+                            <include>WatchedImageList</include>
                         </control>
                     </control>
                 </focusedlayout>
