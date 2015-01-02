@@ -39,9 +39,19 @@
         </focusedlayout>
     </include>
     <include name="PVRInfoPanel">
+        <control type="label">
+            <posx>1466</posx>
+            <posy>145</posy>
+            <width>492</width>
+            <align>right</align>
+            <font>Font-WidgetCategory</font>
+            <textcolor>SideLabel</textcolor>
+            <label>$INFO[Control.GetLabel(28)]</label>
+        </control>
         <control type="group">
             <posx>974</posx>
             <posy>listy</posy>
+            
             <control type="image">
                 <width>492</width>
                 <height>globalh</height>
