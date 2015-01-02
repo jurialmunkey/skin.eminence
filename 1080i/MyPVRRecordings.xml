@@ -4,7 +4,6 @@
     <background>0</background>
     <defaultcontrol always="true">50</defaultcontrol>
     <views>50</views>
-    
     <controls>
         <include>GlobalBackground</include>
         <include>GlobalTopBar</include>

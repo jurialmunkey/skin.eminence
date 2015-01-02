@@ -3,7 +3,7 @@
 <window type="window" id="3204">
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
-    <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,PVR-32-11,home)</onload>
+    <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,tvchannels,home)</onload>
     <onload>SetProperty(previoushub,3204,home)</onload>
     <onunload>ClearProperty(librarynode,home)</onunload>
     <controls>
@@ -44,7 +44,7 @@
                     <include>QuickNavPVRHub</include>
                 </content>
             </control>
-                <control type="label">
+            <control type="label">
                 <posx>18</posx>
                 <posy>145</posy>
                 <width>690</width>
@@ -149,7 +149,8 @@
                     </itemlayout>
                     <focusedlayout width="933" height="537">
                     </focusedlayout>
-                    <content target="video">pvr://recordings/-1/</content>
+                    <!--<content target="video">pvr://recordings/-1/</content>-->
+                    <content target="video">pvr://recordings/</content>
                 </control>
                 <control type="image">
                     <posx>11</posx>

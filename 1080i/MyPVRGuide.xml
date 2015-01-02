@@ -4,11 +4,11 @@
     <background>0</background>
     <defaultcontrol always="true">10</defaultcontrol>
     <views>10</views>
-    
     <controls>
         <include>GlobalBackground</include>
         <include>GlobalTopBar</include>
         <include>PVRSideMenu</include>
+        
         <control type="group">
             <posy>topoffset</posy>
             <posx>horzpad</posx>

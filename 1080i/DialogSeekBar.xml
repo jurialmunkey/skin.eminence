@@ -25,9 +25,11 @@
         <control type="group" description="MusicVis">
             <posx>251</posx>
             <posy>280</posy>
+            <visible>false</visible>
             <animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
             <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
-            <include>Animation.SlideOpen.LeftToRight</include>
+            <include>Animation.FadeIn.Up</include>
+            <include>Animation.FadeOut</include>
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
@@ -435,6 +437,7 @@
             <posy>1080</posy>
             <animation effect="slide" start="0" end="0,-80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
             <animation effect="slide" end="0,-280" time="200" condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
+            <animation effect="slide" end="0,-280" time="200" condition="Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]">Conditional</animation>
             <control type="image">
                 <width>1920</width>
                 <height>364</height>    

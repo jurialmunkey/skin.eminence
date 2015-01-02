@@ -1,6 +1,7 @@
 [B]1.1.8[/B]
 Kaitoast changes
 Fix lyrics window
+Fix pvr hub back functions
 
 [B]1.1.7[/B]
 Fully Customisable Hubs for Movies, TvShows and Music (resets previous customisations)
