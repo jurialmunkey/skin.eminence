@@ -501,7 +501,27 @@
                 </control>
             </control>
             
-        
+            <control type="group" description="InfoBottomMusic">
+                <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
+                <control type="image">
+                    <top>16</top>
+                    <left>16</left>
+                    <height>248</height>
+                    <width>248</width>
+                    <texture background="true" fallback="special://skin/extras/icons/film.png">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">scale</aspectratio>
+                    <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
+                </control>
+                <control type="grouplist">
+                    <orientation>vertical</orientation>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>287</left>
+                    <include>DefOSDInfoContentMusic</include>
+                </control>
+            </control>
+            
             <control type="progress" id="23">
                 <description>Progress Bar</description>
                 <posy>-16</posy>
