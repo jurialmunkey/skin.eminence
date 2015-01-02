@@ -23,7 +23,7 @@
             <align>right</align>
             <aligny>center</aligny>
             <font>Font-ListInfo-Small</font>
-            <label>$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect]</label>
+            <label>[UPPERCASE]$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD,,  •  ]$INFO[VideoPlayer.VideoResolution,,  •  ]$INFO[VideoPlayer.VideoCodec,,  •  ]$INFO[VideoPlayer.VideoAspect][/UPPERCASE]</label>
         </control>
         
         <control type="textbox">
@@ -72,7 +72,7 @@
             <align>right</align>
             <aligny>center</aligny>
             <font>Font-ListInfo-Small</font>
-            <label>$INFO[MusicPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD]</label>
+            <label>[UPPERCASE]$INFO[VideoPlayer.AudioCodec,,  •  ]$VAR[AudioChannelsOSD][/UPPERCASE]</label>
         </control>
         
         <control type="textbox">
