@@ -5,10 +5,9 @@
     <allowoverlay>yes</allowoverlay>
     <include>Animation.SlideOpen.Left</include>
     <onunload>ClearProperty(9000Focus,home)</onunload>
-    
     <onload condition="Skin.HasSetting(ActivateTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
     <controls>
-
+    
         <control type="button">
             <posy>600</posy>
             <posx>1770</posx>
@@ -532,14 +531,12 @@
             </control>
             
             <control type="panel" id="50">
-                
                 <posx>2018</posx>
                 <posy>listy</posy>
                 <width>1534</width>
                 <height>700</height>
                 <onback>9000</onback>
                 <onleft>9000</onleft>
-                <onright>50</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <viewtype label="Wall">list</viewtype>
@@ -583,7 +580,7 @@
 
                 </itemlayout>
                 <focusedlayout width="291" height="wallposterhlist">
-
+                    
                     <control type="image">
                         <height>wallposterhborder</height>
                         <width>281</width>

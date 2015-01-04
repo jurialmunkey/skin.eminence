@@ -204,7 +204,7 @@
         <value condition="Container.Content(genres)">$LOCALIZE[135]</value>
         <value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
         <value condition="Container.Content(actors)">$LOCALIZE[344]</value>
-        <value condition="Container.Content(sets)">$LOCALIZE[20434]</value>
+        <value condition="Container.Content(sets)">$LOCALIZE[31207]</value>
         <value condition="Container.Content(countries)">$LOCALIZE[20451]</value>
         <value condition="Container.Content(episodes)">$LOCALIZE[20360]</value>
         <value condition="Container.Content(seasons)">$LOCALIZE[33054]</value>

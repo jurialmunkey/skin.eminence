@@ -747,3 +747,7 @@ msgstr ""
 msgctxt "#31284"
 msgid "Show extended info at bottom of screen"
 msgstr ""
+
+msgctxt "#31285"
+msgid "Premiere Date"
+msgstr ""
