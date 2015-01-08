@@ -817,6 +817,16 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="radiobutton" id="821" description="Disable Clock">
+                    <label>31286</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(disable.clockheader)</onclick>
+                    <selected>!Skin.HasSetting(disable.clockheader)</selected>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
                 <control type="radiobutton" id="808" description="Disable Weather in Clock">
                     <label>31177</label>
                     <align>left</align>
@@ -824,6 +834,7 @@
                     <onclick>Skin.ToggleSetting(disable.weatherheader)</onclick>
                     <selected>!Skin.HasSetting(disable.weatherheader)</selected>
                     <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <enable>!Skin.HasSetting(disable.clockheader)</enable>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 

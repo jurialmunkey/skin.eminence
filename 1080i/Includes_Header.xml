@@ -334,6 +334,7 @@
         <control type="group">
             <posx>400r</posx>
             <visible>!Window.IsActive(DialogExtendedProgressBar.xml)</visible>
+            <visible>!Skin.HasSetting(disable.clockheader)</visible>
             <include>Animation.HeaderDialog</include>
             <animation effect="slide" start="0" end="92" condition="Skin.HasSetting(disable.weatherheader)">Conditional</animation>
             <control type="label">
@@ -362,7 +363,7 @@
                 <visible>!Skin.HasSetting(disable.weatherheader)</visible>
             </control>
             <control type="label">
-                <posx>220</posx>
+                <posx>270</posx>
                 <posy>25</posy>
                 <width>300</width>
                 <height>100</height>
@@ -371,9 +372,9 @@
                 <aligny>top</aligny>
                 <label>$INFO[System.Time(hh:mm)]</label>
                 <textcolor>$VAR[TopBarMainLabel]</textcolor>
-                <animation effect="slide" start="0" end="50" condition="IsEmpty(Control.GetLabel(9999))">Conditional</animation>
+                <animation effect="slide" start="0" end="-58" condition="!IsEmpty(Control.GetLabel(9998))">Conditional</animation>
             </control>
-            <control type="label" id="9999">
+            <control type="label" id="9998">
                 <posx>270</posx>
                 <posy>71</posy>
                 <width>100</width>

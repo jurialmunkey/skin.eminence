@@ -1,5 +1,6 @@
 [B]1.1.9[/B]
 Add more hub option presets
+Add OSD PVR Guide
 
 [B]1.1.8[/B]
 Kaitoast changes

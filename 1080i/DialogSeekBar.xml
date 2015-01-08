@@ -13,11 +13,11 @@
             <include>Animation.FadeOut</include>
             <texture colordiffuse="Background">common/white.png</texture>
             <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-            <visible>Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
         <control type="group">
             <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
-            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml) | Window.IsActive(DialogKaiToast.xml)]</visible>
+            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml) | Window.IsActive(DialogKaiToast.xml)]</visible>
             <include>GlobalVignette</include>
         </control>
 
@@ -431,7 +431,7 @@
         </control>
         
         <control type="group">
-            <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(musicosd) | Window.IsActive(videoosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+            <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(musicosd) | Window.IsActive(videoosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
             <animation effect="fade" start="0" end="100" time="200">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
             <posy>1080</posy>
@@ -563,7 +563,7 @@
         </control>
         
         <control type="group">
-            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)] | Window.IsActive(DialogPVRGuideInfo.xml)</visible>
             <animation type="Visible">
                 <effect type="slide" start="0,-24" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" time="200"/>
