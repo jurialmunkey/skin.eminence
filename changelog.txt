@@ -2,6 +2,7 @@
 Add more hub option presets
 Add OSD PVR Guide
 Highlight colour for pvr osd channels/guide
+Fix hub option height
 
 [B]1.1.8[/B]
 Kaitoast changes
