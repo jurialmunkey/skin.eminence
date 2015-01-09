@@ -41,7 +41,7 @@
                 <align>left</align>
                 <textcolor>PanelFG</textcolor>
                 <font>Font-ListInfo</font>
-                <label>$INFO[System.Time,,   ]$INFO[System.Date]</label>
+                <label>$INFO[Container(11).ListItem.StartDate]</label>
             </control>
 
             <control type="list" id="11">
@@ -80,6 +80,16 @@
                         <selectedcolor>PanelFG-NF</selectedcolor>
                         <label>$INFO[ListItem.StartTime,,   ]</label>
                     </control>
+                    <control type="image">
+                        <centertop>54</centertop>
+                        <centerright>64</centerright>
+                        <width>128</width>
+                        <height>128</height>
+                        <texture>special://skin/extras/icons/timer.png</texture>
+                        <colordiffuse>Selected</colordiffuse>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                        <aspectratio aligny="center" align="center">keep</aspectratio>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="120" width="667">
                     <control type="image">
@@ -94,6 +104,16 @@
                         <aspectratio aligny="top">center</aspectratio>
                         <animation effect="fade" start="100" end="10" condition="true">Conditional</animation>
                         <visible>ListItem.IsPlaying</visible>
+                    </control>
+                    <control type="image">
+                        <centertop>54</centertop>
+                        <centerright>64</centerright>
+                        <width>128</width>
+                        <height>128</height>
+                        <texture>special://skin/extras/icons/timer.png</texture>
+                        <colordiffuse>Selected</colordiffuse>
+                        <visible>ListItem.HasTimer | ListItem.IsRecording</visible>
+                        <aspectratio aligny="center" align="center">keep</aspectratio>
                     </control>
                     <control type="label">
                         <left>33</left>
