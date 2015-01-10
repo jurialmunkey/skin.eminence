@@ -194,7 +194,6 @@
         <value condition="Window.IsVisible(favourites)">$LOCALIZE[1036]</value>
         <value condition="substring(ListItem.FolderPath,plugin://,left)">$INFO[Container.FolderName]</value>
         <value condition="substring(Container.FolderPath,addons://,left) | Window.IsVisible(MyPrograms.xml)">$LOCALIZE[24001]</value>
-        <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/inprogressshows.xml/)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[31109]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[31109]</value>
@@ -213,6 +212,8 @@
         <value condition="Container.Content(albums)">$LOCALIZE[132]</value>
         <value condition="Container.Content(artists)">$LOCALIZE[133]</value>
         <value condition="Container.Content(songs)">$LOCALIZE[134]</value>
+        <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
+        <value condition="substring(Container.FolderPath,PartyMode)">$LOCALIZE[589]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://) | Window.IsVisible(MyPics.xml)">$LOCALIZE[1214]</value>
     </variable>
     
