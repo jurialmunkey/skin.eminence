@@ -890,6 +890,17 @@
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
                 
+                <control type="button" id="812" description="Startup Video">
+                    <label>31287</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <label2>$INFO[Skin.String(StartupPlaylist)]</label2>
+                    <onclick condition="IsEmpty(Skin.String(StartupPlaylist))">Skin.SetFile(StartupPlaylist)</onclick>
+                    <onclick condition="!IsEmpty(Skin.String(StartupPlaylist))">Skin.Reset(StartupPlaylist)</onclick>
+                    <visible>ControlGroup(3).HasFocus(36)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
+                
                 <!-- ADVANCED -->
         
                 <control type="radiobutton" id="803" description="Kiosk mode">
