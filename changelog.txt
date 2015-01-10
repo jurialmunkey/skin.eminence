@@ -4,7 +4,7 @@ Add OSD PVR Guide
 Highlight colour for pvr osd channels/guide
 Fix hub option height
 Fix preset list
-Fix side label to show container content not "playlist"
+Side label now shows playlist name
 
 [B]1.1.8[/B]
 Kaitoast changes

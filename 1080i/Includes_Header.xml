@@ -21,6 +21,8 @@
         <value condition="Player.HasAudio + IsEmpty(Window(10025).Property(TvTunesIsAlive))">$INFO[Player.Artist]</value>
         <value condition="substring(Container.FolderPath,plugin://,left)">$LOCALIZE[24000]</value>
         <value condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml)">$LOCALIZE[31175]</value>
+        <value condition="substring(Container.FolderPath,library://,left) | substring(Container.FolderPath,special://videoplaylists/)">$LOCALIZE[15100]</value>
+        <value condition="substring(Container.FolderPath,special://videoplaylists/)">$LOCALIZE[15100]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://)">$LOCALIZE[1214]</value>
         <value condition="!IsEmpty(Skin.String(home.headertext)) + [Window.IsVisible(home) | IsEmpty(Container.NumItems) | Control.HasFocus(9500) | Control.HasFocus(9501)]">$INFO[Skin.String(home.headertext)]</value>
         <value condition="Window.IsVisible(home) | IsEmpty(Container.NumItems) | Control.HasFocus(9500) | Control.HasFocus(9501)">$LOCALIZE[31176]</value>
@@ -59,8 +61,8 @@
         <value condition="Window.IsVisible(3202)">special://skin/extras/icons/tv.png</value>
         <value condition="Window.IsVisible(3203)">special://skin/extras/icons/songs.png</value>
         
-        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">special://skin/extras/icons/film.png</value>
-        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">special://skin/extras/icons/tv.png</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,videodb://movies) | substring(Container.FolderPath,videodb://recentlyaddedmovies)">special://skin/extras/icons/film.png</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,videodb://tvshows) | substring(Container.FolderPath,videodb://recentlyaddedepisodes)]">special://skin/extras/icons/tv.png</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">special://skin/extras/icons/video-addons.png</value>
         <value condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(3204)">special://skin/extras/icons/livetv.png</value>
         <value condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">special://skin/extras/icons/songs.png</value>
@@ -84,8 +86,8 @@
         <value condition="Window.IsVisible(3202)">$LOCALIZE[20343]</value>
         <value condition="Window.IsVisible(3203)">$LOCALIZE[2]</value>
         
-        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
-        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,tvshows) | substring(Container.FolderPath,episodes)]">$LOCALIZE[20343]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + substring(Container.FolderPath,videodb://movies) | substring(Container.FolderPath,videodb://recentlyaddedmovies)">$LOCALIZE[20342]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml) + [substring(Container.FolderPath,videodb://tvshows) | substring(Container.FolderPath,videodb://recentlyaddedepisodes)]">$LOCALIZE[20343]</value>
         <value condition="Window.IsVisible(MyVideoNav.xml)">$LOCALIZE[3]</value>
         <value condition="Window.IsVisible(MyPVRChannels.xml) | Window.IsVisible(MyPVRSearch.xml) | Window.IsVisible(MyPVRTimers.xml) | Window.IsVisible(MyPVRGuide.xml) | Window.IsVisible(MyPVRRecordings.xml) | Window.IsVisible(3204)">$LOCALIZE[31104]</value>
         <value condition="Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyMusicSongs.xml)">$LOCALIZE[2]</value>

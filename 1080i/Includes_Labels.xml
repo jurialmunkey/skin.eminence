@@ -192,6 +192,7 @@
     
     <variable name="NavSideLabel">
         <value condition="Window.IsVisible(favourites)">$LOCALIZE[1036]</value>
+        <value condition="substring(Container.FolderPath,.xsp,right) + !substring(Container.FolderPath,PartyMode)">$INFO[Container.FolderName]</value>
         <value condition="substring(ListItem.FolderPath,plugin://,left)">$INFO[Container.FolderName]</value>
         <value condition="substring(Container.FolderPath,addons://,left) | Window.IsVisible(MyPrograms.xml)">$LOCALIZE[24001]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/inprogressshows.xml/)">$LOCALIZE[31110]</value>
@@ -214,7 +215,9 @@
         <value condition="Container.Content(songs)">$LOCALIZE[134]</value>
         <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
         <value condition="substring(Container.FolderPath,PartyMode)">$LOCALIZE[589]</value>
+        <value condition="substring(Container.FolderPath,library://,left)">$LOCALIZE[15100]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://) | Window.IsVisible(MyPics.xml)">$LOCALIZE[1214]</value>
+        <value>$LOCALIZE[15100]</value>
     </variable>
     
     <variable name="PVRSideLabel">
