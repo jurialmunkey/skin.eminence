@@ -7,29 +7,29 @@
     <controls>
 
         <control type="group">
-            <animation effect="slide" start="0,700" end="0" time="200">WindowOpen</animation>
+            <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
-            
+            <posy>210</posy>
             <control type="image">
-                <posy>210</posy>
                 <width>1920</width>
                 <height>764</height>
-                <texture border="5" colordiffuse="PanelBG2">common/white.png</texture>
+                <texture colordiffuse="PanelBG">common/white.png</texture>
+                <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
             
             <control type="label" id="20">
                 <description>Header Label</description>
-                <textcolor>TopBarIcon</textcolor>
+                <textcolor>PanelFG</textcolor>
                 <include>DefSettingsHeader</include>
-                <label>31032</label>
+                <label>$LOCALIZE[250] $LOCALIZE[13388]</label>
                 
             </control>
 
             <control type="list" id="2">
                 <description>Preset List</description>
-                <posx>15</posx>
-                <posy>87</posy>
-                <width>870</width>
+                <posx>265</posx>
+                <posy>150</posy>
+                <width>1390</width>
                 <height>552</height>
                 <onleft>noop</onleft>
                 <onright>noop</onright>

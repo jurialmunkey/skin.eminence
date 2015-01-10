@@ -5,38 +5,29 @@
     <allowoverlay>yes</allowoverlay>
     <zorder>10</zorder>
     <controls>
-        <control type="image">
-            <posx>-10</posx>
-            <posy>202</posy>
-            <width>1940</width>
-            <height>764</height>
-            <texture colordiffuse="PanelBG">common/white.png</texture>
-            <animation effect="fade" end="90" condition="true">Conditional</animation>
-            <include>Animation.FadeIn.Up</include>
-            <include>Animation.FadeOut</include>
-            <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog)">Conditional</animation>
-        </control>
         <control type="group">
-            <posy>202</posy>
+            <posy>210</posy>
             <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
             <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
-
-            
-            <control type="label" id="2">
-                <description>Settings</description>
-                <posx>250</posx>
-                <posy>48</posy>
-                <width>870</width>
-                <align>left</align>
-                <font>Font-DialogHeader</font>
-                <textcolor>TopBarIcon</textcolor>
+            <control type="image">
+                <width>1920</width>
+                <height>764</height>
+                <texture colordiffuse="PanelBG">common/white.png</texture>
+                <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
-
+            
+            <control type="label">
+                <description>Header Label</description>
+                <textcolor>PanelFG</textcolor>
+                <include>DefSettingsHeader</include>
+                <label>5</label>
+            </control>
+ 
             <control type="grouplist" id="5">
                 <description>Control Area</description>
                 <posx>265</posx>
-                <posy>120</posy>
+                <posy>150</posy>
                 <width>1390</width>
                 <height>549</height>
                 <itemgap>3</itemgap>
