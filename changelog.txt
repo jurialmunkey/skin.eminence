@@ -1,5 +1,6 @@
 [B]1.2.0[/B]
 Startup video option
+Fix AM PM clock issue
 
 [B]1.1.9[/B]
 Add more hub option presets

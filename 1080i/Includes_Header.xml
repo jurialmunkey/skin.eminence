@@ -373,9 +373,9 @@
                 <aligny>top</aligny>
                 <label>$INFO[System.Time(hh:mm)]</label>
                 <textcolor>$VAR[TopBarMainLabel]</textcolor>
-                <animation effect="slide" start="0" end="-58" condition="!IsEmpty(Control.GetLabel(9998))">Conditional</animation>
+                <animation effect="slide" start="0" end="-58" condition="!IsEmpty(System.Time(xx))">Conditional</animation>
             </control>
-            <control type="label" id="9998">
+            <control type="label">
                 <posx>270</posx>
                 <posy>71</posy>
                 <width>100</width>
@@ -385,6 +385,7 @@
                 <textcolor>$VAR[TopBarSubLabel]</textcolor>
                 <align>right</align>
                 <label>$INFO[System.Time(xx)]</label>
+                <visible>!IsEmpty(System.Time(xx))</visible>
             </control>
             <control type="label">
                 <posx>270</posx>
