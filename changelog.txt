@@ -1,6 +1,7 @@
 [B]1.2.0[/B]
 Startup video option
 Fix AM PM clock issue
+Seekbar progress cache
 
 [B]1.1.9[/B]
 Add more hub option presets

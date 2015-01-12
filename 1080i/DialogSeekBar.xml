@@ -524,7 +524,19 @@
                     <include>DefOSDInfoContentMusic</include>
                 </control>
             </control>
-            
+            <control type="progress">
+                <description>Progress Bar</description>
+                <posy>-16</posy>
+                <width>1920</width>
+                <height>16</height>
+                <info>Player.ProgressCache</info>
+                <texturebg colordiffuse="00000000">osd/progress-bg.png</texturebg>
+                <lefttexture colordiffuse="Keyboard">osd/progress-end.png</lefttexture>
+                <midtexture colordiffuse="Keyboard">osd/progress-end.png</midtexture>
+                <righttexture colordiffuse="Keyboard">osd/progress-end.png</righttexture>
+                <visible>true</visible>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+            </control>
             <control type="progress" id="23">
                 <description>Progress Bar</description>
                 <posy>-16</posy>
