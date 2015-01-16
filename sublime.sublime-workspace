@@ -1,0 +1,1049 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"meta_descriptio",
+				"meta_description_long"
+			],
+			[
+				"inova_ah_pr",
+				"inova_ah_products_meta"
+			],
+			[
+				"descr",
+				"description_long"
+			],
+			[
+				"pick",
+				"pickup_date"
+			],
+			[
+				"setPick",
+				"setPickupDate"
+			],
+			[
+				"setExcl",
+				"setExcludeTypeBonusProducts  (function)"
+			],
+			[
+				"su",
+				"subcats"
+			],
+			[
+				"confir",
+				"confirmRes"
+			],
+			[
+				"customer",
+				"customerInfo"
+			],
+			[
+				"subor",
+				"subordersInfo"
+			],
+			[
+				"subordesR",
+				"subordersRes"
+			],
+			[
+				"suborder",
+				"subordersSql"
+			],
+			[
+				"order",
+				"ordersRes"
+			],
+			[
+				"min_days",
+				"min_days_msg"
+			],
+			[
+				"selec",
+				"selectedDate"
+			],
+			[
+				"array_wal",
+				"array_walk_recursive"
+			],
+			[
+				"function",
+				"create_function"
+			],
+			[
+				"pre",
+				"previous_orders"
+			],
+			[
+				"previ",
+				"previous_turnover"
+			],
+			[
+				"Diepvri",
+				"Diepvriesproducten"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"toggle li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"line",
+				"Emmet: Merge Lines"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"edit",
+				"Edit Preferences: Edit Settings…"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 544.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"f",
+			"SFTP EPSV",
+			"EPSV",
+			"close",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence",
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i"
+	],
+	"file_history":
+	[
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i/Includes_Header.xml",
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i/Custom_Hub_Programs.xml",
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i/Custom_SetItem.xml",
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i/Includes_WindowContent.xml",
+		"/C/Users/temp/AppData/Roaming/Kodi/addons/skin.eminence/1080i/Startup.xml",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/order.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/css/ie9.css",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/dev.ah-afhaalpunt.nl.sublime-project",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/DeliverTime/class.DeliverTime.php",
+		"/C/Users/temp/Desktop/kristal glazen.jpg",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/test.php",
+		"/C/Users/temp/Documents/GitHub/skin.eminence/1080i/Custom_SetHub.xml",
+		"/C/Users/temp/Documents/GitHub/skin.eminence/1080i/Custom_WidgetHub.xml",
+		"/C/Users/temp/Documents/GitHub/skin.eminence/1080i/Includes_Hub.xml",
+		"/C/Users/temp/Documents/GitHub/skin.eminence/1080i/Custom_Hub_Movies.xml",
+		"/C/Users/temp/AppData/Roaming/Kodi/userdata/keymaps/keymap.xml",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigproduct1.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/wijzigmodules.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/js/afhaal-cart.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/js/analytics.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/js/sayt.min.jquery.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/css/simplemodal.css",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/snippets/aside-cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/ajax.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cache/logs/INGAdvancedConnector.log",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/index.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/process.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/mail-payment-reminder.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigorder1.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigklanten2.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/init.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/environment.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/connect.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/includes/ajax_products.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/users.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/_notes/dwsync.xml",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/iDealV3/MerchantReturn.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/.user.ini",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/js/tiny_mce/plugins/xhtmlxtras/acronym.htm",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/maintenance-cache-rotater.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/iban/utils/convert-registry.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.Cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/test.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/maintenance-delete-redundant-files.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/js/tiny_mce/plugins/fullscreen/fullscreen.htm",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/customer-order-form.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/omnikassa/report.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/routing.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/bestandsbeheer.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/js/tiny_mce/langs/nl.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/build-sitemap.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/css/bootstrap-ipad.css",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/includes/twitter_EpiOAuth.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/js/bootstrap-init.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/css/bootstrap.css",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/css/bootstrap-afhaalpunt.css",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/lib/class.Settings.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/deburen/classes.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/.htaccess",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/product-detail.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/home.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/template.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/test-mutations.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/ajax.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/functions.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iPad/ajax.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/ajax2.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/catalog.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.Customer.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.AHProduct.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigorder2.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/tmp-cron.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/sftp-config.json",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/js/tiny_mce/tiny_mce_popup.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/settings.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/functions.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/maintenance-transaction-status.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/customer-cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/shop_cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigorder7.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/bonus.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/generate_javascript.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/snippets/catalog-index.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/assets/js/afhaal-order.js",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/DeliverMessage/edit.php",
+		"/M/Projecten/Albert Heijn/Backup/ah-afhaalpunt.nl/html/shop_confirm.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/customer-orders.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/shop_confirm.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/shop_history.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/shops-overview.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/app/shop.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.Crawler.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/maintenance-update-bonus.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/bbq.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/.user.ini",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/shelves.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/snippets/header-carousel.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Header/wijzigheader3.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigproduct3.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Winkel/wijzigproduct2.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/home.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/snippets/header-catalog.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/Shop/class.Shop.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.Order.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/lib/class.CMeleon_user.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/lib/class.Singleton.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/snippets/aside-categories.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/catalog-products.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iPad/index.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/catalog-new.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/catalog-search.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/html/templates/catalog-customer.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iPad/content.php",
+		"/Z/Prive/Github/Clarity/Platformer Pack/Player/p1_walk/p1_walk.json",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cache/crawlers/catalog.txt",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/maintenance-clean-temporders.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/cron/mail-open-cart.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/clean",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/crawlers/kerst2014.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iDeal/class.iDeal.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iDeal/iDEAL_INGAdvanced_PHP_Code v3.3.1/Exceptions/iDEALException.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/beheer/modules/iDeal/iDEAL_INGAdvanced_PHP_Code v3.3.1/iDEALConnector.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/iDealV3/Exceptions/iDEALException.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/sitemap.xml",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/onaccount.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/media/includes/product_image.php",
+		"/Z/Projecten/Albert Heijn/Sites/dev.ah-afhaalpunt.nl/includes/select_content.php"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\temp\\AppData\\Roaming\\Kodi\\addons\\skin.eminence",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl",
+			"M:\\Projecten\\Albert Heijn\\Backup\\dev.ah-afhaalpunt.nl",
+			"M:\\Projecten\\Albert Heijn\\Backup\\ah-afhaalpunt.nl",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\beheer",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\html\\templates",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl",
+			"M:\\Projecten\\Deli XL\\Sites\\generator.daily-break.nl",
+			"<open files>",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"Z:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\html\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\includes\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\assets",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl",
+			"M:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl",
+			"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Live TV",
+			"20342",
+			"3201",
+			"3205",
+			"3204",
+			"3201",
+			"Custom_Hub_Movies",
+			"product_locker",
+			"customer",
+			"meta_description_long",
+			"meta_description",
+			"200",
+			"$modal",
+			"</tr>",
+			"<td>",
+			"<tr>",
+			"<th>",
+			"meta_unit",
+			"meta_alcohol",
+			"product_ean",
+			"meta_storage",
+			"nutrition",
+			"meta_ingredients",
+			"meta_allergies",
+			"product_ean",
+			"product_unit",
+			"meta_description_long",
+			"product_description",
+			"product_title",
+			" => ",
+			"','",
+			"res",
+			"$CMeleon_user->data['sid']",
+			"Bereidingswijze",
+			"Bereiden",
+			"Bewaardadvies",
+			"Bereidingswijze",
+			"Bereiding",
+			"usage",
+			"Bereidingswijze",
+			"strong:contains(\"Bereidingswijze\")",
+			"submax",
+			"pr('test');",
+			"$bonus_date",
+			"next",
+			"bonus_enddate",
+			"product_bonus_enddate",
+			"2014-12-26",
+			"#home",
+			" $app->",
+			"staat voor u klaar",
+			"staat voor uw klaar",
+			"insertUser",
+			"saveUserAgent",
+			"customer_useragent",
+			"debug(",
+			"pr(",
+			"str_cron",
+			"'features",
+			"features",
+			"meta_usage",
+			"meta_storage",
+			"meta_supplier",
+			"table",
+			"col-sm-12",
+			"meta_description_long",
+			"meta_origin",
+			"alcohol",
+			"meta_alcohol",
+			"meta_ingredients",
+			"meta_unit",
+			"meta_description_long",
+			"$this->meta",
+			"$this->id",
+			"loadProductData",
+			"id",
+			"LAST_INSERT_ID",
+			"$meta",
+			"description",
+			"meta_description",
+			"$this",
+			"order_betalingstatus_provider",
+			"order_betalingsstatus_provider",
+			"date\\([^,]+\\)",
+			"date(",
+			"date\\s?\\([\\'\\\"]{1}[Nw]{1}[\\'\\\"]{1}\\)",
+			"<a href=\"/beheer/modules/Winkel/wijzigproduct2.php?pagina='.$artikelnr.'\" target=\"_blank\">'.$artikelnr.'</a>",
+			"<td>'.$artikelnr.'</td>",
+			"verpakkingskosten",
+			"We verpakken uw boodschappen in statiegeld verpakkingskosten. Bij inlevering van deze verpakkingskosten krijgt u uw statiegeld terug.",
+			"verpakkingskosten",
+			"tassen / kratten",
+			"tassen",
+			"refresh",
+			"small",
+			"shipment_msg",
+			"FROM		inova_temporders",
+			"getHtml",
+			"\\\"",
+			"\\t",
+			"\\n",
+			"\\r",
+			"#cart-content",
+			"span",
+			"$product->nomorebonus",
+			"lossLessBonus",
+			"getPriceNew",
+			"setExcludeTypeBonusProducts",
+			"pr(",
+			"$_SESSION['cart']",
+			"debug",
+			"$this->settings['useBonusPrice']",
+			"setUseBonusPrice",
+			"Uw BONUS korting",
+			"function getCart",
+			"getCart",
+			"function getCart",
+			"order-time-picker",
+			"Bonus producten zijn alleen geldig voor de huidige week.",
+			"date",
+			"bonusDateCheck",
+			"bonus_type",
+			"setExcludeDiscountProducts",
+			"pickup_date",
+			"setExcludeTypeBonusProducts",
+			"excludeTypeBonusProducts\nexcludeTypeBonusProducts\nexcludeTypeBonusProducts",
+			"excludeTypeBonusProducts\nexcludeTypeBonusProducts",
+			"excludeTypeBonusProducts"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<a href=\"/beheer/modules/Winkel/wijzigproduct2.php?pagina='.$artikelnr.'\" target=\"_blank\">'.$artikelnr.'</a>",
+			"verpakkingskosten",
+			"\"",
+			"",
+			"albertheij_dev",
+			"daily-break.nl",
+			"$CMeleon_user->is_inova()",
+			"",
+			"mysql --user=root --password=1234 --batch"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 270.0
+	},
+	"output.preferences_editor_help":
+	{
+		"height": 98.0
+	},
+	"output.sftp":
+	{
+		"height": 98.0
+	},
+	"project": "sublime.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"includes/image",
+				"includes\\image.php"
+			],
+			[
+				"includes/ima",
+				"includes\\image.php"
+			],
+			[
+				"enviro",
+				"app\\environment.php"
+			],
+			[
+				"proces",
+				"beheer\\process.php"
+			],
+			[
+				"test.",
+				"test.php"
+			],
+			[
+				"envi",
+				"app\\environment.php"
+			],
+			[
+				"test",
+				"test.php"
+			],
+			[
+				"ajax",
+				"includes\\ajax.php"
+			],
+			[
+				"process",
+				"beheer\\process.php"
+			],
+			[
+				"wijzigprod",
+				"beheer\\modules\\Winkel\\wijzigproduct3.php"
+			],
+			[
+				"wijzigpr",
+				"beheer\\modules\\Winkel\\wijzigproduct2.php"
+			],
+			[
+				"wijzigp",
+				"beheer\\modules\\Winkel\\wijzigproduct2.php"
+			],
+			[
+				"wizjig",
+				"beheer\\wijzigmodules.php"
+			],
+			[
+				"wijzigpro",
+				"beheer\\modules\\Winkel\\wijzigproduct2.php"
+			],
+			[
+				"includes/ajax",
+				"includes\\ajax.php"
+			],
+			[
+				"product-de",
+				"html\\templates\\product-detail.php"
+			],
+			[
+				"mutati",
+				"beheer\\modules\\Winkel\\mutaties.php"
+			],
+			[
+				"cron/test",
+				"cron\\test.php"
+			],
+			[
+				"ahpro",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"envir",
+				"app\\environment.php"
+			],
+			[
+				"functio",
+				"app\\functions.php"
+			],
+			[
+				"ahprodu",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"bonus",
+				"crawlers\\bonus.php"
+			],
+			[
+				"setting",
+				"app\\settings.php"
+			],
+			[
+				"assets/css/bootstrap-a",
+				"assets\\css\\bootstrap-afhaalpunt.css"
+			],
+			[
+				"templates/ho",
+				"html\\templates\\home.php"
+			],
+			[
+				"fun",
+				"app\\functions.php"
+			],
+			[
+				"funct",
+				"app\\functions.php"
+			],
+			[
+				"app/func",
+				"app\\functions.php"
+			],
+			[
+				"test.ph",
+				"test.php"
+			],
+			[
+				"class.ahp",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"tmp-cro",
+				"cron\\tmp-cron.php"
+			],
+			[
+				"wijzigorder2",
+				"beheer\\modules\\Winkel\\wijzigorder2.php"
+			],
+			[
+				"func",
+				"app\\functions.php"
+			],
+			[
+				"setti",
+				"app\\settings.php"
+			],
+			[
+				"functi",
+				"app\\functions.php"
+			],
+			[
+				"",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"class.ah",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"sett",
+				"app\\settings.php"
+			],
+			[
+				"customer-or",
+				"html\\templates\\customer-order-form.php"
+			],
+			[
+				"afhaal-ca",
+				"assets\\js\\afhaal-cart.js"
+			],
+			[
+				"customer-o",
+				"html\\templates\\customer-order-form.php"
+			],
+			[
+				"afhaal-or",
+				"assets\\js\\afhaal-order.js"
+			],
+			[
+				"catalog-in",
+				"html\\snippets\\catalog-index.php"
+			],
+			[
+				"class.car",
+				"lib\\class.Cart.php"
+			],
+			[
+				"ah",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"ahprod",
+				"lib\\class.AHProduct.php"
+			],
+			[
+				"crawlers/bo",
+				"crawlers\\bonus.php"
+			],
+			[
+				"rout",
+				"app\\routing.php"
+			],
+			[
+				"class.sho",
+				"beheer\\modules\\Shop\\class.Shop.php"
+			],
+			[
+				"class.ca",
+				"lib\\class.Cart.php"
+			],
+			[
+				"inde",
+				"index.php"
+			],
+			[
+				"cart.js",
+				"assets\\js\\afhaal-cart.js"
+			],
+			[
+				"ipad/in",
+				"beheer\\modules\\iPad\\index.php"
+			],
+			[
+				"ipad/co",
+				"beheer\\modules\\iPad\\content.php"
+			],
+			[
+				"catalog",
+				"crawlers\\catalog.php"
+			],
+			[
+				"side",
+				"html\\snippets\\aside-categories.php"
+			],
+			[
+				"class.c",
+				"lib\\class.Cart.php"
+			],
+			[
+				"wijzigor",
+				"beheer\\modules\\Winkel\\wijzigorder1.php"
+			],
+			[
+				"catalog-cus",
+				"html\\templates\\catalog-customer.php"
+			],
+			[
+				"includes/or",
+				"includes\\order.php"
+			],
+			[
+				"class.cart",
+				"lib\\class.Cart.php"
+			],
+			[
+				"afhaal-c",
+				"assets\\js\\afhaal-cart.js"
+			],
+			[
+				"customer-car",
+				"html\\templates\\customer-cart.php"
+			],
+			[
+				"aside",
+				"html\\snippets\\aside-cart.php"
+			],
+			[
+				"wijzigproduct",
+				"beheer\\modules\\Winkel\\wijzigproduct2.php"
+			],
+			[
+				"cssjs",
+				"includes\\cssjs.php"
+			],
+			[
+				"init",
+				"assets\\js\\bootstrap-init.js"
+			],
+			[
+				"orders.",
+				"assets\\js\\afhaal-order.js"
+			],
+			[
+				"encoding",
+				"lib\\class.Encoding.php"
+			],
+			[
+				"header-catal",
+				"html\\snippets\\header-catalog.php"
+			],
+			[
+				"breadcr",
+				"html\\snippets\\section-breadcrumbs.php"
+			],
+			[
+				"section-bre",
+				"html\\snippets\\section-breadcrumbs.php"
+			],
+			[
+				"order",
+				"includes\\order.php"
+			],
+			[
+				"wijzigklant",
+				"beheer\\modules\\Winkel\\wijzigklanten2.php"
+			],
+			[
+				"wijzigklanten1",
+				"beheer\\modules\\Winkel\\wijzigklanten1.php"
+			],
+			[
+				"init.js",
+				"assets\\js\\bootstrap-init.js"
+			],
+			[
+				"afhaal.css",
+				"assets\\css\\bootstrap-afhaalpunt.css"
+			],
+			[
+				"ie9",
+				"assets\\css\\ie9.css"
+			],
+			[
+				"report",
+				"omnikassa\\report.php"
+			],
+			[
+				"toolbox/aja",
+				"toolbox\\ajax.php"
+			],
+			[
+				"toolbox/keyw",
+				"toolbox\\keywords.php"
+			],
+			[
+				"ipad/cont",
+				"beheer\\modules\\iPad\\content.php"
+			],
+			[
+				"functions",
+				"app\\functions.php"
+			],
+			[
+				"toggle-pr",
+				"cron\\toggle-product-status.php"
+			],
+			[
+				"logs",
+				"logs.php"
+			],
+			[
+				"omzet",
+				"omzet.php"
+			],
+			[
+				"order.",
+				"includes\\order.php"
+			],
+			[
+				"order-",
+				"html\\templates\\customer-order-form.php"
+			],
+			[
+				"cart",
+				"lib\\class.Cart.php"
+			],
+			[
+				"delivert",
+				"beheer\\modules\\DeliverTime\\class.DeliverTime.php"
+			],
+			[
+				"toolbox/proce",
+				"toolbox\\process.php"
+			],
+			[
+				"ipadconte",
+				"beheer\\modules\\iPad\\content.php"
+			],
+			[
+				"bbincl",
+				"beheer\\bbinclude.php"
+			],
+			[
+				"besta",
+				"beheer\\bestandsbeheer.php"
+			],
+			[
+				"bestandsbe",
+				"beheer\\bestandsbeheer.php"
+			],
+			[
+				"repo",
+				"omnikassa\\report.php"
+			],
+			[
+				"ajax.p",
+				"includes\\ajax.php"
+			],
+			[
+				"merchan",
+				"iDealV3\\MerchantReturn.php"
+			],
+			[
+				"catalog-pro",
+				"html\\templates\\catalog-products.php"
+			],
+			[
+				"catalog-index-li",
+				"html\\snippets\\catalog-index-list.php"
+			],
+			[
+				"bestands",
+				"beheer\\bestandsbeheer.php"
+			],
+			[
+				"class.cust",
+				"lib\\class.Customer.php"
+			],
+			[
+				"classcart",
+				"lib\\class.Cart.php"
+			],
+			[
+				"classcust",
+				"lib\\class.Customer.php"
+			],
+			[
+				"cart.",
+				"lib\\class.Cart.php"
+			],
+			[
+				"ajax.ph",
+				"includes\\ajax.php"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
+			[
+				"index.ph",
+				"index.php"
+			],
+			[
+				"css.",
+				"includes\\cssjs.php"
+			],
+			[
+				"ajax.php",
+				"includes\\ajax.php"
+			],
+			[
+				"ideal.php",
+				"M:\\Projecten\\Albert Heijn\\Sites\\dev.ah-afhaalpunt.nl\\html\\templates\\ideal.php"
+			],
+			[
+				"environ",
+				"app\\environment.php"
+			],
+			[
+				"class.custo",
+				"lib\\class.Customer.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Z:\\Projecten\\Albert Heijn\\Sites\\ah-afhaalpunt.nl\\ah-afhaalpunt.nl.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
