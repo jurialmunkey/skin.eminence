@@ -416,21 +416,24 @@
     
     <include name="GlobalTopBar">
         <control type="group">
-            <include>GlobalLeftHeader</include>
-        </control>
-        <control type="group" description="Main Header">
-            <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <include>Animation.VisibleFadeIn</include>
-            <include>Animation.VisibleFadeOut</include>
+            <visible>!Window.IsVisible(Startup.xml)</visible>
             <control type="group">
-                <posx>-10</posx>
-                <include>HeaderMainInfo</include>
+                <include>GlobalLeftHeader</include>
             </control>
-            <control type="group">
+            <control type="group" description="Main Header">
+                <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
                 <include>Animation.VisibleFadeIn</include>
                 <include>Animation.VisibleFadeOut</include>
-                <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
-                <include>HeaderRightInfo</include>
+                <control type="group">
+                    <posx>-10</posx>
+                    <include>HeaderMainInfo</include>
+                </control>
+                <control type="group">
+                    <include>Animation.VisibleFadeIn</include>
+                    <include>Animation.VisibleFadeOut</include>
+                    <visible>!Window.IsActive(DialogKaiToast.xml)</visible>
+                    <include>HeaderRightInfo</include>
+                </control>
             </control>
         </control>
     </include>
