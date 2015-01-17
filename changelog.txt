@@ -1,5 +1,9 @@
 [B]1.2.1[/B]
 Startup video before login screen
+Added Hebrew font support (thanks BuSHari)
+ - Homizio - Ellinia CLM (GPL)
+ - Roboto  - Nachlieli CLM (GPL)
+ - SSPro   - Liberation Sans (SIL)
 
 [B]1.2.0[/B]
 Startup video option
