@@ -10,11 +10,12 @@
         <include>PVRSideMenu</include>
         <include>PVRBackButton</include>
         
+        
         <control type="group">
             <posy>topoffset</posy>
             <posx>horzpad</posx>
             <animation effect="slide" end="-1930" time="200" condition="Window.IsVisible(DialogPVRGuideInfo.xml)">Conditional</animation>
-            
+            <animation effect="fade" end="0" start="100" delay="0" time="200" condition="Control.HasFocus(9001)">Conditional</animation>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
             <include>DialogVisibility</include>
             <include>Animation.SlideOpen.Left</include>
@@ -22,7 +23,9 @@
             <include>PVRScrollbar</include>
             <include>LiveTVChannelView</include>
             <include>PVRSideText</include>
-            <include>DefFullScreenNav</include>
+            
         </control>
+        
+        <include>DefFullScreenNav</include>
     </controls>
 </window>

@@ -42,10 +42,10 @@
                 <onup>450</onup>
                 <ondown>450</ondown>
 
-                <itemlayout height="69">
+                <itemlayout height="69" width="1438">
 
                     <control type="label">
-                        <posx>30</posx>
+                        <left>30</left>
                         <width>405</width>
                         <info>ListItem.Label</info>
                         <font>Font-ListInfo</font>
@@ -53,8 +53,8 @@
                     </control>
 
                     <control type="label">
-                        <posx>1408</posx>
-                        <width>1000</width>
+                        <left>435</left>
+                        <right>30</right>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>Font-ListInfo</font>
@@ -63,7 +63,7 @@
 
                 </itemlayout>
 
-                <focusedlayout height="69">
+                <focusedlayout height="69" width="1438">
                     <control type="label">
                         <posx>30</posx>
                         <width>405</width>
@@ -73,8 +73,8 @@
                     </control>
 
                     <control type="label">
-                        <posx>1408</posx>
-                        <width>1000</width>
+                        <left>435</left>
+                        <right>30</right>
                         <align>right</align>
                         <info>ListItem.Label2</info>
                         <font>Font-ListInfo</font>

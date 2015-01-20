@@ -298,7 +298,7 @@
                 <onfocus>ClearProperty(focushub,home)</onfocus>
             </control>
             <control type="group">
-                <visible>Control.HasFocus(50)</visible>
+                <visible>Control.HasFocus(50) | Control.HasFocus(11) | Control.HasFocus(12) | Control.HasFocus(13)</visible>
                 <control type="image">
                     <width>945</width>
                     <height>fivelineborder</height>
@@ -308,7 +308,7 @@
                 <include>PVRlistlayoutfocus</include>
             </control>
             <control type="group">
-                <visible>!Control.HasFocus(50)</visible>
+                <visible>!Control.HasFocus(50) + !Control.HasFocus(11) + !Control.HasFocus(12) + !Control.HasFocus(13)</visible>
                 <control type="image">
                     <width>945</width>
                     <height>fivelineborder</height>
@@ -370,12 +370,12 @@
         </control>
     </include>
     <include name="PVRSideMenu">
-        <control type="button" id="2">
+        <!--<control type="button" id="2">
             <description>View</description>
             <include>DefNavMenuButton</include>
             <visible allowhiddenfocus="true">false</visible>
             <posy>-2000</posy>
-        </control>
+        </control>-->
         
         <control type="group">
             <animation time="200" start="100" end="0" effect="fade" condition="Window.IsVisible(DialogSelect.xml)">Conditional</animation>
@@ -387,7 +387,9 @@
                 <onleft condition="Window.IsVisible(MyPVRGuide.xml)">10</onleft>
                 <include>DefMyNavBarGroupList</include>
                 
-                <control type="button" id="9002" description="View">
+                
+                
+                <!--<control type="button" id="9002" description="View">
                     <description>Group</description>
                     <label>$INFO[Control.GetLabel(2)]</label>
                     <onclick condition="Window.IsVisible(TVChannels)">ActivateWindow(TVGuide)</onclick>
@@ -399,7 +401,7 @@
                     <onclick condition="Window.IsVisible(TVTimers)">ActivateWindow(TVChannels)</onclick>
                     <onclick condition="Window.IsVisible(TVTimers)">SetFocus(9002)</onclick>
                     <include>DefNavMenuButton</include>
-                </control>
+                </control>-->
                 
                 <control type="button" id="28">
                     <description>Group</description>
@@ -418,6 +420,12 @@
                     <label>584</label>
                     <altlabel>585</altlabel>
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                </control>
+                
+                <control type="button" id="2" description="View">
+                    <description>Group</description>
+                    <include>DefNavMenuButton</include>
+                    <visible>Window.IsVisible(MyPVRGuide.xml)</visible>
                 </control>
 
                 <control type="button" id="99">
@@ -489,6 +497,83 @@
         </control>
     </include>
     
+    <include name="EPGNowView">
+        <control type="group" description="Now EPG">
+            <visible>Control.IsVisible(11)</visible>  
+            <include>PVRScrollbar</include>
+            <include>PVR9350BACK</include>
+            <control type="list" id="11" description="Now EPG">     
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>945</width>
+                <height>700</height>
+                <onback>9350</onback>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="19030">list</viewtype>
+                <scrolltime>200</scrolltime>
+                <orientation>vertical</orientation>
+                <include>PVRitemlayout</include>                    
+                <include>PVRfocusedlayout</include>
+            </control>
+            <include>PVRInfoPanel</include>
+        </control>
+    </include>
+    
+    <include name="EPGNextView">
+        <control type="group" description="Next EPG">
+            <visible>Control.IsVisible(12)</visible>  
+            <include>PVR9350BACK</include>
+            <include>PVRScrollbar</include>
+            <control type="list" id="12" description="Next EPG">     
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>945</width>
+                <height>700</height>
+                <onback>9350</onback>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="19031">list</viewtype>
+                <scrolltime>200</scrolltime>
+                <orientation>vertical</orientation>
+                <include>PVRitemlayout</include>                    
+                <include>PVRfocusedlayout</include>
+            </control>
+            <include>PVRInfoPanel</include>
+        </control>
+    </include>
+    
+    <include name="EPGChannelView">
+        <control type="group" description="Channel EPG">
+            <visible>Control.IsVisible(13)</visible>  
+            <include>PVR9350BACK</include>
+            <include>PVRScrollbar</include>
+            <control type="list" id="13" description="Channel EPG">     
+                <posx>listx</posx>
+                <posy>listy</posy>
+                <width>945</width>
+                <height>700</height>
+                <onback>9350</onback>
+                <onleft>60</onleft>
+                <onright>9000</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <viewtype label="19029">list</viewtype>
+                <scrolltime>200</scrolltime>
+                <orientation>vertical</orientation>
+                <include>PVRitemlayout</include>                    
+                <include>PVRfocusedlayout</include>
+            </control>
+            <include>PVRInfoPanel</include>
+        </control>
+    </include>
     
     <include name="LiveTVRecordingsView">
         <control type="group" description="Recordings">

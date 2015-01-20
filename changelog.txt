@@ -1,9 +1,11 @@
+[B]1.2.2[/B]
+Remove strings.po~ file
+Remove MyPVR.xml for Helix
+Fix "Icons" non localised label in MyWeather.xml
+Add Now Next Channel - epg views
+
 [B]1.2.1[/B]
 Startup video before login screen
-Added Hebrew font support (thanks BuSHari)
- - Homizio - Ellinia CLM (GPL)
- - Roboto  - Nachlieli CLM (GPL)
- - SSPro   - Liberation Sans (SIL)
 
 [B]1.2.0[/B]
 Startup video option

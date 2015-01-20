@@ -440,6 +440,7 @@
     <include name="DefScrollBarMove">
         <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">SetProperty(librarynode,$INFO[Container.FolderPath],home)</onleft>
         <onleft condition="!stringcompare(Window(home).Property(previoushub),home)">ActivateWindow($INFO[Window(home).Property(previoushub)])</onleft>
+        
         <onright>50</onright>
     </include>
     

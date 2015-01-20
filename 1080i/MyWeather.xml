@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+icon<?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2600">
     <defaultcontrol always="true">3</defaultcontrol>
@@ -49,7 +49,7 @@
                 
                 <control type="button" id="9001">
                     <description>Icons</description>
-                    <label>Icons</label>
+                    <label>536</label>
                     <width>550</width>
                     <align>left</align>
                     
