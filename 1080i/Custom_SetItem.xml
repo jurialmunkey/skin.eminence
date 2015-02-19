@@ -347,7 +347,18 @@
                                                 
                         </item>
                         
-                        
+                        <item id="21">
+                            <description>Programs Hub</description>
+                            <label>31104</label>
+                            <icon>special://skin/extras/icons/games.png</icon>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.label],$LOCALIZE[31104])</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.Path],ActivateWindow(3205))</onclick>
+                            <onclick>Skin.SetString($INFO[Window(3061).Property(item),,.icon],special://skin/extras/icons/games.png)</onclick>
+                            <onclick>Skin.SetBool($INFO[Window(3061).Property(item),,.enabled])</onclick>
+                            
+                            
+                            
+                        </item>
                         
                         
 
