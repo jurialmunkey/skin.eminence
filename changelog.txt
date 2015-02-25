@@ -1,3 +1,6 @@
+[B]1.2.6[/B]
+Add menu button for videos library mouse
+
 [B]1.2.5[/B]
 Fix home menu visibility bug
 Fix addon hub options

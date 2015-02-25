@@ -688,7 +688,7 @@
             <onup>SetFocus(9500)</onup>
             <ondown>SetFocus(9500)</ondown>
         </control>
-
+        <include>DefMenuMouse</include>
     </controls>
 
 </window>

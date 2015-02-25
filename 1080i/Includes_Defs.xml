@@ -105,6 +105,27 @@
         <defaultcontrol always="true">15</defaultcontrol>
     </include>
     
+    <include name="DefMenuMouse">
+        <control type="button" description="Mouse Button">
+            <posy>600</posy>
+            <right>-5</right>
+            <width>48</width>
+            <height>48</height>            
+            <texturenofocus flipx="false">common/menu.png</texturenofocus>
+            <texturefocus flipx="false">common/menu.png</texturefocus>
+            <animation effect="fade" end="75" condition="true">Conditional</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">WindowOpen</animation>
+            <animation effect="fade" start="0" end="100" delay="200" time="650" reversible="false">Visible</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="100" end="0" delay="0" time="0" reversible="false">Hidden</animation>
+            <visible>!ControlGroup(9000).HasFocus()</visible>
+            <visible>!ControlGroup(9500).HasFocus()</visible>
+            <include>DialogVisibility</include>
+            <onclick condition="!Window.IsVisible(DialogVideoInfo.xml)">SetFocus(9000)</onclick>
+            <onclick condition="Window.IsVisible(DialogVideoInfo.xml)">SetFocus(9500)</onclick>
+        </control>
+    </include>
+    
     <include name="DefRightSideArrow">
         <control type="button" description="Mouse Button">
             <posy>600</posy>
