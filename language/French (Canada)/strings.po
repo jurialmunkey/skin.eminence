@@ -134,7 +134,7 @@ msgstr "Minuterie d'extinction"
 
 msgctxt "#31131"
 msgid "Master Mode: On"
-msgstr "Mode maître : activé"
+msgstr "Mode maître - marche"
 
 msgctxt "#31132"
 msgid "Master Mode: Off"
@@ -186,7 +186,7 @@ msgstr "Menu du disque"
 
 msgctxt "#31144"
 msgid "Enable TV Tunes"
-msgstr "Activer TV Tunes"
+msgstr "Activer TvTunes"
 
 msgctxt "#31145"
 msgid "Show now playing video in background"
@@ -702,7 +702,7 @@ msgstr "Empêche l'accès au menu latéral dans les vues de la médiathèque."
 
 msgctxt "#31274"
 msgid "Enables the TV Tunes addon in library views. Plays the tv theme song when viewing the seasons or episodes of a tv show."
-msgstr "Active l'addiciel TV Tunes dans les vues de la médiathèque. Joue la chanson thème lors du visionnement des saisons ou des épisodes d'une émission télé."
+msgstr "Active l'addiciel TvTunes dans les vues de la médiathèque. Joue la chanson thème lors du visionnement des saisons ou des épisodes d'une émission télé."
 
 msgctxt "#31275"
 msgid "Show the RSS feed at the bottom of the screen"

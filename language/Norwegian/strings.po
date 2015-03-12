@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Informasjon"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "Youtube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -44,6 +48,10 @@ msgctxt "#31109"
 msgid "Recently Added"
 msgstr "Nylig lagt til"
 
+msgctxt "#31110"
+msgid "In Progress"
+msgstr "Under behandling"
+
 msgctxt "#31111"
 msgid "Type"
 msgstr "Type"
@@ -54,11 +62,15 @@ msgstr "Søkelyset"
 
 msgctxt "#31113"
 msgid "items"
-msgstr "Elementer"
+msgstr "elementer"
 
 msgctxt "#31114"
 msgid "Channels"
 msgstr "Kanaler"
+
+msgctxt "#31115"
+msgid "Finishes at"
+msgstr "Slutter"
 
 msgctxt "#31116"
 msgid "Close"
@@ -72,9 +84,25 @@ msgctxt "#31119"
 msgid "Info"
 msgstr "Info"
 
+msgctxt "#31120"
+msgid "Auto-Login"
+msgstr "Auto-Login"
+
+msgctxt "#31121"
+msgid "Used Memory"
+msgstr "Brukt minne"
+
+msgctxt "#31122"
+msgid "No info available..."
+msgstr "Ingen info tilgjengelig..."
+
 msgctxt "#31123"
 msgid "Channel"
 msgstr "Kanal"
+
+msgctxt "#31124"
+msgid "Airing"
+msgstr "Sendes"
 
 msgctxt "#31125"
 msgid "End Time"
@@ -88,6 +116,22 @@ msgctxt "#31127"
 msgid "Recording"
 msgstr "Tar opp"
 
+msgctxt "#31128"
+msgid "Scheduled"
+msgstr "Planlagt"
+
+msgctxt "#31129"
+msgid "Not Scheduled"
+msgstr "Ikke planlagt"
+
+msgctxt "#31130"
+msgid "Shutdown Timer"
+msgstr "Tidsur for nedstengning"
+
+msgctxt "#31133"
+msgid "Cancel Timer"
+msgstr "Avslutt tidsur"
+
 msgctxt "#31134"
 msgid "Mute"
 msgstr "Demp"
@@ -95,6 +139,10 @@ msgstr "Demp"
 msgctxt "#31135"
 msgid "Artwork"
 msgstr "Grafikk"
+
+msgctxt "#31136"
+msgid "Changes"
+msgstr "Endringer"
 
 msgctxt "#31145"
 msgid "Show now playing video in background"

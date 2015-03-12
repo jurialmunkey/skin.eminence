@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Bilgi"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "Youtube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -40,13 +44,25 @@ msgctxt "#31107"
 msgid "min"
 msgstr "dakika"
 
+msgctxt "#31108"
+msgid "Quick Nav"
+msgstr "Hızlı Navigasyon"
+
 msgctxt "#31109"
 msgid "Recently Added"
 msgstr "Son Eklenenler"
 
+msgctxt "#31110"
+msgid "In Progress"
+msgstr "İşlem sürüyor"
+
 msgctxt "#31111"
 msgid "Type"
 msgstr "Tür"
+
+msgctxt "#31112"
+msgid "Spotlight"
+msgstr "Spotlight"
 
 msgctxt "#31113"
 msgid "items"
@@ -136,6 +152,22 @@ msgctxt "#31136"
 msgid "Changes"
 msgstr "Değiştir"
 
+msgctxt "#31138"
+msgid "Set weather fanart"
+msgstr "Hava durumu fanart'ını kur"
+
+msgctxt "#31139"
+msgid "Artist slideshow"
+msgstr "Sanatçı Slaytı"
+
+msgctxt "#31143"
+msgid "Disc Menu"
+msgstr "Disk Menüsü"
+
+msgctxt "#31144"
+msgid "Enable TV Tunes"
+msgstr "Tv Tunes'i etkinleştir"
+
 msgctxt "#31145"
 msgid "Show now playing video in background"
 msgstr "Arkaplanda oynatılan videoyu göster"
@@ -147,6 +179,10 @@ msgstr "Fanart Göster"
 msgctxt "#31147"
 msgid "Views"
 msgstr "Görünümler"
+
+msgctxt "#31149"
+msgid "Set home background"
+msgstr "Ana sayfa arkaplanını kur"
 
 msgctxt "#31150"
 msgid "Show info"
@@ -183,6 +219,10 @@ msgstr "Tam ekran"
 msgctxt "#31159"
 msgid "Recently Played"
 msgstr "Son Oynatılanlar"
+
+msgctxt "#31160"
+msgid "Press down for options..."
+msgstr "Ayarlar için aşağıya basın..."
 
 msgctxt "#31163"
 msgid "Custom"
@@ -224,9 +264,29 @@ msgctxt "#31172"
 msgid "Edit"
 msgstr "Düzenle"
 
+msgctxt "#31173"
+msgid "on"
+msgstr "Açık"
+
+msgctxt "#31174"
+msgid "Cinema Experience"
+msgstr "Sinema Deneyimi"
+
+msgctxt "#31175"
+msgid "Television"
+msgstr "Televizyon"
+
+msgctxt "#31176"
+msgid "Media Center"
+msgstr "Medya Merkezi"
+
 msgctxt "#31177"
 msgid "Show weather with clock"
 msgstr "Saati hava durumuyla birlikte göster"
+
+msgctxt "#31184"
+msgid "Quick nav mode"
+msgstr "Hızlı navigasyon modu"
 
 msgctxt "#31186"
 msgid "Custom Item"

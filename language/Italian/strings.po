@@ -48,6 +48,10 @@ msgctxt "#31109"
 msgid "Recently Added"
 msgstr "Aggiunti di recente"
 
+msgctxt "#31110"
+msgid "In Progress"
+msgstr "In corso"
+
 msgctxt "#31111"
 msgid "Type"
 msgstr "Tipo"

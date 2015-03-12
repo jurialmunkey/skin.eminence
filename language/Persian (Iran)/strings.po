@@ -16,6 +16,10 @@ msgstr ""
 "Language: fa_IR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31101"
+msgid "Information"
+msgstr "اطلاعات"
+
 msgctxt "#31104"
 msgid "Live TV"
 msgstr "تلویزیون زنده"
@@ -36,6 +40,10 @@ msgctxt "#31113"
 msgid "items"
 msgstr "موضوعات"
 
+msgctxt "#31114"
+msgid "Channels"
+msgstr "کانال ها"
+
 msgctxt "#31118"
 msgid "Playing"
 msgstr "در حال پخش"
@@ -44,6 +52,10 @@ msgctxt "#31119"
 msgid "Info"
 msgstr "اطلاعات"
 
+msgctxt "#31123"
+msgid "Channel"
+msgstr "کانال"
+
 msgctxt "#31125"
 msgid "End Time"
 msgstr "زمان اتمام"
@@ -51,6 +63,10 @@ msgstr "زمان اتمام"
 msgctxt "#31126"
 msgid "Channel Group"
 msgstr "گروه کانال ها"
+
+msgctxt "#31127"
+msgid "Recording"
+msgstr "ضبط شده ها"
 
 msgctxt "#31152"
 msgid "Posters"

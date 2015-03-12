@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
     id="skin.eminence"
-    version="1.2.5"
+    version="1.2.6"
     name="Eminence"
     provider-name="jurialmunkey">
     <requires>
@@ -20,8 +20,39 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
     </extension>
     <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
+        <summary lang="ca">Creat per jurialmunkey</summary>
+        <summary lang="de">Erstellt von jurialmunkey</summary>
+        <summary lang="el">Δημιουργήθηκε από τον jurialmunkey</summary>
         <summary lang="en">Created by jurialmunkey</summary>
+        <summary lang="en_NZ">Created by jurialmunkey</summary>
+        <summary lang="en_US">Created by jurialmunkey</summary>
+        <summary lang="fr">Créé par jurialmunkey</summary>
+        <summary lang="fr_CA">Créé par jurialmunkey</summary>
+        <summary lang="gl">Creado por jurialmunkey</summary>
+        <summary lang="he">נוצרה ע"י jurialmunkey</summary>
+        <summary lang="ko">jurialmunkey 제작</summary>
+        <summary lang="lt">Sukūrė jurialmunkey</summary>
+        <summary lang="nl">Gecreëerd door jurialmunkey</summary>
+        <summary lang="no">Laget av jurialmunkey</summary>
+        <summary lang="pl">Autorstwa jurialmunkey</summary>
+        <summary lang="pt_BR">Criada por jurialmunkey</summary>
+        <summary lang="sl">Ustvaril jurialmunkey</summary>
+        <summary lang="sv">Skapat av jurialmunkey</summary>
+        <summary lang="tr">jurialmunkey tarafından tasarlandı.</summary>
+        <description lang="de">Eminence ist ein Skin der Einfachheit, Funktionalität und Anpassbarkeit mit einem modernen Aussehen verbindet</description>
         <description lang="en">Eminence is a skin that seeks simplicity, functionality, and customisability with a modern look</description>
+        <description lang="en_NZ">Eminence is a skin that seeks simplicity, functionality, and customisability with a modern look</description>
+        <description lang="en_US">Eminence is a skin that seeks simplicity, functionality, and customizability with a modern look</description>
+        <description lang="fr">Eminence est un thème qui cherche la simplicité, les fonctionnalités, et la personnalisation avec un aspect moderne</description>
+        <description lang="fr_CA">Éminence est un habillage qui cible la simplicité, la fonctionnalité et la personnalisation avec une apparence moderne</description>
+        <description lang="gl">Eminence é un tema que procura a simplicidade, funcionalidade e a personalización cun aspecto moderno</description>
+        <description lang="he">המעטפת Eminence מתמקדת בפשטות, פונקציונליות, יכולת התאמה אישית ובעלת מראה מודרני</description>
+        <description lang="ko">Eminence은 단순함과 용이한 사용자 설정을 추구하는 현대적인 모양새의 스킨입니다</description>
+        <description lang="lt">Eminence yra teminė išvaizda, kuri siekia suderinti modernią išvaizdą su paprastumu, funkcionalumu ir galimybe pritaikyti pagal savo poreikius.</description>
+        <description lang="nl">Eminence is een skin die zoekt naar simpliciteit, functionaliteit en aanpasbaarheid met een moderne uitstraling</description>
+        <description lang="no">Eminence er et skall som søker enkelhet, funksjonalitet, og skreddersying med et moderne utseende</description>
+        <description lang="pl">Eminence to skóra, który łączy prostotę, bogactwo funkcji i łatwość dostosowania z nowoczesnym wyglądem</description>
+        <description lang="pt_BR">Eminence é uma skin que busca simplicidade, funcionalidade e costumização através de uma aparência moderna.</description>
+        <platform>all</platform>
     </extension>
 </addon>

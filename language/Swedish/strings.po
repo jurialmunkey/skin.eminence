@@ -72,6 +72,10 @@ msgctxt "#31114"
 msgid "Channels"
 msgstr "Kanaler"
 
+msgctxt "#31115"
+msgid "Finishes at"
+msgstr "Avslutas"
+
 msgctxt "#31116"
 msgid "Close"
 msgstr "Stäng"
@@ -83,6 +87,18 @@ msgstr "Spelar"
 msgctxt "#31119"
 msgid "Info"
 msgstr "Info"
+
+msgctxt "#31120"
+msgid "Auto-Login"
+msgstr "Autoinloggning"
+
+msgctxt "#31121"
+msgid "Used Memory"
+msgstr "Använt minne"
+
+msgctxt "#31122"
+msgid "No info available..."
+msgstr "Ingen information tillgänglig"
 
 msgctxt "#31123"
 msgid "Channel"
@@ -116,6 +132,14 @@ msgctxt "#31130"
 msgid "Shutdown Timer"
 msgstr "Avstängningstimer"
 
+msgctxt "#31131"
+msgid "Master Mode: On"
+msgstr "Master läge: På"
+
+msgctxt "#31132"
+msgid "Master Mode: Off"
+msgstr "Master läge: Av"
+
 msgctxt "#31133"
 msgid "Cancel Timer"
 msgstr "Avbryt timer"
@@ -132,6 +156,34 @@ msgctxt "#31136"
 msgid "Changes"
 msgstr "Förändringar"
 
+msgctxt "#31137"
+msgid "Re-initialise skin - WARNING: Resets skin to defaults"
+msgstr "Återinitiera skal - Varning: Återställer skal till standard"
+
+msgctxt "#31138"
+msgid "Set weather fanart"
+msgstr "Ange väderfanart"
+
+msgctxt "#31139"
+msgid "Artist slideshow"
+msgstr "Artistbildspel"
+
+msgctxt "#31140"
+msgid "Show visualisation behind slideshow"
+msgstr "Visa visualisering bakom bildspel"
+
+msgctxt "#31141"
+msgid "Movies Widget"
+msgstr "Filmwidget"
+
+msgctxt "#31142"
+msgid "Tv Shows Widget"
+msgstr "Tv-Seriewidget"
+
+msgctxt "#31143"
+msgid "Disc Menu"
+msgstr "Diskmeny"
+
 msgctxt "#31144"
 msgid "Enable TV Tunes"
 msgstr "Aktivera TV Tunes"
@@ -147,6 +199,10 @@ msgstr "Visa fanart"
 msgctxt "#31147"
 msgid "Views"
 msgstr "Vyer"
+
+msgctxt "#31149"
+msgid "Set home background"
+msgstr "Ange hembakgrund"
 
 msgctxt "#31150"
 msgid "Show info"
@@ -192,13 +248,29 @@ msgctxt "#31160"
 msgid "Press down for options..."
 msgstr "Tryck nedpil för alternativ..."
 
+msgctxt "#31161"
+msgid "Show PVR channel icon in header"
+msgstr "Visa PVR kanalikon i rubrik"
+
 msgctxt "#31163"
 msgid "Custom"
 msgstr "Anpassad"
 
+msgctxt "#31164"
+msgid "Customise"
+msgstr "Anpassa"
+
+msgctxt "#31165"
+msgid "Edit icon"
+msgstr "Redigera ikon"
+
 msgctxt "#31166"
 msgid "Items"
 msgstr "objekt"
+
+msgctxt "#31167"
+msgid "Pages"
+msgstr "Sidor"
 
 msgctxt "#31168"
 msgid "Home"
@@ -212,6 +284,10 @@ msgctxt "#31170"
 msgid "Now playing"
 msgstr "Spelas nu"
 
+msgctxt "#31171"
+msgid "the items on your home menu"
+msgstr "Objekten på din hemmeny"
+
 msgctxt "#31172"
 msgid "Edit"
 msgstr "Redigera"
@@ -224,9 +300,33 @@ msgctxt "#31174"
 msgid "Cinema Experience"
 msgstr "Bioupplevelse"
 
+msgctxt "#31175"
+msgid "Television"
+msgstr "Television"
+
+msgctxt "#31176"
+msgid "Media Center"
+msgstr "Mediacenter"
+
+msgctxt "#31177"
+msgid "Show weather with clock"
+msgstr "Visa väder med klocka"
+
+msgctxt "#31179"
+msgid "Movies Hub"
+msgstr "Filmnav"
+
+msgctxt "#31180"
+msgid "Tv Shows Hub"
+msgstr "Tv-serienav"
+
 msgctxt "#31181"
 msgid "Widget"
 msgstr "Widget"
+
+msgctxt "#31184"
+msgid "Quick nav mode"
+msgstr "Snabb nav läge"
 
 msgctxt "#31186"
 msgid "Custom Item"
@@ -236,6 +336,10 @@ msgctxt "#31187"
 msgid "Next Aired"
 msgstr "Kommande"
 
+msgctxt "#31188"
+msgid "Show next aired in RSS feed"
+msgstr "Visa next aired i RSS-flöde"
+
 msgctxt "#31189"
 msgid "Update next aired data on startup"
 msgstr "Uppdatera Next Aired data vid uppstart"
@@ -243,6 +347,14 @@ msgstr "Uppdatera Next Aired data vid uppstart"
 msgctxt "#31190"
 msgid "Login"
 msgstr "Logga in"
+
+msgctxt "#31191"
+msgid "User login"
+msgstr "Användarinloggning"
+
+msgctxt "#31192"
+msgid "Select a profile"
+msgstr "Ange en profil"
 
 msgctxt "#31193"
 msgid "Trailers"
@@ -260,6 +372,38 @@ msgctxt "#31197"
 msgid "General Options"
 msgstr "Allmänna val"
 
+msgctxt "#31198"
+msgid "Show widget info panel"
+msgstr "Visa widget info panel"
+
+msgctxt "#31199"
+msgid "Skip hubs and go straight to library"
+msgstr "Hoppa över nav och gå direkt till bibliotek"
+
+msgctxt "#31200"
+msgid "Manual search..."
+msgstr "Manuell sökning..."
+
+msgctxt "#31201"
+msgid "Set Colour"
+msgstr "Ange färg"
+
+msgctxt "#31202"
+msgid "Widget Carousel"
+msgstr "Widgetkarusell"
+
+msgctxt "#31203"
+msgid "Reset global background path to default"
+msgstr "Återställ global bakgrundssökväg till standard"
+
+msgctxt "#31205"
+msgid "Don't fade unfocused tiles"
+msgstr "Tona inte ned ofokuserade plattor"
+
+msgctxt "#31206"
+msgid "Use theme colour for focused tiles"
+msgstr "Använd temafärg till fokuserade plattor"
+
 msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Filminspelning"
@@ -275,6 +419,34 @@ msgstr "Ställ in bakgrundsbild"
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Flytta objekt"
+
+msgctxt "#31212"
+msgid "Swap with another tile"
+msgstr "Byt plats med en annan platta"
+
+msgctxt "#31214"
+msgid "Customise your home menu tiles"
+msgstr "Anpassa dina hemmenyplattor"
+
+msgctxt "#31216"
+msgid "Show clearart/logo with osd"
+msgstr "Visa clearart/logo i osd"
+
+msgctxt "#31217"
+msgid "Show power button"
+msgstr "Visa strömknapp"
+
+msgctxt "#31219"
+msgid "Insert item"
+msgstr "Infoga objekt"
+
+msgctxt "#31220"
+msgid "Experimental"
+msgstr "Experimentell"
+
+msgctxt "#31221"
+msgid "EPG Timeline"
+msgstr "EPG tidslinje"
 
 msgctxt "#31223"
 msgid "Banner List"
@@ -292,6 +464,18 @@ msgctxt "#31230"
 msgid "Animate fanart"
 msgstr "Animera fanart"
 
+msgctxt "#31231"
+msgid "Edit Playlist"
+msgstr "Redigera spellista"
+
+msgctxt "#31232"
+msgid "Rule"
+msgstr "Regel"
+
+msgctxt "#31233"
+msgid "Enter rule..."
+msgstr "Ange regel..."
+
 msgctxt "#31234"
 msgid "Advanced"
 msgstr "Avancerad"
@@ -308,14 +492,50 @@ msgctxt "#31242"
 msgid "Media Info"
 msgstr "Mediainfo"
 
+msgctxt "#31243"
+msgid "Most"
+msgstr "Mest"
+
 msgctxt "#31244"
 msgid "Moderate"
 msgstr "Moderat"
+
+msgctxt "#31245"
+msgid "Least"
+msgstr "Minst"
 
 msgctxt "#31246"
 msgid "No description available"
 msgstr "Ingen beskrivning tillgänglig"
 
+msgctxt "#31279"
+msgid "Alt style"
+msgstr "Alt stil"
+
+msgctxt "#31280"
+msgid "Automatically start artwork downloader after library update"
+msgstr "Starta artwork downloader automatiskt efter biblioteksuppdatering"
+
+msgctxt "#31282"
+msgid "Header"
+msgstr "Rubrik"
+
 msgctxt "#31283"
 msgid "Set Path"
 msgstr "Ange sökväg"
+
+msgctxt "#31284"
+msgid "Show extended info at bottom of screen"
+msgstr "Visa utökad info längst ner på skärmen"
+
+msgctxt "#31285"
+msgid "Premiere Date"
+msgstr "Premiärdatum"
+
+msgctxt "#31286"
+msgid "Disable clock"
+msgstr "Inaktivera klocka"
+
+msgctxt "#31287"
+msgid "Set startup video"
+msgstr "Ange uppstartsvideo"

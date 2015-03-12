@@ -75,3 +75,7 @@ msgstr "Имконоти шабака"
 msgctxt "#31224"
 msgid "Forecast"
 msgstr "Пешгӯии обу ҳаво"
+
+msgctxt "#31234"
+msgid "Advanced"
+msgstr "Иловагӣ"

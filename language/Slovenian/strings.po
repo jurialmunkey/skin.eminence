@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Informacije"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "YouTube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -68,6 +72,10 @@ msgctxt "#31119"
 msgid "Info"
 msgstr "Informacije"
 
+msgctxt "#31121"
+msgid "Used Memory"
+msgstr "Zaseden pomnilnik"
+
 msgctxt "#31123"
 msgid "Channel"
 msgstr "Program"
@@ -87,6 +95,10 @@ msgstr "Snemam"
 msgctxt "#31135"
 msgid "Artwork"
 msgstr "Grafike"
+
+msgctxt "#31136"
+msgid "Changes"
+msgstr "Spremembe"
 
 msgctxt "#31150"
 msgid "Show info"
@@ -124,6 +136,10 @@ msgctxt "#31163"
 msgid "Custom"
 msgstr "Poljubno"
 
+msgctxt "#31164"
+msgid "Customise"
+msgstr "Prilagodi"
+
 msgctxt "#31166"
 msgid "Items"
 msgstr "Predmeti"
@@ -140,6 +156,10 @@ msgctxt "#31190"
 msgid "Login"
 msgstr "Prijava"
 
+msgctxt "#31192"
+msgid "Select a profile"
+msgstr "Izberite profil"
+
 msgctxt "#31193"
 msgid "Trailers"
 msgstr "Napovedniki"
@@ -151,6 +171,14 @@ msgstr "Nalaganje ..."
 msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Možnosti programa"
+
+msgctxt "#31197"
+msgid "General Options"
+msgstr "Splošne možnosti"
+
+msgctxt "#31200"
+msgid "Manual search..."
+msgstr "Ročno iskanje ..."
 
 msgctxt "#31211"
 msgid "Move item"
@@ -168,10 +196,42 @@ msgctxt "#31225"
 msgid "Info List"
 msgstr "Seznam"
 
+msgctxt "#31226"
+msgid "Show title"
+msgstr "Pokaži naslov"
+
+msgctxt "#31227"
+msgid "Hide title"
+msgstr "Skrij naslov"
+
+msgctxt "#31231"
+msgid "Edit Playlist"
+msgstr "Uredi seznam predvajanja"
+
+msgctxt "#31232"
+msgid "Rule"
+msgstr "Pravilo"
+
+msgctxt "#31233"
+msgid "Enter rule..."
+msgstr "Vnesi pravilo ..."
+
 msgctxt "#31234"
 msgid "Advanced"
 msgstr "Napredno"
 
+msgctxt "#31235"
+msgid "Extras"
+msgstr "Dodatki"
+
+msgctxt "#31241"
+msgid "3D Mode"
+msgstr "3D-način"
+
 msgctxt "#31244"
 msgid "Moderate"
 msgstr "Zmerno"
+
+msgctxt "#31285"
+msgid "Premiere Date"
+msgstr "Datum premiere"

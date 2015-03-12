@@ -32,6 +32,10 @@ msgctxt "#31113"
 msgid "items"
 msgstr "Stavki"
 
+msgctxt "#31114"
+msgid "Channels"
+msgstr "Kanali"
+
 msgctxt "#31118"
 msgid "Playing"
 msgstr "Reprodukcija"
@@ -43,6 +47,10 @@ msgstr "Informacije"
 msgctxt "#31125"
 msgid "End Time"
 msgstr "Vreme završetka"
+
+msgctxt "#31126"
+msgid "Channel Group"
+msgstr "Grupa programa"
 
 msgctxt "#31153"
 msgid "Wall"
@@ -68,13 +76,25 @@ msgctxt "#31172"
 msgid "Edit"
 msgstr "Uredi"
 
+msgctxt "#31190"
+msgid "Login"
+msgstr "Prijava"
+
 msgctxt "#31193"
 msgid "Trailers"
 msgstr "Najava"
 
+msgctxt "#31196"
+msgid "Channel Options"
+msgstr "Opcije kanala"
+
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Premesti stavku"
+
+msgctxt "#31224"
+msgid "Forecast"
+msgstr "Prognoza"
 
 msgctxt "#31234"
 msgid "Advanced"

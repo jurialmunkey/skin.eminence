@@ -240,6 +240,10 @@ msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Establecer Películas"
 
+msgctxt "#31208"
+msgid "Home Screen"
+msgstr "Inicio"
+
 msgctxt "#31210"
 msgid "Set background image"
 msgstr "Elegir imagen de fondo"

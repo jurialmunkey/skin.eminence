@@ -96,6 +96,14 @@ msgctxt "#31154"
 msgid "Banner"
 msgstr "Acoperire"
 
+msgctxt "#31156"
+msgid "All Movies"
+msgstr "Toate filmele"
+
+msgctxt "#31157"
+msgid "All TV Shows"
+msgstr "Toate serialele"
+
 msgctxt "#31158"
 msgid "Fullscreen"
 msgstr "Pe tot ecranul"
@@ -111,6 +119,10 @@ msgstr "Elemente"
 msgctxt "#31168"
 msgid "Home"
 msgstr "Acasă"
+
+msgctxt "#31170"
+msgid "Now playing"
+msgstr "În redare"
 
 msgctxt "#31172"
 msgid "Edit"
@@ -128,6 +140,10 @@ msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Opțiunile Canalului"
 
+msgctxt "#31207"
+msgid "Movie Set"
+msgstr "Set de filme"
+
 msgctxt "#31211"
 msgid "Move item"
 msgstr "Mută elementul"
@@ -143,6 +159,10 @@ msgstr "Listă Informații"
 msgctxt "#31234"
 msgid "Advanced"
 msgstr "Avansat"
+
+msgctxt "#31239"
+msgid "Kiosk mode"
+msgstr "Mod chioșc"
 
 msgctxt "#31244"
 msgid "Moderate"

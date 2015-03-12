@@ -30,7 +30,7 @@ msgstr "Телевизия"
 
 msgctxt "#31105"
 msgid "TV Guide"
-msgstr "ТВ гид"
+msgstr "ТВ справочник"
 
 msgctxt "#31106"
 msgid "Fullscreen"
@@ -106,7 +106,7 @@ msgstr "Показвай текущо възпроизвежданото вид�
 
 msgctxt "#31146"
 msgid "Show fanart"
-msgstr "Показвай fanart"
+msgstr "Показвай фен-арт"
 
 msgctxt "#31147"
 msgid "Views"
