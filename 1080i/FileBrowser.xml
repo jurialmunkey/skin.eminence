@@ -8,6 +8,7 @@
 
         <control type="group">
             <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
+            <visible>!Window.IsActive(LockSettings.xml)</visible>
             <posx>horzpad</posx>
             <posy>topoffset</posy>
             <include>Animation.SlideOpen.Left</include>
@@ -20,6 +21,7 @@
             <posx>horzpad</posx>
             <posy>listy</posy>
             <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
+            <visible>!Window.IsActive(LockSettings.xml)</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             

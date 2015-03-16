@@ -2,6 +2,7 @@
 updated language files from Transifex
 Add menu button for videos library mouse
 Fix artistslideshow start on home
+Locksettings order
 
 [B]1.2.5[/B]
 Fix home menu visibility bug
