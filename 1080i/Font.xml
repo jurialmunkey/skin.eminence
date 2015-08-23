@@ -161,6 +161,12 @@
             <filename>Weather.ttf</filename>
             <size>280</size>
         </font>
+        <font>
+            
+            <name>Clock</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>120</size>
+        </font>        
     </fontset>
     <fontset id="Default Hebrew" unicode="true">
 
@@ -322,6 +328,12 @@
             <filename>Weather.ttf</filename>
             <size>280</size>
         </font>
+        <font>
+            
+            <name>Clock</name>
+            <filename>Roboto-Bold-Caps-Heb.ttf</filename>
+            <size>120</size>
+        </font>          
     </fontset>
     <fontset id="SourceSansPro">
 
@@ -461,6 +473,12 @@
             <filename>SourceSansPro-Black.ttf</filename>
             <size>42</size>
         </font>
+        <font>
+            
+            <name>Clock</name>
+            <filename>SourceSansPro-Bold.ttf</filename>
+            <size>120</size>
+        </font>           
     </fontset>
     <fontset id="Homizio">
 
@@ -623,7 +641,14 @@
             <filename>Weather.ttf</filename>
             <size>280</size>
         </font>
-    </fontset>
-    
+        <font>
+            
+            <name>Clock</name>
+            <filename>Homizio-Bold.ttf</filename>
+            <linespacing>1.05</linespacing>
+            <size>120</size>
+        </font>            
+    </fontset>            
+
     
 </fonts>
