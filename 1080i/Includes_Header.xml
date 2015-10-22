@@ -41,8 +41,8 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]</value>
         <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]</value>
         <value condition="!IsEmpty(Container.NumItems) + ![Window.IsVisible(3201) | Window.IsVisible(3202) | Window.IsVisible(3203)]">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
-        <value condition="Pvr.IsRecording">$INFO[Pvr.NowRecordingTitle,$LOCALIZE[19158]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NowRecordingChannel,  ,]</value>
-        <value condition="Pvr.HasTimer">$INFO[Pvr.NextRecordingTitle,$LOCALIZE[19157]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
+        <value condition="Pvr.IsRecording + !Skin.HasSetting(disable.pvrstatus)">$INFO[Pvr.NowRecordingTitle,$LOCALIZE[19158]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NowRecordingChannel,  ,]</value>
+        <value condition="Pvr.HasTimer + !Skin.HasSetting(disable.pvrstatus)">$INFO[Pvr.NextRecordingTitle,$LOCALIZE[19157]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
         <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20360]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
     </variable>
     

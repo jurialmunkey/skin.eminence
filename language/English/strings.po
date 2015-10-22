@@ -759,3 +759,11 @@ msgstr ""
 msgctxt "#31287"
 msgid "Set startup video"
 msgstr ""
+
+msgctxt "#31288"
+msgid "Disable PVR status"
+msgstr ""
+
+msgctxt "#31289"
+msgid "Show PVR recording and next recording status in the header."
+msgstr ""
