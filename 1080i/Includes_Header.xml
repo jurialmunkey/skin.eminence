@@ -29,6 +29,32 @@
         <value>$LOCALIZE[15100]</value>
     </variable>
 
+    <variable name="MainHeaderSubLabelPVR-Channels">
+        <value>$INFO[Pvr.BackendChannels,[COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
+    </variable>
+
+    <variable name="MainHeaderSubLabelPVR">
+        <value condition="Pvr.IsRecording + !Skin.HasSetting(disable.pvrstatus)">$VAR[MainHeaderSubLabelPVR-Channels,,    ]$INFO[Pvr.NowRecordingTitle,$LOCALIZE[19158]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NowRecordingChannel,  ,]</value>
+        <value condition="Pvr.HasTimer + !Skin.HasSetting(disable.pvrstatus)">$VAR[MainHeaderSubLabelPVR-Channels,,    ]$INFO[Pvr.NextRecordingTitle,$LOCALIZE[19157]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
+        <value condition="!Skin.HasSetting(disable.pvrstatus)">$VAR[MainHeaderSubLabelPVR-Channels]</value>
+    </variable>
+
+    <variable name="MainHeaderSubLabelVideo">
+        <value>$INFO[Window(home).Property(Movies.Count),[COLOR=Highlight],[/COLOR] $LOCALIZE[20342]    ]$INFO[Window(home).Property(TVShows.Count),[COLOR=Highlight],[/COLOR] $LOCALIZE[20343]    ]$INFO[Window(home).Property(Episodes.Count),[COLOR=Highlight],[/COLOR] $LOCALIZE[20360]]</value>
+    </variable>
+
+    <variable name="MainHeaderSubLabelAudio-Songs">
+        <value condition="!stringcompare(Window(home).Property(Music.SongsCount),0)">$INFO[Window(home).Property(Music.ArtistsCount),[COLOR=Highlight],[/COLOR] $LOCALIZE[133]    ]$INFO[Window(home).Property(Music.AlbumsCount),[COLOR=Highlight],[/COLOR] $LOCALIZE[132]    ]$INFO[Window(home).Property(Music.SongsCount),[COLOR=Highlight],[/COLOR] $LOCALIZE[134]]</value>
+    </variable>
+
+    <variable name="MainHeaderSubLabelAudio-MusicVideos">
+        <value condition="!stringcompare(Window(home).Property(MusicVideos.Count),0)">$INFO[Window(home).Property(MusicVideos.Count),[COLOR=Highlight],[/COLOR] $LOCALIZE[20389]]</value>
+    </variable>
+
+    <variable name="MainHeaderSubLabelAudio">
+        <value>$VAR[MainHeaderSubLabelAudio-Songs,,    ]$VAR[MainHeaderSubLabelAudio-MusicVideos]</value>
+    </variable>
+
     <variable name="MainHeaderSubLabel">
         <value condition="Window.IsVisible(LoginScreen.xml)">[COLOR=Highlight]$LOCALIZE[31191][/COLOR]  $LOCALIZE[31192]</value>
         <value condition="Window.IsVisible(3064)">[COLOR=Highlight]$LOCALIZE[31211][/COLOR] $LOCALIZE[31212]</value>
@@ -41,9 +67,7 @@
         <value condition="Player.HasVideo + VideoPlayer.Content(movies)">[COLOR=Highlight]$INFO[VideoPlayer.Director,,  ][/COLOR]</value>
         <value condition="Player.HasVideo">[COLOR=Highlight]$INFO[Player.Title,,  ][/COLOR]</value>
         <value condition="!IsEmpty(Container.NumItems) + ![Window.IsVisible(3201) | Window.IsVisible(3202) | Window.IsVisible(3203)]">$INFO[Container.NumItems,[COLOR=Highlight],[/COLOR] ]$LOCALIZE[31166]$INFO[Container.CurrentPage,  •  [COLOR=Highlight],[/COLOR]]$INFO[Container.NumPages, $LOCALIZE[20163] [COLOR=Highlight],[/COLOR] $LOCALIZE[31167]]</value>
-        <value condition="Pvr.IsRecording + !Skin.HasSetting(disable.pvrstatus)">$INFO[Pvr.NowRecordingTitle,$LOCALIZE[19158]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NowRecordingChannel,  ,]</value>
-        <value condition="Pvr.HasTimer + !Skin.HasSetting(disable.pvrstatus)">$INFO[Pvr.NextRecordingTitle,$LOCALIZE[19157]...  [COLOR=Highlight],[/COLOR]]$INFO[Pvr.NextRecordingDateTime,  ,]$INFO[Pvr.NextRecordingChannel,  ,]</value>
-        <value>[COLOR=Highlight]$INFO[Window(home).Property(Movies.Count)][/COLOR] $LOCALIZE[20342]  •  [COLOR=Highlight]$INFO[Window(home).Property(Episodes.Count)][/COLOR] $LOCALIZE[20360]  •  [COLOR=Highlight]$INFO[Window(home).Property(Music.SongsCount)][/COLOR] $LOCALIZE[134]$INFO[Pvr.BackendChannels,  •  [COLOR=Highlight],[/COLOR] $LOCALIZE[31114]]</value>
+        <value>$VAR[MainHeaderSubLabelPVR,,[CR]]$VAR[MainHeaderSubLabelVideo,,[CR]]$VAR[MainHeaderSubLabelAudio,,[CR]]</value>
     </variable>
     
     <variable name="MainHeaderIcon">
@@ -328,7 +352,7 @@
                 <label>$VAR[MainHeaderSubLabel]</label>
             </control>
         </control>
-        
+
     </include>
     
     <include name="HeaderRightInfo">

@@ -62,7 +62,7 @@
             
             <name>Font-Sublabel</name>
             <filename>Roboto-Bold.ttf</filename>
-            <size>32</size>
+            <size>24</size>
         </font>
         <font>
             
@@ -223,7 +223,7 @@
             
             <name>Font-Sublabel</name>
             <filename>Roboto-Bold-Caps-Heb.ttf</filename>
-            <size>32</size>
+            <size>24</size>
         </font>
         <font>
             
@@ -376,7 +376,7 @@
         <font>
             <name>Font-Sublabel</name>
             <filename>SourceSansPro-Bold.ttf</filename>
-            <size>32</size>
+            <size>24</size>
         </font>
         <font>
             <name>Font-ViewCategory</name>
@@ -523,7 +523,7 @@
             <linespacing>1.05</linespacing>
             <name>Font-Sublabel</name>
             <filename>Homizio-Bold.ttf</filename>
-            <size>32</size>
+            <size>24</size>
         </font>
         <font>
             <linespacing>1.05</linespacing>
