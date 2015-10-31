@@ -837,6 +837,16 @@
                     <enable>!Skin.HasSetting(disable.clockheader)</enable>
                     <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
                 </control>
+
+                <control type="radiobutton" id="822" description="Disable PVR Status">
+                    <label>31288</label>
+                    <align>left</align>
+                    <font>Font-ListInfo</font>
+                    <onclick>Skin.ToggleSetting(disable.pvrstatus)</onclick>
+                    <selected>!Skin.HasSetting(disable.pvrstatus)</selected>
+                    <visible>ControlGroup(3).HasFocus(35)</visible>
+                    <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+                </control>
                 
                 <!-- ADDONS -->
                 <control type="radiobutton" id="804" description="Tv Tunes">

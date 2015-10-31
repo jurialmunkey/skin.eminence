@@ -1,3 +1,6 @@
+[B]1.2.7[/B]
+Add option to turn off PVR status
+
 [B]1.2.6[/B]
 updated language files from Transifex
 Add menu button for videos library mouse
