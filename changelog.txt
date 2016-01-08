@@ -1,3 +1,121 @@
+[B]1.2.6[/B]
+updated language files from Transifex
+Add menu button for videos library mouse
+Fix artistslideshow start on home
+Locksettings order
+
+[B]1.2.5[/B]
+Fix home menu visibility bug
+Fix addon hub options
+Update transifex
+
+[B]1.2.4[/B]
+Updates to viewtypes
+
+[B]1.2.3[/B]
+Fix MyWeather blank screen
+
+[B]1.2.2[/B]
+Remove strings.po~ file
+Remove MyPVR.xml for Helix
+Fix "Icons" non localised label in MyWeather.xml
+Add Now Next Channel - epg views
+
+[B]1.2.1[/B]
+Startup video before login screen
+
+[B]1.2.0[/B]
+Startup video option
+Fix AM PM clock issue
+Seekbar progress cache
+
+[B]1.1.9[/B]
+Add more hub option presets
+Add OSD PVR Guide
+Highlight colour for pvr osd channels/guide
+Fix hub option height
+Fix preset list
+Side label now shows playlist name
+
+[B]1.1.8[/B]
+Kaitoast changes
+Fix lyrics window
+Fix pvr hub back functions
+Fix watched indicators vars
+Music osd lower
+Option for "classic" extendedinfo details
+Group label pvr
+
+[B]1.1.7[/B]
+Fully Customisable Hubs for Movies, TvShows and Music (resets previous customisations)
+Ability to change path for movies and tvshow hubs spotlight
+
+[B]1.1.6[/B]
+Transifex update
+Fix some seekbar / info issues
+Fix DialogSelect and FileBrowser need aspectratio keep
+Add codec info to extendinfo
+Fix back button in pvr
+Add next and now recording info in header
+Remove time info on osd for livetv (only finishes at)
+
+[B]1.1.5[/B]
+Weather Icon selection option
+Skin init now after yes no dialog
+Remove debug window
+Fix music files hub issue
+
+[B]1.1.4[/B]
+Preliminary PVR setup
+New weather icons
+Fix hub label width
+
+[B]1.1.3[/B]
+Fix Trailers not opening fullscreen
+
+[B]1.1.2[/B]
+Alignment bug hunt begins
+Custom_ Windows
+MyWeather
+Next Aired
+Global Search
+Favourites
+
+[B]1.1.1[/B]
+MediaFilter
+MediaSource
+NetworkSetup
+Font remove unicode attrb
+SmartPlaylistRule/Editor
+VideoOSDSettings
+ProfileSettings
+All control id changes complete
+
+[B]1.1.0[/B]
+Helix/Kodi work begins
+AddonBrowser
+DialogAddonBrowser
+DialogContentSettings
+Keyboard Updates
+Fix List View alignment
+Fix Wide View alignment
+Fix Poster View alignment
+Fix Lovefilm View alignment
+Fix Banner View alignment
+Fix BigList alignment
+Fix Infolist alignment
+Fix Bannerlist alignment
+
+[B]1.0.11[/B]
+Dialog progress
+Fixes to side header
+
+[B]1.0.10[/B]
+Update transifex
+New Ok and YESNO Dialog
+Fix FileManager header length
+Match Sidelabel to posterborder color
+
 [B]1.0.9[/B]
 Fix undefined id
 

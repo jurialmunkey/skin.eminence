@@ -138,6 +138,13 @@
             <reverse>yes</reverse>
             <font>Font-ListInfo</font>
         </control>
+        
+        <control type="sliderex" id="13">
+            <description>Default spincontrolex</description>
+            <align>left</align>
+            <font>Font-ListInfo</font>
+            <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        </control>
     </controls>
 
 </window>

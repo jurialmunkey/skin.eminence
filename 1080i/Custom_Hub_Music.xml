@@ -23,7 +23,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>15100</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             
             <control type="list" id="9500">
@@ -48,7 +48,7 @@
                 <width>globalh</width>
                 <font>Font-WidgetCategory</font>
                 <label>10504</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             
             <control type="group">

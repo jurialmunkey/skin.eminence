@@ -195,14 +195,8 @@
                 <onleft>9000</onleft>
                 <include>DefMyNavBarGroupList</include>
                 
-                <control type="button" id="9521">
+                <control type="button" id="12">
                     <label>518</label>
-                    <visible>Stringcompare(Control.GetLabel(7),$LOCALIZE[24021]) + [Substring(ListItem.Property(Addon.ID),script.,left) | Substring(ListItem.Property(Addon.ID),plugin.,left)]</visible>
-                    <onclick>Back</onclick>
-                    <onclick>Back</onclick>
-                    <onclick condition="Substring(ListItem.Property(Addon.ID),script.,left)">Runscript($INFO[ListItem.Property(Addon.ID)])</onclick>
-                    <onclick condition="Substring(ListItem.Property(Addon.ID),plugin.,left)">RunAddon($INFO[ListItem.Property(Addon.ID)])</onclick>
-                    
                     <include>DefNavMenuButton</include>
                 </control>
 

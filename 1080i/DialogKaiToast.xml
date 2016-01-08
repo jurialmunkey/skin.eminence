@@ -4,88 +4,76 @@
     <allowoverlay>yes</allowoverlay>
     <zorder>3</zorder>
     <controls>
-        <control type="group">      
-            <posx>900</posx>
+        <control type="group">
+            <posx>400r</posx>
             <visible>!Window.IsActive(DialogOK.xml)</visible>
             <visible>!Window.IsActive(DialogYesNo.xml)</visible>
             <visible>!Window.IsActive(DialogContextMenu.xml)</visible>
             <visible>!Window.IsActive(DialogButtonMenu.xml)</visible>
-            <include>Animation.SlideOpen.Left</include>
-            <include>DefContextMenuBackground</include>
-            
             <control type="image" id="400">
                 <description>avatar</description>
-                <top>35</top>
-                <left>250</left>
-                <width>128</width>
-                <height>128</height>
+                <top>75</top>
+                <left>302</left>
+                <width>64</width>
+                <height>64</height>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>TopBarIcon</colordiffuse>
-                <texture>special://skin/extras/icons/info.png</texture>
+                <texture>kaitoast/info.png</texture>
             </control>
             
-            <control type="label" id="401">
-                <description>Header</description>
-                <left>400</left>
-                <top>0</top>
-                <width>590</width>
-                <height>164</height>
-                <font>Font-ListInfo</font>
-                <textcolor>TopBarIcon</textcolor>
-                <align>left</align>
+            <control type="label" id="401" description="header">
+                <posx>270</posx>
+                <posy>44</posy>
+                <width>500</width>
+                <height>70</height>
+                <font>Font-Sublabel</font>
+                <align>right</align>
                 <aligny>center</aligny>
-                <scrollout>false</scrollout>
-                <pauseatend>2000</pauseatend>
+                <textcolor>$VAR[TopBarMainLabel]</textcolor>
+                <wrapmultiline>true</wrapmultiline>
             </control>
-            
-            <control type="label" id="402">
-                <description>Message</description>
-                <left>400</left>
-                <top>36</top>
-                <width>590</width>
-                <height>164</height>
+            <control type="label" id="402" description="message">
+                <posx>270</posx>
+                <posy>102</posy>
+                <width>500</width>
                 <font>Font-ListInfo</font>
-                <textcolor>TopBarIcon</textcolor>
-                <align>left</align>
-                <aligny>center</aligny>
-                <scroll>true</scroll>
+                <textcolor>$VAR[TopBarSubLabel]</textcolor>
+                <align>right</align>
             </control>
             
             <control type="image" id="403">
                 <description>avatar</description>
-                <top>35</top>
-                <left>250</left>
-                <width>128</width>
-                <height>128</height>    
+                <visible>false</visible>
+                <top>75</top>
+                <left>302</left>
+                <width>64</width>
+                <height>64</height>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>TopBarIcon</colordiffuse>
-                <visible>false</visible>
-                <texture>special://skin/extras/icons/info.png</texture>
+                <texture>kaitoast/info.png</texture>
             </control>
-            
             <control type="image" id="404">
                 <description>avatar</description>
-                <top>35</top>
-                <left>250</left>
-                <width>128</width>
-                <height>128</height>    
-                <aspectratio>keep</aspectratio>
                 <visible>false</visible>
-                <texture>special://skin/extras/icons/warning.png</texture>
+                <top>75</top>
+                <left>302</left>
+                <width>64</width>
+                <height>64</height>
+                <aspectratio>keep</aspectratio>
                 <colordiffuse>TopBarIcon</colordiffuse>
+                <texture>kaitoast/warning.png</texture>
             </control>
-            
             <control type="image" id="405">
                 <description>avatar</description>
-                <top>35</top>
-                <left>250</left>
-                <width>128</width>
-                <height>128</height>    
-                <aspectratio>keep</aspectratio>
                 <visible>false</visible>
-                <texture>special://skin/extras/icons/error.png</texture>
+                <top>75</top>
+                <left>302</left>
+                <width>64</width>
+                <height>64</height>
+                <aspectratio>keep</aspectratio>
                 <colordiffuse>TopBarIcon</colordiffuse>
+                <texture>kaitoast/error.png</texture>
             </control>
-        </control>
+        </control>   
     </controls>
 </window>

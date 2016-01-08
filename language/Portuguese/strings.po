@@ -228,6 +228,14 @@ msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Conjunto de Filmes"
 
+msgctxt "#31208"
+msgid "Home Screen"
+msgstr "Ecrã inicial"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Mover item"
+
 msgctxt "#31223"
 msgid "Banner List"
 msgstr "Lista de Faixas"
@@ -259,3 +267,7 @@ msgstr "Moderado"
 msgctxt "#31246"
 msgid "No description available"
 msgstr "Sem descrição disponível"
+
+msgctxt "#31283"
+msgid "Set Path"
+msgstr "Definir localização"

@@ -13,11 +13,11 @@
             <include>Animation.FadeOut</include>
             <texture colordiffuse="Background">common/white.png</texture>
             <animation effect="fade" start="100" end="90" condition="true">Conditional</animation>
-            <visible>Window.IsVisible(DialogSelect.xml)</visible>
+            <visible>Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogPVRGuideInfo.xml)</visible>
         </control>
         <control type="group">
             <animation effect="fade" start="0" end="100" time="250">VisibleChange</animation>
-            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml)]</visible>
+            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogPVRGuideInfo.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSDSettings.xml) | Window.IsActive(VideoOSDBookmarks.xml) | Window.IsActive(DialogKaiToast.xml)]</visible>
             <include>GlobalVignette</include>
         </control>
 
@@ -25,9 +25,11 @@
         <control type="group" description="MusicVis">
             <posx>251</posx>
             <posy>280</posy>
+            <visible>Skin.HasSetting(osd.useclassicinfo)</visible>
             <animation effect="slide" start="0" end="0,-40" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-XBMC_Lyrics-main.xml)]</visible>
-            <include>Animation.SlideOpen.LeftToRight</include>
+            <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
+            <include>Animation.FadeIn.Up</include>
+            <include>Animation.FadeOut</include>
             <control type="image">
                 <width>1416</width>
                 <height>690</height>
@@ -73,7 +75,7 @@
                 <align>justify</align>
                 <font>Font-ListInfo</font>
                 <label>$VAR[MusicOSDPlot]</label>
-                <visible>!Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
+                <visible>!Window.IsVisible(script-cu-lrclyrics-main.xml)</visible>
             </control>
             
             <control type="label">
@@ -87,6 +89,7 @@
         </control>
         
         <control type="group" description="Fullscreeninfo">
+            <visible>Skin.HasSetting(osd.useclassicinfo)</visible>
             <include>Animation.FadeIn.Up</include>
             <include>Animation.FadeOut</include>
             <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
@@ -428,19 +431,120 @@
         </control>
         
         <control type="group">
-            <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(musicosd) | Window.IsActive(videoosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+            <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(musicosd) | Window.IsActive(videoosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
             <animation effect="fade" start="0" end="100" time="200">Visible</animation>
             <animation effect="fade" start="100" end="0" time="200">Hidden</animation>
             <posy>1080</posy>
             <animation effect="slide" start="0" end="0,-80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-            
+            <animation effect="slide" end="0,-280" time="200" condition="!Skin.HasSetting(osd.useclassicinfo) + !IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
+            <animation effect="slide" end="0,-280" time="200" condition="!Skin.HasSetting(osd.useclassicinfo) + Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]">Conditional</animation>
             <control type="image">
                 <width>1920</width>
                 <height>364</height>    
                 <texture colordiffuse="PanelBG">common/white.png</texture>
                 <animation effect="fade" end="90" condition="true">Conditional</animation>
             </control>
+            <control type="group" description="InfoBottom">
+                <visible>!Skin.HasSetting(osd.useclassicinfo)</visible>
+                <visible>!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+                <include>Animation.DelayFadeIn</include>
+                <control type="group">
+                    <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.Content(musicvideos)</visible>
+                    <control type="image">
+                        <top>16</top>
+                        <left>16</left>
+                        <height>248</height>
+                        <width>165</width>
+                        <texture background="true">$INFO[Player.Art(tvshow.poster)]</texture>
+                        <aspectratio aligny="top" align="center">scale</aspectratio>
+                        <visible>!IsEmpty(Player.Art(tvshow.poster))</visible>
+                    </control>
+                
+                    <control type="image">
+                        <top>16</top>
+                        <left>16</left>
+                        <height>248</height>
+                        <width>165</width>
+                        <texture background="true">$INFO[Player.Art(poster)]</texture>
+                        <aspectratio aligny="top" align="center">scale</aspectratio>
+                        <visible>!IsEmpty(Player.Art(poster))</visible>
+                    </control>
 
+                </control>
+                
+                <control type="image">
+                    <top>16</top>
+                    <left>16</left>
+                    <height>248</height>
+                    <width>248</width>
+                    <texture background="true" fallback="special://skin/extras/icons/film.png">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">keep</aspectratio>
+                    <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
+                </control>
+                
+                <control type="grouplist">
+                    <visible>!VideoPlayer.Content(livetv) + [!IsEmpty(Player.Art(poster)) | !IsEmpty(Player.Art(tvshow.poster))]</visible>
+                    <orientation>vertical</orientation>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>204</left>
+                    <include>DefOSDInfoContent</include>
+                </control>
+                <control type="grouplist">
+                    <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
+                    <orientation>vertical</orientation>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>287</left>
+                    <include>DefOSDInfoContent</include>
+                </control>
+            </control>
+            
+            <control type="group" description="InfoBottomMusic">
+                <visible>!Skin.HasSetting(osd.useclassicinfo)</visible>
+                <include>Animation.DelayFadeIn</include>
+                <visible>Window.IsVisible(visualisation) + [[[Window.IsVisible(musicosd) | Player.ShowInfo] + Skin.HasSetting(Vis.ExtraInfo)] | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
+                <control type="image">
+                    <top>16</top>
+                    <left>16</left>
+                    <height>248</height>
+                    <width>248</width>
+                    <texture background="true" fallback="special://skin/extras/icons/film.png">$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">scale</aspectratio>
+                    <visible>VideoPlayer.Content(livetv) | [IsEmpty(Player.Art(poster)) + IsEmpty(Player.Art(tvshow.poster))]</visible>
+                </control>
+                <control type="grouplist">
+                    <orientation>vertical</orientation>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <itemgap>10</itemgap>
+                    <top>16</top>
+                    <left>287</left>
+                    <include>DefOSDInfoContentMusic</include>
+                </control>
+            </control>
+            <control type="slider" id="401">
+                <description>Slider Bar</description>
+                <posy>-16</posy>
+                <width>1920</width>
+                <height>16</height>
+                <visible>true</visible>
+                <animation effect="fade" end="0" condition="true">Conditional</animation>
+            </control>
+            <control type="progress">
+                <description>Progress Bar</description>
+                <posy>-16</posy>
+                <width>1920</width>
+                <height>16</height>
+                <info>Player.ProgressCache</info>
+                <texturebg colordiffuse="00000000">osd/progress-bg.png</texturebg>
+                <lefttexture colordiffuse="Keyboard">osd/progress-end.png</lefttexture>
+                <midtexture colordiffuse="Keyboard">osd/progress-end.png</midtexture>
+                <righttexture colordiffuse="Keyboard">osd/progress-end.png</righttexture>
+                <visible>true</visible>
+                <animation effect="fade" end="50" condition="true">Conditional</animation>
+            </control>
             <control type="progress" id="23">
                 <description>Progress Bar</description>
                 <posy>-16</posy>
@@ -451,57 +555,6 @@
                 <animation effect="fade" end="50" condition="true">Conditional</animation>
             </control>
             
-            <!--<animation effect="slide" end="0,-280" time="200" condition="!IsEmpty(Window(seekbar).Property(fullscreeninfo)) + [Window.IsActive(videoosd) | Window.IsActive(DialogFullScreenInfo.xml)]">Conditional</animation>
-            <control type="group">
-                <animation effect="slide" start="0" end="0,80" time="200" condition="Window.IsActive(videoosd) | Window.IsActive(musicosd)">Conditional</animation>
-                <posx>globalpad</posx>
-                <posy>globalpad</posy>
-                <control type="image">
-                    <width>180</width>
-                    <height>260</height>
-                    <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
-                </control>
-                <control type="image">
-                    <posx>globalpad</posx>
-                    <posy>globalpad</posy>
-                    <width>160</width>
-                    <height>240</height>
-                    <texture>$INFO[Player.Art(poster)]</texture>
-                </control>
-                <control type="group">
-                    <posx>195</posx>
-                    <posy>5</posy>
-                    <control type="label">
-                        <aligny>top</aligny>
-                        <align>justify</align>
-                        <left>0</left>
-                        <right>30</right>
-                        <font>Font-ListInfo</font>
-                        <label fallback="207">$INFO[VideoPlayer.TagLine,[COLOR=Highlight][B],[/B][/COLOR]]</label>
-                    </control>
-                    <control type="textbox">
-                        <aligny>top</aligny>
-                        <align>justify</align>
-                        <top>38</top>
-                        <height>114</height>
-                        <left>0</left>
-                        <right>30</right>
-                        <font>Font-ListInfo</font>
-                        <label>$INFO[VideoPlayer.Plot]</label>
-                    </control>
-                    <control type="textbox">
-                        <aligny>top</aligny>
-                        <align>right</align>
-                        <height>240</height>
-                        <left>0</left>
-                        <right>30</right>
-                        <font>Font-ListInfo-Small</font>
-                        <label>$INFO[VideoPlayer.AudioCodec]$VAR[AudioChannelsOSD,  •  ,]$INFO[VideoPlayer.VideoResolution,  •  ,]$INFO[VideoPlayer.VideoCodec,  •  ,]$INFO[VideoPlayer.VideoAspect,  •  ,]</label>
-                        <animation effect="fade" start="100" end="66" condition="true">Conditional</animation>
-                    </control>
-                </control>
-            </control>
-            -->
             <control type="image">
                 <posx>500r</posx>
                 <posy>-297</posy>
@@ -530,7 +583,7 @@
         </control>
         
         <control type="group">
-            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)]</visible>
+            <visible>!Window.IsVisible(DialogSlider.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRGuideOSD.xml) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Player.ShowInfo | Window.IsActive(DialogFullScreenInfo.xml)] | Window.IsActive(DialogPVRGuideInfo.xml)</visible>
             <animation type="Visible">
                 <effect type="slide" start="0,-24" end="0" time="200"/>
                 <effect type="fade" start="0" end="100" time="200"/>

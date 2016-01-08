@@ -11,7 +11,7 @@
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             <animation effect="slide" end="horznegpad" start="0" time="200" condition="ControlGroup(9000).HasFocus() | Window.IsActive(DialogContextMenu.xml)">Conditional</animation>
-            <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
+            <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog)">Conditional</animation>
             <include>DefSettingsLinesSettings</include>
             <control type="group">
                 <include>DefSettingsLeftGroup</include>
@@ -20,7 +20,7 @@
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
-                <control type="label">
+                <control type="label" id="2">
                     <posx>30</posx>
                     <description>Header</description>
                     <include>DefSettingsLeftGroupWidth</include>
@@ -61,7 +61,7 @@
                 <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
             </control>
             
-            <control type="sliderex" id="10">
+            <control type="sliderex" id="13">
                 <description>Default Spin Control</description>
                 <align>left</align>
                 <font>Font-ListInfo</font>

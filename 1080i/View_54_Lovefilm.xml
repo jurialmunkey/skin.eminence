@@ -49,7 +49,7 @@
                     <textcolor>Selected</textcolor>
                 </control>
                 <control type="label">
-                    <posx>0r</posx>
+                    <right>0</right>
                     <posy>40r</posy>
                     <width>lovefilmplot</width>
                     <align>right</align>

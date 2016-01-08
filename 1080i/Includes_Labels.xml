@@ -11,6 +11,17 @@
         <value condition="!IsEmpty(ListItem.VideoResolution)">SD</value>
     </variable>
     
+    <variable name="LabelAudioChannels">
+        <value condition="stringcompare(ListItem.AudioChannels,8)">7.1</value>
+        <value condition="stringcompare(ListItem.AudioChannels,6)">5.1</value>
+        <value condition="stringcompare(ListItem.AudioChannels,5)">4.1</value>
+        <value condition="stringcompare(ListItem.AudioChannels,4)">4.0</value>
+        <value condition="stringcompare(ListItem.AudioChannels,3)">2.1</value>
+        <value condition="stringcompare(ListItem.AudioChannels,2)">2.0</value>
+        <value condition="stringcompare(ListItem.AudioChannels,1)">1.0</value>
+        <value>???</value>
+    </variable>
+    
     <variable name="DialogSelectHeader">
         <value condition="stringcompare(Control.GetLabel(1),$LOCALIZE[36528]) | stringcompare(Control.GetLabel(1),$LOCALIZE[36527])">$LOCALIZE[31241]</value>
         <value>$INFO[Control.GetLabel(1)]</value>
@@ -192,9 +203,9 @@
     
     <variable name="NavSideLabel">
         <value condition="Window.IsVisible(favourites)">$LOCALIZE[1036]</value>
+        <value condition="substring(Container.FolderPath,.xsp,right) + !substring(Container.FolderPath,PartyMode)">$INFO[Container.FolderName]</value>
         <value condition="substring(ListItem.FolderPath,plugin://,left)">$INFO[Container.FolderName]</value>
         <value condition="substring(Container.FolderPath,addons://,left) | Window.IsVisible(MyPrograms.xml)">$LOCALIZE[24001]</value>
-        <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/inprogressshows.xml/)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[31109]</value>
         <value condition="stringcompare(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[31109]</value>
@@ -204,7 +215,7 @@
         <value condition="Container.Content(genres)">$LOCALIZE[135]</value>
         <value condition="Container.Content(directors)">$LOCALIZE[20348]</value>
         <value condition="Container.Content(actors)">$LOCALIZE[344]</value>
-        <value condition="Container.Content(sets)">$LOCALIZE[20434]</value>
+        <value condition="Container.Content(sets)">$LOCALIZE[31207]</value>
         <value condition="Container.Content(countries)">$LOCALIZE[20451]</value>
         <value condition="Container.Content(episodes)">$LOCALIZE[20360]</value>
         <value condition="Container.Content(seasons)">$LOCALIZE[33054]</value>
@@ -213,19 +224,21 @@
         <value condition="Container.Content(albums)">$LOCALIZE[132]</value>
         <value condition="Container.Content(artists)">$LOCALIZE[133]</value>
         <value condition="Container.Content(songs)">$LOCALIZE[134]</value>
+        <value condition="substring(Container.FolderPath,playlist)">$LOCALIZE[559]</value>
+        <value condition="substring(Container.FolderPath,PartyMode)">$LOCALIZE[589]</value>
+        <value condition="substring(Container.FolderPath,library://,left)">$LOCALIZE[15100]</value>
         <value condition="Container.Content(files) | substring(Container.FolderPath,sources://) | Window.IsVisible(MyPics.xml)">$LOCALIZE[1214]</value>
+        <value>$LOCALIZE[15100]</value>
     </variable>
     
     <variable name="PVRSideLabel">
         <value condition="Control.HasFocus(37)">$LOCALIZE[31170]</value>
-        <value condition="Control.IsVisible(10)">$LOCALIZE[19222]</value>
-        <value condition="Control.IsVisible(11)">$LOCALIZE[19019]</value>
-        <value condition="Control.IsVisible(12)">$LOCALIZE[19021]</value>
-        <value condition="Control.IsVisible(13)">$LOCALIZE[19043]</value>
-        <value condition="Control.IsVisible(14)">$LOCALIZE[19040]</value>
-        <value condition="Control.IsVisible(15)">$LOCALIZE[22020]</value>
-        <value condition="Control.IsVisible(16)">$LOCALIZE[19030] / $LOCALIZE[19031]</value>
-        <value condition="Control.IsVisible(17)">$LOCALIZE[137]</value>     
+        <value condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">$LOCALIZE[19222]</value>
+        <value condition="Window.IsVisible(TVChannels)">$LOCALIZE[19023]</value>
+        <value condition="Window.IsVisible(RadioChannels)">$LOCALIZE[19021]</value>
+        <value condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch)">$LOCALIZE[137]</value>
+        <value condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">$LOCALIZE[19017]</value>
+        <value condition="Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">$LOCALIZE[19040]</value>
     </variable>
     
     <variable name="PVRTopLabel">
@@ -237,12 +250,14 @@
     <variable name="MovieWidgetLabel">
         <value condition="stringcompare(Skin.String(movie.widget),recommended)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Skin.String(movie.widget),playlist)">$LOCALIZE[559]</value>
+        <value condition="stringcompare(Skin.String(movie.widget),path)">$LOCALIZE[573]</value>
         <value>$LOCALIZE[31112]</value>
     </variable>
     
     <variable name="TvShowWidgetLabel">
         <value condition="stringcompare(Skin.String(tvshow.widget),recommended)">$LOCALIZE[31110]</value>
         <value condition="stringcompare(Skin.String(tvshow.widget),playlist)">$LOCALIZE[559]</value>
+        <value condition="stringcompare(Skin.String(tvshow.widget),path)">$LOCALIZE[573]</value>
         <value>$LOCALIZE[31112]</value>
     </variable>
     
@@ -272,9 +287,11 @@
     </variable>
     
     <variable name="MusicOSDPlot">
+        <value condition="Window.IsVisible(script-cu-lrclyrics-main.xml)">-</value>
         <value condition="!IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtistBiography))">$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography)]</value>
         <value condition="!IsEmpty(MusicPlayer.Property(Artist_Description))">$INFO[MusicPlayer.Property(Artist_Description)]</value>
         <value condition="!IsEmpty(MusicPlayer.Property(Album_Description))">$INFO[MusicPlayer.Property(Album_Description)]</value>
+        <value condition="!Skin.HasSetting(osd.useclassicinfo)">$INFO[MusicPlayer.Position(0).Title,01. ,   ]$INFO[MusicPlayer.Position(0).Duration,(,)]$INFO[MusicPlayer.Position(1).Title,     02. ,   ]$INFO[MusicPlayer.Position(1).Duration,(,)]$INFO[MusicPlayer.Position(2).Title,     03. ,   ]$INFO[MusicPlayer.Position(2).Duration,(,)]$INFO[MusicPlayer.Position(3).Title,     04. ,   ]$INFO[MusicPlayer.Position(3).Duration,(,)]$INFO[MusicPlayer.Position(4).Title,     05. ,   ]$INFO[MusicPlayer.Position(4).Duration,(,)]$INFO[MusicPlayer.Position(5).Title,     06. ,   ]$INFO[MusicPlayer.Position(5).Duration,(,)]$INFO[MusicPlayer.Position(6).Title,     07. ,   ]$INFO[MusicPlayer.Position(6).Duration,(,)]$INFO[MusicPlayer.Position(7).Title,     08. ,   ]$INFO[MusicPlayer.Position(7).Duration,(,)]$INFO[MusicPlayer.Position(8).Title,     09. ,   ]$INFO[MusicPlayer.Position(8).Duration,(,)]$INFO[MusicPlayer.Position(9).Title,     10. ,   ]$INFO[MusicPlayer.Position(9).Duration,(,)]$INFO[MusicPlayer.Position(10).Title,     11. ,   ]$INFO[MusicPlayer.Position(10).Duration,(,)]$INFO[MusicPlayer.Position(11).Title,     12. ,   ]$INFO[MusicPlayer.Position(11).Duration,(,)]$INFO[MusicPlayer.Position(12).Title,     13. ,   ]$INFO[MusicPlayer.Position(12).Duration,(,)]$INFO[MusicPlayer.Position(13).Title,     14. ,   ]$INFO[MusicPlayer.Position(13).Duration,(,)]$INFO[MusicPlayer.Position(14).Title,     15. ,   ]$INFO[MusicPlayer.Position(14).Duration,(,)]$INFO[MusicPlayer.Position(15).Title,     16. ,   ]$INFO[MusicPlayer.Position(15).Duration,(,)]$INFO[MusicPlayer.Position(16).Title,     17. ,   ]$INFO[MusicPlayer.Position(16).Duration,(,)]$INFO[MusicPlayer.Position(17).Title,     18. ,   ]$INFO[MusicPlayer.Position(17).Duration,(,)]$INFO[MusicPlayer.Position(18).Title,     19. ,   ]$INFO[MusicPlayer.Position(18).Duration,(,)]$INFO[MusicPlayer.Position(19).Title,     20. ,   ]$INFO[MusicPlayer.Position(19).Duration,(,)]</value>
         <value>$INFO[MusicPlayer.Position(0).Title,01. ,   ]$INFO[MusicPlayer.Position(0).Duration,(,)]$INFO[MusicPlayer.Position(1).Title,[CR]02. ,   ]$INFO[MusicPlayer.Position(1).Duration,(,)]$INFO[MusicPlayer.Position(2).Title,[CR]03. ,   ]$INFO[MusicPlayer.Position(2).Duration,(,)]$INFO[MusicPlayer.Position(3).Title,[CR]04. ,   ]$INFO[MusicPlayer.Position(3).Duration,(,)]$INFO[MusicPlayer.Position(4).Title,[CR]05. ,   ]$INFO[MusicPlayer.Position(4).Duration,(,)]$INFO[MusicPlayer.Position(5).Title,[CR]06. ,   ]$INFO[MusicPlayer.Position(5).Duration,(,)]$INFO[MusicPlayer.Position(6).Title,[CR]07. ,   ]$INFO[MusicPlayer.Position(6).Duration,(,)]$INFO[MusicPlayer.Position(7).Title,[CR]08. ,   ]$INFO[MusicPlayer.Position(7).Duration,(,)]$INFO[MusicPlayer.Position(8).Title,[CR]09. ,   ]$INFO[MusicPlayer.Position(8).Duration,(,)]$INFO[MusicPlayer.Position(9).Title,[CR]10. ,   ]$INFO[MusicPlayer.Position(9).Duration,(,)]$INFO[MusicPlayer.Position(10).Title,[CR]11. ,   ]$INFO[MusicPlayer.Position(10).Duration,(,)]$INFO[MusicPlayer.Position(11).Title,[CR]12. ,   ]$INFO[MusicPlayer.Position(11).Duration,(,)]$INFO[MusicPlayer.Position(12).Title,[CR]13. ,   ]$INFO[MusicPlayer.Position(12).Duration,(,)]$INFO[MusicPlayer.Position(13).Title,[CR]14. ,   ]$INFO[MusicPlayer.Position(13).Duration,(,)]$INFO[MusicPlayer.Position(14).Title,[CR]15. ,   ]$INFO[MusicPlayer.Position(14).Duration,(,)]$INFO[MusicPlayer.Position(15).Title,[CR]16. ,   ]$INFO[MusicPlayer.Position(15).Duration,(,)]$INFO[MusicPlayer.Position(16).Title,[CR]17. ,   ]$INFO[MusicPlayer.Position(16).Duration,(,)]$INFO[MusicPlayer.Position(17).Title,[CR]18. ,   ]$INFO[MusicPlayer.Position(17).Duration,(,)]$INFO[MusicPlayer.Position(18).Title,[CR]19. ,   ]$INFO[MusicPlayer.Position(18).Duration,(,)]$INFO[MusicPlayer.Position(19).Title,[CR]20. ,   ]$INFO[MusicPlayer.Position(19).Duration,(,)]</value>
     </variable>
     
@@ -327,11 +344,6 @@
         <value condition="ControlGroup(5).HasFocus(606)">$LOCALIZE[31260]</value>
         <value condition="ControlGroup(5).HasFocus(607)">$LOCALIZE[31261]</value>
         <value condition="ControlGroup(5).HasFocus(608)">$LOCALIZE[31262]</value>
-        <value condition="ControlGroup(5).HasFocus(401)">$LOCALIZE[31263]</value>
-        <value condition="ControlGroup(5).HasFocus(402)">$LOCALIZE[31264]</value>
-        <value condition="ControlGroup(5).HasFocus(403) | ControlGroup(5).HasFocus(404) | ControlGroup(5).HasFocus(405) | ControlGroup(5).HasFocus(406) | ControlGroup(5).HasFocus(407) | ControlGroup(5).HasFocus(503) | ControlGroup(5).HasFocus(504) | ControlGroup(5).HasFocus(505) | ControlGroup(5).HasFocus(506) | ControlGroup(5).HasFocus(507)">$LOCALIZE[31265]</value>
-        <value condition="ControlGroup(5).HasFocus(501)">$LOCALIZE[31266]</value>
-        <value condition="ControlGroup(5).HasFocus(502)">$LOCALIZE[31267]</value>
         <value condition="ControlGroup(5).HasFocus(701)">$LOCALIZE[31268]</value>
         <value condition="ControlGroup(5).HasFocus(704)">$LOCALIZE[31269]</value>
         <value condition="ControlGroup(5).HasFocus(705)">$LOCALIZE[31270]</value>

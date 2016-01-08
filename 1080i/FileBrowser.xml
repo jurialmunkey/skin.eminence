@@ -8,6 +8,7 @@
 
         <control type="group">
             <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
+            <visible>!Window.IsActive(LockSettings.xml)</visible>
             <posx>horzpad</posx>
             <posy>topoffset</posy>
             <include>Animation.SlideOpen.Left</include>
@@ -20,6 +21,7 @@
             <posx>horzpad</posx>
             <posy>listy</posy>
             <visible>!Window.IsActive(DialogNetworkSetup.xml)</visible>
+            <visible>!Window.IsActive(LockSettings.xml)</visible>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
             
@@ -61,6 +63,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
                         <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
@@ -69,11 +72,12 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>300</width>
                         <align>right</align>
@@ -83,7 +87,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>300</width>
                         <align>right</align>
@@ -107,6 +111,7 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.FileNameAndPath]</texture>
                         <visible>substring(ListItem.FileNameAndPath,special://skin/extras/icons/) | !IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
@@ -115,11 +120,12 @@
                         <posy>globalpad</posy>  
                         <width>fiveline</width>
                         <height>fiveline</height>
+                        <aspectratio>keep</aspectratio>
                         <texture>$INFO[Listitem.Icon]</texture>
                         <visible>!substring(ListItem.FileNameAndPath,special://skin/extras/icons/) + IsEmpty(Window(home).Property(showimages))</visible>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>300</width>
                         <align>right</align>
@@ -129,7 +135,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>300</width>
                         <align>right</align>

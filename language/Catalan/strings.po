@@ -36,6 +36,10 @@ msgctxt "#31106"
 msgid "Fullscreen"
 msgstr "Pantalla completa"
 
+msgctxt "#31107"
+msgid "min"
+msgstr "min"
+
 msgctxt "#31109"
 msgid "Recently Added"
 msgstr "Afegits recentment"
@@ -43,6 +47,10 @@ msgstr "Afegits recentment"
 msgctxt "#31111"
 msgid "Type"
 msgstr "Tipus"
+
+msgctxt "#31112"
+msgid "Spotlight"
+msgstr "Spotlight"
 
 msgctxt "#31113"
 msgid "items"
@@ -134,7 +142,7 @@ msgstr "Edita"
 
 msgctxt "#31181"
 msgid "Widget"
-msgstr "Widget"
+msgstr "Giny"
 
 msgctxt "#31190"
 msgid "Login"
@@ -155,6 +163,10 @@ msgstr "Opcions del canal"
 msgctxt "#31197"
 msgid "General Options"
 msgstr "Opcions generals"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Mou l'element"
 
 msgctxt "#31224"
 msgid "Forecast"

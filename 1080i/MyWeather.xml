@@ -4,6 +4,7 @@
     <defaultcontrol always="true">3</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <background>0</background>
+    <onload condition="IsEmpty(Skin.String(weather.useicons))">Skin.SetString(weather.useicons,Monochrome)</onload>
     <include condition="Skin.HasSetting(home.autopop)">GoBackToHome</include>    
     <controls>
 
@@ -30,7 +31,7 @@
                 <control type="button" id="2">
                     <description>Refresh</description>
                     <label>184</label>
-                    <width>200</width>
+                    <width>180</width>
                     <align>left</align>
                     <include>DefContextMenuButton</include>
                     <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(2)">Conditional</animation>
@@ -39,11 +40,26 @@
                 <control type="button" id="4">
                     <description>Settings</description>
                     <label>5</label>
-                    <width>710</width>
+                    <width>180</width>
                     <align>left</align>
                     <onclick>ActivateWindow(weathersettings)</onclick>
                     <include>DefContextMenuButton</include>
                     <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(4)">Conditional</animation>
+                </control>
+                
+                <control type="button" id="9001">
+                    <description>Icons</description>
+                    <label>536</label>
+                    <width>550</width>
+                    <align>left</align>
+                    
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Flat)">Skin.SetString(weather.useicons,Confluence)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Monochrome)">Skin.SetString(weather.useicons,Flat)</onclick>
+                    <onclick condition="stringcompare(Skin.String(weather.useicons),Confluence)">Skin.SetString(weather.useicons,Monochrome)</onclick>
+                    
+                    <include>DefContextMenuButton</include>
+                    <animation effect="fade" start="100" end="25" condition="!Control.HasFocus(9001)">Conditional</animation>
                 </control>
 
                 <control type="spincontrolex" id="3">
@@ -66,6 +82,24 @@
                     <height>340</height>
                     <texture border="5" colordiffuse="PosterBorder">common/border-inner.png</texture>
                 </control>
+                <control type="image">
+                    <posx>20</posx>
+                    <posy>20</posy>
+                    <width>300</width>
+                    <height>300</height>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
+                    <texture>$INFO[Window(weather).Property(Current.FanartCode),weather/,.png]</texture>
+                </control>
+                <control type="image">
+                    <posx>20</posx>
+                    <posy>20</posy>
+                    <width>300</width>
+                    <height>300</height>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
+                    <texture>$INFO[Window(weather).Property(Current.ConditionIcon)]</texture>
+                </control>
                 <control type="label">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -74,6 +108,7 @@
                     <font>Font-BigWeather</font>
                     <align>center</align>
                     <aligny>center</aligny>
+                    <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
                     <label> [B]$VAR[WeatherLabel][/B] </label>
                 </control>
                 <control type="group">
@@ -196,16 +231,33 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
                                 <align>center</align>
                                 <font>Font-MediumWeather</font>
                                 <aligny>center</aligny>
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                                <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>116</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -226,7 +278,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>116</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>
@@ -245,16 +297,33 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>50%</centerleft>
                                 <height>315</height>
                                 <width>233</width>
                                 <align>center</align>
                                 <font>Font-MediumWeather</font>
                                 <aligny>center</aligny>
                                 <label> [B]$VAR[WeatherLabelHourly][/B] </label>
+                                <visible>stringcompare(Skin.String(weather.useicons),Monochrome)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Property(FanartCode),weather/,.png]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Flat)</visible>
+                            </control>
+                            <control type="image">
+                                <centerleft>116</centerleft>
+                                <height>315</height>
+                                <width>153</width>
+                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture>$INFO[ListItem.Icon]</texture>
+                                <visible>stringcompare(Skin.String(weather.useicons),Confluence)</visible>
                             </control>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>116</centerleft>
                                 <posy>15</posy>
                                 <width>213</width>
                                 <align>center</align>
@@ -275,7 +344,7 @@
                         <control type="group">
                             <visible>IsEmpty(ListItem.Property(LongDay))</visible>
                             <control type="label">
-                                <posx>116</posx>
+                                <centerleft>116</centerleft>
                                 <width>213</width>
                                 <height>310</height>
                                 <align>center</align>
@@ -288,6 +357,7 @@
                     <content>
                         <item id="0">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day0.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
                             <property name="LongDay">$LOCALIZE[33006]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
@@ -296,6 +366,7 @@
                         </item>
                         <item id="1">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day1.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
                             <property name="LongDay">$LOCALIZE[33007]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
@@ -304,6 +375,7 @@
                         </item>
                         <item id="2">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day2.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day2.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day2.HighTemp)]</property>
@@ -312,6 +384,7 @@
                         </item>
                         <item id="3">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day3.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day3.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day3.HighTemp)]</property>
@@ -320,6 +393,7 @@
                         </item>
                         <item id="4">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day4.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day4.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day4.HighTemp)]</property>
@@ -328,6 +402,7 @@
                         </item>
                         <item id="5">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day5.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day5.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day5.HighTemp)]</property>
@@ -336,6 +411,7 @@
                         </item>
                         <item id="6">
                             <onclick>noop</onclick>
+                            <icon>$INFO[Window(Weather).Property(Day6.OutlookIcon)]</icon>
                             <property name="Fanartcode">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
                             <property name="LongDay">$INFO[Window(Weather).Property(Day6.Title)]</property>
                             <property name="HighTemperature">$INFO[Window(Weather).Property(Day6.HighTemp)]</property>

@@ -25,7 +25,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>15100</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             
             <control type="list" id="9500">
@@ -49,7 +49,7 @@
                 <width>globalh</width>
                 <font>Font-WidgetCategory</font>
                 <label>$VAR[TvShowWidgetLabel]</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             <control type="group">
                 <posx>listx</posx>
@@ -66,7 +66,7 @@
                         <posy>555</posy>
                         <width>825</width>
                         <align>left</align>
-                        <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Season,,x]$INFO[Container(9501).ListItem.Episode,,. ]$INFO[Container(9501).ListItem.Title]$INFO[Container(9501).ListItem.TvShowTitle,  -  ,]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
@@ -100,7 +100,7 @@
                         <align>left</align>
                         <textcolor>Selected</textcolor>
                         <scroll>true</scroll>
-                        <label>$INFO[Container(9501).ListItem.Label]$INFO[Container(9501).ListItem.Label2, (,)]</label>
+                        <label>$INFO[Container(9501).ListItem.Season,,x]$INFO[Container(9501).ListItem.Episode,,. ]$INFO[Container(9501).ListItem.Title]$INFO[Container(9501).ListItem.TvShowTitle,  -  ,]</label>
                     </control>
                     <control type="label">
                         <posx>935</posx>
@@ -148,9 +148,9 @@
                             <aspectratio>scale</aspectratio>
                         </control>
                     </focusedlayout>
-                    <include condition="!stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">ContentRandomEpisodesWidget</include>
+                    <include condition="!stringcompare(Skin.String(tvshow.widget),path) + !stringcompare(Skin.String(tvshow.widget),recommended) + !stringcompare(Skin.String(tvshow.widget),playlist)">ContentRandomEpisodesWidget</include>
                     <include condition="stringcompare(Skin.String(tvshow.widget),recommended)">ContentRecommendedEpisodesWidget</include>
-                    <include condition="stringcompare(Skin.String(tvshow.widget),playlist)">ContentPlaylistEpisodesWidget</include>
+                    <include condition="stringcompare(Skin.String(tvshow.widget),playlist) | stringcompare(Skin.String(tvshow.widget),path)">ContentPlaylistEpisodesWidget</include>
                 </control>
 
             </control>

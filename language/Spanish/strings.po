@@ -240,9 +240,17 @@ msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Establecer Películas"
 
+msgctxt "#31208"
+msgid "Home Screen"
+msgstr "Inicio"
+
 msgctxt "#31210"
 msgid "Set background image"
 msgstr "Elegir imagen de fondo"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Mover elemento"
 
 msgctxt "#31223"
 msgid "Banner List"
@@ -279,3 +287,7 @@ msgstr "Moderado"
 msgctxt "#31246"
 msgid "No description available"
 msgstr "Descripción no disponible"
+
+msgctxt "#31283"
+msgid "Set Path"
+msgstr "Establecer Ruta"

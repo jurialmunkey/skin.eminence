@@ -55,6 +55,7 @@
     
     <constant name="horzpad">216</constant>
     <constant name="horznegpad">-216</constant>
+    <constant name="horznegpadepg">-432</constant>
     <constant name="listpad">18</constant>
 
 

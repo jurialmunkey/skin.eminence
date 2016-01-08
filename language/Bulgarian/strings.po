@@ -30,11 +30,15 @@ msgstr "Телевизия"
 
 msgctxt "#31105"
 msgid "TV Guide"
-msgstr "ТВ гид"
+msgstr "ТВ справочник"
 
 msgctxt "#31106"
 msgid "Fullscreen"
 msgstr "На целия екран"
+
+msgctxt "#31107"
+msgid "min"
+msgstr "мин"
 
 msgctxt "#31108"
 msgid "Quick Nav"
@@ -51,6 +55,10 @@ msgstr "Тип"
 msgctxt "#31112"
 msgid "Spotlight"
 msgstr "Представени"
+
+msgctxt "#31113"
+msgid "items"
+msgstr "Елемента"
 
 msgctxt "#31114"
 msgid "Channels"
@@ -98,7 +106,7 @@ msgstr "Показвай текущо възпроизвежданото вид�
 
 msgctxt "#31146"
 msgid "Show fanart"
-msgstr "Показвай fanart"
+msgstr "Показвай фен-арт"
 
 msgctxt "#31147"
 msgid "Views"
@@ -176,6 +184,10 @@ msgctxt "#31193"
 msgid "Trailers"
 msgstr "Трейлъри"
 
+msgctxt "#31194"
+msgid "Loading..."
+msgstr "Зареждане..."
+
 msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Настройки на канала"
@@ -183,6 +195,10 @@ msgstr "Настройки на канала"
 msgctxt "#31197"
 msgid "General Options"
 msgstr "Настройки"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Премести елемента"
 
 msgctxt "#31223"
 msgid "Banner List"
@@ -199,6 +215,10 @@ msgstr "Инфо лист"
 msgctxt "#31234"
 msgid "Advanced"
 msgstr "Допълнителни"
+
+msgctxt "#31235"
+msgid "Extras"
+msgstr "Екстри"
 
 msgctxt "#31239"
 msgid "Kiosk mode"

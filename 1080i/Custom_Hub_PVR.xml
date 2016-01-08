@@ -3,7 +3,7 @@
 <window type="window" id="3204">
     <defaultcontrol always="true">9500</defaultcontrol>
     <allowoverlay>false</allowoverlay>
-    <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,PVR-32-11,home)</onload>
+    <onload condition="IsEmpty(Window(home).Property(librarynode))">SetProperty(librarynode,tvchannels,home)</onload>
     <onload>SetProperty(previoushub,3204,home)</onload>
     <onunload>ClearProperty(librarynode,home)</onunload>
     <controls>
@@ -25,7 +25,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>15100</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
             </control>
             
             <control type="list" id="9500">
@@ -44,13 +44,13 @@
                     <include>QuickNavPVRHub</include>
                 </content>
             </control>
-                <control type="label">
+            <control type="label">
                 <posx>18</posx>
                 <posy>145</posy>
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>19163</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
                 <visible>!Player.HasVideo</visible>
             </control>
             <control type="label">
@@ -59,7 +59,7 @@
                 <width>690</width>
                 <font>Font-WidgetCategory</font>
                 <label>31170</label>
-                <animation effect="fade" end="25" condition="true">Conditional</animation>
+                <textcolor>SideLabel</textcolor>
                 <visible>Player.HasVideo</visible>
             </control>
             <control type="group">
@@ -149,7 +149,8 @@
                     </itemlayout>
                     <focusedlayout width="933" height="537">
                     </focusedlayout>
-                    <content target="video">pvr://recordings/-1/</content>
+                    <!--<content target="video">pvr://recordings/-1/</content>-->
+                    <content target="video">pvr://recordings/</content>
                 </control>
                 <control type="image">
                     <posx>11</posx>

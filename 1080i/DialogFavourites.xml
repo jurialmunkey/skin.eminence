@@ -45,7 +45,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>310</width>
                         <align>right</align>
@@ -55,7 +55,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>310</width>
                         <align>right</align>
@@ -84,7 +84,7 @@
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>15</posy>
                         <width>310</width>
                         <align>right</align>
@@ -94,7 +94,7 @@
                         <animation effect="slide" end="0,18" condition="IsEmpty(ListItem.Label2)">Conditional</animation>
                     </control>
                     <control type="label">
-                        <posx>30r</posx>
+                        <right>30</right>
                         <posy>48</posy>
                         <width>310</width>
                         <align>right</align>
@@ -111,7 +111,7 @@
                     <posx>-8</posx>
                     <posy>listy</posy>
                     <height>globalh</height>
-                    <onright>50</onright>
+                    <onright>450</onright>
                     <animation effect="fade" start="100" end="0" time="400" condition="!Control.HasFocus(60) + !Container.Scrolling">Conditional</animation>
                 </control>
             </control>

@@ -16,6 +16,7 @@
 
         <include>GlobalBackground</include>
         <include>DefLeftSideArrow</include>
+        <include>DefMenuMouse</include>
         <include>DefMyNavViews</include>
         <include>DefFullScreenNav</include>
         <include>GlobalTopBar</include>

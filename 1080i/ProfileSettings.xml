@@ -6,6 +6,16 @@
 
     <controls>
         <control type="group">
+            <posx>horzpad</posx>
+            <posy>topoffset</posy>
+            <visible>!Window.IsVisible(SliderDialog) + !Window.IsVisible(FileBrowser) + !Window.IsVisible(LockSettings.xml)</visible>
+            <include>Animation.FadeIn</include>
+            <include>Animation.FadeOut</include>
+            <control type="label" id="2" description="Info Label">
+                <include>DefSideLabelCoords</include>
+            </control>
+        </control>
+        <control type="group">
             <posy>160</posy>
             <include>Animation.FadeIn</include>
             <include>Animation.FadeOut</include>
@@ -18,7 +28,7 @@
                     <height>66</height>
                     <include>DefSettingsLeftGroupWidth</include>
                 </control>
-                <control type="label" id="1000">
+                <control type="label" id="102">
                     <posx>30</posx>
                     <description>Header</description>
                     <include>DefSettingsLeftGroupWidth</include>
@@ -26,7 +36,7 @@
                     <label>10034</label>
                     <textcolor>Selected</textcolor>
                 </control>
-                <control type="image" id="2">
+                <control type="image" id="101">
                     <description>profile image</description>
                     
                     <posy>138</posy>
@@ -40,7 +50,7 @@
                 <include>DefSettingsRightGroup</include>
                 <ondown>2</ondown>
                 <usecontrolcoords>true</usecontrolcoords>
-                <control type="label" id="1001">
+                <control type="label" id="103">
                     <posx>30</posx>
                     <include>DefSettingsRightGroupWidth</include>
                     <align>left</align>

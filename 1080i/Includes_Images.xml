@@ -38,7 +38,8 @@
     
     <variable name="WidgetFanart">
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
-        <value>$INFO[ListItem.Icon]</value>
+        <value condition="!IsEmpty(ListItem.Icon)">$INFO[ListItem.Icon]</value>
+        <value>$INFO[ListItem.Thumb]</value>
     </variable>
     
     <variable name="PlayerBigIcon">
@@ -47,18 +48,17 @@
         <value condition="Player.Paused">common/bigpause.png</value>
     </variable>
     
-    <variable name="WatchedImage">
-        <value condition="ListItem.IsPlaying  + Window.IsVisible(MyPVR.xml)">overlay/OverlayPlaying.png</value>
-        <value condition="ListItem.IsPlaying  + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(59)]">overlay/OverlayPlaying.png</value>
+    <variable name="WatchedImage-List">
         <value condition="ListItem.IsPlaying">overlay/OverlayPlaying-List.png</value>
-        
-        <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png) + Window.IsVisible(MyPVR.xml)">overlay/OverlayWatched.png</value>
-        <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png) + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(59)]">overlay/OverlayWatched.png</value>
         <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched-List.png</value>
-        
-        <value condition="stringcompare(ListItem.Overlay,OverlayUnwatched.png) + Window.IsVisible(MyPVR.xml)">noop</value>
-        <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54) + ![Control.IsVisible(50) | Control.IsVisible(55) | Control.IsVisible(57) | Control.IsVisible(59)]">overlay/OverlayEmpty.png</value>
         <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlay/OverlayEmpty-List.png</value>
+    </variable>
+    
+    <variable name="WatchedImage-Poster">
+        <value condition="ListItem.IsPlaying">overlay/OverlayPlaying.png</value>
+        <value condition="stringcompare(ListItem.Overlay,OverlayWatched.png)">overlay/OverlayWatched.png</value>
+        <value condition="stringcompare(ListItem.Overlay,OverlayUnwatched.png) + Window.IsVisible(MyPVR.xml)">noop</value>
+        <value condition="[stringcompare(ListItem.Overlay,OverlayUnwatched.png) | Container.Content(songs)] + !Control.IsVisible(51) + !Control.IsVisible(52) + !Control.IsVisible(54)">overlay/OverlayEmpty.png</value>
     </variable>
     
     <include name="WatchedImage">
@@ -68,7 +68,27 @@
             <height>32</height>
             <width>32</width>
             <colordiffuse>DFffffff</colordiffuse>
-            <texture background="true" colordiffuse="PanelFG-NF">$VAR[WatchedImage]</texture>
+            <texture background="true" colordiffuse="PanelFG-NF">$VAR[WatchedImage-Poster]</texture>
+            <aspectratio aligny="top">keep</aspectratio>
+            <visible>Container.Content(songs) | ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+        </control>
+        <control type="image">
+            <width>54</width>
+            <height>54</height>
+            <aspectratio aligny="top">keep</aspectratio>
+            <texture colordiffuse="PanelFG" diffuse="common/circle/mask.png">$INFO[ListItem.PercentPlayed,common/circle/,.png]</texture>
+            <visible>!ListItem.IsPlaying + !IntegerGreaterThan(ListItem.PercentPlayed,99) + IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
+        </control>
+    </include>
+    
+    <include name="WatchedImageList">
+        <control type="image">
+            <posx>10</posx>
+            <posy>10</posy>
+            <height>32</height>
+            <width>32</width>
+            <colordiffuse>DFffffff</colordiffuse>
+            <texture background="true" colordiffuse="PanelFG-NF">$VAR[WatchedImage-List]</texture>
             <aspectratio aligny="top">keep</aspectratio>
             <visible>Container.Content(songs) | ListItem.IsPlaying | IntegerGreaterThan(ListItem.PercentPlayed,99) | !IntegerGreaterThan(ListItem.PercentPlayed,1)</visible>
         </control>
@@ -108,6 +128,37 @@
         <value condition="System.Time(21:00,22:00)">special://skin/extras/sunset/22.png</value>
         <value condition="System.Time(22:00,23:00)">special://skin/extras/sunset/23.png</value>
         <value>special://skin/extras/sunset/24.png</value>
+    </variable>
+    
+    <variable name="3DDVDFLAG">
+        <value condition="ListItem.IsStereoscopic">flags/3D.png</value>
+        <value condition="[substring(ListItem.FilenameAndPath,bluray) | substring(ListItem.FilenameAndPath,bdrip) | substring(ListItem.FilenameAndPath,bd25) | substring(ListItem.FilenameAndPath,bd50)]">flags/bluray.png</value>
+        <value condition="substring(ListItem.FilenameAndPath,dvd)">flags/dvd.png</value>
+    </variable>
+    <variable name="Flagstar1">
+        <value condition="IntegerGreaterThan(ListItem.Rating,1)">star10</value>
+        <value condition="IntegerGreaterThan(ListItem.Rating,0)">star5</value>
+        <value>star0</value>
+    </variable>
+    <variable name="Flagstar2">
+        <value condition="IntegerGreaterThan(ListItem.Rating,3)">star10</value>
+        <value condition="IntegerGreaterThan(ListItem.Rating,2)">star5</value>
+        <value>star0</value>
+    </variable>
+    <variable name="Flagstar3">
+        <value condition="IntegerGreaterThan(ListItem.Rating,5)">star10</value>
+        <value condition="IntegerGreaterThan(ListItem.Rating,4)">star5</value>
+        <value>star0</value>
+    </variable>
+    <variable name="Flagstar4">
+        <value condition="IntegerGreaterThan(ListItem.Rating,7)">star10</value>
+        <value condition="IntegerGreaterThan(ListItem.Rating,6)">star5</value>
+        <value>star0</value>
+    </variable>
+    <variable name="Flagstar5">
+        <value condition="IntegerGreaterThan(ListItem.Rating,9)">star10</value>
+        <value condition="IntegerGreaterThan(ListItem.Rating,8)">star5</value>
+        <value>star0</value>
     </variable>
     
 </includes>

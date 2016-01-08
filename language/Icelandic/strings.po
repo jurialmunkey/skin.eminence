@@ -156,6 +156,10 @@ msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Valmöguleikar rása"
 
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Færa hlut"
+
 msgctxt "#31223"
 msgid "Banner List"
 msgstr "Listi á borða"
@@ -183,3 +187,7 @@ msgstr "Sjoppustilling"
 msgctxt "#31244"
 msgid "Moderate"
 msgstr "Hóflegt"
+
+msgctxt "#31283"
+msgid "Set Path"
+msgstr "Velja slóð"

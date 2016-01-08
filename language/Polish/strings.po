@@ -20,6 +20,10 @@ msgctxt "#31101"
 msgid "Information"
 msgstr "Informacje"
 
+msgctxt "#31102"
+msgid "Youtube"
+msgstr "Youtube"
+
 msgctxt "#31103"
 msgid "Vimeo"
 msgstr "Vimeo"
@@ -30,7 +34,7 @@ msgstr "Telewizja"
 
 msgctxt "#31105"
 msgid "TV Guide"
-msgstr "Przewodnik TV"
+msgstr "Przewodnik"
 
 msgctxt "#31106"
 msgid "Fullscreen"
@@ -50,7 +54,7 @@ msgstr "Ostatnio dodane"
 
 msgctxt "#31110"
 msgid "In Progress"
-msgstr "W toku"
+msgstr "W trakcie oglądania"
 
 msgctxt "#31111"
 msgid "Type"
@@ -58,7 +62,7 @@ msgstr "Typ"
 
 msgctxt "#31112"
 msgid "Spotlight"
-msgstr "Spotlight"
+msgstr "Wyróżnione"
 
 msgctxt "#31113"
 msgid "items"
@@ -67,6 +71,10 @@ msgstr "pozycje"
 msgctxt "#31114"
 msgid "Channels"
 msgstr "Kanały"
+
+msgctxt "#31115"
+msgid "Finishes at"
+msgstr "Zakończy się o"
 
 msgctxt "#31116"
 msgid "Close"
@@ -80,13 +88,25 @@ msgctxt "#31119"
 msgid "Info"
 msgstr "Informacje"
 
+msgctxt "#31120"
+msgid "Auto-Login"
+msgstr "Logowanie automatyczne"
+
+msgctxt "#31121"
+msgid "Used Memory"
+msgstr "Użycie pamięci:"
+
+msgctxt "#31122"
+msgid "No info available..."
+msgstr "Brak dostępnych informacji..."
+
 msgctxt "#31123"
 msgid "Channel"
 msgstr "Kanał"
 
 msgctxt "#31124"
 msgid "Airing"
-msgstr "Emitowane"
+msgstr "Na antenie"
 
 msgctxt "#31125"
 msgid "End Time"
@@ -98,11 +118,31 @@ msgstr "Grupa kanałów"
 
 msgctxt "#31127"
 msgid "Recording"
-msgstr "Nagrywam"
+msgstr "Nagrywanie"
+
+msgctxt "#31128"
+msgid "Scheduled"
+msgstr "Zaplanowane"
+
+msgctxt "#31129"
+msgid "Not Scheduled"
+msgstr "Niezaplanowane"
+
+msgctxt "#31130"
+msgid "Shutdown Timer"
+msgstr "Zaplanowane zamknięcie"
+
+msgctxt "#31131"
+msgid "Master Mode: On"
+msgstr "Tryb administratora: Aktywny"
+
+msgctxt "#31132"
+msgid "Master Mode: Off"
+msgstr "Tryb administratora: Nieaktywny"
 
 msgctxt "#31133"
 msgid "Cancel Timer"
-msgstr "Anuluj licznik czasu"
+msgstr "Anuluj zaplanowane zamknięcie"
 
 msgctxt "#31134"
 msgid "Mute"
@@ -112,9 +152,37 @@ msgctxt "#31135"
 msgid "Artwork"
 msgstr "Grafika"
 
+msgctxt "#31136"
+msgid "Changes"
+msgstr "Zmiany"
+
+msgctxt "#31137"
+msgid "Re-initialise skin - WARNING: Resets skin to defaults"
+msgstr "Ponownie wczytaj skórę - UWAGA: Przywraca domyślne ustawienia skóry"
+
+msgctxt "#31138"
+msgid "Set weather fanart"
+msgstr "Ustaw fototapetę pogody"
+
 msgctxt "#31139"
 msgid "Artist slideshow"
 msgstr "Pokaz slajdów wykonawców"
+
+msgctxt "#31140"
+msgid "Show visualisation behind slideshow"
+msgstr "Pokazuj wizualizację w tle pokazu slajdów"
+
+msgctxt "#31141"
+msgid "Movies Widget"
+msgstr "Gadżet filmów"
+
+msgctxt "#31142"
+msgid "Tv Shows Widget"
+msgstr "Gadżet seriali"
+
+msgctxt "#31143"
+msgid "Disc Menu"
+msgstr "Menu dysku"
 
 msgctxt "#31144"
 msgid "Enable TV Tunes"
@@ -122,19 +190,19 @@ msgstr "Odtwarzaj motywy w bibliotece wideo"
 
 msgctxt "#31145"
 msgid "Show now playing video in background"
-msgstr "Używaj odtwarzane wideo w roli tła"
+msgstr "Pokazuj odtwarzane wideo w tle interfejsu"
 
 msgctxt "#31146"
 msgid "Show fanart"
-msgstr "Pokazuj tapety"
+msgstr "Pokazuj fototapetę"
 
 msgctxt "#31147"
 msgid "Views"
-msgstr "Odsłony"
+msgstr "Widoki"
 
 msgctxt "#31149"
 msgid "Set home background"
-msgstr "Ustaw tło ekranu Start"
+msgstr "Ustaw obraz tła ekranu startowego"
 
 msgctxt "#31150"
 msgid "Show info"
@@ -142,7 +210,7 @@ msgstr "Pokazuj informacje"
 
 msgctxt "#31151"
 msgid "Hide info"
-msgstr "Ukryj info"
+msgstr "Ukrywaj informacje"
 
 msgctxt "#31152"
 msgid "Posters"
@@ -155,6 +223,10 @@ msgstr "Kafelki Okładki"
 msgctxt "#31154"
 msgid "Banner"
 msgstr "Banery"
+
+msgctxt "#31155"
+msgid "Lovefilm"
+msgstr "LoveFilm"
 
 msgctxt "#31156"
 msgid "All Movies"
@@ -172,9 +244,25 @@ msgctxt "#31159"
 msgid "Recently Played"
 msgstr "Ostatnio odtwarzane"
 
+msgctxt "#31160"
+msgid "Press down for options..."
+msgstr "Naciśnij DÓŁ, aby wyświetlić opcje..."
+
+msgctxt "#31161"
+msgid "Show PVR channel icon in header"
+msgstr "Pokazuj ikonę kanału w nagłówku"
+
+msgctxt "#31162"
+msgid "Show extended details when pressing info"
+msgstr "Wyświetlaj dodatkowe informacje po naciśnięciu przycisku"
+
 msgctxt "#31163"
 msgid "Custom"
-msgstr "Własny"
+msgstr "Niestandardowy"
+
+msgctxt "#31164"
+msgid "Customise"
+msgstr "Dostosuj"
 
 msgctxt "#31165"
 msgid "Edit icon"
@@ -183,6 +271,10 @@ msgstr "Edytuj ikonę"
 msgctxt "#31166"
 msgid "Items"
 msgstr "Pozycje"
+
+msgctxt "#31167"
+msgid "Pages"
+msgstr "Strony"
 
 msgctxt "#31168"
 msgid "Home"
@@ -210,31 +302,79 @@ msgstr "włącz"
 
 msgctxt "#31174"
 msgid "Cinema Experience"
-msgstr "Cinema Experience"
+msgstr "Dodatek Cinema Experience"
+
+msgctxt "#31175"
+msgid "Television"
+msgstr "Telewizja"
+
+msgctxt "#31176"
+msgid "Media Center"
+msgstr "Centrum multimedialne"
+
+msgctxt "#31177"
+msgid "Show weather with clock"
+msgstr "Pokazuj ikonę pogodę z zegarem"
+
+msgctxt "#31178"
+msgid "Use taller tiles"
+msgstr "Używaj wyższych kafelków"
+
+msgctxt "#31179"
+msgid "Movies Hub"
+msgstr "Centrum Filmów"
+
+msgctxt "#31180"
+msgid "Tv Shows Hub"
+msgstr "Centrum Seriali"
 
 msgctxt "#31181"
 msgid "Widget"
-msgstr "Widżet"
+msgstr "Gadżet"
 
 msgctxt "#31182"
 msgid "Home background widget (press up to access)"
-msgstr "Widżet ekranu Start (wciśnij do góry, aby dostosować)"
+msgstr "Gadżet kontekstowy (naciśnij do góry, aby wyświetlić)"
+
+msgctxt "#31183"
+msgid "Mix of in-progress tv-shows and random movies"
+msgstr "Mieszanka seriali w trakcie oglądania oraz losowych filmów"
+
+msgctxt "#31184"
+msgid "Quick nav mode"
+msgstr "Tryb szybkiej nawigacji"
+
+msgctxt "#31185"
+msgid "Fanart fade amount"
+msgstr "Poziom rozmycia fototapety"
 
 msgctxt "#31186"
 msgid "Custom Item"
-msgstr "Własny element"
+msgstr "Niestandardowa pozycja"
 
 msgctxt "#31187"
 msgid "Next Aired"
-msgstr "Najbliższe emisje odcinków"
+msgstr "Wkrótce na antenie"
+
+msgctxt "#31188"
+msgid "Show next aired in RSS feed"
+msgstr "Pokazuj odcinki wkrótce na antenie w strumieniu RSS"
 
 msgctxt "#31189"
 msgid "Update next aired data on startup"
-msgstr "Aktualizuj daty emisji odcinków na starcie"
+msgstr "Aktualizuj odcinki wkrótce na antenie po uruchomieniu"
 
 msgctxt "#31190"
 msgid "Login"
-msgstr "Wymagany identyfikator"
+msgstr "Logowanie"
+
+msgctxt "#31191"
+msgid "User login"
+msgstr "Nazwa użytkownika"
+
+msgctxt "#31192"
+msgid "Select a profile"
+msgstr "Wybierz profil"
 
 msgctxt "#31193"
 msgid "Trailers"
@@ -244,6 +384,10 @@ msgctxt "#31194"
 msgid "Loading..."
 msgstr "Wczytywanie..."
 
+msgctxt "#31195"
+msgid "Enable widget carousel access on down"
+msgstr "Udostępniaj gadżet kołowy po naciśnięciu do dołu"
+
 msgctxt "#31196"
 msgid "Channel Options"
 msgstr "Opcje kanału"
@@ -252,17 +396,105 @@ msgctxt "#31197"
 msgid "General Options"
 msgstr "Opcje ogólne"
 
+msgctxt "#31198"
+msgid "Show widget info panel"
+msgstr "Pokazuj panel gadżetu informacji"
+
+msgctxt "#31199"
+msgid "Skip hubs and go straight to library"
+msgstr "Pomiń huby i przejdź bezpośrednio do biblioteki."
+
+msgctxt "#31200"
+msgid "Manual search..."
+msgstr "Manualne wyszukiwanie.."
+
+msgctxt "#31201"
+msgid "Set Colour"
+msgstr "Ustaw kolor"
+
+msgctxt "#31202"
+msgid "Widget Carousel"
+msgstr "Gadżet kołowy"
+
+msgctxt "#31203"
+msgid "Reset global background path to default"
+msgstr "Przywróć domyślne globalne tło"
+
+msgctxt "#31204"
+msgid "Match highlight to tile color"
+msgstr "Dopasuj podświetlenie do koloru kafelka"
+
+msgctxt "#31205"
+msgid "Don't fade unfocused tiles"
+msgstr "Nie wygaszaj niezaznaczonych kafelków"
+
+msgctxt "#31206"
+msgid "Use theme colour for focused tiles"
+msgstr "Używaj koloru motywu dla zaznaczonego kafelka"
+
 msgctxt "#31207"
 msgid "Movie Set"
 msgstr "Serie filmowe"
 
 msgctxt "#31208"
 msgid "Home Screen"
-msgstr "Ekran startowy"
+msgstr "Ekran Start"
+
+msgctxt "#31209"
+msgid "Set global background widget"
+msgstr "Ustaw globalny gadżet kontekstowy"
 
 msgctxt "#31210"
 msgid "Set background image"
 msgstr "Ustaw obraz tła"
+
+msgctxt "#31211"
+msgid "Move item"
+msgstr "Przenieś pozycję"
+
+msgctxt "#31212"
+msgid "Swap with another tile"
+msgstr "Zamień miejscami z innym kafelkiem"
+
+msgctxt "#31213"
+msgid "Click on a tile to see the available customisation options. Either select a preset tile option or modify an existing tile's name, colour, icon, path and background widget. You can also swap the position of tiles."
+msgstr "Naciśnij na kafelek, aby zobaczyć dostępne opcje personalizacji. Wybierz zdefiniowany kafelek lub zmodyfikuj istniejącą nazwę, kolor, ikonę, ścieżkę oraz gadżet kontekstowy. Możesz także zamieniać kafelki miejscami."
+
+msgctxt "#31214"
+msgid "Customise your home menu tiles"
+msgstr "Personalizacja kafelków menu startowego"
+
+msgctxt "#31215"
+msgid "Choose a tile to swap with this one"
+msgstr "Wybierz kafelek do do zamiany"
+
+msgctxt "#31216"
+msgid "Show clearart/logo with osd"
+msgstr "Pokazuj przezrocze i logo w menu ekranowym"
+
+msgctxt "#31217"
+msgid "Show power button"
+msgstr "Pokazuj przycisk zamykania"
+
+msgctxt "#31218"
+msgid "Change background colour based on time of day"
+msgstr "Zmieniaj kolor tła w zależności od pory dnia"
+
+msgctxt "#31219"
+msgid "Insert item"
+msgstr "Dodaj pozycję"
+
+msgctxt "#31220"
+msgid "Experimental"
+msgstr "Eksperymentalne"
+
+msgctxt "#31221"
+msgid "EPG Timeline"
+msgstr "Oś czasu"
+
+msgctxt "#31222"
+msgid " •   Customise widget item"
+msgstr "• Dostosuj gadżet"
 
 msgctxt "#31223"
 msgid "Banner List"
@@ -270,19 +502,43 @@ msgstr "Banery"
 
 msgctxt "#31224"
 msgid "Forecast"
-msgstr "Prognoza"
+msgstr "Prognoza pogody"
 
 msgctxt "#31225"
 msgid "Info List"
 msgstr "Lista informacji"
 
+msgctxt "#31226"
+msgid "Show title"
+msgstr "Pokaż tytuł"
+
+msgctxt "#31227"
+msgid "Hide title"
+msgstr "Ukryj tytuł"
+
+msgctxt "#31228"
+msgid "Set background overlay"
+msgstr "Ustaw przezroczystą nakładkę na tło"
+
+msgctxt "#31229"
+msgid "Background image (click to reset)"
+msgstr "Obraz tła (naciśnij, aby wyczyścić)"
+
 msgctxt "#31230"
 msgid "Animate fanart"
-msgstr "Animuj tapetę"
+msgstr "Animuj fototapetę"
 
 msgctxt "#31231"
 msgid "Edit Playlist"
 msgstr "Edytuj listę odtwarzania"
+
+msgctxt "#31232"
+msgid "Rule"
+msgstr "Reguła"
+
+msgctxt "#31233"
+msgid "Enter rule..."
+msgstr "Wprowadź regułę..."
 
 msgctxt "#31234"
 msgid "Advanced"
@@ -292,26 +548,210 @@ msgctxt "#31235"
 msgid "Extras"
 msgstr "Dodatki"
 
+msgctxt "#31236"
+msgid "Header text"
+msgstr "Tekst nagłówka"
+
+msgctxt "#31237"
+msgid "Invert widget access"
+msgstr "Odwracaj dostęp do gadżetu"
+
+msgctxt "#31238"
+msgid "Open carousel in own window"
+msgstr "Otwieraj widok karuzelowy w osobnym ekranie"
+
 msgctxt "#31239"
 msgid "Kiosk mode"
-msgstr "Tryb kiosku"
+msgstr "Tryb Kiosku"
+
+msgctxt "#31240"
+msgid "Use theme colour for header"
+msgstr "Używaj koloru motywu dla nagłówka"
+
+msgctxt "#31241"
+msgid "3D Mode"
+msgstr "Tryb 3D"
 
 msgctxt "#31242"
 msgid "Media Info"
-msgstr "Informacje o mediach"
+msgstr "O mediach"
+
+msgctxt "#31243"
+msgid "Most"
+msgstr "Maksymalny"
 
 msgctxt "#31244"
 msgid "Moderate"
 msgstr "Umiarkowany"
 
+msgctxt "#31245"
+msgid "Least"
+msgstr "Minimalny"
+
 msgctxt "#31246"
 msgid "No description available"
 msgstr "Opis niedostępny"
+
+msgctxt "#31247"
+msgid "Customise home screen tiles. From here you can create new tiles, modify existing tiles, insert tiles, delete tiles, swap tiles and set individual background widgets. To set individual background widgets you must first disable the Global Widget. To set colours for individual tiles you must first disable the Use Theme Colour For Focused Tiles option."
+msgstr "Dostosowywanie kafelków ekranu startowego. Tutaj możesz zarządzać kafelkami: utworzyć nowe, zmieniaj istniejące, wstawiać, usuwać, zamieniać miejscami i ustawiać osobne gadżety kontekstowe. W celu ustawienia osobnych gadżetów kontekstowych, musisz wcześniej wyłączyć globalny gadżet kontekstowy. W celu ustawienia osobnego koloru dla każdego kafelka, musisz wcześniej odznaczyć opcję Używaj koloru motywu dla aktywnego kafelka."
+
+msgctxt "#31248"
+msgid "Sets the background widget for the home screen that can be accessed by pressing up. Disabling this option allows individual widgets to be set for tiles in the customisation screen."
+msgstr "Określa gadżet kontekstowy, który będzie dostępny po naciśnięciu przycisku w górę. Odznaczenie tej opcji umożliwia ustawienie niezależnych gadżetów na ekranie personalizacji."
+
+msgctxt "#31249"
+msgid "Show the information panel for background widgets."
+msgstr "Pokazuje panel informacji dla gadżetów kontekstowych."
+
+msgctxt "#31250"
+msgid "Focused tiles on home screen match the theme's highlight colour. Unfocused tiles are set to grey. This overrides individual tile colour settings."
+msgstr "Kolor aktywnych kafelków jest taki sam jak kolor podświetlania aktywnego motywu. Nieaktywne kafelki mają kolor szary. Ta opcja zastępuje osobny kolor każdego kafelka."
+
+msgctxt "#31251"
+msgid "Match the colour of the focused tile's text underline to the colour of the tile."
+msgstr "Dopasowuje kolor podkreślenia zaznaczonego kafelka do do koloru tego kafelka."
+
+msgctxt "#31252"
+msgid "Sets the path to the background slideshow that is shown when the focused tile does not have a background widget set."
+msgstr "Określa ścieżkę do obrazów używanych przez kontekstowy pokaz slajdów, który jest wyświetlany, gdy aktywny kafelek nie posiada zestawu gadżetów."
+
+msgctxt "#31253"
+msgid "Enables an additional widget carousel that is accessed by pressing down. Once open, pressing up will cycle through the widgets."
+msgstr "Umożliwia dostęp do dodatkowego widoku karuzelowego gadżetu przy pomocy naciśnięcia przycisku DÓŁ. Po otwarciu wyświetla cyklicznie gadżety po naciśnięciu przycisku GÓRA."
+
+msgctxt "#31254"
+msgid "Open the widget carousel in its own window rather than above the home screen tiles."
+msgstr "Otwiera widok karuzelowy gadżetu w osobnym ekranie zamiast nad kafelkami ekranu startowego."
+
+msgctxt "#31255"
+msgid "Invert access to widgets so that up opens the carousel and down accesses the background widget."
+msgstr "Odwraca klawisze dostępu do gadżetów w ten sposób, że przycisk GÓRA otwiera widok karuzelowy a przycisk DÓŁ wyświetla tło gadżetu."
+
+msgctxt "#31256"
+msgid "Show fanart in the background of library views."
+msgstr "Pokazuje fototapety jako tło w widokach mediów."
+
+msgctxt "#31257"
+msgid "Sets how much the background fanart is faded. There are three settings: Most, Moderate and Least."
+msgstr "Określa poziom rozmycia fototapety. Dostępne są trzy ustawienia: Maksymalny, Umiarkowany, Minimalny"
+
+msgctxt "#31258"
+msgid "Animate background fanart with a Ken Burns type effect."
+msgstr "Animuje fototapetę przy użyciu efektu Kena Burnsa."
+
+msgctxt "#31259"
+msgid "Set the backgroud image that is displayed when no fanart is available. Click once to clear the current path and again to select a new path."
+msgstr "Określa obraz wyświetlany w tle w przypadku braku fototapety. Naciśnij raz, aby wyczyścić aktualną ścieżkę folderu i ponownie, aby wybrać nową ścieżkę folderu."
+
+msgctxt "#31260"
+msgid "Changes the background colour based upon the time of day. This overrides the background image setting. The images for the background colour overlay can be modified in skin.eminence/extras/sunset - the number of the image matches the hour it is displayed at in 24 hour time."
+msgstr "Zmienia kolor tła w oparciu o porę dnia. Ta opcja  zastępuje globalne ustawienia tła. Obrazy dla nakładki koloru mogą być modyfikowane w folderze skin.eminence/extras/sunset - liczba obrazu odpowiada godzinie dla 24 godzinnej dobie."
+
+msgctxt "#31261"
+msgid "Sets the image used as a background overlay. Click once to clear the current path and again to select a new path."
+msgstr "Określa obraz używany jako przezroczysta nakładka na tło. Naciśnij raz, aby wyczyścić aktualną ścieżkę i wybrać ponownie, nową ścieżkę."
+
+msgctxt "#31262"
+msgid "Sets the path to weather fanart used in the weather screen."
+msgstr "Określa ścieżkę folderu z fototapetami pogody używanymi na ekranie pogody."
+
+msgctxt "#31263"
+msgid "Select the widget shown in the movies hub. Can choose spotlight, in progress or smart playlist."
+msgstr "Określa gadżet widoczny w centrum filmowym. Możliwy wybór pomiędzy wyróżnionymi, w trakcie oglądania i inteligentnymi listami. "
+
+msgctxt "#31264"
+msgid "Set the smart playlist used in the movie hub widget. Smart playlists can be created by going to the movies hub and scrolling down in the right pane to the playlists option."
+msgstr "Określa inteligentną listę odtwarzania używaną w gadżecie centrum filmowego. Inteligentne listy odtwarzania mogą zostać utworzone poprzez przejście do centrum filmowego i przesunięcie do dołu w prawej kratce do opcji list odtwarzania."
+
+msgctxt "#31265"
+msgid "Sets a custom item to be shown in the right pane of the hub underneath recently added."
+msgstr "Określa niestandardową pozycję widoczną w prawej kratce centrum poniżej pozycji ostatnio dodanych."
+
+msgctxt "#31266"
+msgid "Select the widget shown in the tv shows hub. Can choose spotlight, in progress or smart playlist."
+msgstr "Określa gadżet widoczny w centrum serialowym. Możliwy wybór pomiędzy wyróżnionymi, w trakcie oglądania i inteligentnymi listami. "
+
+msgctxt "#31267"
+msgid "Set the smart playlist used in the tv show hub widget. Smart playlists can be created by going to the tv show hub and scrolling down in the right pane to the playlists option."
+msgstr "Określa inteligentną listę odtwarzania używaną w gadżecie centrum serialowego. Inteligentne listy odtwarzania mogą zostać utworzone poprzez przejście do centrum serialowego i przesunięcie do  dołu w prawej kratce to opcji list odtwarzania."
 
 msgctxt "#31268"
 msgid "Use the Artist Slideshow addon to show a slideshow of artist images as the music visualisation."
 msgstr "Używa dodatku Artist Slideshow do wizualizacji odtwarzania muzyki, pokazem slajdów obrazów wykonawcy."
 
+msgctxt "#31269"
+msgid "Shows the extend info panel on pressing info with fullscreen video or music."
+msgstr "Pokazuje rozszerzone informacje, po naciśnięciu przycisku informacji, w menu ekranowym odtwarzanego wideo lub muzyki."
+
+msgctxt "#31270"
+msgid "Show clearart or clearlogo in the bottom right of screen whenever the seekbar displays on fullscreen video."
+msgstr "Pokazuje przezrocze i logo w dolnym prawym rogu ekranu podczas wyświetlania paska przewijania."
+
+msgctxt "#31271"
+msgid "Modify the default 'Media Center' text shown in the header."
+msgstr "Zmień domyślny tekst 'Media Center' pokazywany w nagłówku."
+
+msgctxt "#31272"
+msgid "Matches the colour of the header tile to the theme's highlight colour."
+msgstr "Dopasowuje kolor nagłówka kafelka do koloru podświetlenia motywu."
+
+msgctxt "#31273"
+msgid "Prevents the side view menu from being accessed in library views."
+msgstr "Tryb kiosku zapobiega dostępowi do lewostronnego menu w widoku mediów."
+
 msgctxt "#31274"
 msgid "Enables the TV Tunes addon in library views. Plays the tv theme song when viewing the seasons or episodes of a tv show."
 msgstr "Aktywuje dodatek TvTunes w widokach biblioteki, który odtwarza motyw muzyczny podczas przeglądania sezonów i odcinków serialu."
+
+msgctxt "#31275"
+msgid "Show the RSS feed at the bottom of the screen"
+msgstr "Pokazuj strumień nagłówków RSS na dole ekranu"
+
+msgctxt "#31276"
+msgid "Show next aired information for tv shows at the bottom of the screen. Also shows an RSS feed of upcoming tv show airdates in the tv show hub. In the Next Aired addon configuration enable the 'Show All Tv Shows for homescreen' option for best effect."
+msgstr "Pokazuje informacje o odcinkach wkrótce na antenie na dole ekranu. Dodatkowo pokazuje informacje kanału RSS o nadchodzących odcinkach w centrum serialowym. W konfiguracji dodatku Next Aired należy zaznaczyć opcję 'Pokazuj wszystkie seriale na ekranie startowy', aby uzyskać najlepszy efekt."
+
+msgctxt "#31277"
+msgid "Resets the skin back to default settings. WARNING: this will wipe all your skin settings. All custom tiles and widgets will be reset to defaults."
+msgstr "Przywraca domyślne ustawienia skóry. OSTRZEŻENIE: ta operacja usunie wszystkie niestandardowe ustawienia skóry. Wszystkie niestandardowe kafelki i gadżety zostaną usunięte."
+
+msgctxt "#31278"
+msgid "PVR Manager"
+msgstr "Menedżer TV"
+
+msgctxt "#31279"
+msgid "Alt style"
+msgstr "Styl alterantywny"
+
+msgctxt "#31280"
+msgid "Automatically start artwork downloader after library update"
+msgstr "Pobieraj grafiki automatycznie podczas aktualizacji bilblioteki"
+
+msgctxt "#31281"
+msgid "Hubs"
+msgstr "Huby"
+
+msgctxt "#31282"
+msgid "Header"
+msgstr "Nagłówek"
+
+msgctxt "#31283"
+msgid "Set Path"
+msgstr "Ustaw ścieżkę folderu"
+
+msgctxt "#31284"
+msgid "Show extended info at bottom of screen"
+msgstr "Pokazuj dodatkowe informacje w dole ekranu"
+
+msgctxt "#31285"
+msgid "Premiere Date"
+msgstr "Data premiery"
+
+msgctxt "#31286"
+msgid "Disable clock"
+msgstr "Ukrywaj zegar"
+
+msgctxt "#31287"
+msgid "Set startup video"
+msgstr "Ustaw startowe wideo"

@@ -46,14 +46,14 @@
             </control>
 
             <control type="list" id="11">
-                <posx>11</posx>
+                <posx>0</posx>
                 <posy>120</posy>
                 <height>980</height>
-                <width>645</width>
+                <width>667</width>
                 <orientation>vertical</orientation>
                 <itemlayout height="120">
                     <control type="image">
-                        <width>645</width>
+                        <width>667</width>
                         <height>109</height>
                         <texture>common/selected.png</texture>
                         <aspectratio aligny="top">center</aspectratio>
@@ -70,7 +70,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>550</posx>
+                        <posx>561</posx>
                         <posy>5</posy>
                         <width>70</width>
                         <align>left</align>
@@ -80,7 +80,7 @@
                         <label>$INFO[ListItem.ChannelNumber]</label>
                     </control>
                     <control type="progress">
-                        <posx>550</posx>
+                        <posx>561</posx>
                         <posy>65</posy>
                         <width>67</width>
                         <height>19</height>
@@ -115,9 +115,9 @@
                 </itemlayout>
                 <focusedlayout height="120">
                     <control type="image">
-                        <width>645</width>
+                        <width>667</width>
                         <height>109</height>
-                        <texture colordiffuse="PosterBorder" border="5">common/border-inner.png</texture>
+                        <texture colordiffuse="PosterHighlight" border="5">common/border-inner.png</texture>
                     </control>
                     <control type="image">
                         <width>645</width>
@@ -136,7 +136,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <posx>550</posx>
+                        <posx>561</posx>
                         <posy>5</posy>
                         <width>70</width>
                         <align>left</align>
@@ -146,7 +146,7 @@
                         <label>$INFO[ListItem.ChannelNumber]</label>
                     </control>
                     <control type="progress">
-                        <posx>550</posx>
+                        <posx>561</posx>
                         <posy>65</posy>
                         <width>67</width>
                         <height>19</height>

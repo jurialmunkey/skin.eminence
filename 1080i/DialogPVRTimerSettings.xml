@@ -93,7 +93,14 @@
             <font>Font-ListInfo</font>
             <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
         </control>
-
+        
+        <control type="sliderex" id="13">
+            <description>Default spincontrolex</description>
+            <align>left</align>
+            <font>Font-ListInfo</font>
+            <texturefocus border="12" colordiffuse="PosterHighlight">common/white.png</texturefocus>
+        </control>
+        
         <control type="spincontrolex" id="9">
             <description>Default Spin Control</description>
             <align>left</align>
